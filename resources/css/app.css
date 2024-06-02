@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Apply Proxima Nova as the default font */
+body {
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/fonts/Mark Simonson  Proxima Nova Regular.otf') format('opentype');
+}

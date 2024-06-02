@@ -13,8 +13,13 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['Proxima Nova', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                greenStar: '#00b67a',
+                primary:'#FE753E',
+                secondary: '#5459E8',
+              },
         },
     },
 
