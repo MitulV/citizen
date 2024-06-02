@@ -9,6 +9,10 @@ use Inertia\Inertia;
 Route::get('/',[HomePageController::class,'index']);
 Route::get('/premium',[PremiumPageController::class,'index']);
 
+Route::get('/test', function () {
+    return Inertia::render('TestInfo');
+});
+
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
