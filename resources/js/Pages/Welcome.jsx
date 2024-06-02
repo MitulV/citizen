@@ -686,6 +686,7 @@ export default function Welcome({ auth, chapters }) {
                                                 <FontAwesomeIcon
                                                     icon={faStar}
                                                     className="text-greenStar"
+                                                    
                                                 />
                                             </div>
                                         </div>
