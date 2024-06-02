@@ -6,6 +6,7 @@ export default function Premium(){
     return (
         <>
          <Head title="Premium" />
+         
          <Header/>   
         </>
     );
