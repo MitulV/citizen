@@ -10,7 +10,7 @@ Route::get('/',[HomePageController::class,'index']);
 Route::get('/premium',[PremiumPageController::class,'index']);
 
 Route::get('/test', function () {
-    return Inertia::render('TestInfo');
+    return Inertia::render('TestStart');
 });
 
 
