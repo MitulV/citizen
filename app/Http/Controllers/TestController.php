@@ -18,7 +18,7 @@ class TestController extends Controller
     }
 
     public function testPage($chapter_id){
-        dd($chapter_id);
+        
         return Inertia::render('TestPage', [
             'chapterId' => $chapter_id
         ]);

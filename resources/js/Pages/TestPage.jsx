@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "@/Components/Header";
 import { Head } from "@inertiajs/react";
-import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCheck,
@@ -11,11 +10,7 @@ import {
     faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function TestPage({chapterId}) {
-    const [questions, setQuestions] = useState([]);
-    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-    const [selectedAnswer, setSelectedAnswer] = useState(null);
-    const [guestToken, setGuestToken] = useState('');
+export default function TestStart() {
     return (
         <>
             <Head title="Premium" />
