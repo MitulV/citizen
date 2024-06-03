@@ -113,51 +113,53 @@ export default function Welcome({ auth, chapters }) {
                 </section>
 
                 <section className="bg-gray-100 py-2">
-                    <div className="container mx-auto px-4 flex flex-col md:flex-row">
-                        <div className="md:w-1/8 pl-2">
-                            <img
-                                src="/images/chap 1.png"
-                                alt="Photos"
-                                className="w-full"
-                            />
-                        </div>
+                    <Link href={route('testInfoPage',{chapter_id: 1})}>
+                        <div className="container mx-auto px-4 flex flex-col md:flex-row">
+                            <div className="md:w-1/8 pl-2">
+                                <img
+                                    src="/images/chap 1.png"
+                                    alt="Photos"
+                                    className="w-full"
+                                />
+                            </div>
 
-                        <div className="md:w-1/2 px-4 py-2 bg-white rounded-r-xl">
-                            <h1 className=" text-2xl font-bold leading-10 tracking-wide text-left">
-                                Free Simulation Test
-                            </h1>
-                            <p className="text-sm font-normal leading-8 tracking-tight text-gray-500">
-                                Take part in our free diagnostic Canadian
-                                citizenship test practice to assess your current
-                                knowledge and skills. It will help you tailor
-                                your study plan for maximum effectiveness.
-                            </p>
+                            <div className="md:w-1/2 px-4 py-2 bg-white rounded-r-xl">
+                                <h1 className=" text-2xl font-bold leading-10 tracking-wide text-left">
+                                    Free Simulation Test
+                                </h1>
+                                <p className="text-sm font-normal leading-8 tracking-tight text-gray-500">
+                                    Take part in our free diagnostic Canadian
+                                    citizenship test practice to assess your current
+                                    knowledge and skills. It will help you tailor
+                                    your study plan for maximum effectiveness.
+                                </p>
 
-                            <div className="container mx-auto px-4 flex flex-col md:flex-row flex-wrap">
-                                <div className="md:w-1/2 w-full mb-4 md:mb-0 py-4">
-                                    <div>
-                                        <h1 className="font-bold text-2xl tracking-wide mb-1">
-                                            20
-                                        </h1>
-                                        <p className="text-lg font-normal text-gray-500">
-                                            Questions
-                                        </p>
+                                <div className="container mx-auto px-4 flex flex-col md:flex-row flex-wrap">
+                                    <div className="md:w-1/2 w-full mb-4 md:mb-0 py-4">
+                                        <div>
+                                            <h1 className="font-bold text-2xl tracking-wide mb-1">
+                                                20
+                                            </h1>
+                                            <p className="text-lg font-normal text-gray-500">
+                                                Questions
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div className="md:w-1/2 w-full py-4">
-                                    <div>
-                                        <h1 className="font-bold text-2xl tracking-wide mb-1">
-                                            5 Mistakes
-                                        </h1>
-                                        <p className="text-lg font-normal text-gray-500">
-                                            Allowed to pass
-                                        </p>
+                                    <div className="md:w-1/2 w-full py-4">
+                                        <div>
+                                            <h1 className="font-bold text-2xl tracking-wide mb-1">
+                                                5 Mistakes
+                                            </h1>
+                                            <p className="text-lg font-normal text-gray-500">
+                                                Allowed to pass
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 </section>
                 <section className="container mx-auto px-10 mb-0 flex flex-col md:flex-row py-4">
                     <div className="md:w-1/2 flex items-center justify-center md:justify-start">
@@ -174,15 +176,15 @@ export default function Welcome({ auth, chapters }) {
                 </section>
                 <section className="container mx-auto px-4 grid gap-10 md:grid-cols-3">
                     {chapters.map((chapter, index) => (
-                            <HomeChapterCard
-                                key={index} // Ensure each component has a unique key
-                                image={chapter.image}
-                                name={chapter.name}
-                                title={chapter.title}
-                                description={chapter.description}
-                                questions={chapter.questions}
-                                mistakes={chapter.mistakes}
-                            />
+                        <HomeChapterCard
+                            key={index} // Ensure each component has a unique key
+                            image={chapter.image}
+                            name={chapter.name}
+                            title={chapter.title}
+                            description={chapter.description}
+                            questions={chapter.questions}
+                            mistakes={chapter.mistakes}
+                        />
                     ))}
                 </section>
 
@@ -686,7 +688,7 @@ export default function Welcome({ auth, chapters }) {
                                                 <FontAwesomeIcon
                                                     icon={faStar}
                                                     className="text-greenStar"
-                                                    
+
                                                 />
                                             </div>
                                         </div>

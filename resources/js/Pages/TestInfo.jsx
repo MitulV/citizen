@@ -1,10 +1,10 @@
 import Header from "@/Components/Header";
-import { Head } from "@inertiajs/react";
+import { Head, Link } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 
-export default function TestInfo() {
+export default function TestInfo({chapterId}) {
     return (
         <>
             <Head title="Premium" />
@@ -97,9 +97,8 @@ export default function TestInfo() {
                             </span>
                         </p>
                         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
-                            <button className="bg-primary text-white px-8 py-2 rounded-full flex-1">
-                            Start Now
-                            </button>
+                            <Link href={route('testPage',{chapter_id:chapterId})} as="button" className="bg-primary text-white px-8 py-2 rounded-full flex-1">Start Now</Link>
+                            
                             <button className="bg-white text-balck border border-primary px-6 py-2 rounded-full flex-1">
                             Unlock All Chapters
                             </button>

@@ -3,6 +3,7 @@ import {
     faChevronDown,
     faBars
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from '@inertiajs/react';
 
 export default function Header(){
     return (
@@ -53,12 +54,14 @@ export default function Header(){
                         </div>
 
                         <div className="hidden md:block">
-                            <button className="border-2 border-primary bg-white text-gray-800 px-4 py-2 rounded-full mr-4">
-                                Sign In
-                            </button>
-                            <button className="bg-primary text-white px-4 py-2 rounded-full">
-                                Pass the first time, guaranteed
-                            </button>
+                        <Link href={route('register')} as="button" className="border-2 border-primary bg-white text-gray-800 px-4 py-2 rounded-full mr-4">
+                            Sign In
+                        </Link>
+
+                        <Link href={route('premiumPage')} as="button" className="bg-primary text-white px-4 py-2 rounded-full">
+                        Pass the first time, guaranteed
+                        </Link>    
+                            
                         </div>
                     </div>
 

@@ -5,9 +5,24 @@ namespace App\Http\Controllers;
 use App\Models\Question;
 use App\Models\Test;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
 
 class TestController extends Controller
 {
+
+    public function index($chapter_id){
+        return Inertia::render('TestInfo', [
+            'chapterId' => $chapter_id
+        ]);
+    }
+
+    public function testPage($chapter_id){
+        dd($chapter_id);
+        return Inertia::render('TestPage', [
+            'chapterId' => $chapter_id
+        ]);
+    }
 
     public function getQuestionsForChapter(Request $request)
     {
