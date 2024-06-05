@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "@/Components/Header";
 import { Head } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,13 +15,45 @@ export default function TestStart() {
 
     const renderer = ({ minutes, seconds, completed }) => {
         if (completed) {
-          // Once timer Completed 
-          // Redirect to Result Page  
+            // Once timer Completed 
+            // Redirect to Result Page  
         } else {
-          // Render a countdown
-          return <span>{minutes}:{seconds}</span>;
+            // Render a countdown
+            return <span>{minutes}:{seconds}</span>;
         }
-      };
+    };
+
+    const [questionResults, setQuestionResults] = useState(Array.from({ length: 15 }, (_, index) => ({
+        index,
+        test_id: 1, // Example test ID, replace with actual logic
+        question_id: 1,
+        question_text: `Question text`,
+        explanation: `Explanation for question`,
+        result: 'pass', //['none', 'pass', 'fail'][Math.floor(Math.random() * 3)], // Randomly assigning 'none', 'pass', or 'fail' for demonstration
+        answer_text: [
+            { id: 1, text: `Answer 1 for question` },
+            { id: 2, text: `Answer 2 for question` },
+            { id: 3, text: `Answer 3 for question` },
+            { id: 4, text: `Answer 4 for question` },
+        ],
+        selectedAnswerId: null,
+    })));
+
+    const handleAnswerSelection = (questionIndex, answerId) => {
+        setQuestionResults((prevQuestionResults) => {
+            const updatedQuestionResults = [...prevQuestionResults];
+            updatedQuestionResults[questionIndex].selectedAnswerId = answerId;
+            return updatedQuestionResults;
+        });
+    };
+
+    const currentQuestionIndex = 0;
+    const currentQuestion = questionResults[currentQuestionIndex];
+
+
+
+
+
     return (
         <>
             <Head title="Premium" />
@@ -33,52 +65,39 @@ export default function TestStart() {
                         <p className="text-zinc-400 text-sm">Question 1 / 15</p>
                         <h2 className="text-lg sm:text-sm text-gray-400 mb-2">
                             <FontAwesomeIcon icon={faClock} className="mr-2" />
-                              <Countdown date={Date.now() + 30*60*1000} renderer={renderer} />
+                            <Countdown date={Date.now() + 30 * 60 * 1000} renderer={renderer} />
                         </h2>
                     </div>
                     <div>
-                        <h1 className="text-2xl font-bold">What are the regions of Canada?</h1>
+                        <h1 className="text-2xl font-bold">{currentQuestion.question_text}</h1>
                     </div>
                     <div>
                         <div className="mt-2 space-y-2">
-                            {/* Answer Option 1 */}
-                            <label className="flex items-center space-x-2 text-sm border border-red-500 px-6 py-2 rounded-xl flex-1 hover:bg-gray-200">
-                                <div className="relative">
-                                    <input type="radio" name="answer" className="hidden peer" />
-                                    <div className="w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:bg-red-500">
-                                        <FontAwesomeIcon icon={faTimes} className="text-white peer-checked:inline" />
+                            {currentQuestion.answer_text.map((answer) => (
+                                <label
+                                    key={answer.id}
+                                    className={`flex items-center space-x-2 text-sm px-6 py-2 rounded-xl flex-1 hover:bg-gray-200 ${answer.id === currentQuestion.selectedAnswerId && currentQuestion.result === 'pass' ? 'border border-lime-700' :
+                                            answer.id === currentQuestion.selectedAnswerId && currentQuestion.result === 'fail' ? 'border border-red-500' :
+                                                'border border-gray-100'
+                                        }`}
+                                    onClick={() => handleAnswerSelection(currentQuestionIndex, answer.id)}
+                                >
+                                    <div className="relative">
+                                        <input type="radio" name={`answer_${currentQuestionIndex}`} className="hidden peer" />
+                                        <div className={`w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:bg-${answer.id === currentQuestion.selectedAnswerId && currentQuestion.result === 'pass' ? 'green' :
+                                                answer.id === currentQuestion.selectedAnswerId && currentQuestion.result === 'fail' ? 'red' :
+                                                    'gray'
+                                            }-500`}>
+                                            {(currentQuestion.result === 'none' || currentQuestion.result === 'pass') ? (
+                                                <FontAwesomeIcon icon={faCheck} className="text-white peer-checked:inline" />
+                                            ) : (
+                                                <FontAwesomeIcon icon={faTimes} className="text-white peer-checked:inline" />
+                                            )}
+                                        </div>
                                     </div>
-                                </div>
-                                <span>Atlantic provinces, Central Canada, Prairie Provinces, West Coast and Northern Territories</span>
-                            </label>
-                            {/* Answer Option 2 */}
-                            <label className="flex items-center space-x-2 text-sm border border-gray-100 px-6 py-2 rounded-xl flex-1 hover:bg-gray-200">
-                                <div className="relative">
-                                    <input type="radio" name="answer" className="hidden peer" />
-                                    <div className="w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center">
-                                    </div>
-                                </div>
-                                <span>South Provinces, Northern Canada</span>
-                            </label>
-                            {/* Answer Option 3 */}
-                            <label className="flex items-center space-x-2 text-sm border border-lime-700 px-6 py-2 rounded-xl flex-1 hover:bg-gray-200">
-                                <div className="relative">
-                                    <input type="radio" name="answer" className="hidden peer" />
-                                    <div className="w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:bg-green-500">
-                                        <FontAwesomeIcon icon={faCheck} className="text-white peer-checked:inline" />
-                                    </div>
-                                </div>
-                                <span>Ontario, Quebec, Prairie provinces and Central Canada</span>
-                            </label>
-                            {/* Answer Option 4 */}
-                            <label className="flex items-center space-x-2 text-sm border border-gray-100 px-6 py-2 rounded-xl flex-1 hover:bg-gray-200">
-                                <div className="relative">
-                                    <input type="radio" name="answer" className="hidden peer" />
-                                    <div className="w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center">
-                                    </div>
-                                </div>
-                                <span>Atlantic and Central Canada</span>
-                            </label>
+                                    <span>{answer.text}</span>
+                                </label>
+                            ))}
                         </div>
                     </div>
                     <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4">
@@ -103,43 +122,45 @@ export default function TestStart() {
                     <h1 className="hidden sm:flex text-xl text-gray-800 mb-4">Featured Highlights</h1>
                     {/* Circles for Small Screens */}
                     <div className="flex space-x-1 mb-4 sm:hidden">
-                        {[...Array(15)].map((_, index) => (
+                        {questionResults.map((result) => (
                             <div
-                                key={index}
-                                className={`w-8 h-2 rounded-full ${
-                                    index === 0 ? 'bg-green-500' : index === 1 ? 'bg-red-500' : 'bg-gray-200'
-                                }`}
+                                key={result.index}
+                                className={`w-8 h-2 rounded-full ${result.result === 'pass' ? 'bg-green-500' :
+                                    result.result === 'fail' ? 'bg-red-500' :
+                                        'bg-gray-200'
+                                    }`}
                             />
                         ))}
                     </div>
                     {/* Circles for Larger Screens */}
                     <div className="hidden sm:grid grid-cols-5 gap-2 mb-4">
-                        {[...Array(15)].map((_, index) => (
+                        {questionResults.map((result) => (
                             <div
-                                key={index}
-                                className={`w-10 h-10 flex items-center justify-center rounded-full ${
-                                    index === 0 ? 'bg-green-500' : index === 1 ? 'bg-red-500' : 'bg-gray-200'
-                                }`}
+                                key={result.index}
+                                className={`w-10 h-10 flex items-center justify-center rounded-full ${result.result === 'pass' ? 'bg-green-500' :
+                                    result.result === 'fail' ? 'bg-red-500' :
+                                        'bg-gray-200'
+                                    }`}
                             >
-                                {index + 1}
+                                {result.index + 1}
                             </div>
                         ))}
                     </div>
-                     {/* Buttons outside the main right div, only visible on large screens */}
-                <div className="hidden lg:flex order-3 lg:col-span-4 flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4 lg:justify-end lg:py-4">
-                    <button className="bg-white text-black  border border-primary px-6 py-2 rounded-full flex-1 flex items-center justify-center">
-                        <FontAwesomeIcon icon={faChevronLeft} className="mr-4 text-sm" />
-                        All Tests
-                    </button>
-                    <button className="bg-white text-black border border-primary px-6 py-2 rounded-full flex-1 flex items-center justify-center">
-                        <FontAwesomeIcon icon={faRedo} className="mr-4 text-sm" />
-                        Restart
-                    </button>
-                </div>
+                    {/* Buttons outside the main right div, only visible on large screens */}
+                    <div className="hidden lg:flex order-3 lg:col-span-4 flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4 lg:justify-end lg:py-4">
+                        <button className="bg-white text-black  border border-primary px-6 py-2 rounded-full flex-1 flex items-center justify-center">
+                            <FontAwesomeIcon icon={faChevronLeft} className="mr-4 text-sm" />
+                            All Tests
+                        </button>
+                        <button className="bg-white text-black border border-primary px-6 py-2 rounded-full flex-1 flex items-center justify-center">
+                            <FontAwesomeIcon icon={faRedo} className="mr-4 text-sm" />
+                            Restart
+                        </button>
+                    </div>
                 </div>
 
                 {/* Buttons outside the main right div */}
-             
+
             </section>
         </>
     );
