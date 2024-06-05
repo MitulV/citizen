@@ -15,48 +15,9 @@ export default function TestStart() {
         <>
             <Head title="Premium" />
             <Header />
-            <section className="min-h-screen grid grid-cols-1 md:grid-cols-2 gap-8 p-10 bg-slate-50">
-                {/* Left Side */}
-                <div className="md:h-80 flex flex-col space-y-4 border rounded-xl bg-white p-10">
-                    <h1 className="hidden sm:flex text-xl text-gray-800 mb-4">Featured Highlights</h1>
-                    {/* Circles for Small Screens */}
-                    <div className="flex space-x-1 mb-4 sm:hidden">
-                        {[...Array(15)].map((_, index) => (
-                            <div
-                                key={index}
-                                className={`w-8 h-2 rounded-full ${
-                                    index === 0 ? 'bg-green-500' : index === 1 ? 'bg-red-500' : 'bg-gray-200'
-                                }`}
-                            />
-                        ))}
-                    </div>
-                    {/* Circles for Larger Screens */}
-                    <div className="hidden sm:grid grid-cols-5 gap-2 mb-4">
-                        {[...Array(15)].map((_, index) => (
-                            <div
-                                key={index}
-                                className={`w-10 h-10 flex items-center justify-center rounded-full ${
-                                    index === 0 ? 'bg-green-500' : index === 1 ? 'bg-red-500' : 'bg-gray-200'
-                                }`}
-                            >
-                                {index + 1}
-                            </div>
-                        ))}
-                    </div>
-                    <div className="hidden sm:flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
-                        <button className="bg-white text-black border border-primary px-6 py-2 rounded-md flex-1 flex items-center justify-center">
-                            <FontAwesomeIcon icon={faChevronLeft} className="mr-4 text-sm" />
-                            All Tests
-                        </button>
-                        <button className="bg-white text-black border border-primary px-6 py-2 rounded-md flex-1 flex items-center justify-center">
-                            <FontAwesomeIcon icon={faRedo} className="mr-4 text-sm" />
-                            Restart
-                        </button>
-                    </div>
-                </div>
-
-                {/* Right Side */}
-                <div className="flex flex-col space-y-4 border rounded-xl bg-white p-10">
+            <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 p-10 bg-slate-50">
+                {/* Left Side (spans 8 columns on large screens) */}
+                <div className="order-2 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl bg-white p-10">
                     <div className="flex justify-between items-center">
                         <p className="text-zinc-400 text-sm">Question 4 / 15</p>
                         <h2 className="text-lg sm:text-sm text-gray-400 mb-2">
@@ -108,7 +69,7 @@ export default function TestStart() {
                             </label>
                         </div>
                     </div>
-                    <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+                    <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4">
                         <button className="bg-primary text-white px-8 py-2 rounded-full flex-1">
                             Previous
                         </button>
@@ -124,6 +85,49 @@ export default function TestStart() {
                         <span className="text-primary underline underline-offset-1">Quality Assurance Guidelines.</span>
                     </p>
                 </div>
+
+                {/* Right Side (spans 4 columns on large screens) */}
+                <div className="order-1 md:h-64 lg:order-2 lg:col-span-4 flex flex-col space-y-4 border rounded-xl bg-white p-10">
+                    <h1 className="hidden sm:flex text-xl text-gray-800 mb-4">Featured Highlights</h1>
+                    {/* Circles for Small Screens */}
+                    <div className="flex space-x-1 mb-4 sm:hidden">
+                        {[...Array(15)].map((_, index) => (
+                            <div
+                                key={index}
+                                className={`w-8 h-2 rounded-full ${
+                                    index === 0 ? 'bg-green-500' : index === 1 ? 'bg-red-500' : 'bg-gray-200'
+                                }`}
+                            />
+                        ))}
+                    </div>
+                    {/* Circles for Larger Screens */}
+                    <div className="hidden sm:grid grid-cols-5 gap-2 mb-4">
+                        {[...Array(15)].map((_, index) => (
+                            <div
+                                key={index}
+                                className={`w-10 h-10 flex items-center justify-center rounded-full ${
+                                    index === 0 ? 'bg-green-500' : index === 1 ? 'bg-red-500' : 'bg-gray-200'
+                                }`}
+                            >
+                                {index + 1}
+                            </div>
+                        ))}
+                    </div>
+                     {/* Buttons outside the main right div, only visible on large screens */}
+                <div className="hidden lg:flex order-3 lg:col-span-4 flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4 lg:justify-end lg:py-4">
+                    <button className="bg-white text-black  border border-primary px-6 py-2 rounded-full flex-1 flex items-center justify-center">
+                        <FontAwesomeIcon icon={faChevronLeft} className="mr-4 text-sm" />
+                        All Tests
+                    </button>
+                    <button className="bg-white text-black border border-primary px-6 py-2 rounded-full flex-1 flex items-center justify-center">
+                        <FontAwesomeIcon icon={faRedo} className="mr-4 text-sm" />
+                        Restart
+                    </button>
+                </div>
+                </div>
+
+                {/* Buttons outside the main right div */}
+             
             </section>
         </>
     );
