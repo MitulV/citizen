@@ -9,8 +9,19 @@ import {
     faRedo,
     faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
+import Countdown from 'react-countdown';
 
 export default function TestStart() {
+
+    const renderer = ({ minutes, seconds, completed }) => {
+        if (completed) {
+          // Once timer Completed 
+          // Redirect to Result Page  
+        } else {
+          // Render a countdown
+          return <span>{minutes}:{seconds}</span>;
+        }
+      };
     return (
         <>
             <Head title="Premium" />
@@ -19,9 +30,10 @@ export default function TestStart() {
                 {/* Left Side (spans 8 columns on large screens) */}
                 <div className="order-2 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl bg-white p-10">
                     <div className="flex justify-between items-center">
-                        <p className="text-zinc-400 text-sm">Question 4 / 15</p>
+                        <p className="text-zinc-400 text-sm">Question 1 / 15</p>
                         <h2 className="text-lg sm:text-sm text-gray-400 mb-2">
-                            <FontAwesomeIcon icon={faClock} className="mr-2" />29:49
+                            <FontAwesomeIcon icon={faClock} className="mr-2" />
+                              <Countdown date={Date.now() + 30*60*1000} renderer={renderer} />
                         </h2>
                     </div>
                     <div>
