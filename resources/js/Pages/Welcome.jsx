@@ -45,7 +45,7 @@ export default function Welcome({ auth, chapters }) {
                         <p className="text-base sm:text-lg font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
                             or pass the first time, guaranteed with
                             <span className="text-primary ml-1 underline underline-offset-1">
-                                Premium
+                            <Link href={route('premiumPage')}>Premium</Link>
                             </span>
                         </p>
                     </div>
@@ -510,7 +510,7 @@ export default function Welcome({ auth, chapters }) {
                     <p className=" text-base sm:text-lg font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
                         or pass the first time, guaranteed with
                         <span className="text-yellow-700 underline underline-offset-1">
-                            Premium
+                        <Link href={route('premiumPage')}>Premium</Link>
                         </span>
                     </p>
                 </div>
@@ -948,7 +948,7 @@ export default function Welcome({ auth, chapters }) {
                             <p className="text-base sm:text-lg font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500 mt-4">
                                 or pass the first time, guaranteed with
                                 <span className="underline underline-offset-1 text-primary">
-                                    Premium
+                                    <Link href={route('premiumPage')}>Premium</Link>
                                 </span>
                             </p>
                         </div>

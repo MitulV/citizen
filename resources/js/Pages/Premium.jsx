@@ -22,9 +22,9 @@ export default function TestStart() {
                         test simulations, study quizzes, and more.
                     </p>
                     <div className="flex flex-col md:flex-row items-center md:items-start mt-4">
-                    <button className="bg-primary text-white px-4 py-2 rounded-full mb-4 md:mr-4 md:mb-0 md:px-6 md:py-3">
-    Get all exam-like questions
-</button>
+                        <button className="bg-primary text-white px-4 py-2 rounded-full mb-4 md:mr-4 md:mb-0 md:px-6 md:py-3">
+                            Get all exam-like questions
+                        </button>
 
                         <div>
                             <img
@@ -72,13 +72,12 @@ export default function TestStart() {
                 </div>
 
                 <div className="lg:col-span-6 flex justify-center items-center rounded-xl p-6 md:p-10">
-    <img
-        src="/images/ea59b0c12c13b0daf792e11ef62864a7.png"
-        alt="Placeholder"
-        className="w-full md:max-w-md h-auto"
-    />
-</div>
-
+                    <img
+                        src="/images/ea59b0c12c13b0daf792e11ef62864a7.png"
+                        alt="Placeholder"
+                        className="w-full md:max-w-md h-auto"
+                    />
+                </div>
 
                 {/* Additional Content Below Columns */}
                 <div className="lg:col-span-12 flex flex-col items-center sm:justify-between">
@@ -87,122 +86,146 @@ export default function TestStart() {
                     </h1>
 
                     <p className="text-gray-600 mt-4 text-center lg:text-left flex flex-col lg:flex-row items-center lg:items-start">
-    Our customers rate us ExcellentRated{" "}
-    <div className="flex items-center">
-        <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
-        <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
-        <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
-        <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
-        <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
-    </div>
-    <span className="lg:ml-2">5 out of 5 based on over 200+ reviews.</span>
-</p>
-
+                        Our customers rate us ExcellentRated{" "}
+                        <div className="flex items-center">
+                            <FontAwesomeIcon
+                                icon={faStar}
+                                className="text-yellow-500"
+                            />
+                            <FontAwesomeIcon
+                                icon={faStar}
+                                className="text-yellow-500"
+                            />
+                            <FontAwesomeIcon
+                                icon={faStar}
+                                className="text-yellow-500"
+                            />
+                            <FontAwesomeIcon
+                                icon={faStar}
+                                className="text-yellow-500"
+                            />
+                            <FontAwesomeIcon
+                                icon={faStar}
+                                className="text-yellow-500"
+                            />
+                        </div>
+                        <span className="lg:ml-2">
+                            5 out of 5 based on over 200+ reviews.
+                        </span>
+                    </p>
 
                     <div className="container mx-auto px-2 py-4">
-    <div className="flex flex-wrap -mx-4">
-        <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
-            <div className="p-8 bg-white rounded-2xl shadow-md flex flex-col justify-between h-full text-black">
-                <div>
-                    <h1 className="text-xl font-bold mb-2">
-                        “Passed on my first attempt”
-                    </h1>
-                    <p className="text-sm mb-2 text-gray-500">
-                        I failed my Canadian citizenship test initially. I was shocked
-                        because I had read the book and lived in Canada for 8 years. It was
-                        very embarrassing. Then I found CitizenTestPrep. The platform helped
-                        me a lot to pass the exam.
-                    </p>
-                </div>
-                <div className="flex items-center mt-4">
-                    <img
-                        src="/images/review 3.png"
-                        alt="Profile Picture"
-                        className="w-12 h-12 rounded-full mr-4"
-                    />
-                    <div>
-                        <h2 className="text-base font-bold text-gray-600">
-                            Jillian McAllister
-                        </h2>
-                        <p className="text-sm text-gray-600">
-                            British Columbia
-                        </p>
-                    </div>
-                    <div className="flex ml-auto space-x-1">
-                        {/* Font Awesome stars */}
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <div className="flex flex-wrap -mx-4">
+                            <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
+                                <div className="p-8 bg-white rounded-2xl shadow-md flex flex-col justify-between h-full text-black">
+                                    <div>
+                                        <h1 className="text-xl font-bold mb-2">
+                                            “Passed on my first attempt”
+                                        </h1>
+                                        <p className="text-sm mb-2 text-gray-500">
+                                            I failed my Canadian citizenship
+                                            test initially. I was shocked
+                                            because I had read the book and
+                                            lived in Canada for 8 years. It was
+                                            very embarrassing. Then I found
+                                            CitizenTestPrep. The platform helped
+                                            me a lot to pass the exam.
+                                        </p>
+                                    </div>
+                                    <div className="flex items-center mt-4">
+                                        <img
+                                            src="/images/review 3.png"
+                                            alt="Profile Picture"
+                                            className="w-12 h-12 rounded-full mr-4"
+                                        />
+                                        <div>
+                                            <h2 className="text-base font-bold text-gray-600">
+                                                Jillian McAllister
+                                            </h2>
+                                            <p className="text-sm text-gray-600">
+                                                British Columbia
+                                            </p>
+                                        </div>
+                                        <div className="flex ml-auto space-x-1">
+                                            {/* Font Awesome stars */}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-        <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
-            <div className="p-8 bg-white rounded-lg shadow-md flex flex-col justify-between h-full text-black">
-                <div>
-                    <h1 className="text-xl font-bold mb-2">
-                        “Exactly What I Needed”
-                    </h1>
-                    <p className="text-sm mb-2 text-gray-500">
-                        If you want to prepare for the Canadian Citizenship test, this is
-                        the place to prepare. The chapter-wise practice tests were
-                        exactly what I needed to understand each section thoroughly.
-                    </p>
-                </div>
-                <div className="flex items-center mb-2">
-                    <img
-                        src="/images/review 2.png"
-                        alt="Profile Picture"
-                        className="w-12 h-12 rounded-full mr-4"
-                    />
-                    <div>
-                        <h2 className="text-base font-bold text-gray-600">
-                            Marcus Tremblay
-                        </h2>
-                        <p className="text-sm text-gray-600">
-                            Nova Scotia
-                        </p>
-                    </div>
-                    <div className="flex ml-auto space-x-1">
-                        {/* Font Awesome stars */}
-                    </div>
-                </div>
-            </div>
-        </div>
+                            <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
+                                <div className="p-8 bg-white rounded-lg shadow-md flex flex-col justify-between h-full text-black">
+                                    <div>
+                                        <h1 className="text-xl font-bold mb-2">
+                                            “Exactly What I Needed”
+                                        </h1>
+                                        <p className="text-sm mb-2 text-gray-500">
+                                            If you want to prepare for the
+                                            Canadian Citizenship test, this is
+                                            the place to prepare. The
+                                            chapter-wise practice tests were
+                                            exactly what I needed to understand
+                                            each section thoroughly.
+                                        </p>
+                                    </div>
+                                    <div className="flex items-center mb-2">
+                                        <img
+                                            src="/images/review 2.png"
+                                            alt="Profile Picture"
+                                            className="w-12 h-12 rounded-full mr-4"
+                                        />
+                                        <div>
+                                            <h2 className="text-base font-bold text-gray-600">
+                                                Marcus Tremblay
+                                            </h2>
+                                            <p className="text-sm text-gray-600">
+                                                Nova Scotia
+                                            </p>
+                                        </div>
+                                        <div className="flex ml-auto space-x-1">
+                                            {/* Font Awesome stars */}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-        <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
-            <div className="p-8 bg-white rounded-lg shadow-md flex flex-col justify-between h-full text-black">
-                <div>
-                    <h1 className="text-xl font-bold mb-2">
-                        “Best Resource For The Test”
-                    </h1>
-                    <p className="text-sm mb-2 text-gray-500">
-                        I failed the test in my first attempt. I was looking for an online
-                        platform to help me out. CitizenTestPrep premium is without a
-                        doubt the best resource for the Canadian Citizenship Test
-                    </p>
-                </div>
-                <div className="flex items-center mb-2">
-                    <img
-                        src="/images/review 1.png"
-                        alt="Profile Picture"
-                        className="w-12 h-12 rounded-full mr-4"
-                    />
-                    <div>
-                        <h2 className="text-base font-bold text-gray-600">
-                            Hitoshi Matsumoto
-                        </h2>
-                        <p className="text-sm text-gray-600">
-                            Saskatchewan
-                        </p>
+                            <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
+                                <div className="p-8 bg-white rounded-lg shadow-md flex flex-col justify-between h-full text-black">
+                                    <div>
+                                        <h1 className="text-xl font-bold mb-2">
+                                            “Best Resource For The Test”
+                                        </h1>
+                                        <p className="text-sm mb-2 text-gray-500">
+                                            I failed the test in my first
+                                            attempt. I was looking for an online
+                                            platform to help me out.
+                                            CitizenTestPrep premium is without a
+                                            doubt the best resource for the
+                                            Canadian Citizenship Test
+                                        </p>
+                                    </div>
+                                    <div className="flex items-center mb-2">
+                                        <img
+                                            src="/images/review 1.png"
+                                            alt="Profile Picture"
+                                            className="w-12 h-12 rounded-full mr-4"
+                                        />
+                                        <div>
+                                            <h2 className="text-base font-bold text-gray-600">
+                                                Hitoshi Matsumoto
+                                            </h2>
+                                            <p className="text-sm text-gray-600">
+                                                Saskatchewan
+                                            </p>
+                                        </div>
+                                        <div className="flex ml-auto space-x-1">
+                                            {/* Font Awesome stars */}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="flex ml-auto space-x-1">
-                        {/* Font Awesome stars */}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
                 </div>
             </section>
             <section className="lg:col-span-12 flex flex-col items-center justify-center px-6 md:px-16 lg:px-32 xl:px-64">
@@ -229,6 +252,83 @@ export default function TestStart() {
                     thousands of satisfied users who have aced their citizenship
                     tests with our proven study resources.
                 </p>
+            </section>
+            <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 md:p-10 bg-slate-50 mt-10">
+                {/* Left Column */}
+                <div className="lg:col-span-6 flex flex-col space-y-4 p-6 md:p-10">
+                    <p className="text-indigo-600 text-sm">How it works</p>
+
+                    <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold">
+                        It has never been so easy to pass the Canadian
+                        Citizenship test
+                    </h1>
+                    <p className="text-gray-600">
+                        Start driving sooner with our clear and stress-free
+                        approach..
+                    </p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 w-full">
+                        <div className="p-1">
+                            <h1 className="text-base text-indigo-600 font-semibold">
+                                STEP 1
+                            </h1>
+                            <h1 className="text-base font-semibold">
+                                Engaging quizzes
+                            </h1>
+                            <p className="text-gray-500 text-sm">
+                                Boost your confidence with quick, 5-minute
+                                quizzes that feel like mini-victories.
+                            </p>
+                        </div>
+                        <div className="p-1">
+                            <h1 className="text-base text-indigo-600 font-semibold">
+                                STEP 2
+                            </h1>
+                            <h1 className="text-base font-semibold">
+                                Personalized learning
+                            </h1>
+                            <p className="text-gray-500 text-sm">
+                                Focus on what matters. Ditch mind-numbing
+                                lectures, learn faster and retain more.
+                            </p>
+                        </div>
+                        <div className="p-1">
+                            <h1 className="text-base text-indigo-600 font-semibold">
+                                STEP 3
+                            </h1>
+                            <h1 className="text-base font-semibold">
+                                Real-time exam simulator
+                            </h1>
+                            <p className="text-gray-500 text-sm">
+                                Our advanced algorithm gauges your passing
+                                chances in real-time.
+                            </p>
+                        </div>
+                        <div className="p-1">
+                            <h1 className="text-base text-indigo-600 font-semibold">
+                                STEP 4
+                            </h1>
+                            <h1 className="text-base font-semibold">
+                                Ace your exam 🎉
+                            </h1>
+                            <p className="text-gray-500 text-sm">
+                                Feel confident and prepared on exam day, ready
+                                to pass with flying colors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Right Column */}
+                <div className="lg:col-span-6 flex justify-center items-center p-6 md:p-10 bg-slate-50">
+                    <div className="p-2 lg:p-4 bg-slate-100 rounded-xl">
+                        <img
+                            src="/images/result2.jpg"
+                            alt="Sample"
+                            className="rounded-xl w-60 h-72 lg:w-96 lg:h-96 md:w-72 md:h-72 sm:w-60 sm:h-60"
+                        />
+                    </div>
+                </div>
             </section>
         </>
     );
