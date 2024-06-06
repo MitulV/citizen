@@ -11,6 +11,7 @@ Route::get('/',[HomePageController::class,'index'])->name('homePage');
 Route::get('/premium',[PremiumPageController::class,'index'])->name('premiumPage');
 Route::get('/test-info/{chapter_id}',[TestController::class,'index'])->name('testInfoPage');
 Route::get('/test/{chapter_id}',[TestController::class,'testPage'])->name('testPage');
+Route::post('/test/validate',[TestController::class,'validateAnswer'])->name('validateAnswer');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

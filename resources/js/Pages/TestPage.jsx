@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "@/Components/Header";
-import { Head } from "@inertiajs/react";
+import { Head, router } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCheck,
@@ -11,47 +11,103 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Countdown from 'react-countdown';
 
-export default function TestStart() {
+export default function TestStart({ chapterId, question, nextQuestion, result, index, selectedAnswerId }) {
 
     const renderer = ({ minutes, seconds, completed }) => {
         if (completed) {
-            // Once timer Completed 
-            // Redirect to Result Page  
         } else {
-            // Render a countdown
             return <span>{minutes}:{seconds}</span>;
         }
     };
 
     const [questionResults, setQuestionResults] = useState(Array.from({ length: 15 }, (_, index) => ({
         index,
-        test_id: 1, // Example test ID, replace with actual logic
-        question_id: 1,
-        question_text: `Question text`,
-        explanation: `Explanation for question`,
-        result: 'pass', //['none', 'pass', 'fail'][Math.floor(Math.random() * 3)], // Randomly assigning 'none', 'pass', or 'fail' for demonstration
-        answer_text: [
-            { id: 1, text: `Answer 1 for question` },
-            { id: 2, text: `Answer 2 for question` },
-            { id: 3, text: `Answer 3 for question` },
-            { id: 4, text: `Answer 4 for question` },
-        ],
+        test_id: null,
+        question_id: null,
+        question_text: '',
+        explanation: '',
+        result: 'none', //['none', 'pass', 'fail'][Math.floor(Math.random() * 3)], // Randomly assigning 'none', 'pass', or 'fail' for demonstration
+        answer_text: [],
         selectedAnswerId: null,
+        isOptionSelected: false
     })));
 
-    const handleAnswerSelection = (questionIndex, answerId) => {
-        setQuestionResults((prevQuestionResults) => {
-            const updatedQuestionResults = [...prevQuestionResults];
-            updatedQuestionResults[questionIndex].selectedAnswerId = answerId;
-            return updatedQuestionResults;
-        });
+    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+    let currentQuestion = questionResults[currentQuestionIndex];
+
+    useEffect(() => {
+        if (question) {
+            setQuestionResults(prevResults => {
+                const newResults = [...prevResults];
+                newResults[0] = {
+                    ...newResults[0],
+                    test_id: question.test_id,
+                    question_id: question.id,
+                    question_text: question.text,
+                    explanation: question.explanation || '',
+                    answer_text: question.answers.map(answer => ({
+                        id: answer.id,
+                        text: answer.text
+                    })),
+                };
+                return newResults;
+            });
+
+        }
+    }, [question]);
+
+    const handleAnswerSelection = (questionId, answerId, testId, chapterId, index) => {
+        currentQuestion.isOptionSelected = true;
+        router.post(`/test/validate`, { questionId, answerId, testId, chapterId, index }, { preserveState: true, replace: true, preserveScroll: true })
+
     };
 
-    const currentQuestionIndex = 0;
-    const currentQuestion = questionResults[currentQuestionIndex];
+    const handleNextQuestion = (nextQuestion) => {
+        if (currentQuestionIndex >= 15) {
+            return;
+        }
+
+        if (questionResults[currentQuestionIndex + 1].result == 'none') {
+            setQuestionResults(prevResults => {
+                const newResults = [...prevResults];
+                newResults[currentQuestionIndex + 1] = {
+                    ...newResults[currentQuestionIndex + 1],
+                    test_id: nextQuestion.test_id,
+                    question_id: nextQuestion.id,
+                    question_text: nextQuestion.text,
+                    explanation: nextQuestion.explanation || '',
+                    answer_text: nextQuestion.answers.map(answer => ({
+                        id: answer.id,
+                        text: answer.text
+                    })),
+                };
+                return newResults;
+            });
+        }
+        currentQuestion = questionResults[currentQuestionIndex + 1];
+        setCurrentQuestionIndex(currentQuestionIndex + 1);
+    };
+
+    const handlePreviousQuestion = () => {
+        if (currentQuestionIndex > 0) {
+            currentQuestion = questionResults[currentQuestionIndex - 1];
+            setCurrentQuestionIndex(currentQuestionIndex - 1);
+        }
+
+    }
 
 
+    useEffect(() => {
+        if (result !== undefined && index !== undefined) {
+            setQuestionResults(prevResults => {
+                const newResults = [...prevResults];
+                newResults[index].result = result;
+                newResults[index].selectedAnswerId = selectedAnswerId;
+                return newResults;
+            });
 
+        }
+    }, [result, index]);
 
 
     return (
@@ -62,7 +118,7 @@ export default function TestStart() {
                 {/* Left Side (spans 8 columns on large screens) */}
                 <div className="order-2 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl bg-white p-10">
                     <div className="flex justify-between items-center">
-                        <p className="text-zinc-400 text-sm">Question 1 / 15</p>
+                        <p className="text-zinc-400 text-sm">Question {currentQuestionIndex + 1} / 15</p>
                         <h2 className="text-lg sm:text-sm text-gray-400 mb-2">
                             <FontAwesomeIcon icon={faClock} className="mr-2" />
                             <Countdown date={Date.now() + 30 * 60 * 1000} renderer={renderer} />
@@ -73,48 +129,64 @@ export default function TestStart() {
                     </div>
                     <div>
                         <div className="mt-2 space-y-2">
-                            {currentQuestion.answer_text.map((answer) => (
-                                <label
-                                    key={answer.id}
-                                    className={`flex items-center space-x-2 text-sm px-6 py-2 rounded-xl flex-1 hover:bg-gray-200 ${answer.id === currentQuestion.selectedAnswerId && currentQuestion.result === 'pass' ? 'border border-lime-700' :
-                                            answer.id === currentQuestion.selectedAnswerId && currentQuestion.result === 'fail' ? 'border border-red-500' :
-                                                'border border-gray-100'
-                                        }`}
-                                    onClick={() => handleAnswerSelection(currentQuestionIndex, answer.id)}
-                                >
-                                    <div className="relative">
-                                        <input type="radio" name={`answer_${currentQuestionIndex}`} className="hidden peer" />
-                                        <div className={`w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:bg-${answer.id === currentQuestion.selectedAnswerId && currentQuestion.result === 'pass' ? 'green' :
-                                                answer.id === currentQuestion.selectedAnswerId && currentQuestion.result === 'fail' ? 'red' :
-                                                    'gray'
-                                            }-500`}>
-                                            {(currentQuestion.result === 'none' || currentQuestion.result === 'pass') ? (
-                                                <FontAwesomeIcon icon={faCheck} className="text-white peer-checked:inline" />
-                                            ) : (
-                                                <FontAwesomeIcon icon={faTimes} className="text-white peer-checked:inline" />
-                                            )}
-                                        </div>
-                                    </div>
-                                    <span>{answer.text}</span>
-                                </label>
-                            ))}
+                        {currentQuestion.answer_text.map((answer, answerIndex) => {
+    const isSelected = answer.id === currentQuestion.selectedAnswerId;
+    const isPass = isSelected && currentQuestion.result === 'pass';
+    const isFail = isSelected && currentQuestion.result === 'fail';
+    const isDisabled = questionResults[currentQuestionIndex].isOptionSelected;
+
+    return (
+        <label
+            key={answer.id}
+            className={`flex items-center space-x-2 text-sm px-6 py-2 rounded-xl flex-1 hover:bg-gray-200 ${isPass ? 'border border-lime-700' : isFail ? 'border border-red-500' : 'border border-gray-100'}`}
+            onClick={() => {
+                if (!isDisabled) {
+                    handleAnswerSelection(currentQuestion.question_id, answer.id, currentQuestion.test_id, currentQuestion.chapterId, currentQuestion.index);
+                }
+            }}
+        >
+            <div className="relative">
+                <input
+                    type="radio"
+                    name={`answer_${currentQuestionIndex}`}
+                    className="hidden peer"
+                    defaultChecked={isSelected}
+                    disabled={isDisabled}
+                />
+                <div className={`w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:bg-${isPass ? 'green' : isFail ? 'red' : 'gray'}-500`}>
+                    {isPass ? (
+                        <FontAwesomeIcon icon={faCheck} className="text-green-500" />
+                    ) : isFail ? (
+                        <FontAwesomeIcon icon={faTimes} className="text-red-500" />
+                    ) : null}
+                </div>
+            </div>
+            <span>{answer.text}</span>
+        </label>
+    );
+})}
+
                         </div>
                     </div>
                     <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4">
-                        <button className="bg-primary text-white px-8 py-2 rounded-full flex-1">
+                        <button onClick={() => handlePreviousQuestion(nextQuestion)} className="bg-primary text-white px-8 py-2 rounded-full flex-1">
                             Previous
                         </button>
-                        <button className="bg-primary text-white px-8 py-2 rounded-full flex-1">
+                        <button onClick={() => handleNextQuestion(nextQuestion)} className="bg-primary text-white px-8 py-2 rounded-full flex-1">
                             Next
                         </button>
                     </div>
-                    <h1 className="text-lg sm:text-lg font-bold mb-4">
-                        Explanation
-                    </h1>
-                    <p className="text-gray-600 text-sm bg-slate-50 p-2 rounded-lg">
-                        Ensuring the accuracy and quality of our practice tests is paramount. Learn more about our rigorous standards in our{" "}
-                        <span className="text-primary underline underline-offset-1">Quality Assurance Guidelines.</span>
-                    </p>
+                    {currentQuestion.explanation &&
+                        <div>
+                            <h1 className="text-lg sm:text-lg font-bold mb-4">
+                                Explanation
+                            </h1>
+                            <p className="text-gray-600 text-sm bg-slate-50 p-2 rounded-lg">
+                                Ensuring the accuracy and quality of our practice tests is paramount. Learn more about our rigorous standards in our{" "}
+                                <span className="text-primary underline underline-offset-1">Quality Assurance Guidelines.</span>
+                            </p>
+                        </div>
+                    }
                 </div>
 
                 {/* Right Side (spans 4 columns on large screens) */}
