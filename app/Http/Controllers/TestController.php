@@ -65,7 +65,6 @@ class TestController extends Controller
 
     public function testResult(Request $request)
     {
-
         $questionResults = $request->input('questionResults');
         $totalQuestions = count($questionResults);
         $totalCorrect = 0;
@@ -83,14 +82,15 @@ class TestController extends Controller
 
         // Calculate percentage
         $percentage = round(($totalCorrect / $totalQuestions) * 100);
-        
+
         return Inertia::render('TestResult', [
             'result' => [
-            'totalQuestions' => $totalQuestions,
-            'totalCorrect' => $totalCorrect,
-            'totalWrong' => $totalWrong,
-            'percentage' => $percentage,
-            ]
+                'totalQuestions' => $totalQuestions,
+                'totalCorrect' => $totalCorrect,
+                'totalWrong' => $totalWrong,
+                'percentage' => $percentage,
+            ],
+            'totalTimeTaken' => $request->input('totalTimeTaken'),
         ]);
     }
 }

@@ -15,6 +15,14 @@ export default function TestStart({ chapterId, question, nextQuestion, result, i
 
     const renderer = ({ minutes, seconds, completed }) => {
         if (completed) {
+            const totalTimeTaken = (30 * 60 * 1000) - (minutes * 60 * 1000 + seconds * 1000); // Calculate total time taken in milliseconds
+        const totalTimeTakenInMinutes = Math.floor(totalTimeTaken / (60 * 1000)); // Convert total time taken to minutes
+        const totalTimeTakenInSeconds = Math.floor((totalTimeTaken % (60 * 1000)) / 1000); // Convert total time taken to seconds
+
+            router.post(route('testResultPage'), {questionResults, totalTimeTaken: {
+                minutes: totalTimeTakenInMinutes,
+                seconds: totalTimeTakenInSeconds
+            }}, { preserveState: false, replace: true });
             return <span>Time's up!</span>;
         } else {
             return <span>{minutes}:{seconds}</span>;
@@ -119,7 +127,18 @@ export default function TestStart({ chapterId, question, nextQuestion, result, i
     };
 
     const handleSubmit = () => {
-        router.post(route('testResultPage'), {questionResults}, { preserveState: false, replace: true });
+        const now = Date.now();
+        const totalTimeTaken = now - initialTime;
+        const totalTimeTakenInMinutes = Math.floor(totalTimeTaken / (60 * 1000));
+        const totalTimeTakenInSeconds = Math.floor((totalTimeTaken % (60 * 1000)) / 1000);
+
+        router.post(route('testResultPage'), {
+            questionResults,
+            totalTimeTaken: {
+                minutes: totalTimeTakenInMinutes,
+                seconds: totalTimeTakenInSeconds
+            }
+        }, { preserveState: false, replace: true });
     };
     
 

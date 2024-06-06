@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "@/Components/Header";
-import { Head } from "@inertiajs/react";
+import { Head, router } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCheck,
@@ -12,7 +12,11 @@ import {
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-export default function TestStart({result}) {
+export default function TestStart({result,totalTimeTaken}) {
+
+    const handleRestart = () => {
+        router.post(`/test/${chapterId}`, {}, { preserveState: false, replace: true, })
+    };
 
     const pathColor = result.percentage < 85 ? "#FF0000" : "#3E9330";
     const message = result.percentage < 85 ? 'Not enough to pass :-(' : 'Great. You Passed!';
@@ -103,7 +107,7 @@ export default function TestStart({result}) {
                                     className="text-zinc-500"
                                 />
                                 <span className="text-zinc-500">
-                                    2 minutes 2 seconds
+                                    {totalTimeTaken.minutes} minutes {totalTimeTaken.seconds} seconds
                                 </span>
                             </div>
                             <button className="bg-primary text-white px-6 py-2 rounded-full mt-4 w-full sm:w-auto ml-10">
@@ -123,7 +127,7 @@ export default function TestStart({result}) {
                             <div className="border p-6 rounded-2xl bg-white">
                                 <h1 className="text-xl font-bold">Restart this test</h1>
                                 <p>Want to revisit the same questions you just did? Take this test once again.</p>
-                                <h2 className="text-primary underline underline-offset-1">Restart</h2>
+                                <h2 onClick={handleRestart} className="text-primary underline underline-offset-1">Restart</h2>
                             </div>
                             {/* Card 2 */}
                             <div className="border p-6 rounded-2xl bg-white">
