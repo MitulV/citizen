@@ -10,8 +10,8 @@ use Inertia\Inertia;
 Route::get('/',[HomePageController::class,'index'])->name('homePage');
 Route::get('/premium',[PremiumPageController::class,'index'])->name('premiumPage');
 Route::get('/test-info/{chapter_id}',[TestController::class,'index'])->name('testInfoPage');
-Route::get('/test/{chapter_id}',[TestController::class,'testPage'])->name('testPage');
-Route::post('/test/validate',[TestController::class,'validateAnswer'])->name('validateAnswer');
+Route::post('/test/{chapterId}',[TestController::class,'testPage'])->name('testPage');
+Route::post('/test-results',[TestController::class,'testResult'])->name('testResultPage');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

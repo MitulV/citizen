@@ -11,14 +11,17 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Countdown from 'react-countdown';
 
-export default function TestStart({ chapterId, question, nextQuestion, result, index, selectedAnswerId }) {
+export default function TestStart({ chapterId, question, nextQuestion, result, index, selectedAnswerId, explanation }) {
 
     const renderer = ({ minutes, seconds, completed }) => {
         if (completed) {
+            return <span>Time's up!</span>;
         } else {
             return <span>{minutes}:{seconds}</span>;
         }
     };
+
+    const [initialTime, setInitialTime] = useState(Date.now());
 
     const [questionResults, setQuestionResults] = useState(Array.from({ length: 15 }, (_, index) => ({
         index,
@@ -56,14 +59,14 @@ export default function TestStart({ chapterId, question, nextQuestion, result, i
         }
     }, [question]);
 
-    const handleAnswerSelection = (questionId, answerId, testId, chapterId, index) => {
+    const handleAnswerSelection = (questionId, answerId, testId, index) => {
         currentQuestion.isOptionSelected = true;
-        router.post(`/test/validate`, { questionId, answerId, testId, chapterId, index }, { preserveState: true, replace: true, preserveScroll: true })
+        router.post(`/test/${chapterId}`, { questionId, answerId, testId, chapterId, index }, { preserveState: true, replace: true, preserveScroll: true })
 
     };
 
     const handleNextQuestion = (nextQuestion) => {
-        if (currentQuestionIndex >= 15) {
+        if (currentQuestionIndex >= 14) {
             return;
         }
 
@@ -103,12 +106,22 @@ export default function TestStart({ chapterId, question, nextQuestion, result, i
                 const newResults = [...prevResults];
                 newResults[index].result = result;
                 newResults[index].selectedAnswerId = selectedAnswerId;
+                newResults[index].explanation = explanation;
                 return newResults;
             });
 
         }
     }, [result, index]);
 
+
+    const handleReset = () => {
+        router.post(`/test/${chapterId}`, {}, { preserveState: false, replace: true, })
+    };
+
+    const handleSubmit = () => {
+        router.post(route('testResultPage'), {questionResults}, { preserveState: false, replace: true });
+    };
+    
 
     return (
         <>
@@ -121,7 +134,7 @@ export default function TestStart({ chapterId, question, nextQuestion, result, i
                         <p className="text-zinc-400 text-sm">Question {currentQuestionIndex + 1} / 15</p>
                         <h2 className="text-lg sm:text-sm text-gray-400 mb-2">
                             <FontAwesomeIcon icon={faClock} className="mr-2" />
-                            <Countdown date={Date.now() + 30 * 60 * 1000} renderer={renderer} />
+                            <Countdown date={initialTime + 30 * 60 * 1000} renderer={renderer} />
                         </h2>
                     </div>
                     <div>
@@ -129,42 +142,42 @@ export default function TestStart({ chapterId, question, nextQuestion, result, i
                     </div>
                     <div>
                         <div className="mt-2 space-y-2">
-                        {currentQuestion.answer_text.map((answer, answerIndex) => {
-    const isSelected = answer.id === currentQuestion.selectedAnswerId;
-    const isPass = isSelected && currentQuestion.result === 'pass';
-    const isFail = isSelected && currentQuestion.result === 'fail';
-    const isDisabled = questionResults[currentQuestionIndex].isOptionSelected;
+                            {currentQuestion.answer_text.map((answer, answerIndex) => {
+                                const isSelected = answer.id === currentQuestion.selectedAnswerId;
+                                const isPass = isSelected && currentQuestion.result === 'pass';
+                                const isFail = isSelected && currentQuestion.result === 'fail';
+                                const isDisabled = questionResults[currentQuestionIndex].isOptionSelected;
 
-    return (
-        <label
-            key={answer.id}
-            className={`flex items-center space-x-2 text-sm px-6 py-2 rounded-xl flex-1 hover:bg-gray-200 ${isPass ? 'border border-lime-700' : isFail ? 'border border-red-500' : 'border border-gray-100'}`}
-            onClick={() => {
-                if (!isDisabled) {
-                    handleAnswerSelection(currentQuestion.question_id, answer.id, currentQuestion.test_id, currentQuestion.chapterId, currentQuestion.index);
-                }
-            }}
-        >
-            <div className="relative">
-                <input
-                    type="radio"
-                    name={`answer_${currentQuestionIndex}`}
-                    className="hidden peer"
-                    defaultChecked={isSelected}
-                    disabled={isDisabled}
-                />
-                <div className={`w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:bg-${isPass ? 'green' : isFail ? 'red' : 'gray'}-500`}>
-                    {isPass ? (
-                        <FontAwesomeIcon icon={faCheck} className="text-green-500" />
-                    ) : isFail ? (
-                        <FontAwesomeIcon icon={faTimes} className="text-red-500" />
-                    ) : null}
-                </div>
-            </div>
-            <span>{answer.text}</span>
-        </label>
-    );
-})}
+                                return (
+                                    <label
+                                        key={answer.id}
+                                        className={`flex items-center space-x-2 text-sm px-6 py-2 rounded-xl flex-1 hover:bg-gray-200 ${isPass ? 'border border-lime-700' : isFail ? 'border border-red-500' : 'border border-gray-100'}`}
+                                        onClick={() => {
+                                            if (!isDisabled) {
+                                                handleAnswerSelection(currentQuestion.question_id, answer.id, currentQuestion.test_id, currentQuestion.index);
+                                            }
+                                        }}
+                                    >
+                                        <div className="relative">
+                                            <input
+                                                type="radio"
+                                                name={`answer_${currentQuestionIndex}`}
+                                                className="hidden peer"
+                                                defaultChecked={isSelected}
+                                                disabled={isDisabled}
+                                            />
+                                            <div className={`w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:bg-${isPass ? 'green' : isFail ? 'red' : 'gray'}-500`}>
+                                                {isPass ? (
+                                                    <FontAwesomeIcon icon={faCheck} className="text-green-500" />
+                                                ) : isFail ? (
+                                                    <FontAwesomeIcon icon={faTimes} className="text-red-500" />
+                                                ) : null}
+                                            </div>
+                                        </div>
+                                        <span>{answer.text}</span>
+                                    </label>
+                                );
+                            })}
 
                         </div>
                     </div>
@@ -172,8 +185,15 @@ export default function TestStart({ chapterId, question, nextQuestion, result, i
                         <button onClick={() => handlePreviousQuestion(nextQuestion)} className="bg-primary text-white px-8 py-2 rounded-full flex-1">
                             Previous
                         </button>
-                        <button onClick={() => handleNextQuestion(nextQuestion)} className="bg-primary text-white px-8 py-2 rounded-full flex-1">
-                            Next
+                        <button onClick={() => {
+                            if (currentQuestionIndex >= 14) {
+                                handleSubmit();
+                            } else {
+                                handleNextQuestion(nextQuestion);
+                            }
+                        }}
+                            className="bg-primary text-white px-8 py-2 rounded-full flex-1">
+                            {currentQuestionIndex >= 14 ? 'Submit' : 'Next'}
                         </button>
                     </div>
                     {currentQuestion.explanation &&
@@ -182,8 +202,7 @@ export default function TestStart({ chapterId, question, nextQuestion, result, i
                                 Explanation
                             </h1>
                             <p className="text-gray-600 text-sm bg-slate-50 p-2 rounded-lg">
-                                Ensuring the accuracy and quality of our practice tests is paramount. Learn more about our rigorous standards in our{" "}
-                                <span className="text-primary underline underline-offset-1">Quality Assurance Guidelines.</span>
+                                {currentQuestion.explanation}
                             </p>
                         </div>
                     }
@@ -224,10 +243,13 @@ export default function TestStart({ chapterId, question, nextQuestion, result, i
                             <FontAwesomeIcon icon={faChevronLeft} className="mr-4 text-sm" />
                             All Tests
                         </button>
-                        <button className="bg-white text-black border border-primary px-6 py-2 rounded-full flex-1 flex items-center justify-center">
+
+                        <button onClick={handleReset} className="bg-white text-black border border-primary px-6 py-2 rounded-full flex-1 flex items-center justify-center">
                             <FontAwesomeIcon icon={faRedo} className="mr-4 text-sm" />
                             Restart
                         </button>
+
+
                     </div>
                 </div>
 

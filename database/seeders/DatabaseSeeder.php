@@ -37,7 +37,7 @@ class DatabaseSeeder extends Seeder
                 });
 
                 $tests->each(function ($test) {
-                    $questions = Question::factory()->count(5)->create(['test_id' => $test->id]);
+                    $questions = Question::factory()->count(15)->create(['test_id' => $test->id]);
 
                     $questions->each(function ($question) {
                         $answers = Answer::factory()->count(4)->create(['question_id' => $question->id]);

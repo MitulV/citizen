@@ -97,7 +97,7 @@ export default function TestInfo({chapterId}) {
                             </span>
                         </p>
                         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
-                            <Link href={route('testPage',{chapter_id:chapterId})} as="button" className="bg-primary text-white px-8 py-2 rounded-full flex-1">Start Now</Link>
+                            <Link href={route('testPage',{chapterId})} method="post" as="button" className="bg-primary text-white px-8 py-2 rounded-full flex-1">Start Now</Link>
                             
                             <button className="bg-white text-balck border border-primary px-6 py-2 rounded-full flex-1">
                             Unlock All Chapters

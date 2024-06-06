@@ -12,7 +12,10 @@ import {
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-export default function TestStart() {
+export default function TestStart({result}) {
+
+    const pathColor = result.percentage < 85 ? "#FF0000" : "#3E9330";
+    const message = result.percentage < 85 ? 'Not enough to pass :-(' : 'Great. You Passed!';
     return (
         <>
             <Head title="Premium" />
@@ -73,18 +76,18 @@ export default function TestStart() {
                         {/* Progress circle */}
                         <div className="w-40 h-40">
                             <CircularProgressbar
-                                value={85.71}
-                                text={`${85.71}%`}
+                                value={result.percentage}
+                                text={`${result.percentage}%`}
                                 strokeWidth={8}
                                 styles={buildStyles({
                                     textColor: "black",
-                                    pathColor: "#3E9330",
+                                    pathColor: pathColor,
                                 })}
                             />
                         </div>
                         <div className="flex flex-col ">
                             <h1 className="text-3xl font-bold text-lime-700 p-2 ml-10">
-                                Great. You Passed!
+                                {message}
                             </h1>
                             <p className="text-zinc-600 p-2 ml-10">
                                 There are more practice questions left to go,
@@ -92,9 +95,9 @@ export default function TestStart() {
                             </p>
                             <div className="flex items-center space-x-4 p-2 ml-10">
                                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                                <span className="text-zinc-500">12 Correct</span>
+                                <span className="text-zinc-500">{result.totalCorrect} Correct</span>
                                 <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                                <span className="text-zinc-500">2 Wrong</span>
+                                <span className="text-zinc-500">{result.totalWrong} Wrong</span>
                                 <FontAwesomeIcon
                                     icon={faClock}
                                     className="text-zinc-500"

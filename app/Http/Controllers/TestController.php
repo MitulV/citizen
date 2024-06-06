@@ -18,52 +18,79 @@ class TestController extends Controller
         ]);
     }
 
-    public function testPage($chapter_id)
+    public function testPage(Request $request, $chapterId)
     {
-        $test = Test::where('chapter_id', $chapter_id)
-            ->select('id', 'chapter_id', 'name')
-            ->first();
+        if ($request->filled('questionId') && $request->filled('answerId') && $request->filled('testId')) {
+            // Answer validation logic
+            $questionId = $request->input('questionId');
+            $answerId = $request->input('answerId');
+            $testId = $request->input('testId');
+            $index = $request->input('index');
 
-        $question = Question::where('test_id', $test->id)
-            ->with('answers')
-            ->select('id', 'text', 'test_id')
-            ->first();
+            $question = Question::where('id', $questionId)->first();
+            $result = $question->correct_answer_id == $answerId ? 'pass' : 'fail';
 
-        return Inertia::render('TestPage', [
-            'chapterId' => $chapter_id,
-            'question' => $question
-        ]);
+            $nextQuestion = Question::where('test_id', $testId)
+                ->where('id', '>', $questionId)
+                ->with('answers')
+                ->select('id', 'text', 'test_id')
+                ->first();
+
+            return Inertia::render('TestPage', [
+                'index' => $index,
+                'chapterId' => $chapterId,
+                'nextQuestion' => $nextQuestion,
+                'result' => $result,
+                'selectedQuestionId' => $questionId,
+                'selectedAnswerId' => $answerId,
+                'explanation' => $question->explanation
+            ]);
+        } else {
+            // Initial page logic
+            $test = Test::where('chapter_id', $chapterId)
+                ->select('id', 'chapter_id', 'name')
+                ->first();
+
+            $question = Question::where('test_id', $test->id)
+                ->with('answers')
+                ->select('id', 'text', 'test_id')
+                ->first();
+
+            return Inertia::render('TestPage', [
+                'chapterId' => $chapterId,
+                'question' => $question
+            ]);
+        }
     }
 
-    public function validateAnswer(Request $request)
+    public function testResult(Request $request)
     {
-        $questionId = $request->input('questionId');
-        $answerId = $request->input('answerId');
-        $testId = $request->input('testId');
-        $chapter_id = $request->input('chapterId');
-        $index = $request->input('index');
 
-        $question = Question::where('id', $questionId)->first();
+        $questionResults = $request->input('questionResults');
+        $totalQuestions = count($questionResults);
+        $totalCorrect = 0;
+        $totalWrong = 0;
 
-        $result = $question->correct_answer_id == $answerId ? 'pass' : 'fail';
+        // Iterate over each question result
+        foreach ($questionResults as $result) {
+            // Increment correct or wrong counters based on result
+            if ($result['result'] === 'pass') {
+                $totalCorrect++;
+            } elseif ($result['result'] === 'fail') {
+                $totalWrong++;
+            }
+        }
 
-        $nextQuestion = Question::where('test_id', $testId)
-            ->where('id', '>', $questionId)
-            ->with('answers')
-            ->select('id', 'text', 'test_id')
-            ->first();
-
-        return Inertia::render('TestPage', [
-            'index' => $index,
-            'chapterId' => $chapter_id,
-            'nextQuestion' => $nextQuestion,
-            'result' => $result,
-            'selectedQuestionId' => $questionId,
-            'selectedAnswerId' => $answerId
+        // Calculate percentage
+        $percentage = round(($totalCorrect / $totalQuestions) * 100);
+        
+        return Inertia::render('TestResult', [
+            'result' => [
+            'totalQuestions' => $totalQuestions,
+            'totalCorrect' => $totalCorrect,
+            'totalWrong' => $totalWrong,
+            'percentage' => $percentage,
+            ]
         ]);
     }
-
-
-
-
 }
