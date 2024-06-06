@@ -67,7 +67,7 @@ export default function TestStart() {
                 </div>
 
                 {/* Right Side (spans 12 columns on small screens, 8 columns on large screens) */}
-                <div className="order-1 lg:order-2 lg:col-span-8 flex flex-col space-y-10 md:space-y-4 rounded-2xl bg-white p-6 md:p-10 h-64">
+                <div className="order-1 lg:order-2 lg:col-span-8 flex flex-col space-y-10 md:space-y-8 rounded-2xl bg-white  md:p-10 h-64">
                     {/* First Section on Right */}
                     <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 ">
                         {/* Progress circle */}
