@@ -9,45 +9,11 @@ import {
     faRedo,
     faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
-
-const RadialProgress = ({ percentage }) => {
-    const radius = 80;
-    const stroke = 10;
-    const normalizedRadius = radius - stroke * 2;
-    const circumference = normalizedRadius * 2 * Math.PI;
-    const strokeDashoffset = circumference - (percentage / 100) * circumference;
-
-    return (
-        <div className="relative h-100 h-100">
-            <svg height={radius * 2} width={radius * 2}>
-                <circle
-                    stroke="gray"
-                    fill="transparent"
-                    strokeWidth={stroke}
-                    strokeDasharray={circumference + ' ' + circumference}
-                    style={{ strokeDashoffset: 0 }}
-                    r={normalizedRadius}
-                    cx={radius}
-                    cy={radius}
-                />
-                <circle
-                    stroke="green"
-                    fill="transparent"
-                    strokeWidth={stroke}
-                    strokeDasharray={circumference + ' ' + circumference}
-                    style={{ strokeDashoffset }}
-                    r={normalizedRadius}
-                    cx={radius}
-                    cy={radius}
-                    strokeLinecap="round"
-                />
-            </svg>
-            <div className="absolute inset-0 flex items-center justify-center text-black text-lg font-bold">
-                {percentage}%
-            </div>
-        </div>
-    );
-};
+import {
+    CircularProgressbar,
+    buildStyles
+} from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 export default function TestStart() {
     return (
@@ -75,7 +41,7 @@ export default function TestStart() {
                         </li>
                     </ul>
                     <div className="flex flex-col items-center mt-4">
-                    <img
+                        <img
                             src="/images/testresult5.png"
                             alt="Placeholder"
                             className="w-60 h-80 gap-0 rounded-tl-[24px] rounded-tr-none rounded-br-none rounded-bl-none"
@@ -88,8 +54,11 @@ export default function TestStart() {
                 <div className="order-1 md:h-64 lg:order-2 lg:col-span-8 flex flex-col space-y-4 border rounded-xl bg-white p-6 md:p-10">
                     <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
                         {/* Progress circle */}
-                        <RadialProgress percentage={85.71} /> {/* Using the RadialProgress component */}
-                        {/* Stats */}
+                        <CircularProgressbar value={85.71} text={`${85.71}%`} strokeWidth={5} 
+                        styles={buildStyles({
+                            textColor: "black",
+                            pathColor: "green",
+                        })} />;
                         <div className="flex flex-col">
                             <h1 className="text-xl font-bold">Great. You passed!</h1>
                             <p className="text-gray-600">There are more Practice questions left to go , Unlock 600+ practice questions today</p>
