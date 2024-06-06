@@ -11,49 +11,46 @@ use Illuminate\Support\Facades\Route;
 class TestController extends Controller
 {
 
-    public function index($chapter_id){
+    public function index($chapter_id)
+    {
         return Inertia::render('TestInfo', [
             'chapterId' => $chapter_id
         ]);
     }
 
-    public function testPage($chapter_id){
-        
-        return Inertia::render('TestPage', [
-            'chapterId' => $chapter_id
-        ]);
-    }
-
-    public function getQuestionsForChapter(Request $request)
+    public function testPage($chapter_id)
     {
-        // Validate request
-        $request->validate([
-            'chapter_id' => 'required|exists:chapters,id',
-        ]);
+        $test = Test::where('chapter_id', $chapter_id)
+            ->select('id', 'chapter_id', 'name')
+            ->first();
 
-        // Retrieve test for the given chapter
-        $test = Test::where('chapter_id', $request->chapter_id)->first();
+        if ($test) {
+            $questions = Question::where('test_id', $test->id)
+                ->with(['answers' => function ($query) {
+                    $query->select('id', 'text', 'question_id');
+                }])
+                ->get(['id', 'text', 'test_id']);
+        }
 
-        // Retrieve questions for the test
-        $questions = $test->questions()->with('answers')->get();
-
-        // Generate a temporary guest user token
-        $guest_token = uniqid('guest_', true);
-
-         // Store test data and guest token in session
-         $request->session()->put('guest_test_' . $guest_token, [
-            'test_id' => $test->id,
-            'questions' => $questions,
-            'current_question_index' => 0,
-            'answers' => [],
-        ]);
-
-        // Return questions data along with guest token
-        return response()->json([
-            'guest_token' => $guest_token,
-            'questions' => $questions,
+        return Inertia::render('TestPage', [
+            'chapterId' => $chapter_id,
+            'questions' => $questions
         ]);
     }
+
+    public function fetchNextQuestion($testId, $questionId)
+    {
+        $nextQuestion = Question::where('test_id', $testId)
+            ->where('id', '>', $questionId)
+            ->with(['answers' => function ($query) {
+                $query->select('id', 'text', 'question_id');
+            }])
+            ->orderBy('id')
+            ->first(['id', 'text', 'test_id']);
+
+        return response()->json($nextQuestion);
+    }
+
 
 
     public function submitAnswerAndGetNextQuestion(Request $request)
