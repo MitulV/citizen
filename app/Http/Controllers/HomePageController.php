@@ -15,7 +15,7 @@ class HomePageController extends Controller
         $chapters = Chapter::all();
         
         
-        return Inertia::render('Welcome', [
+        return Inertia::render('TestResult', [
             'canLogin' => Route::has('login'),
             'canRegister' => Route::has('register'),
             'chapters' => $chapters
