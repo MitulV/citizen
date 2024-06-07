@@ -62,7 +62,7 @@ export default function TestStart({result,totalTimeTaken}) {
                     </ul>
                     <div className="flex flex-col items-center mt-4">
                         <img
-                            src="/images/testresult5.png"
+                            src="/images/Group 1753.png"
                             alt="Placeholder"
                             className="w-60 h-80 rounded-tl-[24px] rounded-tr-none rounded-br-none rounded-bl-none"
                         />
