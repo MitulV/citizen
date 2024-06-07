@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('image')->nullable();
             $table->text('info')->nullable();
+            $table->integer('step')->nullable();
             $table->timestamps();
         });
         

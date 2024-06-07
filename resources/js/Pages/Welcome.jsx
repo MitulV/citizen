@@ -114,7 +114,7 @@ export default function Welcome({ auth, chapters }) {
 
                 <section className="bg-gray-100 py-2">
                     <Link href={route('testInfoPage',{chapter_id: 1})}>
-                        <div className="container mx-auto px-4 flex flex-col md:flex-row">
+                        <div className="container mx-auto my-2 px-4 flex flex-col md:flex-row">
                             <div className="md:w-1/8 pl-2">
                                 <img
                                     src="/images/chap 1.png"
