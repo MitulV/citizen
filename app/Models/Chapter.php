@@ -9,7 +9,7 @@ class Chapter extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['image', 'name', 'title', 'description', 'questions', 'mistakes','step'];
+    protected $fillable = ['image', 'name', 'title', 'description', 'questions', 'mistakes','step','is_free'];
 
     public function topics()
     {

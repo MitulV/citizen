@@ -17,7 +17,7 @@ export default function HomePage({ auth, chapters }) {
             <div>
                 <Header />
 
-                <section className="bg-gray-100 py-8 sm:py-16 flex flex-col items-center">
+                <section className="bg-slate-50 py-8 sm:py-16 flex flex-col items-center">
                     <div className="container mx-auto px-4">
                         <h1 className="text-3xl sm:text-5xl font-black leading-tight tracking-wide text-center custom-heading px-4 sm:px-20">
                             Achieve Success in 2024 Canadian Citizenship Test on
@@ -51,7 +51,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="container-fluid mx-auto p-4 bg-gray-100">
+                <section className="container-fluid mx-auto p-4 bg-slate-50">
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
                         <div className="relative w-52 h-96 overflow-hidden">
                             <div className="absolute top-0 left-0 w-full h-1/2 bg-yellow-500 rounded-t-full"></div>
@@ -86,7 +86,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="bg-gray-100 py-5">
+                <section className="bg-slate-50 py-5">
                     <div className="container mx-auto px-4">
                         <p className=" text-sm font-normal leading-8 text-center text-blue-500">
                             CHAPTER-WISE PRACTICE TESTS
@@ -98,7 +98,7 @@ export default function HomePage({ auth, chapters }) {
                         </h1>
                     </div>
                 </section>
-                <section className="container mx-auto px-10 mb-0 flex flex-col md:flex-row">
+                <section className="container-fluid mx-auto px-10 mb-0 flex flex-col md:flex-row bg-slate-50">
                     <div className="md:w-1/2 flex items-center justify-center md:justify-start">
                         <h1 className="font-bold text-lg tracking-wide">
                             Step-1
@@ -112,7 +112,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="bg-gray-100 py-2">
+                <section className="bg-slate-50 py-2">
                     {chapters
                         .filter(chapter => chapter.step === 1)
                         .map((chapter, index) => (
@@ -163,7 +163,7 @@ export default function HomePage({ auth, chapters }) {
                         ))
                     }
                 </section>
-                <section className="container mx-auto px-10 mb-0 flex flex-col md:flex-row py-4">
+                <section className="container-fluid mx-auto px-10 mb-0 flex flex-col md:flex-row py-4 bg-slate-50">
                     <div className="md:w-1/2 flex items-center justify-center md:justify-start">
                         <h1 className="font-bold text-lg tracking-wide">
                             Step-2
@@ -176,7 +176,7 @@ export default function HomePage({ auth, chapters }) {
                         </p>
                     </div>
                 </section>
-                <section className="container mx-auto px-4 grid gap-10 md:grid-cols-3">
+                <section className="container-fluid mx-auto px-4 grid gap-10 md:grid-cols-3 bg-slate-50">
                     {chapters
                         .filter(chapter => chapter.step === 2)
                         .map((chapter, index) => (
@@ -193,8 +193,7 @@ export default function HomePage({ auth, chapters }) {
                     }
                 </section>
 
-
-                <div className="container mx-auto px-10 mb-0 flex flex-col md:flex-row">
+                <div className="container-fluid mx-auto px-10 mb-0 flex flex-col md:flex-row bg-slate-50">
                     <div className="md:w-1/2 flex items-center justify-center md:justify-start">
                         <h1 className="font-bold text-lg tracking-wide">
                             Step-3
@@ -208,7 +207,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </div>
 
-                <section className="bg-gray-100 py-2">
+                <section className="bg-slate-50 py-2">
                     {chapters
                         .filter(chapter => chapter.step === 3)
                         .map((chapter, index) => (
@@ -307,7 +306,7 @@ export default function HomePage({ auth, chapters }) {
                         </div>
                     </div>
                 </section>
-                <section className="text-black p-8 md:p-20">
+                <section className="text-black p-8 md:p-20 bg-slate-50">
                     <div className="container mx-auto">
                         <h1 className="text-3xl font-bold text-center mb-8">
                             Questions designed to feel just like the real test
@@ -428,7 +427,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="py-16">
+                <section className="py-16 bg-slate-50">
                     <div className="container mx-auto px-10">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
                             <div className="text-center p-8 bg-indigo-600 rounded-xl shadow-md">
@@ -509,12 +508,12 @@ export default function HomePage({ auth, chapters }) {
                         </div>
                     </div>
                 </section>
-                <div className="container mx-auto px-4 mt-4 sm:mt-8 flex justify-center">
+                <div className="container-fluid mx-auto px-4 mt-4 sm:mt-8 flex justify-center bg-slate-50">
                     <button className="bg-primary border-2 border-orange-500 text-white px-6 py-2 rounded-full">
                         Take free practice tests
                     </button>
                 </div>
-                <div className="container mx-auto sm:mt-8">
+                <div className="container-fluid mx-auto sm:mt-8 bg-slate-50">
                     <p className=" text-base sm:text-lg font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
                         or pass the first time, guaranteed with
                         <span className="text-primary ml-1 underline underline-offset-1">
@@ -707,7 +706,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="hidden md:block">
+                <section className="hidden md:block bg-slate-50">
                     <div className="container mx-auto px-44">
                         <h1 className="text-4xl font-bold my-10 text-center">
                             What is the Canadian Citizenship Test?
@@ -799,7 +798,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="hidden md:block py-12">
+                <section className="hidden md:block py-12 bg-slate-50">
                     <div className="container mx-auto px-44">
                         <h1 className="text-4xl font-bold mb-4 text-center">
                             Tips to pass Canadian citizenship test in one
@@ -938,7 +937,7 @@ export default function HomePage({ auth, chapters }) {
                         </div>
                     </div>
                 </section>
-                <section className="bg-gray-100 py-8 md:py-16 px-4 md:px-20">
+                <section className="bg-slate-50 py-8 md:py-16 px-4 md:px-20">
                     <div className="container mx-auto flex flex-col md:flex-row rounded-2xl overflow-hidden bg-white shadow-lg p-4 md:p-8">
                         <div className="w-full md:w-1/2 bg-white text-black p-4 md:p-8">
                             <h1 className="text-xl sm:text-2xl md:text-3xl font-bold">
@@ -963,7 +962,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <footer className="py-8 bg-white text-black">
+                <footer className="py-8 bg-slate-50 text-black">
                     <div className="container mx-auto px-2">
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                             <div>

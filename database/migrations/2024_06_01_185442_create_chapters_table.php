@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('questions')->nullable();
             $table->integer('mistakes')->nullable();
             $table->integer('step')->nullable();
+            $table->boolean('is_free')->default(false);
             $table->timestamps();
         });
         
