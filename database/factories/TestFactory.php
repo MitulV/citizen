@@ -17,7 +17,6 @@ class TestFactory extends Factory
             'name' => $this->faker->word,
             'image' => $this->faker->imageUrl(),
             'info' => $this->faker->paragraph,
-            'step' => $this->faker->numberBetween(1, 3)
         ];
     }
 }

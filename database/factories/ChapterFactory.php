@@ -21,6 +21,7 @@ class ChapterFactory extends Factory
             'description' => $this->faker->paragraph,
             'questions' => $this->faker->numberBetween(1, 100),
             'mistakes' => $this->faker->numberBetween(0, 50),
+            'step' =>2
         ];
     }
 }

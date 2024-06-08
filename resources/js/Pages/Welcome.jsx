@@ -45,7 +45,7 @@ export default function Welcome({ auth, chapters }) {
                         <p className="text-base sm:text-lg font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
                             or pass the first time, guaranteed with
                             <span className="text-primary ml-1 underline underline-offset-1">
-                            <Link href={route('premiumPage')}>Premium</Link>
+                                <Link href={route('premiumPage')}>Premium</Link>
                             </span>
                         </p>
                     </div>
@@ -113,53 +113,55 @@ export default function Welcome({ auth, chapters }) {
                 </section>
 
                 <section className="bg-gray-100 py-2">
-                    <Link href={route('testInfoPage',{chapter_id: 1})}>
-                        <div className="container mx-auto my-2 px-4 flex flex-col md:flex-row">
-                            <div className="md:w-1/8 pl-2">
-                                <img
-                                    src="/images/chap 1.png"
-                                    alt="Photos"
-                                    className="w-full"
-                                />
-                            </div>
-
-                            <div className="md:w-1/2 px-4 py-2 bg-white rounded-r-xl">
-                                <h1 className=" text-2xl font-bold leading-10 tracking-wide text-left">
-                                    Free Simulation Test
-                                </h1>
-                                <p className="text-sm font-normal leading-8 tracking-tight text-gray-500">
-                                    Take part in our free diagnostic Canadian
-                                    citizenship test practice to assess your current
-                                    knowledge and skills. It will help you tailor
-                                    your study plan for maximum effectiveness.
-                                </p>
-
-                                <div className="container mx-auto px-4 flex flex-col md:flex-row flex-wrap">
-                                    <div className="md:w-1/2 w-full mb-4 md:mb-0 py-4">
-                                        <div>
-                                            <h1 className="font-bold text-2xl tracking-wide mb-1">
-                                                20
-                                            </h1>
-                                            <p className="text-lg font-normal text-gray-500">
-                                                Questions
-                                            </p>
-                                        </div>
+                    {chapters
+                        .filter(chapter => chapter.step === 1)
+                        .map((chapter, index) => (
+                            <Link href={route('testInfoPage', { chapter_id: chapter.id })}>
+                                <div className="container mx-auto my-2 px-4 flex flex-col md:flex-row">
+                                    <div className="md:w-1/8 pl-2">
+                                        <img
+                                            src="/images/chap 1.png"
+                                            alt="Photos"
+                                            className="w-full"
+                                        />
                                     </div>
 
-                                    <div className="md:w-1/2 w-full py-4">
-                                        <div>
-                                            <h1 className="font-bold text-2xl tracking-wide mb-1">
-                                                5 Mistakes
-                                            </h1>
-                                            <p className="text-lg font-normal text-gray-500">
-                                                Allowed to pass
-                                            </p>
+                                    <div className="md:w-1/2 px-4 py-2 bg-white rounded-r-xl">
+                                        <h1 className=" text-2xl font-bold leading-10 tracking-wide text-left">
+                                            {chapter.name}
+                                        </h1>
+                                        <p className="text-sm font-normal leading-8 tracking-tight text-gray-500">
+                                            {chapter.description}
+                                        </p>
+
+                                        <div className="container mx-auto px-4 flex flex-col md:flex-row flex-wrap">
+                                            <div className="md:w-1/2 w-full mb-4 md:mb-0 py-4">
+                                                <div>
+                                                    <h1 className="font-bold text-2xl tracking-wide mb-1">
+                                                        {chapter.questions}
+                                                    </h1>
+                                                    <p className="text-lg font-normal text-gray-500">
+                                                        Questions
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div className="md:w-1/2 w-full py-4">
+                                                <div>
+                                                    <h1 className="font-bold text-2xl tracking-wide mb-1">
+                                                        {chapter.mistakes} Mistakes
+                                                    </h1>
+                                                    <p className="text-lg font-normal text-gray-500">
+                                                        Allowed to pass
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </Link>
+                            </Link>
+                        ))
+                    }
                 </section>
                 <section className="container mx-auto px-10 mb-0 flex flex-col md:flex-row py-4">
                     <div className="md:w-1/2 flex items-center justify-center md:justify-start">
@@ -175,18 +177,22 @@ export default function Welcome({ auth, chapters }) {
                     </div>
                 </section>
                 <section className="container mx-auto px-4 grid gap-10 md:grid-cols-3">
-                    {chapters.map((chapter, index) => (
-                        <HomeChapterCard
-                            key={index} // Ensure each component has a unique key
-                            image={chapter.image}
-                            name={chapter.name}
-                            title={chapter.title}
-                            description={chapter.description}
-                            questions={chapter.questions}
-                            mistakes={chapter.mistakes}
-                        />
-                    ))}
+                    {chapters
+                        .filter(chapter => chapter.step === 2)
+                        .map((chapter, index) => (
+                            <HomeChapterCard
+                                key={index} // Ensure each component has a unique key
+                                image={chapter.image}
+                                name={chapter.name}
+                                title={chapter.title}
+                                description={chapter.description}
+                                questions={chapter.questions}
+                                mistakes={chapter.mistakes}
+                            />
+                        ))
+                    }
                 </section>
+
 
                 <div className="container mx-auto px-10 mb-0 flex flex-col md:flex-row">
                     <div className="md:w-1/2 flex items-center justify-center md:justify-start">
@@ -203,51 +209,53 @@ export default function Welcome({ auth, chapters }) {
                 </div>
 
                 <section className="bg-gray-100 py-2">
-                    <div className="container mx-auto px-4 flex flex-col md:flex-row">
-                        <div className="md:w-1/8 pl-2">
-                            <img
-                                src="/images/chap 13.png"
-                                alt="Photos"
-                                className="w-full"
-                            />
-                        </div>
-
-                        <div className="md:w-1/2 px-4 py-2 bg-white rounded-r-xl">
-                            <h1 className=" text-2xl font-bold leading-10 tracking-wide text-left">
-                                Exam Simulator
-                            </h1>
-                            <p className="text-sm font-normal leading-8 tracking-tight text-gray-500">
-                                We offer realistic simulations of the Canadian
-                                Citizenship test. Providing a real-life testing
-                                experience will help you build confidence and
-                                find out your weaknesses.
-                            </p>
-
-                            <div className="container mx-auto px-4 flex flex-col md:flex-row flex-wrap">
-                                <div className="md:w-1/2 w-full mb-4 md:mb-0 py-4">
-                                    <div>
-                                        <h1 className="font-bold text-2xl tracking-wide mb-1">
-                                            20
-                                        </h1>
-                                        <p className="text-lg font-normal text-gray-500">
-                                            Questions
-                                        </p>
-                                    </div>
+                    {chapters
+                        .filter(chapter => chapter.step === 3)
+                        .map((chapter, index) => (
+                            <div className="container mx-auto my-4 px-4 flex flex-col md:flex-row">
+                                <div className="md:w-1/8 pl-2">
+                                    <img
+                                        src="/images/chap 13.png"
+                                        alt="Photos"
+                                        className="w-full"
+                                    />
                                 </div>
 
-                                <div className="md:w-1/2 w-full py-4">
-                                    <div>
-                                        <h1 className="font-bold text-2xl tracking-wide mb-1">
-                                            5 Mistakes
-                                        </h1>
-                                        <p className="text-lg font-normal text-gray-500">
-                                            Allowed to pass
-                                        </p>
+                                <div className="md:w-1/2 px-4 py-2 bg-white rounded-r-xl">
+                                    <h1 className=" text-2xl font-bold leading-10 tracking-wide text-left">
+                                        {chapter.name}
+                                    </h1>
+                                    <p className="text-sm font-normal leading-8 tracking-tight text-gray-500">
+                                        {chapter.description}
+                                    </p>
+
+                                    <div className="container mx-auto px-4 flex flex-col md:flex-row flex-wrap">
+                                        <div className="md:w-1/2 w-full mb-4 md:mb-0 py-4">
+                                            <div>
+                                                <h1 className="font-bold text-2xl tracking-wide mb-1">
+                                                    {chapter.questions}
+                                                </h1>
+                                                <p className="text-lg font-normal text-gray-500">
+                                                    Questions
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div className="md:w-1/2 w-full py-4">
+                                            <div>
+                                                <h1 className="font-bold text-2xl tracking-wide mb-1">
+                                                    {chapter.mistakes} Mistakes
+                                                </h1>
+                                                <p className="text-lg font-normal text-gray-500">
+                                                    Allowed to pass
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        ))
+                    }
                 </section>
 
                 <section className="bg-indigo-600 text-white p-8 md:p-20">
@@ -357,7 +365,7 @@ export default function Welcome({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="bg-custom-blue text-white p-8 md:p-20">
+                <section className="bg-indigo-600 text-white p-8 md:p-20">
                     <div className="container mx-auto">
                         <div>
                             <p className="text-center text-base mb-2">
@@ -422,8 +430,8 @@ export default function Welcome({ auth, chapters }) {
 
                 <section className="py-16">
                     <div className="container mx-auto px-10">
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                            <div className="text-center p-8 bg-custom-blue rounded-xl shadow-md">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
+                            <div className="text-center p-8 bg-indigo-600 rounded-xl shadow-md">
                                 <FontAwesomeIcon
                                     icon={faQuestion}
                                     className="text-3xl text-white mb-4"
@@ -438,7 +446,7 @@ export default function Welcome({ auth, chapters }) {
                                 </p>
                             </div>
 
-                            <div className="text-center p-8 bg-custom-blue shadow-md rounded-xl">
+                            <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
                                 {/* <i className="fas fa-pen-to-square text-3xl text-white mb-4"></i> */}
                                 <h1 className="text-lg font-bold mb-2 text-white">
                                     Real-Life Test Simulations
@@ -450,7 +458,7 @@ export default function Welcome({ auth, chapters }) {
                                 </p>
                             </div>
 
-                            <div className="text-center p-8 bg-custom-blue shadow-md rounded-xl">
+                            <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
                                 {/* <i className="fas fa-chart-line text-3xl text-white mb-4"></i> */}
                                 <h1 className="text-lg font-bold mb-2 text-white">
                                     Weakness Evaluations
@@ -462,7 +470,7 @@ export default function Welcome({ auth, chapters }) {
                                 </p>
                             </div>
 
-                            <div className="text-center p-8 bg-custom-blue shadow-md rounded-xl">
+                            <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
                                 {/* <i className="fas fa-cogs text-3xl text-white mb-4"></i> */}
                                 <h1 className="text-lg font-bold mb-2 text-white">
                                     Chapter Quizzes
@@ -474,7 +482,7 @@ export default function Welcome({ auth, chapters }) {
                                 </p>
                             </div>
 
-                            <div className="text-center p-8 bg-custom-blue shadow-md rounded-xl">
+                            <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
                                 {/* <i className="fas fa-user text-3xl text-white mb-4"></i> */}
                                 <h1 className="text-lg font-bold mb-2 text-white">
                                     Important Dates
@@ -486,7 +494,7 @@ export default function Welcome({ auth, chapters }) {
                                 </p>
                             </div>
 
-                            <div className="text-center p-8 bg-custom-blue rounded-xl shadow-md">
+                            <div className="text-center p-8 bg-indigo-600 rounded-xl shadow-md">
                                 {/* <i className="fas fa-lock text-3xl text-white mb-4"></i> */}
                                 <h1 className="text-lg font-bold mb-2 text-white">
                                     Flashcards
@@ -502,19 +510,19 @@ export default function Welcome({ auth, chapters }) {
                     </div>
                 </section>
                 <div className="container mx-auto px-4 mt-4 sm:mt-8 flex justify-center">
-                    <button className="bg-yellow-700 border-2 border-orange-500 text-white px-6 py-2 rounded-full hover:bg-gray-400 transition duration-300">
+                    <button className="bg-primary border-2 border-orange-500 text-white px-6 py-2 rounded-full">
                         Take free practice tests
                     </button>
                 </div>
                 <div className="container mx-auto sm:mt-8">
                     <p className=" text-base sm:text-lg font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
                         or pass the first time, guaranteed with
-                        <span className="text-yellow-700 underline underline-offset-1">
-                        <Link href={route('premiumPage')}>Premium</Link>
+                        <span className="text-primary ml-1 underline underline-offset-1">
+                            <Link href={route('premiumPage')}>Premium</Link>
                         </span>
                     </p>
                 </div>
-                <section className="bg-custom-blue py-12 text-white">
+                <section className="bg-indigo-600 py-12 text-white">
                     <div className="container mx-auto px-4">
                         <h2 className="text-sm font-normle text-center">
                             HIGHLY RECOMMENDED
@@ -941,13 +949,13 @@ export default function Welcome({ auth, chapters }) {
 
                         <div className="w-full md:w-1/2 p-4 md:p-8 flex flex-col justify-center items-center">
                             <div className="w-full flex justify-center mt-4 sm:mt-8">
-                                <button className=" bg-primary border-2 border-orange-500 text-white px-6 py-2 rounded-full hover:bg-gray-400 transition duration-300">
+                                <button className=" bg-primary border-2 border-orange-500 text-white px-6 py-2 rounded-full">
                                     Take free practice tests
                                 </button>
                             </div>
                             <p className="text-base sm:text-lg font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500 mt-4">
                                 or pass the first time, guaranteed with
-                                <span className="underline underline-offset-1 text-primary">
+                                <span className="underline ml-1 underline-offset-1 text-primary">
                                     <Link href={route('premiumPage')}>Premium</Link>
                                 </span>
                             </p>

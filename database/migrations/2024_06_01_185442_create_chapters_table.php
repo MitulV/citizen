@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->integer('questions')->nullable();
             $table->integer('mistakes')->nullable();
+            $table->integer('step')->nullable();
             $table->timestamps();
         });
         

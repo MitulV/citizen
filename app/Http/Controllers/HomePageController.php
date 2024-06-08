@@ -13,6 +13,7 @@ class HomePageController extends Controller
     public function index()
     {
         $chapters = Chapter::all();
+        
         return Inertia::render('Welcome', [
             'canLogin' => Route::has('login'),
             'canRegister' => Route::has('register'),

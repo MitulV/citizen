@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
     {
         DB::transaction(function () {
             // Create 11 chapters
-            $chapters = Chapter::factory()->count(11)->create();
+            $chapters = Chapter::factory()->count(13)->create();
 
             $chapters->each(function ($chapter,  $index) {
 
