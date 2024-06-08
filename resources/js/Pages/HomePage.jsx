@@ -8,14 +8,15 @@ import {
     faCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
 import HomeChapterCard from "@/Components/HomeChapterCard";
-import Header from "@/Components/Header";
+import HeaderNew from "@/Components/HeaderNew";
+
 
 export default function HomePage({ auth, chapters }) {
     return (
         <>
             <Head title="Welcome" />
             <div>
-                <Header />
+                <HeaderNew />
 
                 <section className="bg-slate-50 py-8 sm:py-16 flex flex-col items-center">
                     <div className="container mx-auto px-4">
@@ -116,7 +117,7 @@ export default function HomePage({ auth, chapters }) {
                     {chapters
                         .filter(chapter => chapter.step === 1)
                         .map((chapter, index) => (
-                            <Link href={route('testInfoPage', { chapter_id: chapter.id })}>
+                            <Link key={index} href={route('testInfoPage', { chapter_id: chapter.id })}>
                                 <div className="container mx-auto my-2 px-4 flex flex-col md:flex-row">
                                     <div className="md:w-1/8 pl-2">
                                         <img
@@ -211,7 +212,7 @@ export default function HomePage({ auth, chapters }) {
                     {chapters
                         .filter(chapter => chapter.step === 3)
                         .map((chapter, index) => (
-                            <div className="container mx-auto my-4 px-4 flex flex-col md:flex-row">
+                            <div key={index} className="container mx-auto my-4 px-4 flex flex-col md:flex-row">
                                 <div className="md:w-1/8 pl-2">
                                     <img
                                         src="/images/chap 13.png"

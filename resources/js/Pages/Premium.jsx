@@ -2,9 +2,15 @@ import React from "react";
 import Header from "@/Components/Header";
 import { Head } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faStar ,faEnvelope,faPhone,faMessage} from "@fortawesome/free-solid-svg-icons";
+import {
+    faCheck,
+    faStar,
+    faEnvelope,
+    faPhone,
+    faMessage,
+} from "@fortawesome/free-solid-svg-icons";
 
-export default function TestStart() {
+export default function Premium() {
     return (
         <>
             <Head title="Premium" />
@@ -686,7 +692,7 @@ export default function TestStart() {
                                 </p>
                             </div>
                             <button className="bg-primary text-white py-2 w-full sm:w-60 rounded-full mt-2">
-                            Get instant access
+                                Get instant access
                             </button>
                             <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
                                 Features
@@ -879,47 +885,66 @@ export default function TestStart() {
             </section>
 
             <section className="container-fluid mx-auto px-4 md:px-10 lg:px-20 py-8 bg-slate-100">
-      <p className="text-sm text-indigo-600 mb-4 mt-8 text-center">Common FAQs</p>
-      <h1 className="text-4xl font-bold mb-6 text-center">Your questions, answered</h1>
-      <div className="container mx-auto">
-        <div className="max-w-[600px] mx-auto">
-          {[...Array(4)].map((_, index) => (
-            <form key={index} className="text-black mb-4">
-              <select
-                id={`countries-${index}`}
-                className="w-full border p-4 border-gray-100 text-black text-sm rounded-3xl font-bold"
-              >
-                <option>Which plan is best for me?</option>
-                <option>United States</option>
-                <option>Canada</option>
-                <option>France</option>
-                <option>Germany</option>
-              </select>
-            </form>
-          ))}
-        </div>
-      </div>
-      <div className="container mx-auto mt-8">
-  <div className="max-w-[1000px] mx-auto p-4 flex flex-col md:flex-row items-start md:items-center">
-    <p className="text-gray-900 mb-4 md:mb-0 md:mr-4 text-center md:text-left">Have more questions or want to chat about plan selection?</p>
-    <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-center">
-      <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
-        <FontAwesomeIcon icon={faMessage} className="text-primary" />
-        <span className="text-primary">Send us an email</span>
-      </div>
-      <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
-        <FontAwesomeIcon icon={faEnvelope} className="text-primary" />
-        <span className="text-primary">Email</span>
-      </div>
-      <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
-        <FontAwesomeIcon icon={faPhone} className="text-primary" />
-        <span className="text-primary">Call 1-305-570-4774</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-    </section>
+                <p className="text-sm text-indigo-600 mb-4 mt-8 text-center">
+                    Common FAQs
+                </p>
+                <h1 className="text-4xl font-bold mb-6 text-center">
+                    Your questions, answered
+                </h1>
+                <div className="container mx-auto">
+                    <div className="max-w-[600px] mx-auto">
+                        {[...Array(4)].map((_, index) => (
+                            <form key={index} className="text-black mb-4">
+                                <select
+                                    id={`countries-${index}`}
+                                    className="w-full border p-4 border-gray-100 text-black text-sm rounded-3xl font-bold"
+                                >
+                                    <option>Which plan is best for me?</option>
+                                    <option>United States</option>
+                                    <option>Canada</option>
+                                    <option>France</option>
+                                    <option>Germany</option>
+                                </select>
+                            </form>
+                        ))}
+                    </div>
+                </div>
+                <div className="container mx-auto mt-8">
+                    <div className="max-w-[1000px] mx-auto p-4 flex flex-col md:flex-row items-start md:items-center">
+                        <p className="text-gray-900 mb-4 md:mb-0 md:mr-4 text-center md:text-left">
+                            Have more questions or want to chat about plan
+                            selection?
+                        </p>
+                        <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-center">
+                            <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
+                                <FontAwesomeIcon
+                                    icon={faMessage}
+                                    className="text-primary"
+                                />
+                                <span className="text-primary">
+                                    Send us an email
+                                </span>
+                            </div>
+                            <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
+                                <FontAwesomeIcon
+                                    icon={faEnvelope}
+                                    className="text-primary"
+                                />
+                                <span className="text-primary">Email</span>
+                            </div>
+                            <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
+                                <FontAwesomeIcon
+                                    icon={faPhone}
+                                    className="text-primary"
+                                />
+                                <span className="text-primary">
+                                    Call 1-305-570-4774
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     );
 }
