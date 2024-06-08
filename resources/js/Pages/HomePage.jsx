@@ -10,7 +10,7 @@ import {
 import HomeChapterCard from "@/Components/HomeChapterCard";
 import Header from "@/Components/Header";
 
-export default function Welcome({ auth, chapters }) {
+export default function HomePage({ auth, chapters }) {
     return (
         <>
             <Head title="Welcome" />
