@@ -9,6 +9,7 @@ import {
     faPhone,
     faMessage,
 } from "@fortawesome/free-solid-svg-icons";
+import Footer from "@/Components/Footer";
 
 export default function Premium() {
     return (
@@ -92,31 +93,31 @@ export default function Premium() {
                     </h1>
 
                     <p className="text-gray-600 mt-4 text-center lg:text-left flex flex-col lg:flex-row items-center lg:items-start">
-                        Our customers rate us ExcellentRated{" "}
-                        <div className="flex items-center">
+                        Our customers rate us Excellent
+                        <div className="flex items-center mx-2">
                             <FontAwesomeIcon
                                 icon={faStar}
-                                className="text-yellow-500"
+                                className="text-yellow-300 mx-1"
                             />
                             <FontAwesomeIcon
                                 icon={faStar}
-                                className="text-yellow-500"
+                                className="text-yellow-300 mx-1"
                             />
                             <FontAwesomeIcon
                                 icon={faStar}
-                                className="text-yellow-500"
+                                className="text-yellow-300 mx-1"
                             />
                             <FontAwesomeIcon
                                 icon={faStar}
-                                className="text-yellow-500"
+                                className="text-yellow-300 mx-1"
                             />
                             <FontAwesomeIcon
                                 icon={faStar}
-                                className="text-yellow-500"
+                                className="text-yellow-300 mx-1"
                             />
                         </div>
-                        <span className="lg:ml-2">
-                            5 out of 5 based on over 200+ reviews.
+                        <span>
+                            Rated 5 out of 5 based on over 200+ reviews.
                         </span>
                     </p>
 
@@ -945,6 +946,7 @@ export default function Premium() {
                     </div>
                 </div>
             </section>
+            <Footer/>
         </>
     );
 }

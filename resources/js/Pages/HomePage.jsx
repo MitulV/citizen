@@ -2,28 +2,30 @@ import { Link, Head } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faStar,
-    faChevronDown,
-    faBars,
+    faPenToSquare,
     faQuestion,
     faCircleCheck,
+    faArrowTrendUp
 } from "@fortawesome/free-solid-svg-icons";
-import HomeChapterCard from "@/Components/HomeChapterCard";
-import HeaderNew from "@/Components/HeaderNew";
 
+
+import HomeChapterCard from "@/Components/HomeChapterCard";
+import Header from "@/Components/Header";
+import Footer from "@/Components/Footer";
 
 export default function HomePage({ auth, chapters }) {
     return (
         <>
             <Head title="Welcome" />
-            <div>
-                <HeaderNew />
+            <div className="bg-slate-50">
+                <Header />
 
                 <section className="bg-slate-50 py-8 sm:py-16 flex flex-col items-center">
                     <div className="container mx-auto px-4">
-                        <h1 className="text-3xl sm:text-5xl font-black leading-tight tracking-wide text-center custom-heading px-4 sm:px-20">
-                            Achieve Success in 2024 Canadian Citizenship Test on
-                            Your
-                            <span className="text-secondary">
+                        <h1 className="text-3xl sm:text-6xl font-black leading-tight tracking-wide text-center custom-heading px-4 sm:px-20">
+                            Achieve Success in 2024 Canadian <br />
+                            Citizenship Test on Your
+                            <span className="text-secondary ml-2">
                                 First Attempt
                             </span>
                         </h1>
@@ -38,7 +40,7 @@ export default function HomePage({ auth, chapters }) {
                         </p>
                     </div>
                     <div className="container mx-auto px-4 mt-4 sm:mt-8 flex justify-center">
-                        <button className="bg-primary text-white px-6 py-2 rounded-full">
+                        <button className="bg-primary text-white px-20 py-4 rounded-full shadow-xl">
                             Take free practice tests
                         </button>
                     </div>
@@ -46,48 +48,113 @@ export default function HomePage({ auth, chapters }) {
                         <p className="text-base sm:text-lg font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
                             or pass the first time, guaranteed with
                             <span className="text-primary ml-1 underline underline-offset-1">
-                                <Link href={route('premiumPage')}>Premium</Link>
+                                <Link href={route("premiumPage")}>Premium</Link>
                             </span>
                         </p>
                     </div>
                 </section>
 
-                <section className="container-fluid mx-auto p-4 bg-slate-50">
-                    <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-                        <div className="relative w-52 h-96 overflow-hidden">
-                            <div className="absolute top-0 left-0 w-full h-1/2 bg-yellow-500 rounded-t-full"></div>
+                <section className="hidden lg:block container-fluid px-32 ">
+                    <div className="grid grid-cols-1 gap-4 md:grid-cols-4 ">
+                        <div className="relative w-52 h-96 justify-center left-8">
+                            <div className="absolute left-8 w-48 h-60  bg-amber-300 rounded-t-full"></div>
                             <img
                                 src="/images/person 2.png"
                                 alt="Image 1"
-                                className="relative z-10 object-cover w-full h-full rounded-b-full"
+                                className="relative object-cover left-8  h-full w-48 rounded-b-full"
                             />
+                            <div className="absolute top-20  right-40 z-60  p-2  rounded-xl shadow-lg  bg-gray-200">
+                                <h1 className="text-2xl  font-bold  text-center text-black">
+                                    2024
+                                </h1>
+                                <p className="text-sm w-20 text-center font-semibold">Updated</p>
+                            </div>
                         </div>
 
-                        <div>
-                            <img src="/images/ctp premium.png" alt="Image 2" />
+                        <div className="relative left-4 justify-center">
+                            <img
+                                src="/images/ctp premium.png"
+                                alt="Image 2"
+                                className="h-full "
+                                
+                            />
+                              <div className="absolute top-80 left-48 p-2  rounded-xl shadow-lg  bg-amber-400">
+                                <h1 className="text-2xl font-bold  text-left text-black">
+                                2391
+                                </h1>
+                                <p className="text-xs w-24 font-semibold">Test completed today</p>
+                            </div>
                         </div>
 
-                        <div className="relative w-52 h-96 overflow-hidden">
-                            <div className="absolute top-0 left-0 w-full h-1/2 bg-yellow-500 rounded-t-full"></div>
+                        <div className="relative w-52 h-96 left-1">
+                            <div className="absolute left-8 w-48 h-1/2 bg-indigo-300 rounded-t-full">
+                            </div>
                             <img
                                 src="/images/person 1.png"
                                 alt="Image 3"
-                                className="relative z-10 object-cover w-full h-full rounded-b-full"
+                                className="relative object-cover left-8  h-full w-48 rounded-b-full"
                             />
                         </div>
 
-                        <div className="relative w-52 h-96 overflow-hidden">
-                            <div className="absolute top-0 left-0 w-full h-1/2 bg-yellow-500 rounded-t-full"></div>
+                        <div className="relative w-52 h-96 left-1">
+                            <div className="absolute left-1 w-48 h-1/2 bg-orange-300 rounded-t-full"></div>
                             <img
                                 src="/images/person 3.png"
                                 alt="Image 4"
-                                className="relative z-10 object-cover w-full h-full rounded-b-full"
+                                className="relative object-cover left-1 h-full w-48 rounded-b-full"
                             />
+                            <div className="absolute bottom-40 left-40 z-40 p-2 rounded-xl shadow-lg  bg-green-300">
+                                <h1 className="text-2xl font-bold text-center text-black">
+                                    95.2%
+                                </h1>
+                                <p className="text-xs w-24 font-semibold">
+                                    Industry-leading
+                                    <br /> pass rate
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
+                <section className="lg:hidden container-fluid px-2 ">
+    <div className="flex flex-wrap -mx-2">
+        <div className="w-1/3 px-2">
+            <div className="relative flex justify-center">
+                <div className="absolute top-0 w-24 h-28 bg-amber-300 rounded-t-full"></div>
+                <img
+                    src="/images/person 2.png"
+                    alt="Image 1"
+                    className="relative object-cover w-24 h-48 rounded-b-full"
+                />
+            </div>
+        </div>
 
-                <section className="bg-slate-50 py-5">
+        <div className="w-1/3 px-2 ">
+            <div className="relative w-full h-64 flex justify-center">
+                <div className="absolute top-0 w-24 h-28 bg-indigo-300 rounded-t-full"></div>
+                <img
+                    src="/images/person 1.png"
+                    alt="Image 2"
+                    className="relative object-cover w-24 h-48 rounded-b-full"
+                />
+            </div>
+        </div>
+
+        <div className="w-1/3 px-2 ">
+            <div className="relative w-full h-64 flex justify-center">
+                <div className="absolute top-0 w-24 h-28 bg-orange-300 rounded-t-full"></div>
+                <img
+                    src="/images/person 3.png"
+                    alt="Image 3"
+                    className="relative object-cover w-24 h-48  rounded-b-full"
+                />
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+                <section className="bg-slate-50 lg:py-20 sm:py-0">
                     <div className="container mx-auto px-4">
                         <p className=" text-sm font-normal leading-8 text-center text-blue-500">
                             CHAPTER-WISE PRACTICE TESTS
@@ -102,7 +169,7 @@ export default function HomePage({ auth, chapters }) {
                 <section className="container-fluid mx-auto px-10 mb-0 flex flex-col md:flex-row bg-slate-50">
                     <div className="md:w-1/2 flex items-center justify-center md:justify-start">
                         <h1 className="font-bold text-lg tracking-wide">
-                            Step-1
+                            Step 1
                         </h1>
                     </div>
 
@@ -115,11 +182,16 @@ export default function HomePage({ auth, chapters }) {
 
                 <section className="bg-slate-50 py-2">
                     {chapters
-                        .filter(chapter => chapter.step === 1)
+                        .filter((chapter) => chapter.step === 1)
                         .map((chapter, index) => (
-                            <Link key={index} href={route('testInfoPage', { chapter_id: chapter.id })}>
-                                <div className="container mx-auto my-2 px-4 flex flex-col md:flex-row">
-                                    <div className="md:w-1/8 pl-2">
+                            <Link
+                                key={index}
+                                href={route("testInfoPage", {
+                                    chapter_id: chapter.id,
+                                })}
+                            >
+                                <div className="container mx-auto my-2 flex flex-col md:flex-row border border-gray-100 rounded-2xl">
+                                    <div className="md:w-1/8">
                                         <img
                                             src="/images/chap 1.png"
                                             alt="Photos"
@@ -150,7 +222,8 @@ export default function HomePage({ auth, chapters }) {
                                             <div className="md:w-1/2 w-full py-4">
                                                 <div>
                                                     <h1 className="font-bold text-2xl tracking-wide mb-1">
-                                                        {chapter.mistakes} Mistakes
+                                                        {chapter.mistakes}{" "}
+                                                        Mistakes
                                                     </h1>
                                                     <p className="text-lg font-normal text-gray-500">
                                                         Allowed to pass
@@ -161,17 +234,16 @@ export default function HomePage({ auth, chapters }) {
                                     </div>
                                 </div>
                             </Link>
-                        ))
-                    }
+                        ))}
                 </section>
                 <section className="container-fluid mx-auto px-10 mb-0 flex flex-col md:flex-row py-4 bg-slate-50">
-                    <div className="md:w-1/2 flex items-center justify-center md:justify-start">
+                    <div className="md:w-1/2 flex items-center justify-left md:justify-start ">
                         <h1 className="font-bold text-lg tracking-wide">
-                            Step-2
+                            Step 2
                         </h1>
                     </div>
 
-                    <div className="md:w-1/2 flex items-center justify-center md:justify-end">
+                    <div className="md:w-1/2 flex items-center justify-left md:justify-end">
                         <p className="text-sm font-normal text-gray-500">
                             Complete all chapter test
                         </p>
@@ -179,7 +251,7 @@ export default function HomePage({ auth, chapters }) {
                 </section>
                 <section className="container-fluid mx-auto px-4 grid gap-10 md:grid-cols-3 bg-slate-50">
                     {chapters
-                        .filter(chapter => chapter.step === 2)
+                        .filter((chapter) => chapter.step === 2)
                         .map((chapter, index) => (
                             <HomeChapterCard
                                 key={index} // Ensure each component has a unique key
@@ -190,30 +262,32 @@ export default function HomePage({ auth, chapters }) {
                                 questions={chapter.questions}
                                 mistakes={chapter.mistakes}
                             />
-                        ))
-                    }
+                        ))}
                 </section>
 
-                <div className="container-fluid mx-auto px-10 mb-0 flex flex-col md:flex-row bg-slate-50">
-                    <div className="md:w-1/2 flex items-center justify-center md:justify-start">
+                <div className="container-fluid mx-auto px-10 mb-0 flex flex-col md:flex-row bg-slate-50 ">
+                    <div className="md:w-1/2 flex items-center justify-left md:justify-start sm:text-lg mt-8">
                         <h1 className="font-bold text-lg tracking-wide">
                             Step-3
                         </h1>
                     </div>
 
-                    <div className="md:w-1/2 flex items-center justify-center md:justify-end">
+                    <div className="md:w-1/2 flex items-center justify-left md:justify-end ">
                         <p className="text-sm font-normal text-gray-500">
                             Prepare with exam simulator
                         </p>
                     </div>
                 </div>
 
-                <section className="bg-slate-50 py-2">
+                <section className="bg-slate-50 py-2  ">
                     {chapters
-                        .filter(chapter => chapter.step === 3)
+                        .filter((chapter) => chapter.step === 3)
                         .map((chapter, index) => (
-                            <div key={index} className="container mx-auto my-4 px-4 flex flex-col md:flex-row">
-                                <div className="md:w-1/8 pl-2">
+                            <div
+                                key={index}
+                                className="container mx-auto  px-4 flex flex-col md:flex-row shadow-sm"
+                            >
+                                <div className="md:w-1/8 pl-2  ">
                                     <img
                                         src="/images/chap 13.png"
                                         alt="Photos"
@@ -221,7 +295,7 @@ export default function HomePage({ auth, chapters }) {
                                     />
                                 </div>
 
-                                <div className="md:w-1/2 px-4 py-2 bg-white rounded-r-xl">
+                                <div className="md:w-1/2 px-4 py-2 bg-white rounded-r-3xl border border-gray-100 ">
                                     <h1 className=" text-2xl font-bold leading-10 tracking-wide text-left">
                                         {chapter.name}
                                     </h1>
@@ -254,11 +328,10 @@ export default function HomePage({ auth, chapters }) {
                                     </div>
                                 </div>
                             </div>
-                        ))
-                    }
+                        ))}
                 </section>
 
-                <section className="bg-indigo-600 text-white p-8 md:p-20">
+                <section className="bg-indigo-600 text-white p-8 md:p-20 mt-8">
                     <div className="container mx-auto text-center">
                         <h2 className="text-sm font-base">
                             SPEED THROUGH TEST PREP
@@ -271,8 +344,9 @@ export default function HomePage({ auth, chapters }) {
                             <div className="text-center p-4 text-white rounded-md">
                                 <FontAwesomeIcon
                                     icon={faQuestion}
-                                    className="mb-4"
+                                    className="mb-4 text-4xl"
                                 />
+                                
                                 <h1 className="text-lg font-bold mb-2">
                                     700+ Practice Questions
                                 </h1>
@@ -283,7 +357,10 @@ export default function HomePage({ auth, chapters }) {
                                 </p>
                             </div>
                             <div className="text-center p-4 text-white rounded-md">
-                                {/* <i className="icon fa-solid fa-pen-to-square mb-4"></i> */}
+                                <FontAwesomeIcon
+                                    icon={faPenToSquare}
+                                    className="mb-4 text-4xl"
+                                />
                                 <h1 className="text-lg font-bold mb-2">
                                     Realistic Test Simulations
                                 </h1>
@@ -294,7 +371,10 @@ export default function HomePage({ auth, chapters }) {
                                 </p>
                             </div>
                             <div className="text-center p-4 text-white rounded-md">
-                                {/* <i className="icon fa-solid fa-chart-line mb-4"></i> */}
+                                <FontAwesomeIcon
+                                    icon={faArrowTrendUp}
+                                    className="mb-4 text-4xl"
+                                />
                                 <h1 className="text-lg font-bold mb-2">
                                     Weakness Evaluations
                                 </h1>
@@ -323,7 +403,7 @@ export default function HomePage({ auth, chapters }) {
                             </div>
 
                             <div>
-                                <div className="mb-8">
+                                <div className="mb-8 ">
                                     <h1 className="text-xl font-bold mb-2">
                                         Current and accurate
                                     </h1>
@@ -369,7 +449,7 @@ export default function HomePage({ auth, chapters }) {
                     <div className="container mx-auto">
                         <div>
                             <p className="text-center text-base mb-2">
-                                PREPARE THROUGHLY
+                               YOUT ULTIMATE ALL-IN-ONE RESOURCE
                             </p>
 
                             <h2 className="text-3xl font-bold mb-10 text-center">
@@ -415,12 +495,12 @@ export default function HomePage({ auth, chapters }) {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col justify-between">
-                                <div className="mb-8 px-10">
+                            <div className="flex flex-col justify-between items-center sm:px-2 md:px-16 lg:px-32">
+                                <div className="mb-8 w-full">
                                     <img
                                         src="/images/ctp premium.png"
                                         alt="Image Description"
-                                        className="w-80 h-96 rounded-lg"
+                                        className="w-full h-auto rounded-lg"
                                     />
                                 </div>
                             </div>
@@ -447,7 +527,10 @@ export default function HomePage({ auth, chapters }) {
                             </div>
 
                             <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
-                                {/* <i className="fas fa-pen-to-square text-3xl text-white mb-4"></i> */}
+                                <FontAwesomeIcon
+                                    icon={faPenToSquare}
+                                    className="text-3xl text-white mb-4"
+                                />{" "}
                                 <h1 className="text-lg font-bold mb-2 text-white">
                                     Real-Life Test Simulations
                                 </h1>
@@ -459,7 +542,10 @@ export default function HomePage({ auth, chapters }) {
                             </div>
 
                             <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
-                                {/* <i className="fas fa-chart-line text-3xl text-white mb-4"></i> */}
+                                <FontAwesomeIcon
+                                    icon={faArrowTrendUp}
+                                    className="text-3xl text-white mb-4"
+                                />{" "}
                                 <h1 className="text-lg font-bold mb-2 text-white">
                                     Weakness Evaluations
                                 </h1>
@@ -471,7 +557,10 @@ export default function HomePage({ auth, chapters }) {
                             </div>
 
                             <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
-                                {/* <i className="fas fa-cogs text-3xl text-white mb-4"></i> */}
+                                <FontAwesomeIcon
+                                    icon={faQuestion}
+                                    className="text-3xl text-white mb-4"
+                                />{" "}
                                 <h1 className="text-lg font-bold mb-2 text-white">
                                     Chapter Quizzes
                                 </h1>
@@ -483,7 +572,10 @@ export default function HomePage({ auth, chapters }) {
                             </div>
 
                             <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
-                                {/* <i className="fas fa-user text-3xl text-white mb-4"></i> */}
+                                <FontAwesomeIcon
+                                    icon={faQuestion}
+                                    className="text-3xl text-white mb-4"
+                                />{" "}
                                 <h1 className="text-lg font-bold mb-2 text-white">
                                     Important Dates
                                 </h1>
@@ -495,7 +587,10 @@ export default function HomePage({ auth, chapters }) {
                             </div>
 
                             <div className="text-center p-8 bg-indigo-600 rounded-xl shadow-md">
-                                {/* <i className="fas fa-lock text-3xl text-white mb-4"></i> */}
+                                <FontAwesomeIcon
+                                    icon={faQuestion}
+                                    className="text-3xl text-white mb-4"
+                                />{" "}
                                 <h1 className="text-lg font-bold mb-2 text-white">
                                     Flashcards
                                 </h1>
@@ -510,21 +605,21 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
                 <div className="container-fluid mx-auto px-4 mt-4 sm:mt-8 flex justify-center bg-slate-50">
-                    <button className="bg-primary border-2 border-orange-500 text-white px-6 py-2 rounded-full">
+                    <button className="bg-primary border-2  text-white px-6 py-2 rounded-full shadow-xl">
                         Take free practice tests
                     </button>
                 </div>
-                <div className="container-fluid mx-auto sm:mt-8 bg-slate-50">
+                <div className="container-fluid mx-auto sm:mt-8 bg-slate-50 lg:mt-1">
                     <p className=" text-base sm:text-lg font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
                         or pass the first time, guaranteed with
                         <span className="text-primary ml-1 underline underline-offset-1">
-                            <Link href={route('premiumPage')}>Premium</Link>
+                            <Link href={route("premiumPage")}>Premium</Link>
                         </span>
                     </p>
                 </div>
-                <section className="bg-indigo-600 py-12 text-white">
+                <section className="bg-indigo-600 py-12 text-white mt-4">
                     <div className="container mx-auto px-4">
-                        <h2 className="text-sm font-normle text-center">
+                        <h2 className="text-sm font-normal text-center">
                             HIGHLY RECOMMENDED
                         </h2>
                         <h1 className="text-3xl font-bold mb-4 text-center py-4">
@@ -532,7 +627,7 @@ export default function HomePage({ auth, chapters }) {
                         </h1>
                         <div className="container mx-auto px-4 py-8">
                             <div className="flex flex-wrap -mx-4">
-                                <div className="w-full md:w-1/3 px-4">
+                                <div className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8 md:mb-0">
                                     <div className="p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                         <div>
                                             <h1 className="text-xl font-bold mb-2">
@@ -564,7 +659,7 @@ export default function HomePage({ auth, chapters }) {
                                                     British Columbia
                                                 </p>
                                             </div>
-                                            <div className="flex ml-auto space-x-1">
+                                            <div className="hidden sm:flex ml-auto space-x-1">
                                                 <FontAwesomeIcon
                                                     icon={faStar}
                                                     className="text-greenStar"
@@ -590,7 +685,7 @@ export default function HomePage({ auth, chapters }) {
                                     </div>
                                 </div>
 
-                                <div className="w-full md:w-1/3 px-4">
+                                <div className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8 md:mb-0">
                                     <div className="p-8 bg-white rounded-lg shadow-md flex flex-col justify-between h-full text-black">
                                         <div>
                                             <h1 className="text-xl font-bold mb-2">
@@ -620,7 +715,7 @@ export default function HomePage({ auth, chapters }) {
                                                     Nova Scotia
                                                 </p>
                                             </div>
-                                            <div className="flex ml-auto space-x-1">
+                                            <div className="hidden sm:flex ml-auto space-x-1">
                                                 <FontAwesomeIcon
                                                     icon={faStar}
                                                     className="text-greenStar"
@@ -646,7 +741,7 @@ export default function HomePage({ auth, chapters }) {
                                     </div>
                                 </div>
 
-                                <div className="w-full md:w-1/3 px-4">
+                                <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0">
                                     <div className="p-8 bg-white rounded-lg shadow-md flex flex-col justify-between h-full text-black">
                                         <div>
                                             <h1 className="text-xl font-bold mb-2">
@@ -659,7 +754,7 @@ export default function HomePage({ auth, chapters }) {
                                                 CitizenTestPrep premium is
                                                 without a doubt the best
                                                 resource for the Canadian
-                                                Citizenship Test
+                                                Citizenship Test.
                                             </p>
                                         </div>
                                         <div className="flex items-center mb-2">
@@ -676,7 +771,7 @@ export default function HomePage({ auth, chapters }) {
                                                     Saskatchewan
                                                 </p>
                                             </div>
-                                            <div className="flex ml-auto space-x-1">
+                                            <div className="hidden sm:flex ml-auto space-x-1">
                                                 <FontAwesomeIcon
                                                     icon={faStar}
                                                     className="text-greenStar"
@@ -696,7 +791,6 @@ export default function HomePage({ auth, chapters }) {
                                                 <FontAwesomeIcon
                                                     icon={faStar}
                                                     className="text-greenStar"
-
                                                 />
                                             </div>
                                         </div>
@@ -947,209 +1041,25 @@ export default function HomePage({ auth, chapters }) {
                             </h1>
                         </div>
 
-                        <div className="w-full md:w-1/2 p-4 md:p-8 flex flex-col justify-center items-center">
-                            <div className="w-full flex justify-center mt-4 sm:mt-8">
-                                <button className=" bg-primary border-2 border-orange-500 text-white px-6 py-2 rounded-full">
+                        <div className="w-full md:w-1/2  md:p-8 flex flex-col justify-center items-center">
+                            <div className="w-full flex justify-center mt-4 sm:mt-8 lg:mt-2">
+                                <button className=" bg-primary border-2 shadow-lg text-white px-6 py-2 rounded-full">
                                     Take free practice tests
                                 </button>
                             </div>
-                            <p className="text-base sm:text-lg font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500 mt-4">
+                            <p className="text-xs sm:text-xs leading-6 sm:leading-8 tracking-tight text-center text-gray-500 ">
                                 or pass the first time, guaranteed with
                                 <span className="underline ml-1 underline-offset-1 text-primary">
-                                    <Link href={route('premiumPage')}>Premium</Link>
+                                    <Link href={route("premiumPage")}>
+                                        Premium
+                                    </Link>
                                 </span>
                             </p>
                         </div>
                     </div>
                 </section>
 
-                <footer className="py-8 bg-slate-50 text-black">
-                    <div className="container mx-auto px-2">
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                            <div>
-                                <div className="text-center md:text-left mx-4">
-                                    <div className="flex items-center">
-                                        <span className=" text-xl font-black leading-6">
-                                            <span className="text-blue-500">
-                                                Citizen
-                                            </span>
-                                            TestPrep
-                                        </span>
-                                    </div>
-                                    <p className="text-xs text-gray-600 mt-2">
-                                        We're the top online destination for
-                                        preparing for the Canadian Citizenship
-                                        Test. We want you to feel confident and
-                                        ready on test day. Use our study
-                                        materials and resources to pass with a
-                                        100% success guarantee.
-                                    </p>
-                                    <ul>
-                                        <li>
-                                            {/* <i className="fas fa-envelope mr-2"></i> */}
-                                            info@example.com
-                                            {/* <i className="fas fa-phone"></i>+1 */}
-                                            234 567 890
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div className="ml-36">
-                                <h3 className="text-sm font-semibold mb-2">
-                                    About
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="text-gray-600 text-xs"
-                                        >
-                                            Who We Are
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="text-gray-600 text-xs"
-                                        >
-                                            Terms of Service
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="text-gray-600 text-xs"
-                                        >
-                                            Privacy Policy
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="text-gray-600 text-xs"
-                                        >
-                                            Accuracy Commitment
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 className="text-sm font-semibold mb-2">
-                                    Platform
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="text-gray-600 text-xs"
-                                        >
-                                            Contact Us
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="text-gray-600 text-xs"
-                                        >
-                                            About
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="text-gray-600 text-xs"
-                                        >
-                                            Customer Reviews{" "}
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="text-gray-600 text-xs"
-                                        >
-                                            News & Blog{" "}
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 className="text-sm font-semibold mb-2">
-                                    Resources
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="text-gray-600 text-xs"
-                                        >
-                                            Study Guide
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="text-gray-600 text-xs"
-                                        >
-                                            Practice Tests
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="text-gray-600 text-xs"
-                                        >
-                                            Diagnostic Test{" "}
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="text-gray-600 text-xs"
-                                        >
-                                            FAQs{" "}
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="py-2 text-white bg-secondary">
-                        <div className="container mx-auto px-4 flex items-center justify-between">
-                            <p className="text-sm">
-                                © 2024 CitizenTestPrep All rights reserved.
-                            </p>
-                            <div className="flex space-x-4">
-                                <a
-                                    href="#"
-                                    className="text-white hover:text-gray-300"
-                                >
-                                    {/* <i className="fab fa-instagram"></i> */}
-                                </a>
-                                <a
-                                    href="#"
-                                    className="text-white hover:text-gray-300"
-                                >
-                                    {/* <i className="fab fa-facebook"></i> */}
-                                </a>
-                                <a
-                                    href="#"
-                                    className="text-white hover:text-gray-300"
-                                >
-                                    {/* <i className="fab fa-twitter"></i> */}
-                                </a>
-                                <a
-                                    href="#"
-                                    className="text-white hover:text-gray-300"
-                                >
-                                    {/* <i className="fab fa-youtube"></i> */}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+               <Footer/>
             </div>
         </>
     );
