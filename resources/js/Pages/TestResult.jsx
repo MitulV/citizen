@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "@/Components/Header";
 import { Head, router } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,20 +11,30 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import ResultBanner from "@/Components/ResultBanner";
 
 export default function TestStart({result,totalTimeTaken}) {
 
+    const [isBannerVisible,setIsBannerVisible] = useState(true);
     const handleRestart = () => {
         router.post(`/test/${chapterId}`, {}, { preserveState: false, replace: true, })
     };
 
-    const pathColor = result.percentage < 85 ? "#FF0000" : "#3E9330";
-    const message = result.percentage < 85 ? 'Not enough to pass :-(' : 'Great. You Passed!';
+    const pathColor = result.percentage < 75 ? "#FF0000" : "#3E9330";
+    const message = result.percentage < 75 ? 'Not enough to pass :-(' : 'Great. You Passed!';
     return (
         <>
             <Head title="Premium" />
-            <Header />
-            <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 md:p-10 bg-slate-50">
+            
+            {
+                isBannerVisible && 
+            <ResultBanner setIsBannerVisible={setIsBannerVisible}/>
+            }
+            {
+                !isBannerVisible && 
+                <>
+                <Header />
+                <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 md:p-10 bg-slate-50">
                 {/* Left Side (spans 12 columns on small screens, 4 columns on large screens) */}
                 <div className="order-2 lg:order-1 lg:col-span-4 flex flex-col space-y-4 rounded-xl bg-white p-6 md:p-10">
                     <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold">
@@ -154,7 +164,11 @@ export default function TestStart({result,totalTimeTaken}) {
                         </div>
                     </div>
                 </div>
-            </section>
+                </section>
+                </>
+            }
+            
+            
         </>
     );
 }

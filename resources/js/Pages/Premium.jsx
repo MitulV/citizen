@@ -8,6 +8,7 @@ import {
     faEnvelope,
     faPhone,
     faMessage,
+    faCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
 import Footer from "@/Components/Footer";
 
@@ -92,7 +93,7 @@ export default function Premium() {
                         Why busy learners love CitizenTestPrep Premium
                     </h1>
 
-                    <p className="text-gray-600 mt-4 text-center lg:text-left flex flex-col lg:flex-row items-center lg:items-start">
+                    <div className="text-gray-600 mt-4 text-center lg:text-left flex flex-col lg:flex-row items-center lg:items-start">
                         Our customers rate us Excellent
                         <div className="flex items-center mx-2">
                             <FontAwesomeIcon
@@ -119,7 +120,7 @@ export default function Premium() {
                         <span>
                             Rated 5 out of 5 based on over 200+ reviews.
                         </span>
-                    </p>
+                    </div>
 
                     <div className="container mx-auto px-2 py-4">
                         <div className="flex flex-wrap -mx-4">
@@ -884,7 +885,7 @@ export default function Premium() {
                     </div>
                 </div>
             </section>
-
+            
             <section className="container-fluid mx-auto px-4 md:px-10 lg:px-20 py-8 bg-slate-100">
                 <p className="text-sm text-indigo-600 mb-4 mt-8 text-center">
                     Common FAQs
@@ -946,7 +947,7 @@ export default function Premium() {
                     </div>
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </>
     );
 }

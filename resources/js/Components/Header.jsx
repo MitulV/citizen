@@ -9,7 +9,7 @@ export default function Header() {
             <div className="container flex justify-between items-center px-2 py-2">
                 <div className="flex items-center">
                     <Link href={route("homePage")}>
-                        <span className="text-2xl font-black leading-6 text-left">
+                        <span className="text-2xl font-bold leading-6 text-left">
                             <span className="text-blue-500">Citizen</span>
                             TestPrep
                         </span>

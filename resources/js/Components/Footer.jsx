@@ -1,13 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook,faInstagram,faTwitter,faYoutube } from "@fortawesome/free-brands-svg-icons";
-
-
+import {
+    faEnvelope
+} from "@fortawesome/free-regular-svg-icons";
+import {
+    faPhone
+} from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
     return (
         <footer className="pt-8 bg-slate-50 text-black">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-2">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <div className="text-center md:text-left md:col-span-2">
+                <div className="text-center md:text-left">
                     <div className="flex items-center">
                         <span className="text-xl font-black leading-6">
                             <span className="text-blue-500">
@@ -24,9 +28,6 @@ export default function Footer() {
                         resources to pass with a 100% success
                         guarantee.
                     </p>
-                    <ul className="mt-2 text-xs">
-                        <li>info@example.com | +1 234 567 890</li>
-                    </ul>
                 </div>
 
                 <div className="mt-4 md:mt-0">
@@ -115,6 +116,10 @@ export default function Footer() {
             </div>
         </div>
 
+        <div className="mx-10 my-4 flex flext-wrap ">
+            <h1 className="text-sm text-gray-600"><FontAwesomeIcon icon={faEnvelope} className="mx-2" />hello@citizentestprep.ca</h1>
+          <h1 className="text-sm text-gray-600 ml-4"> <FontAwesomeIcon icon={faPhone} className="" /> +1 672-558-4037 </h1>
+        </div>
         <div className="py-2 text-white bg-secondary">
             <div className="container mx-auto px-4 flex items-center justify-between">
                 <p className="text-sm">

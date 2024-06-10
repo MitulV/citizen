@@ -22,7 +22,7 @@ export default function HomePage({ auth, chapters }) {
 
                 <section className="bg-slate-50 py-8 sm:py-16 flex flex-col items-center">
                     <div className="container mx-auto px-4">
-                        <h1 className="text-3xl sm:text-6xl font-black leading-tight tracking-wide text-center custom-heading px-4 sm:px-20">
+                        <h1 className="text-3xl sm:text-6xl font-extrabold leading-tight tracking-wide text-center custom-heading px-4 sm:px-20">
                             Achieve Success in 2024 Canadian <br />
                             Citizenship Test on Your
                             <span className="text-secondary ml-2">
@@ -40,7 +40,7 @@ export default function HomePage({ auth, chapters }) {
                         </p>
                     </div>
                     <div className="container mx-auto px-4 mt-4 sm:mt-8 flex justify-center">
-                        <button className="bg-primary text-white px-20 py-4 rounded-full shadow-xl">
+                        <button className="bg-primary text-white px-20 py-4 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out">
                             Take free practice tests
                         </button>
                     </div>
@@ -56,8 +56,8 @@ export default function HomePage({ auth, chapters }) {
 
                 <section className="hidden lg:block container-fluid px-32 ">
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-4 ">
-                        <div className="relative w-52 h-96 justify-center left-8">
-                            <div className="absolute left-8 w-48 h-60  bg-amber-300 rounded-t-full"></div>
+                        <div className="relative w-52 h-96 justify-center left-8 transform hover:-translate-y-1 transition duration-500 ease-out">
+                            <div className="absolute left-8 w-48 h-60  bg-amber-300 rounded-t-full shadow-sm"></div>
                             <img
                                 src="/images/person 2.png"
                                 alt="Image 1"
@@ -71,23 +71,23 @@ export default function HomePage({ auth, chapters }) {
                             </div>
                         </div>
 
-                        <div className="relative left-4 justify-center">
+                        <div className="relative left-4 justify-center transform hover:-translate-y-1 transition duration-500 ease-out">
                             <img
                                 src="/images/ctp premium.png"
                                 alt="Image 2"
-                                className="h-full "
+                                className="h-full shadow-sm"
                                 
                             />
                               <div className="absolute top-80 left-48 p-2  rounded-xl shadow-lg  bg-amber-400">
-                                <h1 className="text-2xl font-bold  text-left text-black">
+                                <h1 className="text-2xl font-bold text-left text-black">
                                 2391
                                 </h1>
                                 <p className="text-xs w-24 font-semibold">Test completed today</p>
                             </div>
                         </div>
 
-                        <div className="relative w-52 h-96 left-1">
-                            <div className="absolute left-8 w-48 h-1/2 bg-indigo-300 rounded-t-full">
+                        <div className="relative w-52 h-96 left-1 transform hover:-translate-y-1 transition duration-500 ease-out">
+                            <div className="absolute left-8 w-48 h-1/2 bg-indigo-300 rounded-t-full shadow-sm">
                             </div>
                             <img
                                 src="/images/person 1.png"
@@ -96,8 +96,8 @@ export default function HomePage({ auth, chapters }) {
                             />
                         </div>
 
-                        <div className="relative w-52 h-96 left-1">
-                            <div className="absolute left-1 w-48 h-1/2 bg-orange-300 rounded-t-full"></div>
+                        <div className="relative w-52 h-96 left-1 transform hover:-translate-y-1 transition duration-500 ease-out">
+                            <div className="absolute left-1 w-48 h-1/2 bg-orange-300 rounded-t-full shadow-sm"></div>
                             <img
                                 src="/images/person 3.png"
                                 alt="Image 4"
@@ -190,7 +190,7 @@ export default function HomePage({ auth, chapters }) {
                                     chapter_id: chapter.id,
                                 })}
                             >
-                                <div className="container mx-auto my-2 flex flex-col md:flex-row border border-gray-100 rounded-2xl">
+                                <div className="container mx-auto my-2 flex flex-col md:flex-row border border-gray-100 rounded-2xl transform hover:-translate-y-1 transition duration-500 ease-out">
                                     <div className="md:w-1/8">
                                         <img
                                             src="/images/chap 1.png"
@@ -249,12 +249,28 @@ export default function HomePage({ auth, chapters }) {
                         </p>
                     </div>
                 </section>
-                <section className="container-fluid mx-auto px-4 grid gap-10 md:grid-cols-3 bg-slate-50">
+                <section className="container-fluid mx-auto px-4 py-4 grid gap-10 md:grid-cols-3 bg-slate-50">
                     {chapters
-                        .filter((chapter) => chapter.step === 2)
+                        .filter((chapter) => chapter.step === 2  && chapter.id !== 11 && chapter.id !== 12)
                         .map((chapter, index) => (
                             <HomeChapterCard
-                                key={index} // Ensure each component has a unique key
+                                key={index}
+                                image={chapter.image}
+                                name={chapter.name}
+                                title={chapter.title}
+                                description={chapter.description}
+                                questions={chapter.questions}
+                                mistakes={chapter.mistakes}
+                            />
+                        ))}
+                </section>
+
+                <section className="container-fluid mx-auto my-4 px-4 grid gap-10 md:grid-cols-2 bg-slate-50">
+                    {chapters
+                        .filter((chapter) => chapter.step === 2  && (chapter.id == 11 || chapter.id == 12))
+                        .map((chapter, index) => (
+                            <HomeChapterCard
+                                key={index}
                                 image={chapter.image}
                                 name={chapter.name}
                                 title={chapter.title}
@@ -268,7 +284,7 @@ export default function HomePage({ auth, chapters }) {
                 <div className="container-fluid mx-auto px-10 mb-0 flex flex-col md:flex-row bg-slate-50 ">
                     <div className="md:w-1/2 flex items-center justify-left md:justify-start sm:text-lg mt-8">
                         <h1 className="font-bold text-lg tracking-wide">
-                            Step-3
+                            Step 3
                         </h1>
                     </div>
 
@@ -285,7 +301,7 @@ export default function HomePage({ auth, chapters }) {
                         .map((chapter, index) => (
                             <div
                                 key={index}
-                                className="container mx-auto  px-4 flex flex-col md:flex-row shadow-sm"
+                                className="container mx-auto  px-4 flex flex-col md:flex-row shadow-sm transform hover:-translate-y-1 transition duration-500 ease-out"
                             >
                                 <div className="md:w-1/8 pl-2  ">
                                     <img
@@ -331,62 +347,40 @@ export default function HomePage({ auth, chapters }) {
                         ))}
                 </section>
 
-                <section className="bg-indigo-600 text-white p-8 md:p-20 mt-8">
-                    <div className="container mx-auto text-center">
-                        <h2 className="text-sm font-base">
-                            SPEED THROUGH TEST PREP
-                        </h2>
-                        <h1 className="text-3xl font-bold mb-4 mt-4">
-                            Offering the simplest way to prepare
-                        </h1>
 
-                        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 p-4 md:p-10">
-                            <div className="text-center p-4 text-white rounded-md">
-                                <FontAwesomeIcon
-                                    icon={faQuestion}
-                                    className="mb-4 text-4xl"
-                                />
-                                
-                                <h1 className="text-lg font-bold mb-2">
-                                    700+ Practice Questions
-                                </h1>
-                                <p>
-                                    Access over 700 Canadian citizenship test
-                                    practice questions similar to those on the
-                                    real exam for effective preparation.
-                                </p>
-                            </div>
-                            <div className="text-center p-4 text-white rounded-md">
-                                <FontAwesomeIcon
-                                    icon={faPenToSquare}
-                                    className="mb-4 text-4xl"
-                                />
-                                <h1 className="text-lg font-bold mb-2">
-                                    Realistic Test Simulations
-                                </h1>
-                                <p>
-                                    Take Citizenship practice tests that mimic
-                                    the actual exam format. This will help you
-                                    prepare in advance for the main exam.
-                                </p>
-                            </div>
-                            <div className="text-center p-4 text-white rounded-md">
-                                <FontAwesomeIcon
-                                    icon={faArrowTrendUp}
-                                    className="mb-4 text-4xl"
-                                />
-                                <h1 className="text-lg font-bold mb-2">
-                                    Weakness Evaluations
-                                </h1>
-                                <p>
-                                    Benefit from advanced evaluations to
-                                    identify areas for improvement. This will
-                                    help you target where you need to improve.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
+                <section className="bg-indigo-600 text-white p-8 md:p-20 mt-8 relative overflow-hidden">
+    <div className="container mx-auto text-center">
+        <h2 className="text-sm font-base">SPEED THROUGH TEST PREP</h2>
+        <h1 className="text-3xl font-bold mb-4 mt-4">Offering the simplest way to prepare</h1>
+
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 p-4 md:p-10">
+            <div className="text-center p-4 text-white rounded-md">
+                <FontAwesomeIcon icon={faQuestion} className="mb-4 text-4xl" />
+                <h1 className="text-lg font-bold mb-2">700+ Practice Questions</h1>
+                <p>Access over 700 Canadian citizenship test practice questions similar to those on the real exam for effective preparation.</p>
+            </div>
+            <div className="text-center p-4 text-white rounded-md">
+                <FontAwesomeIcon icon={faPenToSquare} className="mb-4 text-4xl" />
+                <h1 className="text-lg font-bold mb-2">Realistic Test Simulations</h1>
+                <p>Take Citizenship practice tests that mimic the actual exam format. This will help you prepare in advance for the main exam.</p>
+            </div>
+            <div className="text-center p-4 text-white rounded-md">
+                <FontAwesomeIcon icon={faArrowTrendUp} className="mb-4 text-4xl" />
+                <h1 className="text-lg font-bold mb-2">Weakness Evaluations</h1>
+                <p>Benefit from advanced evaluations to identify areas for improvement. This will help you target where you need to improve.</p>
+            </div>
+        </div>
+    </div>
+
+    <div className="absolute bottom-0 left-0 h-20 w-10 bg-orange-400 rounded-r-full z-20 overflow-hidden"></div>
+    <div className="absolute top-0 right-0 h-20 w-10 bg-orange-400 rounded-l-full z-10 overflow-hidden"></div>
+    <div className="absolute top-32 left-96 transform -translate-x-1/2 -translate-y-1/2 h-16 w-16 bg-amber-400 rounded-full z-10 overflow-hidden"></div>
+</section>
+
+
+
+
                 <section className="text-black p-8 md:p-20 bg-slate-50">
                     <div className="container mx-auto">
                         <h1 className="text-3xl font-bold text-center mb-8">
@@ -605,7 +599,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
                 <div className="container-fluid mx-auto px-4 mt-4 sm:mt-8 flex justify-center bg-slate-50">
-                    <button className="bg-primary border-2  text-white px-6 py-2 rounded-full shadow-xl">
+                    <button className="bg-primary text-white px-6 py-2 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out">
                         Take free practice tests
                     </button>
                 </div>
@@ -625,9 +619,10 @@ export default function HomePage({ auth, chapters }) {
                         <h1 className="text-3xl font-bold mb-4 text-center py-4">
                             What our users are saying about us
                         </h1>
+                        
                         <div className="container mx-auto px-4 py-8">
                             <div className="flex flex-wrap -mx-4">
-                                <div className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8 md:mb-0">
+                                <div className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8 md:mb-0 transform hover:-translate-y-1 transition duration-500 ease-out">
                                     <div className="p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                         <div>
                                             <h1 className="text-xl font-bold mb-2">
@@ -684,8 +679,9 @@ export default function HomePage({ auth, chapters }) {
                                         </div>
                                     </div>
                                 </div>
+                                
 
-                                <div className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8 md:mb-0">
+                                <div className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8 md:mb-0 transform hover:-translate-y-1 transition duration-500 ease-out">
                                     <div className="p-8 bg-white rounded-lg shadow-md flex flex-col justify-between h-full text-black">
                                         <div>
                                             <h1 className="text-xl font-bold mb-2">
@@ -741,7 +737,7 @@ export default function HomePage({ auth, chapters }) {
                                     </div>
                                 </div>
 
-                                <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0">
+                                <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0 transform hover:-translate-y-1 transition duration-500 ease-out">
                                     <div className="p-8 bg-white rounded-lg shadow-md flex flex-col justify-between h-full text-black">
                                         <div>
                                             <h1 className="text-xl font-bold mb-2">
@@ -1043,7 +1039,7 @@ export default function HomePage({ auth, chapters }) {
 
                         <div className="w-full md:w-1/2  md:p-8 flex flex-col justify-center items-center">
                             <div className="w-full flex justify-center mt-4 sm:mt-8 lg:mt-2">
-                                <button className=" bg-primary border-2 shadow-lg text-white px-6 py-2 rounded-full">
+                                <button className=" bg-primary shadow-lg text-white px-6 py-2 rounded-full transform hover:-translate-y-1 transition duration-500 ease-out">
                                     Take free practice tests
                                 </button>
                             </div>
