@@ -7,11 +7,14 @@ import {
     faCircleQuestion,
 } from "@fortawesome/free-solid-svg-icons";
 import Sidebar from "@/Components/Sidebar";
+import LoginHeader from "@/Components/LoginHeader";
 
 export default function LoginPage() {
     const [sideMenuIsExpand, setSideMenuIsExpand] = useState(true);
 
     return (
+        <>
+        <LoginHeader/>
         <div className="relative min-h-screen md:flex">
             <Sidebar setExpand={setSideMenuIsExpand} />
 
@@ -287,5 +290,7 @@ export default function LoginPage() {
                 </section>
             </section>
         </div>
+        </>
+        
     );
 }

@@ -6,13 +6,11 @@ import { Button, MegaMenu, Navbar } from "flowbite-react";
 export default function Header() {
     return (
         <MegaMenu>
-            <div className="container flex justify-between items-center px-2 py-2">
+            <div className="container flex justify-between items-center pl-16 pr-0 py-2">
                 <div className="flex items-center">
                     <Link href={route("homePage")}>
                         <span className="text-2xl font-bold leading-6 text-left">
-                            {/* <span className="text-blue-500">Citizen</span>
-                            TestPrep */}
-                            <img src="/images/logo.png" />
+                            <img src="/images/logo.png" className="w-40 h-6" alt="Logo" />
                         </span>
                     </Link>
                 </div>
@@ -24,18 +22,12 @@ export default function Header() {
                             <ul>
                                 <div className="space-y-4 p-4">
                                     <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-primary"
-                                        >
+                                        <Link href="#" className="hover:text-primary">
                                             Help Center
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-primary"
-                                        >
+                                        <Link href="#" className="hover:text-primary">
                                             FAQ
                                         </Link>
                                     </li>
@@ -48,18 +40,12 @@ export default function Header() {
                             <ul>
                                 <div className="space-y-4 p-4">
                                     <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-primary"
-                                        >
+                                        <Link href="#" className="hover:text-primary">
                                             Test Locations
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-primary"
-                                        >
+                                        <Link href="#" className="hover:text-primary">
                                             Driving Tips
                                         </Link>
                                     </li>
@@ -71,19 +57,16 @@ export default function Header() {
                     <Navbar.Link href="#">About</Navbar.Link>
                 </Navbar.Collapse>
 
-                <div className="hidden md:block">
+                <div className="hidden md:flex items-center space-x-4">
                     <Link
                         href={route("register")}
-                        as="button"
-                        className="border-2 border-primary bg-white text-gray-800 px-4 py-1 rounded-full mr-4"
+                        className="border-2 border-primary bg-white text-gray-800 px-4 py-2 rounded-full"
                     >
                         Sign In
                     </Link>
-
                     <Link
                         href={route("premiumPage")}
-                        as="button"
-                        className="bg-primary text-white px-4 py-1 rounded-full"
+                        className="bg-primary text-white px-4 py-2 rounded-full"
                     >
                         Pass the first time, guaranteed
                     </Link>
