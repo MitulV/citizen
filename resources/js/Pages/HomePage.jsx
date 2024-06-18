@@ -8,17 +8,14 @@ import {
     faArrowTrendUp
 } from "@fortawesome/free-solid-svg-icons";
 
-
+import GuestLayout from '@/Layouts/GuestLayout';
 import HomeChapterCard from "@/Components/HomeChapterCard";
-import Header from "@/Components/Header";
-import Footer from "@/Components/Footer";
 
 export default function HomePage({ auth, chapters }) {
     return (
         <>
-            <Head title="Welcome" />
-            <div className="bg-slate-50">
-                <Header />
+            <GuestLayout>
+                <Head title="Welcome" />
 
                 <section className="bg-slate-50 py-8 sm:py-16 flex flex-col items-center">
                     <div className="container mx-auto px-4">
@@ -67,7 +64,9 @@ export default function HomePage({ auth, chapters }) {
                                 <h1 className="text-2xl  font-bold  text-center text-black">
                                     2024
                                 </h1>
-                                <p className="text-sm w-20 text-center font-semibold">Updated</p>
+                                <p className="text-sm w-20 text-center font-semibold">
+                                    Updated
+                                </p>
                             </div>
                         </div>
 
@@ -76,19 +75,19 @@ export default function HomePage({ auth, chapters }) {
                                 src="/images/ctp premium.png"
                                 alt="Image 2"
                                 className="h-full shadow-sm"
-                                
                             />
-                              <div className="absolute top-80 left-48 p-2  rounded-xl shadow-lg  bg-amber-400">
+                            <div className="absolute top-80 left-48 p-2  rounded-xl shadow-lg  bg-amber-400">
                                 <h1 className="text-2xl font-bold text-left text-black">
-                                2391
+                                    2391
                                 </h1>
-                                <p className="text-xs w-24 font-semibold">Test completed today</p>
+                                <p className="text-xs w-24 font-semibold">
+                                    Test completed today
+                                </p>
                             </div>
                         </div>
 
                         <div className="relative w-52 h-96 left-1 transform hover:-translate-y-1 transition duration-500 ease-out">
-                            <div className="absolute left-8 w-48 h-1/2 bg-indigo-300 rounded-t-full shadow-sm">
-                            </div>
+                            <div className="absolute left-8 w-48 h-1/2 bg-indigo-300 rounded-t-full shadow-sm"></div>
                             <img
                                 src="/images/person 1.png"
                                 alt="Image 3"
@@ -116,43 +115,41 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
                 <section className="lg:hidden container-fluid px-2 ">
-    <div className="flex flex-wrap -mx-2">
-        <div className="w-1/3 px-2">
-            <div className="relative flex justify-center">
-                <div className="absolute top-0 w-24 h-28 bg-amber-300 rounded-t-full"></div>
-                <img
-                    src="/images/person 2.png"
-                    alt="Image 1"
-                    className="relative object-cover w-24 h-48 rounded-b-full"
-                />
-            </div>
-        </div>
+                    <div className="flex flex-wrap -mx-2">
+                        <div className="w-1/3 px-2">
+                            <div className="relative flex justify-center">
+                                <div className="absolute top-0 w-24 h-28 bg-amber-300 rounded-t-full"></div>
+                                <img
+                                    src="/images/person 2.png"
+                                    alt="Image 1"
+                                    className="relative object-cover w-24 h-48 rounded-b-full"
+                                />
+                            </div>
+                        </div>
 
-        <div className="w-1/3 px-2 ">
-            <div className="relative w-full h-64 flex justify-center">
-                <div className="absolute top-0 w-24 h-28 bg-indigo-300 rounded-t-full"></div>
-                <img
-                    src="/images/person 1.png"
-                    alt="Image 2"
-                    className="relative object-cover w-24 h-48 rounded-b-full"
-                />
-            </div>
-        </div>
+                        <div className="w-1/3 px-2 ">
+                            <div className="relative w-full h-64 flex justify-center">
+                                <div className="absolute top-0 w-24 h-28 bg-indigo-300 rounded-t-full"></div>
+                                <img
+                                    src="/images/person 1.png"
+                                    alt="Image 2"
+                                    className="relative object-cover w-24 h-48 rounded-b-full"
+                                />
+                            </div>
+                        </div>
 
-        <div className="w-1/3 px-2 ">
-            <div className="relative w-full h-64 flex justify-center">
-                <div className="absolute top-0 w-24 h-28 bg-orange-300 rounded-t-full"></div>
-                <img
-                    src="/images/person 3.png"
-                    alt="Image 3"
-                    className="relative object-cover w-24 h-48  rounded-b-full"
-                />
-            </div>
-        </div>
-    </div>
-</section>
-
-
+                        <div className="w-1/3 px-2 ">
+                            <div className="relative w-full h-64 flex justify-center">
+                                <div className="absolute top-0 w-24 h-28 bg-orange-300 rounded-t-full"></div>
+                                <img
+                                    src="/images/person 3.png"
+                                    alt="Image 3"
+                                    className="relative object-cover w-24 h-48  rounded-b-full"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <section className="bg-slate-50 lg:py-20 sm:py-0">
                     <div className="container mx-auto px-4">
@@ -251,7 +248,12 @@ export default function HomePage({ auth, chapters }) {
                 </section>
                 <section className="container-fluid mx-auto px-4 py-4 grid gap-10 md:grid-cols-3 bg-slate-50">
                     {chapters
-                        .filter((chapter) => chapter.step === 2  && chapter.id !== 11 && chapter.id !== 12)
+                        .filter(
+                            (chapter) =>
+                                chapter.step === 2 &&
+                                chapter.id !== 11 &&
+                                chapter.id !== 12
+                        )
                         .map((chapter, index) => (
                             <HomeChapterCard
                                 key={index}
@@ -267,7 +269,11 @@ export default function HomePage({ auth, chapters }) {
 
                 <section className="container-fluid mx-auto my-4 px-4 grid gap-10 md:grid-cols-2 bg-slate-50">
                     {chapters
-                        .filter((chapter) => chapter.step === 2  && (chapter.id == 11 || chapter.id == 12))
+                        .filter(
+                            (chapter) =>
+                                chapter.step === 2 &&
+                                (chapter.id == 11 || chapter.id == 12)
+                        )
                         .map((chapter, index) => (
                             <HomeChapterCard
                                 key={index}
@@ -347,39 +353,65 @@ export default function HomePage({ auth, chapters }) {
                         ))}
                 </section>
 
-
-
                 <section className="bg-indigo-600 text-white p-8 md:p-20 mt-8 relative overflow-hidden">
-    <div className="container mx-auto text-center">
-        <h2 className="text-sm font-base">SPEED THROUGH TEST PREP</h2>
-        <h1 className="text-3xl font-bold mb-4 mt-4">Offering the simplest way to prepare</h1>
+                    <div className="container mx-auto text-center">
+                        <h2 className="text-sm font-base">
+                            SPEED THROUGH TEST PREP
+                        </h2>
+                        <h1 className="text-3xl font-bold mb-4 mt-4">
+                            Offering the simplest way to prepare
+                        </h1>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 p-4 md:p-10">
-            <div className="text-center p-4 text-white rounded-md">
-                <FontAwesomeIcon icon={faQuestion} className="mb-4 text-4xl" />
-                <h1 className="text-lg font-bold mb-2">700+ Practice Questions</h1>
-                <p>Access over 700 Canadian citizenship test practice questions similar to those on the real exam for effective preparation.</p>
-            </div>
-            <div className="text-center p-4 text-white rounded-md">
-                <FontAwesomeIcon icon={faPenToSquare} className="mb-4 text-4xl" />
-                <h1 className="text-lg font-bold mb-2">Realistic Test Simulations</h1>
-                <p>Take Citizenship practice tests that mimic the actual exam format. This will help you prepare in advance for the main exam.</p>
-            </div>
-            <div className="text-center p-4 text-white rounded-md">
-                <FontAwesomeIcon icon={faArrowTrendUp} className="mb-4 text-4xl" />
-                <h1 className="text-lg font-bold mb-2">Weakness Evaluations</h1>
-                <p>Benefit from advanced evaluations to identify areas for improvement. This will help you target where you need to improve.</p>
-            </div>
-        </div>
-    </div>
+                        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 p-4 md:p-10">
+                            <div className="text-center p-4 text-white rounded-md">
+                                <FontAwesomeIcon
+                                    icon={faQuestion}
+                                    className="mb-4 text-4xl"
+                                />
+                                <h1 className="text-lg font-bold mb-2">
+                                    700+ Practice Questions
+                                </h1>
+                                <p>
+                                    Access over 700 Canadian citizenship test
+                                    practice questions similar to those on the
+                                    real exam for effective preparation.
+                                </p>
+                            </div>
+                            <div className="text-center p-4 text-white rounded-md">
+                                <FontAwesomeIcon
+                                    icon={faPenToSquare}
+                                    className="mb-4 text-4xl"
+                                />
+                                <h1 className="text-lg font-bold mb-2">
+                                    Realistic Test Simulations
+                                </h1>
+                                <p>
+                                    Take Citizenship practice tests that mimic
+                                    the actual exam format. This will help you
+                                    prepare in advance for the main exam.
+                                </p>
+                            </div>
+                            <div className="text-center p-4 text-white rounded-md">
+                                <FontAwesomeIcon
+                                    icon={faArrowTrendUp}
+                                    className="mb-4 text-4xl"
+                                />
+                                <h1 className="text-lg font-bold mb-2">
+                                    Weakness Evaluations
+                                </h1>
+                                <p>
+                                    Benefit from advanced evaluations to
+                                    identify areas for improvement. This will
+                                    help you target where you need to improve.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-    <div className="absolute bottom-0 left-0 h-20 w-10 bg-orange-400 rounded-r-full z-20 overflow-hidden"></div>
-    <div className="absolute top-0 right-0 h-20 w-10 bg-orange-400 rounded-l-full z-10 overflow-hidden"></div>
-    <div className="absolute top-32 left-96 transform -translate-x-1/2 -translate-y-1/2 h-16 w-16 bg-amber-400 rounded-full z-10 overflow-hidden"></div>
-</section>
-
-
-
+                    <div className="absolute bottom-0 left-0 h-20 w-10 bg-orange-400 rounded-r-full z-20 overflow-hidden"></div>
+                    <div className="absolute top-0 right-0 h-20 w-10 bg-orange-400 rounded-l-full z-10 overflow-hidden"></div>
+                    <div className="absolute top-32 left-96 transform -translate-x-1/2 -translate-y-1/2 h-16 w-16 bg-amber-400 rounded-full z-10 overflow-hidden"></div>
+                </section>
 
                 <section className="text-black p-8 md:p-20 bg-slate-50">
                     <div className="container mx-auto">
@@ -443,7 +475,7 @@ export default function HomePage({ auth, chapters }) {
                     <div className="container mx-auto">
                         <div>
                             <p className="text-center text-base mb-2">
-                               YOUT ULTIMATE ALL-IN-ONE RESOURCE
+                                YOUT ULTIMATE ALL-IN-ONE RESOURCE
                             </p>
 
                             <h2 className="text-3xl font-bold mb-10 text-center">
@@ -619,7 +651,7 @@ export default function HomePage({ auth, chapters }) {
                         <h1 className="text-3xl font-bold mb-4 text-center py-4">
                             What our users are saying about us
                         </h1>
-                        
+
                         <div className="container mx-auto px-4 py-8">
                             <div className="flex flex-wrap -mx-4">
                                 <div className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8 md:mb-0 transform hover:-translate-y-1 transition duration-500 ease-out">
@@ -679,7 +711,6 @@ export default function HomePage({ auth, chapters }) {
                                         </div>
                                     </div>
                                 </div>
-                                
 
                                 <div className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8 md:mb-0 transform hover:-translate-y-1 transition duration-500 ease-out">
                                     <div className="p-8 bg-white rounded-lg shadow-md flex flex-col justify-between h-full text-black">
@@ -1054,9 +1085,7 @@ export default function HomePage({ auth, chapters }) {
                         </div>
                     </div>
                 </section>
-
-               <Footer/>
-            </div>
+            </GuestLayout>
         </>
     );
 }

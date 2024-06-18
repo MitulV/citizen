@@ -10,8 +10,9 @@ export default function Header() {
                 <div className="flex items-center">
                     <Link href={route("homePage")}>
                         <span className="text-2xl font-bold leading-6 text-left">
-                            <span className="text-blue-500">Citizen</span>
-                            TestPrep
+                            {/* <span className="text-blue-500">Citizen</span>
+                            TestPrep */}
+                            <img src="/images/logo.png" />
                         </span>
                     </Link>
                 </div>

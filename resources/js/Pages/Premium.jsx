@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "@/Components/Header";
 import { Head } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,13 +9,13 @@ import {
     faMessage,
     faCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
-import Footer from "@/Components/Footer";
+import GuestLayout from '@/Layouts/GuestLayout';
 
 export default function Premium() {
     return (
         <>
-            <Head title="Premium" />
-            <Header />
+            <GuestLayout>
+                <Head title="Premium" />
             <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 md:p-10 bg-slate-50">
                 {/* Left Column */}
                 <div className="lg:col-span-6 flex flex-col space-y-4 p-6 md:p-10">
@@ -947,7 +946,7 @@ export default function Premium() {
                     </div>
                 </div>
             </section>
-            <Footer />
+            </GuestLayout>
         </>
     );
 }

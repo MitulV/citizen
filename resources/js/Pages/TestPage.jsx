@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Header from "@/Components/Header";
 import { Head, router } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,6 +9,7 @@ import {
     faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import Countdown from 'react-countdown';
+import GuestLayout from "@/Layouts/GuestLayout";
 
 export default function TestStart({ chapterId, question, nextQuestion, result, index, selectedAnswerId, explanation }) {
 
@@ -144,8 +144,8 @@ export default function TestStart({ chapterId, question, nextQuestion, result, i
 
     return (
         <>
-            <Head title="Premium" />
-            <Header />
+             <GuestLayout>
+             <Head title="Premium" />
             <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 p-10 bg-slate-50">
                 {/* Left Side (spans 8 columns on large screens) */}
                 <div className="order-2 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl bg-white p-10">
@@ -275,6 +275,7 @@ export default function TestStart({ chapterId, question, nextQuestion, result, i
                 {/* Buttons outside the main right div */}
 
             </section>
+            </GuestLayout>
         </>
     );
 }
