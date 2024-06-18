@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/kajal', function () {
-    return Inertia::render('ResultBanner1');
+    return Inertia::render('LoginPage');
 });
 
 

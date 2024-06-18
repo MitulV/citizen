@@ -8,12 +8,16 @@ import {
 
 export default function ResultBanner({ setIsBannerVisible }) {
     return (
-        <section className="m-10 border-2 border-gray-700">
-            <div className="container mx-auto md:py-4">
-                <div className=" text-right mr-36 overlay">
+        <section className="relative m-10 shadow-lg rounded-xl border-gray-700 p-8 overflow-hidden">
+            {/* Right-top half-circle */}
+            <div className="absolute top-0 right-0 h-[575px] w-[575px] bg-amber-200 rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
+            <div className="absolute bottom-0 left-0 h-[575px] w-[535px] bg-red-300 rounded-full transform -translate-x-1/2 translate-y-1/2"></div>
+
+            <div className="relative z-10">
+                <div className="text-right mr-3 overlay">
                     <FontAwesomeIcon
                         icon={faXmark}
-                        className="font-3xl z-3"
+                        className="text-2xl z-10 cursor-pointer"
                         onClick={() => setIsBannerVisible(false)}
                     />
                 </div>
@@ -34,7 +38,6 @@ export default function ResultBanner({ setIsBannerVisible }) {
                         <div className="max-w-xl mx-auto">
                             <div className="text-left">
                                 <h1 className="text-base md:text-lg font-bold mb-2 text-gray-900">
-                                    {" "}
                                     <FontAwesomeIcon
                                         icon={faCircleCheck}
                                         className="text-lime-700 mr-4"
@@ -83,7 +86,7 @@ export default function ResultBanner({ setIsBannerVisible }) {
                                     />
                                 </button>
                             </div>
-                            <p className="text-xs md:text-sm  mt-4 text-gray-600">
+                            <p className="text-xs md:text-sm mt-4 text-gray-600">
                                 Opens in new window, your results won’t be lost
                             </p>
                         </div>
