@@ -32,16 +32,16 @@ export default function Dashboard({
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
                             {chaptersWithTopics.map((chapter) => (
                                 <div
                                     key={chapter.id}
-                                    className="relative bg-white rounded-2xl shadow-md transform hover:-translate-y-1 transition duration-500 ease-out hover:shadow-lg border-2 border-gray-300"
+                                    className="relative bg-white rounded-2xl shadow-md transform hover:-translate-y-1 transition duration-500 ease-out hover:shadow-lg border-2 border-gray-300 max-w-sm"
                                 >
                                     <img
                                         src={chapter.image}
                                         alt={`Chapter ${chapter.id}`}
-                                        className="w-full h-48 object-cover rounded-t-2xl"
+                                        className="max-w-sm h-48 object-cover rounded-t-2xl"
                                     />
                                     <button className="absolute top-2 right-2 bg-primary text-white py-1 px-3 md:py-2 md:px-4 rounded-full text-xs md:text-sm z-20">
                                         Continue
