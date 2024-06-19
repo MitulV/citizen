@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/kajal', function () {
-    return Inertia::render('LoginPage');
+    return Inertia::render('About');
 });
 
 Route::get('/',[HomePageController::class,'index'])->name('homePage');
