@@ -10,30 +10,30 @@ export default function Header() {
                 <div className="flex items-center">
                     <Link href={route("homePage")}>
                         <span className="text-2xl font-bold leading-6 text-left">
-                            <img src="/images/logo.png" alt="Logo" className="h-8" />
+                            <img src="/images/logo.png" alt="Logo" className="h-6 w-40 ml-8" />
                         </span>
                     </Link>
                 </div>
 
-                <Navbar.Toggle className="bg-primary hover:bg-primary text-white rounded-full border-none" />
                
-                <div className="flex items-center space-x-4">
-                    <Button>
-                        <FontAwesomeIcon icon={faCircleNotch} spin />
-                    </Button>
+                <div className="flex items-center space-x-4 bg-primary hover:bg-primary text-white px-4 py-2 rounded-full">
+                  
                     <Dropdown
-                        label="Profile Name"
-                        inline={true}
-                        className="bg-primary hover:bg-primary text-white rounded-full border-none"
-                    >
-                        <Dropdown.Item>
-                            <Link href={route("homePage")}>View Profile</Link>
+                        label="Kunal Koli"
+                        placement="bottom"
+                        inline
+                        className="  rounded-xl mt-2 border-none" >
+                        <Dropdown.Item className="text-stone-500 px-8 ">
+                            <Link href={route("homePage")}>Dashboard</Link>
                         </Dropdown.Item>
-                        <Dropdown.Item>
+                        <Dropdown.Item className="text-stone-500 px-8 " >
+                            <Link href={route("homePage")}>Subscription</Link>
+                        </Dropdown.Item>
+                        <Dropdown.Item className="text-stone-500 px-8 ">
                             <Link href={route("homePage")}>Settings</Link>
                         </Dropdown.Item>
-                        <Dropdown.Item>
-                            <Link href={route("homePage")}>Logout</Link>
+                        <Dropdown.Item className="text-stone-500 px-8 ">
+                            <Link href={route("homePage")}>Log out</Link>
                         </Dropdown.Item>
                     </Dropdown>
                 </div>
