@@ -25,6 +25,7 @@ class FlashcardsController extends Controller
             }
         }
 
+        
         return Inertia::render('Flashcard/Index', [
             'chapters' => $chaptersWithFlashcards
         ]);

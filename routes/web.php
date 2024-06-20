@@ -30,12 +30,12 @@ Route::post('/test-results',[TestController::class,'testResult'])->name('testRes
 
 
 Route::middleware('auth')->group(function () {
-    Route::get('/guide', [StudyGuidesController::class,'index'])->name('studyguide');
+    Route::get('/guide', [StudyGuidesController::class,'index'])->name('dashboard');
     Route::get('/simulation-tests', [SimulationTestsController::class,'index'])->name('simulation.test');
     Route::get('/practice-tests', [PracticeTestsController::class,'index'])->name('practice.test');
     Route::get('/flashcards', [FlashcardsController::class,'index'])->name('flashcard');
     Route::get('/tools', [ToolsController::class,'index'])->name('tools');
-    Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
+    //Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
