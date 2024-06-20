@@ -1,10 +1,15 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FlashcardsController;
 use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\PracticeTestsController;
 use App\Http\Controllers\PremiumPageController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SimulationTestsController;
+use App\Http\Controllers\StudyGuidesController;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\ToolsController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -25,6 +30,11 @@ Route::post('/test-results',[TestController::class,'testResult'])->name('testRes
 
 
 Route::middleware('auth')->group(function () {
+    Route::get('/guide', [StudyGuidesController::class,'index'])->name('studyguide');
+    Route::get('/simulation-tests', [SimulationTestsController::class,'index'])->name('simulation.test');
+    Route::get('/practice-tests', [PracticeTestsController::class,'index'])->name('practice.test');
+    Route::get('/flashcards', [FlashcardsController::class,'index'])->name('flashcard');
+    Route::get('/tools', [ToolsController::class,'index'])->name('tools');
     Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
