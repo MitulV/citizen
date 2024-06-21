@@ -7,16 +7,14 @@ import {
     faFile,
     faCheck,
 } from "@fortawesome/free-solid-svg-icons";
-import Sidebar from "@/Components/Sidebar";
 
 export default function Index({ auth, chapters }) {
     return (
         <>
             <AuthenticatedLayout user={auth.user}>
                 <Head title="Study Guide" />
-                <div className="relative min-h-screen md:flex">
-                    <Sidebar />
 
+                <div className="relative min-h-screen md:flex">
                     <section className="bg-slate-100 py-8 px-4 md:py-12 md:px-8 lg:px-40">
                         <div className="container mx-auto">
                             <div className="text-left mb-8">

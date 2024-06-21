@@ -29,6 +29,7 @@
         "react-circular-progressbar": "^2.1.0",
         "react-countdown": "^2.3.5",
         "react-dom": "*",
+        "react-pro-sidebar": "^1.1.0",
         "react-scripts": "*",
         "simplebar-react": "*"
     }
