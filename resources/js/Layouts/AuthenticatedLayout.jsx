@@ -18,25 +18,32 @@ export default function Authenticated({ user, header, children }) {
         setCollapsed(!collapsed);
     };
 
-    const styleRef = useRef(null);
     useEffect(() => {
-        if (styleRef.current) {
-            styleRef.current.classList.remove("css-1t8x7v1");
-        }
-    });
+        // Select all li elements with the class css-1t8x7v1 and remove that class
+        const elements = document.querySelectorAll("li.css-1t8x7v1");
+        elements.forEach((element) => {
+            element.classList.remove("css-1t8x7v1");
+        });
+    }, []); // Empty dependency array means this runs once after the initial render
 
     return (
         <div>
             <LoginHeader />
             <div className="relative flex h-full ">
                 <Sidebar
-                    ref={styleRef}
                     collapsedWidth="0"
                     collapsed={collapsed}
                     backgroundColor="rgb(254,117,62)"
                 >
                     <Menu>
-                        <MenuItem className="w-full m-2 mt-10" component="span">
+                        <MenuItem
+                            className="w-full m-2 mt-10"
+                            component="span"
+                            style={{
+                                margin: "10px 0 20px 0",
+                                color: "black",
+                            }}
+                        >
                             <Link
                                 href={route("dashboard")}
                                 className="no-underline"
