@@ -4,7 +4,13 @@ import LoginHeader from "@/Components/LoginHeader";
 import Footer from "@/Components/Footer";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBookOpen,faCube,faFileLines,faImage,faGem } from "@fortawesome/free-solid-svg-icons"; // Ensure the correct icon is imported
+import {
+    faBookOpen,
+    faCube,
+    faFileLines,
+    faImage,
+    faGem,
+} from "@fortawesome/free-solid-svg-icons"; // Ensure the correct icon is imported
 
 export default function Authenticated({ user, header, children }) {
     const [collapsed, setCollapsed] = useState(false);
@@ -12,55 +18,88 @@ export default function Authenticated({ user, header, children }) {
         setCollapsed(!collapsed);
     };
 
-    const styleRef=useRef(null);
-    useEffect(()=>{
-        if(styleRef.current){
-            styleRef.current.classList.remove('css-1t8x7v1');
+    const styleRef = useRef(null);
+    useEffect(() => {
+        if (styleRef.current) {
+            styleRef.current.classList.remove("css-1t8x7v1");
         }
-    })
+    });
 
     return (
         <div>
             <LoginHeader />
             <div className="relative flex h-full ">
-                <Sidebar ref={styleRef}
+                <Sidebar
+                    ref={styleRef}
                     collapsedWidth="0"
                     collapsed={collapsed}
                     backgroundColor="rgb(254,117,62)"
                 >
                     <Menu>
-                        <MenuItem className="w-full m-2 mt-10">
-                            <Link href={route("dashboard")} className="no-underline">
+                        <MenuItem className="w-full m-2 mt-10" component="span">
+                            <Link
+                                href={route("dashboard")}
+                                className="no-underline"
+                            >
                                 <button className="hover:bg-white hover:text-primary text-white rounded-full w-40 px-4 py-2 no-hover">
-                                    <FontAwesomeIcon icon={faBookOpen} className="mr-2" /> Study Guide
+                                    <FontAwesomeIcon
+                                        icon={faBookOpen}
+                                        className="mr-2"
+                                    />
+                                    Study Guide
                                 </button>
                             </Link>
                         </MenuItem>
-                        <MenuItem className="w-full m-2">
+                        <MenuItem className="w-full m-2" component="span">
                             <Link href={route("simulation.test")} className="">
                                 <button className="hover:bg-white hover:text-primary text-white rounded-full w-40 px-4 py-2 no-hover">
-                                <FontAwesomeIcon icon={faCube}  className="mr-2"/>  Simulations
+                                    <FontAwesomeIcon
+                                        icon={faCube}
+                                        className="mr-2"
+                                    />
+                                    Simulations
                                 </button>
                             </Link>
                         </MenuItem>
-                        <MenuItem className="w-full m-2">
-                            <Link href={route("practice.test")} className="no-underline">
+                        <MenuItem className="w-full m-2" component="span">
+                            <Link
+                                href={route("practice.test")}
+                                className="no-underline"
+                            >
                                 <button className="hover:bg-white hover:text-primary text-white rounded-full w-40 px-4 py-2 no-hover">
-                                <FontAwesomeIcon icon={faFileLines} className="mr-2" />  Chapter Tests
+                                    <FontAwesomeIcon
+                                        icon={faFileLines}
+                                        className="mr-2"
+                                    />
+                                    Chapter Tests
                                 </button>
                             </Link>
                         </MenuItem>
-                        <MenuItem className="w-full m-2">
-                            <Link href={route("flashcard")} className="no-underline">
+                        <MenuItem className="w-full m-2" component="span">
+                            <Link
+                                href={route("flashcard")}
+                                className="no-underline"
+                            >
                                 <button className="hover:bg-white hover:text-primary text-white rounded-full w-40 px-4 py-2 no-hover">
-                                <FontAwesomeIcon icon={faImage} className="mr-2"/> Flashcards
+                                    <FontAwesomeIcon
+                                        icon={faImage}
+                                        className="mr-2"
+                                    />
+                                    Flashcards
                                 </button>
                             </Link>
                         </MenuItem>
-                        <MenuItem className="w-full m-2">
-                            <Link href={route("dashboard")} className="no-underline">
+                        <MenuItem className="w-full m-2" component="span">
+                            <Link
+                                href={route("dashboard")}
+                                className="no-underline"
+                            >
                                 <button className="hover:bg-white hover:text-primary text-white rounded-full w-40 px-4 py-2 no-hover">
-                                <FontAwesomeIcon icon={faGem} className="mr-2"/> Cheat Sheets
+                                    <FontAwesomeIcon
+                                        icon={faGem}
+                                        className="mr-2"
+                                    />
+                                    Cheat Sheets
                                 </button>
                             </Link>
                         </MenuItem>
