@@ -14,15 +14,15 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/kajal', function () {
-    return Inertia::render('About');
+  return Inertia::render('About');
 });
 
-Route::get('/',[HomePageController::class,'index'])->name('homePage');
-Route::get('/premium',[PremiumPageController::class,'index'])->name('premiumPage');
-Route::get('/test-info/{chapter_id}',[TestController::class,'index'])->name('testInfoPage');
-Route::get('/test/{chapterId}',[TestController::class,'testPage'])->name('testPage');
-Route::post('/test/{chapterId}',[TestController::class,'testPage'])->name('testPage');
-Route::post('/test-results',[TestController::class,'testResult'])->name('testResultPage');
+Route::get('/', [HomePageController::class, 'index'])->name('homePage');
+Route::get('/premium', [PremiumPageController::class, 'index'])->name('premiumPage');
+Route::get('/test-info/{chapter_id}', [TestController::class, 'index'])->name('testInfoPage');
+Route::get('/test/{chapterId}', [TestController::class, 'testPage'])->name('testPage');
+Route::post('/test/{chapterId}', [TestController::class, 'testPage'])->name('testPage');
+Route::post('/test-results', [TestController::class, 'testResult'])->name('testResultPage');
 
 
 // Route::middleware(['auth', 'verified'])->group(function () {
@@ -30,15 +30,16 @@ Route::post('/test-results',[TestController::class,'testResult'])->name('testRes
 
 
 Route::middleware('auth')->group(function () {
-    Route::get('/guide', [StudyGuidesController::class,'index'])->name('dashboard');
-    Route::get('/simulation-tests', [SimulationTestsController::class,'index'])->name('simulation.test');
-    Route::get('/practice-tests', [PracticeTestsController::class,'index'])->name('practice.test');
-    Route::get('/flashcards', [FlashcardsController::class,'index'])->name('flashcard');
-    Route::get('/tools', [ToolsController::class,'index'])->name('tools');
-    //Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+  Route::get('/guide', [StudyGuidesController::class, 'index'])->name('dashboard');
+  Route::get('/guide/{chapterId}/{topicId?}', [StudyGuidesController::class, 'topicList'])->name('topicList');
+  Route::get('/simulation-tests', [SimulationTestsController::class, 'index'])->name('simulation.test');
+  Route::get('/practice-tests', [PracticeTestsController::class, 'index'])->name('practice.test');
+  Route::get('/flashcards', [FlashcardsController::class, 'index'])->name('flashcard');
+  Route::get('/tools', [ToolsController::class, 'index'])->name('tools');
+  //Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
+  Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+  Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+  Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
