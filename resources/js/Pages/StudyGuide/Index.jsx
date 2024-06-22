@@ -15,7 +15,7 @@ export default function Index({ auth, chapters }) {
                 <Head title="Study Guide" />
 
                 <div className="relative min-h-screen md:flex">
-                    <section className="bg-slate-100 py-8 px-4 md:py-12 md:px-8 lg:px-40">
+                    <section className="bg-slate-100 py-8 px-4 md:py-12 md:px-8 lg:px-8">
                         <div className="container mx-auto">
                             <div className="text-left mb-8">
                                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-900 py-5">
@@ -47,7 +47,7 @@ export default function Index({ auth, chapters }) {
                                             <img
                                                 src={chapter.image}
                                                 alt={`Chapter ${chapter.id}`}
-                                                className="w-full h-48 object-cover rounded-t-2xl"
+                                                className="hidden sm:block w-full h-48 object-cover rounded-t-2xl"
                                             />
                                             <button className="absolute top-2 right-2 bg-primary text-white py-1 px-3 md:py-2 md:px-4 lg:py-1 lg:px-3 rounded-full text-xs md:text-sm lg:text-xs z-20">
                                                 Continue
@@ -108,7 +108,7 @@ export default function Index({ auth, chapters }) {
                                             <img
                                                 src={chapter.image}
                                                 alt={`Chapter ${chapter.id}`}
-                                                className="w-full h-48 object-cover rounded-t-2xl"
+                                                className="hidden sm:block w-full h-48 object-cover rounded-t-2xl"
                                             />
                                             <button className="absolute top-2 right-2 bg-primary text-white py-1 px-3 md:py-2 md:px-4 lg:py-1 lg:px-3 rounded-full text-xs md:text-sm lg:text-xs z-20">
                                                 Continue

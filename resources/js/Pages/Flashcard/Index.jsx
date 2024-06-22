@@ -7,22 +7,19 @@ import {
     faFile,
     faCheck,
 } from "@fortawesome/free-solid-svg-icons";
-import Sidebar from "@/Components/Sidebar";
 
 export default function Index({ auth, chapters }) {
     return (
         <>
             <AuthenticatedLayout user={auth.user}>
                 <Head title="Flashcard" />
-                <div className="relative min-h-screen md:flex">
-                    <Sidebar />
-
+                <div className="relative min-h-screen md:flex mx-8">
                     <section className="container mx-auto mt-12 md:mt-16">
                         <div className="text-left mb-8">
                             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
                                 Flashcards
                             </h1>
-                            <p className="text-base md:text-lg lg:text-xl text-gray-400">
+                            <p className="text-sm md:text-base lg:text-base text-gray-600">
                                 Take a step beyond the comfort of
                                 multiple-choice questions and venture into new
                                 learning territories with Flashcards. Flashcards
