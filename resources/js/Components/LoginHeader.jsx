@@ -4,10 +4,11 @@ import {
     faBars,
     faCircleNotch,
 } from "@fortawesome/free-solid-svg-icons";
+import React, { useEffect, useState } from "react";
 import { Link } from "@inertiajs/react";
 import { Button, Dropdown, MegaMenu, Navbar } from "flowbite-react";
 
-export default function LoginHeader(user) {
+export default function LoginHeader({ user }) {
     return (
         <MegaMenu>
             <div className="container flex justify-between items-center px-2 py-2">
@@ -28,7 +29,7 @@ export default function LoginHeader(user) {
                         label={user.name}
                         placement="bottom"
                         inline
-                        className="  rounded-xl mt-2 border-none"
+                        className="rounded-xl mt-2 border-none"
                     >
                         <Dropdown.Item className="text-stone-500 px-8 ">
                             <Link href={route("homePage")}>Dashboard</Link>

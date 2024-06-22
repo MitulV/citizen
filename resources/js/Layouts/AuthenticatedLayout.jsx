@@ -37,7 +37,7 @@ export default function Authenticated({
 
     return (
         <div>
-            <LoginHeader />
+            <LoginHeader user={user} />
             <div className="relative flex h-full">
                 <Sidebar
                     collapsedWidth="0"
