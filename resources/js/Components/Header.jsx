@@ -10,7 +10,11 @@ export default function Header() {
                 <div className="flex items-center">
                     <Link href={route("homePage")}>
                         <span className="text-2xl font-bold leading-6 text-left">
-                            <img src="/images/logo.png" className="w-40 h-6" alt="Logo" />
+                            <img
+                                src="/images/logo.png"
+                                className="w-40 h-6"
+                                alt="Logo"
+                            />
                         </span>
                     </Link>
                 </div>
@@ -22,12 +26,18 @@ export default function Header() {
                             <ul>
                                 <div className="space-y-4 p-4">
                                     <li>
-                                        <Link href="#" className="hover:text-primary">
+                                        <Link
+                                            href="#"
+                                            className="hover:text-primary"
+                                        >
                                             Help Center
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#" className="hover:text-primary">
+                                        <Link
+                                            href="#"
+                                            className="hover:text-primary"
+                                        >
                                             FAQ
                                         </Link>
                                     </li>
@@ -40,12 +50,18 @@ export default function Header() {
                             <ul>
                                 <div className="space-y-4 p-4">
                                     <li>
-                                        <Link href="#" className="hover:text-primary">
+                                        <Link
+                                            href="#"
+                                            className="hover:text-primary"
+                                        >
                                             Test Locations
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#" className="hover:text-primary">
+                                        <Link
+                                            href="#"
+                                            className="hover:text-primary"
+                                        >
                                             Driving Tips
                                         </Link>
                                     </li>
@@ -59,7 +75,7 @@ export default function Header() {
 
                 <div className="hidden md:flex items-center space-x-4">
                     <Link
-                        href={route("register")}
+                        href={route("login")}
                         className="border-2 border-primary bg-white text-gray-800 px-4 py-2 rounded-full"
                     >
                         Sign In

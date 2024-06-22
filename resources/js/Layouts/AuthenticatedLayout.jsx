@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "@inertiajs/react";
 import LoginHeader from "@/Components/LoginHeader";
 import Footer from "@/Components/Footer";
-import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faBookOpen,
@@ -12,7 +12,13 @@ import {
     faGem,
 } from "@fortawesome/free-solid-svg-icons"; // Ensure the correct icon is imported
 
-export default function Authenticated({ user, header, children }) {
+export default function Authenticated({
+    user,
+    children,
+    isChapterPanelVisible = true,
+    chapterId,
+    topicId,
+}) {
     const [collapsed, setCollapsed] = useState(false);
     const toggleSidebar = () => {
         setCollapsed(!collapsed);
@@ -32,6 +38,7 @@ export default function Authenticated({ user, header, children }) {
             <div className="relative flex h-full ">
                 <Sidebar
                     collapsedWidth="0"
+                    width="177px"
                     collapsed={collapsed}
                     backgroundColor="rgb(254,117,62)"
                 >
@@ -112,10 +119,50 @@ export default function Authenticated({ user, header, children }) {
                         </MenuItem>
                     </Menu>
                 </Sidebar>
+                {isChapterPanelVisible && (
+                    <Sidebar
+                        collapsedWidth="0"
+                        width="256px"
+                        collapsed={collapsed}
+                        backgroundColor="rgb(255,255,255)"
+                    >
+                        <Menu
+                            menuItemStyles={{
+                                button: {
+                                    [`&.active`]: {
+                                        backgroundColor: "#13395e",
+                                        color: "#b6c8d9",
+                                    },
+                                },
+                            }}
+                        >
+                            <MenuItem
+                                component={
+                                    <Link
+                                        href={route("dashboard", {
+                                            chapterId,
+                                            topicId,
+                                        })}
+                                    />
+                                }
+                            >
+                                {" "}
+                                Study Guide
+                            </MenuItem>
+                        </Menu>
+                    </Sidebar>
+                )}
+
                 <button
                     onClick={toggleSidebar}
                     className={`absolute z-10 top-5 
-                      ${collapsed ? "left-0 ml-0" : "left-56 ml-6"} 
+                     ${
+                         collapsed
+                             ? "left-0 ml-0"
+                             : isChapterPanelVisible
+                             ? "left-64  ml-44"
+                             : "left-44 ml-0"
+                     } 
                       transform rotate-180 p-1 w-8 h-8 bg-white rounded-l-full transition-all duration-300 border border-gray-200 shadow-sm hover:shadow-lg`}
                 >
                     <svg
