@@ -4,6 +4,7 @@ import LoginHeader from "@/Components/LoginHeader";
 import Footer from "@/Components/Footer";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { usePage } from "@inertiajs/react";
 import {
     faBookOpen,
     faCube,
@@ -14,10 +15,11 @@ import {
     faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 import { Accordion } from "flowbite-react";
+
 export default function Authenticated({
     user,
     children,
-    isChapterPanelVisible = true,
+    isChapterPanelVisible = false,
     chapterId,
     topicId,
 }) {
@@ -35,30 +37,28 @@ export default function Authenticated({
         });
     }, []); // Empty dependency array means this runs once after the initial render
 
+    const { url } = usePage();
+
     return (
         <div>
             <LoginHeader user={user} />
             <div className="relative flex h-full">
                 <Sidebar
                     collapsedWidth="0"
-                    width="162px"
+                    width="176px"
                     collapsed={collapsed}
                     backgroundColor="rgb(254,117,62)"
                 >
                     <Menu>
-                        <MenuItem
-                            className="w-full m-2 mt-10"
-                            component="span"
-                            style={{
-                                margin: "10px 0 20px 0",
-                                color: "black",
-                            }}
-                        >
-                            <Link
-                                href={route("dashboard")}
-                                className="no-underline"
-                            >
-                                <button className="hover:bg-white hover:text-primary text-white rounded-full w-40 px-4 py-2 no-hover">
+                        <MenuItem className="w-full m-2 mt-10" component="span">
+                            <Link href={route("dashboard")}>
+                                <button
+                                    className={`rounded-full w-40 px-4 py-2 ${
+                                        url.startsWith("/guide")
+                                            ? "bg-white text-primary"
+                                            : "text-white hover:bg-white hover:text-primary"
+                                    }`}
+                                >
                                     <FontAwesomeIcon
                                         icon={faBookOpen}
                                         className="mr-2"
@@ -68,8 +68,14 @@ export default function Authenticated({
                             </Link>
                         </MenuItem>
                         <MenuItem className="w-full m-2" component="span">
-                            <Link href={route("simulation.test")} className="">
-                                <button className="hover:bg-white hover:text-primary text-white rounded-full w-40 px-4 py-2 no-hover">
+                            <Link href={route("simulation.test")}>
+                                <button
+                                    className={`rounded-full w-40 px-4 py-2 ${
+                                        url.startsWith("/simulation")
+                                            ? "bg-white text-primary"
+                                            : "text-white hover:bg-white hover:text-primary"
+                                    }`}
+                                >
                                     <FontAwesomeIcon
                                         icon={faCube}
                                         className="mr-2"
@@ -79,11 +85,14 @@ export default function Authenticated({
                             </Link>
                         </MenuItem>
                         <MenuItem className="w-full m-2" component="span">
-                            <Link
-                                href={route("practice.test")}
-                                className="no-underline"
-                            >
-                                <button className="hover:bg-white hover:text-primary text-white rounded-full w-40 px-4 py-2 no-hover">
+                            <Link href={route("practice.test")}>
+                                <button
+                                    className={`rounded-full w-40 px-4 py-2 ${
+                                        url.startsWith("/practice")
+                                            ? "bg-white text-primary"
+                                            : "text-white hover:bg-white hover:text-primary"
+                                    }`}
+                                >
                                     <FontAwesomeIcon
                                         icon={faFileLines}
                                         className="mr-2"
@@ -93,11 +102,14 @@ export default function Authenticated({
                             </Link>
                         </MenuItem>
                         <MenuItem className="w-full m-2" component="span">
-                            <Link
-                                href={route("flashcard")}
-                                className="no-underline"
-                            >
-                                <button className="hover:bg-white hover:text-primary text-white rounded-full w-40 px-4 py-2 no-hover">
+                            <Link href={route("flashcard")}>
+                                <button
+                                    className={`rounded-full w-40 px-4 py-2 ${
+                                        url.startsWith("/flashcard")
+                                            ? "bg-white text-primary"
+                                            : "text-white hover:bg-white hover:text-primary"
+                                    }`}
+                                >
                                     <FontAwesomeIcon
                                         icon={faImage}
                                         className="mr-2"
@@ -107,11 +119,14 @@ export default function Authenticated({
                             </Link>
                         </MenuItem>
                         <MenuItem className="w-full m-2" component="span">
-                            <Link
-                                href={route("dashboard")}
-                                className="no-underline"
-                            >
-                                <button className="hover:bg-white hover:text-primary text-white rounded-full w-40 px-4 py-2 no-hover">
+                            <Link href={route("dashboard")}>
+                                <button
+                                    className={`rounded-full w-40 px-4 py-2 ${
+                                        url.startsWith("/dashboard")
+                                            ? "bg-white text-primary"
+                                            : "text-white hover:bg-white hover:text-primary"
+                                    }`}
+                                >
                                     <FontAwesomeIcon
                                         icon={faGem}
                                         className="mr-2"
