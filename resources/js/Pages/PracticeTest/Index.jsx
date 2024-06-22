@@ -13,8 +13,8 @@ export default function Index({ auth, chapters }) {
         <>
             <AuthenticatedLayout user={auth.user}>
                 <Head title="Flashcard" />
-                <div className="relative min-h-screen md:flex mx-8">
-                    <section className="container mx-auto mt-12 md:mt-16">
+                <div className="relative min-h-screen md:flex">
+                    <section className="bg-slate-100 py-8 px-4 md:py-12 md:px-8 lg:px-8">
                         <div className="text-left mb-8">
                             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
                                 Chapter Tests

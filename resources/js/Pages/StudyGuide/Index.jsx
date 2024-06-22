@@ -47,7 +47,7 @@ export default function Index({ auth, chapters }) {
                                             <img
                                                 src={chapter.image}
                                                 alt={`Chapter ${chapter.id}`}
-                                                className="hidden sm:block w-full h-48 object-cover rounded-t-2xl"
+                                                className="w-full h-48 object-cover rounded-t-2xl"
                                             />
                                             <button className="absolute top-2 right-2 bg-primary text-white py-1 px-3 md:py-2 md:px-4 lg:py-1 lg:px-3 rounded-full text-xs md:text-sm lg:text-xs z-20">
                                                 Continue
@@ -108,7 +108,7 @@ export default function Index({ auth, chapters }) {
                                             <img
                                                 src={chapter.image}
                                                 alt={`Chapter ${chapter.id}`}
-                                                className="hidden sm:block w-full h-48 object-cover rounded-t-2xl"
+                                                className="w-full h-48 object-cover rounded-t-2xl"
                                             />
                                             <button className="absolute top-2 right-2 bg-primary text-white py-1 px-3 md:py-2 md:px-4 lg:py-1 lg:px-3 rounded-full text-xs md:text-sm lg:text-xs z-20">
                                                 Continue
