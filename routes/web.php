@@ -30,8 +30,12 @@ Route::post('/test-results', [TestController::class, 'testResult'])->name('testR
 
 
 Route::middleware('auth')->group(function () {
+
   Route::get('/guide', [StudyGuidesController::class, 'index'])->name('dashboard');
   Route::get('/guide/{chapterId}/{topicId?}', [StudyGuidesController::class, 'topicList'])->name('topicList');
+  Route::post('/guide/{chapterId}/topic/{topicId}/complete', [StudyGuidesController::class, 'completeTopic'])->name('topic.complete');
+
+
   Route::get('/simulation-tests', [SimulationTestsController::class, 'index'])->name('simulation.test');
   Route::get('/practice-tests', [PracticeTestsController::class, 'index'])->name('practice.test');
   Route::get('/flashcards', [FlashcardsController::class, 'index'])->name('flashcard');

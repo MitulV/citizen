@@ -47,17 +47,52 @@ class StudyGuidesController extends Controller
     if ($topicId !== null) {
       $topic = Topic::findOrFail($topicId);
 
-      // Additional logic can be added here if needed
+      $previousTopic = Topic::where('chapter_id', $chapterId)
+        ->where('id', '<', $topicId)
+        ->orderBy('id', 'desc')
+        ->first();
+
+      $nextTopic = Topic::where('chapter_id', $chapterId)
+        ->where('id', '>', $topicId)
+        ->first();
 
       return Inertia::render('StudyGuide/TopicDetail', [
         'topic' => $topic,
         'chapterId' => $chapterId,
+        'previousTopicId' => $previousTopic ? $previousTopic->id : null,
+        'nextTopicId' => $nextTopic ? $nextTopic->id : null,
       ]);
     }
 
     // Default rendering of the topic list
     return Inertia::render('StudyGuide/TopicList', [
       'chapters' => $chapters,
+    ]);
+  }
+
+  public function completeTopic(Request $request, $chapterId, $topicId)
+  {
+    $user = Auth::user();
+
+    // Mark the topic as completed for the user
+    $currentTopic = Topic::findOrFail($topicId);
+    $currentTopic->users()->updateExistingPivot($user->id, ['status' => 'completed']);
+
+    $nextTopic = Topic::where('chapter_id', $chapterId)
+      ->where('id', '>', $topicId)
+      ->first();
+
+    $topicAfterNext = $nextTopic ? Topic::where('chapter_id', $chapterId)
+      ->where('id', '>', $nextTopic->id)
+      ->first()
+      : null;
+
+
+    return Inertia::render('StudyGuide/TopicDetail', [
+      'topic' => $nextTopic,
+      'chapterId' => $chapterId,
+      'previousTopicId' => $currentTopic->id,
+      'nextTopicId' => $topicAfterNext ? $topicAfterNext->id : null,
     ]);
   }
 }
