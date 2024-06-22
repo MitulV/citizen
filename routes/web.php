@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\FlashcardsController;
+use App\Http\Controllers\FlashcardController;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\PracticeTestsController;
 use App\Http\Controllers\PremiumPageController;
@@ -38,7 +37,12 @@ Route::middleware('auth')->group(function () {
 
   Route::get('/simulation-tests', [SimulationTestsController::class, 'index'])->name('simulation.test');
   Route::get('/practice-tests', [PracticeTestsController::class, 'index'])->name('practice.test');
-  Route::get('/flashcards', [FlashcardsController::class, 'index'])->name('flashcard');
+
+  Route::get('/flashcards', [FlashcardController::class, 'index'])->name('flashcard');
+  Route::get('/flashcards/{chapterId}/{flashcardId?}', [FlashcardController::class, 'flashcardList'])->name('flashcardList');
+  Route::post('/flashcards/{chapterId}/flashcard/{flashcardId}/complete', [FlashcardController::class, 'completeFlashcard'])->name('flashcard.complete');
+
+
   Route::get('/tools', [ToolsController::class, 'index'])->name('tools');
   //Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
   Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

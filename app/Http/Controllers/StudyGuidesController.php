@@ -34,7 +34,9 @@ class StudyGuidesController extends Controller
   {
     $user = Auth::user();
 
-    $chapters = Chapter::with('topics')->get();
+    $chapters = Chapter::where('step', 2)
+      ->with('topics')
+      ->get();
 
     foreach ($chapters as $chapter) {
       foreach ($chapter->topics as $topic) {
@@ -43,36 +45,42 @@ class StudyGuidesController extends Controller
       }
     }
 
-    // Logic for handling a specific topic if $topicId is provided
-    if ($topicId !== null) {
-      $topic = Topic::findOrFail($topicId);
+    $topicId == null ? 1 : $topicId;
 
-      $previousTopic = Topic::where('chapter_id', $chapterId)
-        ->where('id', '<', $topicId)
-        ->orderBy('id', 'desc')
-        ->first();
+    $topic = Topic::findOrFail($topicId);
 
-      $nextTopic = Topic::where('chapter_id', $chapterId)
-        ->where('id', '>', $topicId)
-        ->first();
+    $previousTopic = Topic::where('chapter_id', $chapterId)
+      ->where('id', '<', $topicId)
+      ->orderBy('id', 'desc')
+      ->first();
 
-      return Inertia::render('StudyGuide/TopicDetail', [
-        'topic' => $topic,
-        'chapterId' => $chapterId,
-        'previousTopicId' => $previousTopic ? $previousTopic->id : null,
-        'nextTopicId' => $nextTopic ? $nextTopic->id : null,
-      ]);
-    }
+    $nextTopic = Topic::where('chapter_id', $chapterId)
+      ->where('id', '>', $topicId)
+      ->first();
 
-    // Default rendering of the topic list
-    return Inertia::render('StudyGuide/TopicList', [
+    return Inertia::render('StudyGuide/TopicDetail', [
       'chapters' => $chapters,
+      'topic' => $topic,
+      'chapterId' => $chapterId,
+      'previousTopicId' => $previousTopic ? $previousTopic->id : null,
+      'nextTopicId' => $nextTopic ? $nextTopic->id : null,
     ]);
   }
 
   public function completeTopic(Request $request, $chapterId, $topicId)
   {
     $user = Auth::user();
+
+    $chapters = Chapter::where('step', 2)
+      ->with('topics')
+      ->get();
+
+    foreach ($chapters as $chapter) {
+      foreach ($chapter->topics as $topic) {
+        $userTopic = $topic->users()->where('user_id', $user->id)->first();
+        $topic->is_completed_by_user = $userTopic ? $userTopic->pivot->status === 'completed' : false;
+      }
+    }
 
     // Mark the topic as completed for the user
     $currentTopic = Topic::findOrFail($topicId);
@@ -89,6 +97,7 @@ class StudyGuidesController extends Controller
 
 
     return Inertia::render('StudyGuide/TopicDetail', [
+      'chapters' => $chapters,
       'topic' => $nextTopic,
       'chapterId' => $chapterId,
       'previousTopicId' => $currentTopic->id,

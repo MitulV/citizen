@@ -22,6 +22,7 @@ export default function Authenticated({
     isChapterPanelVisible = false,
     chapterId,
     topicId,
+    chapters,
 }) {
     const [collapsed, setCollapsed] = useState(false);
 
@@ -140,7 +141,7 @@ export default function Authenticated({
                 {isChapterPanelVisible && (
                     <Sidebar
                         collapsedWidth="0"
-                        width="350px"
+                        width="337px"
                         collapsed={collapsed}
                         backgroundColor="rgb(255,255,255)"
                     >
@@ -155,31 +156,51 @@ export default function Authenticated({
                             }}
                         >
                             <Accordion>
-                                <Accordion.Panel>
-                                    <Accordion.Title>Chapter 1</Accordion.Title>
-                                    <Accordion.Content>
-                                        <div className="text-gray-800 text-start">
-                                            <div className="p-4 bg-slate-50 flex justify-between items-start">
-                                                <button className=" text-base ">
-                                                    The Oath of Citizenship
-                                                </button>
-                                                <FontAwesomeIcon
-                                                    icon={faCheck}
-                                                    className="text-green-500 "
-                                                />
+                                {chapters.map((chapter, index) => (
+                                    <Accordion.Panel key={chapter.id}>
+                                        <Accordion.Title>
+                                            Chapter {index + 1}
+                                        </Accordion.Title>
+                                        <Accordion.Content>
+                                            <div className="text-gray-800 text-start">
+                                                {chapter.topics.map((topic) => (
+                                                    <Link
+                                                        replace
+                                                        href={`/guide/${
+                                                            chapter.id
+                                                        }${
+                                                            topic.id
+                                                                ? `/${topic.id}`
+                                                                : ""
+                                                        }`}
+                                                        key={topic.id}
+                                                    >
+                                                        <div
+                                                            className="p-4 bg-slate-50 mt-1 flex justify-between items-start"
+                                                            key={topic.id}
+                                                        >
+                                                            <button className="text-base text-gray-800 text-start">
+                                                                {topic.name}
+                                                            </button>
+                                                            <FontAwesomeIcon
+                                                                icon={
+                                                                    topic.is_completed_by_user
+                                                                        ? faCheck
+                                                                        : faTimes
+                                                                }
+                                                                className={
+                                                                    topic.is_completed_by_user
+                                                                        ? "text-green-500"
+                                                                        : "text-red-500"
+                                                                }
+                                                            />
+                                                        </div>
+                                                    </Link>
+                                                ))}
                                             </div>
-                                            <div className="p-4 bg-slate-50 mt-1 flex justify-between items-start">
-                                                <button className="bg-slate-50  text-base text-gray-800 text-start">
-                                                    A message to the new citizen
-                                                </button>
-                                                <FontAwesomeIcon
-                                                    icon={faTimes}
-                                                    className="text-red-500 "
-                                                />
-                                            </div>
-                                        </div>
-                                    </Accordion.Content>
-                                </Accordion.Panel>
+                                        </Accordion.Content>
+                                    </Accordion.Panel>
+                                ))}
                             </Accordion>
                         </Menu>
                     </Sidebar>

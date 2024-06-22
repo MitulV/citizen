@@ -1,5 +1,5 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
-import { Head } from "@inertiajs/react";
+import { Head, Link } from "@inertiajs/react";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -66,25 +66,34 @@ export default function Index({ auth, chapters }) {
                                                 {chapter.description}
                                             </p>
                                             {chapter.topics.map((topic) => (
-                                                <div
-                                                    className="flex justify-between items-start mt-4"
+                                                <Link
+                                                    replace
+                                                    href={`/guide/${
+                                                        chapter.id
+                                                    }${
+                                                        topic.id
+                                                            ? `/${topic.id}`
+                                                            : ""
+                                                    }`}
                                                     key={topic.id}
                                                 >
-                                                    <FontAwesomeIcon
-                                                        icon={faFile}
-                                                    />
-                                                    <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2">
-                                                        {topic.name}
-                                                    </p>
-                                                    <FontAwesomeIcon
-                                                        icon={faCheck}
-                                                        className={
-                                                            topic.is_completed_by_user
-                                                                ? "text-green-600"
-                                                                : "text-gray-400"
-                                                        }
-                                                    />
-                                                </div>
+                                                    <div className="flex justify-between items-start mt-4">
+                                                        <FontAwesomeIcon
+                                                            icon={faFile}
+                                                        />
+                                                        <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2">
+                                                            {topic.name}
+                                                        </p>
+                                                        <FontAwesomeIcon
+                                                            icon={faCheck}
+                                                            className={
+                                                                topic.is_completed_by_user
+                                                                    ? "text-green-600"
+                                                                    : "text-gray-400"
+                                                            }
+                                                        />
+                                                    </div>
+                                                </Link>
                                             ))}
                                         </div>
                                     </div>
@@ -127,25 +136,34 @@ export default function Index({ auth, chapters }) {
                                                 {chapter.description}
                                             </p>
                                             {chapter.topics.map((topic) => (
-                                                <div
-                                                    className="flex justify-between items-start mt-4"
+                                                <Link
+                                                    replace
+                                                    href={`/guide/${
+                                                        chapter.id
+                                                    }${
+                                                        topic.id
+                                                            ? `/${topic.id}`
+                                                            : ""
+                                                    }`}
                                                     key={topic.id}
                                                 >
-                                                    <FontAwesomeIcon
-                                                        icon={faFile}
-                                                    />
-                                                    <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2">
-                                                        {topic.name}
-                                                    </p>
-                                                    <FontAwesomeIcon
-                                                        icon={faCheck}
-                                                        className={
-                                                            topic.is_completed_by_user
-                                                                ? "text-green-600"
-                                                                : "text-gray-400"
-                                                        }
-                                                    />
-                                                </div>
+                                                    <div className="flex justify-between items-start mt-4">
+                                                        <FontAwesomeIcon
+                                                            icon={faFile}
+                                                        />
+                                                        <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2">
+                                                            {topic.name}
+                                                        </p>
+                                                        <FontAwesomeIcon
+                                                            icon={faCheck}
+                                                            className={
+                                                                topic.is_completed_by_user
+                                                                    ? "text-green-600"
+                                                                    : "text-gray-400"
+                                                            }
+                                                        />
+                                                    </div>
+                                                </Link>
                                             ))}
                                         </div>
                                     </div>
