@@ -57,7 +57,7 @@ export default function Index({ auth, chapters }) {
                                             <h1 className="text-base md:text-lg lg:text-base font-bold">
                                                 {chapter.name}
                                             </h1>
-                                            <h2 className="text-gray-600 text-sm md:text-base lg:text-sm font-semibold">
+                                            <h2 className="text-gray-600 text-sm md:text-base lg:text-sm font-semibold mt-2">
                                                 {chapter.title}
                                             </h2>
                                             <p className="text-gray-500 text-sm mt-2">
@@ -65,7 +65,7 @@ export default function Index({ auth, chapters }) {
                                             </p>
                                             {chapter.flashcards.map((test) => (
                                                 <div
-                                                    className="flex justify-between items-start mt-4"
+                                                    className="flex justify-between items-start   border-b border-gray-200 pt-3 pb-2"
                                                     key={test.id}
                                                 >
                                                     <FontAwesomeIcon
@@ -118,7 +118,7 @@ export default function Index({ auth, chapters }) {
                                             <h1 className="text-base md:text-lg lg:text-base font-bold">
                                                 {chapter.name}
                                             </h1>
-                                            <h2 className="text-gray-600 text-sm md:text-base lg:text-sm font-semibold">
+                                            <h2 className="text-gray-600 text-sm md:text-base lg:text-sm font-semibold mt-2">
                                                 {chapter.title}
                                             </h2>
                                             <p className="text-gray-500 text-sm mt-2">
@@ -126,7 +126,7 @@ export default function Index({ auth, chapters }) {
                                             </p>
                                             {chapter.flashcards.map((test) => (
                                                 <div
-                                                    className="flex justify-between items-start mt-4"
+                                                    className="flex justify-between items-start border-b border-gray-200 pt-3 pb-2"
                                                     key={test.id}
                                                 >
                                                     <FontAwesomeIcon

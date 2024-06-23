@@ -8,8 +8,8 @@ export default function HomeChapterCard({
 }) {
     return (
         <>
-            <div className="bg-slate-50 rounded-2xl shadow-md transform hover:-translate-y-1 transition duration-500 ease-out hover:shadow-lg hover:shadow-gray-300">
-                <img src={image} alt="Photo 1" className="w-416" />
+            <div className="bg-slate-50 rounded-2xl shadow-md transform hover:-translate-y-1 transition duration-500 ease-out hover:shadow-lg hover:shadow-gray-300 max-w-sm">
+                <img src={image} alt="Photo 1" className="max-w-sm" />
                 <h1 className="px-5 py-4 text-lg font-bold">{name}</h1>
                 <h2 className="px-5 text-gray-800 text-lg font-semibold">
                     {title}

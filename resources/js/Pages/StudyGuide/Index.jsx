@@ -59,7 +59,7 @@ export default function Index({ auth, chapters }) {
                                             <h1 className="text-base md:text-lg lg:text-base font-bold">
                                                 {chapter.name}
                                             </h1>
-                                            <h2 className="text-gray-600 text-sm md:text-base lg:text-sm font-semibold">
+                                            <h2 className="text-gray-600 text-sm md:text-base lg:text-sm font-semibold mt-2">
                                                 {chapter.title}
                                             </h2>
                                             <p className="text-gray-500 text-sm mt-2">
@@ -77,11 +77,11 @@ export default function Index({ auth, chapters }) {
                                                     }`}
                                                     key={topic.id}
                                                 >
-                                                    <div className="flex justify-between items-start mt-4">
+                                                    <div className="flex justify-between items-start  border-b border-gray-200 pt-3 pb-2 ">
                                                         <FontAwesomeIcon
                                                             icon={faFile}
                                                         />
-                                                        <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2">
+                                                        <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2 ">
                                                             {topic.name}
                                                         </p>
                                                         <FontAwesomeIcon
@@ -125,16 +125,19 @@ export default function Index({ auth, chapters }) {
                                                 className="text-green-600 text-lg md:text-2xl lg:text-lg"
                                             />
                                         </div>
+
                                         <div className="px-4 py-6 md:px-5 md:py-8 lg:px-4 lg:py-6">
                                             <h1 className="text-base md:text-lg lg:text-base font-bold">
                                                 {chapter.name}
                                             </h1>
+
                                             <h2 className="text-gray-600 text-sm md:text-base lg:text-sm font-semibold">
                                                 {chapter.title}
                                             </h2>
                                             <p className="text-gray-500 text-sm mt-2">
                                                 {chapter.description}
                                             </p>
+
                                             {chapter.topics.map((topic) => (
                                                 <Link
                                                     replace
@@ -147,7 +150,7 @@ export default function Index({ auth, chapters }) {
                                                     }`}
                                                     key={topic.id}
                                                 >
-                                                    <div className="flex justify-between items-start mt-4">
+                                                    <div className="flex justify-between items-start border-b  border-gray-300 p-4">
                                                         <FontAwesomeIcon
                                                             icon={faFile}
                                                         />

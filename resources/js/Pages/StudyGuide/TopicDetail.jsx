@@ -10,8 +10,8 @@ export default function TopicDetail({ auth, topic, chapters }) {
                 chapters={chapters}
             >
                 <Head title="Study Guide" />
-                <div className="relative min-h-screen md:flex">
-                    <div className="bg-slate-100 py-8  md:py-12 md:px-8 lg:px-20">
+                <div className="relative min-h-screen  flex items-center justify-center">
+                    <div className="container-fluid bg-slate-100 py-8 md:py-12 md:px-8 lg:px-20 ml-8">
                         <div>
                             <p className="text-blue-400">All lesson</p>
                             <h1 className="text-3xl font-bold mb-4 text-gray-600">
@@ -24,17 +24,15 @@ export default function TopicDetail({ auth, topic, chapters }) {
                                 className="w-full"
                             />
                         </div>
-
                         <div>
+                            <h1 className="text-2xl font-bold mb-4 text-gray-800">
+                                Understanding the Oath
+                            </h1>
                             <p className="text-gray-600">
-                                {" "}
-                                <h1 className="text-2xl font-bold mb-4 text-gray-800">
-                                    Understanding the Oath
-                                </h1>
                                 embodying the collective identity of all
                                 Canadians, rather than to artifacts like a
                                 constitution, a symbol like a flag, or a
-                                geopolitical entity like a nation. Within our{" "}
+                                geopolitical entity like a nation. Within our
                             </p>
                         </div>
                     </div>
