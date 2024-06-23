@@ -22,12 +22,25 @@ class FlashcardController extends Controller
       ->get();
 
     foreach ($chapters as $chapter) {
+      $allCompleted = true;
       foreach ($chapter->flashcards as $flashcard) {
         $userFlashcard = $flashcard->users->where('id', $user->id)->first();
-        $flashcard->is_completed_by_user = $userFlashcard ? $userFlashcard->pivot->status === 'completed' : false;
+        if ($userFlashcard) {
+          $flashcard->status = $userFlashcard->pivot->status;
+        } else {
+          $flashcard->status = 'not_attempted';
+          $allCompleted = false; // If any flashcard is not attempted, the chapter is not fully completed
+        }
+
+        if ($flashcard->status !== 'completed') {
+          $allCompleted = false; // If any flashcard is not completed, the chapter is not fully completed
+        }
+
         unset($flashcard->users); // Optional: Remove users relationship data to keep the response clean
       }
+      $chapter->allFlashcardsCompleted = $allCompleted;
     }
+
 
 
     return Inertia::render('Flashcard/Index', [

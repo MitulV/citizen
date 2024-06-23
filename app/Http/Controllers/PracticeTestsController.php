@@ -20,11 +20,23 @@ class PracticeTestsController extends Controller
       ->get();
 
     foreach ($chapters as $chapter) {
+      $allCompleted = true;
       foreach ($chapter->tests as $test) {
         $userTest = $test->users->where('id', $user->id)->first();
-        $test->is_completed_by_user = $userTest ? $userTest->pivot->status === 'completed' : false;
+        if ($userTest) {
+          $test->status = $userTest->pivot->status;
+        } else {
+          $test->status = 'not_attempted';
+          $allCompleted = false; // If any test is not attempted, the chapter is not fully completed
+        }
+
+        if ($test->status !== 'completed') {
+          $allCompleted = false; // If any test is not completed, the chapter is not fully completed
+        }
+
         unset($test->users); // Optional: Remove users relationship data to keep the response clean
       }
+      $chapter->allTestsCompleted = $allCompleted;
     }
 
     return Inertia::render('PracticeTest/Index', [
@@ -41,11 +53,23 @@ class PracticeTestsController extends Controller
       ->get();
 
     foreach ($chapters as $chapter) {
+      $allCompleted = true;
       foreach ($chapter->tests as $test) {
         $userTest = $test->users->where('id', $user->id)->first();
-        $test->is_completed_by_user = $userTest ? $userTest->pivot->status === 'completed' : false;
+        if ($userTest) {
+          $test->status = $userTest->pivot->status;
+        } else {
+          $test->status = 'not_attempted';
+          $allCompleted = false; // If any test is not attempted, the chapter is not fully completed
+        }
+
+        if ($test->status !== 'completed') {
+          $allCompleted = false; // If any test is not completed, the chapter is not fully completed
+        }
+
         unset($test->users); // Optional: Remove users relationship data to keep the response clean
       }
+      $chapter->allTestsCompleted = $allCompleted;
     }
 
     $testId = $testId ?? 1;
@@ -81,11 +105,23 @@ class PracticeTestsController extends Controller
       ->get();
 
     foreach ($chapters as $chapter) {
+      $allCompleted = true;
       foreach ($chapter->tests as $test) {
         $userTest = $test->users->where('id', $user->id)->first();
-        $test->is_completed_by_user = $userTest ? $userTest->pivot->status === 'completed' : false;
+        if ($userTest) {
+          $test->status = $userTest->pivot->status;
+        } else {
+          $test->status = 'not_attempted';
+          $allCompleted = false; // If any test is not attempted, the chapter is not fully completed
+        }
+
+        if ($test->status !== 'completed') {
+          $allCompleted = false; // If any test is not completed, the chapter is not fully completed
+        }
+
         unset($test->users); // Optional: Remove users relationship data to keep the response clean
       }
+      $chapter->allTestsCompleted = $allCompleted;
     }
     if ($request->filled('questionId') && $request->filled('answerId') && $request->filled('testId')) {
       // Answer validation logic
@@ -143,11 +179,23 @@ class PracticeTestsController extends Controller
       ->get();
 
     foreach ($chapters as $chapter) {
+      $allCompleted = true;
       foreach ($chapter->tests as $test) {
         $userTest = $test->users->where('id', $user->id)->first();
-        $test->is_completed_by_user = $userTest ? $userTest->pivot->status === 'completed' : false;
+        if ($userTest) {
+          $test->status = $userTest->pivot->status;
+        } else {
+          $test->status = 'not_attempted';
+          $allCompleted = false; // If any test is not attempted, the chapter is not fully completed
+        }
+
+        if ($test->status !== 'completed') {
+          $allCompleted = false; // If any test is not completed, the chapter is not fully completed
+        }
+
         unset($test->users); // Optional: Remove users relationship data to keep the response clean
       }
+      $chapter->allTestsCompleted = $allCompleted;
     }
 
     $questionResults = $request->input('questionResults');

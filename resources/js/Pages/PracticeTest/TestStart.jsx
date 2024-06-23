@@ -26,22 +26,24 @@ export default function TestStart({
     const renderer = ({ minutes, seconds, completed }) => {
         if (completed) {
             const totalTimeTaken =
-                30 * 60 * 1000 - (minutes * 60 * 1000 + seconds * 1000); // Calculate total time taken in milliseconds
+                30 * 60 * 1000 - (minutes * 60 * 1000 + seconds * 1000);
             const totalTimeTakenInMinutes = Math.floor(
                 totalTimeTaken / (60 * 1000)
-            ); // Convert total time taken to minutes
+            );
             const totalTimeTakenInSeconds = Math.floor(
                 (totalTimeTaken % (60 * 1000)) / 1000
-            ); // Convert total time taken to seconds
+            );
 
             router.post(
                 route("practice.testResult"),
                 {
                     questionResults,
-                    totalTimeTaken: {
+                    timeTaken: {
                         minutes: totalTimeTakenInMinutes,
                         seconds: totalTimeTakenInSeconds,
                     },
+                    testId: test.id,
+                    chapterId,
                 },
                 { preserveState: false, replace: true }
             );

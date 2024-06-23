@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "@inertiajs/react";
 import LoginHeader from "@/Components/LoginHeader";
-import Footer from "@/Components/Footer";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { usePage } from "@inertiajs/react";
@@ -181,7 +180,6 @@ export default function Authenticated({
                 </button>
                 <main>{children}</main>
             </div>
-            <Footer />
         </div>
     );
 }

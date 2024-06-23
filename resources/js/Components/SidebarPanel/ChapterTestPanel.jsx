@@ -59,18 +59,28 @@ export default function ChapterTestPanel({ chapters, collapsed }) {
                                                     <button className="text-base text-gray-800 text-start">
                                                         {test.name}
                                                     </button>
-                                                    <FontAwesomeIcon
-                                                        icon={
-                                                            test.is_completed_by_user
-                                                                ? faCheck
-                                                                : faTimes
-                                                        }
-                                                        className={
-                                                            test.is_completed_by_user
-                                                                ? "text-green-500"
-                                                                : "text-red-500"
-                                                        }
-                                                    />
+                                                    {(test.status ===
+                                                        "completed" ||
+                                                        test.status ===
+                                                            "failed") && (
+                                                        <FontAwesomeIcon
+                                                            icon={
+                                                                test.status ===
+                                                                "failed"
+                                                                    ? faTimes
+                                                                    : faCheck
+                                                            }
+                                                            className={
+                                                                test.status ===
+                                                                "completed"
+                                                                    ? "text-green-600"
+                                                                    : test.status ===
+                                                                      "failed"
+                                                                    ? "text-red-600"
+                                                                    : "text-gray-400"
+                                                            }
+                                                        />
+                                                    )}
                                                 </div>
                                             </Link>
                                         ))}

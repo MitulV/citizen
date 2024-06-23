@@ -5,15 +5,7 @@ import Footer from "@/Components/Footer";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { usePage } from "@inertiajs/react";
-import {
-    faBookOpen,
-    faCube,
-    faFileLines,
-    faImage,
-    faGem,
-    faCheck,
-    faTimes,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { Accordion } from "flowbite-react";
 export default function StudyGuidePanel({ chapters, collapsed }) {
     return (
@@ -59,18 +51,28 @@ export default function StudyGuidePanel({ chapters, collapsed }) {
                                                     <button className="text-base text-gray-800 text-start">
                                                         {topic.name}
                                                     </button>
-                                                    <FontAwesomeIcon
-                                                        icon={
-                                                            topic.is_completed_by_user
-                                                                ? faCheck
-                                                                : faTimes
-                                                        }
-                                                        className={
-                                                            topic.is_completed_by_user
-                                                                ? "text-green-500"
-                                                                : "text-red-500"
-                                                        }
-                                                    />
+                                                    {(topic.status ===
+                                                        "completed" ||
+                                                        topic.status ===
+                                                            "failed") && (
+                                                        <FontAwesomeIcon
+                                                            icon={
+                                                                topic.status ===
+                                                                "failed"
+                                                                    ? faTimes
+                                                                    : faCheck
+                                                            }
+                                                            className={
+                                                                topic.status ===
+                                                                "completed"
+                                                                    ? "text-green-600"
+                                                                    : topic.status ===
+                                                                      "failed"
+                                                                    ? "text-red-600"
+                                                                    : "text-gray-400"
+                                                            }
+                                                        />
+                                                    )}
                                                 </div>
                                             </Link>
                                         ))}

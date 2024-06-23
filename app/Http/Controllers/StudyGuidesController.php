@@ -15,15 +15,29 @@ class StudyGuidesController extends Controller
     $user = Auth::user();
 
     $chapters = Chapter::where('step', 2)
-      ->with('topics')
+      ->with('topics.users')
       ->get();
 
     foreach ($chapters as $chapter) {
+      $allCompleted = true;
       foreach ($chapter->topics as $topic) {
-        $userTopic = $topic->users()->where('user_id', $user->id)->first();
-        $topic->is_completed_by_user = $userTopic ? $userTopic->pivot->status === 'completed' : false;
+        $userTopic = $topic->users->where('id', $user->id)->first();
+        if ($userTopic) {
+          $topic->status = $userTopic->pivot->status;
+        } else {
+          $topic->status = 'not_attempted';
+          $allCompleted = false; // If any topic is not attempted, the chapter is not fully completed
+        }
+
+        if ($topic->status !== 'completed') {
+          $allCompleted = false; // If any topic is not completed, the chapter is not fully completed
+        }
+
+        unset($topic->users); // Optional: Remove users relationship data to keep the response clean
       }
+      $chapter->allTopicsCompleted = $allCompleted;
     }
+
 
     return Inertia::render('StudyGuide/Index', [
       'chapters' => $chapters
