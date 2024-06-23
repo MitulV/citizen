@@ -37,9 +37,15 @@ export default function HomePage({ auth, chapters }) {
                             </p>
                         </div>
                         <div className="container mx-auto px-4 mt-4 sm:mt-8 flex justify-center">
-                            <button className="bg-primary text-white px-10 sm:px-20 py-4 sm:py-6 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out">
+                            <Link
+                                as="button"
+                                className="bg-primary text-white px-10 sm:px-20 py-4 sm:py-6 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
+                                href={route("testInfoPage", {
+                                    chapter_id: 12,
+                                })}
+                            >
                                 Take free practice tests
-                            </button>
+                            </Link>
                         </div>
                         <div className="container mx-auto px-4 mt-4 sm:mt-8">
                             <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
@@ -641,9 +647,15 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
                 <div className="container-fluid mx-auto px-4 mt-4 sm:mt-8 flex justify-center bg-slate-50">
-                    <button className="bg-primary text-white px-6 py-2 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out">
+                    <Link
+                        as="button"
+                        className="bg-primary text-white px-6 py-2 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
+                        href={route("testInfoPage", {
+                            chapter_id: 12,
+                        })}
+                    >
                         Take free practice tests
-                    </button>
+                    </Link>
                 </div>
                 <div className="container-fluid mx-auto sm:mt-8 bg-slate-50 lg:mt-1">
                     <p className=" text-base sm:text-lg font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
@@ -1075,9 +1087,15 @@ export default function HomePage({ auth, chapters }) {
 
                         <div className="w-full md:w-1/2  md:p-8 flex flex-col justify-center items-center">
                             <div className="w-full flex justify-center mt-4 sm:mt-8 lg:mt-2">
-                                <button className=" bg-primary shadow-lg text-white px-6 py-2 rounded-full transform hover:-translate-y-1 transition duration-500 ease-out">
+                                <Link
+                                    as="button"
+                                    className=" bg-primary shadow-lg text-white px-6 py-2 rounded-full transform hover:-translate-y-1 transition duration-500 ease-out"
+                                    href={route("testInfoPage", {
+                                        chapter_id: 12,
+                                    })}
+                                >
                                     Take free practice tests
-                                </button>
+                                </Link>
                             </div>
                             <p className="text-xs sm:text-xs leading-6 sm:leading-8 tracking-tight text-center text-gray-500 ">
                                 or pass the first time, guaranteed with
