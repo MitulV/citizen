@@ -72,10 +72,72 @@ class PracticeTestsController extends Controller
     ]);
   }
 
-  public function completeTest(Request $request, $chapterId, $testId)
+
+  public function testStart(Request $request, $chapterId, $testId = null)
   {
     $user = Auth::user();
+    $chapters = Chapter::where('step', 2)
+      ->with('tests.users')
+      ->get();
 
+    foreach ($chapters as $chapter) {
+      foreach ($chapter->tests as $test) {
+        $userTest = $test->users->where('id', $user->id)->first();
+        $test->is_completed_by_user = $userTest ? $userTest->pivot->status === 'completed' : false;
+        unset($test->users); // Optional: Remove users relationship data to keep the response clean
+      }
+    }
+    if ($request->filled('questionId') && $request->filled('answerId') && $request->filled('testId')) {
+      // Answer validation logic
+      $questionId = $request->input('questionId');
+      $answerId = $request->input('answerId');
+      $testId = $request->input('testId');
+      $index = $request->input('index');
+
+      $question = Question::where('id', $questionId)->first();
+      $result = $question->correct_answer_id == $answerId ? 'pass' : 'fail';
+
+      $test = Test::findOrFail($testId);
+
+      $nextQuestion = Question::where('test_id', $testId)
+        ->where('id', '>', $questionId)
+        ->with('answers')
+        ->select('id', 'text', 'test_id')
+        ->first();
+
+      return Inertia::render('PracticeTest/TestStart', [
+        'index' => $index,
+        'chapterId' => $chapterId,
+        'nextQuestion' => $nextQuestion,
+        'result' => $result,
+        'selectedQuestionId' => $questionId,
+        'selectedAnswerId' => $answerId,
+        'explanation' => $question->explanation,
+        'chapters' => $chapters,
+        'test' => $test
+      ]);
+    } else {
+
+      $test = Test::findOrFail($testId);
+
+
+      $question = Question::where('test_id', $test->id)
+        ->with('answers')
+        ->select('id', 'text', 'test_id')
+        ->first();
+
+      return Inertia::render('PracticeTest/TestStart', [
+        'chapterId' => $chapterId,
+        'question' => $question,
+        'chapters' => $chapters,
+        'test' => $test
+      ]);
+    }
+  }
+
+  public function testResult(Request $request)
+  {
+    $user = Auth::user();
     $chapters = Chapter::where('step', 2)
       ->with('tests.users')
       ->get();
@@ -88,69 +150,50 @@ class PracticeTestsController extends Controller
       }
     }
 
-    // Mark the test as completed for the user
-    $currentTest = Test::findOrFail($testId);
-    $currentTest->users()->updateExistingPivot($user->id, ['status' => 'completed']);
+    $questionResults = $request->input('questionResults');
+    $timeTaken = $request->input('timeTaken');
+    $totalTimeTaken = $timeTaken['minutes'] * 60 + $timeTaken['seconds'];
+    $testId = $request->input('testId');
+    $chapterId = $request->input('chapterId');
+    $totalQuestions = count($questionResults);
+    $totalCorrect = 0;
+    $totalWrong = 0;
 
-    $nextTest = Test::where('chapter_id', $chapterId)
-      ->where('id', '>', $testId)
-      ->first();
-
-    $testAfterNext = $nextTest ? Test::where('chapter_id', $chapterId)
-      ->where('id', '>', $nextTest->id)
-      ->first() : null;
-
-    return Inertia::render('PracticeTest/Info', [
-      'chapters' => $chapters,
-      'test' => $nextTest,
-      'chapterId' => $chapterId,
-      'previousTestId' => $currentTest->id,
-      'nextTestId' => $testAfterNext ? $testAfterNext->id : null,
-    ]);
-  }
-
-  public function testStart(Request $request, $chapterId)
-  {
-    if ($request->filled('questionId') && $request->filled('answerId') && $request->filled('testId')) {
-      // Answer validation logic
-      $questionId = $request->input('questionId');
-      $answerId = $request->input('answerId');
-      $testId = $request->input('testId');
-      $index = $request->input('index');
-
-      $question = Question::where('id', $questionId)->first();
-      $result = $question->correct_answer_id == $answerId ? 'pass' : 'fail';
-
-      $nextQuestion = Question::where('test_id', $testId)
-        ->where('id', '>', $questionId)
-        ->with('answers')
-        ->select('id', 'text', 'test_id')
-        ->first();
-
-      return Inertia::render('TestPage', [
-        'index' => $index,
-        'chapterId' => $chapterId,
-        'nextQuestion' => $nextQuestion,
-        'result' => $result,
-        'selectedQuestionId' => $questionId,
-        'selectedAnswerId' => $answerId,
-        'explanation' => $question->explanation
-      ]);
-    } else {
-      // Initial page logic
-      $test = Test::where('chapter_id', $chapterId)
-        ->select('id', 'chapter_id', 'name')
-        ->first();
-
-      $question = Question::where('test_id', $test->id)
-        ->with('answers')
-        ->select('id', 'text', 'test_id')
-        ->first();
-
-      return Inertia::render('PracticeTest/TestStart', [
-        'chapterId' => $chapterId,
-        'question' => $question
-      ]);
+    // Iterate over each question result
+    foreach ($questionResults as $result) {
+      // Increment correct or wrong counters based on result
+      if ($result['result'] === 'pass') {
+        $totalCorrect++;
+      } elseif ($result['result'] === 'fail') {
+        $totalWrong++;
+      }
     }
+
+    // Calculate percentage
+    $percentage = round(($totalCorrect / $totalQuestions) * 100);
+
+    $status = $totalCorrect >= 15 ? 'completed' : 'failed';
+
+    $user->tests()->syncWithoutDetaching([
+      $testId => [
+        'status' => $status,
+        'total_correct' => $totalCorrect,
+        'total_wrong' => $totalWrong,
+        'total_time_taken' => $totalTimeTaken,
+      ]
+    ]);
+
+    return Inertia::render('PracticeTest/Result', [
+      'result' => [
+        'totalQuestions' => $totalQuestions,
+        'totalCorrect' => $totalCorrect,
+        'totalWrong' => $totalWrong,
+        'percentage' => $percentage,
+      ],
+      'totalTimeTaken' => $timeTaken,
+      'testId' => $testId,
+      'chapterId' => $chapterId,
+      'chapters' => $chapters
+    ]);
   }
 }

@@ -107,7 +107,9 @@ export default function Info({
                             </p>
                             <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
                                 <Link
-                                    href={route("testPage", { chapterId })}
+                                    href={`/practice-tests/start/${chapterId}${
+                                        test.id ? `/${test.id}` : ""
+                                    }`}
                                     method="post"
                                     as="button"
                                     className="bg-primary text-white px-8 py-2 rounded-full flex-1"

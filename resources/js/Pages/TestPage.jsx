@@ -105,6 +105,10 @@ export default function TestStart({
             return;
         }
 
+        if (currentQuestion.selectedAnswerId == null) {
+            return;
+        }
+
         if (questionResults[currentQuestionIndex + 1].result == "none") {
             setQuestionResults((prevResults) => {
                 const newResults = [...prevResults];

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Head, router } from "@inertiajs/react";
+import { Head, Link, router } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCheck,
@@ -9,9 +9,10 @@ import {
     faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import Countdown from "react-countdown";
-import GuestLayout from "@/Layouts/GuestLayout";
+import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 
 export default function TestStart({
+    auth,
     chapterId,
     question,
     nextQuestion,
@@ -19,6 +20,8 @@ export default function TestStart({
     index,
     selectedAnswerId,
     explanation,
+    chapters,
+    test,
 }) {
     const renderer = ({ minutes, seconds, completed }) => {
         if (completed) {
@@ -32,7 +35,7 @@ export default function TestStart({
             ); // Convert total time taken to seconds
 
             router.post(
-                route("testResultPage"),
+                route("practice.testResult"),
                 {
                     questionResults,
                     totalTimeTaken: {
@@ -61,7 +64,7 @@ export default function TestStart({
             question_id: null,
             question_text: "",
             explanation: "",
-            result: "none", //['none', 'pass', 'fail'][Math.floor(Math.random() * 3)], // Randomly assigning 'none', 'pass', or 'fail' for demonstration
+            result: "none", //['none', 'pass', 'fail'],
             answer_text: [],
             selectedAnswerId: null,
             isOptionSelected: false,
@@ -94,7 +97,7 @@ export default function TestStart({
     const handleAnswerSelection = (questionId, answerId, testId, index) => {
         currentQuestion.isOptionSelected = true;
         router.post(
-            `/test/${chapterId}`,
+            `/practice-tests/start/${chapterId}`,
             { questionId, answerId, testId, chapterId, index },
             { preserveState: true, replace: true, preserveScroll: true }
         );
@@ -102,6 +105,10 @@ export default function TestStart({
 
     const handleNextQuestion = (nextQuestion) => {
         if (currentQuestionIndex >= 14) {
+            return;
+        }
+
+        if (currentQuestion.selectedAnswerId == null) {
             return;
         }
 
@@ -147,7 +154,7 @@ export default function TestStart({
 
     const handleReset = () => {
         router.post(
-            `/test/${chapterId}`,
+            `/practice-tests/${chapterId}${test.id ? `/${test.id}` : ""}`,
             {},
             { preserveState: false, replace: true }
         );
@@ -164,13 +171,15 @@ export default function TestStart({
         );
 
         router.post(
-            route("testResultPage"),
+            route("practice.testResult"),
             {
                 questionResults,
-                totalTimeTaken: {
+                timeTaken: {
                     minutes: totalTimeTakenInMinutes,
                     seconds: totalTimeTakenInSeconds,
                 },
+                testId: test.id,
+                chapterId,
             },
             { preserveState: false, replace: true }
         );
@@ -178,7 +187,11 @@ export default function TestStart({
 
     return (
         <>
-            <GuestLayout>
+            <AuthenticatedLayout
+                user={auth.user}
+                isChapterPanelVisible={true}
+                chapters={chapters}
+            >
                 <Head title="Premium" />
                 <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 p-10 bg-slate-50">
                     {/* Left Side (spans 8 columns on large screens) */}
@@ -354,13 +367,15 @@ export default function TestStart({
                         </div>
                         {/* Buttons outside the main right div, only visible on large screens */}
                         <div className="hidden lg:flex order-3 lg:col-span-4 flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4 lg:justify-end lg:py-4">
-                            <button className="bg-white text-black  border border-primary px-6 py-2 rounded-full flex-1 flex items-center justify-center">
-                                <FontAwesomeIcon
-                                    icon={faChevronLeft}
-                                    className="mr-4 text-sm"
-                                />
-                                All Tests
-                            </button>
+                            <Link href={route("practice.test")}>
+                                <button className="bg-white text-black  border border-primary px-6 py-2 rounded-full flex-1 flex items-center justify-center">
+                                    <FontAwesomeIcon
+                                        icon={faChevronLeft}
+                                        className="mr-4 text-sm"
+                                    />
+                                    All Tests
+                                </button>
+                            </Link>
 
                             <button
                                 onClick={handleReset}
@@ -377,7 +392,7 @@ export default function TestStart({
 
                     {/* Buttons outside the main right div */}
                 </section>
-            </GuestLayout>
+            </AuthenticatedLayout>
         </>
     );
 }
