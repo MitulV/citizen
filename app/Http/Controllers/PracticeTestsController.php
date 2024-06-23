@@ -199,6 +199,7 @@ class PracticeTestsController extends Controller
     }
 
     $questionResults = $request->input('questionResults');
+
     $timeTaken = $request->input('timeTaken');
     $totalTimeTaken = $timeTaken['minutes'] * 60 + $timeTaken['seconds'];
     $testId = $request->input('testId');
@@ -228,6 +229,7 @@ class PracticeTestsController extends Controller
         'total_correct' => $totalCorrect,
         'total_wrong' => $totalWrong,
         'total_time_taken' => $totalTimeTaken,
+        'test_data' => json_encode($questionResults)
       ]
     ]);
 

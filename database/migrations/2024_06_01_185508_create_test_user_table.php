@@ -19,6 +19,7 @@ return new class extends Migration
       $table->integer('total_correct')->nullable();
       $table->integer('total_wrong')->nullable();
       $table->integer('total_time_taken')->nullable();
+      $table->json('test_data')->nullable();
       $table->timestamps();
     });
   }
