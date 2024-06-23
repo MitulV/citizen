@@ -86,6 +86,13 @@ class PracticeTestsController extends Controller
       ->where('id', '>', $testId)
       ->first();
 
+    $latestTest = $user->tests()->orderBy('pivot_updated_at', 'desc')->first();
+    $latestScore =  '-';
+    if ($latestTest) {
+      $totalCorrect = $latestTest->pivot->total_correct;
+      $latestScore = round(($totalCorrect / 20) * 100) . '%';
+    }
+
     return Inertia::render('PracticeTest/Info', [
       'chapters' => $chapters,
       'test' => $test,
@@ -93,6 +100,7 @@ class PracticeTestsController extends Controller
       'chapterId' => $chapterId,
       'previousTestId' => $previousTest ? $previousTest->id : null,
       'nextTestId' => $nextTest ? $nextTest->id : null,
+      'latestScore' => $latestScore
     ]);
   }
 

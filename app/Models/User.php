@@ -9,36 +9,42 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable;
+  use HasFactory, Notifiable;
 
-    protected $fillable = [
-        'name', 'email', 'password',
+  protected $fillable = [
+    'name', 'email', 'password',
+  ];
+
+  protected $hidden = [
+    'password', 'remember_token',
+  ];
+
+  protected function casts(): array
+  {
+    return [
+      'email_verified_at' => 'datetime',
+      'password' => 'hashed',
     ];
+  }
 
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
+  public function topics()
+  {
+    return $this->belongsToMany(Topic::class)->withPivot('status')->withTimestamps();
+  }
 
-    protected function casts(): array
-    {
-        return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
-        ];
-    }
+  public function tests()
+  {
+    return $this->belongsToMany(Test::class)->withPivot([
+      'status',
+      'total_correct',
+      'total_wrong',
+      'total_time_taken',
+      'test_data'
+    ])->withTimestamps();
+  }
 
-    public function topics()
-    {
-        return $this->belongsToMany(Topic::class)->withPivot('status')->withTimestamps();
-    }
-
-    public function tests()
-    {
-        return $this->belongsToMany(Test::class)->withPivot('status')->withTimestamps();
-    }
-
-    public function flashcards()
-    {
-        return $this->belongsToMany(Flashcard::class)->withPivot('status')->withTimestamps();
-    }
+  public function flashcards()
+  {
+    return $this->belongsToMany(Flashcard::class)->withPivot('status')->withTimestamps();
+  }
 }

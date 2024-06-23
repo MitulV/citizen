@@ -10,6 +10,7 @@ export default function Info({
     chapters,
     test,
     currentChapter,
+    latestScore,
 }) {
     return (
         <>
@@ -198,7 +199,7 @@ export default function Info({
                                         Your Score:
                                     </h1>
                                     <h2 className="text-lg sm:text-lg font-bold mb-2">
-                                        13%
+                                        {latestScore}
                                     </h2>
                                 </div>
                             </div>
