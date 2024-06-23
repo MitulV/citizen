@@ -36,7 +36,11 @@ Route::middleware('auth')->group(function () {
 
 
   Route::get('/simulation-tests', [SimulationTestsController::class, 'index'])->name('simulation.test');
+
   Route::get('/practice-tests', [PracticeTestsController::class, 'index'])->name('practice.test');
+  Route::get('/practice-tests/{chapterId}/{testId?}', [PracticeTestsController::class, 'testList'])->name('testList');
+  Route::get('/practice-tests/start/{chapterId}/{testId?}', [PracticeTestsController::class, 'testStart'])->name('practice.testStart');
+  Route::get('/practice-tests/{chapterId}/test/{testId?}/complete', [PracticeTestsController::class, 'completeTest'])->name('test.complete');
 
   Route::get('/flashcards', [FlashcardController::class, 'index'])->name('flashcard');
   Route::get('/flashcards/{chapterId}/{flashcardId?}', [FlashcardController::class, 'flashcardList'])->name('flashcardList');

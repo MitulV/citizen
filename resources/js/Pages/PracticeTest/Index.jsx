@@ -1,5 +1,5 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
-import { Head } from "@inertiajs/react";
+import { Head, Link } from "@inertiajs/react";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,7 +12,7 @@ export default function Index({ auth, chapters }) {
     return (
         <>
             <AuthenticatedLayout user={auth.user}>
-                <Head title="Flashcard" />
+                <Head title="Chapter Tests" />
                 <div className="relative min-h-screen md:flex">
                     <section className="bg-slate-100 py-8 px-4 md:py-12 md:px-8 lg:px-8">
                         <div className="text-left mb-8">
@@ -64,25 +64,34 @@ export default function Index({ auth, chapters }) {
                                                 {chapter.description}
                                             </p>
                                             {chapter.tests.map((test) => (
-                                                <div
-                                                    className="flex justify-between items-start mt-4"
+                                                <Link
+                                                    replace
+                                                    href={`/practice-tests/${
+                                                        chapter.id
+                                                    }${
+                                                        test.id
+                                                            ? `/${test.id}`
+                                                            : ""
+                                                    }`}
                                                     key={test.id}
                                                 >
-                                                    <FontAwesomeIcon
-                                                        icon={faFile}
-                                                    />
-                                                    <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2">
-                                                        {test.name}
-                                                    </p>
-                                                    <FontAwesomeIcon
-                                                        icon={faCheck}
-                                                        className={
-                                                            test.is_completed_by_user
-                                                                ? "text-green-600"
-                                                                : "text-gray-400"
-                                                        }
-                                                    />
-                                                </div>
+                                                    <div className="flex justify-between items-start mt-4">
+                                                        <FontAwesomeIcon
+                                                            icon={faFile}
+                                                        />
+                                                        <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2">
+                                                            {test.name}
+                                                        </p>
+                                                        <FontAwesomeIcon
+                                                            icon={faCheck}
+                                                            className={
+                                                                test.is_completed_by_user
+                                                                    ? "text-green-600"
+                                                                    : "text-gray-400"
+                                                            }
+                                                        />
+                                                    </div>
+                                                </Link>
                                             ))}
                                         </div>
                                     </div>
@@ -124,25 +133,37 @@ export default function Index({ auth, chapters }) {
                                                 {chapter.description}
                                             </p>
                                             {chapter.tests.map((test) => (
-                                                <div
-                                                    className="flex justify-between items-start mt-4"
+                                                <Link
+                                                    replace
+                                                    href={`/practice-tests/${
+                                                        chapter.id
+                                                    }${
+                                                        test.id
+                                                            ? `/${test.id}`
+                                                            : ""
+                                                    }`}
                                                     key={test.id}
                                                 >
-                                                    <FontAwesomeIcon
-                                                        icon={faFile}
-                                                    />
-                                                    <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2">
-                                                        {test.name}
-                                                    </p>
-                                                    <FontAwesomeIcon
-                                                        icon={faCheck}
-                                                        className={
-                                                            test.is_completed_by_user
-                                                                ? "text-green-600"
-                                                                : "text-gray-400"
-                                                        }
-                                                    />
-                                                </div>
+                                                    <div
+                                                        className="flex justify-between items-start mt-4"
+                                                        key={test.id}
+                                                    >
+                                                        <FontAwesomeIcon
+                                                            icon={faFile}
+                                                        />
+                                                        <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2">
+                                                            {test.name}
+                                                        </p>
+                                                        <FontAwesomeIcon
+                                                            icon={faCheck}
+                                                            className={
+                                                                test.is_completed_by_user
+                                                                    ? "text-green-600"
+                                                                    : "text-gray-400"
+                                                            }
+                                                        />
+                                                    </div>
+                                                </Link>
                                             ))}
                                         </div>
                                     </div>

@@ -14,7 +14,9 @@ import {
     faCheck,
     faTimes,
 } from "@fortawesome/free-solid-svg-icons";
-import { Accordion } from "flowbite-react";
+
+import StudyGuidePanel from "@/Components/SidebarPanel/StudyGuidePanel";
+import ChapterTestPanel from "@/Components/SidebarPanel/ChapterTestPanel";
 
 export default function Authenticated({
     user,
@@ -138,72 +140,18 @@ export default function Authenticated({
                         </MenuItem>
                     </Menu>
                 </Sidebar>
-                {isChapterPanelVisible && (
-                    <Sidebar
-                        collapsedWidth="0"
-                        width="337px"
+                {isChapterPanelVisible && url.startsWith("/guide") && (
+                    <StudyGuidePanel
+                        chapters={chapters}
                         collapsed={collapsed}
-                        backgroundColor="rgb(255,255,255)"
-                    >
-                        <Menu
-                            menuItemStyles={{
-                                button: {
-                                    [`&.active`]: {
-                                        backgroundColor: "#13395e",
-                                        color: "#b6c8d9",
-                                    },
-                                },
-                            }}
-                        >
-                            <Accordion>
-                                {chapters.map((chapter, index) => (
-                                    <Accordion.Panel key={chapter.id}>
-                                        <Accordion.Title>
-                                            Chapter {index + 1}
-                                        </Accordion.Title>
-                                        <Accordion.Content>
-                                            <div className="text-gray-800 text-start">
-                                                {chapter.topics.map((topic) => (
-                                                    <Link
-                                                        replace
-                                                        href={`/guide/${
-                                                            chapter.id
-                                                        }${
-                                                            topic.id
-                                                                ? `/${topic.id}`
-                                                                : ""
-                                                        }`}
-                                                        key={topic.id}
-                                                    >
-                                                        <div
-                                                            className="p-4 bg-slate-50 mt-1 flex justify-between items-start"
-                                                            key={topic.id}
-                                                        >
-                                                            <button className="text-base text-gray-800 text-start">
-                                                                {topic.name}
-                                                            </button>
-                                                            <FontAwesomeIcon
-                                                                icon={
-                                                                    topic.is_completed_by_user
-                                                                        ? faCheck
-                                                                        : faTimes
-                                                                }
-                                                                className={
-                                                                    topic.is_completed_by_user
-                                                                        ? "text-green-500"
-                                                                        : "text-red-500"
-                                                                }
-                                                            />
-                                                        </div>
-                                                    </Link>
-                                                ))}
-                                            </div>
-                                        </Accordion.Content>
-                                    </Accordion.Panel>
-                                ))}
-                            </Accordion>
-                        </Menu>
-                    </Sidebar>
+                    />
+                )}
+
+                {isChapterPanelVisible && url.startsWith("/practice-tests") && (
+                    <ChapterTestPanel
+                        chapters={chapters}
+                        collapsed={collapsed}
+                    />
                 )}
 
                 <button

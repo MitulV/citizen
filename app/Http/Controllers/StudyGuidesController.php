@@ -45,7 +45,7 @@ class StudyGuidesController extends Controller
       }
     }
 
-    $topicId == null ? 1 : $topicId;
+    $topicId == $topicId ?? 1;
 
     $topic = Topic::findOrFail($topicId);
 
