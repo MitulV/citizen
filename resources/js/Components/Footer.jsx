@@ -10,8 +10,8 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
     return (
         <footer className="pt-8 bg-slate-50 text-black">
-            <div className="container mx-auto px-4 md:px-8 xl:max-w-7xl">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 xl:gap-12">
+            <div className="container mx-auto px-4 md:px-8">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="text-center md:text-left">
                         <div className="flex items-center">
                             <span className="text-xl font-black leading-6">
@@ -19,7 +19,7 @@ export default function Footer() {
                                 TestPrep
                             </span>
                         </div>
-                        <p className="text-sm md:text-xs lg:text-sm xl:text-xs text-gray-600 mt-2">
+                        <p className="text-sm md:text-xs text-gray-600 mt-2">
                             We're the top online destination for preparing for
                             the Canadian Citizenship Test. We want you to feel
                             confident and ready on test day. Use our study
@@ -110,20 +110,20 @@ export default function Footer() {
                 </div>
 
                 <div className="mx-4 md:mx-10 my-4 flex flex-wrap items-center">
-                    <h1 className="text-xs md:text-sm lg:text-xs xl:text-sm text-gray-600">
+                    <h1 className="text-xs md:text-sm text-gray-600">
                         <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                         hello@citizentestprep.ca
                     </h1>
-                    <h1 className="text-xs md:text-sm lg:text-xs xl:text-sm text-gray-600 ml-4">
+                    <h1 className="text-xs md:text-sm text-gray-600 ml-4">
                         <FontAwesomeIcon icon={faPhone} className="mr-2" /> +1
                         672-558-4037
                     </h1>
                 </div>
             </div>
 
-            <div className="py-2 text-white ">
-                <div className="container mx-auto px-4 md:px-8 xl:max-w-7xl flex items-center justify-between bg-secondary">
-                    <p className="text-xs md:text-sm lg:text-xs xl:text-sm ">
+            <div className="py-2 text-white bg-secondary">
+                <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
+                    <p className="text-xs md:text-sm">
                         © 2024 CitizenTestPrep All rights reserved.
                     </p>
                     <div className="flex space-x-4">

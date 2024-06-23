@@ -57,7 +57,7 @@ export default function HomePage({ auth, chapters }) {
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
                         {/* First Card */}
                         <div className="relative w-full md:w-auto justify-center transform hover:-translate-y-1 transition duration-500 ease-out">
-                            <div className="absolute left-0 w-full h-60 md:w-52 md:h-96 bg-amber-300 rounded-t-full shadow-sm"></div>
+                            <div className="absolute left-0 w-full h-60 md:w-48 md:h-40 bg-amber-300 rounded-t-full shadow-sm"></div>
                             <img
                                 src="/images/person 2.png"
                                 alt="Image 1"
@@ -92,7 +92,7 @@ export default function HomePage({ auth, chapters }) {
 
                         {/* Third Card */}
                         <div className="relative w-full md:w-auto justify-center transform hover:-translate-y-1 transition duration-500 ease-out">
-                            <div className="absolute left-0 w-full h-1/2 md:w-52 md:h-96 bg-indigo-300 rounded-t-full shadow-sm"></div>
+                            <div className="absolute left-0 w-full h-1/2 md:w-48 md:h-40 bg-indigo-300 rounded-t-full shadow-sm"></div>
                             <img
                                 src="/images/person 1.png"
                                 alt="Image 3"
@@ -102,7 +102,7 @@ export default function HomePage({ auth, chapters }) {
 
                         {/* Fourth Card */}
                         <div className="relative w-full md:w-auto justify-center transform hover:-translate-y-1 transition duration-500 ease-out">
-                            <div className="absolute left-0 w-full h-1/2 md:w-52 md:h-96 bg-orange-300 rounded-t-full shadow-sm"></div>
+                            <div className="absolute left-0 w-full h-1/2 md:w-48 md:h-40 bg-orange-300 rounded-t-full shadow-sm"></div>
                             <img
                                 src="/images/person 3.png"
                                 alt="Image 4"
