@@ -20,8 +20,7 @@ return new class extends Migration
       $table->foreign('package_id')->references('id')->on('packages')->onDelete('cascade');
       $table->unsignedBigInteger('subscription_id')->after('package_id');
       $table->foreign('subscription_id')->references('id')->on('subscriptions')->onDelete('cascade');
-      $table->string('status')->nullable();
-      $table->string('payment_status');
+      $table->enum('stripe_payment_status', ['paid', 'unpaid', 'no_payment_required'])->default('unpaid');
       $table->timestamps();
     });
   }

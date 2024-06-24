@@ -9,6 +9,7 @@ use App\Http\Controllers\SimulationTestsController;
 use App\Http\Controllers\StudyGuidesController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\ToolsController;
+use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -53,5 +54,9 @@ Route::middleware('auth')->group(function () {
   Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
   Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('/checkout', [TransactionController::class, 'checkout'])->name('checkout');
+Route::get('/payment/success', [TransactionController::class, 'paymentSuccess'])->name('paymentSuccess');
+Route::get('/payment/cancel', [TransactionController::class, 'paymentCancel'])->name('paymentCancel');
 
 require __DIR__ . '/auth.php';

@@ -8,10 +8,11 @@ use App\Models\Transaction;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Inertia\Inertia;
 
 class TransactionController extends Controller
 {
-  public function handle(Request $request, StripeService $stripeService)
+  public function checkout(Request $request, StripeService $stripeService)
   {
     $user = Auth::user();
     $packageId = $request->input('packageId');
@@ -27,12 +28,10 @@ class TransactionController extends Controller
     ]);
 
     $transaction = Transaction::create([
-      'stripe_checkout_id' => $data['stripe_checkout_id'] ?? null,
       'user_id' => $user->id,
       'package_id' => $packageId,
       'subscription_id' => $subscription->id,
       'total_amount' => $package->price,
-      'payment_status' => 'unpaid'
     ]);
 
     $srtipeData = [
@@ -43,12 +42,22 @@ class TransactionController extends Controller
       'transaction_id' => $transaction->id
     ];
 
-
     $checkoutSession =  $stripeService->createCheckoutSession($srtipeData);
+
     $transaction->update([
-      'stripe_checkout_id' => $checkoutSession->id,
-      'amount_total' => ($checkoutSession->amount_total) / 100,
-      'status' => $checkoutSession->status
+      'stripe_checkout_id' => $checkoutSession->id
     ]);
+
+    return redirect($checkoutSession->url);
+  }
+
+  public function paymentSuccess()
+  {
+    return Inertia::render('Payment/Success', []);
+  }
+
+  public function paymentCancel()
+  {
+    return Inertia::render('Payment/Fail', []);
   }
 }

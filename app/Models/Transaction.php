@@ -15,8 +15,7 @@ class Transaction extends Model
     'total_amount',
     'package_id',
     'subscription_id',
-    'status',
-    'payment_status',
+    'stripe_payment_status',
   ];
 
   /**

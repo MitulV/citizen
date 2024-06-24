@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Subscription;
 use App\Models\Transaction;
-use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Stripe\Exception\SignatureVerificationException;
@@ -66,24 +65,26 @@ class WebhookController extends Controller
     Log::info(['$subscriptionId' => $subscriptionId]);
     Log::info(['$userId' => $userId]);
 
+    $transaction = Transaction::where('stripe_checkout_id', $session->id)->first();
+
+
+    if ($transaction->id != $transactionId) {
+      return response('Invalid Request', 400);
+    }
+
     $subscription = Subscription::find($subscriptionId);
-    $transaction = Transaction::find($transactionId);
-    $user = User::find($userId);
 
-    $wasPending = $transaction->payment_status == 'unpaid';
-    if ($wasPending) {
+    if ($transaction->stripe_payment_status == 'unpaid') {
+      if ($session->payment_status == 'paid') {
+        $subscription->update(
+          ['isActive' => true]
+        );
+      }
 
-      $subscription->update(
-        ['isActive' => true]
-      );
       $transaction->update([
-        'status' => $session->status,
         'payment_status' =>  $session->payment_status
       ]);
     }
-
-
-    // Code Still Pending
 
     Log::info('exit from handleAction Method');
   }
