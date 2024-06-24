@@ -11,7 +11,7 @@ import {
     faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function TopicDetail({ auth, topic, chapters }) {
+export default function TopicDetail({ auth, topic, chapters, chapterId }) {
     return (
         <>
             <AuthenticatedLayout
@@ -49,23 +49,39 @@ export default function TopicDetail({ auth, topic, chapters }) {
 
                     {/* Navigation Bar */}
                     <div className="container-fluid py-4 px-4 md:px-8 lg:px-20 w-full flex justify-between items-center">
-                        <button className="border-primary border-2  text-black px-4 py-2 rounded-full">
+                        <Link
+                            as="button"
+                            method="post"
+                            href={`/guide/${chapterId}/${topic.id}/complete`}
+                            className="border-primary border-2  text-black px-4 py-2 rounded-full"
+                        >
                             <FontAwesomeIcon
                                 icon={faChevronLeft}
                                 className="mr-2"
                             />
                             Previous
-                        </button>
-                        <button className="bg-green-500 text-white px-4 py-2 rounded-full">
+                        </Link>
+                        <Link
+                            as="button"
+                            method="post"
+                            href={`/guide/${chapterId}/topic/${topic.id}/complete`}
+                            className="bg-green-500 text-white px-4 py-2 rounded-full"
+                        >
                             <FontAwesomeIcon icon={faCheck} /> Complete
-                        </button>
-                        <button className="border-primary border-2  text-black px-6 py-2 rounded-full flex items-center">
+                        </Link>
+
+                        <Link
+                            as="button"
+                            method="post"
+                            href={`/guide/${chapterId}/${topic.id}/complete`}
+                            className="border-primary border-2  text-black px-6 py-2 rounded-full flex items-center"
+                        >
                             Next
                             <FontAwesomeIcon
                                 icon={faChevronRight}
                                 className="ml-2"
                             />
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </AuthenticatedLayout>

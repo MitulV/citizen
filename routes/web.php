@@ -10,6 +10,7 @@ use App\Http\Controllers\StudyGuidesController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\ToolsController;
 use App\Http\Controllers\TransactionController;
+use App\Http\Controllers\WebhookController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -58,5 +59,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/checkout', [TransactionController::class, 'checkout'])->name('checkout');
 Route::get('/payment/success', [TransactionController::class, 'paymentSuccess'])->name('paymentSuccess');
 Route::get('/payment/cancel', [TransactionController::class, 'paymentCancel'])->name('paymentCancel');
+
+Route::post('/webhook', [WebhookController::class, 'handle'])->name('webhook');
 
 require __DIR__ . '/auth.php';

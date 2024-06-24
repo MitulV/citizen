@@ -251,7 +251,8 @@ class PracticeTestsController extends Controller
       'totalTimeTaken' => $timeTaken,
       'testId' => $testId,
       'chapterId' => $chapterId,
-      'chapters' => $chapters
+      'chapters' => $chapters,
+      'questionResults' => $questionResults
     ]);
   }
 }
