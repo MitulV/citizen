@@ -10,6 +10,7 @@ import {
     faCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
 import GuestLayout from "@/Layouts/GuestLayout";
+import { Accordion } from "flowbite-react";
 
 export default function Premium() {
     return (
@@ -904,26 +905,78 @@ export default function Premium() {
                     <h1 className="text-4xl font-bold mb-6 text-center">
                         Your questions, answered
                     </h1>
-                    <div className="container mx-auto">
-                        <div className="max-w-[600px] mx-auto">
-                            {[...Array(4)].map((_, index) => (
-                                <form key={index} className="text-black mb-4">
-                                    <select
-                                        id={`countries-${index}`}
-                                        className="w-full border p-4 border-gray-100 text-black text-sm rounded-3xl font-bold"
-                                    >
-                                        <option>
-                                            Which plan is best for me?
-                                        </option>
-                                        <option>United States</option>
-                                        <option>Canada</option>
-                                        <option>France</option>
-                                        <option>Germany</option>
-                                    </select>
-                                </form>
-                            ))}
-                        </div>
+                    <div className="container-fluid mx-auto px-4 md:px-10 lg:px-96 py-8 border-none">
+                        <Accordion className="bg-white border-none">
+                            <Accordion.Panel>
+                                <Accordion.Title className="mb-2">
+                                    Which plan is best for me?
+                                </Accordion.Title>
+                                <Accordion.Content>
+                                    <p className="mb-2">
+                                        Studying on your own can be tough
+                                        because there's so much information to
+                                        retain. Our "Learn-Quiz-Learn" framework
+                                        is a proven approach that has helped
+                                        thousands of learners across Canada pass
+                                        their tests, bringing them one step
+                                        closer to Canadian citizenship.
+                                    </p>
+                                </Accordion.Content>
+                            </Accordion.Panel>
+
+                            <Accordion.Panel className="mt-8 border-none ">
+                                <Accordion.Title className="mb-2">
+                                    I have only a few days left for the exam,
+                                    will this help me?
+                                </Accordion.Title>
+                                <Accordion.Content>
+                                    Studying on your own can be tough because
+                                    there's so much information to retain. Our
+                                    "Learn-Quiz-Learn" framework is a proven
+                                    approach that has helped thousands of
+                                    learners across Canada pass their tests,
+                                    bringing them one step closer to Canadian
+                                    citizenship.
+                                </Accordion.Content>
+                            </Accordion.Panel>
+                            <Accordion.Panel className="mt-8 border-none">
+                                <Accordion.Title className="mb-2">
+                                    I have already attended the test and have
+                                    knowledge about the question pattern, should
+                                    I join here?
+                                </Accordion.Title>
+                                <Accordion.Content>
+                                    <p>
+                                        Studying on your own can be tough
+                                        because there's so much information to
+                                        retain. Our "Learn-Quiz-Learn" framework
+                                        is a proven approach that has helped
+                                        thousands of learners across Canada pass
+                                        their tests, bringing them one step
+                                        closer to Canadian citizenship.
+                                    </p>
+                                </Accordion.Content>
+                            </Accordion.Panel>
+                            <Accordion.Panel className="mt-8 border-none">
+                                <Accordion.Title className="mb-2">
+                                    How can I be sure that premium will help me
+                                    pass?
+                                </Accordion.Title>
+                                <Accordion.Content>
+                                    <p>
+                                        Studying on your own can be tough
+                                        because there's so much information to
+                                        retain. Our "Learn-Quiz-Learn" framework
+                                        is a proven approach that has helped
+                                        thousands of learners across Canada pass
+                                        their tests, bringing them one step
+                                        closer to Canadian citizenship.
+                                    </p>
+                                </Accordion.Content>
+                            </Accordion.Panel>
+                        </Accordion>
                     </div>
+
                     <div className="container mx-auto mt-8">
                         <div className="max-w-[1000px] mx-auto p-4 flex flex-col md:flex-row items-start md:items-center">
                             <p className="text-gray-900 mb-4 md:mb-0 md:mr-4 text-center md:text-left">
