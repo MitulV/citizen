@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/kajal', function () {
-  return Inertia::render('StudyGuide/TopicDetail');
+  return Inertia::render('privacypolicy');
 });
 
 Route::get('/', [HomePageController::class, 'index'])->name('homePage');

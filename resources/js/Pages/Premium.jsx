@@ -17,10 +17,9 @@ export default function Premium() {
         <>
             <GuestLayout>
                 <Head title="Premium" />
-                <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 md:p-10 bg-slate-50">
-                    {/* Left Column */}
-                    <div className="lg:col-span-6 flex flex-col space-y-4 p-6 md:p-10">
-                        <h1 className="text-xl sm:text-3xl lg:text-6xl font-bold">
+                <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-6 p-4 sm:p-6 md:p-10 lg:p-16 xl:p-24 bg-slate-50">
+                    <div className="lg:col-span-6 flex flex-col space-y-4 p-6 md:p-10 mr-0">
+                        <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-6xl font-bold">
                             Pass your Canadian Citizenship test in <br /> first
                             try.
                             <span className="text-indigo-600">
@@ -28,7 +27,7 @@ export default function Premium() {
                                 Guaranteed.
                             </span>
                         </h1>
-                        <p className="text-gray-600">
+                        <p className="text-gray-600 text-sm md:text-base lg:text-lg xl:text-xl">
                             Your all-in-one toolkit for success: Prepare
                             thoroughly with 700+ test questions, topic-based
                             quizzes, realistic test simulations, study quizzes,
@@ -47,11 +46,11 @@ export default function Premium() {
                                 />
                             </div>
                         </div>
-                        <p className="text-gray-600 mt-4">
+                        <p className="text-gray-600 mt-4 text-sm md:text-base lg:text-lg xl:text-xl">
                             Join the 18,300+ new citizens who've passed their
                             tests with our help.
                         </p>
-                        <ul className="space-y-2 text-gray-600">
+                        <ul className="space-y-2 text-gray-600 text-sm md:text-base lg:text-lg xl:text-xl">
                             <li className="flex items-center">
                                 <FontAwesomeIcon
                                     icon={faCheck}
@@ -83,18 +82,16 @@ export default function Premium() {
                         </ul>
                     </div>
 
-                    {/* Right Column */}
-                    <div className="lg:col-span-6 flex justify-center items-center rounded-xl p-6 md:p-10">
+                    <div className="lg:col-span-6 flex justify-center items-center ml-0">
                         <img
                             src="/images/ea59b0c12c13b0daf792e11ef62864a7.png"
                             alt="Placeholder"
-                            className="w-full md:max-w-md h-auto"
+                            className="w-full md:max-w-md h-auto rounded-xl"
                         />
                     </div>
 
-                    {/* Additional Content Below Columns */}
                     <div className="lg:col-span-12 flex flex-col items-center sm:justify-between mt-10">
-                        <h1 className="text-4xl font-bold mt-4 text-center lg:text-left">
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-center lg:text-left">
                             Why busy learners love CitizenTestPrep Premium
                         </h1>
 
@@ -122,7 +119,7 @@ export default function Premium() {
                                     className="text-yellow-300 mx-1"
                                 />
                             </div>
-                            <span>
+                            <span className="text-sm md:text-base lg:text-lg xl:text-xl">
                                 Rated 5 out of 5 based on over 200+ reviews.
                             </span>
                         </div>
@@ -211,7 +208,7 @@ export default function Premium() {
                                                 CitizenTestPrep premium is
                                                 without a doubt the best
                                                 resource for the Canadian
-                                                Citizenship Test
+                                                Citizenship Test.
                                             </p>
                                         </div>
                                         <div className="flex items-center mb-2">
@@ -263,87 +260,85 @@ export default function Premium() {
                     </p>
                 </section>
                 <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 md:p-10 bg-slate-50 mt-10">
-                    {/* Left Column */}
                     <div className="lg:col-span-6 flex flex-col space-y-4 p-6 md:p-10">
-                        <p className="text-indigo-600 text-sm">How it works</p>
-
+                        <p className="text-indigo-600 text-sm md:text-base lg:text-lg">
+                            How it works
+                        </p>
                         <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold">
                             It has never been so easy to pass the Canadian
                             Citizenship test
                         </h1>
-                        <p className="text-gray-600">
+                        <p className="text-gray-600 text-sm md:text-base lg:text-lg">
                             Start driving sooner with our clear and stress-free
-                            approach..
+                            approach.
                         </p>
-
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 w-full">
                             <div className="p-1">
-                                <h1 className="text-base text-indigo-600 font-semibold">
+                                <h1 className="text-base text-indigo-600 font-semibold sm:text-lg md:text-xl lg:text-2xl">
                                     STEP 1
                                 </h1>
-                                <h1 className="text-base font-semibold">
+                                <h1 className="text-base font-semibold sm:text-lg md:text-xl lg:text-2xl">
                                     Engaging quizzes
                                 </h1>
-                                <p className="text-gray-500 text-sm">
+                                <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-xl">
                                     Boost your confidence with quick, 5-minute
                                     quizzes that feel like mini-victories.
                                 </p>
                             </div>
                             <div className="p-1">
-                                <h1 className="text-base text-indigo-600 font-semibold">
+                                <h1 className="text-base text-indigo-600 font-semibold sm:text-lg md:text-xl lg:text-2xl">
                                     STEP 2
                                 </h1>
-                                <h1 className="text-base font-semibold">
+                                <h1 className="text-base font-semibold sm:text-lg md:text-xl lg:text-2xl">
                                     Personalized learning
                                 </h1>
-                                <p className="text-gray-500 text-sm">
+                                <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-xl">
                                     Focus on what matters. Ditch mind-numbing
                                     lectures, learn faster and retain more.
                                 </p>
                             </div>
                             <div className="p-1">
-                                <h1 className="text-base text-indigo-600 font-semibold">
+                                <h1 className="text-base text-indigo-600 font-semibold sm:text-lg md:text-xl lg:text-2xl">
                                     STEP 3
                                 </h1>
-                                <h1 className="text-base font-semibold">
+                                <h1 className="text-base font-semibold sm:text-lg md:text-xl lg:text-2xl">
                                     Real-time exam simulator
                                 </h1>
-                                <p className="text-gray-500 text-sm">
+                                <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-xl">
                                     Our advanced algorithm gauges your passing
                                     chances in real-time.
                                 </p>
                             </div>
                             <div className="p-1">
-                                <h1 className="text-base text-indigo-600 font-semibold">
+                                <h1 className="text-base text-indigo-600 font-semibold sm:text-lg md:text-xl lg:text-2xl">
                                     STEP 4
                                 </h1>
-                                <h1 className="text-base font-semibold">
+                                <h1 className="text-base font-semibold sm:text-lg md:text-xl lg:text-2xl">
                                     Ace your exam 🎉
                                 </h1>
-                                <p className="text-gray-500 text-sm">
+                                <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-xl">
                                     Feel confident and prepared on exam day,
                                     ready to pass with flying colors.
                                 </p>
                             </div>
                         </div>
                     </div>
-
-                    {/* Right Column */}
                     <div className="lg:col-span-6 flex justify-center items-center p-6 md:p-10 bg-slate-50">
                         <div className="p-2 lg:p-4 bg-slate-100 rounded-xl">
                             <img
                                 src="/images/result2.jpg"
                                 alt="Sample"
-                                className="rounded-xl w-60 h-72 lg:w-96 lg:h-96 md:w-72 md:h-72 sm:w-60 sm:h-60"
+                                className="rounded-xl w-60 h-72 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-96 lg:h-96"
                             />
                         </div>
                     </div>
                 </section>
-                <section className="relative flex flex-col items-center py-10 px-4 md:px-10 bg-white">
+
+                <section className="relative flex flex-col items-center py-10 px-4 md:px-10  bg-white">
                     <img
                         src="/images/pass guarantee.png"
                         alt="Logo"
-                        className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-52 lg:h-52"
+                        className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-80 lg:h-52"
                     />
                     <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-black font-bold mt-2 text-center">
                         Pass the citizenship test or get your money back
@@ -351,7 +346,7 @@ export default function Premium() {
                     <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-indigo-700 font-bold mt-2 text-center">
                         Get your money back
                     </h2>
-                    <p className="text-gray-600 mt-4 text-center text-xs sm:text-lg md:text-xl lg:text-2xl max-w-2xl">
+                    <p className="text-gray-600 mt-4 text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl max-w-2xl">
                         We guarantee your success with our comprehensive study
                         resources. If you diligently use our materials and do
                         not pass the Canadian citizenship test, we will provide
