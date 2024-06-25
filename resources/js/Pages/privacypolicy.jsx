@@ -479,91 +479,91 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="py-2 rounded-lg mb-8">
-                                        <div class="container mx-auto">
-                                            <h1 class="text-2xl mb-4  font-bold">
+                                    <div className="py-2 rounded-lg mb-8">
+                                        <div className="container mx-auto">
+                                            <h1 className="text-2xl mb-4  font-bold">
                                                 Hosting and Backend
                                                 Infrastructure
                                             </h1>
 
-                                            <p class="text-lg mb-4 text-zinc-600">
+                                            <p className="text-lg mb-4 text-zinc-600">
                                                 These services host data and
                                                 files that enable our website to
                                                 operate.
                                             </p>
 
-                                            <h2 class="text-xl  font-bold mb-2 text-zinc-600">
+                                            <h2 className="text-xl  font-bold mb-2 text-zinc-600">
                                                 Amazon Web Services (AWS)
                                                 (Amazon Web Services, Inc.)
                                             </h2>
-                                            <ul class="list-disc mb-4">
-                                                <li class="text-lg text-zinc-600">
+                                            <ul className="list-disc mb-4">
+                                                <li className="text-lg text-zinc-600">
                                                     Personal Data: Various Types
                                                     of Data
                                                 </li>
-                                                <li class="text-lg  text-zinc-600">
+                                                <li className="text-lg  text-zinc-600">
                                                     Privacy Policy:{" "}
                                                     <a
                                                         href="#"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
-                                                        class="text-red-600"
+                                                        className="text-red-600"
                                                     >
                                                         AWS Privacy Policy
                                                     </a>
                                                 </li>
                                             </ul>
 
-                                            <h1 class="text-2xl  mb-4 font-bold">
+                                            <h1 className="text-2xl  mb-4 font-bold">
                                                 Interaction with External Social
                                                 Networks and Platforms
                                             </h1>
 
-                                            <p class="text-lg mb-4 text-zinc-600">
+                                            <p className="text-lg mb-4 text-zinc-600">
                                                 These services allow interaction
                                                 with social networks or other
                                                 external platforms directly from
                                                 our website.
                                             </p>
 
-                                            <h2 class="text-xl mb-2 text-zinc-600">
+                                            <h2 className="text-xl mb-2 text-zinc-600">
                                                 Facebook Like Button and Social
                                                 Widgets (Facebook, Inc.)
                                             </h2>
-                                            <ul class="list-disc mb-4">
-                                                <li class="text-lg text-zinc-600">
+                                            <ul className="list-disc mb-4">
+                                                <li className="text-lg text-zinc-600">
                                                     Personal Data: Cookies,
                                                     Usage Data
                                                 </li>
-                                                <li class="text-lg  text-zinc-600">
+                                                <li className="text-lg  text-zinc-600">
                                                     Privacy Policy:{" "}
                                                     <a
                                                         href="#"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
-                                                        class="text-red-600"
+                                                        className="text-red-600"
                                                     >
                                                         Facebook Privacy Policy
                                                     </a>
                                                 </li>
                                             </ul>
 
-                                            <h2 class="text-xl text-zinc-600">
+                                            <h2 className="text-xl text-zinc-600">
                                                 Twitter Tweet Button and Social
                                                 Widgets (X Corp.)
                                             </h2>
-                                            <ul class="list-disc mb-4">
-                                                <li class="text-lg text-zinc-600">
+                                            <ul className="list-disc mb-4">
+                                                <li className="text-lg text-zinc-600">
                                                     Personal Data: Cookies,
                                                     Usage Data
                                                 </li>
-                                                <li class="text-lgtext-zinc-600">
+                                                <li className="text-lgtext-zinc-600">
                                                     Privacy Policy:{" "}
                                                     <a
                                                         href="#"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
-                                                        class="text-red-600"
+                                                        className="text-red-600"
                                                     >
                                                         Twitter Privacy Policy
                                                     </a>
