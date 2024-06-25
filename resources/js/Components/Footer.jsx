@@ -10,10 +10,10 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
     return (
         <footer className="pt-8 bg-slate-50 text-black">
-            <div className="container mx-auto px-4 md:px-8">
+            <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="text-center md:text-left">
-                        <div className="flex items-center">
+                        <div className="flex  md:justify-start">
                             <span className="text-xl font-black leading-6">
                                 <span className="text-blue-500">Citizen</span>{" "}
                                 TestPrep
@@ -26,6 +26,22 @@ export default function Footer() {
                             materials and resources to pass with a 100% success
                             guarantee.
                         </p>
+                        <div className="mt-4 sm:flex sm:flex-col sm:items-left md:hidden lg:hidden xl:hidden">
+                            <h1 className="text-xs md:text-sm text-gray-600 mt-2">
+                                <FontAwesomeIcon
+                                    icon={faEnvelope}
+                                    className="mr-2"
+                                />
+                                hello@citizentestprep.ca
+                            </h1>
+                            <h1 className="text-xs md:text-sm text-gray-600 mt-2 sm:mt-0">
+                                <FontAwesomeIcon
+                                    icon={faPhone}
+                                    className="mr-2"
+                                />{" "}
+                                +1 672-558-4037
+                            </h1>
+                        </div>
                     </div>
 
                     <div className="mt-4 md:mt-0">
@@ -109,7 +125,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="mx-4 md:mx-10 my-4 flex flex-wrap items-center">
+                <div className="my-4 hidden md:flex flex-wrap items-center justify-center md:justify-start">
                     <h1 className="text-xs md:text-sm text-gray-600">
                         <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                         hello@citizentestprep.ca
@@ -122,8 +138,8 @@ export default function Footer() {
             </div>
 
             <div className="py-2 text-white bg-secondary">
-                <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
-                    <p className="text-xs md:text-sm">
+                <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 flex flex-col sm:flex-row items-center justify-between">
+                    <p className="text-xs md:text-sm text-center sm:text-left mb-2 sm:mb-0">
                         © 2024 CitizenTestPrep All rights reserved.
                     </p>
                     <div className="flex space-x-4">
