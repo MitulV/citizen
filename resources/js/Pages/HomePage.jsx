@@ -39,7 +39,7 @@ export default function HomePage({ auth, chapters }) {
                         <div className="container mx-auto px-4 mt-4 sm:mt-8 flex justify-center">
                             <Link
                                 as="button"
-                                className="bg-primary text-white px-10 sm:px-20 py-4 sm:py-6 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
+                                className="bg-primary text-white text-lg  font-bold px-10 sm:px-20 py-4 sm:py-4 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
                                 href={route("testInfoPage", {
                                     chapter_id: 12,
                                 })}

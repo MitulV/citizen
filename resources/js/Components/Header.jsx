@@ -11,7 +11,7 @@ export default function Header() {
                     <Link href={route("homePage")}>
                         <img
                             src="/images/logo.png"
-                            className="w-40 h-6"
+                            className="w-44 h-7"
                             alt="Logo"
                         />
                     </Link>
@@ -20,17 +20,7 @@ export default function Header() {
                 <Navbar.Toggle className="md:hidden bg-primary hover:bg-primary text-white rounded-full border-none" />
                 <Navbar.Collapse className="md:flex flex-grow items-center justify-center">
                     <Navbar.Link className="md:flex">
-                        <MegaMenu.Dropdown
-                            toggle={
-                                <>
-                                    Help{" "}
-                                    <FontAwesomeIcon
-                                        icon={faChevronDown}
-                                        className="ml-1"
-                                    />
-                                </>
-                            }
-                        >
+                        <MegaMenu.Dropdown toggle={<>Help </>}>
                             <ul className="space-y-4 p-4">
                                 <li>
                                     <Link
@@ -52,17 +42,7 @@ export default function Header() {
                         </MegaMenu.Dropdown>
                     </Navbar.Link>
                     <Navbar.Link className="md:flex">
-                        <MegaMenu.Dropdown
-                            toggle={
-                                <>
-                                    Resources{" "}
-                                    <FontAwesomeIcon
-                                        icon={faChevronDown}
-                                        className="ml-1"
-                                    />
-                                </>
-                            }
-                        >
+                        <MegaMenu.Dropdown toggle={<>Resources </>}>
                             <ul className="space-y-4 p-4">
                                 <li>
                                     <Link
