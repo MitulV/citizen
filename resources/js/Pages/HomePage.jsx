@@ -281,8 +281,7 @@ export default function HomePage({ auth, chapters }) {
                             ))}
                     </section>
                 </div>
-
-                {/* <section className="container mx-auto my-4 px-4 grid gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 bg-slate-50">
+                <section className="container mx-auto my-4 px-4 grid gap-6 grid-cols-2 bg-slate-50">
                     {chapters
                         .filter(
                             (chapter) =>
@@ -300,7 +299,7 @@ export default function HomePage({ auth, chapters }) {
                                 mistakes={chapter.mistakes}
                             />
                         ))}
-                </section> */}
+                </section>
 
                 <div className="container mx-auto px-4 md:px-10 mb-0 flex flex-col md:flex-row py-4 bg-slate-50">
                     <div className="md:w-1/2 flex items-center justify-left md:justify-start">

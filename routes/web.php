@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/kajal', function () {
-  return Inertia::render('TnC');
+  return Inertia::render('Headertry');
 });
 
 Route::get('/', [HomePageController::class, 'index'])->name('homePage');
