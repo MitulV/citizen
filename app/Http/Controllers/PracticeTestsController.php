@@ -72,10 +72,12 @@ class PracticeTestsController extends Controller
       $chapter->allTestsCompleted = $allCompleted;
     }
 
-    $testId = $testId ?? 1;
+    $currentChapter = Chapter::findOrFail($chapterId);
+
+    $testId = $currentChapter->tests()->first()->id ?? 1;
 
     $test = Test::findOrFail($testId);
-    $currentChapter = Chapter::findOrFail($chapterId);
+
 
     $previousTest = Test::where('chapter_id', $chapterId)
       ->where('id', '<', $testId)

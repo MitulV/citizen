@@ -14,7 +14,7 @@ import HomeChapterCard from "@/Components/HomeChapterCard";
 export default function HomePage({ auth, chapters }) {
     return (
         <>
-            <GuestLayout>
+            <GuestLayout user={auth.user}>
                 <Head title="Welcome" />
                 <div className="container mx-auto px-4">
                     <div className="bg-slate-50 py-8 sm:py-16 flex flex-col items-center">
@@ -42,6 +42,7 @@ export default function HomePage({ auth, chapters }) {
                                 className="bg-primary text-white text-lg  font-bold px-10 sm:px-20 py-4 sm:py-4 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
                                 href={route("testInfoPage", {
                                     chapter_id: 12,
+                                    auth,
                                 })}
                             >
                                 Take free practice tests
@@ -197,6 +198,7 @@ export default function HomePage({ auth, chapters }) {
                                 key={index}
                                 href={route("testInfoPage", {
                                     chapter_id: chapter.id,
+                                    auth,
                                 })}
                             >
                                 <div className="container mx-auto my-2 flex flex-col md:flex-row border border-gray-100 rounded-2xl transform hover:-translate-y-1 transition duration-500 ease-out">
@@ -260,24 +262,29 @@ export default function HomePage({ auth, chapters }) {
                 </section>
 
                 <div className="flex justify-center items-center min-h-screen">
-                    <section className="px-2 py-4 grid gap-8 md:grid-cols-3 bg-slate-50">
+                    <section className="grid gap-8 md:grid-cols-3 bg-slate-50">
                         {chapters
                             .filter(
                                 (chapter) =>
                                     chapter.step === 2 &&
-                                    chapter.id !== 11 &&
-                                    chapter.id !== 12
+                                    chapter.id !== 12 &&
+                                    chapter.id !== 13
                             )
                             .map((chapter, index) => (
-                                <HomeChapterCard
-                                    key={index}
-                                    image={chapter.image}
-                                    name={chapter.name}
-                                    title={chapter.title}
-                                    description={chapter.description}
-                                    questions={chapter.questions}
-                                    mistakes={chapter.mistakes}
-                                />
+                                <Link
+                                    href={`/practice-tests/${chapter.id}`}
+                                    key={chapter.id}
+                                >
+                                    <HomeChapterCard
+                                        key={index}
+                                        image={chapter.image}
+                                        name={chapter.name}
+                                        title={chapter.title}
+                                        description={chapter.description}
+                                        questions={chapter.questions}
+                                        mistakes={chapter.mistakes}
+                                    />
+                                </Link>
                             ))}
                     </section>
                 </div>
@@ -286,7 +293,7 @@ export default function HomePage({ auth, chapters }) {
                         .filter(
                             (chapter) =>
                                 chapter.step === 2 &&
-                                (chapter.id === 11 || chapter.id === 12)
+                                (chapter.id === 12 || chapter.id === 13)
                         )
                         .map((chapter, index) => (
                             <HomeChapterCard
@@ -651,6 +658,7 @@ export default function HomePage({ auth, chapters }) {
                         className="bg-primary text-white px-6 py-2 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
                         href={route("testInfoPage", {
                             chapter_id: 12,
+                            auth,
                         })}
                     >
                         Take free practice tests
@@ -1091,6 +1099,7 @@ export default function HomePage({ auth, chapters }) {
                                     className=" bg-primary shadow-lg text-white px-6 py-2 rounded-full transform hover:-translate-y-1 transition duration-500 ease-out"
                                     href={route("testInfoPage", {
                                         chapter_id: 12,
+                                        auth,
                                     })}
                                 >
                                     Take free practice tests

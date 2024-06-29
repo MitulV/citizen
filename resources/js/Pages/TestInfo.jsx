@@ -4,10 +4,10 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import GuestLayout from "@/Layouts/GuestLayout";
 
-export default function TestInfo({ chapterId }) {
+export default function TestInfo({ chapterId, auth }) {
     return (
         <>
-            <GuestLayout>
+            <GuestLayout user={auth.user}>
                 <Head title="Premium" />
 
                 <section className="py-4 md:py-8 px-4 md:px-20 bg-slate-50">

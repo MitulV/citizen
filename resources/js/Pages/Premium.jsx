@@ -12,10 +12,10 @@ import {
 import GuestLayout from "@/Layouts/GuestLayout";
 import { Accordion } from "flowbite-react";
 
-export default function Premium() {
+export default function Premium({ auth }) {
     return (
         <>
-            <GuestLayout>
+            <GuestLayout user={auth.user}>
                 <Head title="Premium" />
                 <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-6 p-4 sm:p-6 md:p-10 lg:p-16 xl:p-24 bg-slate-50">
                     <div className="lg:col-span-6 flex flex-col space-y-4 p-6 md:p-10 mr-0">
