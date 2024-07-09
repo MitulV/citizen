@@ -3,14 +3,17 @@ import GuestLayout from "@/Layouts/GuestLayout";
 import InputError from "@/Components/InputError";
 import PrimaryButton from "@/Components/PrimaryButton";
 import TextInput from "@/Components/TextInput";
-import { Head, Link, useForm } from "@inertiajs/react";
+import { Head, Link, useForm, usePage } from "@inertiajs/react";
 
-export default function CheckoutRegister() {
+export default function CheckoutRegister({ packageId }) {
+    const props = usePage().props;
+
     const { data, setData, post, processing, errors, reset } = useForm({
         name: "",
         email: "",
         password: "",
         password_confirmation: "",
+        packageId,
     });
 
     useEffect(() => {
@@ -55,6 +58,12 @@ export default function CheckoutRegister() {
                                 >
                                     Name
                                 </label>
+                                <input
+                                    type="hidden"
+                                    name="_token"
+                                    value={props.csrf_token}
+                                    autoComplete="off"
+                                ></input>
                                 <TextInput
                                     id="name"
                                     name="name"

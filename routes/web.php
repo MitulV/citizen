@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\CheckoutRegisteredUserController;
 use App\Http\Controllers\FlashcardController;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\ImageUploadController;
@@ -69,9 +70,15 @@ Route::middleware('auth')->group(function () {
   Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/checkout/{packageId}', [TransactionController::class, 'checkout'])->name('checkout')->middleware(RedirectIfNotRegistered::class);
-Route::get('/payment/success', [TransactionController::class, 'paymentSuccess'])->name('paymentSuccess');
-Route::get('/payment/cancel', [TransactionController::class, 'paymentCancel'])->name('paymentCancel');
+
+Route::get('checkout-register', [CheckoutRegisteredUserController::class, 'checkoutCreate'])
+  ->name('checkout.register');
+
+Route::post('checkout-register', [CheckoutRegisteredUserController::class, 'checkoutStore']);
+
+Route::get('/checkout/{packageId}', [TransactionController::class, 'checkout'])->name('checkout');
+Route::get('/payment/success', [TransactionController::class, 'paymentSuccess'])->name('payment.success');
+Route::get('/payment/cancel', [TransactionController::class, 'paymentCancel'])->name('payment.cancel');
 
 Route::post('/webhook', [WebhookController::class, 'handle'])->name('webhook');
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Head, Link } from "@inertiajs/react";
+import { Head, Link, usePage } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCheck,
@@ -684,7 +684,16 @@ export default function Premium({ auth }) {
                         {/* Three columns */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-1 mx-4  sm:mx-10">
                             {/* Column 1 */}
-                            <Link href="checkout/1">
+                            <form
+                                action={route("checkout.register")}
+                                method="get"
+                            >
+                                <input
+                                    type="hidden"
+                                    name="packageId"
+                                    value={1}
+                                    autoComplete="off"
+                                />
                                 <div className="bg-white border-2 border-blue-50 rounded-3xl p-4 sm:p-6 mx-2 shadow-xl">
                                     <h2 className="text-2xl sm:text-3xl font-bold mb-2">
                                         3-Month Exam Prep
@@ -701,7 +710,10 @@ export default function Premium({ auth }) {
                                             Just $0.6/day
                                         </p>
                                     </div>
-                                    <button className="bg-primary text-white py-2 w-full sm:w-60 rounded-full mt-2">
+                                    <button
+                                        type="submit"
+                                        className="bg-primary text-white py-2 w-full sm:w-60 rounded-full mt-2"
+                                    >
                                         Get instant access
                                     </button>
                                     <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
@@ -752,7 +764,7 @@ export default function Premium({ auth }) {
                                         Pass Guarantee (100% money back)
                                     </p>
                                 </div>
-                            </Link>
+                            </form>
 
                             {/* Column 2 */}
                             <Link href="checkout/2">

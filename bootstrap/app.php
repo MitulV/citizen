@@ -17,7 +17,7 @@ return Application::configure(basePath: dirname(__DIR__))
     ]);
 
     $middleware->validateCsrfTokens(except: [
-      '/save-image' // <-- exclude this route
+      '/webhook' // <-- exclude this route
     ]);
 
     //
