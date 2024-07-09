@@ -9,7 +9,7 @@ class Topic extends Model
 {
   use HasFactory;
 
-  protected $fillable = ['chapter_id', 'name', 'image', 'info'];
+  protected $fillable = ['chapter_id', 'name', 'content'];
   public $timestamps = false;
 
   public function chapter()

@@ -5,17 +5,23 @@ namespace App\Http\Controllers;
 use App\Models\Package;
 use App\Models\Subscription;
 use App\Models\Transaction;
+use App\Services\StripeService;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 use Inertia\Inertia;
 
 class TransactionController extends Controller
 {
-  public function checkout(Request $request, StripeService $stripeService)
+  public function checkout(Request $request, StripeService $stripeService, $packageId)
   {
+    if (!Auth::check()) {
+      Session::put('url.intended', $request->fullUrl());
+      return redirect()->route('checkout.register');
+    }
+
     $user = Auth::user();
-    $packageId = $request->input('packageId');
     $package = Package::findOrFail($packageId);
     $startDate = Carbon::today();
     $endDate = $startDate->copy()->addDays($package->validity);

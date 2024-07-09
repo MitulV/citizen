@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FlashcardController;
 use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\ImageUploadController;
 use App\Http\Controllers\PracticeTestsController;
 use App\Http\Controllers\PremiumPageController;
 use App\Http\Controllers\ProfileController;
@@ -9,13 +10,20 @@ use App\Http\Controllers\SimulationTestsController;
 use App\Http\Controllers\StudyGuidesController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\ToolsController;
+use App\Http\Controllers\TopicController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\WebhookController;
+use App\Http\Middleware\RedirectIfNotRegistered;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
+Route::get('/test', function () {
+  return view('test');
+});
+
+
 Route::get('/kajal', function () {
-  return Inertia::render('Headertry');
+  return Inertia::render('CreateTopic');
 });
 
 Route::get('/', [HomePageController::class, 'index'])->name('homePage');
@@ -24,6 +32,11 @@ Route::get('/test-info/{chapter_id}', [TestController::class, 'index'])->name('t
 Route::get('/test/{chapterId}', [TestController::class, 'testPage'])->name('testPage');
 Route::post('/test/{chapterId}', [TestController::class, 'testPage'])->name('testPage');
 Route::post('/test-results', [TestController::class, 'testResult'])->name('testResultPage');
+
+Route::get('/create-topics', [TopicController::class, 'create'])->name('createTopic.create');
+Route::post('/create-topics', [TopicController::class, 'store'])->name('createTopic.store');
+
+
 
 
 // Route::middleware(['auth', 'verified'])->group(function () {
@@ -56,7 +69,7 @@ Route::middleware('auth')->group(function () {
   Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/checkout', [TransactionController::class, 'checkout'])->name('checkout');
+Route::get('/checkout/{packageId}', [TransactionController::class, 'checkout'])->name('checkout')->middleware(RedirectIfNotRegistered::class);
 Route::get('/payment/success', [TransactionController::class, 'paymentSuccess'])->name('paymentSuccess');
 Route::get('/payment/cancel', [TransactionController::class, 'paymentCancel'])->name('paymentCancel');
 

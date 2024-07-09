@@ -2,64 +2,73 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Chapter;
 use App\Models\Topic;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class TopicController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        //
-    }
+  /**
+   * Display a listing of the resource.
+   */
+  public function index()
+  {
+  }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
+  /**
+   * Show the form for creating a new resource.
+   */
+  public function create(Request $request)
+  {
+    return view('create-topic', ['topicId' => $request->topicId, 'chapterId' => $request->chapterId]);
+  }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
+  /**
+   * Store a newly created resource in storage.
+   */
+  public function store(Request $request)
+  {
+    $topic = Topic::find($request->topicId);
+    $topic->update([
+      'content' => $request->content
+    ]);
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Topic $topic)
-    {
-        //
-    }
+    return response()->json([
+      'topicId' => $request->topicId,
+      'chapterId' => $request->chapterId,
+    ]);
+  }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Topic $topic)
-    {
-        //
-    }
+  /**
+   * Display the specified resource.
+   */
+  public function show(Topic $topic)
+  {
+    //
+  }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Topic $topic)
-    {
-        //
-    }
+  /**
+   * Show the form for editing the specified resource.
+   */
+  public function edit(Topic $topic)
+  {
+    //
+  }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Topic $topic)
-    {
-        //
-    }
+  /**
+   * Update the specified resource in storage.
+   */
+  public function update(Request $request, Topic $topic)
+  {
+    //
+  }
+
+  /**
+   * Remove the specified resource from storage.
+   */
+  public function destroy(Topic $topic)
+  {
+    //
+  }
 }

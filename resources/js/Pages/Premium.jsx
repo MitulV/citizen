@@ -1,5 +1,5 @@
 import React from "react";
-import { Head } from "@inertiajs/react";
+import { Head, Link } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCheck,
@@ -684,211 +684,217 @@ export default function Premium({ auth }) {
                         {/* Three columns */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-1 mx-4  sm:mx-10">
                             {/* Column 1 */}
-                            <div className="bg-white border-2 border-blue-50 rounded-3xl p-4 sm:p-6 mx-2 shadow-xl">
-                                <h2 className="text-2xl sm:text-3xl font-bold mb-2">
-                                    3-Month Exam Prep
-                                </h2>
-                                <p className="text-gray-600 text-xs sm:text-sm">
-                                    When every day counts, get maximum knowledge
-                                    in 30-days.
-                                </p>
-                                <div className="flex justify-between mt-2">
-                                    <p className=" font-bold text-xl sm:text-2xl">
-                                        $19.99
-                                    </p>
+                            <Link href="checkout/1">
+                                <div className="bg-white border-2 border-blue-50 rounded-3xl p-4 sm:p-6 mx-2 shadow-xl">
+                                    <h2 className="text-2xl sm:text-3xl font-bold mb-2">
+                                        3-Month Exam Prep
+                                    </h2>
                                     <p className="text-gray-600 text-xs sm:text-sm">
-                                        Just $0.6/day
+                                        When every day counts, get maximum
+                                        knowledge in 30-days.
+                                    </p>
+                                    <div className="flex justify-between mt-2">
+                                        <p className=" font-bold text-xl sm:text-2xl">
+                                            $19.99
+                                        </p>
+                                        <p className="text-gray-600 text-xs sm:text-sm">
+                                            Just $0.6/day
+                                        </p>
+                                    </div>
+                                    <button className="bg-primary text-white py-2 w-full sm:w-60 rounded-full mt-2">
+                                        Get instant access
+                                    </button>
+                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
+                                        Features
+                                    </p>
+                                    <ul className="space-y-2 text-zinc-600 text-xs ">
+                                        {[
+                                            "Customized chapter-wise practice tests",
+                                            "Access 700+ test questions",
+                                            "Unlimited exam simulation",
+                                            "Advanced AI delivers a performance review",
+                                        ].map((text, index) => (
+                                            <li
+                                                key={index}
+                                                className="flex items-center"
+                                            >
+                                                <FontAwesomeIcon
+                                                    icon={faCheck}
+                                                    className="mr-2 "
+                                                />
+                                                {text}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
+                                        Features
+                                    </p>
+                                    <ul className="space-y-2 text-zinc-600 text-xs ">
+                                        {[
+                                            "Customized chapter-wise practice tests",
+                                            "Access 700+ test questions",
+                                            "Unlimited exam simulation",
+                                            "Advanced AI delivers a performance review",
+                                        ].map((text, index) => (
+                                            <li
+                                                key={index}
+                                                className="flex items-center"
+                                            >
+                                                <FontAwesomeIcon
+                                                    icon={faCheck}
+                                                    className="mr-2 "
+                                                />
+                                                {text}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
+                                        Pass Guarantee (100% money back)
                                     </p>
                                 </div>
-                                <button className="bg-primary text-white py-2 w-full sm:w-60 rounded-full mt-2">
-                                    Get instant access
-                                </button>
-                                <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
-                                    Features
-                                </p>
-                                <ul className="space-y-2 text-zinc-600 text-xs ">
-                                    {[
-                                        "Customized chapter-wise practice tests",
-                                        "Access 700+ test questions",
-                                        "Unlimited exam simulation",
-                                        "Advanced AI delivers a performance review",
-                                    ].map((text, index) => (
-                                        <li
-                                            key={index}
-                                            className="flex items-center"
-                                        >
-                                            <FontAwesomeIcon
-                                                icon={faCheck}
-                                                className="mr-2 "
-                                            />
-                                            {text}
-                                        </li>
-                                    ))}
-                                </ul>
-                                <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
-                                    Features
-                                </p>
-                                <ul className="space-y-2 text-zinc-600 text-xs ">
-                                    {[
-                                        "Customized chapter-wise practice tests",
-                                        "Access 700+ test questions",
-                                        "Unlimited exam simulation",
-                                        "Advanced AI delivers a performance review",
-                                    ].map((text, index) => (
-                                        <li
-                                            key={index}
-                                            className="flex items-center"
-                                        >
-                                            <FontAwesomeIcon
-                                                icon={faCheck}
-                                                className="mr-2 "
-                                            />
-                                            {text}
-                                        </li>
-                                    ))}
-                                </ul>
-                                <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
-                                    Pass Guarantee (100% money back)
-                                </p>
-                            </div>
+                            </Link>
 
                             {/* Column 2 */}
-                            <div className="bg-white border-4 border-indigo-600 rounded-3xl p-4 sm:p-6 mx-2 shadow-2xl">
-                                <h2 className="text-2xl sm:text-3xl font-bold mb-2">
-                                    3-Month Exam Prep
-                                </h2>
-                                <p className="text-gray-600 text-xs sm:text-sm">
-                                    When every day counts, get maximum knowledge
-                                    in 30-days.
-                                </p>
-                                <div className="flex justify-between mt-2">
-                                    <p className=" font-bold text-xl sm:text-2xl">
-                                        $19.99
-                                    </p>
+                            <Link href="checkout/2">
+                                <div className="bg-white border-4 border-indigo-600 rounded-3xl p-4 sm:p-6 mx-2 shadow-2xl">
+                                    <h2 className="text-2xl sm:text-3xl font-bold mb-2">
+                                        3-Month Exam Prep
+                                    </h2>
                                     <p className="text-gray-600 text-xs sm:text-sm">
-                                        Just $0.6/day
+                                        When every day counts, get maximum
+                                        knowledge in 30-days.
+                                    </p>
+                                    <div className="flex justify-between mt-2">
+                                        <p className=" font-bold text-xl sm:text-2xl">
+                                            $19.99
+                                        </p>
+                                        <p className="text-gray-600 text-xs sm:text-sm">
+                                            Just $0.6/day
+                                        </p>
+                                    </div>
+                                    <button className="bg-primary text-white py-2 w-full sm:w-60 rounded-full mt-2">
+                                        Get instant access
+                                    </button>
+                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
+                                        Features
+                                    </p>
+                                    <ul className="space-y-2 text-zinc-600 text-xs ">
+                                        {[
+                                            "Customized chapter-wise practice tests",
+                                            "Access 700+ test questions",
+                                            "Unlimited exam simulation",
+                                            "Advanced AI delivers a performance review",
+                                        ].map((text, index) => (
+                                            <li
+                                                key={index}
+                                                className="flex items-center"
+                                            >
+                                                <FontAwesomeIcon
+                                                    icon={faCheck}
+                                                    className="mr-2 "
+                                                />
+                                                {text}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
+                                        Features
+                                    </p>
+                                    <ul className="space-y-2 text-zinc-600 text-xs ">
+                                        {[
+                                            "Customized chapter-wise practice tests",
+                                            "Access 700+ test questions",
+                                            "Unlimited exam simulation",
+                                            "Advanced AI delivers a performance review",
+                                        ].map((text, index) => (
+                                            <li
+                                                key={index}
+                                                className="flex items-center"
+                                            >
+                                                <FontAwesomeIcon
+                                                    icon={faCheck}
+                                                    className="mr-2 "
+                                                />
+                                                {text}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
+                                        Pass Guarantee (100% money back)
                                     </p>
                                 </div>
-                                <button className="bg-primary text-white py-2 w-full sm:w-60 rounded-full mt-2">
-                                    Button
-                                </button>
-                                <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
-                                    Features
-                                </p>
-                                <ul className="space-y-2 text-zinc-600 text-xs ">
-                                    {[
-                                        "Customized chapter-wise practice tests",
-                                        "Access 700+ test questions",
-                                        "Unlimited exam simulation",
-                                        "Advanced AI delivers a performance review",
-                                    ].map((text, index) => (
-                                        <li
-                                            key={index}
-                                            className="flex items-center"
-                                        >
-                                            <FontAwesomeIcon
-                                                icon={faCheck}
-                                                className="mr-2 "
-                                            />
-                                            {text}
-                                        </li>
-                                    ))}
-                                </ul>
-                                <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
-                                    Features
-                                </p>
-                                <ul className="space-y-2 text-zinc-600 text-xs ">
-                                    {[
-                                        "Customized chapter-wise practice tests",
-                                        "Access 700+ test questions",
-                                        "Unlimited exam simulation",
-                                        "Advanced AI delivers a performance review",
-                                    ].map((text, index) => (
-                                        <li
-                                            key={index}
-                                            className="flex items-center"
-                                        >
-                                            <FontAwesomeIcon
-                                                icon={faCheck}
-                                                className="mr-2 "
-                                            />
-                                            {text}
-                                        </li>
-                                    ))}
-                                </ul>
-                                <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
-                                    Pass Guarantee (100% money back)
-                                </p>
-                            </div>
+                            </Link>
 
                             {/* Column 3 */}
-                            <div className="bg-white border-2 border-blue-50 rounded-3xl p-4 sm:p-6 mx-2 shadow-xl">
-                                <h2 className="text-2xl sm:text-3xl font-bold mb-2">
-                                    3-Month Exam Prep
-                                </h2>
-                                <p className="text-gray-600 text-xs sm:text-sm">
-                                    When every day counts, get maximum knowledge
-                                    in 30-days.
-                                </p>
-                                <div className="flex justify-between mt-2">
-                                    <p className=" font-bold text-xl sm:text-2xl">
-                                        $19.99
-                                    </p>
+                            <Link href="checkout/3">
+                                <div className="bg-white border-2 border-blue-50 rounded-3xl p-4 sm:p-6 mx-2 shadow-xl">
+                                    <h2 className="text-2xl sm:text-3xl font-bold mb-2">
+                                        3-Month Exam Prep
+                                    </h2>
                                     <p className="text-gray-600 text-xs sm:text-sm">
-                                        Just $0.6/day
+                                        When every day counts, get maximum
+                                        knowledge in 30-days.
+                                    </p>
+                                    <div className="flex justify-between mt-2">
+                                        <p className=" font-bold text-xl sm:text-2xl">
+                                            $19.99
+                                        </p>
+                                        <p className="text-gray-600 text-xs sm:text-sm">
+                                            Just $0.6/day
+                                        </p>
+                                    </div>
+                                    <button className="bg-primary text-white py-2 w-full sm:w-60 rounded-full mt-2">
+                                        Get instant access
+                                    </button>
+                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
+                                        Features
+                                    </p>
+                                    <ul className="space-y-2 text-zinc-600 text-xs ">
+                                        {[
+                                            "Customized chapter-wise practice tests",
+                                            "Access 700+ test questions",
+                                            "Unlimited exam simulation",
+                                            "Advanced AI delivers a performance review",
+                                        ].map((text, index) => (
+                                            <li
+                                                key={index}
+                                                className="flex items-center"
+                                            >
+                                                <FontAwesomeIcon
+                                                    icon={faCheck}
+                                                    className="mr-2 "
+                                                />
+                                                {text}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
+                                        Features
+                                    </p>
+                                    <ul className="space-y-2 text-zinc-600 text-xs ">
+                                        {[
+                                            "Customized chapter-wise practice tests",
+                                            "Access 700+ test questions",
+                                            "Unlimited exam simulation",
+                                            "Advanced AI delivers a performance review",
+                                        ].map((text, index) => (
+                                            <li
+                                                key={index}
+                                                className="flex items-center"
+                                            >
+                                                <FontAwesomeIcon
+                                                    icon={faCheck}
+                                                    className="mr-2 "
+                                                />
+                                                {text}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
+                                        Pass Guarantee (100% money back)
                                     </p>
                                 </div>
-                                <button className="bg-primary text-white py-2 w-full sm:w-72 rounded-full mt-2">
-                                    Button
-                                </button>
-                                <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
-                                    Features
-                                </p>
-                                <ul className="space-y-2 text-zinc-600 text-xs ">
-                                    {[
-                                        "Customized chapter-wise practice tests",
-                                        "Access 700+ test questions",
-                                        "Unlimited exam simulation",
-                                        "Advanced AI delivers a performance review",
-                                    ].map((text, index) => (
-                                        <li
-                                            key={index}
-                                            className="flex items-center"
-                                        >
-                                            <FontAwesomeIcon
-                                                icon={faCheck}
-                                                className="mr-2 "
-                                            />
-                                            {text}
-                                        </li>
-                                    ))}
-                                </ul>
-                                <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
-                                    Features
-                                </p>
-                                <ul className="space-y-2 text-zinc-600 text-xs ">
-                                    {[
-                                        "Customized chapter-wise practice tests",
-                                        "Access 700+ test questions",
-                                        "Unlimited exam simulation",
-                                        "Advanced AI delivers a performance review",
-                                    ].map((text, index) => (
-                                        <li
-                                            key={index}
-                                            className="flex items-center"
-                                        >
-                                            <FontAwesomeIcon
-                                                icon={faCheck}
-                                                className="mr-2 "
-                                            />
-                                            {text}
-                                        </li>
-                                    ))}
-                                </ul>
-                                <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
-                                    Pass Guarantee (100% money back)
-                                </p>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
