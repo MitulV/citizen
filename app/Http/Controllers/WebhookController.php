@@ -82,12 +82,12 @@ class WebhookController extends Controller
       if ($session->payment_status == 'paid') {
         Log::info('at 83');
         $subscription->update(
-          ['isActive' => true]
+          ['is_active' => true]
         );
       }
 
       $transaction->update([
-        'payment_status' =>  $session->payment_status
+        'stripe_payment_status' =>  $session->payment_status
       ]);
       Log::info('at 92');
     }
