@@ -74,8 +74,13 @@ class WebhookController extends Controller
     // Get the subscription from the transaction
     $subscription = $transaction->subscription;
 
+    Log::info(['$transaction' => $transaction]);
+    Log::info(['$subscription' => $subscription]);
+
     if ($transaction->stripe_payment_status == 'unpaid') {
+      Log::info('at 81');
       if ($session->payment_status == 'paid') {
+        Log::info('at 83');
         $subscription->update(
           ['isActive' => true]
         );
@@ -84,6 +89,7 @@ class WebhookController extends Controller
       $transaction->update([
         'payment_status' =>  $session->payment_status
       ]);
+      Log::info('at 92');
     }
 
     Log::info('exit from handleAction Method');
