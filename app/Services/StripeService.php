@@ -33,7 +33,6 @@ class StripeService
         ],
         'metadata' => [
           'user_id' => $stripeData['user_id'],
-          'subscription_id' => $stripeData['subscription_id'],
           'transaction_id' => $stripeData['transaction_id']
         ],
         'success_url' => route('payment.success'),

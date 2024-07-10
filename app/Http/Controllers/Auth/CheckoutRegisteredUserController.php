@@ -88,7 +88,6 @@ class CheckoutRegisteredUserController extends Controller
       'total_amount' => $transaction->total_amount,
       'package_name' => $package->name,
       'user_id' => $user->id,
-      'subscription_id' => $subscription->id,
       'transaction_id' => $transaction->id
     ];
 

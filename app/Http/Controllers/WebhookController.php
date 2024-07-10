@@ -58,21 +58,21 @@ class WebhookController extends Controller
 
 
     $transactionId = $session->metadata->transaction_id;
-    $subscriptionId = $session->metadata->subscriptionId;
     $userId = $session->metadata->user_id;
 
     Log::info(['$transactionId' => $transactionId]);
-    Log::info(['$subscriptionId' => $subscriptionId]);
     Log::info(['$userId' => $userId]);
 
     $transaction = Transaction::where('stripe_checkout_id', $session->id)->first();
 
 
-    if ($transaction->id != $transactionId) {
+    // Check if transaction exists and validate the transaction ID
+    if (!$transaction || $transaction->id != $transactionId) {
       return response('Invalid Request', 400);
     }
 
-    $subscription = Subscription::find($subscriptionId);
+    // Get the subscription from the transaction
+    $subscription = $transaction->subscription;
 
     if ($transaction->stripe_payment_status == 'unpaid') {
       if ($session->payment_status == 'paid') {
