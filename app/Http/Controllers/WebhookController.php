@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Subscription;
 use App\Models\Transaction;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 use Stripe\Exception\SignatureVerificationException;
 use Stripe\Webhook;
 
@@ -13,7 +11,6 @@ class WebhookController extends Controller
 {
   public function handle(Request $request)
   {
-    Log::info('inside WebhookController::Handle method');
 
     $payload = $request->getContent();
     $sig_header = $request->header('Stripe-Signature');
@@ -29,7 +26,6 @@ class WebhookController extends Controller
       return response()->json(['error' => 'Invalid signature'], 400);
     }
 
-    Log::info(['$event->type is' => $event->type]);
     switch ($event->type) {
       case 'checkout.session.async_payment_failed':
         $this->handleCheckoutSession($event->data->object, $request);
@@ -47,21 +43,15 @@ class WebhookController extends Controller
         return response()->json(['error' => 'Received unknown event type'], 400);
     }
 
-    Log::info('exit from handle Method');
     return response()->json(['success' => true], 200);
   }
 
 
   public function handleCheckoutSession($session, $request)
   {
-    Log::info('inside handleAction Method');
-
 
     $transactionId = $session->metadata->transaction_id;
     $userId = $session->metadata->user_id;
-
-    Log::info(['$transactionId' => $transactionId]);
-    Log::info(['$userId' => $userId]);
 
     $transaction = Transaction::where('stripe_checkout_id', $session->id)->first();
 
@@ -74,13 +64,11 @@ class WebhookController extends Controller
     // Get the subscription from the transaction
     $subscription = $transaction->subscription;
 
-    Log::info(['$transaction' => $transaction]);
-    Log::info(['$subscription' => $subscription]);
 
     if ($transaction->stripe_payment_status == 'unpaid') {
-      Log::info('at 81');
+
       if ($session->payment_status == 'paid') {
-        Log::info('at 83');
+
         $subscription->update(
           ['is_active' => true]
         );
@@ -89,9 +77,6 @@ class WebhookController extends Controller
       $transaction->update([
         'stripe_payment_status' =>  $session->payment_status
       ]);
-      Log::info('at 92');
     }
-
-    Log::info('exit from handleAction Method');
   }
 }
