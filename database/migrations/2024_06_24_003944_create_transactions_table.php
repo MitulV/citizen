@@ -18,7 +18,7 @@ return new class extends Migration
       $table->decimal('total_amount', 10, 2)->nullable();
       $table->unsignedBigInteger('package_id');
       $table->foreign('package_id')->references('id')->on('packages')->onDelete('cascade');
-      $table->unsignedBigInteger('subscription_id')->after('package_id');
+      $table->unsignedBigInteger('subscription_id');
       $table->foreign('subscription_id')->references('id')->on('subscriptions')->onDelete('cascade');
       $table->enum('stripe_payment_status', ['paid', 'unpaid', 'no_payment_required'])->default('unpaid');
       $table->timestamps();
