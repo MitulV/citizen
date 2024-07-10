@@ -37,6 +37,7 @@ class StripeService
         ],
         'success_url' => route('payment.success'),
         'cancel_url' => route('payment.cancel'),
+        'customer_email' => $stripeData['email']
       ]);
 
       return $checkoutSession;

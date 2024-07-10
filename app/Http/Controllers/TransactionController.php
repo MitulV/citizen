@@ -10,8 +10,9 @@ class TransactionController extends Controller
 
   public function paymentSuccess()
   {
-    return Inertia::render('Payment/Success', []);
+    return redirect()->route('dashboard')->with('message', 'Payment Success! Your payment has been received.');
   }
+
 
   public function paymentCancel()
   {

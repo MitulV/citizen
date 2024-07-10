@@ -55,13 +55,13 @@ class CheckoutRegisteredUserController extends Controller
 
     Auth::login($user);
 
-    $url = $this->checkout($stripeService, $packageId);
+    $url = $this->checkout($stripeService, $packageId, $request->email);
 
     return Inertia::location($url);
     //return redirect($url);
   }
 
-  public function checkout($stripeService, $packageId)
+  public function checkout($stripeService, $packageId, $email)
   {
 
     $user = Auth::user();
@@ -88,7 +88,8 @@ class CheckoutRegisteredUserController extends Controller
       'total_amount' => $transaction->total_amount,
       'package_name' => $package->name,
       'user_id' => $user->id,
-      'transaction_id' => $transaction->id
+      'transaction_id' => $transaction->id,
+      'email' => $email
     ];
 
     $checkoutSession =  $stripeService->createCheckoutSession($srtipeData);

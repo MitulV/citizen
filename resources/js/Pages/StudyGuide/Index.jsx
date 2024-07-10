@@ -1,14 +1,27 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
-import { Head, Link } from "@inertiajs/react";
-import React from "react";
+import { Head, Link, usePage } from "@inertiajs/react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCircleCheck,
     faFile,
     faCheck,
 } from "@fortawesome/free-solid-svg-icons";
+import { Alert } from "flowbite-react";
 
 export default function Index({ auth, chapters }) {
+    const { flash } = usePage().props;
+    const [message, setMessage] = useState(flash.message);
+
+    // useEffect(() => {
+    //     if (flash.message) {
+    //         const timer = setTimeout(() => {
+    //             setMessage(null);
+    //         }, 5000); // 5 seconds
+
+    //         return () => clearTimeout(timer); // Cleanup the timer if the component unmounts
+    //     }
+    // }, [flash.message]);
     return (
         <>
             <AuthenticatedLayout user={auth.user}>
@@ -17,6 +30,9 @@ export default function Index({ auth, chapters }) {
                 <div className="relative min-h-screen md:flex">
                     <section className="bg-slate-100 py-8 px-4 md:py-12 md:px-8 lg:px-8">
                         <div className="text-left mb-8">
+                            {message && (
+                                <Alert color="success">{message}</Alert>
+                            )}
                             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-900 py-5">
                                 Study Guide
                             </h1>
