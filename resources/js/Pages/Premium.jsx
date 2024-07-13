@@ -767,7 +767,16 @@ export default function Premium({ auth }) {
                             </form>
 
                             {/* Column 2 */}
-                            <Link href="checkout/2">
+                            <form
+                                action={route("checkout.register")}
+                                method="get"
+                            >
+                                <input
+                                    type="hidden"
+                                    name="packageId"
+                                    value={2}
+                                    autoComplete="off"
+                                />
                                 <div className="bg-white border-4 border-indigo-600 rounded-3xl p-4 sm:p-6 mx-2 shadow-2xl">
                                     <h2 className="text-2xl sm:text-3xl font-bold mb-2">
                                         3-Month Exam Prep
@@ -835,10 +844,19 @@ export default function Premium({ auth }) {
                                         Pass Guarantee (100% money back)
                                     </p>
                                 </div>
-                            </Link>
+                            </form>
 
                             {/* Column 3 */}
-                            <Link href="checkout/3">
+                            <form
+                                action={route("checkout.register")}
+                                method="get"
+                            >
+                                <input
+                                    type="hidden"
+                                    name="packageId"
+                                    value={3}
+                                    autoComplete="off"
+                                />
                                 <div className="bg-white border-2 border-blue-50 rounded-3xl p-4 sm:p-6 mx-2 shadow-xl">
                                     <h2 className="text-2xl sm:text-3xl font-bold mb-2">
                                         3-Month Exam Prep
@@ -906,7 +924,7 @@ export default function Premium({ auth }) {
                                         Pass Guarantee (100% money back)
                                     </p>
                                 </div>
-                            </Link>
+                            </form>
                         </div>
                     </div>
                 </section>

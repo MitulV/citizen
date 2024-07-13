@@ -47,4 +47,12 @@ class User extends Authenticatable
   {
     return $this->belongsToMany(Flashcard::class)->withPivot('status')->withTimestamps();
   }
+
+  /**
+   * Get the user's current subscription.
+   */
+  public function currentSubscription()
+  {
+    return $this->hasOne(Subscription::class)->latestOfMany();
+  }
 }
