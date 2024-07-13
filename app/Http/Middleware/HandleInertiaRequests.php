@@ -36,7 +36,7 @@ class HandleInertiaRequests extends Middleware
       ...parent::share($request),
       'auth' => [
         'user' => $user,
-        'subscription' => $subscription ? (bool) $subscription->is_active : false,
+        'subscription' => $subscription ? $subscription->is_currently_active : false,
       ],
       'flash' => [
         'message' => fn () => $request->session()->get('message')

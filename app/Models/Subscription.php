@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -39,5 +40,24 @@ class Subscription extends Model
   public function transactions()
   {
     return $this->hasMany(Transaction::class);
+  }
+
+  /**
+   * Determine if the subscription is currently active.
+   *
+   * @return bool
+   */
+  public function getIsCurrentlyActiveAttribute()
+  {
+    $now = Carbon::now();
+    $isActive = $this->is_active && $this->start_date <= $now && $this->end_date >= $now;
+
+    // Update is_active status if it has changed
+    if ($this->is_active !== $isActive) {
+      $this->is_active = $isActive;
+      $this->save();
+    }
+
+    return $isActive;
   }
 }
