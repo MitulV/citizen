@@ -32,12 +32,30 @@ export default function FlashcardDetail({
                 chapters={chapters}
             >
                 <Head title="Flashcard Detail" />
+                <section className="mx-4 md:mx-8 lg:mx-16 xl:mx-20 bg-slate-50 py-12 md:py-12 px-4 md:px-8 lg:px-16 xl:px-20">
+                    <div className="flex flex-col items-center">
+                        <h1 className="text-xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 text-zinc-600">
+                            The official languages of Canada are English and
+                            French.
+                        </h1>
+                        <h2 className="text-lg py-36 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 text-zinc-600 text-center">
+                            What are the official languages of Canada?
+                        </h2>
 
-                <div className="relative min-h-screen flex flex-col items-center justify-center ">
-                    <div className="container-fluid bg-slate-100 py-8 md:py-12 md:px-8 lg:px-20 ">
+                        <button
+                            onClick={handleClick}
+                            className="mt-4 px-10 mx-8 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-700"
+                        >
+                            Next
+                        </button>
+                    </div>
+                </section>
+
+                <div className=" min-h-screen flex flex-col items-center justify-center ">
+                    <div className="container-fluid bg-slate-100 mx-96 py-8 md:py-12 md:px-8 lg:px-20 h-96 w-96">
                         <div>
                             <p className="text-blue-400">All Flashcards</p>
-                            <h1 className="text-3xl font-bold mb-4 text-gray-600">
+                            <h1 className="text-3xl font-bold mb-4 text-gray-600 ">
                                 {`Flashcard ${flashcard.id}`}
                             </h1>
                             <ReactCardFlip
