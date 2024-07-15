@@ -7,22 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Flashcard extends Model
 {
-    use HasFactory;
+  use HasFactory;
 
-    protected $fillable = ['chapter_id'];
+  protected $fillable = ['chapter_id', 'flashcard_id', 'question', 'answer', 'explanation'];
 
-    public function chapter()
-    {
-        return $this->belongsTo(Chapter::class);
-    }
+  public function chapter()
+  {
+    return $this->belongsTo(Chapter::class);
+  }
 
-    public function qnas()
-    {
-        return $this->hasMany(FlashcardQnA::class);
-    }
-
-    public function users()
-    {
-        return $this->belongsToMany(User::class)->withPivot('status')->withTimestamps();
-    }
+  public function users()
+  {
+    return $this->belongsToMany(User::class)->withPivot('status')->withTimestamps();
+  }
 }

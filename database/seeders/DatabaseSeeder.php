@@ -10,7 +10,6 @@ use App\Models\Test;
 use App\Models\Topic;
 use App\Models\Answer;
 use App\Models\Flashcard;
-use App\Models\FlashcardQnA;
 use App\Models\Package;
 use App\Models\Question;
 use Illuminate\Support\Facades\Log;
@@ -240,6 +239,58 @@ class DatabaseSeeder extends Seeder
               ['name' => 'Transition of the Crown'],
               ['name' => 'The Timeline'],
             ],
+            'flashcards' => [
+              [
+                'question' => 'Family and friends are not allowed to attend your citizenship ceremony. Is this statement True or false?',
+                'answer' => 'False',
+                'explanation' => 'If you pass the test and meet all the other requirements, you will receive a Notice to Appear to Take the Oath of Citizenship. You are encouraged to bring your family and friends to celebrate this occasion.'
+              ],
+              [
+                'question' => 'Is the Citizenship Test a written test or an interview?',
+                'answer' => 'It is a written test, but it could also be an interview.',
+                'explanation' => 'The citizenship test is usually a written test but it could be an interview. You will be tested on the knowledge of Canada and of the rights and responsibilities of citizenship, and you will also be tested to ensure you have adequate knowledge of English or French.'
+              ],
+              [
+                'question' => 'In Canada, to whom do we formally pledge allegiance?',
+                'answer' => 'We pledge allegiance to the Sovereign (King or Queen).',
+                'explanation' => 'In Canada, we profess our loyalty to a person who represents all Canadians and not to a document such as a constitution, a banner such as a flag, or a geopolitical entity such as a country.'
+              ],
+              [
+                'question' => 'What year was Magna Carta signed?',
+                'answer' => 'The year 1215',
+                'explanation' => 'Magna Carta (also known as the Great Charter of Freedoms) was signed in England in the year 1215.'
+              ],
+              [
+                'question' => 'What do you swear as you take the Oath of Citizenship?',
+                'answer' => 'You pledge loyalty to the King or Queen, abide by Canadian law, and carry out your citizenship obligations.',
+                'explanation' => 'During this important moment, you must pledge loyalty to the King or Queen, abide by Canadian law, and carry out your citizenship obligations.'
+              ],
+              [
+                'question' => 'In order to become a Canadian Citizen, you have to provide proof that you speak and write in which languages?',
+                'answer' => 'Either English or French',
+                'explanation' => 'In order to apply for Canadian citizenship, you must provide proof that you know how to speak and write in 1 of Canada\'s official languages (either English or French).'
+              ],
+              [
+                'question' => 'What does the Canadian citizenship Test assess?',
+                'answer' => 'It assess your knowledge of Canada and the rights and responsibilities of citizenship',
+                'explanation' => 'You will be tested your knowledge of Canada and of the rights and responsibilities of citizenship, and you will also be tested to ensure your have adequate knowledge of English or French.'
+              ],
+              [
+                'question' => 'What are Mobility Rights?',
+                'answer' => 'Canadians are free to enter and leave the nation at will, live and work anywhere they choose, and apply for passports.',
+                'explanation' => 'Canadians can live and work anywhere they choose in Canada, enter and leave the country freely, and apply for a passport.'
+              ],
+              [
+                'question' => 'How long have settlers and immigrants contributed to the diversity and wealth of Canada?',
+                'answer' => '400 Years',
+                'explanation' => 'For 400 years, settlers and immigrants have contributed to the diversity and richness of Canada, which is built on a proud history and a strong identity.'
+              ],
+              [
+                'question' => 'What type of government is there in Canada?',
+                'answer' => 'Canada has a constitutional monarchy.',
+                'explanation' => 'Canada is a constitutional monarchy, a parliamentary democracy and a federal state. Canadians are bound together by a shared commitment to the rule of law and to the institutions of parliamentary government.'
+              ]
+            ]
           ],
           [
             'image' => '/images/chap 3.png',
@@ -11352,6 +11403,17 @@ class DatabaseSeeder extends Seeder
             'name' => $topicData['name'],
           ]);
         }
+
+        if (isset($data['flashcards'])) {
+          foreach ($data['flashcards'] as $flashcardData) {
+            $flashcard = Flashcard::create([
+              'chapter_id' => $chapter->id,
+              'question' => $flashcardData['question'],
+              'answer' => $flashcardData['answer'],
+              'explanation' => $flashcardData['explanation'],
+            ]);
+          }
+        }
       });
 
       $packages = [
@@ -11376,7 +11438,7 @@ class DatabaseSeeder extends Seeder
         Package::create($package);
       }
 
-      //User::factory()->count(1)->create();
+      User::factory()->count(1)->create();
     });
   }
 }

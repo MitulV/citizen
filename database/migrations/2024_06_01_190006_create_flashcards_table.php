@@ -6,24 +6,26 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
-    {
-        Schema::create('flashcards', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('chapter_id')->constrained()->onDelete('cascade');
-            $table->timestamps();
-        });
-        
-    }
+  /**
+   * Run the migrations.
+   */
+  public function up(): void
+  {
+    Schema::create('flashcards', function (Blueprint $table) {
+      $table->id();
+      $table->foreignId('chapter_id')->constrained()->onDelete('cascade');
+      $table->text('question');
+      $table->text('answer');
+      $table->text('explanation')->nullable();
+      $table->timestamps();
+    });
+  }
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('flashcards');
-    }
+  /**
+   * Reverse the migrations.
+   */
+  public function down(): void
+  {
+    Schema::dropIfExists('flashcards');
+  }
 };

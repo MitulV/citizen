@@ -16,6 +16,7 @@ import {
 
 import StudyGuidePanel from "@/Components/SidebarPanel/StudyGuidePanel";
 import ChapterTestPanel from "@/Components/SidebarPanel/ChapterTestPanel";
+import FlashcardPanel from "@/Components/SidebarPanel/FlashcardPanel";
 
 export default function Authenticated({
     user,
@@ -151,6 +152,10 @@ export default function Authenticated({
                         chapters={chapters}
                         collapsed={collapsed}
                     />
+                )}
+
+                {isChapterPanelVisible && url.startsWith("/flashcards") && (
+                    <FlashcardPanel chapters={chapters} collapsed={collapsed} />
                 )}
 
                 <button

@@ -77,7 +77,7 @@ class FlashcardController extends Controller
       ->where('id', '>', $flashcardId)
       ->first();
 
-    return Inertia::render('StudyGuide/FlashcardDetail', [
+    return Inertia::render('Flashcard/FlashcardDetail', [
       'chapters' => $chapters,
       'flashcard' => $flashcard,
       'chapterId' => $chapterId,

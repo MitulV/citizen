@@ -1,5 +1,5 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
-import { Head } from "@inertiajs/react";
+import { Head, Link } from "@inertiajs/react";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -71,7 +71,7 @@ export default function Index({ auth, chapters }) {
                                                 (flashcard) => (
                                                     <Link
                                                         replace
-                                                        href={`/practice-tests/${
+                                                        href={`/flashcards/${
                                                             chapter.id
                                                         }${
                                                             flashcard.id
@@ -85,7 +85,7 @@ export default function Index({ auth, chapters }) {
                                                                 icon={faFile}
                                                             />
                                                             <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2">
-                                                                {flashcard.name}
+                                                                {`Flashcard ${flashcard.id}`}
                                                             </p>
                                                             {(flashcard.status ===
                                                                 "completed" ||
@@ -157,10 +157,10 @@ export default function Index({ auth, chapters }) {
                                                 {chapter.description}
                                             </p>
                                             {chapter.flashcards.map(
-                                                (flashcard) => (
+                                                (flashcard, index) => (
                                                     <Link
                                                         replace
-                                                        href={`/practice-tests/${
+                                                        href={`/flashcards/${
                                                             chapter.id
                                                         }${
                                                             flashcard.id
@@ -174,7 +174,7 @@ export default function Index({ auth, chapters }) {
                                                                 icon={faFile}
                                                             />
                                                             <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2">
-                                                                {flashcard.name}
+                                                                {`Flashcard ${flashcard.id}`}
                                                             </p>
                                                             {(flashcard.status ===
                                                                 "completed" ||
