@@ -1,7 +1,7 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head, Link } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faRotate } from "@fortawesome/free-solid-svg-icons";
 import {
     faCircleCheck,
     faFile,
@@ -34,54 +34,40 @@ export default function FlashcardDetail({
                 <Head title="Flashcard Detail" />
                 <section className="mx-4 md:mx-8 lg:mx-16 xl:mx-20 bg-slate-50 py-12 md:py-12 px-4 md:px-8 lg:px-16 xl:px-20">
                     <div className="flex flex-col items-center">
-                        <h1 className="text-xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 text-zinc-600">
-                            The official languages of Canada are English and
-                            French.
-                        </h1>
-                        <h2 className="text-lg py-36 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 text-zinc-600 text-center">
-                            What are the official languages of Canada?
-                        </h2>
+                        <h5 className="text-xl sm:text-xl md:text-3xl lg:text-4xl xl:text-xl mb-4 text-zinc-600">
+                            Flashcards are an excellent way to challenge
+                            yourself. Guess the answer, then click to{" "}
+                            <FontAwesomeIcon icon={faRotate} /> reveal the
+                            correct answers.
+                        </h5>
 
-                        <button
-                            onClick={handleClick}
-                            className="mt-4 px-10 mx-8 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-700"
+                        <ReactCardFlip
+                            isFlipped={isFlipped}
+                            flipDirection="horizontal"
                         >
-                            Next
-                        </button>
+                            <div>
+                                {/* Front of the card */}
+                                <h2 className="text-lg py-36 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 text-zinc-600 text-center">
+                                    {flashcard.question}
+                                    <FontAwesomeIcon
+                                        onClick={handleClick}
+                                        icon={faRotate}
+                                    />
+                                </h2>
+                            </div>
+
+                            <div>
+                                {/* Back of the card */}
+                                <h2 className="text-lg py-36 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 text-zinc-600 text-center">
+                                    {flashcard.answer}
+                                    <FontAwesomeIcon
+                                        onClick={handleClick}
+                                        icon={faRotate}
+                                    />
+                                </h2>
+                            </div>
+                        </ReactCardFlip>
                     </div>
-                </section>
-
-                <div className=" min-h-screen flex flex-col items-center justify-center ">
-                    <div className="container-fluid bg-slate-100 mx-96 py-8 md:py-12 md:px-8 lg:px-20 h-96 w-96">
-                        <div>
-                            <p className="text-blue-400">All Flashcards</p>
-                            <h1 className="text-3xl font-bold mb-4 text-gray-600 ">
-                                {`Flashcard ${flashcard.id}`}
-                            </h1>
-                            <ReactCardFlip
-                                isFlipped={isFlipped}
-                                flipDirection="horizontal"
-                            >
-                                <div>
-                                    {/* Front of the card */}
-                                    This is the front of the card.
-                                    <button onClick={handleClick}>
-                                        Click to flip
-                                    </button>
-                                </div>
-
-                                <div>
-                                    {/* Back of the card */}
-                                    This is the back of the card.
-                                    <button onClick={handleClick}>
-                                        Click to flip
-                                    </button>
-                                </div>
-                            </ReactCardFlip>
-                        </div>
-                    </div>
-
-                    {/* Navigation Bar */}
                     <div className="container-fluid py-4 px-4 md:px-8 lg:px-20 w-full flex justify-between items-center">
                         <Link
                             as="button"
@@ -117,7 +103,7 @@ export default function FlashcardDetail({
                             />
                         </Link>
                     </div>
-                </div>
+                </section>
             </AuthenticatedLayout>
         </>
     );
