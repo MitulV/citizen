@@ -48,8 +48,6 @@ Route::middleware('auth')->group(function () {
 
   Route::get('/guide', [StudyGuidesController::class, 'index'])->name('dashboard');
   Route::get('/guide/{chapterId}/{topicId?}', [StudyGuidesController::class, 'topicList'])->name('topicList');
-  Route::post('/guide/{chapterId}/topic/{topicId}/complete', [StudyGuidesController::class, 'completeTopic'])->name('topic.complete');
-
 
   Route::get('/simulation-tests', [SimulationTestsController::class, 'index'])->name('simulation.test');
 
@@ -60,8 +58,6 @@ Route::middleware('auth')->group(function () {
 
   Route::get('/flashcards', [FlashcardController::class, 'index'])->name('flashcard');
   Route::get('/flashcards/{chapterId}/{flashcardId?}', [FlashcardController::class, 'flashcardList'])->name('flashcardList');
-  Route::post('/flashcards/{chapterId}/flashcard/{flashcardId}/complete', [FlashcardController::class, 'completeFlashcard'])->name('flashcard.complete');
-
 
   Route::get('/tools', [ToolsController::class, 'index'])->name('tools');
   //Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');

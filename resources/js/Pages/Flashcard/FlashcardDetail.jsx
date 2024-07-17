@@ -18,6 +18,8 @@ export default function FlashcardDetail({
     flashcard,
     chapters,
     chapterId,
+    previousFlashcardId,
+    nextFlashcardId,
 }) {
     const [isFlipped, setIsFlipped] = useState(false);
     const handleClick = (e) => {
@@ -71,9 +73,18 @@ export default function FlashcardDetail({
                     <div className="container-fluid py-4 px-4 md:px-8 lg:px-20 w-full flex justify-between items-center">
                         <Link
                             as="button"
-                            method="post"
-                            href={`/flashcards/${chapterId}/${flashcard.id}/complete`}
-                            className="border-primary border-2  text-black px-4 py-2 rounded-full"
+                            method="get"
+                            href={
+                                previousFlashcardId
+                                    ? `/flashcards/${chapterId}/${previousFlashcardId}`
+                                    : "#"
+                            }
+                            className={`border-primary border-2 text-black px-4 py-2 rounded-full ${
+                                !previousFlashcardId
+                                    ? "opacity-50 cursor-not-allowed"
+                                    : ""
+                            }`}
+                            disabled={!previousFlashcardId}
                         >
                             <FontAwesomeIcon
                                 icon={faChevronLeft}
@@ -83,8 +94,8 @@ export default function FlashcardDetail({
                         </Link>
                         <Link
                             as="button"
-                            method="post"
-                            href={`/guide/${chapterId}/flashcard/${flashcard.id}/complete`}
+                            method="get"
+                            href={`/flashcards/${chapterId}/${flashcard.id}?complete=true`}
                             className="bg-green-500 text-white px-4 py-2 rounded-full"
                         >
                             <FontAwesomeIcon icon={faCheck} /> Complete
@@ -92,9 +103,18 @@ export default function FlashcardDetail({
 
                         <Link
                             as="button"
-                            method="post"
-                            href={`/guide/${chapterId}/${flashcard.id}/complete`}
-                            className="border-primary border-2  text-black px-6 py-2 rounded-full flex items-center"
+                            method="get"
+                            href={
+                                nextFlashcardId
+                                    ? `/flashcards/${chapterId}/${flashcard.id}?complete=true`
+                                    : "#"
+                            }
+                            className={`border-primary border-2 text-black px-6 py-2 rounded-full flex items-center ${
+                                !nextFlashcardId
+                                    ? "opacity-50 cursor-not-allowed"
+                                    : ""
+                            }`}
+                            disabled={!nextFlashcardId}
                         >
                             Next
                             <FontAwesomeIcon

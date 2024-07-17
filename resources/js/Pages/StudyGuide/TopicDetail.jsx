@@ -11,7 +11,14 @@ import {
     faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function TopicDetail({ auth, topic, chapters, chapterId }) {
+export default function TopicDetail({
+    auth,
+    topic,
+    chapters,
+    chapterId,
+    previousTopicId,
+    nextTopicId,
+}) {
     return (
         <>
             <AuthenticatedLayout
@@ -40,7 +47,7 @@ export default function TopicDetail({ auth, topic, chapters, chapterId }) {
                             <div>
                                 <p className="text-blue-400">All lessons</p>
                                 <h1 className="text-3xl font-bold mb-4 text-gray-600">
-                                    Lesson 1
+                                    Lesson {topic.id}
                                 </h1>
                             </div>
                             <div
@@ -55,9 +62,18 @@ export default function TopicDetail({ auth, topic, chapters, chapterId }) {
                         <div className="container-fluid py-4 px-4 md:px-8 lg:px-20 w-full flex justify-between items-center">
                             <Link
                                 as="button"
-                                method="post"
-                                href={`/guide/${chapterId}/${topic.id}/complete`}
-                                className="border-primary border-2  text-black px-4 py-2 rounded-full"
+                                method="get"
+                                href={
+                                    previousTopicId
+                                        ? `/guide/${chapterId}/${previousTopicId}`
+                                        : "#"
+                                }
+                                className={`border-primary border-2 text-black px-4 py-2 rounded-full ${
+                                    !previousTopicId
+                                        ? "opacity-50 cursor-not-allowed"
+                                        : ""
+                                }`}
+                                disabled={!previousTopicId}
                             >
                                 <FontAwesomeIcon
                                     icon={faChevronLeft}
@@ -67,8 +83,8 @@ export default function TopicDetail({ auth, topic, chapters, chapterId }) {
                             </Link>
                             <Link
                                 as="button"
-                                method="post"
-                                href={`/guide/${chapterId}/topic/${topic.id}/complete`}
+                                method="get"
+                                href={`/guide/${chapterId}/${topic.id}?complete=true`}
                                 className="bg-green-500 text-white px-4 py-2 rounded-full"
                             >
                                 <FontAwesomeIcon icon={faCheck} /> Complete
@@ -76,9 +92,18 @@ export default function TopicDetail({ auth, topic, chapters, chapterId }) {
 
                             <Link
                                 as="button"
-                                method="post"
-                                href={`/guide/${chapterId}/${topic.id}/complete`}
-                                className="border-primary border-2  text-black px-6 py-2 rounded-full flex items-center"
+                                method="get"
+                                href={
+                                    nextTopicId
+                                        ? `/guide/${chapterId}/${topic.id}?complete=true`
+                                        : "#"
+                                }
+                                className={`border-primary border-2 text-black px-6 py-2 rounded-full flex items-center ${
+                                    !nextTopicId
+                                        ? "opacity-50 cursor-not-allowed"
+                                        : ""
+                                }`}
+                                disabled={!nextTopicId}
                             >
                                 Next
                                 <FontAwesomeIcon
