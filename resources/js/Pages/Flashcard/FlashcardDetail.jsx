@@ -48,25 +48,37 @@ export default function FlashcardDetail({
                             flipDirection="horizontal"
                         >
                             <div>
-                                {/* Front of the card */}
-                                <h2 className="text-lg py-36 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 text-zinc-600 text-center">
-                                    {flashcard.question}
+                                <h2 className="text-lg py-4 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 text-zinc-600 text-end">
                                     <FontAwesomeIcon
                                         onClick={handleClick}
                                         icon={faRotate}
                                     />
+                                </h2>
+                                {/* Front of the card */}
+                                <h2 className="text-lg py-20 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 text-zinc-600 text-center">
+                                    {flashcard.question}
                                 </h2>
                             </div>
 
                             <div>
                                 {/* Back of the card */}
-                                <h2 className="text-lg py-36 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 text-zinc-600 text-center">
-                                    {flashcard.answer}
+                                <h2 className="text-lg py-4 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 text-zinc-600 text-end">
                                     <FontAwesomeIcon
                                         onClick={handleClick}
                                         icon={faRotate}
                                     />
                                 </h2>
+                                <h2 className="text-lg mt-20 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 text-zinc-600 text-center">
+                                    {flashcard.answer}
+                                </h2>
+                                <div className="text-3xl mt-20 font-semibold mb-4 text-zinc-600 text-left">
+                                    <h2 className="py-2">Explanation</h2>
+                                    <p className="text-lg text-zinc-500 ">
+                                        My husband is very caring loving and
+                                        very handsome man in the world i love
+                                        him countless
+                                    </p>
+                                </div>
                             </div>
                         </ReactCardFlip>
                     </div>

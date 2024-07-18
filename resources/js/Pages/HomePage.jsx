@@ -60,9 +60,8 @@ export default function HomePage({ auth, chapters }) {
                         </div>
                     </div>
                 </div>
-                <section className="container mx-auto px-4 lg:px-32">
+                <section className="container mx-auto px-4 lg:px-32 hidden sm:block">
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-                        {/* First Card */}
                         <div className="relative w-full md:w-auto justify-center transform hover:-translate-y-1 transition duration-500 ease-out">
                             <div className="absolute left-0 w-full h-60 md:w-48 md:h-40 bg-amber-300 rounded-t-full shadow-sm"></div>
                             <img
@@ -80,7 +79,6 @@ export default function HomePage({ auth, chapters }) {
                             </div>
                         </div>
 
-                        {/* Second Card */}
                         <div className="relative w-full md:w-auto justify-center transform hover:-translate-y-1 transition duration-500 ease-out">
                             <img
                                 src="/images/ctp premium.png"
@@ -97,7 +95,6 @@ export default function HomePage({ auth, chapters }) {
                             </div>
                         </div>
 
-                        {/* Third Card */}
                         <div className="relative w-full md:w-auto justify-center transform hover:-translate-y-1 transition duration-500 ease-out">
                             <div className="absolute left-0 w-full h-1/2 md:w-48 md:h-40 bg-indigo-300 rounded-t-full shadow-sm"></div>
                             <img
@@ -107,7 +104,6 @@ export default function HomePage({ auth, chapters }) {
                             />
                         </div>
 
-                        {/* Fourth Card */}
                         <div className="relative w-full md:w-auto justify-center transform hover:-translate-y-1 transition duration-500 ease-out">
                             <div className="absolute left-0 w-full h-1/2 md:w-48 md:h-40 bg-orange-300 rounded-t-full shadow-sm"></div>
                             <img
