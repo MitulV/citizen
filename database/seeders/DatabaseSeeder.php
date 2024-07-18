@@ -722,6 +722,121 @@ class DatabaseSeeder extends Seeder
               ['name' => 'Rights and Responsibilities'],
               ['name' => 'The Timeline'],
             ],
+            'flashcards' => [
+              [
+                'question' => 'What are the two guiding principles of Canada?',
+                'answer' => 'The supremacy of God and the rule of law',
+                'explanation' => '“Whereas Canada is founded upon principles that recognize the supremacy of God and the rule of law.” This phrase underlines the importance of religious traditions to Canadian society and the dignity and worth of the human person.'
+              ],
+              [
+                'question' => 'What is the origin of Habeas corpus?',
+                'answer' => 'English common law',
+                'explanation' => 'Habeas corpus, the right to challenge unlawful detention by the state, comes from English common law.'
+              ],
+              [
+                'question' => 'What is a noble way to contribute to Canada and an excellent career choice?',
+                'answer' => 'Serve in the Canadian Forces',
+                'explanation' => 'There is no compulsory military service in Canada. However, serving in the regular Canadian Forces (navy, army and air force) is a noble way to contribute to Canada and an excellent career choice (www.forces.ca).'
+              ],
+              [
+                'question' => 'In Canada, who do we profess loyalty to?',
+                'answer' => 'To a person who represents all Canadians',
+                'explanation' => 'In Canada, we profess our loyalty to a person who represents all Canadians and not to a document such as a constitution, a banner such as a flag, or a geopolitical entity such as a country. In our constitutional monarchy, these elements are encompassed by the Sovereign (Queen or King).'
+              ],
+              [
+                'question' => 'What type of government is there in Canada?',
+                'answer' => 'Canada has a constitutional monarchy.',
+                'explanation' => 'Canada is a constitutional monarchy, a parliamentary democracy and a federal state. Canadians are bound together by a shared commitment to the rule of law and to the institutions of parliamentary government.'
+              ],
+              [
+                'question' => 'What is "Habeas corpus"?',
+                'answer' => 'The right to challenge unlawful detention by the state',
+                'explanation' => 'Habeas corpus, the right to challenge unlawful detention by the state, comes from English common law.'
+              ],
+              [
+                'question' => 'The "right to contest unlawful detention by the state" is known as what?',
+                'answer' => 'Habeas corpus',
+                'explanation' => 'Habeas corpus, the right to challenge unlawful detention by the state, comes from English common law.'
+              ],
+              [
+                'question' => 'Which section of the Constitution summarize fundamental freedoms while also setting out additional rights?',
+                'answer' => 'The Canadian Charter of Rights and Freedoms',
+                'explanation' => 'The Charter attempts to summarize fundamental freedoms while also setting out additional rights which includes:
+            - Mobility Rights
+            - Aboriginal Peoples’ Rights
+            - Official Language Rights
+            - Multiculturalism'
+              ],
+              [
+                'question' => 'What are Mobility Rights?',
+                'answer' => 'Canadians are free to enter and leave the nation at will, live and work anywhere they choose, and apply for passports.',
+                'explanation' => 'Canadians can live and work anywhere they choose in Canada, enter and leave the country freely, and apply for a passport.'
+              ],
+              [
+                'question' => 'Why can a woman have the same education as any guy as a new immigrant to Canada?',
+                'answer' => 'Because in Canada, men and women are equal under the law',
+                'explanation' => 'In Canada, men and women are equal under the law. Canada’s openness and generosity do not extend to barbaric cultural practices that tolerate spousal abuse.'
+              ],
+              [
+                'question' => 'Which elections as a Canadian citizen are you required to participate in?',
+                'answer' => 'Federal, provincial or territorial and local elections',
+                'explanation' => 'Living in a democracy, Canadian citizens have the right and the responsibility to participate in making decisions that affect them. It is important for Canadians aged 18 or more to participate in their democracy by voting in federal, provincial or territorial and municipal elections.'
+              ],
+              [
+                'question' => 'When was Magna Carta signed?',
+                'answer' => '1215',
+                'explanation' => 'Magna Carta (also known as the Great Charter of Freedoms) was signed in 1215 in England.'
+              ],
+              [
+                'question' => 'What is "Magna Carta"?',
+                'answer' => 'The Great Charter of Freedoms',
+                'explanation' => 'Magna Carta is another name for "The Great Charter of Freedoms" which was signed in the year 1215.'
+              ],
+              [
+                'question' => 'Who is the King of Canada?',
+                'answer' => 'His Majesty King Charles the Third',
+                'explanation' => 'Canada is a constitutional monarchy whereby the Sovereign is Canada’s Head of State. King Charles III automatically became Sovereign of Canada on the passing of his predecessor, Queen Elizabeth II.'
+              ],
+              [
+                'question' => 'Name one source of Canadian law',
+                'answer' => 'English common law',
+                'explanation' => 'Canadian law is derived from a variety of sources, including laws passed by Parliament and provincial legislatures, English common law, the French civil code, and the unwritten constitution that we inherited from the United Kingdom.'
+              ],
+              [
+                'question' => 'Who is permitted unrestricted entry and exit from Canada?',
+                'answer' => 'Canadian citizens',
+                'explanation' => 'Canadians can live and work anywhere they choose in Canada, enter and leave the country freely, and apply for a passport.'
+              ],
+              [
+                'question' => 'What does the Great Charter of Freedom include?',
+                'answer' => 'Freedom of conscience and religion',
+                'explanation' => 'Magna Carta (also known as the Great Charter of Freedoms) includes:
+            - Freedom of conscience and religion;
+            - Freedom of thought, belief, opinion and expression, including freedom of speech and of the press.
+            - Freedom of peaceful assembly
+            - Freedom of association'
+              ],
+              [
+                'question' => 'What is a great way to make acquaintances, create contacts, and learn useful skills?',
+                'answer' => 'Volunteer',
+                'explanation' => 'Millions of volunteers freely donate their time to help others without pay. Helping people in need, assisting at your child’s school, volunteering at a food bank or other charity, or encouraging newcomers to integrate are all excellent ways to gain useful skills and develop friends and contacts.'
+              ],
+              [
+                'question' => 'What does "equality of men and women" mean in Canada?',
+                'answer' => 'Both Men and women are equal under the law',
+                'explanation' => 'In Canada, men and women are equal under the law. Canada’s openness and generosity do not extend to barbaric cultural practices that tolerate spousal abuse.'
+              ],
+              [
+                'question' => 'How long have settlers and immigrants contributed to the diversity and wealth of Canada?',
+                'answer' => '400 Years',
+                'explanation' => 'For 400 years, settlers and immigrants have contributed to the diversity and richness of Canada, which is built on a proud history and a strong identity.'
+              ],
+              [
+                'question' => 'Who proclaimed the amended Constitution of Canada in 1982?',
+                'answer' => 'Queen Elizabeth II',
+                'explanation' => 'The Canadian Constitution was amended in 1982 to include the Canadian Charter of Rights and Freedoms.'
+              ]
+            ]
           ],
           [
             'image' => '/images/chap 4.png',
@@ -1730,6 +1845,251 @@ class DatabaseSeeder extends Seeder
               ['name' => 'Who We Are'],
               ['name' => 'The Timeline'],
             ],
+            'flashcards' => [
+              [
+                'question' => 'In which province does the majority of Francophones live?',
+                'answer' => 'Quebec',
+                'explanation' => 'The majority of Francophones live in the province of Quebec. One million Francophones live in Ontario, New Brunswick and Manitoba, with a smaller presence in other provinces.'
+              ],
+              [
+                'question' => 'What is the name of Canada’s original constitutional document?',
+                'answer' => 'The British North America Act',
+                'explanation' => 'Canada’s original constitutional document was created in 1867, the British North America Act.'
+              ],
+              [
+                'question' => 'What are three responsibilities of Canadian citizenship?',
+                'answer' => 'Obeying the law, taking responsibility for oneself and one\'s family, and serving on a jury',
+                'explanation' => 'In Canada, rights come with responsibilities. These include:
+                - Obeying the law
+                - Taking responsibility for oneself and one’s family
+                - Serving on a jury
+                - Voting in elections
+                - Helping others in the community
+                - Protecting and enjoying our heritage and environment'
+              ],
+              [
+                'question' => 'Since the 1800s, where were the majority of Canadians born?',
+                'answer' => 'Canada',
+                'explanation' => 'The majority of Canadians were born in this country and this has been true since the 1800s. However, Canada is often referred to as a land of immigrants because, over the past 200 years, millions of newcomers have helped to build and defend our way of life.'
+              ],
+              [
+                'question' => 'What is the significance of serving on a jury?',
+                'answer' => 'It makes the justice system work as it depends on impartial juries made up of citizens',
+                'explanation' => 'When called to do so, you are legally required to serve. Serving on a jury is a privilege that makes the justice system work as it depends on impartial juries made up of citizens.'
+              ],
+              [
+                'question' => 'What are the three main groups of Aboriginal peoples?',
+                'answer' => 'First Nations, Metis and Inuit',
+                'explanation' => 'About 65% of the Aboriginal people are First Nations, while 30% are Métis and 4% Inuit.'
+              ],
+              [
+                'question' => 'How many Anglophones are there in Canada today?',
+                'answer' => '18 million',
+                'explanation' => 'Today, there are 18 million Anglophones—people who speak English as a first language—and seven million Francophones—people who speak French as their first language.'
+              ],
+              [
+                'question' => 'In which province does the majority of Francophones live?',
+                'answer' => 'Quebec',
+                'explanation' => 'The majority of Francophones live in the province of Quebec. One million Francophones live in Ontario, New Brunswick and Manitoba, with a smaller presence in other provinces.'
+              ],
+              [
+                'question' => 'What are Canada’s two official languages?',
+                'answer' => 'English and French',
+                'explanation' => 'English and French are the two official languages and are important symbols of identity. English speakers (Anglophones) and French speakers (Francophones) have lived together in partnership and creative tension for more than 300 years.'
+              ],
+              [
+                'question' => 'Who was John Buchan?',
+                'answer' => 'A popular Governor General of Canada',
+                'explanation' => 'John Buchan, the 1st Baron Tweedsmuir, was a popular Governor General of Canada (1935–40). Immigrant groups, he said, “should retain their individuality and each make its contribution to the national character.”'
+              ],
+              [
+                'question' => 'Who are generally referred to as "English Canadians"?',
+                'answer' => 'The Anglophones',
+                'explanation' => 'Generations of pioneers and builders of British origins, as well as other groups, invested and endured hardship in laying the foundations of our country. This helps explain why Anglophones (English speakers) are generally referred to as English Canadians.'
+              ],
+              [
+                'question' => 'Who recognized in 2006 that the Quebecois form a nation within a united Canada?',
+                'answer' => 'The House of Commons',
+                'explanation' => 'The House of Commons recognized in 2006 that the Quebecois form a nation within a united Canada.'
+              ],
+              [
+                'question' => 'What are three responsibilities of Canadian citizenship?',
+                'answer' => 'Obeying the law, taking responsibility for oneself and one\'s family, and serving on a jury',
+                'explanation' => 'In Canada, rights come with responsibilities. These include:
+                - Obeying the law
+                - Taking responsibility for oneself and one’s family
+                - Serving on a jury
+                - Voting in elections
+                - Helping others in the community
+                - Protecting and enjoying our heritage and environment'
+              ],
+              [
+                'question' => 'In Canada, how are individuals and governments regulated?',
+                'answer' => 'By laws',
+                'explanation' => 'One of Canada’s founding principles is the rule of law. Individuals and governments are regulated by laws and not by arbitrary actions. No person or group is above the law.'
+              ],
+              [
+                'question' => 'Who is Marjorie Turner-Bailey?',
+                'answer' => 'An Olympian and descendant of black Loyalists',
+                'explanation' => 'Olympian Marjorie Turner-Bailey of Nova Scotia is a descendant of black Loyalists, escaped slaves and freed men and women of African origin who in the 1780s fled to Canada from America, where slavery remained legal until 1863.'
+              ],
+              [
+                'question' => 'How many Francophones are there in Canada today?',
+                'answer' => '7 million',
+                'explanation' => 'Today, there are 18 million Anglophones—people who speak English as a first language—and seven million Francophones—people who speak French as their first language.'
+              ],
+              [
+                'question' => 'From which civilization does Canadian society stem largely from?',
+                'answer' => 'English-speaking and French-speaking Christians',
+                'explanation' => 'The great majority of Canadians identify as Christians. The largest religious affiliation is Catholic, followed by various Protestant churches. The numbers of Muslims, Jews, Hindus, Sikhs and members of other religions, as well as people who state “no religion” are also growing.'
+              ],
+              [
+                'question' => 'What is the key phrase in Canada’s original constitutional document?',
+                'answer' => 'Peace, Order and Good Government',
+                'explanation' => 'Canada’s institutions uphold a commitment to Peace, Order and Good Government, a key phrase in Canada’s original constitutional document in 1867, the British North America Act.'
+              ],
+              [
+                'question' => 'Which three rights are included in the Canadian Charter of Rights and Freedoms?',
+                'answer' => 'Mobility rights, Aboriginal Peoples\' rights, and official language rights',
+                'explanation' => 'The Charter attempts to summarize fundamental freedoms while also setting out additional rights. The most important of these include Mobility Rights, Aboriginal Peoples’ Rights, Official Language Rights and Minority Language Educational Rights and Multiculturalism.'
+              ],
+              [
+                'question' => 'What kind of commitment do Canadian institutions uphold?',
+                'answer' => 'Peace, Order, and Good Government',
+                'explanation' => 'Canada’s institutions uphold a commitment to Peace, Order and Good Government, a key phrase in Canada’s original constitutional document in 1867, the British North America Act.'
+              ],
+              [
+                'question' => 'Who proclaimed the first territorial right guarantee for the First Nations?',
+                'answer' => 'King George III',
+                'explanation' => 'Territorial rights were first guaranteed through the Royal Proclamation of 1763 by King George III, and established the basis for negotiating treaties with the newcomers— treaties that were not always fully respected.'
+              ],
+              [
+                'question' => 'What is the speaking background of the Metis population?',
+                'answer' => 'Both French and English',
+                'explanation' => 'The Métis are a distinct people of mixed Aboriginal and European ancestry, the majority of whom live in the Prairie provinces. They come from both French- and English-speaking backgrounds and speak their own dialect, Michif.'
+              ],
+              [
+                'question' => 'Which province is the only official bilingual province?',
+                'answer' => 'New Brunswick',
+                'explanation' => 'While the majority of Francophones live in the province of Quebec, one million Francophones live in Ontario, New Brunswick and Manitoba, with a smaller presence in other provinces. New Brunswick is the only officially bilingual province.'
+              ],
+              [
+                'question' => 'What was the "Great Upheaval"?',
+                'answer' => 'The deportation of more than two-third of Acadians from their homeland between 1755 and 1763',
+                'explanation' => 'Between 1755 and 1763, during the war between Britain and France, more than two-thirds of the Acadians were deported from their homeland. Despite this ordeal, known as the “Great Upheaval,” the Acadians survived and maintained their unique identity.'
+              ],
+              [
+                'question' => 'How many First Nations people live on reserve land today?',
+                'answer' => 'About half',
+                'explanation' => 'Today, about half of First Nations people live on reserve land in about 600 communities while the other half live off-reserve, mainly in urban centres.'
+              ],
+              [
+                'question' => 'What is the name of Canada’s original constitutional document?',
+                'answer' => 'The British North America Act',
+                'explanation' => 'Canada’s original constitutional document was created in 1867, the British North America Act.'
+              ],
+              [
+                'question' => 'Quebecers are the descendants of what groups?',
+                'answer' => 'French settlers from the 1600s and 1700s',
+                'explanation' => 'Quebecers are the people of Quebec, the vast majority French-speaking. Most are descendants of 8,500 French settlers from the 1600s and 1700s and maintain a unique identity, culture and language.'
+              ],
+              [
+                'question' => 'Which group of Aboriginal peoples has the largest population in Canada?',
+                'answer' => 'First Nations',
+                'explanation' => 'About 65% of the Aboriginal people are First Nations, while 30% are Métis and 4% Inuit.'
+              ],
+              [
+                'question' => 'Who are the three founding peoples of Canada?',
+                'answer' => 'Aboriginal, French, and British',
+                'explanation' => 'The three founding peoples of Canada are the Aboriginal, French and British.'
+              ],
+              [
+                'question' => 'What are Quebecers?',
+                'answer' => 'The people of Quebec',
+                'explanation' => 'Quebecers are the people of Quebec, the vast majority French-speaking. Most are descendants of 8,500 French settlers from the 1600s and 1700s and maintain a unique identity, culture and language.'
+              ],
+              [
+                'question' => 'Where does the majority of the Métis live?',
+                'answer' => 'Prairie provinces',
+                'explanation' => 'The Métis are a distinct people of mixed Aboriginal and European ancestry, the majority of whom live in the Prairie provinces. They come from both French- and English-speaking backgrounds and speak their own dialect, Michif.'
+              ],
+              [
+                'question' => 'To what does the term "Indians" refer?',
+                'answer' => 'All aboriginal peoples who are not Inuit or Metis',
+                'explanation' => 'Indian refers to all Aboriginal people who are not Inuit or Métis. In the 1970s, the term First Nations began to be used.'
+              ],
+              [
+                'question' => 'With which words does the Canadian Charter of Rights and Freedoms begin?',
+                'answer' => '“Whereas Canada is founded upon principles that recognize the supremacy of God and the rule of law”',
+                'explanation' => 'The Constitution of Canada was amended in 1982 to entrench the Canadian Charter of Rights and Freedoms, which begins with the words, “Whereas Canada is founded upon principles that recognize the supremacy of God and the rule of law.”'
+              ],
+              [
+                'question' => 'Who are the Métis?',
+                'answer' => 'A distinct people of mixed Aboriginal and European ancestry',
+                'explanation' => 'The Métis are a distinct people of mixed Aboriginal and European ancestry, the majority of whom live in the Prairie provinces. They come from both French- and English-speaking backgrounds and speak their own dialect, Michif.'
+              ],
+              [
+                'question' => 'Who are Francophones?',
+                'answer' => 'People who speak French as a first language',
+                'explanation' => 'English and French are the two official languages and are important symbols of identity. English speakers (Anglophones) and French speakers (Francophones) have lived together in partnership and creative tension for more than 300 years.'
+              ],
+              [
+                'question' => 'Where do Inuit people live?',
+                'answer' => 'In scattered communities across the Arctic',
+                'explanation' => 'The Inuit, which means “the people” in the Inuktitut language, live in small, scattered communities across the Arctic.'
+              ],
+              [
+                'question' => 'What was the view on immigration of John Buchan, a popular Governor General of Canada in the 1930s?',
+                'answer' => 'Unity in diversity',
+                'explanation' => 'John Buchan, the 1st Baron Tweedsmuir, was a popular Governor General of Canada (1935–40). Immigrant groups, he said, “should retain their individuality and each make its contribution to the national character.”'
+              ],
+              [
+                'question' => 'Name three beliefs that have enabled Canadians to build a prosperous society in a rugged environment?',
+                'answer' => 'Hard work, fair play and ordered liberty',
+                'explanation' => 'A belief in ordered liberty, enterprise, hard work and fair play has enabled Canadians to build a prosperous society in a rugged environment from our Atlantic shores to the Pacific Ocean and to the Arctic Circle—so much so that poets and songwriters have hailed Canada as the “Great Dominion.”'
+              ],
+              [
+                'question' => 'What is the name of Metis dialect?',
+                'answer' => 'Michif',
+                'explanation' => 'The Métis are a distinct people of mixed Aboriginal and European ancestry, the majority of whom live in the Prairie provinces. They come from both French- and English-speaking backgrounds and speak their own dialect, Michif.'
+              ],
+              [
+                'question' => 'Who were the English-speaking settlers?',
+                'answer' => 'English, Welsh, Scottish and Irish',
+                'explanation' => 'The basic way of life in English-speaking areas was established by hundreds of thousands of English, Welsh, Scottish and Irish settlers, soldiers and migrants from the 1600s to the 20th century.'
+              ],
+              [
+                'question' => 'What percentage of Aboriginal people are First Nations?',
+                'answer' => '65',
+                'explanation' => 'About 65% of the Aboriginal people are First Nations, while 30% are Métis and 4% Inuit.'
+              ],
+              [
+                'question' => 'What is a fundamental characteristic of the Canadian heritage and identity?',
+                'answer' => 'Multiculturalism',
+                'explanation' => 'A fundamental characteristic of the Canadian heritage and identity. Canadians celebrate the gift of one another’s presence and work hard to respect pluralism and live in harmony.'
+              ],
+              [
+                'question' => 'What does the word "Inuit" mean?',
+                'answer' => '“The people”',
+                'explanation' => 'The Inuit, which means “the people” in the Inuktitut language, live in small, scattered communities across the Arctic.'
+              ],
+              [
+                'question' => 'To which religious affiliation do the great majority of Canadians identify?',
+                'answer' => 'Christian',
+                'explanation' => 'The great majority of Canadians identify as Christians. The largest religious affiliation is Catholic, followed by various Protestant churches. The numbers of Muslims, Jews, Hindus, Sikhs and members of other religions, as well as people who state “no religion” are also growing.'
+              ],
+              [
+                'question' => 'After English, what is the second most-spoken non-official language in Canadian homes?',
+                'answer' => 'Chinese',
+                'explanation' => 'Non-official languages are widely spoken in Canadian homes. Chinese languages are the second most-spoken at home, after English, in two of Canada’s biggest cities. In Vancouver, 13% of the population speak Chinese languages at home; in Toronto, the number is 7%.'
+              ],
+              [
+                'question' => 'Acadians are the descendants of what groups?',
+                'answer' => 'French colonists who began settling in what are now the Maritime provinces in 1604',
+                'explanation' => 'The Acadians are the descendants of French colonists who began settling in what are now the Maritime provinces in 1604.'
+              ]
+            ]
+
           ],
           [
             'image' => '/images/chap 5.png',
@@ -3878,6 +4238,504 @@ class DatabaseSeeder extends Seeder
               ['name' => 'Canada’s History'],
               ['name' => 'The Timeline'],
             ],
+            'flashcards' => [
+              [
+                'question' => 'Who were the Loyalists?',
+                'answer' => 'Settlers from the United States who were loyal to the Crown',
+                'explanation' => 'More than 40,000 people loyal to the Crown, called “Loyalists,” fled the oppression of the American Revolution to settle in Nova Scotia and Quebec. Joseph Brant led thousands of Loyalist Mohawk Indians into Canada. The Loyalists came from Dutch, German, British, Scandinavian, Aboriginal and other origins and from Presbyterian, Anglican, Baptist, Methodist, Jewish, Quaker and Catholic religious backgrounds. About 3,000 black Loyalists, freedmen and slaves came north seeking a better life. In turn, in 1792, some black Nova Scotians, who were given poor land, moved on to establish Freetown, Sierra Leone (West Africa), a new British colony for freed slaves.'
+              ],
+              [
+                'question' => 'Which current provinces came out from the Constitutional Act?',
+                'answer' => 'Ontario and Quebec',
+                'explanation' => 'The Constitutional Act of 1791 divided the Province of Quebec into Upper Canada (later Ontario), which was mainly Loyalist, Protestant and English-speaking, and Lower Canada (later Quebec), heavily Catholic and French-speaking.'
+              ],
+              [
+                'question' => 'What is the significance of the Quebec Act of 1774?',
+                'answer' => 'It allowed religious freedom for Catholics and permitted them to hold public office',
+                'explanation' => 'To better govern the French Roman Catholic majority, the British Parliament passed the Quebec Act of 1774. One of the constitutional foundations of Canada, the Quebec Act Accommodated the principles of British institutions to the reality of the province. It allowed religious freedom for Catholics and permitted them to hold public office, a practice not then allowed in Britain.'
+              ],
+              [
+                'question' => 'In becoming Canadian, which principles are newcomers expected to embrace?',
+                'answer' => 'Democratic',
+                'explanation' => 'Some Canadians immigrate from places where they have experienced warfare or conflict. Such experiences do not justify bringing to Canada violent, extreme or hateful prejudices. In becoming Canadian, newcomers are expected to embrace democratic principles such as the rule of law.'
+              ],
+              [
+                'question' => 'Who passed the Quebec Act of 1774?',
+                'answer' => 'The British Parliament',
+                'explanation' => 'To better govern the French Roman Catholic majority, the British Parliament passed the Quebec Act of 1774. One of the constitutional foundations of Canada, the Quebec Act accommodated the principles of British institutions to the reality of the province.'
+              ],
+              [
+                'question' => 'Who are Anglophones?',
+                'answer' => 'People who speak English as a first language',
+                'explanation' => 'English and French are the two official languages and are important symbols of identity. English speakers (Anglophones) and French speakers (Francophones) have lived together in partnership and creative tension for more than 300 years.'
+              ],
+              [
+                'question' => 'How many Canadians served in the First World War?',
+                'answer' => 'More than 600,000',
+                'explanation' => 'More than 600,000 Canadians served in the war, most of them volunteers, out of a total population of eight million.'
+              ],
+              [
+                'question' => 'Who contributed more to the Allied air effort than any other Commonwealth country during the Second World War?',
+                'answer' => 'Canada',
+                'explanation' => 'Canada contributed more to the Allied air effort than any other Commonwealth country, with over 130,000 Allied air crew trained in Canada under the British Commonwealth Air Training Plan.'
+              ],
+              [
+                'question' => 'In the epic invasion of Normandy in northern France in 1944, known as D-Day, which beach did the Canadians capture?',
+                'answer' => 'Juno',
+                'explanation' => 'In the epic invasion of Normandy in northern France on June 6, 1944, known as D-Day, 15,000 Canadian troops stormed and captured Juno Beach from the German Army.'
+              ],
+              [
+                'question' => 'How did the native people live when the first European arrived in Canada?',
+                'answer' => 'Off the land, some by hunting and gathering, others by raising crops',
+                'explanation' => 'When Europeans explored Canada they found all regions occupied by native peoples they called Indians, because the first explorers thought they had reached the East Indies. The native people lived off the land, some by hunting and gathering, others by raising crops. The Huron-Wendat of the Great Lakes region, like the Iroquois, were farmers and hunters. The Cree and Dene of the Northwest were hunter-gatherers. The Sioux were nomadic, following the bison (buffalo) herd. The Inuit lived off Arctic wildlife. West Coast natives preserved fish by drying and smoking.'
+              ],
+              [
+                'question' => 'What do Canadians remember on Remembrance Day?',
+                'answer' => 'The sacrifices of veterans and brave fallen in all wars',
+                'explanation' => 'Canadians remember the sacrifices of our veterans and brave fallen in all wars up to the present day in which Canadians took part, each year on November 11: Remembrance Day.'
+              ],
+              [
+                'question' => 'Why did the first European explorers call the native peoples "Indians"?',
+                'answer' => 'They thought they had reached the East Indies',
+                'explanation' => 'When Europeans explored Canada they found all regions occupied by native peoples they called Indians, because the first explorers thought they had reached the East Indies.'
+              ],
+              [
+                'question' => 'Why was the war of 1812 important to Canada?',
+                'answer' => 'Canada remained independent from the United States',
+                'explanation' => 'The present-day Canada-U.S.A. border is partly an outcome of the War of 1812, which ensured that Canada would remain independent of the United States.'
+              ],
+              [
+                'question' => 'Who refused to surrender Quebec to the English in 1690?',
+                'answer' => 'Count Frontenac',
+                'explanation' => 'Count Frontenac refused to surrender Quebec to the English in 1690, saying: “My only reply will be from the mouths of my cannons!”'
+              ],
+              [
+                'question' => 'Who became the first leader of a responsible government in the Canadas?',
+                'answer' => 'La Fontaine',
+                'explanation' => 'Sir Louis-Hippolyte La Fontaine, a champion of French language rights, became the first head of a responsible government (similar to a prime minister) in Canada in 1849.'
+              ],
+              [
+                'question' => 'Who was a champion of French language rights?',
+                'answer' => 'Sir Louis-Hippolyte La Fontaine',
+                'explanation' => 'Sir Louis-Hippolyte La Fontaine, a champion of French language rights, became the first head of a responsible government (similar to a prime minister) in Canada in 1849.'
+              ],
+              [
+                'question' => 'What is a "responsible government"?',
+                'answer' => 'The ministers of the Crown must have the support of a majority of the elected representatives in order to govern',
+                'explanation' => 'Responsible government refers to a government that is responsible to the people. It takes the form of a Cabinet that depends on the support of an elected assembly, rather than a monarch or their representatives.'
+              ],
+              [
+                'question' => 'For what is Laura Secord known?',
+                'answer' => 'She made a dangerous thirty km journey on foot to warn of a planned American attack during the war of 1812',
+                'explanation' => 'In 1813, Laura Secord, pioneer wife and mother of five children, made a dangerous 19-mile(30-km) journey on foot to warn Lieutenant James FitzGibbon of a planned American attack. Her bravery contributed to victory at the Battle of Beaver Dams. She is recognized as a heroine to this day.'
+              ],
+              [
+                'question' => 'How many Canadians served in the Second World War?',
+                'answer' => 'More than one million',
+                'explanation' => 'More than one million Canadians and Newfoundlanders (Newfoundland was a separate British entity) served in the Second World War, out of a population of 11.5 million. This was a high proportion and of these, 44,000 were killed.'
+              ],
+              [
+                'question' => 'What was the Underground Railroad?',
+                'answer' => 'A Christian anti-slavery network',
+                'explanation' => 'Thousands of slaves escaped from the United States, followed “the North Star” and settled in Canada via the Underground Railroad, a Christian anti-slavery network.'
+              ],
+              [
+                'question' => 'Regarding diversity, as what is Canada often referred?',
+                'answer' => 'A land of immigrants',
+                'explanation' => 'Canada is often referred to as a land of immigrants because, over the past 200 years, millions of newcomers have helped to build and defend our way of life.'
+              ],
+              [
+                'question' => 'For centuries, on what was Canada’s economy based?',
+                'answer' => 'Farming and exporting natural resources',
+                'explanation' => 'For centuries Canada’s economy was based mainly on farming and on exporting natural resources such as fur, fish and timber, transported by roads, lakes, rivers and canals.'
+              ],
+              [
+                'question' => 'Who gained control over North America in the 1700s?',
+                'answer' => 'The English',
+                'explanation' => 'In the 1700s France and Great Britain battled for control of North America. In 1759, the British defeated the French in the Battle of the Plains of Abraham at Québec City — marking the end of France’s empire in America.'
+              ],
+              [
+                'question' => 'Where was the first representative assembly elected?',
+                'answer' => 'Nova Scotia',
+                'explanation' => 'The first representative assembly was elected in Halifax, Nova Scotia, in 1758. Prince Edward Island followed in 1773, New Brunswick in 1785.'
+              ],
+              [
+                'question' => 'Which natives were farmers and hunters?',
+                'answer' => 'Huron-Wendat of the Great Lakes region and the Iroquois',
+                'explanation' => 'The Huron-Wendat of the Great Lakes region, like the Iroquois, were farmers and hunters.'
+              ],
+              [
+                'question' => 'What are leaders like Jean Talon, Bishop Laval, and Count Frontenac famous for?',
+                'answer' => 'They built a French Empire in North America that reached from Hudson Bay to the Gulf of Mexico',
+                'explanation' => 'Outstanding leaders like Jean Talon, Bishop Laval, and Count Frontenac built a French Empire in North America that reached from Hudson Bay to the Gulf of Mexico.'
+              ],
+              [
+                'question' => 'Which British Empire province was the first to abolish slavery?',
+                'answer' => 'Upper Canada',
+                'explanation' => 'In 1793, Upper Canada, led by Lieutenant Governor John Graves Simcoe, a Loyalist military officer, became the first province in the Empire to move toward abolition.'
+              ],
+              [
+                'question' => 'What were the Atlantic colonies and the two Canadas known collectively as in 1791?',
+                'answer' => 'British North America',
+                'explanation' => 'The Atlantic colonies and the two Canadas were known collectively as British North America.'
+              ],
+              [
+                'question' => 'Who dominated the fur trade in the North West during the French and British regimes?',
+                'answer' => 'The Hudson\'s Bay Company',
+                'explanation' => 'The Hudson’s Bay Company, with French, British and Aboriginal employees, came to dominate the trade in the northwest from Fort Garry (Winnipeg) and Fort Edmonton to Fort Langley (near Vancouver) and Fort Victoria—trading posts that later became cities.'
+              ],
+              [
+                'question' => 'Since the 1970s, from where do most immigrants come from?',
+                'answer' => 'Asia',
+                'explanation' => 'The largest groups are the English, French, Scottish, Irish, German, Italian, Chinese, Aboriginal, Ukrainian, Dutch, South Asian and Scandinavian. Since the 1970s, most immigrants have come from Asian countries.'
+              ],
+              [
+                'question' => 'Who claimed Canadian land for King Francis I of France between 1534 and 1542?',
+                'answer' => 'Jacques Cartier',
+                'explanation' => 'Between 1534 and 1542, Jacques Cartier made three voyages across the Atlantic, claiming the land for King Francis I of France.'
+              ],
+              [
+                'question' => 'What type of bond did Aboriginals and Europeans form in the first 200 years of coexistence?',
+                'answer' => 'Economic, religious and military',
+                'explanation' => 'Aboriginals and Europeans formed strong economic, religious and military bonds in the first 200 years of coexistence which laid the foundations of Canada.'
+              ],
+              [
+                'question' => 'What was the name of the new country formed by the Fathers of Confederation?',
+                'answer' => 'Dominion of Canada',
+                'explanation' => 'Ontario and Quebec, which, together with New Brunswick and Nova Scotia, formed the new country called the Dominion of Canada.'
+              ],
+              [
+                'question' => 'Who granted the Hudson’s Bay Company exclusive trading rights?',
+                'answer' => 'King Charles II of England',
+                'explanation' => 'In 1670, King Charles II of England granted the Hudson’s Bay Company exclusive trading rights over the watershed draining into Hudson Bay.'
+              ],
+              [
+                'question' => 'Which Act granted to the Canadas, for the first time, legislative assemblies elected by the people?',
+                'answer' => 'The Constitutional Act',
+                'explanation' => 'The Constitutional Act of 1791 divided the Province of Quebec into Upper Canada (later Ontario), which was mainly Loyalist, Protestant and English-speaking, and Lower Canada (later Quebec), heavily Catholic and French-speaking. The Act also granted to the Canadas, for the first time, legislative assemblies elected by the people.'
+              ],
+              [
+                'question' => 'What was driving the vast fur trade economy?',
+                'answer' => 'The demand for beaver pelts in Europe',
+                'explanation' => 'The French and Aboriginal people collaborated in the vast fur-trade economy, driven by the demand for beaver pelts in Europe.'
+              ],
+              [
+                'question' => 'What is the meaning of the Remembrance Day poppy?',
+                'answer' => 'To remember the sacrifice of Canadians who have served or died in wars up to the present day',
+                'explanation' => 'Canadians remember the sacrifices of our veterans and brave fallen in all wars up to the present day in which Canadians took part, each year on November 11: Remembrance Day.'
+              ],
+              [
+                'question' => 'How many Canadians have died in all wars up to the present day?',
+                'answer' => '110,000',
+                'explanation' => 'Canadians wear the red poppy and observe a moment of silence at the 11th hour of the 11th day of the 11th month to honour the sacrifices of over a million brave men and women who have served, and the 110,000 who have given their lives.'
+              ],
+              [
+                'question' => 'Whose portrait is on the $5 bill?',
+                'answer' => 'Sir Wilfrid Laurier',
+                'explanation' => 'Sir Wilfrid Laurier became the first French Canadian prime minister since Confederation and encouraged immigration to the West. His portrait is on the $5 bill.'
+              ],
+              [
+                'question' => 'What made it possible for immigrants to settle in Western Canada?',
+                'answer' => 'The completion of the Canadian Pacific Railway',
+                'explanation' => 'Sir Wilfrid Laurier became the first French-Canadian prime minister since Confederation and encouraged immigration to the West. His portrait is on the $5 bill. The railway made it possible for immigrants, including 170,000 Ukrainians, 115,000 Poles and tens of thousands from Germany, France, Norway and Sweden to settle in the West before 1914 and develop a thriving agricultural sector.'
+              ],
+              [
+                'question' => 'What percentage of Aboriginal people are Métis?',
+                'answer' => '30',
+                'explanation' => 'About 65% of the Aboriginal people are First Nations, while 30% are Métis and 4% Inuit.'
+              ],
+              [
+                'question' => 'During the Second World War, what was the ratio of Canadians in the Allied forces on D-Day?',
+                'answer' => '1 in 10',
+                'explanation' => 'Approximately one in ten allied soldiers on D-Day was Canadian. The Canadian Army liberated the Netherlands in 1944–45 and helped force the German surrender of May 8, 1945, bringing to an end six years of war in Europe.'
+              ],
+              [
+                'question' => 'In Canada, how did democratic institutions develop?',
+                'answer' => 'Gradually and peacefully',
+                'explanation' => 'Democratic institutions developed gradually and peacefully. The first representative assembly was elected in Halifax, Nova Scotia, in 1758.'
+              ],
+              [
+                'question' => 'Which four provinces formed the new country called the Dominion of Canada?',
+                'answer' => 'Ontario, Quebec, New Brunswick and Nova Scotia',
+                'explanation' => 'Ontario and Quebec, which, together with New Brunswick and Nova Scotia, formed the new country called the Dominion of Canada.'
+              ],
+              [
+                'question' => 'Which countries fought in the War of 1812?',
+                'answer' => 'United Kingdom and United States of America',
+                'explanation' => 'The United Kingdom and United States of America fought in the War of 1812. After the defeat of Napoleon Bonaparte’s fleet in the Battle of Trafalgar (1805), the Royal Navy ruled the waves. The British Empire, which included Canada, fought to resist Bonaparte’s bid to dominate Europe.This led to American resentment at British interference with their shipping. Believing it would be easy to conquer Canada, the United States launched an invasion in June 1812.'
+              ],
+              [
+                'question' => 'What was the main economy of the early European settlers?',
+                'answer' => 'Fur trade',
+                'explanation' => 'The first companies in Canada were formed during the French and British regimes and competed for the fur trade.'
+              ],
+              [
+                'question' => 'For what did the first companies in Canada compete?',
+                'answer' => 'Fur',
+                'explanation' => 'The first companies in Canada were formed during the French and British regimes and competed for the fur trade.'
+              ],
+              [
+                'question' => 'From where were the ancestors of Aboriginal peoples believed to have migrated?',
+                'answer' => 'Asia',
+                'explanation' => 'The ancestors of Aboriginal peoples are believed to have migrated from Asia many thousands of years ago. They were well established here long before explorers from Europe first came to North America.'
+              ],
+              [
+                'question' => 'What level of government did the Fathers of Confederation create?',
+                'answer' => 'Federal and provincial',
+                'explanation' => 'From 1864 to 1867, representatives of Nova Scotia, New Brunswick and the Province of Canada, with British support, worked together to establish a new country. These men are known as the Fathers of Confederation. They created two levels of government: federal and provincial.'
+              ],
+              [
+                'question' => 'Who assigned Canada’s national colours (white and red) in 1921?',
+                'answer' => 'King George V',
+                'explanation' => 'King George V assigned Canada’s national colours (white and red) in 1921, the colours of our national flag today.'
+              ],
+              [
+                'question' => 'Which natives were hunter-gatherers?',
+                'answer' => 'The Cree and Dene of the Northwest',
+                'explanation' => 'The Cree and Dene of the Northwest were hunter-gatherers. The Sioux were nomadic, following the bison (buffalo) herd.'
+              ],
+              [
+                'question' => 'Who became the first French-Canadian prime minister since Confederation?',
+                'answer' => 'Sir Wilfrid Laurier',
+                'explanation' => 'Sir Wilfrid Laurier became the first French-Canadian prime minister since Confederation and encouraged immigration to the West. His portrait is on the $5 bill.'
+              ],
+              [
+                'question' => 'What do Canadians wear on Remembrance Day?',
+                'answer' => 'Red poppy',
+                'explanation' => 'Canadians wear the red poppy and observe a moment of silence at the 11th hour of the 11th day of the 11th month to honour the sacrifices of over a million brave men and women who have served, and the 110,000 who have given their lives.'
+              ],
+              [
+                'question' => 'Who declared independence in 1776 and formed the United States?',
+                'answer' => 'The thirteen British colonies to the south of Quebec',
+                'explanation' => 'In 1776, the 13 British colonies to the south of Quebec declared independence and formed the United States. North America was again divided by war. More than 40,000 people loyal to the Crown, called “Loyalists,” fled the oppression of the American Revolution to settle in Nova Scotia and Quebec.'
+              ],
+              [
+                'question' => 'What was the name of the free association of states that the British Empire had evolved into after the First World War?',
+                'answer' => 'The British Commonwealth of Nations',
+                'explanation' => 'After the First World War, the British Empire evolved into a free association of states known as the British Commonwealth of Nations. Canada remains a leading member of the Commonwealth to this day, together with other successor states of the Empire such as India, Australia, New Zealand, and several African and Caribbean countries.'
+              ],
+              [
+                'question' => 'Which natives lived off Arctic wildlife?',
+                'answer' => 'The Inuit',
+                'explanation' => 'The Inuit lived off Arctic wildlife. West Coast natives preserved fish by drying and smoking. Warfare was common among Aboriginal groups as they competed for land, resources, and prestige.'
+              ],
+              [
+                'question' => 'What led to the Great Depression in the 1930s?',
+                'answer' => 'The stock market crash of 1929',
+                'explanation' => 'The stock market crash of 1929 led to the Great Depression or the “Dirty Thirties.” Unemployment reached 27% in 1933 and many businesses were wiped out.'
+              ],
+              [
+                'question' => 'What did Upper Canada mainly consist of?',
+                'answer' => 'Loyalist, Protestant and English-speaking people',
+                'explanation' => 'The Constitutional Act of 1791 divided the Province of Quebec into Upper Canada (later Ontario), which was mainly Loyalist, Protestant and English-speaking.'
+              ],
+              [
+                'question' => 'Which British North American colony was the first to attain full responsible government?',
+                'answer' => 'Nova Scotia',
+                'explanation' => 'The first British North American colony to attain full responsible government was Nova Scotia in 1847–48. In 1848–49 the governor of United Canada, Lord Elgin, with encouragement from London, introduced responsible government.'
+              ],
+              [
+                'question' => 'Where was the new British colony for freed slaves?',
+                'answer' => 'Sierra Leone (West Africa)',
+                'explanation' => 'About 3,000 black Loyalists, freedmen, and slaves came north seeking a better life. In turn, in 1792, some black Nova Scotians, who were given poor land, moved on to establish Freetown, Sierra Leone (West Africa), a new British colony for freed slaves.'
+              ],
+              [
+                'question' => 'Who battled for control of North America in the 1700s?',
+                'answer' => 'France and Great Britain',
+                'explanation' => 'In the 1700s France and Great Britain battled for control of North America. In 1759, the British defeated the French in the Battle of the Plains of Abraham at Québec City — marking the end of France’s empire in America.'
+              ],
+              [
+                'question' => 'What did Lower Canada mainly consist of?',
+                'answer' => 'Catholic and French-speaking people',
+                'explanation' => 'The Constitutional Act of 1791 divided the Province of Quebec into Upper Canada (later Ontario), which was mainly Loyalist, Protestant and English-speaking, and Lower Canada (later Quebec), heavily Catholic and French-speaking.'
+              ],
+              [
+                'question' => 'What did Great Britain rename the French colony of the 1700s?',
+                'answer' => 'The "Province of Quebec"',
+                'explanation' => 'Following the war, Great Britain renamed the colony the “Province of Quebec.” The French-speaking Catholic people, known as habitants or Canadiens, strove to preserve their way of life in the English-speaking, Protestant-ruled British Empire.'
+              ],
+              [
+                'question' => 'What is known as the women’s suffrage movement?',
+                'answer' => 'The effort by women to achieve the right to vote',
+                'explanation' => 'The effort by women to achieve the right to vote is known as the women’s suffrage movement. Its founder in Canada was Dr. Emily Stowe, the first Canadian woman to practise medicine in Canada.'
+              ],
+              [
+                'question' => 'What marked the end of France’s empire in America in the 1700s?',
+                'answer' => 'The British defeated the French in the Battle of the Plains of Abraham at Quebec City',
+                'explanation' => 'In the 1700s France and Great Britain battled for control of North America. In 1759, the British defeated the French in the Battle of the Plains of Abraham at Québec City — marking the end of France’s empire in America.'
+              ],
+              [
+                'question' => 'Who battled with the French settlements for a century?',
+                'answer' => 'A confederation of five (later six) First Nations',
+                'explanation' => 'In 1604, the first European settlement north of Florida was established by French explorers Pierre de Monts and Samuel de Champlain, first on St. Croix Island (in present-day Maine), then at Port-Royal, in Acadia (present-day Nova Scotia). In 1608 Champlain built a fortress at what is now Québec City.
+               The colonists struggled against a harsh climate. Champlain allied the colony with the Algonquin, Montagnais and Huron, historic enemies of the Iroquois, a confederation of five (later six) First Nations who battled with the French settlements for a century. The French and the Iroquois made peace in 1701.'
+              ],
+              [
+                'question' => 'What did the Battle of Trafalgar (1805) represent?',
+                'answer' => 'The defeat of Napoleon Bonaparte\'s fleet',
+                'explanation' => 'After the defeat of Napoleon Bonaparte’s fleet in the Battle of Trafalgar (1805), the Royal Navy ruled the waves. The British Empire, which included Canada, fought to resist Bonaparte’s bid to dominate Europe.'
+              ],
+              [
+                'question' => 'What was Pierre Le Moyne famous for?',
+                'answer' => 'He was a great hero of New France, winning many victories over the English in the late 17th and early 18th centuries',
+                'explanation' => 'Pierre Le Moyne was a great hero of New France, winning many victories over the English, from James Bay in the north to Nevis in the Caribbean, in the late 17th and early 18th centuries.'
+              ],
+              [
+                'question' => 'What were the men who worked together to establish Canada called?',
+                'answer' => 'The Fathers of Confederation',
+                'explanation' => 'The Fathers of Confederation established the Dominion of Canada on July 1, 1867, the birth of the country that we know today.'
+              ],
+              [
+                'question' => 'What is the Royal Canadian Mounted Police?',
+                'answer' => 'A national police force',
+                'explanation' => 'Today, the Royal Canadian Mounted Police (RCMP or “the Mounties”) are the national police force and one of Canada’s best-known symbols.'
+              ],
+              [
+                'question' => 'Who composed the poem "In Flanders Fields" that is often recited on Remembrance Day?',
+                'answer' => 'Lt. Col. John McCrae',
+                'explanation' => 'Canadian medical officer Lieutenant Colonel John McCrae composed the poem “In Flanders Fields” in 1915; it is often recited on Remembrance Day.'
+              ],
+              [
+                'question' => 'Who suggested the term, "Dominion of Canada" in 1864?',
+                'answer' => 'Sir Leonard Tilley',
+                'explanation' => 'Sir Leonard Tilley, an elected official and Father of Confederation from New Brunswick, suggested the term Dominion of Canada in 1864. He was inspired by Psalm 72 in the Bible which refers to “dominion from sea to sea and from the river to the ends of the earth.” This phrase embodied the vision of building a powerful, united, wealthy and free country that spanned a continent.'
+              ],
+              [
+                'question' => 'Who was Lieutenant Colonel John Graves Simcoe?',
+                'answer' => 'Upper Canada\'s first Lieutenant Governor and founder of the City of Toronto',
+                'explanation' => 'Lieutenant-Colonel John Graves Simcoe was Upper Canada’s first Lieutenant Governor and founder of the City of York (now Toronto). Simcoe also made Upper Canada the first province in the British Empire to abolish slavery.'
+              ],
+              [
+                'question' => 'Who was Canada’s greatest soldier during the First World War?',
+                'answer' => 'General Sir Arthur Currie',
+                'explanation' => 'In 1918, under the command of General Sir Arthur Currie, Canada’s greatest soldier, the Canadian Corps advanced alongside the French and British Empire troops in the last hundred days.'
+              ],
+              [
+                'question' => 'With whose expedition did European exploration begin in Canada?',
+                'answer' => 'John Cabot',
+                'explanation' => 'European exploration began in earnest in 1497 with the expedition of John Cabot, who was the first to draw a map of Canada’s East Coast.'
+              ],
+              [
+                'question' => 'Why is the British North America Act important in Canadian history?',
+                'answer' => 'The Act officially made Canada a self-governing Dominion',
+                'explanation' => 'The Dominion of Canada was officially born on July 1, 1867. Until 1982, July 1 was celebrated as “Dominion Day” to commemorate the day that Canada became a self-governing Dominion. Today it is officially known as Canada Day.'
+              ],
+              [
+                'question' => 'Who was the key architect of Confederation from Quebec?',
+                'answer' => 'Sir George-Etienne Cartier',
+                'explanation' => 'Sir George-Étienne Cartier was the key architect of Confederation from Quebec. A railway lawyer, Montrealer, close ally of Macdonald and patriotic Canadien, Cartier led Quebec into Confederation and helped negotiate the entry of the Northwest Territories, Manitoba and British Columbia into Canada.'
+              ],
+              [
+                'question' => 'What is the significance of "l’Anse aux Meadows"?',
+                'answer' => 'It is a World Heritage site where can be found the remains of the Vikings from Iceland who reached Labrador and the island of Newfoundland 1,000 years ago',
+                'explanation' => 'The Vikings from Iceland who colonized Greenland 1,000 years ago also reached Labrador and the island of Newfoundland. The remains of their settlement, l’Anse aux Meadows, are a World Heritage site.'
+              ],
+              [
+                'question' => 'What does "Confederation" mean?',
+                'answer' => 'The joining of several provinces to form a new country',
+                'explanation' => 'The old Province of Canada was split into two new provinces: Ontario and Quebec, which, together with New Brunswick and Nova Scotia, formed the new country called the Dominion of Canada.'
+              ],
+              [
+                'question' => 'Who was the first European to explore the St. Lawrence River?',
+                'answer' => 'Jacques Cartier',
+                'explanation' => 'Jacques Cartier was the first European to explore the St. Lawrence River and to set eyes on present-day Québec City and Montreal.'
+              ],
+              [
+                'question' => 'Who was the first European to see present-day Quebec City and Montreal?',
+                'answer' => 'Jacques Cartier',
+                'explanation' => 'Jacques Cartier was the first European to explore the St. Lawrence River and to set eyes on present-day Québec City and Montreal.'
+              ],
+              [
+                'question' => 'Who had the reputation of being the "shock troops of the British Empire"?',
+                'answer' => 'The Canadian troops',
+                'explanation' => 'The Canadian Corps captured Vimy Ridge in April 1917, with 10,000 killed or wounded, securing the Canadians’ reputation for valour as the “shock troops of the British Empire.”'
+              ],
+              [
+                'question' => 'Who led thousands of Loyalist Mohawk Indians into Canada in 1776?',
+                'answer' => 'Joseph Brant',
+                'explanation' => 'Joseph Brant led thousands of Loyalist Mohawk Indians into Canada. The Loyalists came from Dutch, German, British, Scandinavian, Aboriginal and other origins and from Presbyterian, Anglican, Baptist, Methodist, Jewish, Quaker and Catholic religious backgrounds.'
+              ],
+              [
+                'question' => 'What is the "Dominion of Canada"?',
+                'answer' => 'The name of the new country formed in 1867 known today as Canada',
+                'explanation' => 'The old Province of Canada was split into two new provinces: Ontario and Quebec, which, together with New Brunswick and Nova Scotia, formed the new country called the Dominion of Canada.'
+              ],
+              [
+                'question' => 'Who defended the rights of the Canadiens and defeated an American military invasion of Quebec in 1775?',
+                'answer' => 'Sir Guy Carleton',
+                'explanation' => 'Sir Guy Carleton (Lord Dorchester), as Governor of Quebec, defended the rights of the Canadiens, defeated an American military invasion of Quebec in 1775, and supervised the Loyalist migration to Nova Scotia and Quebec in 1782–83.'
+              ],
+              [
+                'question' => 'Who were the first Europeans to reach Canada?',
+                'answer' => 'Vikings',
+                'explanation' => 'The Vikings from Iceland who colonized Greenland 1,000 years ago also reached Labrador and the island of Newfoundland. The remains of their settlement, l’Anse aux Meadows, are a World Heritage site.'
+              ],
+              [
+                'question' => 'What was known as "British North America" in 1791?',
+                'answer' => 'The Atlantic colonies and the two Canadas (upper and lower)',
+                'explanation' => 'The Constitutional Act of 1791 granted to the Canadas, for the first time, legislative assemblies elected by the people. The name Canada also became official at this time and has been used ever since. The Atlantic colonies and the two Canadas were known collectively as British North America.'
+              ],
+              [
+                'question' => 'Who were known as "habitants" or "Canadiens"?',
+                'answer' => 'The French-speaking Catholic people',
+                'explanation' => 'Following the war, Great Britain renamed the colony the “Province of Quebec.” The French-speaking Catholic people, known as habitants or Canadiens, strove to preserve their way of life in the English-speaking, Protestant-ruled British Empire.'
+              ],
+              [
+                'question' => 'Whose portrait is on the Canadian $10 bill?',
+                'answer' => 'Sir John Alexander Macdonald',
+                'explanation' => 'Sir John Alexander Macdonald was a lawyer in Kingston, Ontario, a gifted politician and a colourful personality. Parliament has recognized January 11 as Sir John A. Macdonald Day. His portrait is on the $10 bill.'
+              ],
+              [
+                'question' => 'Who was the first to map Canada’s Atlantic shore?',
+                'answer' => 'John Cabot',
+                'explanation' => 'John Cabot, an Italian immigrant to England, was the first to map Canada’s Atlantic shore, setting foot on Newfoundland or Cape Breton Island in 1497 and claiming the New Founde Land for England.'
+              ],
+              [
+                'question' => 'Who defeated Napoleon in 1815, and therefore played a direct role in founding the national capital?',
+                'answer' => 'The Duke of Wellington',
+                'explanation' => 'The Duke of Wellington sent some of his best soldiers to defend Canada in 1814. He then chose Bytown (Ottawa) as the endpoint of the Rideau Canal, part of a network of forts to prevent the U.S.A. from invading Canada again. Wellington, who defeated Napoleon in 1815, therefore played a direct role in founding the national capital.'
+              ],
+              [
+                'question' => 'What is the system "if the government loses a confidence vote in the assembly it must resign" called?',
+                'answer' => 'A responsible government',
+                'explanation' => 'This is the system that we have today: if the government loses a confidence vote in the assembly it must resign.'
+              ],
+              [
+                'question' => 'Who defeated Napoleon in 1815?',
+                'answer' => 'The Duke of Wellington',
+                'explanation' => 'The Duke of Wellington sent some of his best soldiers to defend Canada in 1814. He then chose Bytown (Ottawa) as the endpoint of the Rideau Canal, part of a network of forts to prevent the U.S.A. from invading Canada again. Wellington, who defeated Napoleon in 1815, therefore played a direct role in founding the national capital.'
+              ],
+              [
+                'question' => 'Who was Canada’s First Prime Minister?',
+                'answer' => 'Sir John Alexander Macdonald',
+                'explanation' => 'In 1867, Sir John Alexander Macdonald, a Father of Confederation, became Canada’s first Prime Minister. Born in Scotland on January 11, 1815, he came to Upper Canada as a child.'
+              ],
+              [
+                'question' => 'Who established the first European settlements?',
+                'answer' => 'The French',
+                'explanation' => 'In 1604, the first European settlement north of Florida was established by French explorers Pierre de Monts and Samuel de Champlain, first on St. Croix Island (in present-day Maine), then at Port-Royal, in Acadia (present-day Nova Scotia).'
+              ],
+              [
+                'question' => 'Where does the name "Canada" come from?',
+                'answer' => 'From the Iroquoian word "kanata", meaning "village"',
+                'explanation' => 'Cartier heard two captured guides speak the Iroquoian word kanata, meaning “village.” By the 1550s, the name of Canada began appearing on maps.'
+              ],
+              [
+                'question' => 'Who made Upper Canada the first province in the British Empire to abolish slavery?',
+                'answer' => 'Lieutenant Colonel John Graves Simcoe',
+                'explanation' => 'Lieutenant-Colonel John Graves Simcoe was Upper Canada’s first Lieutenant Governor and founder of the City of York (now Toronto). Simcoe also made Upper Canada the first province in the British Empire to abolish slavery.'
+              ],
+              [
+                'question' => 'Who was the founder of the women’s suffrage movement?',
+                'answer' => 'Dr. Emily Stowe',
+                'explanation' => 'The effort by women to achieve the right to vote is known as the women’s suffrage movement. Its founder in Canada was Dr. Emily Stowe, the first Canadian woman to practise medicine in Canada.'
+              ],
+              [
+                'question' => 'Which phrase embodied the vision for the Dominion of Canada?',
+                'answer' => '"Dominion from sea to sea and from the river to the ends of the earth"',
+                'explanation' => 'Sir Leonard Tilley, an elected official and Father of Confederation from New Brunswick, suggested the term Dominion of Canada in 1864. He was inspired by Psalm 72 in the Bible which refers to “dominion from sea to sea and from the river to the ends of the earth.” This phrase embodied the vision of building a powerful, united, wealthy and free country that spanned a continent.'
+              ]
+            ]
           ],
           [
             'image' => '/images/chap 6.png',
@@ -4496,6 +5354,143 @@ class DatabaseSeeder extends Seeder
               ['name' => 'Touch Point'],
               ['name' => 'The Timeline'],
             ],
+            'flashcards' => [
+              [
+                'question' => 'Which famous Canadian artist painted the forests and Aboriginal artifacts of the West Coast?',
+                'answer' => 'Emily Carr',
+                'explanation' => 'In the visual arts, Canada is historically perhaps best known for the Group of Seven, founded in 1920, who developed a style of painting to capture the rugged wilderness landscapes. Emily Carr painted the forests and Aboriginal artifacts of the West Coast.'
+              ],
+              [
+                'question' => 'Which Act guarantees French and English services in the federal government across Canada?',
+                'answer' => 'The Official Languages Act',
+                'explanation' => 'In 1963 Parliament established the Royal Commission on Bilingualism and Biculturalism. This led to the Official Languages Act (1969), which guarantees French and English services in the federal government across Canada.'
+              ],
+              [
+                'question' => 'Who was Upper Canada’s first Lieutenant Governor and founder of the City of York (now Toronto)?',
+                'answer' => 'Lieutenant Colonel John Graves Simcoe',
+                'explanation' => 'Lieutenant-Colonel John Graves Simcoe was Upper Canada’s first Lieutenant Governor and founder of the City of York (now Toronto). Simcoe also made Upper Canada the first province in the British Empire to abolish slavery.'
+              ],
+              [
+                'question' => 'Who created insulin?',
+                'answer' => 'Sir Frederick Banting and Charles Best',
+                'explanation' => 'Sir Frederick Banting of Toronto and Charles Best discovered insulin, a hormone to treat diabetes that has saved 16 million lives worldwide.'
+              ],
+              [
+                'question' => 'Who were pioneers of modern abstract art in the 1950s?',
+                'answer' => 'Les Automatistes of Quebec',
+                'explanation' => 'Les Automatistes of Quebec were pioneers of modern abstract art in the 1950s, most notably Jean-Paul Riopelle.'
+              ],
+              [
+                'question' => 'Who invented the worldwide system of standard time zones?',
+                'answer' => 'Sir Sandford Fleming',
+                'explanation' => 'Sir Sandford Fleming, a Canadian engineer, was the first person to propose the use of worldwide time zones.'
+              ],
+              [
+                'question' => 'Who were the Group of Seven?',
+                'answer' => 'Canadian visual art artists who developed a certain style of painting',
+                'explanation' => 'In the visual arts, Canada is historically perhaps best known for the Group of Seven, founded in 1920, who developed a style of painting to capture the rugged wilderness landscapes.'
+              ],
+              [
+                'question' => 'Who pioneered modern Inuit art?',
+                'answer' => 'Kenojuak Ashevak',
+                'explanation' => 'Kenojuak Ashevak pioneered modern Inuit art with etchings, prints and soapstone sculptures.'
+              ],
+              [
+                'question' => 'By the 1960s, how many Canadians had origins that were neither British nor French?',
+                'answer' => 'One-third',
+                'explanation' => 'By the 1960s, one-third of Canadians had origins that were neither British nor French, and took pride in preserving their distinct culture in the Canadian fabric.'
+              ],
+              [
+                'question' => 'How were the laws impacted by the Quebec Act of 1774?',
+                'answer' => 'The Act restored French civil law while maintaining British criminal law',
+                'explanation' => 'To better govern the French Roman Catholic majority, the British Parliament passed the Quebec Act of 1774. One of the constitutional foundations of Canada, the Quebec Act accommodated the principles of British institutions to the reality of the province. It allowed religious freedom for Catholics and permitted them to hold public office, a practice not then allowed in Britain.'
+              ],
+              [
+                'question' => 'Who invented Basketball?',
+                'answer' => 'James Naismith',
+                'explanation' => 'Basketball was invented by Canadian James Naismith in 1891.'
+              ],
+              [
+                'question' => 'Why do Canadians enjoy one of the world’s highest standards of living?',
+                'answer' => 'By working hard and by trading with other nations',
+                'explanation' => 'Canadians enjoy one of the world’s highest standards of living—maintained by the hard work of Canadians and by trade with other nations, in particular the United States.'
+              ],
+              [
+                'question' => 'Who were the "voyageurs" and "coureurs des bois"?',
+                'answer' => 'The skilled and courageous men who traveled by canoe and formed strong alliances with First Nations',
+                'explanation' => 'In 1670, King Charles II of England granted the Hudson’s Bay Company exclusive trading rights over the watershed draining into Hudson Bay. For the next 100 years the Company competed with Montreal-based traders. The skilled and courageous men who traveled by canoe were called voyageurs and coureurs des bois, and formed strong alliances with First Nations.'
+              ],
+              [
+                'question' => 'What began Canada’s modern energy industry in 1947?',
+                'answer' => 'The discovery of oil in Alberta',
+                'explanation' => 'The discovery of oil in Alberta in 1947 began Canada’s modern energy industry.'
+              ],
+              [
+                'question' => 'Who is known as "the greatest living Canadian"?',
+                'answer' => 'Dr. Wilder Penfield',
+                'explanation' => 'Dr. Wilder Penfield was a pioneering brain surgeon at McGill University in Montreal, and was known as “the greatest living Canadian.”'
+              ],
+              [
+                'question' => 'What does the Canada Health Act ensure?',
+                'answer' => 'Common elements and a basic standard of coverage',
+                'explanation' => 'As prosperity grew, so did the ability to support social assistance programs. The Canada Health Act ensures common elements and a basic standard of coverage.'
+              ],
+              [
+                'question' => 'Which natives preserved fish by drying and smoking?',
+                'answer' => 'West Coast natives',
+                'explanation' => 'West Coast natives preserved fish by drying and smoking.'
+              ],
+              [
+                'question' => 'What was the "Quiet Revolution"?',
+                'answer' => 'An era of rapid change in the 1960s in Quebec',
+                'explanation' => 'French-Canadian society and culture flourished in the postwar years. Quebec experienced an era of rapid change in the 1960s known as the Quiet Revolution. Many Quebecers sought to separate from Canada.'
+              ],
+              [
+                'question' => 'Who was Mary Ann (Shadd) Carey?',
+                'answer' => 'An anti-slavery activist and the first woman publisher in Canada',
+                'explanation' => 'Mary Ann Shadd Cary was an outspoken activist in the movement to abolish slavery in the U.S.A. In 1853 she became the first woman publisher in Canada, helping to found and edit The Provincial Freeman, a weekly newspaper dedicated to anti-slavery, black immigration to Canada, temperance (urging people to drink less alcohol) and upholding British rule.'
+              ],
+              [
+                'question' => 'Who invented the first cardiac pacemaker?',
+                'answer' => 'Dr. John A. Hopps',
+                'explanation' => 'Dr. John A. Hopps invented the first cardiac pacemaker, used today to save the lives of people with heart disorders.'
+              ],
+              [
+                'question' => 'Which Canadian circled the globe in a wheelchair to raise funds for spinal cord research?',
+                'answer' => 'Rick Hansen',
+                'explanation' => 'In 1985, fellow British Columbian Rick Hansen circled the globe in a wheelchair to raise funds for spinal cord research.'
+              ],
+              [
+                'question' => 'Whose films have been popular in Quebec and across the country, and have won international awards?',
+                'answer' => 'The films of Denys Arcand',
+                'explanation' => 'The films of Denys Arcand have been popular in Quebec and across the country, and have won international awards. Other noteworthy Canadian filmmakers include Norman Jewison and Atom Egoyan. Canadian television has had a popular following.'
+              ],
+              [
+                'question' => 'What was the name of the war that began when several liberated countries of Eastern Europe became part of a Communist bloc controlled by the Soviet Union?',
+                'answer' => 'The Cold War',
+                'explanation' => 'The Cold War began when several liberated countries of eastern Europe became part of a Communist bloc controlled by the Soviet Union under the dictator Josef Stalin.'
+              ],
+              [
+                'question' => 'What is the current name of the fortress that Samuel de Champlain built in 1608?',
+                'answer' => 'Quebec City',
+                'explanation' => 'In 1604, the first European settlement north of Florida was established by French explorers Pierre de Monts and Samuel de Champlain, first on St. Croix Island (in present-day Maine), then at Port-Royal, in Acadia (present-day Nova Scotia). In 1608 Champlain built a fortress at what is now Québec City.'
+              ],
+              [
+                'question' => 'Who invented the telephone?',
+                'answer' => 'Alexander Graham Bell',
+                'explanation' => 'Alexander Graham Bell hit on the idea of the telephone at his summer house in Canada.'
+              ],
+              [
+                'question' => 'Who established the first European settlement north of Florida in 1604?',
+                'answer' => 'Pierre de Monts and Samuel de Champlain',
+                'explanation' => 'In 1604, the first European settlement north of Florida was established by French explorers Pierre de Monts and Samuel de Champlain, first on St. Croix Island (in present-day Maine), then at Port-Royal, in Acadia (present-day Nova Scotia).'
+              ],
+              [
+                'question' => 'Who was a celebrated sculptor of historical figures?',
+                'answer' => 'Louis-Philippe Hébert',
+                'explanation' => 'Quebec’s Louis-Philippe Hébert was a celebrated sculptor of historical figures.'
+              ],
+            ]
           ],
           [
             'image' => '/images/chap 7.png',
@@ -5615,6 +6610,248 @@ class DatabaseSeeder extends Seeder
               ['name' => 'How Canadians Govern Themselves	'],
               ['name' => 'The Timeline'],
             ],
+            'flashcards' => [
+              [
+                'question' => 'What is the shared jurisdiction of the federal and provincial governments?',
+                'answer' => 'Agriculture and immigration',
+                'explanation' => 'The federal government and the provinces share jurisdiction over agriculture and immigration.'
+              ],
+              [
+                'question' => 'What are the three branches of the Canadian government?',
+                'answer' => 'Executive, Legislative and Judicial',
+                'explanation' => 'Canada’s system of government has three branches: the legislative, the executive and the judicial. Each one has separate powers and responsibilities that are defined in the Constitution: the legislative branch passes laws, the executive implements them, and the judicial interprets them.'
+              ],
+              [
+                'question' => 'What are the two official languages of Canada?',
+                'answer' => 'French and English',
+                'explanation' => 'English and French are the two official languages in Canada and are important symbols of identity.'
+              ],
+              [
+                'question' => 'What are the three parts of Parliament?',
+                'answer' => 'Sovereign, Senate and House of Commons',
+                'explanation' => 'Parliament has three parts: the Sovereign (Queen or King), the Senate and the House of Commons. Provincial legislatures comprise the Lieutenant Governor and the elected Assembly.'
+              ],
+              [
+                'question' => 'What comprises a provincial legislature?',
+                'answer' => 'The Lieutenant Governor and the elected Assembly',
+                'explanation' => 'Parliament has three parts: the Sovereign (Queen or King), the Senate and the House of Commons. Provincial legislatures comprise the Lieutenant Governor and the elected Assembly.'
+              ],
+              [
+                'question' => 'Who is Canada’s head of government?',
+                'answer' => 'The Prime Minister',
+                'explanation' => 'There is a clear distinction in Canada between the head of state—the Sovereign—and the head of government—the Prime Minister, who actually directs the governing of the country.'
+              ],
+              [
+                'question' => 'What are the three key facts about Canada’s system of government?',
+                'answer' => 'Canada is a federal state, a parliamentary democracy and a constitutional monarchy',
+                'explanation' => 'Canada is a constitutional monarchy, a parliamentary democracy and a federal state. Canadians are bound together by a shared commitment to the rule of law and to the institutions of parliamentary government.'
+              ],
+              [
+                'question' => 'What is the difference between the Head of State and the Head of Government?',
+                'answer' => 'The Head of Government actually directs the governing of the country',
+                'explanation' => 'There is a clear distinction in Canada between the head of state—the Sovereign—and the head of government—the Prime Minister, who actually directs the governing of the country.'
+              ],
+              [
+                'question' => 'What is the name of the highest judiciary court in Canada?',
+                'answer' => 'The Supreme Court',
+                'explanation' => 'The Supreme Court of Canada is our country’s highest court. The Federal Court of Canada deals with matters concerning the federal government.'
+              ],
+              [
+                'question' => 'How are senators chosen?',
+                'answer' => 'They are appointed by the Governor General on the advice of the Prime Minister',
+                'explanation' => 'Senators are appointed by the Governor General on the advice of the Prime Minister and serve until age 75.'
+              ],
+              [
+                'question' => 'What would best describe the role of the King or Queen in Canada?',
+                'answer' => 'The Queen or King is a symbol of Canadian sovereignty and a guardian of constitutional freedoms',
+                'explanation' => 'The King or Queen is a symbol of Canadian sovereignty, a guardian of constitutional freedoms, and a reflection of our history.'
+              ],
+              [
+                'question' => 'What is a "hereditary Sovereign"?',
+                'answer' => 'A Queen or a King',
+                'explanation' => 'As a constitutional monarchy, Canada’s Head of State is a hereditary Sovereign (Queen or King), who reigns in accordance with the Constitution: the rule of law.'
+              ],
+              [
+                'question' => 'In the territories, who represents the government?',
+                'answer' => 'The Commissioner',
+                'explanation' => 'In the three territories, the Commissioner represents the federal government and plays a ceremonial role.'
+              ],
+              [
+                'question' => 'Who appoints the judges on the Supreme Court of Canada?',
+                'answer' => 'The Governor General',
+                'explanation' => 'The Governor General is responsible for appointing judges to the Supreme Court of Canada.'
+              ],
+              [
+                'question' => 'For a bill to become a law, how many readings must it go through?',
+                'answer' => 'Three',
+                'explanation' => 'A bill must go through three readings: First Reading, Second Reading, and Third Reading, in both the House of Commons and the Senate, before receiving royal assent.'
+              ],
+              [
+                'question' => 'How does a bill become a law?',
+                'answer' => 'The bill must be passed by the House of Commons and the Senate, and must receive royal assent',
+                'explanation' => 'No bill can become law in Canada until it has been passed by both the House of Commons and the Senate, and has received royal assent from the Governor General.'
+              ],
+              [
+                'question' => 'What does "parliamentary democracy" mean?',
+                'answer' => 'The people elect members to the House of Commons in Ottawa and to the provincial and territorial legislatures',
+                'explanation' => 'In Canada’s parliamentary democracy, the people elect members to the House of Commons in Ottawa and to the provincial and territorial legislatures.'
+              ],
+              [
+                'question' => 'Who is the Sovereign represented by in Canada?',
+                'answer' => 'The Governor General',
+                'explanation' => 'The Sovereign is represented in Canada by the Governor General, who is appointed by the Sovereign on the advice of the Prime Minister, usually for five years.'
+              ],
+              [
+                'question' => 'What is often referred to as "the goal heard around the world"?',
+                'answer' => 'The winning goal for Canada in the Canada-Soviet Summit Series in 1972',
+                'explanation' => 'In 1972, Paul Henderson scored the winning goal for Canada in the Canada-Soviet Summit Series. This goal is often referred to as “the goal heard around the world” and is still remembered today as an important event in both sports and cultural history.'
+              ],
+              [
+                'question' => 'What is a proposal for a new law called?',
+                'answer' => 'A bill',
+                'explanation' => 'A proposal for a new law is called a bill.'
+              ],
+              [
+                'question' => 'For what are the provincial governments responsible?',
+                'answer' => 'Education, health, natural resources, property, civil rights, and highways',
+                'explanation' => 'Provincial governments in Canada are responsible for municipal government, education, health, natural resources, property and civil rights, and highways.'
+              ],
+              [
+                'question' => 'What are the levels of government in Canada?',
+                'answer' => 'Federal, provincial, territorial and municipal',
+                'explanation' => 'There are federal, provincial, territorial and municipal governments in Canada. The responsibilities of the federal and provincial governments were defined in 1867 in the British North America Act, now known as the Constitution Act, 1867.'
+              ],
+              [
+                'question' => 'What does "federalism" do?',
+                'answer' => 'Allows different provinces to adopt policies tailored to their own populations',
+                'explanation' => 'Federalism allows different provinces to adopt policies tailored to their own populations, and gives provinces the flexibility to experiment with new ideas and policies.'
+              ],
+              [
+                'question' => 'Why is Terry Fox a Canadian national hero?',
+                'answer' => 'He inspired people to contribute money for cancer research',
+                'explanation' => 'In 1980, Terry Fox, a British Columbian who lost his right leg to cancer at the age of 18, began a cross-country run, the “Marathon of Hope,” to raise money for cancer research.'
+              ],
+              [
+                'question' => 'What happens if the cabinet ministers are defeated in a non-confidence vote?',
+                'answer' => 'They have to resign',
+                'explanation' => 'If the government loses a confidence vote in the assembly it must resign.'
+              ],
+              [
+                'question' => 'Who invented the snowmobile?',
+                'answer' => 'Joseph-Armand Bombardier',
+                'explanation' => 'Joseph-Armand Bombardier invented the snowmobile, a light-weight winter vehicle.'
+              ],
+              [
+                'question' => 'What is the "House of Commons"?',
+                'answer' => 'The representative chamber made up of members of Parliament',
+                'explanation' => 'The House of Commons is the representative chamber, made up of members of Parliament elected by the people, traditionally every four years.'
+              ],
+              [
+                'question' => 'How is the Lieutenant Governor chosen?',
+                'answer' => 'Appointed by the Governor General on the advice of the Prime Minister',
+                'explanation' => 'The Lieutenant Governor is appointed by the Governor General on the advice of the Prime Minister, also normally for five years.'
+              ],
+              [
+                'question' => 'What form of government does Canada have?',
+                'answer' => 'Constitutional Monarchy',
+                'explanation' => 'Canada is a constitutional monarchy, a parliamentary democracy and a federal state. Canadians are bound together by a shared commitment to the rule of law and to the institutions of parliamentary government.'
+              ],
+              [
+                'question' => 'What is the head of a province called?',
+                'answer' => 'The Premier',
+                'explanation' => 'In each province, the Premier has a role similar to that of the Prime Minister in the federal government, just as the Lieutenant Governor has a role similar to that of the Governor General.'
+              ],
+              [
+                'question' => 'How often are members of Parliament elected?',
+                'answer' => 'Four years',
+                'explanation' => 'Members of Parliament are elected every four years to the House of Commons.'
+              ],
+              [
+                'question' => 'What does it mean for the Cabinet Ministers to retain the "confidence of the House"?',
+                'answer' => 'Cabinet ministers have to resign if they are defeated in a non-confidence vote',
+                'explanation' => 'Cabinet ministers are responsible to the elected representatives, which means they must retain the “confidence of the House” and have to resign if they are defeated in a non-confidence vote.'
+              ],
+              [
+                'question' => 'What are the responsibilities of the federal government?',
+                'answer' => 'Matters of national and international concern',
+                'explanation' => 'In our federal state, the federal government takes responsibility for matters of national and international concern.'
+              ],
+              [
+                'question' => 'Where are the provincial and territorial laws passed?',
+                'answer' => 'In the elected legislature',
+                'explanation' => 'Each provincial and territorial government has an elected legislature where provincial and territorial laws are passed.'
+              ],
+              [
+                'question' => 'What does it mean to retain the "confidence of the House"?',
+                'answer' => 'Cabinet ministers are responsible to the elected representatives',
+                'explanation' => 'Cabinet ministers are responsible to the elected representatives, which means they must retain the “confidence of the House” and have to resign if they are defeated in a non-confidence vote.'
+              ],
+              [
+                'question' => 'Who considers and reviews proposals for new laws?',
+                'answer' => 'The House of Commons and the Senate',
+                'explanation' => 'Both the House of Commons and the Senate consider and review bills (proposals for new laws).'
+              ],
+              [
+                'question' => 'To how many other Commonwealth nations is Canada linked?',
+                'answer' => '53',
+                'explanation' => 'As Head of the Commonwealth, the Sovereign links Canada to 53 other nations that cooperate to advance social, economic and cultural progress.'
+              ],
+              [
+                'question' => 'How is the Governor General chosen?',
+                'answer' => 'Appointed by the Sovereign on the advice of the Prime Minister',
+                'explanation' => 'The Governor General is appointed by the Sovereign on the advice of the Prime Minister, usually for five years.'
+              ],
+              [
+                'question' => 'Where are the Parliament buildings located?',
+                'answer' => 'Ottawa',
+                'explanation' => 'The Parliament Buildings are located in Ottawa, Ontario.'
+              ],
+              [
+                'question' => 'What do you call the King’s or Queen’s representative in the provinces?',
+                'answer' => 'Lieutenant Governor',
+                'explanation' => 'The Sovereign is represented in Canada by the Governor General, who is appointed by the Sovereign on the advice of the Prime Minister, usually for five years. In each of the ten provinces, the Sovereign is represented by the Lieutenant Governor, who is appointed by the Governor General on the advice of the Prime Minister, also normally for five years.'
+              ],
+              [
+                'question' => 'How many judges on the Supreme Court of Canada are appointed by the Governor General?',
+                'answer' => 'Nine',
+                'explanation' => 'The Court was originally composed of six judges. In 1927, the number of Supreme Court judges was raised to seven, and the Court reached its present total of nine members in 1949.'
+              ],
+              [
+                'question' => 'How can a bill become a law in Canada?',
+                'answer' => 'It is passed by both chambers and receives royal assent',
+                'explanation' => 'No bill can become law in Canada until it has been passed by both chambers and has received royal assent, granted by the Governor General on behalf of the Sovereign.'
+              ],
+              [
+                'question' => 'How are Senators appointed?',
+                'answer' => 'By the Governor General on the advice of the Prime Minister',
+                'explanation' => 'Senators are appointed by the Governor General on the advice of the Prime Minister and serve until age 75.'
+              ],
+              [
+                'question' => 'Who selects the Cabinet Ministers?',
+                'answer' => 'The Prime Minister',
+                'explanation' => 'In the federal government, the Prime Minister selects the Cabinet ministers and is responsible for the operations and policy of the government.'
+              ],
+              [
+                'question' => 'What does "federalism" mean?',
+                'answer' => 'The different provinces can adopt policies tailored to their own populations',
+                'explanation' => 'Federalism allows different provinces to adopt policies tailored to their own populations, and gives provinces the flexibility to experiment with new ideas and policies.'
+              ],
+              [
+                'question' => 'For what is the Prime Minister of Canada responsible?',
+                'answer' => 'The operations and policy of the government',
+                'explanation' => 'In the federal government, the Prime Minister selects the Cabinet ministers and is responsible for the operations and policy of the government.'
+              ],
+              [
+                'question' => 'In which Act are the responsibilities of the federal and provincial governments defined?',
+                'answer' => 'The Constitution Act',
+                'explanation' => 'The responsibilities of the federal and provincial governments were defined in 1867 in the British North America Act, now known as the Constitution Act, 1867.'
+              ],
+              [
+                'question' => 'How many territories are there in Canada?',
+                'answer' => 'Three',
+                'explanation' => 'Canada has ten provinces and three territories. Each province and territory has its own capital city. You should know the capital of your province or territory as well as that of Canada.'
+              ],
+            ]
           ],
           [
             'image' => '/images/chap 8.png',
@@ -7073,6 +8310,7 @@ class DatabaseSeeder extends Seeder
             'topics' => [
               ['name' => 'Federal Elections'],
             ],
+
           ],
           [
             'image' => '/images/chap 9.png',

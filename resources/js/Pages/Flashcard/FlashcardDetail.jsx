@@ -74,9 +74,7 @@ export default function FlashcardDetail({
                                 <div className="text-3xl mt-20 font-semibold mb-4 text-zinc-600 text-left">
                                     <h2 className="py-2">Explanation</h2>
                                     <p className="text-lg text-zinc-500 ">
-                                        My husband is very caring loving and
-                                        very handsome man in the world i love
-                                        him countless
+                                        {flashcard.explanation}
                                     </p>
                                 </div>
                             </div>
