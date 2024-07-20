@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\CheckoutRegisteredUserController;
+use App\Http\Controllers\CheatSheetController;
 use App\Http\Controllers\FlashcardController;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\ImageUploadController;
@@ -59,7 +60,7 @@ Route::middleware('auth')->group(function () {
   Route::get('/flashcards', [FlashcardController::class, 'index'])->name('flashcard');
   Route::get('/flashcards/{chapterId}/{flashcardId?}', [FlashcardController::class, 'flashcardList'])->name('flashcardList');
 
-  Route::get('/tools', [ToolsController::class, 'index'])->name('tools');
+  Route::get('/cheat-sheets', [CheatSheetController::class, 'index'])->name('cheatSheets');
   //Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
   Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
   Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

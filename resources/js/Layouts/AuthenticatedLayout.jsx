@@ -17,6 +17,7 @@ import {
 import StudyGuidePanel from "@/Components/SidebarPanel/StudyGuidePanel";
 import ChapterTestPanel from "@/Components/SidebarPanel/ChapterTestPanel";
 import FlashcardPanel from "@/Components/SidebarPanel/FlashcardPanel";
+import CheatSheetPanel from "@/Components/SidebarPanel/CheatSheetPanel";
 
 export default function Authenticated({
     user,
@@ -122,10 +123,10 @@ export default function Authenticated({
                             </Link>
                         </MenuItem>
                         <MenuItem className="w-full m-2" component="span">
-                            <Link href={route("dashboard")}>
+                            <Link href={route("cheatSheets")}>
                                 <button
                                     className={`rounded-full w-40 px-4 py-2 ${
-                                        url.startsWith("/dashboard")
+                                        url.startsWith("/cheat-sheets")
                                             ? "bg-white text-primary"
                                             : "text-white hover:bg-white hover:text-primary"
                                     }`}
@@ -156,6 +157,10 @@ export default function Authenticated({
 
                 {isChapterPanelVisible && url.startsWith("/flashcards") && (
                     <FlashcardPanel chapters={chapters} collapsed={collapsed} />
+                )}
+
+                {isChapterPanelVisible && url.startsWith("/cheat-sheets") && (
+                    <CheatSheetPanel collapsed={collapsed} />
                 )}
 
                 <button
