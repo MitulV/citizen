@@ -8310,7 +8310,298 @@ class DatabaseSeeder extends Seeder
             'topics' => [
               ['name' => 'Federal Elections'],
             ],
-
+            'flashcards' => [
+              [
+                'question' => 'In Canadian politics, what does an MP stand for?',
+                'answer' => 'Member of Parliament',
+                'explanation' => 'An electoral district is a geographical area represented by a member of Parliament (MP).'
+              ],
+              [
+                'question' => 'In Canadian politics, what does MHA stand for?',
+                'answer' => 'Members of the House of Assembly',
+                'explanation' => 'The members of the legislature are called members of the Legislative Assembly (MLAs), members of the National Assembly (MNAs), members of the Provincial Parliament (MPPs) or members of the House of Assembly (MHAs), depending on the province or territory.'
+              ],
+              [
+                'question' => 'What should you do on election day?',
+                'answer' => 'Go to your polling station',
+                'explanation' => 'Go to your polling station. The location is on your voter information card. Bring this card and proof of your identity and address to the polling station.'
+              ],
+              [
+                'question' => 'On election day, what should you bring to the polling station?',
+                'answer' => 'The voter information card and proof of your identity and address',
+                'explanation' => 'On election day, bring the voter information card and proof of your identity and address.'
+              ],
+              [
+                'question' => 'What is the National Register of Electors?',
+                'answer' => 'A database of Canadian citizens 18 years of age or older who are qualified to vote in federal elections and referendums',
+                'explanation' => 'The voters’ lists used during federal elections and referendums are produced from the National Register of Electors by a neutral agency of Parliament called Elections Canada.'
+              ],
+              [
+                'question' => 'What happens if you cannot or do not wish to vote on election day?',
+                'answer' => 'You can vote at the advance polls or by special ballot',
+                'explanation' => 'If you cannot or do not wish to vote on election day, you can vote at the advance polls or by special ballot. The dates and location are on your voter information card.'
+              ],
+              [
+                'question' => 'How does Canada’s Head of State reign?',
+                'answer' => 'In accordance with the Constitution: the rule of law',
+                'explanation' => 'As a constitutional monarchy, Canada’s Head of State is a hereditary Sovereign (Queen or King), who reigns in accordance with the Constitution: the rule of law.'
+              ],
+              [
+                'question' => 'In Canadian politics, what does MPP stand for?',
+                'answer' => 'Members of the Provincial Parliament',
+                'explanation' => 'The members of the legislature are called members of the Legislative Assembly (MLAs), members of the National Assembly (MNAs), members of the Provincial Parliament (MPPs) or members of the House of Assembly (MHAs), depending on the province or territory.'
+              ],
+              [
+                'question' => 'What is the former name of the Constitution Act?',
+                'answer' => 'The British North American Act',
+                'explanation' => 'The responsibilities of the federal and provincial governments were defined in 1867 in the British North America Act, now known as the Constitution Act, 1867.'
+              ],
+              [
+                'question' => 'Who has the right to run as a candidate in federal elections?',
+                'answer' => 'Canadian citizens who are 18 years old or older',
+                'explanation' => 'Canadian citizens who are 18 years old or older may run in a federal election. The people who run for office are called candidates. There can be many candidates in an electoral district.'
+              ],
+              [
+                'question' => 'On election day, what should you do once you mark your ballot?',
+                'answer' => 'Fold it and present it to the poll officials',
+                'explanation' => 'Your vote is secret. You will be invited to go behind the screen to mark your ballot. Once marked, fold it and present it to the poll officials.'
+              ],
+              [
+                'question' => 'How are the results of an election announced in Canada?',
+                'answer' => 'Announced on radio, on television, and in the newspapers',
+                'explanation' => 'Immediately after the polling stations close, election officers count the ballots and the results are announced on radio and television, and in the newspapers.'
+              ],
+              [
+                'question' => 'Who is Canada’s Head of State?',
+                'answer' => 'The King or Queen',
+                'explanation' => 'As a constitutional monarchy, Canada’s Head of State is a hereditary Sovereign (Queen or King), who reigns in accordance with the Constitution: the rule of law.'
+              ],
+              [
+                'question' => 'What do you call the elected officials on a federal level?',
+                'answer' => 'Members of Parliament (MPs)',
+                'explanation' => 'The citizens in each electoral district elect one MP who sits in the House of Commons to represent them, as well as all Canadians.'
+              ],
+              [
+                'question' => 'In Canadian politics, what does MNA stand for?',
+                'answer' => 'Members of the National Assembly',
+                'explanation' => 'The members of the legislature are called members of the Legislative Assembly (MLAs), members of the National Assembly (MNAs), members of the Provincial Parliament (MPPs) or members of the House of Assembly (MHAs), depending on the province or territory.'
+              ],
+              [
+                'question' => 'Into how many electoral districts is Canada divided?',
+                'answer' => '308',
+                'explanation' => 'Canada is divided into 308 electoral districts, also known as ridings or constituencies. An electoral district is a geographical area represented by a member of Parliament (MP).'
+              ],
+              [
+                'question' => 'What is usually the result of a party in power being defeated?',
+                'answer' => 'The Prime Minister asks the Governor General, on behalf of the Sovereign, to call an election',
+                'explanation' => 'If a majority of the members of the House of Commons vote against a major government decision, the party in power is defeated, which usually results in the Prime Minister asking the Governor General, on behalf of the Sovereign, to call an election.'
+              ],
+              [
+                'question' => 'What forms the Cabinet?',
+                'answer' => 'The Prime Minister and the Cabinet ministers',
+                'explanation' => 'The Prime Minister and the Cabinet ministers are called the Cabinet and they make important decisions about how the country is governed.'
+              ],
+              [
+                'question' => 'What is an electoral district?',
+                'answer' => 'A geographical area represented by a member of Parliament',
+                'explanation' => 'An electoral district is a geographical area represented by a member of Parliament (MP).'
+              ],
+              [
+                'question' => 'Who has the right to insist that you tell them how you voted?',
+                'answer' => 'Nobody',
+                'explanation' => 'Canadian law secures the right to a secret ballot. This means that no one can watch you vote and no one should look at how you voted.'
+              ],
+              [
+                'question' => 'What do you mark on a federal election ballot?',
+                'answer' => 'An "X"',
+                'explanation' => 'Mark an “X” in the circle next to the name of the candidate of your choice.'
+              ],
+              [
+                'question' => 'On election day, where should your ballot go?',
+                'answer' => 'In the ballot box',
+                'explanation' => 'The poll official will tear off the ballot number and give your ballot back to you to deposit in the ballot box.'
+              ],
+              [
+                'question' => 'What do you call the people who run for office?',
+                'answer' => 'Candidates',
+                'explanation' => 'Canadian citizens who are 18 years old or older may run in a federal election. The people who run for office are called candidates. There can be many candidates in an electoral district.'
+              ],
+              [
+                'question' => 'What is the leader of the party with the most seats in the House of Commons called?',
+                'answer' => 'Prime Minister',
+                'explanation' => 'Ordinarily, after an election, the leader of the political party with the most seats in the House of Commons is invited by the Governor General to form the government.'
+              ],
+              [
+                'question' => 'Who does a member of Parliament represent?',
+                'answer' => 'The citizens in his/her electoral district, as well as all Canadians',
+                'explanation' => 'An electoral district is a geographical area represented by a member of Parliament (MP). The citizens in each electoral district elect one MP who sits in the House of Commons to represent them, as well as all Canadians.'
+              ],
+              [
+                'question' => 'During an election period, where is the location of your polling station indicated?',
+                'answer' => 'On your voter information card',
+                'explanation' => 'To vote either on election day or at advance polls, go to the polling station listed on your voter information card.'
+              ],
+              [
+                'question' => 'After an election, who is invited by the Governor General to form the government?',
+                'answer' => 'The leader of the political party with the most seats in the House of Commons',
+                'explanation' => 'Ordinarily, after an election, the leader of the political party with the most seats in the House of Commons is invited by the Governor General to form the government.'
+              ],
+              [
+                "question" => "What are Municipal laws called?",
+                "answer" => "By-laws",
+                "explanation" => "Municipal governments usually have a council that passes laws called 'by-laws' that affect only the local community."
+              ],
+              [
+                "question" => "In Canadian politics, what are the people who run for office called?",
+                "answer" => "Candidates",
+                "explanation" => "The people who run for office are called candidates. There can be many candidates in an electoral district."
+              ],
+              [
+                "question" => "What do the initials 'MP' stand for in Canadian politics?",
+                "answer" => "Member of Parliament",
+                "explanation" => "An electoral district is a geographical area represented by a member of Parliament (MP)."
+              ],
+              [
+                "question" => "In Canadian politics, what does MLA stand for?",
+                "answer" => "Members of the Legislative Assembly",
+                "explanation" => "The members of the legislature are called members of the Legislative Assembly (MLAs), members of the National Assembly (MNAs), members of the Provincial Parliament (MPPs) or members of the House of Assembly (MHAs), depending on the province or territory."
+              ],
+              [
+                "question" => "What area does a 'by-law' apply to in Canada?",
+                "answer" => "The local community",
+                "explanation" => "Municipal governments usually have a council that passes laws called 'by-laws' that affect only the local community. The council usually includes a mayor (or a reeve) and councillors or aldermen."
+              ],
+              [
+                "question" => "What is the name of the parties that are not in power?",
+                "answer" => "Opposition parties",
+                "explanation" => "The other parties that are not in power are known as opposition parties. The opposition party with the most members of the House of Commons is the Official Opposition or Her/His Majesty’s Loyal Opposition."
+              ],
+              [
+                "question" => "What is the responsibility of the Cabinet Ministers?",
+                "answer" => "They are responsible for running the federal government departments",
+                "explanation" => "Cabinet ministers are responsible for running the federal government departments. The Prime Minister and the Cabinet ministers are called the Cabinet and they make important decisions about how the country is governed."
+              ],
+              [
+                "question" => "Who can question the decisions of the government?",
+                "answer" => "All members of the House of Commons",
+                "explanation" => "The Prime Minister and the Cabinet ministers are called the Cabinet and they make important decisions about how the country is governed. They prepare the budget and propose most new laws. Their decisions can be questioned by all members of the House of Commons."
+              ],
+              [
+                "question" => "Where can you see the results of an election?",
+                "answer" => "On television or on the Elections Canada website",
+                "explanation" => "You can see the results on television or on the Elections Canada website (www.elections.ca)."
+              ],
+              [
+                "question" => "How does Elections Canada give the election card to the electors whose names are in the National Register of Electors?",
+                "answer" => "By mail",
+                "explanation" => "Once an election has been called, Elections Canada mails a voter information card to each elector whose name is in the National Register of Electors."
+              ],
+              [
+                "question" => "In Canada, how can a party in power be defeated?",
+                "answer" => "If a majority of the members of the House of Commons vote against a major government decision",
+                "explanation" => "If a majority of the members of the House of Commons vote against a major government decision, the party in power is defeated, which usually results in the Prime Minister asking the Governor General, on behalf of the Sovereign, to call an election."
+              ],
+              [
+                "question" => "Who chooses the ministers of the Crown?",
+                "answer" => "The Prime Minister",
+                "explanation" => "The Prime Minister chooses the ministers of the Crown, most of them from among members of the House of Commons."
+              ],
+              [
+                "question" => "What is a voter information card?",
+                "answer" => "A card that confirms that your name is on the voters' list and states when and where you vote",
+                "explanation" => "Electors whose information is in the National Register of Electors will receive a voter information card. This confirms that your name is on the voters’ list and states when and where you vote."
+              ],
+              [
+                "question" => "During an election period, what happens if you do not receive a voter information card?",
+                "answer" => "You have to call your local elections office, or Elections Canada in Ottawa, to ensure that you are on the voters' list",
+                "explanation" => "If you do not receive a voter information card, call your local elections office to ensure that you are on the voters’ list. If you do not have the number, call Elections Canada, in Ottawa, at 1-800-463-6868."
+              ],
+              [
+                "question" => "How are members of Parliament chosen?",
+                "answer" => "They are elected by voters in their local constituency",
+                "explanation" => "The citizens in each electoral district elect one MP who sits in the House of Commons to represent them, as well as all Canadians."
+              ],
+              [
+                "question" => "What is a minority government?",
+                "answer" => "The party in power that holds less than half of the seats in the House of Commons",
+                "explanation" => "If the party in power holds at least half of the seats in the House of Commons, this is called a majority government. If the party in power holds less than half of the seats in the House of Commons, this is called a minority government."
+              ],
+              [
+                "question" => "What are the names of the three major political parties currently represented in the House of Commons?",
+                "answer" => "Conservative Party, Liberal Party and New Democratic Party",
+                "explanation" => "There are three major political parties currently represented in the House of Commons: the Conservative Party, the New Democratic Party, and the Liberal Party."
+              ],
+              [
+                "question" => "What is the role of opposition parties?",
+                "answer" => "To peacefully oppose or try to improve government proposals",
+                "explanation" => "The role of opposition parties is to peacefully oppose or try to improve government proposals."
+              ],
+              [
+                "question" => "What is the opposition party with the most members of the House of Commons called?",
+                "answer" => "The Official Opposition or Her Majesty's Loyal Opposition",
+                "explanation" => "The opposition party with the most members of the House of Commons is the Official Opposition or Her Majesty’s Loyal Opposition."
+              ],
+              [
+                "question" => "What is the name of the agency that produces the voters’ list?",
+                "answer" => "Elections Canada",
+                "explanation" => "The voters’ lists used during federal elections and referendums are produced from the National Register of Electors by a neutral agency of Parliament called Elections Canada."
+              ],
+              [
+                "question" => "Who are the representatives for the First Nations?",
+                "answer" => "Band chiefs and councillors",
+                "explanation" => "The First Nations have band chiefs and councillors who have major responsibilities on First Nations reserves, including housing, schools and other services."
+              ],
+              [
+                "question" => "What are the responsibilities of the Cabinet?",
+                "answer" => "Prepare the budget and propose most new laws",
+                "explanation" => "They prepare the budget and propose most new laws. Their decisions can be questioned by all members of the House of Commons."
+              ],
+              [
+                "question" => "What happens if you are not listed in the National Register of Electors?",
+                "answer" => "You can still be added to the voters' list at any time, including election day",
+                "explanation" => "Even if you choose not to be listed in the National Register of Electors or do not receive a voter information card, you can still be added to the voters’ list at any time, including on election day."
+              ],
+              [
+                "question" => "In Canada, how are political representatives chosen (members of the House of Commons and members of the provincial and territorial legislatures)?",
+                "answer" => "They are elected by the people",
+                "explanation" => "The House of Commons is the representative chamber, made up of members of Parliament elected by the people, traditionally every four years."
+              ],
+              [
+                "question" => "For how many years is the Governor General usually appointed?",
+                "answer" => "Five",
+                "explanation" => "The Sovereign is represented in Canada by the Governor General, who is appointed by the Sovereign on the advice of the Prime Minister, usually for five years."
+              ],
+              [
+                "question" => "What does a vote by secret ballot mean?",
+                "answer" => "No one can watch you vote and no one should look at how you voted",
+                "explanation" => "You may choose to discuss how you voted with others, but no one, including family members, your employer or union representative, has the right to insist that you tell them how you voted."
+              ],
+              [
+                "question" => "What are the responsibilities of the members to the House of Commons in Ottawa and to the provincial and territorial legislatures?",
+                "answer" => "Passing laws, approving and monitoring expenditures, and keeping the government accountable",
+                "explanation" => "In Canada’s parliamentary democracy, the people elect members to the House of Commons in Ottawa and to the provincial and territorial legislatures. These representatives are responsible for passing laws, approving and monitoring expenditures, and keeping the government accountable."
+              ],
+              [
+                "question" => "What does 'constitutional monarchy' mean?",
+                "answer" => "Canada's Head of State is a hereditary Sovereign (Queen or King)",
+                "explanation" => "As a constitutional monarchy, Canada’s Head of State is a hereditary Sovereign (Queen or King), who reigns in accordance with the Constitution: the rule of law."
+              ],
+              [
+                "question" => "On election day, what happens when the polls close?",
+                "answer" => "Every ballot is counted and the results are made public",
+                "explanation" => "When the polls close, every ballot is counted and the results are made public. You can see the results on television or on the Elections Canada website (www.elections.ca)."
+              ],
+              [
+                "question" => "How do Canadians vote?",
+                "answer" => "By secret ballot",
+                "explanation" => "Canadian law secures the right to a secret ballot. This means that no one can watch you vote and no one should look at how you voted."
+              ],
+              [
+                "question" => "What is a majority government?",
+                "answer" => "The party in power that holds at least half of the seats in the House of Commons",
+                "explanation" => "If the party in power holds at least half of the seats in the House of Commons, this is called a majority government."
+              ]
+            ]
           ],
           [
             'image' => '/images/chap 9.png',
@@ -8704,6 +8995,7 @@ class DatabaseSeeder extends Seeder
             'topics' => [
               ['name' => 'The Justice System'],
             ],
+
           ],
           [
             'image' => '/images/chap 10.png',
