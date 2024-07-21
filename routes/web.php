@@ -61,6 +61,13 @@ Route::middleware('auth')->group(function () {
   Route::get('/flashcards/{chapterId}/{flashcardId?}', [FlashcardController::class, 'flashcardList'])->name('flashcardList');
 
   Route::get('/cheat-sheets', [CheatSheetController::class, 'index'])->name('cheatSheets');
+  Route::get('/cheat-sheets/important-people', [CheatSheetController::class, 'importantPeople'])->name('importantPeople');
+  Route::get('/cheat-sheets/important-dates', [CheatSheetController::class, 'importantDates'])->name('importantDates');
+  Route::get('/cheat-sheets/government-questions', [CheatSheetController::class, 'govQuestions'])->name('govQuestions');
+  Route::get('/cheat-sheets/map', [CheatSheetController::class, 'map'])->name('map');
+  Route::get('/cheat-sheets/glossary', [CheatSheetController::class, 'glossary'])->name('glossary');
+  Route::get('/cheat-sheets/faq', [CheatSheetController::class, 'faq'])->name('faq');
+
   //Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
   Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
   Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

@@ -10,9 +10,36 @@ class CheatSheetController extends Controller
 {
   public function index()
   {
-    $user = Auth::user();
+    return redirect()->route('importantPeople');
+  }
 
+  public function importantPeople()
+  {
+    return Inertia::render('CheatSheet/ImportantPeople', []);
+  }
 
-    return Inertia::render('CheatSheet/Index', []);
+  public function importantDates()
+  {
+    return Inertia::render('CheatSheet/ImportantDates', []);
+  }
+
+  public function govQuestions()
+  {
+    return Inertia::render('CheatSheet/GovQuestions', []);
+  }
+
+  public function map()
+  {
+    return Inertia::render('CheatSheet/Map', []);
+  }
+
+  public function glossary()
+  {
+    return Inertia::render('CheatSheet/Glossary', []);
+  }
+
+  public function faq()
+  {
+    return Inertia::render('CheatSheet/Faq', []);
   }
 }

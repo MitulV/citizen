@@ -31,67 +31,45 @@ export default function CheatSheetPanel({ collapsed }) {
                             <Accordion.Content>
                                 <Link
                                     replace
-                                    href=""
+                                    href={route("importantPeople")}
                                     className="text-gray-800 text-start p-4 bg-slate-50 mt-1 flex justify-between items-start"
                                 >
-                                    <button className="text-base text-gray-800 text-start">
-                                        Pass Probability
-                                    </button>
-                                </Link>
-
-                                <Link
-                                    replace
-                                    href=""
-                                    className="text-gray-800 text-start p-4 bg-slate-50 mt-1 flex justify-between items-start"
-                                >
-                                    <button className="text-base text-gray-800 text-start">
-                                        Important People
-                                    </button>
+                                    Important People
                                 </Link>
                                 <Link
                                     replace
-                                    href=""
+                                    href={route("importantDates")}
                                     className="text-gray-800 text-start p-4 bg-slate-50 mt-1 flex justify-between items-start"
                                 >
-                                    <button className="text-base text-gray-800 text-start">
-                                        Important Dates
-                                    </button>
+                                    Important Dates
                                 </Link>
                                 <Link
                                     replace
-                                    href=""
+                                    href={route("govQuestions")}
                                     className="text-gray-800 text-start p-4 bg-slate-50 mt-1 flex justify-between items-start"
                                 >
-                                    <button className="text-base text-gray-800 text-start">
-                                        Government Questions
-                                    </button>
+                                    Government Questions
                                 </Link>
                                 <Link
                                     replace
-                                    href=""
+                                    href={route("map")}
                                     className="text-gray-800 text-start p-4 bg-slate-50 mt-1 flex justify-between items-start"
                                 >
-                                    <button className="text-base text-gray-800 text-start">
-                                        Interactive Map
-                                    </button>
+                                    Interactive Map
                                 </Link>
                                 <Link
                                     replace
-                                    href=""
+                                    href={route("glossary")}
                                     className="text-gray-800 text-start p-4 bg-slate-50 mt-1 flex justify-between items-start"
                                 >
-                                    <button className="text-base text-gray-800 text-start">
-                                        Glossary
-                                    </button>
+                                    Glossary
                                 </Link>
                                 <Link
                                     replace
-                                    href=""
+                                    href={route("faq")}
                                     className="text-gray-800 text-start p-4 bg-slate-50 mt-1 flex justify-between items-start"
                                 >
-                                    <button className="text-base text-gray-800 text-start">
-                                        Frequently Asked Questions
-                                    </button>
+                                    Frequently Asked Questions
                                 </Link>
                             </Accordion.Content>
                         </Accordion.Panel>
