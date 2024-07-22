@@ -33,6 +33,7 @@
         "react-countdown": "^2.3.5",
         "react-pro-sidebar": "^1.1.0",
         "react-scripts": "*",
+        "react-vertical-timeline-component": "^3.6.0",
         "simplebar-react": "*"
     }
 }
