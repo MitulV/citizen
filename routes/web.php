@@ -38,14 +38,13 @@ Route::post('/test-results', [TestController::class, 'testResult'])->name('testR
 Route::get('/create-topics', [TopicController::class, 'create'])->name('createTopic.create');
 Route::post('/create-topics', [TopicController::class, 'store'])->name('createTopic.store');
 
-
-
-
 // Route::middleware(['auth', 'verified'])->group(function () {
 // });
 
-
-Route::middleware('auth')->group(function () {
+Route::middleware([
+  'auth',
+  //\App\Http\Middleware\CheckActiveSubscription::class
+])->group(function () {
 
   Route::get('/guide', [StudyGuidesController::class, 'index'])->name('dashboard');
   Route::get('/guide/{chapterId}/{topicId?}', [StudyGuidesController::class, 'topicList'])->name('topicList');
