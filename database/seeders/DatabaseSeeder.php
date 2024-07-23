@@ -8995,7 +8995,91 @@ class DatabaseSeeder extends Seeder
             'topics' => [
               ['name' => 'The Justice System'],
             ],
-
+            'flashcards' => [
+              [
+                'question' => 'Who do the citizens in each electoral district elect?',
+                'answer' => 'Member of Parliament',
+                'explanation' => 'The citizens in each electoral district elect one MP who sits in the House of Commons to represent them, as well as all Canadians.'
+              ],
+              [
+                'question' => 'What does the Canadian justice system guarantee?',
+                'answer' => 'Due process under the law',
+                'explanation' => 'The Canadian justice system guarantees everyone due process under the law. Our judicial system is founded on the presumption of innocence in criminal matters, meaning everyone is innocent until proven guilty.'
+              ],
+              [
+                'question' => 'In Canada, how are the laws administered?',
+                'answer' => 'In an impartial manner, only the facts are taken into consideration',
+                'explanation' => 'Justice in Canada is like the blindfolded Lady Justice. It symbolizes the impartial manner in which our laws are administered: blind to all considerations but the facts.'
+              ],
+              [
+                'question' => 'In Canada, how are the rules made?',
+                'answer' => 'By elected representatives',
+                'explanation' => 'Canada is governed by an organized system of laws. These laws are the written rules intended to guide people in our society. They are made by elected representatives.'
+              ],
+              [
+                'question' => 'What is the role of the police in Canada?',
+                'answer' => 'To keep people safe and to enforce the law',
+                'explanation' => 'The police are there to keep people safe and to enforce the law. You can ask the police for help in all kinds of situations—if there’s been an accident, if someone has stolen something from you, if you are a victim of assault, if you see a crime taking place or if someone you know has gone missing.'
+              ],
+              [
+                'question' => 'How many candidates can there be in an electoral district?',
+                'answer' => 'Many',
+                'explanation' => 'The people who run for office are called candidates. There can be many candidates in an electoral district.'
+              ],
+              [
+                'question' => 'What does RCMP stand for?',
+                'answer' => 'Royal Canadian Mounted Police',
+                'explanation' => 'Today, the Royal Canadian Mounted Police (RCMP or “the Mounties”) are the national police force and one of Canada’s best-known symbols.'
+              ],
+              [
+                'question' => 'Who will receive a voter information card?',
+                'answer' => 'Electors whose information is in the National Register of Electors',
+                'explanation' => 'Once an election has been called, Elections Canada mails a voter information card to each elector whose name is in the National Register of Electors.'
+              ],
+              [
+                'question' => 'If you cannot pay for a lawyer, how can you get legal help?',
+                'answer' => 'Go to legal aid services available in most communities',
+                'explanation' => 'Lawyers can help you with legal problems and act for you in court. If you cannot pay for a lawyer, in most communities there are legal aid services available free of charge or at a low cost.'
+              ],
+              [
+                'question' => 'In Canada, what is the definition of "law"?',
+                'answer' => 'The written rules intended to guide people in our society',
+                'explanation' => 'Canada is governed by an organized system of laws. These laws are the written rules intended to guide people in our society.'
+              ],
+              [
+                'question' => 'In a federal election, in each electoral district, what does the candidate who receives the most votes become?',
+                'answer' => 'The MP',
+                'explanation' => 'The people in each electoral district vote for the candidate and political party of their choice. The candidate who receives the most votes becomes the MP for that electoral district.'
+              ],
+              [
+                'question' => 'Who has the right to vote in a federal election?',
+                'answer' => 'A Canadian citizen, at least 18 years old on voting day and on the voters\' list',
+                'explanation' => 'One of the privileges of Canadian citizenship is the right to vote. You are eligible to vote in a federal election or cast a ballot in a federal referendum if you are:
+                        - a Canadian citizen; and
+                        - at least 18 years old on voting day; and
+                        - on the voters’ list.'
+              ],
+              [
+                'question' => 'What do Canadians vote for in a federal election?',
+                'answer' => 'The people they want to represent them in the House of Commons',
+                'explanation' => 'Canadians vote in elections for the people they want to represent them in the House of Commons. In each election, voters may re-elect the same members of the House of Commons or choose new ones.'
+              ],
+              [
+                'question' => 'In the Canadian justice system, what is the "presumption of innocence"?',
+                'answer' => 'Everyone is innocent until proven guilty',
+                'explanation' => 'The Canadian justice system guarantees everyone due process under the law. Our judicial system is founded on the presumption of innocence in criminal matters, meaning everyone is innocent until proven guilty.'
+              ],
+              [
+                'question' => 'In which province(s) does the RCMP not serve as the provincial police?',
+                'answer' => 'Ontario and Quebec',
+                'explanation' => 'The Royal Canadian Mounted Police (RCMP) enforce federal laws throughout Canada, and serve as the provincial police in all provinces and territories except Ontario and Quebec, as well as in some municipalities.'
+              ],
+              [
+                'question' => 'What information does the Elector Card contain?',
+                'answer' => 'When and where to vote and the number to call if an interpreter or other special services are required',
+                'explanation' => 'Once an election has been called, Elections Canada mails a voter information card to each elector whose name is in the National Register of Electors. The card lists when and where you vote and the number to call if you require an interpreter or other special services.'
+              ]
+            ]
           ],
           [
             'image' => '/images/chap 10.png',
@@ -10042,6 +10126,149 @@ class DatabaseSeeder extends Seeder
               ['name' => 'Canadian Symbols'],
               ['name' => 'The Timeline'],
             ],
+            'flashcards' => [
+              [
+                'question' => 'What is Canada’s official summer sport?',
+                'answer' => 'Lacrosse',
+                'explanation' => 'Lacrosse, an ancient sport first played by Aboriginals, is the official summer sport.'
+              ],
+              [
+                'question' => 'In the Canadian justice system, what is "due process"?',
+                'answer' => 'The principle that the government must respect all of the legal rights a person is entitled to under the law',
+                'explanation' => 'Due process is the principle that the government must respect all the legal rights a person is entitled to under the law.'
+              ],
+              [
+                'question' => 'Why did Canada adopt an official coat of arms and a national motto?',
+                'answer' => 'As an expression of national pride after the First World War',
+                'explanation' => 'As an expression of national pride after the First World War, Canada adopted an official coat of arms and a national motto, A mari usque ad mare, which in Latin means “from sea to sea.”'
+              ],
+              [
+                'question' => 'Which sport has the most registered players of any game in Canada?',
+                'answer' => 'Soccer',
+                'explanation' => 'Lacrosse, an ancient sport first played by Aboriginals, is the official summer sport. Soccer has the most registered players of any game in Canada.'
+              ],
+              [
+                'question' => 'What is the highest honour available to Canadians?',
+                'answer' => 'The Victoria Cross',
+                'explanation' => 'The Victoria Cross (V.C.) is the highest honour available to Canadians and is awarded for the most conspicuous bravery, a daring or pre-eminent act of valour or self-sacrifice, or extreme devotion to duty in the presence of the enemy.'
+              ],
+              [
+                'question' => 'What is the origin of the beaver as a symbol of Canada?',
+                'answer' => 'The beaver was adopted centuries ago as a symbol of the Hudson\'s Bay Company',
+                'explanation' => 'The beaver was adopted centuries ago as a symbol of the Hudson’s Bay Company. It became an emblem of the St. Jean Baptiste Society, a French-Canadian patriotic association, in 1834, and was also adopted by other groups.'
+              ],
+              [
+                'question' => 'Who are Anglophones?',
+                'answer' => 'People who speak English',
+                'explanation' => 'English and French are the two official languages and are important symbols of identity. English speakers (Anglophones) and French speakers (Francophones) have lived together in partnership and creative tension for more than 300 years.'
+              ],
+              [
+                'question' => 'What is the first sentence of the National Anthem?',
+                'answer' => 'O Canada! Our home and native land!',
+                'explanation' => 'The first parts of O Canada are as follows; O Canada! Our home and native land! True patriot love in all thy sons command With glowing hearts we see thee rise The true North strong and free! From far and wide, O Canada We stand on guard for thee God keep our land glorious and free! O Canada, we stand on guard for thee O Canada, we stand on guard for thee'
+              ],
+              [
+                'question' => 'What does the lily flower ("fleur-de-lys") symbolize?',
+                'answer' => 'French Royalty',
+                'explanation' => 'It is said that the lily flower (“fleur-de-lys”) was adopted by the French king in the year 496. It became the symbol of French royalty for more than 1,000 years, including the colony of New France.'
+              ],
+              [
+                'question' => 'On what is Canada’s legal system based?',
+                'answer' => 'The rule of law, freedom under the law, democratic principles and due process',
+                'explanation' => 'Canada’s legal system is based on a heritage that includes the rule of law, freedom under the law, democratic principles and due process. Due process is the principle that the government must respect all the legal rights a person is entitled to under the law.'
+              ],
+              [
+                'question' => 'What does the Canadian flag look like?',
+                'answer' => 'Red-white-red stripes with a red maple leaf in the center',
+                'explanation' => 'A new Canadian flag was raised for the first time in 1965. The red-white-red pattern comes from the flag of the Royal Military College, Kingston, founded in 1876.'
+              ],
+              [
+                'question' => 'What kind of symbols does the Canadian coat of arms contain?',
+                'answer' => 'Symbols of England, France, Scotland and Ireland as well as red maple leaves',
+                'explanation' => 'The arms contain symbols of England, France, Scotland and Ireland as well as red maple leaves. Today the arms can be seen on dollar bills, government documents and public buildings.'
+              ],
+              [
+                'question' => 'In Canada, what does the Crown symbolize?',
+                'answer' => 'The government, including Parliament, the legislatures, the courts, police services and the Canadian Forces',
+                'explanation' => 'The Crown is a symbol of government, including Parliament, the legislatures, the courts, police services and the Canadian Forces.'
+              ],
+              [
+                'question' => 'What is Canada’s most popular spectator sport?',
+                'answer' => 'Ice hockey',
+                'explanation' => 'Hockey is Canada’s most popular spectator sport and is considered to be the national winter sport. Ice hockey was developed in Canada in the 1800s.'
+              ],
+              [
+                'question' => 'Who was the first Canadian to be awarded the Victoria Cross?',
+                'answer' => 'Lieutenant Alexander Roberts Dunn',
+                'explanation' => 'Lieutenant Alexander Roberts Dunn, born in present-day Toronto, served in the British Army in the Charge of the Light Brigade at Balaclava (1854) in the Crimean War, and was the first Canadian to be awarded the Victoria Cross.'
+              ],
+              [
+                'question' => 'What is the name of the Royal Anthem of Canada?',
+                'answer' => 'God Save the Queen',
+                'explanation' => 'The Royal Anthem of Canada, “God Save the Queen (or King),” can be played or sung on any occasion when Canadians wish to honour the Sovereign.'
+              ],
+              [
+                'question' => 'What do Canadians celebrate on Victoria Day?',
+                'answer' => 'The Sovereign\'s birthday',
+                'explanation' => 'The Sovereign’s birthday is celebrated on Victoria Day (Monday preceding May 25).'
+              ],
+              [
+                'question' => 'For what is the Victoria Cross awarded?',
+                'answer' => 'The most conspicuous bravery or self-sacrifice in the presence of the enemy',
+                'explanation' => 'The Victoria Cross (V.C.) is the highest honour available to Canadians and is awarded for the most conspicuous bravery, a daring or pre-eminent act of valour or self-sacrifice, or extreme devotion to duty in the presence of the enemy.'
+              ],
+              [
+                'question' => 'What is Canada’s national winter sport?',
+                'answer' => 'Ice Hockey',
+                'explanation' => 'Many major league sports boast Canadian talent and in the national sport of ice hockey, Canadian teams have dominated the world.'
+              ],
+              [
+                'question' => 'What is the official Royal Flag of Canada?',
+                'answer' => 'The Union Jack Flag',
+                'explanation' => 'The Union Jack is our official Royal Flag.'
+              ],
+              [
+                'question' => 'Where does the red-white-red pattern on the Canadian flag come from?',
+                'answer' => 'The Royal Military College in Kingston',
+                'explanation' => 'The red-white-red pattern comes from the flag of the Royal Military College, Kingston, founded in 1876.'
+              ],
+              [
+                'question' => 'What do you call the Canadian honours system that recognizes outstanding citizens?',
+                'answer' => 'The Order of Canada',
+                'explanation' => 'All countries have ways to recognize outstanding citizens. Official awards are called honours, consisting of orders, decorations and medals. After using British honours for many years, Canada started its own honours system with the Order of Canada in 1967, the centennial of Confederation.'
+              ],
+              [
+                'question' => 'What does the Federal Court deal with?',
+                'answer' => 'Matters concerning the federal government',
+                'explanation' => 'The Supreme Court of Canada is our country’s highest court. The Federal Court of Canada deals with matters concerning the federal government.'
+              ],
+              [
+                'question' => 'In Canada, who is above the law?',
+                'answer' => 'Nobody',
+                'explanation' => 'One of Canada’s founding principles is the rule of law. Individuals and governments are regulated by laws and not by arbitrary actions. No person or group is above the law.'
+              ],
+              [
+                'question' => 'What is the meaning of the Canadian national motto, "A Mari Usque Ad Mare"?',
+                'answer' => '"From sea to sea"',
+                'explanation' => 'As an expression of national pride after the First World War, Canada adopted an official coat of arms and a national motto, A mari usque ad mare, which in Latin means “from sea to sea.” The arms contain symbols of England, France, Scotland and Ireland as well as red maple leaves.'
+              ],
+              [
+                'question' => 'For which championship does the National Hockey League play?',
+                'answer' => 'Stanley Cup',
+                'explanation' => 'The National Hockey League plays for the championship Stanley Cup, donated by Lord Stanley, the Governor General, in 1892.'
+              ],
+              [
+                'question' => 'Why was the Peace Tower built in Ottawa?',
+                'answer' => 'In memory of the First World War',
+                'explanation' => 'The Peace Tower was completed in 1927 in memory of the First World War.'
+              ],
+              [
+                'question' => 'What is the name of the National Anthem?',
+                'answer' => 'O Canada',
+                'explanation' => 'O Canada was proclaimed as the national anthem in 1980. It was first sung in Québec City in 1880. French and English Canadians sing different words to the national anthem.'
+              ]
+            ]
+
           ],
           [
             'image' => '/images/chap 11.png',
@@ -10421,6 +10648,79 @@ class DatabaseSeeder extends Seeder
               ['name' => "Canada's Economy"],
               ['name' => 'The Timeline'],
             ],
+            'flashcards' => [
+              [
+                'question' => 'How much merchandise trade was involved within NAFTA in 2008?',
+                'answer' => 'Over $1 trillion',
+                'explanation' => 'In 1988, Canada enacted free trade with the United States. Mexico became a partner in 1994 in the broader North American Free Trade Agreement (NAFTA), with over 444 million people and over $1 trillion in merchandise trade in 2008.'
+              ],
+              [
+                'question' => 'Where are the names of soldiers, sailors and airmen, who died serving Canada in wars or while on duty, written?',
+                'answer' => 'The Memorial Chamber',
+                'explanation' => 'The Memorial Chamber within the Tower contains the Books of Remembrance in which are written the names of soldiers, sailors and airmen who died serving Canada in wars or while on duty.'
+              ],
+              [
+                'question' => 'What is Canada’s second most popular sport?',
+                'answer' => 'Football',
+                'explanation' => 'Canadian football is the second most popular sport in Canada.'
+              ],
+              [
+                'question' => 'To which industries do forestry, fishing, agriculture, mining and energy belong to?',
+                'answer' => 'Natural resources industries',
+                'explanation' => 'Natural resources industries include forestry, fishing, agriculture, mining and energy. These industries have played an important part in the country’s history and development.'
+              ],
+              [
+                'question' => 'Who is Canada’s largest international trading partner?',
+                'answer' => 'United States',
+                'explanation' => 'Our largest international trading partner is the United States.'
+              ],
+              [
+                'question' => 'What is traditionally known as "the world’s longest undefended border"?',
+                'answer' => 'Canada-U.S.A border',
+                'explanation' => 'Over three-quarters of Canadian exports are destined for the U.S.A. In fact we have the biggest bilateral trading relationship in the world. Integrated Canada-U.S.A. supply chains compete with the rest of the world. Canada exports billions of dollars worth of energy products, industrial goods, machinery, equipment, automotive, agricultural, fishing and forestry products, and consumer goods every year. Millions of Canadians and Americans cross every year and in safety what is traditionally known as “the world’s longest undefended border.”'
+              ],
+              [
+                'question' => 'How much of Canadian exports are destined for the U.S.A.?',
+                'answer' => 'Over three-quarters',
+                'explanation' => 'Over three-quarters of Canadian exports are destined for the U.S.A. In fact we have the biggest bilateral trading relationship in the world.'
+              ],
+              [
+                'question' => 'Who are Francophones?',
+                'answer' => 'People who speak French as a first language',
+                'explanation' => 'Today, there are 18 million Anglophones—people who speak English as a first language—and seven million Francophones—people who speak French as their first language.'
+              ],
+              [
+                'question' => 'Which industries have played an important part in Canada’s story and development?',
+                'answer' => 'Natural resources industries',
+                'explanation' => 'Natural resources industries include forestry, fishing, agriculture, mining and energy. These industries have played an important part in the country’s history and development.'
+              ],
+              [
+                'question' => 'Which animal is an official symbol of Canada?',
+                'answer' => 'The beaver',
+                'explanation' => 'The beaver was adopted centuries ago as a symbol of the Hudson’s Bay Company. It became an emblem of the St. Jean Baptiste Society, a French-Canadian patriotic association, in 1834, and was also adopted by other groups.'
+              ],
+              [
+                'question' => 'To which industries do products such as paper, high technology equipment, aerospace technology, automobiles, machinery, food and clothing belong to?',
+                'answer' => 'Manufacturing industries',
+                'explanation' => 'Manufacturing industries make products to sell in Canada and around the world. Manufactured products include paper, high technology equipment, aerospace technology, automobiles, machinery, food, clothing and many other goods.'
+              ],
+              [
+                'question' => 'Who first adopted the maple leaf as a symbol in Canada?',
+                'answer' => 'French-Canadians',
+                'explanation' => 'The maple leaf is Canada’s best-known symbol. Maple leaves were adopted as a symbol by French Canadians in the 1700s, have appeared on Canadian uniforms and insignia since the 1850s, and are carved into the headstones of our fallen soldiers buried overseas and in Canada.'
+              ],
+              [
+                'question' => 'To which industries do transportation, education, health care, construction, banking, communications, retail services, tourism and government belong to?',
+                'answer' => 'Service industries',
+                'explanation' => 'Service industries provide thousands of different jobs in areas like transportation, education, health care, construction, banking, communications, retail services, tourism and government.'
+              ],
+              [
+                'question' => 'What is the G8?',
+                'answer' => 'A group of 8 leading industrialized countries',
+                'explanation' => 'Today, Canada has one of the ten largest economies in the world and is part of the G8 group of leading industrialized countries with the United States, Germany, the United Kingdom, Italy, France, Japan and Russia.'
+              ]
+            ]
+
           ],
           [
             'image' => '/images/chap 12.png',
@@ -12632,6 +12932,428 @@ class DatabaseSeeder extends Seeder
             'topics' => [
               ['name' => "Canada’s Regions"],
             ],
+            'flashcards' => [
+              [
+                'question' => 'Which province has the largest Aboriginal population in Canada?',
+                'answer' => 'Manitoba',
+                'explanation' => 'Manitoba is the province with the largest Aboriginal population, exceeding 15% of its total population.'
+              ],
+              [
+                'question' => 'What is the capital of New Brunswick?',
+                'answer' => 'Fredericton',
+                'explanation' => 'Fredericton is the historic capital of New Brunswick, while Saint John is the largest city and Moncton is a principal Francophone Acadian center.'
+              ],
+              [
+                'question' => 'In Nunavut, beside English, which other language is also an official language and first language in schools?',
+                'answer' => 'Inuktitut',
+                'explanation' => 'In Nunavut, Inuktitut is an official language and is used as the primary language of instruction in schools, reflecting the Inuit population.'
+              ],
+              [
+                'question' => 'What is Canada’s national capital?',
+                'answer' => 'Ottawa',
+                'explanation' => 'Ottawa was chosen as the capital of Canada by Queen Victoria in 1857. It is now the fourth largest metropolitan area in Canada.'
+              ],
+              [
+                'question' => 'What is the capital of Alberta?',
+                'answer' => 'Edmonton',
+                'explanation' => 'Edmonton serves as the capital city of Alberta.'
+              ],
+              [
+                'question' => 'How many national parks does Alberta have?',
+                'answer' => 'Five',
+                'explanation' => 'Alberta is home to five national parks, including Banff National Park, which was established in 1885.'
+              ],
+              [
+                'question' => 'How many provinces and territories are there in Canada?',
+                'answer' => 'Ten provinces and three territories',
+                'explanation' => 'Canada comprises ten provinces and three territories, each with its own capital city.'
+              ],
+              [
+                'question' => 'For what is Lake Superior known?',
+                'answer' => 'Largest fresh water lake in the world',
+                'explanation' => 'Lake Superior is renowned as the largest freshwater lake in the world by surface area and is one of the Great Lakes.'
+              ],
+              [
+                'question' => 'What is the most easterly point in North America?',
+                'answer' => 'Newfoundland and Labrador',
+                'explanation' => 'Newfoundland and Labrador is the most easterly province in North America and features its own time zone.'
+              ],
+              [
+                'question' => 'What is the population of Canada?',
+                'answer' => 'About 34 million people',
+                'explanation' => 'Canada’s population is approximately 34 million, with residents living in various cities, towns, and rural areas.'
+              ],
+              [
+                'question' => 'What is the capital of British Columbia?',
+                'answer' => 'Victoria',
+                'explanation' => 'Victoria is the capital city of British Columbia.'
+              ],
+              [
+                'question' => 'What is the capital of Manitoba?',
+                'answer' => 'Winnipeg',
+                'explanation' => 'Winnipeg is the capital city of Manitoba.'
+              ],
+              [
+                'question' => 'Where is the world-famous Lake Louise?',
+                'answer' => 'Rocky Mountains',
+                'explanation' => 'Lake Louise is located in the Rocky Mountains of Alberta, named after Princess Louise Caroline Alberta.'
+              ],
+              [
+                'question' => 'In Canada, where can you find one of the longest continuous multispan bridges in the world?',
+                'answer' => 'Prince Edward Island',
+                'explanation' => 'Prince Edward Island is connected to the mainland by the Confederation Bridge, one of the longest continuous multispan bridges in the world.'
+              ],
+              [
+                'question' => 'What is Canada’s smallest province?',
+                'answer' => 'Prince Edward Island',
+                'explanation' => 'Prince Edward Island is the smallest province in Canada, known for its beaches, red soil, and agricultural produce.'
+              ],
+              [
+                'question' => 'What is the capital of Nova Scotia?',
+                'answer' => 'Halifax',
+                'explanation' => 'Halifax is the capital city of Nova Scotia.'
+              ],
+              [
+                'question' => 'Who chose Ottawa as the capital of Canada?',
+                'answer' => 'Queen Victoria',
+                'explanation' => 'Queen Victoria selected Ottawa as the capital of Canada in 1857.'
+              ],
+              [
+                'question' => 'What is the name of the Canadian river that represents the second-longest river system in North America?',
+                'answer' => 'Mackenzie River',
+                'explanation' => 'The Mackenzie River is the second-longest river system in North America, stretching 4,200 kilometers.'
+              ],
+              [
+                'question' => 'Where is the largest east coast port located in Canada?',
+                'answer' => 'Halifax',
+                'explanation' => 'Halifax, Canada’s largest east coast port, plays a significant role in Atlantic trade and is home to the country’s largest naval base.'
+              ],
+              [
+                'question' => 'What animal is a symbol of Canada’s North?',
+                'answer' => 'The caribou',
+                'explanation' => 'The caribou, or reindeer, is a symbol of Canada’s North and is also significant in hunting and Indigenous cultures.'
+              ],
+              [
+                'question' => 'Where are more than three quarters of all Canadian manufactured goods produced?',
+                'answer' => 'Quebec and Ontario',
+                'explanation' => 'Southern Ontario and Quebec together produce more than three-quarters of all Canadian manufactured goods.'
+              ],
+              [
+                'question' => 'What is the NAFTA agreement?',
+                'answer' => 'Free trade between Canada, the United States and Mexico',
+                'explanation' => 'NAFTA (North American Free Trade Agreement) established free trade between Canada, the United States, and Mexico, starting in 1994.'
+              ],
+              [
+                'question' => 'Which province has its own time zone?',
+                'answer' => 'Newfoundland and Labrador',
+                'explanation' => 'Newfoundland and Labrador is unique for having its own time zone, being the most easterly point in North America.'
+              ],
+              [
+                'question' => 'What is the capital of Newfoundland and Labrador?',
+                'answer' => 'St. John\'s',
+                'explanation' => 'St. John’s is the capital city of Newfoundland and Labrador.'
+              ],
+              [
+                'question' => 'In Canada, where do more than half of the people live?',
+                'answer' => 'Central Canada',
+                'explanation' => 'More than half of Canada’s population resides in Central Canada, near the Great Lakes and the St. Lawrence River in southern Quebec and Ontario.'
+              ],
+              [
+                'question' => 'Which province has the most extensive park system in Canada?',
+                'answer' => 'British Columbia',
+                'explanation' => 'British Columbia boasts the most extensive park system in Canada, with around 600 provincial parks.'
+              ],
+              [
+                'question' => 'Which provinces have some of the most fertile farmlands in the world?',
+                'answer' => 'Manitoba, Saskatchewan and Alberta',
+                'explanation' => 'The Prairie Provinces—Manitoba, Saskatchewan, and Alberta—are known for their highly fertile farmland and significant agricultural production.'
+              ],
+              [
+                'question' => 'In terms of size, how does Canada rank?',
+                'answer' => 'Second largest country on earth',
+                'explanation' => 'Canada is the second-largest country in the world by land area, covering approximately 10 million square kilometers.'
+              ],
+              [
+                'question' => 'What is the capital of Prince Edward Island?',
+                'answer' => 'Charlottetown',
+                'explanation' => 'Charlottetown is the capital city of Prince Edward Island.'
+              ],
+              [
+                'question' => 'What is the capital of Quebec?',
+                'answer' => 'Quebec City',
+                'explanation' => 'Quebec City serves as the capital of Quebec.'
+              ],
+              [
+                'question' => 'What is the oldest colony of the British Empire?',
+                'answer' => 'Newfoundland and Labrador',
+                'explanation' => 'Newfoundland and Labrador is recognized as the oldest British colony in Canada, with a rich history in fisheries and coastal culture.'
+              ],
+              [
+                'question' => 'In Quebec, how many people speak French as their first language?',
+                'answer' => 'More than three-quarters',
+                'explanation' => 'Over 75% of Quebec’s population speaks French as their first language.'
+              ],
+              [
+                'question' => 'What is the capital of the Yukon?',
+                'answer' => 'Whitehorse',
+                'explanation' => 'Whitehorse is the capital city of the Yukon.'
+              ],
+              [
+                'question' => 'What is the capital of the Northwest Territories?',
+                'answer' => 'Yellowknife',
+                'explanation' => 'Yellowknife is the capital city of the Northwest Territories.'
+              ],
+              [
+                'question' => 'What are the main goods produced in British Columbia?',
+                'answer' => 'Forestry products',
+                'explanation' => 'British Columbia’s primary goods are forestry products, including lumber and paper, reflecting its valuable forestry industry.'
+              ],
+              [
+                'question' => 'What is the capital of Nunavut?',
+                'answer' => 'Iqaluit',
+                'explanation' => 'Iqaluit is the capital city of Nunavut.'
+              ],
+              [
+                'question' => 'In Canada, where can you find Celtic and Gaelic traditions?',
+                'answer' => 'Nova Scotia',
+                'explanation' => 'Nova Scotia is known for its vibrant Celtic and Gaelic traditions and hosts numerous festivals, including the military tattoo in Halifax.'
+              ],
+              [
+                'question' => 'In Canada, where can you find the world’s highest tides?',
+                'answer' => 'Nova Scotia',
+                'explanation' => 'Nova Scotia is home to the world’s highest tides in the Bay of Fundy, a key feature of the province’s maritime heritage.'
+              ],
+              [
+                'question' => 'How many of the Great Lakes are located between Ontario and the United States?',
+                'answer' => 'Five',
+                'explanation' => 'Five Great Lakes—Ontario, Erie, Huron, Michigan, and Superior—are situated between Ontario and the United States.'
+              ],
+              [
+                'question' => 'What is Canada’s second largest, mainly French-speaking city in the world, after Paris?',
+                'answer' => 'Montreal',
+                'explanation' => 'Montreal is Canada’s second-largest city and the second-largest predominantly French-speaking city globally, after Paris.'
+              ],
+              [
+                'question' => 'What is known as the birthplace of Confederation?',
+                'answer' => 'Prince Edward Island',
+                'explanation' => 'Prince Edward Island is recognized as the birthplace of Confederation and is connected to mainland Canada by the Confederation Bridge.'
+              ],
+              [
+                'question' => 'In terms of size, how does Ottawa’s metropolitan area rank in Canada?',
+                'answer' => 'Fourth largest metropolitan area',
+                'explanation' => 'Ottawa is the fourth largest metropolitan area in Canada.'
+              ],
+              [
+                'question' => 'Which province has 40% of the arable land in Canada?',
+                'answer' => 'Saskatchewan',
+                'explanation' => 'Saskatchewan has 40% of Canada’s arable land and is a leading producer of grains and oilseeds.'
+              ],
+              [
+                'question' => 'Where are the Great Lakes located?',
+                'answer' => 'Between Ontario and the United States',
+                'explanation' => 'The Great Lakes are situated between Ontario and the United States, including Lakes Ontario, Erie, Huron, Michigan, and Superior.'
+              ],
+              [
+                'question' => 'Which province is Canada’s largest producer of grains and oilseeds?',
+                'answer' => 'Saskatchewan',
+                'explanation' => 'Saskatchewan, known as the “breadbasket of the world,” is Canada’s largest producer of grains and oilseeds.'
+              ],
+              [
+                'question' => 'Which country lies on Canada’s southern border?',
+                'answer' => 'U.S.A.',
+                'explanation' => 'The United States (U.S.A.) shares Canada’s southern border.'
+              ],
+              [
+                'question' => 'Which part of Canada is sometimes called the "Land of the Midnight Sun"?',
+                'answer' => 'The North',
+                'explanation' => 'The North of Canada is known as the "Land of the Midnight Sun" due to its extended daylight hours in summer.'
+              ],
+              [
+                'question' => 'What is Canada’s most westerly province?',
+                'answer' => 'British Columbia',
+                'explanation' => 'British Columbia is the most westerly province in Canada.'
+              ],
+              [
+                'question' => 'What does "Nunavut" mean?',
+                'answer' => '"Our land"',
+                'explanation' => 'Nunavut means "our land" in Inuktitut and was established in 1999 from the eastern part of the Northwest Territories.'
+              ],
+              [
+                'question' => 'Which province was once known as the "breadbasket of the world" and, the "wheat province"?',
+                'answer' => 'Saskatchewan',
+                'explanation' => 'Saskatchewan, known as the "breadbasket of the world" and "wheat province," is a major producer of grains and oilseeds in Canada.'
+              ],
+              [
+                'question' => 'Where do the majority of Canadians live?',
+                'answer' => 'In cities',
+                'explanation' => 'The majority of Canadians live in cities, though there are also residents in small towns and rural areas.'
+              ],
+              [
+                'question' => 'Where is Canada’s largest naval base?',
+                'answer' => 'Nova Scotia',
+                'explanation' => 'Canada’s largest naval base is located in Halifax, Nova Scotia, a key site for Atlantic trade and defence.'
+              ],
+              [
+                'question' => 'Which province has long been known for its fisheries, coastal fishing villages and distinct culture?',
+                'answer' => 'Newfoundland and Labrador',
+                'explanation' => 'Newfoundland and Labrador, the oldest British colony in Canada, is known for its fisheries and distinct coastal culture.'
+              ],
+              [
+                'question' => 'What are Canada’s main types of industries?',
+                'answer' => 'Service, manufacturing and natural resources',
+                'explanation' => 'Canada’s main industries are service, manufacturing, and natural resources.'
+              ],
+              [
+                'question' => 'What does P.E.I. stand for?',
+                'answer' => 'Prince Edward Island',
+                'explanation' => 'P.E.I. stands for Prince Edward Island.'
+              ],
+              [
+                'question' => 'Why is the North sometimes called the "Land of the Midnight Sun"?',
+                'answer' => 'Daylight can last up to 24 hours in summer',
+                'explanation' => 'The North is known as the "Land of the Midnight Sun" because it experiences up to 24 hours of daylight during summer.'
+              ],
+              [
+                'question' => 'In what area do Canadians mostly work nowadays?',
+                'answer' => 'Service Industries',
+                'explanation' => 'Most Canadians now work in service industries, including sectors like healthcare, education, and retail.'
+              ],
+              [
+                'question' => 'What are the regions of Canada?',
+                'answer' => 'Atlantic Provinces, Central Canada, Prairie Provinces, West Coast and Northern Territories',
+                'explanation' => 'Canada is divided into five distinct regions: Atlantic Provinces, Central Canada, Prairie Provinces, West Coast, and Northern Territories.'
+              ],
+              [
+                'question' => 'Which province is Canada’s largest producer of hydroelectricity?',
+                'answer' => 'Quebec',
+                'explanation' => 'Quebec is the leading producer of hydroelectricity in Canada, with other significant producers including British Columbia and Manitoba.'
+              ],
+              [
+                'question' => 'Where is the highest mountain in Canada located?',
+                'answer' => 'Yukon',
+                'explanation' => 'Mount Logan, the highest mountain in Canada, is located in the Yukon.'
+              ],
+              [
+                'question' => 'Where do one-third of Canadians live?',
+                'answer' => 'Ontario',
+                'explanation' => 'Ontario is home to more than one-third of Canada’s population, making it the most populous province.'
+              ],
+              [
+                'question' => 'Which industries make products to sell in Canada and around the world?',
+                'answer' => 'Manufacturing industries',
+                'explanation' => 'Manufacturing industries in Canada produce goods for both domestic consumption and international markets.'
+              ],
+              [
+                'question' => 'Which Canadian city is called the "diamond capital of North America"?',
+                'answer' => 'Yellowknife',
+                'explanation' => 'Yellowknife is known as the "diamond capital of North America" due to its significant diamond mining industry.'
+              ],
+              [
+                'question' => 'Which province has the second largest river system on North America’s Atlantic coastline?',
+                'answer' => 'New Brunswick',
+                'explanation' => 'New Brunswick has the second largest river system on North America’s Atlantic coastline, the St. John River system.'
+              ],
+              [
+                'question' => 'Which oceans line Canada’s frontiers?',
+                'answer' => 'Pacific Ocean, Atlantic Ocean and Arctic Ocean',
+                'explanation' => 'Canada is bordered by the Pacific Ocean to the west, the Atlantic Ocean to the east, and the Arctic Ocean to the north.'
+              ],
+              [
+                'question' => 'What are the Canadian Rangers?',
+                'answer' => 'The part of the Canadian Forces Reserves overlooking Canada\'s vast North',
+                'explanation' => 'The Canadian Rangers, part of the Canadian Forces Reserves, patrol the vast Arctic regions, drawing on indigenous knowledge.'
+              ],
+              [
+                'question' => 'Who is Mount Logan, the highest mountain in Canada, named in honour of?',
+                'answer' => 'Sir William Logan, a world-famous geologist',
+                'explanation' => 'Mount Logan is named after Sir William Logan, a prominent Canadian geologist and founder of the Geological Survey of Canada.'
+              ],
+              [
+                'question' => 'What represents a significant part of the economy of the Yukon?',
+                'answer' => 'Mining',
+                'explanation' => 'Mining, particularly for gold, plays a significant role in the economy of the Yukon.'
+              ],
+              [
+                'question' => 'Which are the Prairie provinces?',
+                'answer' => 'Manitoba, Saskatchewan and Alberta',
+                'explanation' => 'Manitoba, Saskatchewan, and Alberta are known as the Prairie Provinces and are rich in agricultural and energy resources.'
+              ],
+              [
+                'question' => 'Which province hosts the vast cattle ranches that make Canada one of the world’s major beef producers?',
+                'answer' => 'Alberta',
+                'explanation' => 'Alberta is renowned for its large cattle ranches and is a major producer of beef in Canada.'
+              ],
+              [
+                'question' => 'What is "La Francophonie"?',
+                'answer' => 'An association of French-speaking nations',
+                'explanation' => 'La Francophonie is an association of French-speaking nations. Quebec’s cultural contributions, including films, music, and literature, have international stature within this organization.'
+              ],
+              [
+                'question' => 'Where is Western Canada’s largest Francophone community?',
+                'answer' => 'Manitoba',
+                'explanation' => 'The French Quarter in Winnipeg, St. Boniface, is home to Western Canada’s largest Francophone community, numbering around 45,000 people.'
+              ],
+              [
+                'question' => 'Which province is the only officially bilingual province?',
+                'answer' => 'New Brunswick',
+                'explanation' => 'New Brunswick is unique as the only officially bilingual province in Canada.'
+              ],
+              [
+                'question' => 'Which province or territory holds the record for the coldest temperature ever recorded in Canada (-63°C)?',
+                'answer' => 'Yukon',
+                'explanation' => 'Yukon holds the record for the coldest temperature ever recorded in Canada, which is -63°C.'
+              ],
+              [
+                'question' => 'Who represents the majority population in Nunavut?',
+                'answer' => 'Inuit',
+                'explanation' => 'In Nunavut, the majority of the population is Inuit, making up about 85% of the residents.'
+              ],
+              [
+                'question' => 'Which city is the principal Francophone Acadian centre in Canada?',
+                'answer' => 'Moncton',
+                'explanation' => 'Moncton is recognized as the principal Francophone Acadian centre in Canada, while Saint John is the largest city and port, and Fredericton is the capital.'
+              ],
+              [
+                'question' => 'Where is the headquarters of the Canadian Navy’s Pacific fleet?',
+                'answer' => 'Victoria',
+                'explanation' => 'Victoria, the capital of British Columbia, is the headquarters for the Canadian Navy’s Pacific fleet.'
+              ],
+              [
+                'question' => 'Which city is the headquarters of the Canadian mining industry?',
+                'answer' => 'Saskatoon',
+                'explanation' => 'Saskatoon serves as the headquarters for the Canadian mining industry and is also an important center for education and research.'
+              ],
+              [
+                'question' => 'What is the capital of Saskatchewan?',
+                'answer' => 'Regina',
+                'explanation' => 'Regina is the capital city of Saskatchewan.'
+              ],
+              [
+                'question' => 'Which province is Canada’s main producer of pulp and paper?',
+                'answer' => 'Quebec',
+                'explanation' => 'Quebec is the leading producer of pulp and paper in Canada.'
+              ],
+              [
+                'question' => 'Which province is Canada’s major producer of oil and gas?',
+                'answer' => 'Alberta',
+                'explanation' => 'Alberta is the primary producer of oil and gas in Canada, with significant development in its oil sands.'
+              ],
+              [
+                'question' => 'Which province has the world’s richest deposits of uranium and potash?',
+                'answer' => 'Saskatchewan',
+                'explanation' => 'Saskatchewan has the richest deposits of uranium and potash, which is crucial for fertilizer production, and also produces oil and natural gas.'
+              ],
+              [
+                'question' => 'Which region contains one-third of Canada’s land mass?',
+                'answer' => 'The Northern Territories',
+                'explanation' => 'The Northern Territories, including the Northwest Territories, Nunavut, and Yukon, make up one-third of Canada’s land mass but have a very small population of about 100,000.'
+              ],
+              [
+                'question' => 'What does "NAFTA" mean?',
+                'answer' => 'North American Free Trade Agreement',
+                'explanation' => 'NAFTA stands for North American Free Trade Agreement, which includes Canada, the United States, and Mexico, facilitating trade between these countries.'
+              ]
+            ]
           ],
           [
             'image' => '/images/chap 1.png',
