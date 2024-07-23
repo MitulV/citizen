@@ -8,7 +8,7 @@ export default function Glossary({ auth }) {
                 <Head title="Glossary" />
 
                 {/* Main content */}
-                <section className="container max-w-screen-lg px-4 py-8 sm:px-6 md:px-8 lg:px-12 xl:px-24 sm:mx-auto lg:mx-auto xl:mx-60 bg-slate-50 rounded-3xl">
+                <section className="container max-w-screen-lg px-10 py-8 mx-8 bg-slate-50 rounded-3xl">
                     <h1 className="text-4xl font-bold mb-8 text-gray-600 text-center">
                         Glossary
                     </h1>
