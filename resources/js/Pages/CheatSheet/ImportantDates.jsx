@@ -9,77 +9,28 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faBriefcase,
-    faSchool,
-    faStar,
-} from "@fortawesome/free-solid-svg-icons";
+import { faExclamation } from "@fortawesome/free-solid-svg-icons";
 
 export default function ImportantDates({ auth }) {
-    const workIcon = {
-        icon: <FontAwesomeIcon icon={faBriefcase} />,
-        iconStyle: { background: "rgb(33, 150, 243)", color: "#fff" },
-    };
-    const schoolIcon = {
-        icon: <FontAwesomeIcon icon={faSchool} />,
-        iconStyle: { background: "rgb(233, 30, 99)", color: "#fff" },
-    };
-    const starIcon = {
-        icon: <FontAwesomeIcon icon={faStar} />,
-        iconStyle: { background: "rgb(16, 204, 82)", color: "#fff" },
+    const exclamationIcon = {
+        icon: <FontAwesomeIcon icon={faExclamation} />,
+        iconStyle: { background: "rgb(81, 81, 81)", color: "#fff" },
     };
 
     const timeline = [
         {
-            icon: workIcon,
-            date: "2011 - present",
-            title: "Creative Director",
-            subtitle: "Miami, FL",
-            desc: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            icon: exclamationIcon,
+            title: "Magna Carta / Great charter of freedoms",
+            subtitle: "Magna carta is signed in England.",
+            desc: "2015",
         },
         {
-            icon: workIcon,
-            date: "2010 - 2011",
-            title: "Art Director",
-            subtitle: "San Francisco, CA",
-            desc: "Creative Direction, User Experience, Visual Design, SEO, Online Marketing",
+            icon: exclamationIcon,
+            title: "Charter of Rights & Amended Constitution",
+            subtitle:
+                "The Constitution of Canada was amended in 1982 to entrench the Canadian Charter of Rights and Freedoms.",
+            desc: "1982",
         },
-        {
-            icon: workIcon,
-            date: "2008 - 2010",
-            title: "Web Designer",
-            subtitle: "Los Angeles, CA",
-            desc: "User Experience, Visual Design",
-        },
-        {
-            icon: workIcon,
-            date: "2006 - 2008",
-            title: "Web Designer",
-            subtitle: "San Francisco, CA",
-            desc: "User Experience, Visual Design",
-        },
-        {
-            icon: schoolIcon,
-            date: "April 2013",
-            title: "Content Marketing for Web, Mobile and Social Media",
-            subtitle: "Online Course",
-            desc: "Strategy, Social Media",
-        },
-        {
-            icon: schoolIcon,
-            date: "November 2012",
-            title: "Agile Development Scrum Master",
-            subtitle: "Certification",
-            desc: "Creative Direction, User Experience, Visual Design",
-        },
-        {
-            icon: schoolIcon,
-            date: "2002 - 2006",
-            title: "Bachelor of Science in Interactive Digital Media Visual Imaging",
-            subtitle: "Bachelor Degree",
-            desc: "Creative Direction, Visual Design",
-        },
-        { icon: starIcon },
     ];
     return (
         <>
@@ -87,57 +38,36 @@ export default function ImportantDates({ auth }) {
             <AuthenticatedLayout user={auth.user} isChapterPanelVisible={true}>
                 <Head title="Important Dates" />
 
-                <div className="App bg-slate-300">
-                    <h3>
-                        Create a vertical timeline component in React -{" "}
-                        <a href="https://www.cluemediator.com/" target="_blank">
-                            Clue Mediator
-                        </a>
-                    </h3>
-                    <VerticalTimeline>
-                        {timeline.map((t, i) => {
-                            const contentStyle =
-                                i === 0
-                                    ? {
-                                          background: "rgb(33, 150, 243)",
-                                          color: "#fff",
-                                      }
-                                    : undefined;
-                            const arrowStyle =
-                                i === 0
-                                    ? {
-                                          borderRight:
-                                              "7px solid  rgb(33, 150, 243)",
-                                      }
-                                    : undefined;
-
-                            return (
-                                <VerticalTimelineElement
-                                    key={i}
-                                    className="vertical-timeline-element--work"
-                                    contentStyle={contentStyle}
-                                    contentArrowStyle={arrowStyle}
-                                    date={t.date}
-                                    {...t.icon}
-                                >
-                                    {t.title ? (
-                                        <React.Fragment>
-                                            <h3 className="vertical-timeline-element-title">
-                                                {t.title}
-                                            </h3>
-                                            {t.subtitle && (
-                                                <h4 className="vertical-timeline-element-subtitle">
-                                                    {t.subtitle}
-                                                </h4>
-                                            )}
-                                            {t.desc && <p>{t.desc}</p>}
-                                        </React.Fragment>
-                                    ) : undefined}
-                                </VerticalTimelineElement>
-                            );
-                        })}
-                    </VerticalTimeline>
-                </div>
+                <VerticalTimeline lineColor="rgb(81,81,81)">
+                    {timeline.map((t, i) => {
+                        const contentStyle = {};
+                        const arrowStyle = {
+                            borderRight: "7px solid  rgb(81, 81, 81)",
+                        };
+                        return (
+                            <VerticalTimelineElement
+                                key={i}
+                                className="vertical-timeline-element--work"
+                                contentStyle={contentStyle}
+                                contentArrowStyle={arrowStyle}
+                                position={"right"}
+                                {...t.icon}
+                            >
+                                {t.title ? (
+                                    <React.Fragment>
+                                        <h1 className="text-2xl">{t.title}</h1>
+                                        {t.subtitle && (
+                                            <h4 className="vertical-timeline-element-subtitle">
+                                                {t.subtitle}
+                                            </h4>
+                                        )}
+                                        {t.desc && <p>{t.desc}</p>}
+                                    </React.Fragment>
+                                ) : undefined}
+                            </VerticalTimelineElement>
+                        );
+                    })}
+                </VerticalTimeline>
             </AuthenticatedLayout>
         </>
     );
