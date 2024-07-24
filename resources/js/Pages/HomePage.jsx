@@ -279,6 +279,7 @@ export default function HomePage({ auth, chapters }) {
                                         description={chapter.description}
                                         questions={chapter.questions}
                                         mistakes={chapter.mistakes}
+                                        auth
                                     />
                                 </Link>
                             ))}
