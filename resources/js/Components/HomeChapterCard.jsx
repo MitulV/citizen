@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLock } from "@fortawesome/free-solid-svg-icons";
 export default function HomeChapterCard({
     image,
     name,
@@ -5,11 +7,20 @@ export default function HomeChapterCard({
     description,
     questions,
     mistakes,
+    auth,
 }) {
     return (
         <>
             <div className="bg-slate-50 rounded-2xl shadow-md transform hover:-translate-y-1 transition duration-500 ease-out hover:shadow-lg hover:shadow-gray-300 max-w-sm">
                 <img src={image} alt="Photo 1" className="max-w-sm" />
+                <div className="absolute top-2 right-2 z-20 bg-white rounded-xl">
+                    {(!auth || !auth.subscription) && (
+                        <FontAwesomeIcon
+                            icon={faLock}
+                            className="text-black text-sm"
+                        />
+                    )}
+                </div>
                 <h1 className="px-5 py-4 text-lg font-bold">{name}</h1>
                 <h2 className="px-5 text-gray-800 text-lg font-semibold">
                     {title}
