@@ -69,7 +69,7 @@ export default function HomePage({ auth, chapters }) {
                                 alt="Image 1"
                                 className="relative object-cover w-full md:w-48 md:h-full rounded-b-full"
                             />
-                            <div className="absolute top-20 md:top-0 right-0 md:right-8 z-60 p-2 rounded-xl shadow-lg bg-gray-200">
+                            <div className="absolute top-1/2 left-[-50%] md:left-[-25%] z-60 p-2 rounded-xl shadow-lg bg-gray-200 transform -translate-y-1/2">
                                 <h1 className="text-xl md:text-2xl font-bold text-center text-black">
                                     2024
                                 </h1>
