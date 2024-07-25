@@ -17,8 +17,8 @@ export default function Premium({ auth }) {
         <>
             <GuestLayout user={auth.user}>
                 <Head title="Premium" />
-                <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-6 p-4 sm:p-6 md:p-10 lg:p-16 xl:p-24 bg-slate-50">
-                    <div className="lg:col-span-6 flex flex-col space-y-4 p-6 md:p-10 mr-0">
+                <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-2 p-4 sm:p-6 md:p-10 lg:p-16 xl:px-96 bg-slate-50">
+                    <div className="lg:col-span-6 flex flex-col space-y-4 p-6 md:p-10 xl:mr-0">
                         <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-6xl font-bold">
                             Pass your Canadian Citizenship test in <br /> first
                             try.
@@ -82,7 +82,7 @@ export default function Premium({ auth }) {
                         </ul>
                     </div>
 
-                    <div className="lg:col-span-6 flex justify-center items-center ml-0">
+                    <div className="lg:col-span-6 flex justify-center items-center xl:ml-0">
                         <img
                             src="/images/ea59b0c12c13b0daf792e11ef62864a7.png"
                             alt="Placeholder"
@@ -91,7 +91,7 @@ export default function Premium({ auth }) {
                     </div>
 
                     <div className="lg:col-span-12 flex flex-col items-center sm:justify-between mt-10">
-                        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-center lg:text-left">
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mt-4 text-center lg:text-left">
                             Why busy learners love CitizenTestPrep Premium
                         </h1>
 
@@ -233,7 +233,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="lg:col-span-12 flex flex-col items-center justify-center px-6 md:px-16 lg:px-32 xl:px-64">
+                <section className="lg:col-span-12 flex flex-col items-center justify-center px-6 md:px-16 lg:px-32 xl:px-96">
                     <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-center">
                         Lively and innovative method of test preparation!
                     </h1>
@@ -259,7 +259,7 @@ export default function Premium({ auth }) {
                         resources.
                     </p>
                 </section>
-                <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 md:p-10 bg-slate-50 mt-10">
+                <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 md:p-10 bg-slate-50 mt-10 xl:px-96">
                     <div className="lg:col-span-6 flex flex-col space-y-4 p-6 md:p-10">
                         <p className="text-indigo-600 text-sm md:text-base lg:text-lg">
                             How it works
@@ -356,7 +356,7 @@ export default function Premium({ auth }) {
                     </p>
                 </section>
 
-                <section className="container-fluid mx-auto px-2 py-8  bg-slate-50">
+                <section className="container mx-auto px-2 py-8  bg-slate-50 xl:px-96">
                     <h1 className="text-4xl font-bold mb-8 text-center mt-8">
                         Our users find our questions <br /> very similar to the
                         actual test.
@@ -415,7 +415,7 @@ export default function Premium({ auth }) {
                         </button>
                     </div>
                 </section>
-                <section className="container-fluid mx-auto px-4 md:px-10 py-10 bg-indigo-600">
+                <section className="container mx-auto px-4 md:px-10 py-10 bg-indigo-600 xl:px-96">
                     <p className="text-xs sm:text-sm md:text-base text-white mb-6 text-center mt-10">
                         A FASTER, SMARTER WAY TO STUDY
                     </p>
@@ -477,7 +477,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container-fluid mx-auto px-4 md:px-10 lg:px-20 py-10 bg-slate-50">
+                <section className="container mx-auto px-4 md:px-10 lg:px-20 py-10 bg-slate-50">
                     <p className="text-center text-indigo-600 mt-8">
                         In-depth learning
                     </p>
@@ -538,7 +538,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container-fluid mx-auto px-4 md:px-10 lg:px-20 py-4 bg-indigo-500">
+                <section className="container  mx-auto px-4 md:px-10 lg:px-20 py-4 bg-indigo-500">
                     <p className="text-center text-xs text-white mt-8">
                         ONE CHAPTER AT A TIME
                     </p>
@@ -592,7 +592,7 @@ export default function Premium({ auth }) {
                         </div>
                     </div>
                 </section>
-                <section className="container-fluid mx-auto px-4 md:px-10 lg:px-20 py-8 bg-slate-50 hidden sm:block">
+                <section className="container mx-auto px-4 md:px-10 lg:px-20 py-8 bg-slate-50 hidden sm:block">
                     <p className="text-sm text-indigo-600 mb-4 mt-8 text-center">
                         IMPORTANT TOOLS
                     </p>
@@ -659,7 +659,7 @@ export default function Premium({ auth }) {
                         </div>
                     </div>
                 </section>
-                <section className="container-fluid mx-auto px-4 md:px-10 lg:px-20 py-8">
+                <section className="container mx-auto px-4 md:px-10 lg:px-20 py-8">
                     <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-center mt-10">
                         Get started today and ace the test
                     </h1>
@@ -929,7 +929,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container-fluid mx-auto px-4 md:px-10 lg:px-20 py-8 bg-slate-100">
+                <section className="container mx-auto px-4 md:px-10 lg:px-20 py-8 bg-slate-100">
                     <p className="text-sm text-indigo-600 mb-4 mt-8 text-center">
                         Common FAQs
                     </p>

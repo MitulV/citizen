@@ -8,8 +8,8 @@ export default function Map({ auth }) {
             <Head title="Interactive Map" />
 
             {/* Main content */}
-            <section className="container  px-20 py-8 bg-gray-50 rounded-3x mx-96">
-                <h1 className="text-4xl font-bold mb-8 text-gray-600">
+            <section className="container mx-auto px-4 py-8 sm:px-10  md:px-10 lg:px-16 xl:px-20 bg-gray-50 rounded-xl">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 md:mb-8 text-gray-600">
                     Interactive Map
                 </h1>
 
