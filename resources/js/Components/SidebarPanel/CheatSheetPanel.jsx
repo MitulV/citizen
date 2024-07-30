@@ -32,42 +32,66 @@ export default function CheatSheetPanel({ collapsed }) {
                                 <Link
                                     replace
                                     href={route("importantPeople")}
-                                    className="text-gray-800 text-start p-4 bg-slate-50 mt-1 flex justify-between items-start"
+                                    className={`text-gray-800 text-start p-4 mt-1 flex justify-between items-start ${
+                                        route().current("importantPeople")
+                                            ? "bg-slate-100"
+                                            : ""
+                                    }`}
                                 >
                                     Important People
                                 </Link>
                                 <Link
                                     replace
                                     href={route("importantDates")}
-                                    className="text-gray-800 text-start p-4 bg-slate-50 mt-1 flex justify-between items-start"
+                                    className={`text-gray-800 text-start p-4 mt-1 flex justify-between items-start ${
+                                        route().current("importantDates")
+                                            ? "bg-slate-100"
+                                            : ""
+                                    }`}
                                 >
                                     Important Dates
                                 </Link>
                                 <Link
                                     replace
                                     href={route("govQuestions")}
-                                    className="text-gray-800 text-start p-4 bg-slate-50 mt-1 flex justify-between items-start"
+                                    className={`text-gray-800 text-start p-4 mt-1 flex justify-between items-start ${
+                                        route().current("govQuestions")
+                                            ? "bg-slate-100"
+                                            : ""
+                                    }`}
                                 >
                                     Government Questions
                                 </Link>
                                 <Link
                                     replace
                                     href={route("map")}
-                                    className="text-gray-800 text-start p-4 bg-slate-50 mt-1 flex justify-between items-start"
+                                    className={`text-gray-800 text-start p-4 mt-1 flex justify-between items-start ${
+                                        route().current("map")
+                                            ? "bg-slate-100"
+                                            : ""
+                                    }`}
                                 >
                                     Interactive Map
                                 </Link>
                                 <Link
                                     replace
                                     href={route("glossary")}
-                                    className="text-gray-800 text-start p-4 bg-slate-50 mt-1 flex justify-between items-start"
+                                    className={`text-gray-800 text-start p-4 mt-1 flex justify-between items-start ${
+                                        route().current("glossary")
+                                            ? "bg-slate-100"
+                                            : ""
+                                    }`}
                                 >
                                     Glossary
                                 </Link>
                                 <Link
                                     replace
                                     href={route("faq")}
-                                    className="text-gray-800 text-start p-4 bg-slate-50 mt-1 flex justify-between items-start"
+                                    className={`text-gray-800 text-start p-4 mt-1 flex justify-between items-start ${
+                                        route().current("faq")
+                                            ? "bg-slate-100"
+                                            : ""
+                                    }`}
                                 >
                                     Frequently Asked Questions
                                 </Link>
