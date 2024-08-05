@@ -23,6 +23,11 @@ class FlashcardController extends Controller
 
     foreach ($chapters as $chapter) {
       $allCompleted = true;
+
+      // Get the first flashcard id for the chapter
+      $firstFlashcardId = $chapter->flashcards->first()->id ?? null;
+      $chapter->first_flashcard_id = $firstFlashcardId;
+
       foreach ($chapter->flashcards as $flashcard) {
         $userFlashcard = $flashcard->users->where('id', $user->id)->first();
         if ($userFlashcard) {
@@ -40,8 +45,6 @@ class FlashcardController extends Controller
       }
       $chapter->allFlashcardsCompleted = $allCompleted;
     }
-
-
 
     return Inertia::render('Flashcard/Index', [
       'chapters' => $chapters
@@ -82,6 +85,11 @@ class FlashcardController extends Controller
 
     foreach ($chapters as $chapter) {
       $allCompleted = true;
+
+      // Get the first flashcard id for the chapter
+      $firstFlashcardId = $chapter->flashcards->first()->id ?? null;
+      $chapter->first_flashcard_id = $firstFlashcardId;
+
       foreach ($chapter->flashcards as $flashcard) {
         $userFlashcard = $flashcard->users->where('id', $user->id)->first();
         if ($userFlashcard) {

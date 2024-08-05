@@ -34,50 +34,38 @@ export default function FlashcardPanel({ chapters, collapsed }) {
                                 </Accordion.Title>
                                 <Accordion.Content>
                                     <div className="text-gray-800 text-start">
-                                        {chapter.flashcards.map((flashcard) => (
-                                            <Link
-                                                replace
-                                                href={`/flashcards/${
-                                                    chapter.id
-                                                }${
-                                                    flashcard.id
-                                                        ? `/${flashcard.id}`
-                                                        : ""
-                                                }`}
-                                                key={flashcard.id}
+                                        <Link
+                                            replace
+                                            href={`/flashcards/${chapter.id}${
+                                                chapter.first_flashcard_id
+                                                    ? `/${chapter.first_flashcard_id}`
+                                                    : ""
+                                            }`}
+                                            key={chapter.first_flashcard_id}
+                                        >
+                                            <div
+                                                className="p-4 bg-slate-50 mt-1 flex justify-between items-start"
+                                                key={chapter.first_flashcard_id}
                                             >
-                                                <div
-                                                    className="p-4 bg-slate-50 mt-1 flex justify-between items-start"
-                                                    key={flashcard.id}
-                                                >
-                                                    <button className="text-base text-gray-800 text-start">
-                                                        {`Flashcard ${flashcard.id}`}
-                                                    </button>
-                                                    {(flashcard.status ===
-                                                        "completed" ||
-                                                        flashcard.status ===
-                                                            "failed") && (
-                                                        <FontAwesomeIcon
-                                                            icon={
-                                                                flashcard.status ===
-                                                                "failed"
-                                                                    ? faTimes
-                                                                    : faCheck
-                                                            }
-                                                            className={
-                                                                flashcard.status ===
-                                                                "completed"
-                                                                    ? "text-green-600"
-                                                                    : flashcard.status ===
-                                                                      "failed"
-                                                                    ? "text-red-600"
-                                                                    : "text-gray-400"
-                                                            }
-                                                        />
-                                                    )}
-                                                </div>
-                                            </Link>
-                                        ))}
+                                                <button className="text-base text-gray-800 text-start">
+                                                    {`Flashcard`}
+                                                </button>
+                                                {chapter.allFlashcardsCompleted && (
+                                                    <FontAwesomeIcon
+                                                        icon={
+                                                            chapter.allFlashcardsCompleted
+                                                                ? faCheck
+                                                                : ""
+                                                        }
+                                                        className={
+                                                            chapter.allFlashcardsCompleted
+                                                                ? "text-green-600"
+                                                                : ""
+                                                        }
+                                                    />
+                                                )}
+                                            </div>
+                                        </Link>
                                     </div>
                                 </Accordion.Content>
                             </Accordion.Panel>

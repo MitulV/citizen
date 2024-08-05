@@ -67,52 +67,40 @@ export default function Index({ auth, chapters }) {
                                             <p className="text-gray-500 text-sm mt-2">
                                                 {chapter.description}
                                             </p>
-                                            {chapter.flashcards.map(
-                                                (flashcard) => (
-                                                    <Link
-                                                        replace
-                                                        href={`/flashcards/${
-                                                            chapter.id
-                                                        }${
-                                                            flashcard.id
-                                                                ? `/${flashcard.id}`
-                                                                : ""
-                                                        }`}
-                                                        key={flashcard.id}
-                                                    >
-                                                        <div className="flex justify-between items-start border-b border-gray-200 pt-3 pb-2">
-                                                            <FontAwesomeIcon
-                                                                icon={faFile}
-                                                            />
-                                                            <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2">
-                                                                {`Flashcard ${flashcard.id}`}
-                                                            </p>
-                                                            {(flashcard.status ===
-                                                                "completed" ||
-                                                                flashcard.status ===
-                                                                    "failed") && (
-                                                                <FontAwesomeIcon
-                                                                    icon={
-                                                                        flashcard.status ===
-                                                                        "failed"
-                                                                            ? faTimes
-                                                                            : faCheck
-                                                                    }
-                                                                    className={
-                                                                        flashcard.status ===
-                                                                        "completed"
-                                                                            ? "text-green-600"
-                                                                            : flashcard.status ===
-                                                                              "failed"
-                                                                            ? "text-red-600"
-                                                                            : "text-gray-400"
-                                                                    }
-                                                                />
-                                                            )}
-                                                        </div>
-                                                    </Link>
-                                                )
-                                            )}
+                                            <Link
+                                                replace
+                                                href={`/flashcards/${
+                                                    chapter.id
+                                                }${
+                                                    chapter.first_flashcard_id
+                                                        ? `/${chapter.first_flashcard_id}`
+                                                        : ""
+                                                }`}
+                                                key={chapter.first_flashcard_id}
+                                            >
+                                                <div className="flex justify-between items-start border-b border-gray-200 pt-3 pb-2">
+                                                    <FontAwesomeIcon
+                                                        icon={faFile}
+                                                    />
+                                                    <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2">
+                                                        {`Flashcard`}
+                                                    </p>
+                                                    {chapter.allFlashcardsCompleted && (
+                                                        <FontAwesomeIcon
+                                                            icon={
+                                                                chapter.allFlashcardsCompleted
+                                                                    ? faCheck
+                                                                    : ""
+                                                            }
+                                                            className={
+                                                                chapter.allFlashcardsCompleted
+                                                                    ? "text-green-600"
+                                                                    : ""
+                                                            }
+                                                        />
+                                                    )}
+                                                </div>
+                                            </Link>
                                         </div>
                                     </div>
                                 ))}
@@ -156,52 +144,40 @@ export default function Index({ auth, chapters }) {
                                             <p className="text-gray-500 text-sm mt-2">
                                                 {chapter.description}
                                             </p>
-                                            {chapter.flashcards.map(
-                                                (flashcard, index) => (
-                                                    <Link
-                                                        replace
-                                                        href={`/flashcards/${
-                                                            chapter.id
-                                                        }${
-                                                            flashcard.id
-                                                                ? `/${flashcard.id}`
-                                                                : ""
-                                                        }`}
-                                                        key={flashcard.id}
-                                                    >
-                                                        <div className="flex justify-between items-start border-b border-gray-200 pt-3 pb-2">
-                                                            <FontAwesomeIcon
-                                                                icon={faFile}
-                                                            />
-                                                            <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2">
-                                                                {`Flashcard ${flashcard.id}`}
-                                                            </p>
-                                                            {(flashcard.status ===
-                                                                "completed" ||
-                                                                flashcard.status ===
-                                                                    "failed") && (
-                                                                <FontAwesomeIcon
-                                                                    icon={
-                                                                        flashcard.status ===
-                                                                        "failed"
-                                                                            ? faTimes
-                                                                            : faCheck
-                                                                    }
-                                                                    className={
-                                                                        flashcard.status ===
-                                                                        "completed"
-                                                                            ? "text-green-600"
-                                                                            : flashcard.status ===
-                                                                              "failed"
-                                                                            ? "text-red-600"
-                                                                            : "text-gray-400"
-                                                                    }
-                                                                />
-                                                            )}
-                                                        </div>
-                                                    </Link>
-                                                )
-                                            )}
+                                            <Link
+                                                replace
+                                                href={`/flashcards/${
+                                                    chapter.id
+                                                }${
+                                                    chapter.first_flashcard_id
+                                                        ? `/${chapter.first_flashcard_id}`
+                                                        : ""
+                                                }`}
+                                                key={chapter.first_flashcard_id}
+                                            >
+                                                <div className="flex justify-between items-start border-b border-gray-200 pt-3 pb-2">
+                                                    <FontAwesomeIcon
+                                                        icon={faFile}
+                                                    />
+                                                    <p className="text-left text-gray-800 text-sm flex-1 mx-2 md:mx-4 lg:mx-2">
+                                                        {`Flashcard`}
+                                                    </p>
+                                                    {chapter.allFlashcardsCompleted && (
+                                                        <FontAwesomeIcon
+                                                            icon={
+                                                                chapter.allFlashcardsCompleted
+                                                                    ? faCheck
+                                                                    : ""
+                                                            }
+                                                            className={
+                                                                chapter.allFlashcardsCompleted
+                                                                    ? "text-green-600"
+                                                                    : ""
+                                                            }
+                                                        />
+                                                    )}
+                                                </div>
+                                            </Link>
                                         </div>
                                     </div>
                                 ))}
