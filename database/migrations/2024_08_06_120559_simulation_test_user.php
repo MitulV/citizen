@@ -14,7 +14,7 @@ return new class extends Migration
     Schema::create('simulation_test_user', function (Blueprint $table) {
       $table->id();
       $table->foreignId('user_id')->constrained()->onDelete('cascade');
-      $table->foreignId('test_id')->constrained('simulation_tests')->onDelete('cascade');
+      $table->foreignId('simulation_test_id')->constrained('simulation_tests')->onDelete('cascade');
       $table->enum('status', ['not_attempted', 'completed', 'failed'])->default('not_attempted');
       $table->integer('total_correct')->nullable();
       $table->integer('total_wrong')->nullable();

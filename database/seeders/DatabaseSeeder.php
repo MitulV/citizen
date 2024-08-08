@@ -12,6 +12,9 @@ use App\Models\Answer;
 use App\Models\Flashcard;
 use App\Models\Package;
 use App\Models\Question;
+use App\Models\SimulationAnswer;
+use App\Models\SimulationQuestion;
+use App\Models\SimulationTest;
 use Illuminate\Support\Facades\Log;
 
 class DatabaseSeeder extends Seeder
@@ -13604,7 +13607,6 @@ class DatabaseSeeder extends Seeder
         ]
       );
 
-
       $chapters->each(function ($data, $index) {
 
         $chapter = Chapter::create([
@@ -13689,6 +13691,244 @@ class DatabaseSeeder extends Seeder
       foreach ($packages as $package) {
         Package::create($package);
       }
+
+      // Simulation Test
+      $simulationTests = collect(
+        [
+          'name' => 'Practice Test 1.1', 'info' => 'Practice Test 1.1',
+          'questions' => [
+            [
+              'text' => 'What will you promise when you take the oath of citizenship?',
+              'answers' => [
+                ['text' => 'Carry out responsibilities as a Canadian citizen'],
+                ['text' => 'Pledge allegiance to the queen or King'],
+                ['text' => 'Promise to obey the constitution of Canada'],
+                ['text' => 'Pledge loyalty to the queen or King, observe the laws and fulfill the duties of a Canadian'],
+              ],
+              'explanation' => 'I swear (or affirm) that I will be faithful, observe the laws and fulfill the duties of a Canadian. (Discover Canada - P2)'
+            ],
+            [
+              'text' => 'To whom do we profess our loyalty to in Canada?',
+              'answers' => [
+                ['text' => 'The Canadian flag'],
+                ['text' => 'A person who represents all Canadians'],
+                ['text' => 'Geopolitical entities'],
+                ['text' => 'The Canadian Constitution'],
+              ],
+              'explanation' => 'In Canada, we profess our loyalty to a person who represents all Canadians and not to a document such as a constitution, a banner such as a flag, or a geopolitical entity such as a country. (Discover Canada - P2)'
+            ],
+            [
+              'text' => 'What is Canada\'s system of political governance called?',
+              'answers' => [
+                ['text' => 'Monarchy'],
+                ['text' => 'Parliamentary government'],
+                ['text' => 'Democratic process'],
+                ['text' => 'Benevolent dictatorship'],
+              ],
+              'explanation' => 'Canada is a constitutional monarchy, a parliamentary democracy and a federal state. Canadians are bound together by a shared commitment to the rule of law and to the institutions of parliamentary government. (Discover Canada - P3).'
+            ],
+            [
+              'text' => 'Which of these statements is true?',
+              'answers' => [
+                ['text' => 'Canada has welcomed immigrants for years to build a free, just, and affluent society.'],
+                ['text' => 'Canadians haven\'t given up anything to protect their way of life'],
+                ['text' => 'Canada is a Republic'],
+                ['text' => 'Immigrants between the ages of 21 and 54 must learn about voting laws in order to become Canadian citizens'],
+              ],
+              'explanation' => 'Canada has welcomed generations of newcomers to our shores to help us build a free, law-abiding and prosperous society. (Discover Canada - P3)'
+            ],
+            [
+              'text' => 'Is the Citizenship Test written or an interview?',
+              'answers' => [
+                ['text' => 'Always in the form of an interview'],
+                ['text' => 'Written and taken in person'],
+                ['text' => 'Always a written test'],
+                ['text' => 'It\'s a written test, but it can also be an interview.'],
+              ],
+              'explanation' => 'The citizenship test is usually a written test but it could be an interview. You will be tested on the knowledge of Canada and of the rights and responsibilities of citizenship, and you will also be tested to ensure you have adequate knowledge of English or French. (P6)'
+            ],
+            [
+              'text' => 'In Canada, the constitution, the flag and the country are not encompassed by the Sovereign.',
+              'answers' => [
+                ['text' => 'True'],
+                ['text' => 'False'],
+              ],
+              'explanation' => 'In Canada, we profess our loyalty to a person who represents all Canadians and not to a document such as a constitution, a banner such as a flag, or a geopolitical entity such as a country. In our constitutional monarchy, these elements are encompassed by the Sovereign (Queen or King). It is a remarkably simple yet powerful principle: Canada is personified by the Sovereign just as the Sovereign is personified by Canada.'
+            ],
+            [
+              'text' => 'Which of the following statements is false?',
+              'answers' => [
+                ['text' => 'Canada is a federal state'],
+                ['text' => 'Canada is a constitutional monarchy'],
+                ['text' => 'Canada is a theocracy'],
+                ['text' => 'Canada is a parliamentary democracy'],
+              ],
+              'explanation' => 'Canada is a constitutional monarchy, a parliamentary democracy and a federal state. Canadians are bound together by a shared commitment to the rule of law and to the institutions of parliamentary government. (P3)'
+            ],
+            [
+              'text' => 'Which of the following statements is false?',
+              'answers' => [
+                ['text' => 'During your citizenship ceremony, you\'ll be invited to join the Canadian Army.'],
+                ['text' => 'During your citizenship ceremony, you\'ll sign the oath form.'],
+                ['text' => 'During your citizenship ceremony, you\'ll get your Citizenship Certificate.'],
+                ['text' => 'During your citizenship ceremony, you\'ll take the Oath of Citizenship.'],
+              ],
+              'explanation' => 'At the ceremony, you will take the Oath of Citizenship; sign the oath form; and receive your Canadian Citizenship Certificate. If you do not pass the test, you will receive a notification indicating the next steps. (P7)'
+            ],
+            [
+              'text' => 'What languages do you need to demonstrate proficiency in to become a Canadian citizen?',
+              'answers' => [
+                ['text' => 'Either Spanish or English'],
+                ['text' => 'Either English or French'],
+                ['text' => 'Both English and French'],
+                ['text' => 'Either Spanish or French'],
+              ],
+              'explanation' => 'In order to apply for Canadian citizenship, you must provide proof that you know how to speak and write in 1 of Canada\'s official languages (either English or French). (P3)'
+            ],
+            [
+              'text' => 'Canada does not personify the Sovereign.',
+              'answers' => [
+                ['text' => 'True'],
+                ['text' => 'False'],
+              ],
+              'explanation' => 'Canada personifies a King or Queen; however, our government is a democracy. (P2)'
+            ],
+            [
+              'text' => 'In Canada, to whom do we formally pledge allegiance?',
+              'answers' => [
+                ['text' => 'We pledge allegiance to the Sovereign (King or Queen).'],
+                ['text' => 'The province of Ontario'],
+                ['text' => 'The United Kingdom'],
+                ['text' => 'The Prime Minister'],
+              ],
+              'explanation' => 'In Canada, we profess our loyalty to a person who represents all Canadians and not to a document such as a constitution, a banner such as a flag, or a geopolitical entity such as a country. (P2)'
+            ],
+            [
+              'text' => 'Which of the following statements is false?',
+              'answers' => [
+                ['text' => 'Canadians enjoy many rights and freedoms'],
+                ['text' => 'Canadians are exempt from upholding others\' freedom and rights'],
+                ['text' => 'Canadians have obligations as well as rights'],
+                ['text' => 'The laws of Canada must be followed by Canadians'],
+              ],
+              'explanation' => 'Canadian citizens enjoy many rights, but Canadians also have responsibilities. They must obey Canada’s laws and respect the rights and freedoms of others. (P3)'
+            ],
+            [
+              'text' => 'Which of these statements about citizenship applications is not true?',
+              'answers' => [
+                ['text' => 'Officials will verify that you are not prohibited from applying'],
+                ['text' => 'Officials will examine your status'],
+                ['text' => 'Officials will make sure you adhere to the rules.'],
+                ['text' => 'Officials will request gifts or money from you.'],
+              ],
+              'explanation' => 'When you apply for citizenship, officials will check your status, verify that you are not prohibited from applying, and ensure that you meet the requirements. (P6)'
+            ],
+            [
+              'text' => 'What type of government is there in Canada?',
+              'answers' => [
+                ['text' => 'Canada is a Confederation'],
+                ['text' => 'Canada is a Constitutional Monarchy.'],
+                ['text' => 'Canada is a Oligarchy'],
+                ['text' => 'Canada is a Republic'],
+              ],
+              'explanation' => 'Canada is a constitutional monarchy, a parliamentary democracy and a federal state. Canadians are bound together by a shared commitment to the rule of law and to the institutions of parliamentary government. (P3)'
+            ],
+            [
+              'text' => 'How long have settlers and immigrants contributed to the diversity and wealth of Canada?',
+              'answers' => [
+                ['text' => '200 Years'],
+                ['text' => '300 Years'],
+                ['text' => '400 Years'],
+                ['text' => '500 Years'],
+              ],
+              'explanation' => 'For 400 years, settlers and immigrants have contributed to the diversity and richness of Canada, which is built on a proud history and a strong identity. (P3)'
+            ],
+            [
+              'text' => 'What are the two basic requirements for citizenship testing in Canada?',
+              'answers' => [
+                ['text' => 'Knowledge of Canadian history and language proficiency'],
+                ['text' => 'Knowledge of Canadian laws and cultural integration'],
+                ['text' => 'Knowledge of Canadian rights and responsibilities, and language proficiency'],
+                ['text' => 'Knowledge of Canadian geography and cultural diversity'],
+              ],
+              'explanation' => 'You will be tested on two basic requirements for citizenship: 1) knowledge of Canada and of the rights and responsibilities of citizenship, and 2) adequate knowledge of English or French. (P6)'
+            ],
+            [
+              'text' => 'Who is exempted from writing the citizenship test in Canada?',
+              'answers' => [
+                ['text' => 'Applicants aged 60 and above'],
+                ['text' => 'Applicants aged 50 and above'],
+                ['text' => 'Applicants aged 55 and above'],
+                ['text' => 'Applicants aged 65 and above'],
+              ],
+              'explanation' => 'Adult applicants 55 years of age and over do not need to write the citizenship test. (P6)'
+            ],
+            [
+              'text' => 'What age group of immigrants must demonstrate adequate knowledge of English or French to become Canadian citizens?',
+              'answers' => [
+                ['text' => '16 to 50'],
+                ['text' => '18 to 54'],
+                ['text' => '20 to 60'],
+                ['text' => '22 to 58'],
+              ],
+              'explanation' => 'Immigrants between the ages of 18 and 54 must have adequate knowledge of English or French in order to become Canadian citizens. (P3)'
+            ],
+            [
+              'text' => 'Which of the following topics must immigrants learn about to fulfill the requirements for Canadian citizenship?',
+              'answers' => [
+                ['text' => 'World history and politics'],
+                ['text' => 'Canadian wildlife and ecology'],
+                ['text' => 'Canada\'s history, symbols, and democratic institutions'],
+                ['text' => 'International trade agreements'],
+              ],
+              'explanation' => 'Canada’s history, symbols, democratic institutions, geography, and the rights and responsibilities of citizenship. (P3)'
+            ],
+            [
+              'text' => 'What oath must Canadian citizens take to pledge allegiance?',
+              'answers' => [
+                ['text' => 'Pledge of loyalty to the Prime Minister'],
+                ['text' => 'Pledge of loyalty to the Canadian flag'],
+                ['text' => 'Pledge of allegiance to the Canadian Constitution and its recognition of Indigenous rights'],
+                ['text' => 'Pledge of allegiance to the United Nations'],
+              ],
+              'explanation' => 'Excerpt from Oath: "I will faithfully observe the laws of Canada, including the Constitution which recognizes and affirms the Aboriginal and treaty rights of First Nations, Inuit and Métis peoples" (P2)'
+            ],
+          ]
+        ],
+      );
+
+      $simulationTest = SimulationTest::create([
+        'name' => 'Exam Simulator',
+        'info' => 'Exam Simulator',
+      ]);
+
+      try {
+        foreach ($simulationTests['questions'] as $questionData) {
+
+          $question = SimulationQuestion::create([
+            'test_id' => $simulationTest->id,
+            'text' => $questionData['text'],
+            'explanation' => $questionData['explanation'],
+          ]);
+
+          $answers = collect();
+          foreach ($questionData['answers'] as $answerData) {
+            $answers->push(SimulationAnswer::create([
+              'question_id' => $question->id,
+              'text' => $answerData['text'],
+            ]));
+          }
+
+          // Set one of the answers as the correct answer
+          $correctAnswerId = 1; //$answers->firstWhere('text', $questionData['answers'][0]['text']);
+          $question->correct_answer_id = $correctAnswerId;
+          $question->save();
+        }
+      } catch (\Throwable $th) {
+        throw $th;
+      }
+
+
 
       User::factory()->count(1)->create();
     });

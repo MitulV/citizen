@@ -33,7 +33,7 @@ export default function SimulationTestPage({
             ); // Convert total time taken to seconds
 
             router.post(
-                route("testResultPage"),
+                route("simulation.testResult"),
                 {
                     questionResults,
                     totalTimeTaken: {
@@ -95,8 +95,8 @@ export default function SimulationTestPage({
     const handleAnswerSelection = (questionId, answerId, testId, index) => {
         currentQuestion.isOptionSelected = true;
         router.post(
-            `/test/${chapterId}`,
-            { questionId, answerId, testId, chapterId, index },
+            `${testId}`,
+            { questionId, answerId, testId, index },
             { preserveState: true, replace: true, preserveScroll: true }
         );
     };
@@ -152,7 +152,7 @@ export default function SimulationTestPage({
 
     const handleReset = () => {
         router.post(
-            `/test/${chapterId}`,
+            `simulation/test/${testId}`,
             {},
             { preserveState: false, replace: true }
         );
@@ -169,13 +169,14 @@ export default function SimulationTestPage({
         );
 
         router.post(
-            route("testResultPage"),
+            route("simulation.testResult"),
             {
                 questionResults,
-                totalTimeTaken: {
+                timeTaken: {
                     minutes: totalTimeTakenInMinutes,
                     seconds: totalTimeTakenInSeconds,
                 },
+                testId,
             },
             { preserveState: false, replace: true }
         );

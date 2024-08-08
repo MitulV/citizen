@@ -70,7 +70,7 @@ Route::middleware([
 
   Route::get('simulation/info', [SimulationTestController::class, 'index'])->name('simulation.info');
   Route::post('simulation/test/{testId}', [SimulationTestController::class, 'testPage'])->name('simulation.test');
-  Route::post('simulation/test/result', [SimulationTestController::class, 'testResult'])->name('simulation.testResult');
+  Route::post('simulation/result', [SimulationTestController::class, 'testResult'])->name('simulation.testResult');
 
   Route::get('/practice-tests/{chapterId}/{testId?}', [PracticeTestsController::class, 'testList'])->name('testList');
   Route::post('/practice-tests/start/{chapterId}/{testId?}', [PracticeTestsController::class, 'testStart'])->name('practice.testStart');
