@@ -15,7 +15,7 @@ return new class extends Migration
       $table->id();
       $table->foreignId('test_id')->constrained('simulation_tests')->onDelete('cascade');
       $table->text('text');
-      $table->foreignId('correct_answer_id')->nullable()->constrained('simulation_answers');
+      $table->foreignId('correct_answer_id')->nullable();
       $table->text('explanation')->nullable();
       $table->timestamps();
     });

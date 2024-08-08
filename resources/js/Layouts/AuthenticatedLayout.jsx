@@ -46,12 +46,13 @@ export default function Authenticated({
     return (
         <div>
             <LoginHeader user={user} />
-            <div className="relative flex h-full">
+            <div className="relative flex h-full ">
                 <Sidebar
                     collapsedWidth="0"
                     width="176px"
                     collapsed={collapsed}
                     backgroundColor="rgb(254,117,62)"
+                    className="max-h-screen" // Ensure the sidebar has full height
                 >
                     <Menu>
                         <MenuItem className="w-full m-2 mt-10" component="span">
