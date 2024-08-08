@@ -8,6 +8,7 @@ use App\Http\Controllers\ImageUploadController;
 use App\Http\Controllers\PracticeTestsController;
 use App\Http\Controllers\PremiumPageController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SimulationTestController;
 use App\Http\Controllers\SimulationTestsController;
 use App\Http\Controllers\StudyGuidesController;
 use App\Http\Controllers\TestController;
@@ -66,6 +67,14 @@ Route::middleware([
   Route::get('/cheat-sheets/map', [CheatSheetController::class, 'map'])->name('map');
   Route::get('/cheat-sheets/glossary', [CheatSheetController::class, 'glossary'])->name('glossary');
   Route::get('/cheat-sheets/faq', [CheatSheetController::class, 'faq'])->name('faq');
+
+  Route::get('simulation/info', [SimulationTestController::class, 'index'])->name('simulation.info');
+  Route::post('simulation/test/{testId}', [SimulationTestController::class, 'testPage'])->name('simulation.test');
+  Route::post('simulation/test/result', [SimulationTestController::class, 'testResult'])->name('simulation.testResult');
+
+  Route::get('/practice-tests/{chapterId}/{testId?}', [PracticeTestsController::class, 'testList'])->name('testList');
+  Route::post('/practice-tests/start/{chapterId}/{testId?}', [PracticeTestsController::class, 'testStart'])->name('practice.testStart');
+  Route::post('/practice-tests/result', [PracticeTestsController::class, 'testResult'])->name('practice.testResult');
 
   //Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
   Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

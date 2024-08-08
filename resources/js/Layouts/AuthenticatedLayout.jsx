@@ -72,7 +72,7 @@ export default function Authenticated({
                             </Link>
                         </MenuItem>
                         <MenuItem className="w-full m-2" component="span">
-                            <Link href={route("simulation.test")}>
+                            <Link href={route("simulation.info")}>
                                 <button
                                     className={`rounded-full w-40 px-4 py-2 ${
                                         url.startsWith("/simulation")
