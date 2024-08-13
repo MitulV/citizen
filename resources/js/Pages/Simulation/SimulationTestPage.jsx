@@ -9,7 +9,7 @@ import {
     faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import Countdown from "react-countdown";
-import GuestLayout from "@/Layouts/GuestLayout";
+import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 
 export default function SimulationTestPage({
     testId,
@@ -20,6 +20,7 @@ export default function SimulationTestPage({
     selectedQuestionId,
     selectedAnswerId,
     explanation,
+    auth,
 }) {
     const renderer = ({ minutes, seconds, completed }) => {
         if (completed) {
@@ -184,7 +185,7 @@ export default function SimulationTestPage({
 
     return (
         <>
-            <GuestLayout>
+            <AuthenticatedLayout user={auth.user}>
                 <Head title="Premium" />
                 <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 p-10 bg-slate-50">
                     {/* Left Side (spans 8 columns on large screens) */}
@@ -383,7 +384,7 @@ export default function SimulationTestPage({
 
                     {/* Buttons outside the main right div */}
                 </section>
-            </GuestLayout>
+            </AuthenticatedLayout>
         </>
     );
 }
