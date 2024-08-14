@@ -6,6 +6,7 @@ import {
     faCircleCheck,
     faFile,
     faCheck,
+    faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 import { Alert } from "flowbite-react";
 
@@ -13,30 +14,21 @@ export default function Index({ auth, chapters }) {
     const { flash } = usePage().props;
     const [message, setMessage] = useState(flash.message);
 
-    // useEffect(() => {
-    //     if (flash.message) {
-    //         const timer = setTimeout(() => {
-    //             setMessage(null);
-    //         }, 5000); // 5 seconds
-
-    //         return () => clearTimeout(timer); // Cleanup the timer if the component unmounts
-    //     }
-    // }, [flash.message]);
     return (
         <>
             <AuthenticatedLayout user={auth.user}>
                 <Head title="Study Guide" />
 
-                <div className="relative min-h-screen md:flex">
-                    <section className="bg-slate-100 py-8 px-4 md:py-12 md:px-8 lg:px-8">
+                <div className="relative min-h-screen md:flex bg-slate-100">
+                    <section className="py-8 px-4 sm:mx-2 md:py-12 md:px-8 lg:py-16 lg:px-10 lg:mx-20 xl:mx-96 xl:px-24">
                         <div className="text-left mb-8">
                             {message && (
                                 <Alert color="success">{message}</Alert>
                             )}
-                            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-900 py-5">
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-4 text-gray-900 py-5">
                                 Study Guide
                             </h1>
-                            <p className="text-base md:text-base lg:text-base text-gray-600 mb-4">
+                            <p className="text-base sm:text-lg md:text-xl lg:text-lg text-gray-600 mb-4">
                                 Get ready for your Canadian Citizenship Test
                                 with guided lessons paired with chapter practice
                                 tests. By systematically covering each chapter
@@ -46,7 +38,7 @@ export default function Index({ auth, chapters }) {
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12">
                             {chapters
                                 .filter(
                                     (chapter) =>
@@ -60,28 +52,28 @@ export default function Index({ auth, chapters }) {
                                         <img
                                             src={chapter.image}
                                             alt={`Chapter ${chapter.id}`}
-                                            className="w-full h-48 object-cover rounded-t-2xl"
+                                            className="w-full h-48 lg:h-64 object-cover rounded-t-2xl"
                                         />
                                         <div className="absolute top-2 right-2 z-20">
                                             {chapter.allTopicsCompleted ? (
                                                 <FontAwesomeIcon
                                                     icon={faCircleCheck}
-                                                    className="text-green-600 text-lg md:text-2xl lg:text-lg"
+                                                    className="text-green-600 text-lg md:text-2xl lg:text-3xl"
                                                 />
                                             ) : (
-                                                <button className="bg-primary text-white py-1 px-3 md:py-2 md:px-4 lg:py-1 lg:px-3 rounded-full text-xs md:text-sm lg:text-xs">
+                                                <button className="bg-primary text-white py-1 px-3 md:py-2 md:px-4 lg:py-2 lg:px-5 rounded-full text-xs md:text-sm lg:text-sm">
                                                     Continue
                                                 </button>
                                             )}
                                         </div>
-                                        <div className="px-4 py-6 md:px-5 md:py-8 lg:px-4 lg:py-6">
-                                            <h1 className="text-base md:text-lg lg:text-base font-bold">
+                                        <div className="px-4 py-6 sm:px-4 sm:py-6 md:px-5 md:py-8 lg:px-6 lg:py-8">
+                                            <h1 className="text-base sm:text-lg md:text-xl lg:text-lg font-bold">
                                                 {chapter.name}
                                             </h1>
-                                            <h2 className="text-gray-600 text-sm md:text-base lg:text-sm font-semibold mt-2">
+                                            <h2 className="text-gray-600 text-sm sm:text-sm md:text-base lg:text-base font-semibold mt-2">
                                                 {chapter.title}
                                             </h2>
-                                            <p className="text-gray-500 text-sm mt-2">
+                                            <p className="text-gray-500 text-sm sm:text-sm md:text-base lg:text-sm mt-2">
                                                 {chapter.description}
                                             </p>
                                             {chapter.topics.map((topic) => (
@@ -133,7 +125,7 @@ export default function Index({ auth, chapters }) {
                                 ))}
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 mt-8">
                             {chapters
                                 .filter(
                                     (chapter) =>
@@ -147,30 +139,30 @@ export default function Index({ auth, chapters }) {
                                         <img
                                             src={chapter.image}
                                             alt={`Chapter ${chapter.id}`}
-                                            className="w-full h-48 object-cover rounded-t-2xl"
+                                            className="w-full h-48 lg:h-64 object-cover rounded-t-2xl"
                                         />
                                         <div className="absolute top-2 right-2 z-20">
                                             {chapter.allTopicsCompleted ? (
                                                 <FontAwesomeIcon
                                                     icon={faCircleCheck}
-                                                    className="text-green-600 text-lg md:text-2xl lg:text-lg"
+                                                    className="text-green-600 text-lg md:text-2xl lg:text-3xl"
                                                 />
                                             ) : (
-                                                <button className="bg-primary text-white py-1 px-3 md:py-2 md:px-4 lg:py-1 lg:px-3 rounded-full text-xs md:text-sm lg:text-xs">
+                                                <button className="bg-primary text-white py-1 px-3 md:py-2 md:px-4 lg:py-2 lg:px-5 rounded-full text-xs md:text-sm lg:text-sm">
                                                     Continue
                                                 </button>
                                             )}
                                         </div>
 
-                                        <div className="px-4 py-6 md:px-5 md:py-8 lg:px-4 lg:py-6">
-                                            <h1 className="text-base md:text-lg lg:text-base font-bold">
+                                        <div className="px-4 py-6 sm:px-4 sm:py-6 md:px-5 md:py-8 lg:px-6 lg:py-8">
+                                            <h1 className="text-base sm:text-lg md:text-xl lg:text-lg font-bold">
                                                 {chapter.name}
                                             </h1>
 
-                                            <h2 className="text-gray-600 text-sm md:text-base lg:text-sm font-semibold">
+                                            <h2 className="text-gray-600 text-sm sm:text-sm md:text-base lg:text-base font-semibold">
                                                 {chapter.title}
                                             </h2>
-                                            <p className="text-gray-500 text-sm mt-2">
+                                            <p className="text-gray-500 text-sm sm:text-sm md:text-base lg:text-sm mt-2">
                                                 {chapter.description}
                                             </p>
 

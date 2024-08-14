@@ -8,13 +8,15 @@ export default function Map({ auth }) {
             <Head title="Interactive Map" />
 
             {/* Main content */}
-            <section className="container mx-auto px-4 py-8 sm:px-10  md:px-10 lg:px-16 xl:px-20 bg-gray-50 rounded-xl">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 md:mb-8 text-gray-600">
+            <section className="container mx-auto bg-gray-50 rounded-xl flex flex-col items-center justify-center sm:mx-10 md:mx-40 lg:mx-60 xl:mx-80 mt-10">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 md:mb-8 text-gray-600 text-center mt-10">
                     Interactive Map
                 </h1>
 
                 {/* Canada Map Component */}
-                <CanadaMap />
+                <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] h-64 sm:h-80 md:h-96 lg:h-[28rem] xl:h-[40rem] mx-auto mt-9">
+                    <CanadaMap />
+                </div>
             </section>
         </AuthenticatedLayout>
     );

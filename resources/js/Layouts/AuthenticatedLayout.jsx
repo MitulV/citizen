@@ -10,10 +10,7 @@ import {
     faFileLines,
     faImage,
     faGem,
-    faCheck,
-    faTimes,
 } from "@fortawesome/free-solid-svg-icons";
-
 import StudyGuidePanel from "@/Components/SidebarPanel/StudyGuidePanel";
 import ChapterTestPanel from "@/Components/SidebarPanel/ChapterTestPanel";
 import FlashcardPanel from "@/Components/SidebarPanel/FlashcardPanel";
@@ -34,31 +31,33 @@ export default function Authenticated({
     };
 
     useEffect(() => {
-        // Select all li elements with the class css-1t8x7v1 and remove that class
         const elements = document.querySelectorAll("li.css-1t8x7v1");
         elements.forEach((element) => {
             element.classList.remove("css-1t8x7v1");
         });
-    }, []); // Empty dependency array means this runs once after the initial render
+    }, []);
 
     const { url } = usePage();
 
     return (
         <div>
             <LoginHeader user={user} />
-            <div className="relative flex h-full ">
+            <div className="flex h-full">
                 <Sidebar
                     collapsedWidth="0"
-                    width="176px"
+                    width="210px"
                     collapsed={collapsed}
                     backgroundColor="rgb(254,117,62)"
-                    className="max-h-screen" // Ensure the sidebar has full height
+                    className="fixed top-0 left-0 h-screen !overflow-hidden" // Sidebar stays full-height and fixed on the screen
                 >
-                    <Menu>
-                        <MenuItem className="w-full m-2 mt-10" component="span">
+                    <Menu className="h-full !overflow-hidden">
+                        <MenuItem
+                            className="w-full  h-full m-2 mt-10"
+                            component="span"
+                        >
                             <Link href={route("dashboard")}>
                                 <button
-                                    className={`rounded-full w-40 px-4 py-2 ${
+                                    className={`rounded-full w-44 px-4 py-2 flex items-center ${
                                         url.startsWith("/guide")
                                             ? "bg-white text-primary"
                                             : "text-white hover:bg-white hover:text-primary"
@@ -66,16 +65,16 @@ export default function Authenticated({
                                 >
                                     <FontAwesomeIcon
                                         icon={faBookOpen}
-                                        className="mr-2"
+                                        className="mr-4"
                                     />
                                     Study Guide
                                 </button>
                             </Link>
                         </MenuItem>
-                        <MenuItem className="w-full m-2" component="span">
+                        <MenuItem className="w-full m-2  " component="span">
                             <Link href={route("simulation.info")}>
                                 <button
-                                    className={`rounded-full w-40 px-4 py-2 ${
+                                    className={`rounded-full w-44 px-4 py-2 flex items-center ${
                                         url.startsWith("/simulation")
                                             ? "bg-white text-primary"
                                             : "text-white hover:bg-white hover:text-primary"
@@ -83,7 +82,7 @@ export default function Authenticated({
                                 >
                                     <FontAwesomeIcon
                                         icon={faCube}
-                                        className="mr-2"
+                                        className="mr-4"
                                     />
                                     Simulations
                                 </button>
@@ -92,7 +91,7 @@ export default function Authenticated({
                         <MenuItem className="w-full m-2" component="span">
                             <Link href={route("practice.test")}>
                                 <button
-                                    className={`rounded-full w-40 px-4 py-2 ${
+                                    className={`rounded-full w-44 px-4 py-2 flex items-center ${
                                         url.startsWith("/practice")
                                             ? "bg-white text-primary"
                                             : "text-white hover:bg-white hover:text-primary"
@@ -100,7 +99,7 @@ export default function Authenticated({
                                 >
                                     <FontAwesomeIcon
                                         icon={faFileLines}
-                                        className="mr-2"
+                                        className="mr-4"
                                     />
                                     Chapter Tests
                                 </button>
@@ -109,7 +108,7 @@ export default function Authenticated({
                         <MenuItem className="w-full m-2" component="span">
                             <Link href={route("flashcard")}>
                                 <button
-                                    className={`rounded-full w-40 px-4 py-2 ${
+                                    className={`rounded-full w-44 px-4 py-2 flex items-center ${
                                         url.startsWith("/flashcard")
                                             ? "bg-white text-primary"
                                             : "text-white hover:bg-white hover:text-primary"
@@ -117,7 +116,7 @@ export default function Authenticated({
                                 >
                                     <FontAwesomeIcon
                                         icon={faImage}
-                                        className="mr-2"
+                                        className="mr-4"
                                     />
                                     Flashcards
                                 </button>
@@ -126,7 +125,7 @@ export default function Authenticated({
                         <MenuItem className="w-full m-2" component="span">
                             <Link href={route("cheatSheets")}>
                                 <button
-                                    className={`rounded-full w-40 px-4 py-2 ${
+                                    className={`rounded-full w-44 px-4 py-2 flex items-center ${
                                         url.startsWith("/cheat-sheets")
                                             ? "bg-white text-primary"
                                             : "text-white hover:bg-white hover:text-primary"
@@ -134,7 +133,7 @@ export default function Authenticated({
                                 >
                                     <FontAwesomeIcon
                                         icon={faGem}
-                                        className="mr-2"
+                                        className="mr-4"
                                     />
                                     Cheat Sheets
                                 </button>
@@ -166,15 +165,13 @@ export default function Authenticated({
 
                 <button
                     onClick={toggleSidebar}
-                    className={`absolute z-10 top-5 
-                     ${
-                         collapsed
-                             ? "left-0 ml-0"
-                             : isChapterPanelVisible
-                             ? "left-64  ml-64"
-                             : "left-44 ml-0"
-                     } 
-                      transform rotate-180 p-1 w-8 h-8 bg-white rounded-l-full transition-all duration-300 border border-gray-200 shadow-sm hover:shadow-lg`}
+                    className={`absolute top-24 z-10 ${
+                        collapsed
+                            ? "left-0 ml-0"
+                            : isChapterPanelVisible
+                            ? "left-72 ml-64"
+                            : "left-52 ml-0"
+                    } transform rotate-180 p-1 w-8 h-8 bg-white rounded-l-full transition-all duration-300 border border-gray-200 shadow-sm hover:shadow-lg`}
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -189,7 +186,7 @@ export default function Authenticated({
                         <polyline points="15 18 9 12 15 6"></polyline>
                     </svg>
                 </button>
-                <main>{children}</main>
+                <main className="flex-1">{children}</main>
             </div>
         </div>
     );

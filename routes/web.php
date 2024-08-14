@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/test', function () {
-  return view('test');
+  return Inertia::render('TnC');
 });
 
 
