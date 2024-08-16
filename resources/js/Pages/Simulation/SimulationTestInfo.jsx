@@ -12,7 +12,7 @@ export default function SimulationTestInfo({ auth }) {
                 <div className="bg-slate-100 min-h-screen">
                     {" "}
                     {/* Apply bg-slate-100 and ensure it covers the entire page height */}
-                    <section className="py-4 md:py-8 px-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-80 bg-slate-100">
+                    <section className="py-4 md:py-8 px-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-8 bg-slate-100">
                         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 rounded-2xl overflow-hidden bg-white shadow-sm p-8 ">
                             {/* Left Part: h1 Tag, p Tag, 2 Columns with Sentences, and Buttons */}
                             <div className="flex flex-col space-y-6">

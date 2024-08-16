@@ -15,7 +15,7 @@ export default function Index({ auth, chapters }) {
             <AuthenticatedLayout user={auth.user}>
                 <Head title="Flashcard" />
                 <div className="relative min-h-screen md:flex bg-slate-100">
-                    <section className="py-8 px-4 sm:mx-2 md:py-12 md:px-8 lg:py-16 lg:px-10 lg:mx-20 xl:mx-96 xl:px-24">
+                    <section className="py-8 px-4 sm:mx-2 md:py-12 md:px-8 lg:py-16 lg:px-10 lg:mx-20 xl:mx-8 xl:px-4">
                         <div className="text-left mb-8">
                             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
                                 Flashcards

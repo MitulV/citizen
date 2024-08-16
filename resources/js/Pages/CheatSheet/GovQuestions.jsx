@@ -7,7 +7,7 @@ export default function GovQuestions({ auth }) {
             <Head title="Government Questions" />
 
             {/* Main content */}
-            <section className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:mx-60 py-6 sm:py-8 md:py-10 lg:py-12 xl:py-14 bg-gray-50 rounded-3xl">
+            <section className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:mx-8 py-6 sm:py-8 md:py-10 lg:py-12 xl:py-14 bg-gray-50 rounded-3xl">
                 {/* Main Heading */}
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl font-bold  text-gray-600 py-4 sm:py-2 md:py-4 lg:py-4 xl:py-4 ">
                     Government Questions

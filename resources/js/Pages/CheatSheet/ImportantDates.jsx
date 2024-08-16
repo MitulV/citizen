@@ -438,7 +438,7 @@ export default function ImportantDates({ auth }) {
     return (
         <AuthenticatedLayout user={auth.user} isChapterPanelVisible={true}>
             <Head title="Important Dates" />
-            <div className="p-4 mx-auto max-w-screen-lg sm:mx-4 md:mx-10 lg:mx-20 xl:mx-96 bg-slate-50">
+            <div className="p-4 mx-auto max-w-screen-lg sm:mx-4 md:mx-10 lg:mx-20 xl:mx-8 bg-slate-50">
                 {accordions.map((accordion, index) => (
                     <Accordion
                         key={index}
