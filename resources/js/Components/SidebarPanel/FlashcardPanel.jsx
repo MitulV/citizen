@@ -12,7 +12,7 @@ export default function FlashcardPanel({ chapters, collapsed }) {
         <>
             <Sidebar
                 collapsedWidth="0"
-                width="337px"
+                width="285px"
                 collapsed={collapsed}
                 backgroundColor="rgb(255,255,255)"
             >

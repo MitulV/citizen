@@ -169,7 +169,7 @@ export default function Authenticated({
                         collapsed
                             ? "left-0 ml-0"
                             : isChapterPanelVisible
-                            ? "left-72 ml-64"
+                            ? "left-60 ml-64"
                             : "left-52 ml-0"
                     } transform rotate-180 p-1 w-8 h-8 bg-white rounded-l-full transition-all duration-300 border border-gray-200 shadow-sm hover:shadow-lg`}
                 >

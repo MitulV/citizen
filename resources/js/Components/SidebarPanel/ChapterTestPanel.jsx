@@ -20,7 +20,7 @@ export default function ChapterTestPanel({ chapters, collapsed }) {
         <>
             <Sidebar
                 collapsedWidth="0"
-                width="337px"
+                width="285px"
                 collapsed={collapsed}
                 backgroundColor="rgb(255,255,255)"
             >
