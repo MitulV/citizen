@@ -12,16 +12,14 @@ class TopicController extends Controller
   /**
    * Display a listing of the resource.
    */
-  public function index()
-  {
-  }
+  public function index() {}
 
   /**
    * Show the form for creating a new resource.
    */
   public function create(Request $request)
   {
-    return view('create-topic', ['topicId' => $request->topicId, 'chapterId' => $request->chapterId]);
+    return Inertia::render('CreateTopic', ['topicId' => $request->topicId, 'chapterId' => $request->chapterId]);
   }
 
   /**
@@ -29,15 +27,17 @@ class TopicController extends Controller
    */
   public function store(Request $request)
   {
+
     $topic = Topic::find($request->topicId);
     $topic->update([
       'content' => $request->content
     ]);
 
-    return response()->json([
-      'topicId' => $request->topicId,
+
+    return Inertia::location(route('topicList', [
       'chapterId' => $request->chapterId,
-    ]);
+      'topicId' => $request->topicId
+    ]));
   }
 
   /**

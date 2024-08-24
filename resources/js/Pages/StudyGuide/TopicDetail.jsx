@@ -43,7 +43,7 @@ export default function TopicDetail({
                 )}
                 {topic.content && (
                     <div className="relative min-h-screen flex flex-col items-center justify-center ">
-                        <div className="container-fluid bg-slate-100 py-8 md:py-12 md:px-8 lg:px-20 ">
+                        <div className="container-fluid py-8 md:py-12 md:px-8 lg:px-20 ">
                             <div>
                                 <p className="text-blue-400">All lessons</p>
                                 <h1 className="text-3xl font-bold mb-4 text-gray-600">
@@ -51,7 +51,7 @@ export default function TopicDetail({
                                 </h1>
                             </div>
                             <div
-                                className="m-20"
+                                className="m-10 ck ck-content"
                                 dangerouslySetInnerHTML={{
                                     __html: topic.content,
                                 }}

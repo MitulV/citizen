@@ -20,14 +20,6 @@ use App\Http\Middleware\RedirectIfNotRegistered;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/test', function () {
-  return Inertia::render('TnC');
-});
-
-
-Route::get('/kajal', function () {
-  return Inertia::render('CreateTopic');
-});
 
 Route::get('/', [HomePageController::class, 'index'])->name('homePage');
 Route::get('/premium', [PremiumPageController::class, 'index'])->name('premiumPage');
