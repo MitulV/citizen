@@ -31,6 +31,11 @@ Route::post('/test-results', [TestController::class, 'testResult'])->name('testR
 Route::get('/create-topics', [TopicController::class, 'create'])->name('createTopic.create');
 Route::post('/create-topics', [TopicController::class, 'store'])->name('createTopic.store');
 
+Route::get('/edit-topics', [TopicController::class, 'edit'])->name('createTopic.edit');
+Route::post('/edit-topics', [TopicController::class, 'update'])->name('createTopic.update');
+
+
+
 // Route::middleware(['auth', 'verified'])->group(function () {
 // });
 

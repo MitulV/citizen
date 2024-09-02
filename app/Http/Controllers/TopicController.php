@@ -51,17 +51,27 @@ class TopicController extends Controller
   /**
    * Show the form for editing the specified resource.
    */
-  public function edit(Topic $topic)
+  public function edit(Request $request)
   {
-    //
+    $topic = Topic::find($request->topicId);
+    return Inertia::render('EditTopic', ['topicId' => $request->topicId, 'chapterId' => $request->chapterId, 'existingContent' => $topic->content]);
   }
 
   /**
    * Update the specified resource in storage.
    */
-  public function update(Request $request, Topic $topic)
+  public function update(Request $request)
   {
-    //
+    $topic = Topic::find($request->topicId);
+    $topic->update([
+      'content' => $request->content
+    ]);
+
+
+    return Inertia::location(route('topicList', [
+      'chapterId' => $request->chapterId,
+      'topicId' => $request->topicId
+    ]));
   }
 
   /**
