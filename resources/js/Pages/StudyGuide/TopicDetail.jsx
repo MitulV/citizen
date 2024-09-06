@@ -10,6 +10,7 @@ import {
     faChevronRight,
     faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
+import EditorShow from "@/Components/EditorShow";
 
 export default function TopicDetail({
     auth,
@@ -50,12 +51,13 @@ export default function TopicDetail({
                                     Lesson {topic.id}
                                 </h1>
                             </div>
-                            <div
+                            {/* <div
                                 className="m-10 ck ck-content"
                                 dangerouslySetInnerHTML={{
                                     __html: topic.content,
                                 }}
-                            />
+                            /> */}
+                            <EditorShow value={topic.content} />
                         </div>
 
                         {/* Navigation Bar */}
