@@ -27,7 +27,6 @@ class TopicController extends Controller
    */
   public function store(Request $request)
   {
-
     $topic = Topic::find($request->topicId);
     $topic->update([
       'content' => $request->content
