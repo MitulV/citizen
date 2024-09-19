@@ -17,38 +17,38 @@ export default function Premium({ auth }) {
         <>
             <GuestLayout user={auth.user}>
                 <Head title="Premium" />
-                <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-2 p-4 sm:p-6 md:p-10 lg:p-16 xl:px-96 bg-slate-50">
-                    <div className="lg:col-span-6 flex flex-col space-y-4 p-6 md:p-10 xl:mr-0">
-                        <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-6xl font-bold">
-                            Pass your Canadian Citizenship test in <br /> first
-                            try.
+                <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-2 p-4 sm:p-6 md:p-10 lg:p-16 xl:px-72 bg-slate-50">
+                    {/* Left Section with Heading and Details */}
+                    <div className="lg:col-span-6 flex flex-col space-y-6 p-6 md:p-10 xl:p-6">
+                        <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-4xl font-bold leading-tight">
+                            Pass your Canadian Citizenship test on the <br />{" "}
+                            first try.
                             <span className="text-indigo-600">
                                 {" "}
                                 Guaranteed.
                             </span>
                         </h1>
-                        <p className="text-gray-600 text-sm md:text-base lg:text-lg xl:text-xl">
+                        <p className="text-gray-600 text-sm md:text-base lg:text-lg xl:text-xl leading-relaxed">
                             Your all-in-one toolkit for success: Prepare
                             thoroughly with 700+ test questions, topic-based
                             quizzes, realistic test simulations, study quizzes,
                             and more.
                         </p>
                         <div className="flex flex-col md:flex-row items-center md:items-start mt-4 space-y-4 md:space-y-0 md:space-x-4">
-                            <button className="bg-primary text-white px-4 py-2 rounded-full md:px-6 md:py-3">
+                            <button className="bg-primary text-white px-6 py-3 rounded-full text-sm md:text-base lg:text-lg xl:text-xl">
                                 Get all exam-like questions
                             </button>
                             <div>
                                 <img
                                     src="/images/pass guarantee.png"
-                                    alt="Logo"
+                                    alt="Pass Guarantee"
                                     className="h-10 w-auto ml-0 md:ml-4"
-                                    style={{ width: "80px", height: "auto" }}
                                 />
                             </div>
                         </div>
                         <p className="text-gray-600 mt-4 text-sm md:text-base lg:text-lg xl:text-xl">
-                            Join the 18,300+ new citizens who've passed their
-                            tests with our help.
+                            Join the 18,300+ new citizens who passed their tests
+                            with our help.
                         </p>
                         <ul className="space-y-2 text-gray-600 text-sm md:text-base lg:text-lg xl:text-xl">
                             <li className="flex items-center">
@@ -56,21 +56,21 @@ export default function Premium({ auth }) {
                                     icon={faCheck}
                                     className="mr-2 text-gray-600"
                                 />
-                                700+ similar to real exam questions
+                                700+ exam-like questions
                             </li>
                             <li className="flex items-center">
                                 <FontAwesomeIcon
                                     icon={faCheck}
                                     className="mr-2 text-gray-600"
                                 />
-                                Advanced simulation test
+                                Advanced test simulations
                             </li>
                             <li className="flex items-center">
                                 <FontAwesomeIcon
                                     icon={faCheck}
                                     className="mr-2 text-gray-600"
                                 />
-                                Pass Guarantee: pass, or it's on us.
+                                Pass Guarantee or it's on us
                             </li>
                             <li className="flex items-center">
                                 <FontAwesomeIcon
@@ -82,16 +82,18 @@ export default function Premium({ auth }) {
                         </ul>
                     </div>
 
+                    {/* Right Section with Image */}
                     <div className="lg:col-span-6 flex justify-center items-center xl:ml-0">
                         <img
                             src="/images/ea59b0c12c13b0daf792e11ef62864a7.png"
-                            alt="Placeholder"
-                            className="w-full md:max-w-md h-auto rounded-xl"
+                            alt="Test Preparation"
+                            className="w-full max-w-md lg:max-w-lg xl:max-w-xl h-auto rounded-xl"
                         />
                     </div>
 
+                    {/* Testimonials Section */}
                     <div className="lg:col-span-12 flex flex-col items-center sm:justify-between mt-10">
-                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mt-4 text-center lg:text-left">
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-bold mt-4 text-center lg:text-left">
                             Why busy learners love CitizenTestPrep Premium
                         </h1>
 
@@ -124,6 +126,7 @@ export default function Premium({ auth }) {
                             </span>
                         </div>
 
+                        {/* Responsive Testimonials */}
                         <div className="container mx-auto px-2 py-4">
                             <div className="flex flex-wrap -mx-4">
                                 <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
@@ -134,13 +137,10 @@ export default function Premium({ auth }) {
                                             </h1>
                                             <p className="text-sm mb-2 text-gray-500">
                                                 I failed my Canadian citizenship
-                                                test initially. I was shocked
-                                                because I had read the book and
-                                                lived in Canada for 8 years. It
-                                                was very embarrassing. Then I
-                                                found CitizenTestPrep. The
-                                                platform helped me a lot to pass
-                                                the exam.
+                                                test initially. Then I found
+                                                CitizenTestPrep. The platform
+                                                helped me pass the exam with
+                                                confidence.
                                             </p>
                                         </div>
                                         <div className="flex items-center mt-4">
@@ -170,11 +170,9 @@ export default function Premium({ auth }) {
                                             <p className="text-sm mb-2 text-gray-500">
                                                 If you want to prepare for the
                                                 Canadian Citizenship test, this
-                                                is the place to prepare. The
-                                                chapter-wise practice tests were
-                                                exactly what I needed to
-                                                understand each section
-                                                thoroughly.
+                                                platform has everything you
+                                                need, especially the
+                                                chapter-wise practice tests.
                                             </p>
                                         </div>
                                         <div className="flex items-center mb-2">
@@ -202,13 +200,11 @@ export default function Premium({ auth }) {
                                                 “Best Resource For The Test”
                                             </h1>
                                             <p className="text-sm mb-2 text-gray-500">
-                                                I failed the test in my first
-                                                attempt. I was looking for an
-                                                online platform to help me out.
-                                                CitizenTestPrep premium is
-                                                without a doubt the best
-                                                resource for the Canadian
-                                                Citizenship Test.
+                                                After failing the test on my
+                                                first attempt, I used
+                                                CitizenTestPrep Premium, and it
+                                                was the best resource to pass
+                                                the Canadian Citizenship Test.
                                             </p>
                                         </div>
                                         <div className="flex items-center mb-2">
@@ -234,7 +230,7 @@ export default function Premium({ auth }) {
                 </section>
 
                 <section className="lg:col-span-12 flex flex-col items-center justify-center px-6 md:px-16 lg:px-32 xl:px-96">
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-center">
+                    <h1 className="text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-bold mb-4 text-center">
                         Lively and innovative method of test preparation!
                     </h1>
                     <p className="text-gray-600 font-inter text-center text-base lg:text-lg max-h-20 md:max-h-24 lg:max-h-32 overflow-hidden">
@@ -259,63 +255,72 @@ export default function Premium({ auth }) {
                         resources.
                     </p>
                 </section>
-                <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 md:p-10 bg-slate-50 mt-10 xl:px-96">
-                    <div className="lg:col-span-6 flex flex-col space-y-4 p-6 md:p-10">
+                <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 sm:p-6 md:p-10 bg-slate-50 mt-10 xl:px-32">
+                    {/* Left Section: Text Content */}
+                    <div className="lg:col-span-6 flex flex-col space-y-6 p-6 md:p-10">
                         <p className="text-indigo-600 text-sm md:text-base lg:text-lg">
                             How it works
                         </p>
-                        <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold">
+                        <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold leading-snug">
                             It has never been so easy to pass the Canadian
                             Citizenship test
                         </h1>
-                        <p className="text-gray-600 text-sm md:text-base lg:text-lg">
+                        <p className="text-gray-600 text-sm md:text-base lg:text-lg xl:text-xl">
                             Start driving sooner with our clear and stress-free
                             approach.
                         </p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 w-full">
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+                            {/* Step 1 */}
                             <div className="p-1">
-                                <h1 className="text-base text-indigo-600 font-semibold sm:text-lg md:text-xl lg:text-2xl">
+                                <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-semibold">
                                     STEP 1
                                 </h1>
-                                <h1 className="text-base font-semibold sm:text-lg md:text-xl lg:text-2xl">
+                                <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">
                                     Engaging quizzes
-                                </h1>
+                                </h2>
                                 <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-xl">
                                     Boost your confidence with quick, 5-minute
                                     quizzes that feel like mini-victories.
                                 </p>
                             </div>
+
+                            {/* Step 2 */}
                             <div className="p-1">
-                                <h1 className="text-base text-indigo-600 font-semibold sm:text-lg md:text-xl lg:text-2xl">
+                                <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-semibold">
                                     STEP 2
                                 </h1>
-                                <h1 className="text-base font-semibold sm:text-lg md:text-xl lg:text-2xl">
+                                <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">
                                     Personalized learning
-                                </h1>
+                                </h2>
                                 <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-xl">
                                     Focus on what matters. Ditch mind-numbing
                                     lectures, learn faster and retain more.
                                 </p>
                             </div>
+
+                            {/* Step 3 */}
                             <div className="p-1">
-                                <h1 className="text-base text-indigo-600 font-semibold sm:text-lg md:text-xl lg:text-2xl">
+                                <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-semibold">
                                     STEP 3
                                 </h1>
-                                <h1 className="text-base font-semibold sm:text-lg md:text-xl lg:text-2xl">
+                                <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">
                                     Real-time exam simulator
-                                </h1>
+                                </h2>
                                 <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-xl">
                                     Our advanced algorithm gauges your passing
                                     chances in real-time.
                                 </p>
                             </div>
+
+                            {/* Step 4 */}
                             <div className="p-1">
-                                <h1 className="text-base text-indigo-600 font-semibold sm:text-lg md:text-xl lg:text-2xl">
+                                <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-semibold">
                                     STEP 4
                                 </h1>
-                                <h1 className="text-base font-semibold sm:text-lg md:text-xl lg:text-2xl">
+                                <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">
                                     Ace your exam 🎉
-                                </h1>
+                                </h2>
                                 <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-xl">
                                     Feel confident and prepared on exam day,
                                     ready to pass with flying colors.
@@ -323,30 +328,39 @@ export default function Premium({ auth }) {
                             </div>
                         </div>
                     </div>
+
+                    {/* Right Section: Image */}
                     <div className="lg:col-span-6 flex justify-center items-center p-6 md:p-10 bg-slate-50">
                         <div className="p-2 lg:p-4 bg-slate-100 rounded-xl">
                             <img
                                 src="/images/result2.jpg"
                                 alt="Sample"
-                                className="rounded-xl w-60 h-72 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-96 lg:h-96"
+                                className="rounded-xl w-60 h-72 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-96 lg:h-96 xl:w-[30rem] xl:h-[35rem]"
                             />
                         </div>
                     </div>
                 </section>
 
-                <section className="relative flex flex-col items-center py-10 px-4 md:px-10  bg-white">
+                <section className="relative flex flex-col items-center py-10 px-4 md:px-10 bg-white">
+                    {/* Image */}
                     <img
                         src="/images/pass guarantee.png"
-                        alt="Logo"
-                        className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-80 lg:h-52"
+                        alt="Pass Guarantee Logo"
+                        className="w-24 h-24 sm:w-28 sm:h-28 md:w-40 md:h-40 lg:w-64 lg:h-40 xl:w-56 xl:h-40"
                     />
-                    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-black font-bold mt-2 text-center">
+
+                    {/* Main Heading */}
+                    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl text-black font-bold mt-2 text-center leading-tight">
                         Pass the citizenship test or get your money back
                     </h1>
-                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-indigo-700 font-bold mt-2 text-center">
+
+                    {/* Subheading */}
+                    <h2 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-indigo-700 font-bold mt-2 text-center leading-tight">
                         Get your money back
                     </h2>
-                    <p className="text-gray-600 mt-4 text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl max-w-2xl">
+
+                    {/* Paragraph */}
+                    <p className="text-gray-600 mt-4 text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl max-w-2xl leading-relaxed">
                         We guarantee your success with our comprehensive study
                         resources. If you diligently use our materials and do
                         not pass the Canadian citizenship test, we will provide
@@ -356,11 +370,14 @@ export default function Premium({ auth }) {
                     </p>
                 </section>
 
-                <section className="container mx-auto px-2 py-8  bg-slate-50 xl:px-96">
-                    <h1 className="text-4xl font-bold mb-8 text-center mt-8">
+                <section className="container mx-auto px-2 py-8 bg-slate-50 xl:px-32">
+                    {/* Heading */}
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center mt-8">
                         Our users find our questions <br /> very similar to the
                         actual test.
                     </h1>
+
+                    {/* User Reviews */}
                     <div className="flex flex-wrap -mx-4">
                         {Array(6)
                             .fill()
@@ -369,12 +386,13 @@ export default function Premium({ auth }) {
                                     key={i}
                                     className="w-full md:w-1/2 lg:w-1/3 px-4 mb-4"
                                 >
-                                    <div className="p-8 bg-white rounded-2xl flex flex-col justify-between h-full text-black">
+                                    <div className="p-6 md:p-8 bg-white rounded-2xl flex flex-col justify-between h-full text-black">
                                         <div>
-                                            <h1 className="text-xl font-bold mb-2">
-                                                “Passed on My First Try!”{i + 1}
+                                            <h1 className="text-xl sm:text-2xl font-bold mb-2">
+                                                “Passed on My First Try!”{" "}
+                                                {i + 1}
                                             </h1>
-                                            <p className="text-sm mb-2 text-gray-500">
+                                            <p className="text-sm sm:text-base text-gray-500">
                                                 I struggled to retain
                                                 information from the Discover
                                                 Canada book until a friend
@@ -385,8 +403,7 @@ export default function Premium({ auth }) {
                                                 first try! {i + 1}.
                                             </p>
                                         </div>
-                                        <div className="border-t-2 border-gray-100 w-[368px] mt-2"></div>
-
+                                        <div className="border-t-2 border-gray-100 mt-2"></div>
                                         <div className="flex items-center mt-4">
                                             <img
                                                 src="/images/1pass.png"
@@ -401,46 +418,46 @@ export default function Premium({ auth }) {
                                                     British Columbia
                                                 </p>
                                             </div>
-                                            <div className="flex ml-auto space-x-1">
-                                                {/* Font Awesome stars */}
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             ))}
                     </div>
+
+                    {/* Read All Reviews Button */}
                     <div className="flex justify-center">
-                        <button className="text-black px-4 py-2 border-primary border-2 rounded-full hidden md:block text-center">
+                        <button className="text-black px-4 py-2 border-primary border-2 rounded-full md:block text-center">
                             Read all reviews
                         </button>
                     </div>
                 </section>
-                <section className="container mx-auto px-4 md:px-10 py-10 bg-indigo-600 xl:px-96">
+
+                <section className="container mx-auto px-4 md:px-10 py-10 bg-indigo-600 xl:px-32">
+                    {/* Subheading */}
                     <p className="text-xs sm:text-sm md:text-base text-white mb-6 text-center mt-10">
                         A FASTER, SMARTER WAY TO STUDY
                     </p>
 
+                    {/* Main Heading */}
                     <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center text-white hidden lg:block">
-                        Everything you need to pass your
-                        <br />
-                        Canadian Citizenship Test
+                        Everything you need to pass your <br /> Canadian
+                        Citizenship Test
                     </h1>
-
                     <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center text-white lg:hidden">
                         Pass The Citizenship Test
                     </h1>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                        {/* Left Column with Image (Hidden on Smaller Screens) */}
+                        {/* Left Column Image */}
                         <div className="hidden lg:flex justify-center items-center">
                             <img
                                 src="/images/sample-image.png"
                                 alt="Sample"
-                                className="w-[809.53px] h-[488px] rounded-b-lg opacity-100"
+                                className="w-full lg:w-[809px] lg:h-[488px] rounded-lg"
                             />
                         </div>
 
-                        {/* Right Column with Text and Button */}
+                        {/* Right Column Content */}
                         <div className="flex flex-col justify-center space-y-4 text-base sm:text-lg">
                             <h1 className="text-white mb-4 text-justify md:text-left">
                                 Gain a deeper understanding of the test
@@ -448,7 +465,7 @@ export default function Premium({ auth }) {
                                 questions, including multiple-choice,
                                 true-false, and more.
                             </h1>
-                            <ul className="space-y-2 text-white font-thin">
+                            <ul className="space-y-2 text-white">
                                 {[
                                     "Customized chapter-wise practice tests",
                                     "Access 700+ test questions",
@@ -482,7 +499,7 @@ export default function Premium({ auth }) {
                         In-depth learning
                     </p>
 
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 text-center mt-2 md:mt-6 lg:mt-2">
+                    <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold mb-2 text-center mt-2 md:mt-6 lg:mt-2">
                         Learn faster with our effective
                         <br />
                         study guide
@@ -660,30 +677,36 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
                 <section className="container mx-auto px-4 md:px-10 lg:px-20 py-8">
-                    <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-center mt-10">
+                    {/* Heading */}
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center mt-10">
                         Get started today and ace the test
                     </h1>
 
-                    <p className="text-xs sm:text-sm text-zinc-600 mb-8 text-center">
+                    {/* Subheading */}
+                    <p className="text-xs sm:text-sm md:text-base text-zinc-600 mb-8 text-center">
                         Begin your Canadian citizenship journey with confidence.
-                        Sign up now
-                        <br /> for instant access to our premium study
-                        resources.
+                        Sign up now <br /> for instant access to our premium
+                        study resources.
                     </p>
+
+                    {/* Image */}
                     <div className="flex justify-center">
                         <img
                             src="/images/pass guarantee.png"
                             alt="Logo"
-                            className="h-24 sm:h-32 w-52 sm:w-72 ml-0 md:ml-4"
-                        />{" "}
+                            className="h-24 sm:h-32 w-52 sm:w-72"
+                        />
                     </div>
-                    <button className="bg-indigo-600 text-white text-xs py-2 px-2 w-24 rounded-lg mx-auto block mt-4">
+
+                    {/* Recommended Button */}
+                    <button className="bg-indigo-600 text-white text-xs sm:text-sm md:text-base py-2 px-4 w-full sm:w-48 rounded-lg mx-auto block mt-4">
                         Recommended
                     </button>
-                    <div className="flex flex-col md:flex-row mt-2 lg:mx-40">
-                        {/* Three columns */}
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-1 mx-4  sm:mx-10">
-                            {/* Column 1 */}
+
+                    {/* Plans Section */}
+                    <div className="flex flex-col md:flex-row mt-6 lg:mx-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto sm:mx-10 ">
+                            {/* Plan 1 */}
                             <form
                                 action={route("checkout.register")}
                                 method="get"
@@ -694,16 +717,16 @@ export default function Premium({ auth }) {
                                     value={1}
                                     autoComplete="off"
                                 />
-                                <div className="bg-white border-2 border-blue-50 rounded-3xl p-4 sm:p-6 mx-2 shadow-xl">
+                                <div className="bg-white border-2 border-blue-50 rounded-3xl p-4 sm:p-6 shadow-xl">
                                     <h2 className="text-2xl sm:text-3xl font-bold mb-2">
                                         3-Month Exam Prep
                                     </h2>
-                                    <p className="text-gray-600 text-xs sm:text-sm">
+                                    <p className="text-gray-600 text-xs sm:text-sm mb-4">
                                         When every day counts, get maximum
                                         knowledge in 30-days.
                                     </p>
-                                    <div className="flex justify-between mt-2">
-                                        <p className=" font-bold text-xl sm:text-2xl">
+                                    <div className="flex justify-between">
+                                        <p className="font-bold text-xl sm:text-2xl">
                                             $19.99
                                         </p>
                                         <p className="text-gray-600 text-xs sm:text-sm">
@@ -712,14 +735,14 @@ export default function Premium({ auth }) {
                                     </div>
                                     <button
                                         type="submit"
-                                        className="bg-primary text-white py-2 w-full sm:w-60 rounded-full mt-2"
+                                        className="bg-primary text-white py-2 w-full rounded-full mt-4"
                                     >
                                         Get instant access
                                     </button>
-                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
+                                    <p className="text-xs sm:text-sm text-zinc-600 mt-4">
                                         Features
                                     </p>
-                                    <ul className="space-y-2 text-zinc-600 text-xs ">
+                                    <ul className="space-y-2 text-zinc-600 text-xs sm:text-sm mt-2">
                                         {[
                                             "Customized chapter-wise practice tests",
                                             "Access 700+ test questions",
@@ -732,41 +755,19 @@ export default function Premium({ auth }) {
                                             >
                                                 <FontAwesomeIcon
                                                     icon={faCheck}
-                                                    className="mr-2 "
+                                                    className="mr-2"
                                                 />
                                                 {text}
                                             </li>
                                         ))}
                                     </ul>
-                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
-                                        Features
-                                    </p>
-                                    <ul className="space-y-2 text-zinc-600 text-xs ">
-                                        {[
-                                            "Customized chapter-wise practice tests",
-                                            "Access 700+ test questions",
-                                            "Unlimited exam simulation",
-                                            "Advanced AI delivers a performance review",
-                                        ].map((text, index) => (
-                                            <li
-                                                key={index}
-                                                className="flex items-center"
-                                            >
-                                                <FontAwesomeIcon
-                                                    icon={faCheck}
-                                                    className="mr-2 "
-                                                />
-                                                {text}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
+                                    <p className="text-xs sm:text-sm text-zinc-600 mt-4">
                                         Pass Guarantee (100% money back)
                                     </p>
                                 </div>
                             </form>
 
-                            {/* Column 2 */}
+                            {/* Plan 2 (Highlighted) */}
                             <form
                                 action={route("checkout.register")}
                                 method="get"
@@ -777,29 +778,29 @@ export default function Premium({ auth }) {
                                     value={2}
                                     autoComplete="off"
                                 />
-                                <div className="bg-white border-4 border-indigo-600 rounded-3xl p-4 sm:p-6 mx-2 shadow-2xl">
+                                <div className="bg-white border-4 border-indigo-600 rounded-3xl p-4 sm:p-6 shadow-2xl">
                                     <h2 className="text-2xl sm:text-3xl font-bold mb-2">
                                         3-Month Exam Prep
                                     </h2>
-                                    <p className="text-gray-600 text-xs sm:text-sm">
+                                    <p className="text-gray-600 text-xs sm:text-sm mb-4">
                                         When every day counts, get maximum
                                         knowledge in 30-days.
                                     </p>
-                                    <div className="flex justify-between mt-2">
-                                        <p className=" font-bold text-xl sm:text-2xl">
+                                    <div className="flex justify-between">
+                                        <p className="font-bold text-xl sm:text-2xl">
                                             $19.99
                                         </p>
                                         <p className="text-gray-600 text-xs sm:text-sm">
                                             Just $0.6/day
                                         </p>
                                     </div>
-                                    <button className="bg-primary text-white py-2 w-full sm:w-60 rounded-full mt-2">
+                                    <button className="bg-primary text-white py-2 w-full rounded-full mt-4">
                                         Get instant access
                                     </button>
-                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
+                                    <p className="text-xs sm:text-sm text-zinc-600 mt-4">
                                         Features
                                     </p>
-                                    <ul className="space-y-2 text-zinc-600 text-xs ">
+                                    <ul className="space-y-2 text-zinc-600 text-xs sm:text-sm mt-2">
                                         {[
                                             "Customized chapter-wise practice tests",
                                             "Access 700+ test questions",
@@ -812,41 +813,19 @@ export default function Premium({ auth }) {
                                             >
                                                 <FontAwesomeIcon
                                                     icon={faCheck}
-                                                    className="mr-2 "
+                                                    className="mr-2"
                                                 />
                                                 {text}
                                             </li>
                                         ))}
                                     </ul>
-                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
-                                        Features
-                                    </p>
-                                    <ul className="space-y-2 text-zinc-600 text-xs ">
-                                        {[
-                                            "Customized chapter-wise practice tests",
-                                            "Access 700+ test questions",
-                                            "Unlimited exam simulation",
-                                            "Advanced AI delivers a performance review",
-                                        ].map((text, index) => (
-                                            <li
-                                                key={index}
-                                                className="flex items-center"
-                                            >
-                                                <FontAwesomeIcon
-                                                    icon={faCheck}
-                                                    className="mr-2 "
-                                                />
-                                                {text}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
+                                    <p className="text-xs sm:text-sm text-zinc-600 mt-4">
                                         Pass Guarantee (100% money back)
                                     </p>
                                 </div>
                             </form>
 
-                            {/* Column 3 */}
+                            {/* Plan 3 */}
                             <form
                                 action={route("checkout.register")}
                                 method="get"
@@ -857,29 +836,29 @@ export default function Premium({ auth }) {
                                     value={3}
                                     autoComplete="off"
                                 />
-                                <div className="bg-white border-2 border-blue-50 rounded-3xl p-4 sm:p-6 mx-2 shadow-xl">
+                                <div className="bg-white border-2 border-blue-50 rounded-3xl p-4 sm:p-6 shadow-xl">
                                     <h2 className="text-2xl sm:text-3xl font-bold mb-2">
                                         3-Month Exam Prep
                                     </h2>
-                                    <p className="text-gray-600 text-xs sm:text-sm">
+                                    <p className="text-gray-600 text-xs sm:text-sm mb-4">
                                         When every day counts, get maximum
                                         knowledge in 30-days.
                                     </p>
-                                    <div className="flex justify-between mt-2">
-                                        <p className=" font-bold text-xl sm:text-2xl">
+                                    <div className="flex justify-between">
+                                        <p className="font-bold text-xl sm:text-2xl">
                                             $19.99
                                         </p>
                                         <p className="text-gray-600 text-xs sm:text-sm">
                                             Just $0.6/day
                                         </p>
                                     </div>
-                                    <button className="bg-primary text-white py-2 w-full sm:w-60 rounded-full mt-2">
+                                    <button className="bg-primary text-white py-2 w-full rounded-full mt-4">
                                         Get instant access
                                     </button>
-                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
+                                    <p className="text-xs sm:text-sm text-zinc-600 mt-4">
                                         Features
                                     </p>
-                                    <ul className="space-y-2 text-zinc-600 text-xs ">
+                                    <ul className="space-y-2 text-zinc-600 text-xs sm:text-sm mt-2">
                                         {[
                                             "Customized chapter-wise practice tests",
                                             "Access 700+ test questions",
@@ -892,35 +871,13 @@ export default function Premium({ auth }) {
                                             >
                                                 <FontAwesomeIcon
                                                     icon={faCheck}
-                                                    className="mr-2 "
+                                                    className="mr-2"
                                                 />
                                                 {text}
                                             </li>
                                         ))}
                                     </ul>
-                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
-                                        Features
-                                    </p>
-                                    <ul className="space-y-2 text-zinc-600 text-xs ">
-                                        {[
-                                            "Customized chapter-wise practice tests",
-                                            "Access 700+ test questions",
-                                            "Unlimited exam simulation",
-                                            "Advanced AI delivers a performance review",
-                                        ].map((text, index) => (
-                                            <li
-                                                key={index}
-                                                className="flex items-center"
-                                            >
-                                                <FontAwesomeIcon
-                                                    icon={faCheck}
-                                                    className="mr-2 "
-                                                />
-                                                {text}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                    <p className="text-xs sm:text-sm mb-2 mt-2 text-zinc-600 text-left">
+                                    <p className="text-xs sm:text-sm text-zinc-600 mt-4">
                                         Pass Guarantee (100% money back)
                                     </p>
                                 </div>
@@ -929,21 +886,25 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container mx-auto px-4 md:px-10 lg:px-20 py-8 bg-slate-100">
-                    <p className="text-sm text-indigo-600 mb-4 mt-8 text-center">
+                <section className="container mx-auto px-4 md:px-10 lg:px-2 py-8 bg-slate-100">
+                    {/* FAQ Heading */}
+                    <p className="text-sm sm:text-base text-indigo-600 mb-4 mt-8 text-center">
                         Common FAQs
                     </p>
-                    <h1 className="text-4xl font-bold mb-6 text-center">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center">
                         Your questions, answered
                     </h1>
-                    <div className="container-fluid mx-auto px-4 md:px-10 lg:px-96 py-8 border-none">
+
+                    {/* FAQ Accordion */}
+                    <div className="mx-auto px-4 md:px-10 lg:px-64 py-8">
                         <Accordion className="bg-white border-none">
+                            {/* FAQ Item 1 */}
                             <Accordion.Panel>
                                 <Accordion.Title className="mb-2">
                                     Which plan is best for me?
                                 </Accordion.Title>
                                 <Accordion.Content>
-                                    <p className="mb-2">
+                                    <p className="mb-2 text-sm sm:text-base">
                                         Studying on your own can be tough
                                         because there's so much information to
                                         retain. Our "Learn-Quiz-Learn" framework
@@ -955,29 +916,14 @@ export default function Premium({ auth }) {
                                 </Accordion.Content>
                             </Accordion.Panel>
 
-                            <Accordion.Panel className="mt-8 border-none ">
+                            {/* FAQ Item 2 */}
+                            <Accordion.Panel className="mt-8 border-none">
                                 <Accordion.Title className="mb-2">
                                     I have only a few days left for the exam,
                                     will this help me?
                                 </Accordion.Title>
                                 <Accordion.Content>
-                                    Studying on your own can be tough because
-                                    there's so much information to retain. Our
-                                    "Learn-Quiz-Learn" framework is a proven
-                                    approach that has helped thousands of
-                                    learners across Canada pass their tests,
-                                    bringing them one step closer to Canadian
-                                    citizenship.
-                                </Accordion.Content>
-                            </Accordion.Panel>
-                            <Accordion.Panel className="mt-8 border-none">
-                                <Accordion.Title className="mb-2">
-                                    I have already attended the test and have
-                                    knowledge about the question pattern, should
-                                    I join here?
-                                </Accordion.Title>
-                                <Accordion.Content>
-                                    <p>
+                                    <p className="mb-2 text-sm sm:text-base">
                                         Studying on your own can be tough
                                         because there's so much information to
                                         retain. Our "Learn-Quiz-Learn" framework
@@ -988,13 +934,35 @@ export default function Premium({ auth }) {
                                     </p>
                                 </Accordion.Content>
                             </Accordion.Panel>
+
+                            {/* FAQ Item 3 */}
+                            <Accordion.Panel className="mt-8 border-none">
+                                <Accordion.Title className="mb-2">
+                                    I have already attended the test and have
+                                    knowledge about the question pattern, should
+                                    I join here?
+                                </Accordion.Title>
+                                <Accordion.Content>
+                                    <p className="mb-2 text-sm sm:text-base">
+                                        Studying on your own can be tough
+                                        because there's so much information to
+                                        retain. Our "Learn-Quiz-Learn" framework
+                                        is a proven approach that has helped
+                                        thousands of learners across Canada pass
+                                        their tests, bringing them one step
+                                        closer to Canadian citizenship.
+                                    </p>
+                                </Accordion.Content>
+                            </Accordion.Panel>
+
+                            {/* FAQ Item 4 */}
                             <Accordion.Panel className="mt-8 border-none">
                                 <Accordion.Title className="mb-2">
                                     How can I be sure that premium will help me
                                     pass?
                                 </Accordion.Title>
                                 <Accordion.Content>
-                                    <p>
+                                    <p className="mb-2 text-sm sm:text-base">
                                         Studying on your own can be tough
                                         because there's so much information to
                                         retain. Our "Learn-Quiz-Learn" framework
@@ -1008,35 +976,41 @@ export default function Premium({ auth }) {
                         </Accordion>
                     </div>
 
+                    {/* Contact Section */}
                     <div className="container mx-auto mt-8">
-                        <div className="max-w-[1000px] mx-auto p-4 flex flex-col md:flex-row items-start md:items-center">
-                            <p className="text-gray-900 mb-4 md:mb-0 md:mr-4 text-center md:text-left">
+                        <div className="max-w-4xl mx-auto p-4 flex flex-col md:flex-row items-start md:items-center">
+                            <p className="text-gray-900 mb-4 md:mb-0 md:mr-4 text-center md:text-left text-sm sm:text-base">
                                 Have more questions or want to chat about plan
                                 selection?
                             </p>
-                            <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-center">
+                            <div className="flex flex-col md:flex-row gap-4 justify-center">
+                                {/* Email Option */}
                                 <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
                                     <FontAwesomeIcon
                                         icon={faMessage}
-                                        className="text-primary"
+                                        className="text-indigo-600"
                                     />
-                                    <span className="text-primary">
+                                    <span className="text-indigo-600 text-sm">
                                         Send us an email
                                     </span>
                                 </div>
+                                {/* Envelope Option */}
                                 <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
                                     <FontAwesomeIcon
                                         icon={faEnvelope}
-                                        className="text-primary"
+                                        className="text-indigo-600"
                                     />
-                                    <span className="text-primary">Email</span>
+                                    <span className="text-indigo-600 text-sm">
+                                        Email
+                                    </span>
                                 </div>
+                                {/* Phone Option */}
                                 <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
                                     <FontAwesomeIcon
                                         icon={faPhone}
-                                        className="text-primary"
+                                        className="text-indigo-600"
                                     />
-                                    <span className="text-primary">
+                                    <span className="text-indigo-600 text-sm">
                                         Call 1-305-570-4774
                                     </span>
                                 </div>
