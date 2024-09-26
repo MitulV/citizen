@@ -35,7 +35,7 @@ export default function Contactus({ auth, chapters }) {
                                             className="w-6 h-6 text-zinc-500"
                                         />
                                         <p className="text-zinc-500">
-                                            Email: support@citizentestprep.ca
+                                            contact@citizentestprep.ca
                                         </p>
                                     </div>
                                     <div className="flex items-center mt-4 md:mt-0 space-x-4">
@@ -44,7 +44,7 @@ export default function Contactus({ auth, chapters }) {
                                             className="w-6 h-6 text-zinc-500"
                                         />
                                         <p className="text-zinc-500">
-                                            Phone: (123) 456-7890
+                                            672-558-4037
                                         </p>
                                     </div>
                                 </div>

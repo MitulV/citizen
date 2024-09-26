@@ -19,7 +19,7 @@ export default function HomePage({ auth, chapters }) {
                 <div className="container mx-auto px-4">
                     <div className="bg-slate-50 py-8 sm:py-16 flex flex-col items-center">
                         <div className="container mx-auto px-4">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-wide text-center custom-heading px-4 sm:px-8 lg:px-20">
+                            <h1 className="text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-wide text-center custom-heading px-4 sm:px-8 lg:px-20">
                                 Achieve Success in 2024 Canadian <br />
                                 Citizenship Test on Your
                                 <span className="text-secondary ml-2">
@@ -257,8 +257,8 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <div className="flex justify-center items-center min-h-screen">
-                    <section className="grid gap-8 md:grid-cols-3 bg-slate-50">
+                <div className="flex justify-center items-center">
+                    <section className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-slate-50">
                         {chapters
                             .filter(
                                 (chapter) =>
@@ -285,7 +285,8 @@ export default function HomePage({ auth, chapters }) {
                             ))}
                     </section>
                 </div>
-                <section className="container mx-auto my-4 px-4 grid gap-6 grid-cols-2 bg-slate-50">
+
+                <section className="container mx-auto my-4 px-4 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 bg-slate-50">
                     {chapters
                         .filter(
                             (chapter) =>
@@ -374,8 +375,8 @@ export default function HomePage({ auth, chapters }) {
                         ))}
                 </section>
 
-                <section className="container mx-auto text-center">
-                    <div className=" bg-indigo-600 text-white p-8 md:p-20 mt-8 relative overflow-hidden">
+                <section className="container mx-auto text-center relative">
+                    <div className="bg-indigo-600 text-white p-8 md:p-20 mt-8 relative overflow-hidden">
                         <h2 className="text-sm font-base">
                             SPEED THROUGH TEST PREP
                         </h2>
@@ -427,12 +428,14 @@ export default function HomePage({ auth, chapters }) {
                                 </p>
                             </div>
                         </div>
-                    </div>
 
-                    {/* <div className="absolute bottom-0 left-0 h-20 w-10 bg-orange-400 rounded-r-full z-20 overflow-hidden"></div>
-                    <div className="absolute top-0 right-0 h-20 w-10 bg-orange-400 rounded-l-full z-10 overflow-hidden"></div>
-                    <div className="absolute top-32 left-96 transform -translate-x-1/2 -translate-y-1/2 h-16 w-16 bg-amber-400 rounded-full z-10 overflow-hidden"></div> */}
+                        {/* Decorative elements */}
+                        <div className="absolute bottom-4 left-0 h-20 w-10 bg-orange-400 rounded-r-full z-20 overflow-hidden"></div>
+                        <div className="absolute top-8 right-0 h-20 w-10 bg-orange-400 rounded-l-full z-10 overflow-hidden"></div>
+                        <div className="absolute top-32 left-40 transform -translate-x-1/2 -translate-y-1/2 h-16 w-16 bg-amber-400 rounded-full z-10 overflow-hidden hidden sm:block"></div>
+                    </div>
                 </section>
+
                 <section className="text-black p-8 md:p-20 bg-slate-50">
                     <div className="container mx-auto">
                         <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
@@ -491,8 +494,8 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className=" container mx-auto">
-                    <div className="bg-indigo-600 text-white p-8 md:p-20">
+                <section className="container mx-auto relative">
+                    <div className="bg-indigo-600 text-white p-8 md:p-20 relative overflow-hidden">
                         <div className="text-center">
                             <p className="text-base mb-2">
                                 YOUR ULTIMATE ALL-IN-ONE RESOURCE
@@ -550,6 +553,10 @@ export default function HomePage({ auth, chapters }) {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Decorative elements */}
+                        <div className="absolute bottom-0 left-0 h-20 w-10 bg-amber-400 rounded-r-full z-20 overflow-hidden"></div>
+                        <div className="absolute top-0 right-0 h-20 w-10 bg-orange-400 rounded-l-full z-10 overflow-hidden"></div>
                     </div>
                 </section>
 

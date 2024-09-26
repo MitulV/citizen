@@ -17,10 +17,10 @@ export default function Premium({ auth }) {
         <>
             <GuestLayout user={auth.user}>
                 <Head title="Premium" />
-                <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-2 p-4 sm:p-6 md:p-10 lg:p-16 xl:px-72 bg-slate-50">
+                <section className=" grid grid-cols-1 lg:grid-cols-12 gap-2 p-4 sm:p-6 md:px-10 lg:px-8  xl:px-40 bg-slate-50">
                     {/* Left Section with Heading and Details */}
                     <div className="lg:col-span-6 flex flex-col space-y-6 p-6 md:p-10 xl:p-6">
-                        <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-4xl font-bold leading-tight">
+                        <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-4xl font-extrabold leading-tight">
                             Pass your Canadian Citizenship test on the <br />{" "}
                             first try.
                             <span className="text-indigo-600">
@@ -87,12 +87,12 @@ export default function Premium({ auth }) {
                         <img
                             src="/images/ea59b0c12c13b0daf792e11ef62864a7.png"
                             alt="Test Preparation"
-                            className="w-full max-w-md lg:max-w-lg xl:max-w-xl h-auto rounded-xl"
+                            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-auto rounded-xl"
                         />
                     </div>
 
                     {/* Testimonials Section */}
-                    <div className="lg:col-span-12 flex flex-col items-center sm:justify-between mt-10">
+                    <div className="lg:col-span-12 flex flex-col items-center sm:justify-between ">
                         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-bold mt-4 text-center lg:text-left">
                             Why busy learners love CitizenTestPrep Premium
                         </h1>
@@ -432,7 +432,11 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container mx-auto px-4 md:px-10 py-10 bg-indigo-600 xl:px-32">
+                <section className="container mx-auto px-4 md:px-10 py-10 bg-indigo-600 xl:px-32 relative overflow-hidden">
+                    {/* Decorative elements */}
+                    <div className="absolute bottom-0 left-0 h-20 w-10 bg-orange-400 rounded-r-full z-20 overflow-hidden hidden sm:block"></div>
+                    <div className="absolute top-0 right-0 h-20 w-10 bg-amber-400 rounded-l-full z-10 overflow-hidden hidden sm:block"></div>
+
                     {/* Subheading */}
                     <p className="text-xs sm:text-sm md:text-base text-white mb-6 text-center mt-10">
                         A FASTER, SMARTER WAY TO STUDY
@@ -487,7 +491,7 @@ export default function Premium({ auth }) {
                                     </li>
                                 ))}
                             </ul>
-                            <button className="bg-primary text-white px-4 py-2 w-full sm:w-60 rounded-full mt-6">
+                            <button className="bg-primary text-white px-4 py-2 w-80  rounded-full mt-6">
                                 Unlock all exam-like questions
                             </button>
                         </div>
@@ -555,7 +559,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container  mx-auto px-4 md:px-10 lg:px-20 py-4 bg-indigo-500">
+                <section className="container  mx-auto px-4 md:px-10 lg:px-20 py-4 bg-indigo-600">
                     <p className="text-center text-xs text-white mt-8">
                         ONE CHAPTER AT A TIME
                     </p>

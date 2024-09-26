@@ -21,6 +21,10 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 
+Route::get('/kajal', function () {
+  return Inertia::render('Index');
+});
+
 Route::get('/', [HomePageController::class, 'index'])->name('homePage');
 Route::get('/premium', [PremiumPageController::class, 'index'])->name('premiumPage');
 Route::get('/test-info/{chapter_id}', [TestController::class, 'index'])->name('testInfoPage');
