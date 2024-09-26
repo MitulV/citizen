@@ -48,17 +48,26 @@ export default function Footer() {
                         <h3 className="text-sm font-semibold mb-2">About</h3>
                         <ul className="text-xs">
                             <li>
-                                <a href="#" className="text-gray-600">
+                                <a
+                                    href={route("about")}
+                                    className="text-gray-600"
+                                >
                                     Who We Are
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-600">
+                                <a
+                                    href={route("terms")}
+                                    className="text-gray-600"
+                                >
                                     Terms of Service
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-600">
+                                <a
+                                    href={route("privacyPolicy")}
+                                    className="text-gray-600"
+                                >
                                     Privacy Policy
                                 </a>
                             </li>
@@ -74,12 +83,18 @@ export default function Footer() {
                         <h3 className="text-sm font-semibold mb-2">Platform</h3>
                         <ul className="text-xs">
                             <li>
-                                <a href="#" className="text-gray-600">
+                                <a
+                                    href={route("contact")}
+                                    className="text-gray-600"
+                                >
                                     Contact Us
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-600">
+                                <a
+                                    href={route("about")}
+                                    className="text-gray-600"
+                                >
                                     About
                                 </a>
                             </li>

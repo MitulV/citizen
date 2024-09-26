@@ -21,9 +21,29 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 
-Route::get('/kajal', function () {
-  return Inertia::render('Index');
-});
+Route::get('/about', function () {
+  return Inertia::render('About');
+})->name('about');
+
+Route::get('/contact', function () {
+  return Inertia::render('Contactus');
+})->name('contact');
+
+Route::get('/privacy-policy', function () {
+  return Inertia::render('privacypolicy');
+})->name('privacyPolicy');
+
+Route::get('/faqs', function () {
+  return Inertia::render('faqs');
+})->name('faqs'); // A Page baki che
+
+Route::get('/terms', function () {
+  return Inertia::render('TnC');
+})->name('terms');
+
+Route::get('/refund', function () {
+  return Inertia::render('Refundpolicy');
+})->name('refund');
 
 Route::get('/', [HomePageController::class, 'index'])->name('homePage');
 Route::get('/premium', [PremiumPageController::class, 'index'])->name('premiumPage');

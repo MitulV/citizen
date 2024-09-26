@@ -64,7 +64,7 @@ export default function Header({ user }) {
                             </li>
                             <li>
                                 <Link
-                                    href="#"
+                                    href={route("about")}
                                     className="hover:text-primary block"
                                 >
                                     About
