@@ -117,22 +117,38 @@ export default function Footer() {
                         </h3>
                         <ul className="text-xs">
                             <li>
-                                <a href="#" className="text-gray-600">
+                                <a
+                                    href={route("dashboard")}
+                                    className="text-gray-600"
+                                >
                                     Study Guide
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-600">
+                                <a
+                                    href={route("testInfoPage", {
+                                        chapter_id: 12,
+                                    })}
+                                    className="text-gray-600"
+                                >
                                     Practice Tests
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-600">
+                                <a
+                                    href={route("testInfoPage", {
+                                        chapter_id: 12,
+                                    })}
+                                    className="text-gray-600"
+                                >
                                     Diagnostic Test
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-600">
+                                <a
+                                    href={route("faq")}
+                                    className="text-gray-600"
+                                >
                                     FAQs
                                 </a>
                             </li>

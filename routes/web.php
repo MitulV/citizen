@@ -33,10 +33,6 @@ Route::get('/privacy-policy', function () {
   return Inertia::render('privacypolicy');
 })->name('privacyPolicy');
 
-Route::get('/faqs', function () {
-  return Inertia::render('faqs');
-})->name('faqs'); // A Page baki che
-
 Route::get('/terms', function () {
   return Inertia::render('TnC');
 })->name('terms');
