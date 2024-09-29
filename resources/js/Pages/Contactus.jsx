@@ -32,6 +32,7 @@ export default function Contactus({ success }) {
 
     return (
         <GuestLayout>
+            <Head title="Contact Us" />
             <div className="bg-slate-50 min-h-screen">
                 <div className="container mx-auto p-10">
                     <h1 className="text-4xl font-bold mb-10 text-center">
