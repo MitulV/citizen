@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\CheckoutRegisteredUserController;
 use App\Http\Controllers\CheatSheetController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FlashcardController;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\ImageUploadController;
@@ -25,9 +26,6 @@ Route::get('/about', function () {
   return Inertia::render('About');
 })->name('about');
 
-Route::get('/contact', function () {
-  return Inertia::render('Contactus');
-})->name('contact');
 
 Route::get('/privacy-policy', function () {
   return Inertia::render('privacypolicy');
@@ -40,6 +38,10 @@ Route::get('/terms', function () {
 Route::get('/refund', function () {
   return Inertia::render('Refundpolicy');
 })->name('refund');
+
+Route::get('/faqs', function () {
+  return Inertia::render('faqs');
+})->name('faqs');
 
 Route::get('/', [HomePageController::class, 'index'])->name('homePage');
 Route::get('/premium', [PremiumPageController::class, 'index'])->name('premiumPage');
@@ -54,10 +56,8 @@ Route::post('/create-topics', [TopicController::class, 'store'])->name('createTo
 Route::get('/edit-topics', [TopicController::class, 'edit'])->name('createTopic.edit');
 Route::post('/edit-topics', [TopicController::class, 'update'])->name('createTopic.update');
 
-
-
-// Route::middleware(['auth', 'verified'])->group(function () {
-// });
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::post('/contact', [ContactController::class, 'sendMail'])->name('contact.sendMail');
 
 Route::middleware([
   'auth',

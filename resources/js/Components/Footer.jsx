@@ -72,8 +72,11 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-600">
-                                    Accuracy Commitment
+                                <a
+                                    href={route("privacyPolicy")}
+                                    className="text-gray-600"
+                                >
+                                    Refund Policy
                                 </a>
                             </li>
                         </ul>
@@ -98,11 +101,7 @@ export default function Footer() {
                                     About
                                 </a>
                             </li>
-                            <li>
-                                <a href="#" className="text-gray-600">
-                                    Customer Reviews
-                                </a>
-                            </li>
+
                             <li>
                                 <a href="#" className="text-gray-600">
                                     News & Blog
@@ -146,7 +145,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href={route("faq")}
+                                    href={route("faqs")}
                                     className="text-gray-600"
                                 >
                                     FAQs

@@ -54,14 +54,7 @@ export default function Header({ user }) {
                                     Resources
                                 </Link>
                             </li>
-                            <li>
-                                <Link
-                                    href="#"
-                                    className="hover:text-primary block"
-                                >
-                                    Reviews
-                                </Link>
-                            </li>
+
                             <li>
                                 <Link
                                     href={route("about")}
@@ -98,56 +91,70 @@ export default function Header({ user }) {
 
                 {/* Navbar for medium and large screens */}
                 <Navbar.Collapse className="hidden md:flex flex-grow items-center justify-center">
-                    <Navbar.Link className="md:flex">
+                    <Navbar className="md:flex">
                         <MegaMenu.Dropdown toggle={<>Help </>}>
                             <ul className="space-y-4 p-4">
                                 <li>
                                     <Link
-                                        href="#"
+                                        href={route("faqs")}
                                         className="hover:text-primary"
                                     >
-                                        Help Center
+                                        FAQs
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        href="#"
+                                        href={route("contact")}
                                         className="hover:text-primary"
                                     >
-                                        FAQ
+                                        Contact Us
                                     </Link>
                                 </li>
                             </ul>
                         </MegaMenu.Dropdown>
-                    </Navbar.Link>
-                    <Navbar.Link className="md:flex">
+                    </Navbar>
+                    <Navbar className="md:flex">
                         <MegaMenu.Dropdown toggle={<>Resources </>}>
                             <ul className="space-y-4 p-4">
                                 <li>
                                     <Link
-                                        href="#"
+                                        href={route("dashboard")}
                                         className="hover:text-primary"
                                     >
-                                        Test Locations
+                                        Study Guide
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        href="#"
+                                        href={route("testInfoPage", {
+                                            chapter_id: 12,
+                                        })}
                                         className="hover:text-primary"
                                     >
-                                        Driving Tips
+                                        Practice Tests
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href={route("testInfoPage", {
+                                            chapter_id: 12,
+                                        })}
+                                        className="hover:text-primary"
+                                    >
+                                        Diagnostic Test
                                     </Link>
                                 </li>
                             </ul>
                         </MegaMenu.Dropdown>
-                    </Navbar.Link>
-                    <Navbar.Link href="#" className="md:flex">
-                        Reviews
-                    </Navbar.Link>
-                    <Navbar.Link href="#" className="md:flex">
-                        About
-                    </Navbar.Link>
+                    </Navbar>
+                    <Navbar className="md:flex">
+                        <Link
+                            href={route("about")}
+                            className="hover:text-primary cursor-pointer"
+                        >
+                            About
+                        </Link>
+                    </Navbar>
                 </Navbar.Collapse>
 
                 <div className="hidden md:flex items-center space-x-4">
