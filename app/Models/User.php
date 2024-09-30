@@ -12,11 +12,14 @@ class User extends Authenticatable
   use HasFactory, Notifiable;
 
   protected $fillable = [
-    'name', 'email', 'password',
+    'name',
+    'email',
+    'password',
   ];
 
   protected $hidden = [
-    'password', 'remember_token',
+    'password',
+    'remember_token',
   ];
 
   protected function casts(): array
@@ -59,5 +62,14 @@ class User extends Authenticatable
   public function currentSubscription()
   {
     return $this->hasOne(Subscription::class)->latestOfMany();
+  }
+
+
+  /**
+   * Get all subscriptions of the user in descending order.
+   */
+  public function subscriptions()
+  {
+    return $this->hasMany(Subscription::class)->orderBy('created_at', 'desc');
   }
 }

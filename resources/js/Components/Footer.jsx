@@ -73,7 +73,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href={route("privacyPolicy")}
+                                    href={route("refund")}
                                     className="text-gray-600"
                                 >
                                     Refund Policy

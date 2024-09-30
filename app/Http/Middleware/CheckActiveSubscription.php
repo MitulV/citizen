@@ -18,9 +18,11 @@ class CheckActiveSubscription
   {
     $user = Auth::user();
 
-    if ($user && $user->subscription && $user->subscription->is_currently_active) {
+
+    if ($user && $user->currentSubscription && $user->currentSubscription->is_currently_active) {
       return $next($request);
     }
+
 
     // Redirect or return a response if the user does not have an active subscription
     return redirect()->route('premiumPage');

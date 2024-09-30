@@ -32,14 +32,12 @@ export default function LoginHeader({ user }) {
                         className="rounded-xl mt-2 border-none"
                     >
                         <Dropdown.Item className="text-stone-500 px-8 ">
-                            <Link href={route("homePage")}>Dashboard</Link>
+                            <Link href={route("dashboard")}>Dashboard</Link>
                         </Dropdown.Item>
                         <Dropdown.Item className="text-stone-500 px-8 ">
-                            <Link href={route("homePage")}>Subscription</Link>
+                            <Link href={route("profile.billing")}>Billing</Link>
                         </Dropdown.Item>
-                        <Dropdown.Item className="text-stone-500 px-8 ">
-                            <Link href={route("homePage")}>Settings</Link>
-                        </Dropdown.Item>
+
                         <Dropdown.Item className="text-stone-500 px-8 ">
                             <Link
                                 as="span"
