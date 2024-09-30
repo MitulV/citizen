@@ -34,7 +34,8 @@ class DatabaseSeeder extends Seeder
             'step' => 2,
             'tests' => [
               [
-                'name' => 'Practice Test 1.1', 'info' => 'Practice Test 1.1',
+                'name' => 'Practice Test 1.1',
+                'info' => 'Practice Test 1.1',
                 'questions' => [
                   [
                     'text' => 'What will you promise when you take the oath of citizenship?',
@@ -305,7 +306,8 @@ class DatabaseSeeder extends Seeder
             'step' => 2,
             'tests' => [
               [
-                'name' => 'Practice Test 2.1', 'info' => 'Practice Test 2.1',
+                'name' => 'Practice Test 2.1',
+                'info' => 'Practice Test 2.1',
                 'questions' => [
                   [
                     'text' => 'With which words does the Canadian Charter of Rights and Freedoms begin?',
@@ -511,7 +513,8 @@ class DatabaseSeeder extends Seeder
 
               ],
               [
-                'name' => 'Practice Test 2.2', 'info' => 'Practice Test 2.2',
+                'name' => 'Practice Test 2.2',
+                'info' => 'Practice Test 2.2',
                 'questions' => [
                   [
                     "text" => "When was the Magna Carta signed?",
@@ -851,7 +854,8 @@ class DatabaseSeeder extends Seeder
             'step' => 2,
             'tests' => [
               [
-                'name' => 'Practice Test 3.1', 'info' => 'Practice Test 3.1',
+                'name' => 'Practice Test 3.1',
+                'info' => 'Practice Test 3.1',
                 'questions' => [
                   [
                     "text" => "Which province has the most bilingual Canadians?",
@@ -1077,7 +1081,8 @@ class DatabaseSeeder extends Seeder
 
               ],
               [
-                'name' => 'Practice Test 3.2', 'info' => 'Practice Test 3.2',
+                'name' => 'Practice Test 3.2',
+                'info' => 'Practice Test 3.2',
                 'questions' => [
                   [
                     "text" => "Who were the first people (Aboriginal people) living in Canada?",
@@ -1325,7 +1330,8 @@ class DatabaseSeeder extends Seeder
 
               ],
               [
-                'name' => 'Practice Test 3.3', 'info' => 'Practice Test 3.3',
+                'name' => 'Practice Test 3.3',
+                'info' => 'Practice Test 3.3',
                 'questions' =>  [
                   [
                     'text' => 'What kind of commitment do Canadian institutions uphold?',
@@ -1566,7 +1572,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 3.4', 'info' => 'Practice Test 3.4',
+                'name' => 'Practice Test 3.4',
+                'info' => 'Practice Test 3.4',
                 'questions' =>  [
                   [
                     "text" => "Where have the majority of Canadians been born since the 1800s?",
@@ -2104,7 +2111,8 @@ class DatabaseSeeder extends Seeder
             'step' => 2,
             'tests' => [
               [
-                'name' => 'Practice Test 4.1', 'info' => 'Practice Test 4.1',
+                'name' => 'Practice Test 4.1',
+                'info' => 'Practice Test 4.1',
                 'questions' => [
                   [
                     'text' => 'What was the name of the new country formed in Confederation?',
@@ -2348,7 +2356,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 4.2', 'info' => 'Practice Test 4.2',
+                'name' => 'Practice Test 4.2',
+                'info' => 'Practice Test 4.2',
                 'questions' => [
                   [
                     'text' => 'In which type of industry did most early European settlers work?',
@@ -2592,7 +2601,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 4.3', 'info' => 'Practice Test 4.3',
+                'name' => 'Practice Test 4.3',
+                'info' => 'Practice Test 4.3',
                 'questions' => [
                   [
                     'text' => 'Which country was liberated by the Canadian Army in 1944 to 1945?',
@@ -2838,7 +2848,8 @@ class DatabaseSeeder extends Seeder
 
               ],
               [
-                'name' => 'Practice Test 4.4', 'info' => 'Practice Test 4.4',
+                'name' => 'Practice Test 4.4',
+                'info' => 'Practice Test 4.4',
                 'questions' => [
                   [
                     'text' => 'Who became the first French Canadian Prime Minister since the formation of Confederation?',
@@ -3082,7 +3093,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 4.5', 'info' => 'Practice Test 4.5',
+                'name' => 'Practice Test 4.5',
+                'info' => 'Practice Test 4.5',
                 'questions' => [
                   [
                     'text' => 'What year was Confederation?',
@@ -3326,7 +3338,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 4.6', 'info' => 'Practice Test 4.6',
+                'name' => 'Practice Test 4.6',
+                'info' => 'Practice Test 4.6',
                 'questions' => [
                   [
                     'text' => 'In which year was Canada’s first Prime Minister elected?',
@@ -3570,7 +3583,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 4.7', 'info' => 'Practice Test 4.7',
+                'name' => 'Practice Test 4.7',
+                'info' => 'Practice Test 4.7',
                 'questions' => [
                   [
                     'text' => 'When did the Montreal Stock Exchange open?',
@@ -3810,7 +3824,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 4.8', 'info' => 'Practice Test 4.8',
+                'name' => 'Practice Test 4.8',
+                'info' => 'Practice Test 4.8',
                 'questions' => [
                   [
                     'text' => 'Which natives were nomadic, following the bison (buffalo) herds?',
@@ -4066,7 +4081,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 4.9', 'info' => 'Practice Test 4.9',
+                'name' => 'Practice Test 4.9',
+                'info' => 'Practice Test 4.9',
                 'questions' => [
                   [
                     'text' => 'Why is the British North America Act important in Canadian history?',
@@ -4750,7 +4766,8 @@ class DatabaseSeeder extends Seeder
             'step' => 2,
             'tests' => [
               [
-                'name' => 'Practice Test 5.1', 'info' => 'Practice Test 5.1',
+                'name' => 'Practice Test 5.1',
+                'info' => 'Practice Test 5.1',
                 'questions' =>
                 [
                   [
@@ -4976,7 +4993,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 5.2', 'info' => 'Practice Test 5.2',
+                'name' => 'Practice Test 5.2',
+                'info' => 'Practice Test 5.2',
                 'questions' => [
                   [
                     'text' => 'Today, diversity enriches the lives of Canadians. Where is diversity reflected the most?',
@@ -5195,7 +5213,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 5.3', 'info' => 'Practice Test 5.3',
+                'name' => 'Practice Test 5.3',
+                'info' => 'Practice Test 5.3',
                 'questions' =>
                 [
                   [
@@ -5354,7 +5373,6 @@ class DatabaseSeeder extends Seeder
             ],
             'topics' => [
               ['name' => 'Modern Canada'],
-              ['name' => 'Touch Point'],
               ['name' => 'The Timeline'],
             ],
             'flashcards' => [
@@ -5505,7 +5523,8 @@ class DatabaseSeeder extends Seeder
             'step' => 2,
             'tests' => [
               [
-                'name' => 'Practice Test 6.1', 'info' => 'Practice Test 6.1',
+                'name' => 'Practice Test 6.1',
+                'info' => 'Practice Test 6.1',
                 'questions' =>
                 [
                   [
@@ -5731,7 +5750,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 6.2', 'info' => 'Practice Test 6.2',
+                'name' => 'Practice Test 6.2',
+                'info' => 'Practice Test 6.2',
                 'questions' =>
                 [
                   [
@@ -5946,7 +5966,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 6.3', 'info' => 'Practice Test 6.3',
+                'name' => 'Practice Test 6.3',
+                'info' => 'Practice Test 6.3',
                 'questions' =>
                 [
                   [
@@ -6181,7 +6202,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 6.4', 'info' => 'Practice Test 6.4',
+                'name' => 'Practice Test 6.4',
+                'info' => 'Practice Test 6.4',
                 'questions' =>
                 [
                   [
@@ -6405,7 +6427,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 6.5', 'info' => 'Practice Test 6.5',
+                'name' => 'Practice Test 6.5',
+                'info' => 'Practice Test 6.5',
                 'questions' =>
                 [
                   [
@@ -6866,7 +6889,8 @@ class DatabaseSeeder extends Seeder
             'step' => 2,
             'tests' => [
               [
-                'name' => 'Practice Test 7.1', 'info' => 'Practice Test 7.1',
+                'name' => 'Practice Test 7.1',
+                'info' => 'Practice Test 7.1',
                 'questions' =>
                 [
                   [
@@ -7092,7 +7116,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 7.2', 'info' => 'Practice Test 7.2',
+                'name' => 'Practice Test 7.2',
+                'info' => 'Practice Test 7.2',
                 'questions' =>
                 [
                   [
@@ -7320,7 +7345,8 @@ class DatabaseSeeder extends Seeder
 
               ],
               [
-                'name' => 'Practice Test 7.3', 'info' => 'Practice Test 7.3',
+                'name' => 'Practice Test 7.3',
+                'info' => 'Practice Test 7.3',
                 'questions' =>
                 [
                   [
@@ -7547,7 +7573,8 @@ class DatabaseSeeder extends Seeder
               ],
 
               [
-                'name' => 'Practice Test 7.4', 'info' => 'Practice Test 7.4',
+                'name' => 'Practice Test 7.4',
+                'info' => 'Practice Test 7.4',
                 'questions' =>
                 [
                   [
@@ -7775,7 +7802,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 7.5', 'info' => 'Practice Test 7.5',
+                'name' => 'Practice Test 7.5',
+                'info' => 'Practice Test 7.5',
                 'questions' =>
                 [
                   [
@@ -8010,7 +8038,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 7.6', 'info' => 'Practice Test 7.6',
+                'name' => 'Practice Test 7.6',
+                'info' => 'Practice Test 7.6',
                 'questions' =>
                 [
                   [
@@ -8616,7 +8645,8 @@ class DatabaseSeeder extends Seeder
             'step' => 2,
             'tests' => [
               [
-                'name' => 'Practice Test 8.1', 'info' => 'Practice Test 8.1',
+                'name' => 'Practice Test 8.1',
+                'info' => 'Practice Test 8.1',
                 'questions' =>
                 [
                   [
@@ -8843,7 +8873,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 8.2', 'info' => 'Practice Test 8.2',
+                'name' => 'Practice Test 8.2',
+                'info' => 'Practice Test 8.2',
                 'questions' =>
                 [
                   [
@@ -9094,7 +9125,8 @@ class DatabaseSeeder extends Seeder
             'step' => 2,
             'tests' => [
               [
-                'name' => 'Practice Test 9.1', 'info' => 'Practice Test 9.1',
+                'name' => 'Practice Test 9.1',
+                'info' => 'Practice Test 9.1',
                 'questions' =>
                 [
                   [
@@ -9320,7 +9352,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 9.2', 'info' => 'Practice Test 9.2',
+                'name' => 'Practice Test 9.2',
+                'info' => 'Practice Test 9.2',
                 'questions' =>
                 [
                   [
@@ -9546,7 +9579,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 9.3', 'info' => 'Practice Test 9.3',
+                'name' => 'Practice Test 9.3',
+                'info' => 'Practice Test 9.3',
                 'questions' => [
 
                   [
@@ -9773,7 +9807,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 9.4', 'info' => 'Practice Test 9.4',
+                'name' => 'Practice Test 9.4',
+                'info' => 'Practice Test 9.4',
                 'questions' => [
                   [
                     'text' => 'When was the maple leaf first adopted as a symbol in Canada?',
@@ -9999,7 +10034,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 9.5', 'info' => 'Practice Test 9.5',
+                'name' => 'Practice Test 9.5',
+                'info' => 'Practice Test 9.5',
                 'questions' => [
                   [
                     'text' => 'In Canada, you can question the police about their service or conduct if you feel the need.',
@@ -10283,7 +10319,8 @@ class DatabaseSeeder extends Seeder
             'step' => 2,
             'tests' => [
               [
-                'name' => 'Practice Test 10.1', 'info' => 'Practice Test 10.1',
+                'name' => 'Practice Test 10.1',
+                'info' => 'Practice Test 10.1',
                 'questions' => [
                   [
                     'text' => 'What was the main advantage of NAFTA agreement?',
@@ -10509,7 +10546,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 10.2', 'info' => 'Practice Test 10.2',
+                'name' => 'Practice Test 10.2',
+                'info' => 'Practice Test 10.2',
                 'questions' => [
                   [
                     'text' => 'What is traditionally known as "the world’s longest undefended border"?',
@@ -10735,7 +10773,8 @@ class DatabaseSeeder extends Seeder
             'step' => 2,
             'tests' => [
               [
-                'name' => 'Practice Test 11.1', 'info' => 'Practice Test 11.1',
+                'name' => 'Practice Test 11.1',
+                'info' => 'Practice Test 11.1',
                 'questions' => [
                   [
                     'text' => 'Where do more than half of the people in Canada live?',
@@ -10961,7 +11000,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 11.2', 'info' => 'Practice Test 11.2',
+                'name' => 'Practice Test 11.2',
+                'info' => 'Practice Test 11.2',
                 'questions' => [
                   [
                     'text' => 'What are three minerals still mined in the territories today?',
@@ -11187,7 +11227,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 11.3', 'info' => 'Practice Test 11.3',
+                'name' => 'Practice Test 11.3',
+                'info' => 'Practice Test 11.3',
                 'questions' => [
                   [
                     'text' => 'What are the Prairie Provinces?',
@@ -11402,7 +11443,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 11.4', 'info' => 'Practice Test 11.4',
+                'name' => 'Practice Test 11.4',
+                'info' => 'Practice Test 11.4',
                 'questions' => [
                   [
                     'text' => 'What is the capital city of Canada?',
@@ -11628,7 +11670,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 11.5', 'info' => 'Practice Test 11.5',
+                'name' => 'Practice Test 11.5',
+                'info' => 'Practice Test 11.5',
                 'questions' => [
                   [
                     'text' => 'What is the capital of British Columbia?',
@@ -11855,7 +11898,8 @@ class DatabaseSeeder extends Seeder
               ],
 
               [
-                'name' => 'Practice Test 11.6', 'info' => 'Practice Test 11.6',
+                'name' => 'Practice Test 11.6',
+                'info' => 'Practice Test 11.6',
                 'questions' => [
                   [
                     'text' => 'What is the capital of Nunavut?',
@@ -12100,7 +12144,8 @@ class DatabaseSeeder extends Seeder
               ],
 
               [
-                'name' => 'Practice Test 11.7', 'info' => 'Practice Test 11.7',
+                'name' => 'Practice Test 11.7',
+                'info' => 'Practice Test 11.7',
                 'questions' => [
                   [
                     'text' => 'What represents a significant part of the economy of the Yukon?',
@@ -12344,7 +12389,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 11.8', 'info' => 'Practice Test 11.8',
+                'name' => 'Practice Test 11.8',
+                'info' => 'Practice Test 11.8',
                 'questions' => [
                   [
                     'text' => 'Which of the following provinces/territories does not border the U.S.A.?',
@@ -12588,7 +12634,8 @@ class DatabaseSeeder extends Seeder
                 ]
               ],
               [
-                'name' => 'Practice Test 11.9', 'info' => 'Practice Test 11.9',
+                'name' => 'Practice Test 11.9',
+                'info' => 'Practice Test 11.9',
                 'questions' => [
                   [
                     'text' => 'Which part of Canada is sometimes called the "Land of the Midnight Sun"?',
@@ -13368,7 +13415,8 @@ class DatabaseSeeder extends Seeder
             'step' => 1,
             'tests' => [
               [
-                'name' => 'Free Diagnostic Test', 'info' => 'Free Diagnostic Test',
+                'name' => 'Free Diagnostic Test',
+                'info' => 'Free Diagnostic Test',
                 'questions' => [
                   [
                     'text' => 'What will you promise when you take the oath of citizenship?',
@@ -13594,7 +13642,8 @@ class DatabaseSeeder extends Seeder
             'step' => 3,
             'tests' => [
               [
-                'name' => 'Free Diagnostic Test', 'info' => 'Free Diagnostic Test',
+                'name' => 'Free Diagnostic Test',
+                'info' => 'Free Diagnostic Test',
                 'questions' => []
               ],
 
@@ -13695,7 +13744,8 @@ class DatabaseSeeder extends Seeder
       // Simulation Test
       $simulationTests = collect(
         [
-          'name' => 'Practice Test 1.1', 'info' => 'Practice Test 1.1',
+          'name' => 'Practice Test 1.1',
+          'info' => 'Practice Test 1.1',
           'questions' => [
             [
               'text' => 'What will you promise when you take the oath of citizenship?',

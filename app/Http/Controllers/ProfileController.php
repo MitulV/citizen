@@ -63,7 +63,7 @@ class ProfileController extends Controller
 
   public function billing(Request $request)
   {
-    /**
+    /** 
      * @var \App\Models\User $user
      */
     $user = Auth::user();

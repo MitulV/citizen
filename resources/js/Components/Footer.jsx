@@ -173,25 +173,37 @@ export default function Footer() {
                         © 2024 CitizenTestPrep All rights reserved.
                     </p>
                     <div className="flex space-x-4">
-                        <a href="#" className="text-white hover:text-gray-300">
+                        <a
+                            href="https://www.facebook.com/profile.php?id=61566797242585"
+                            className="text-white hover:text-gray-300"
+                        >
                             <FontAwesomeIcon
                                 icon={faFacebook}
                                 className="text-white text-lg"
                             />
                         </a>
-                        <a href="#" className="text-white hover:text-gray-300">
+                        <a
+                            href="https://www.instagram.com/citizentestprep/ "
+                            className="text-white hover:text-gray-300"
+                        >
                             <FontAwesomeIcon
                                 icon={faInstagram}
                                 className="text-white text-lg"
                             />
                         </a>
-                        <a href="#" className="text-white hover:text-gray-300">
+                        <a
+                            href="https://x.com/citizentestprep"
+                            className="text-white hover:text-gray-300"
+                        >
                             <FontAwesomeIcon
                                 icon={faTwitter}
                                 className="text-white text-lg"
                             />
                         </a>
-                        <a href="#" className="text-white hover:text-gray-300">
+                        <a
+                            href="https://www.youtube.com/channel/UCUvM0foDlasYhSOWFey8TnA "
+                            className="text-white hover:text-gray-300"
+                        >
                             <FontAwesomeIcon
                                 icon={faYoutube}
                                 className="text-white text-lg"
