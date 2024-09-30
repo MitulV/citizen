@@ -58,7 +58,6 @@ class CheckoutRegisteredUserController extends Controller
     $url = $this->checkout($stripeService, $packageId, $request->email);
 
     return Inertia::location($url);
-    //return redirect($url);
   }
 
   public function checkout($stripeService, $packageId, $email)

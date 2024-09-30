@@ -69,7 +69,7 @@ export default function Header({ user }) {
                                     href={
                                         user
                                             ? route("dashboard")
-                                            : route("register")
+                                            : route("login")
                                     }
                                     className="border-2 border-primary bg-white text-gray-800 px-4 py-2 rounded-full block text-center mx-auto w-80"
                                 >
@@ -159,7 +159,7 @@ export default function Header({ user }) {
 
                 <div className="hidden md:flex items-center space-x-4">
                     <Link
-                        href={user ? route("dashboard") : route("register")}
+                        href={user ? route("dashboard") : route("login")}
                         className="border-2 border-primary bg-white text-gray-800 px-4 py-2 rounded-full"
                     >
                         {user ? "Dashboard" : "Sign In"}

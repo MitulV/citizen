@@ -61,7 +61,7 @@ Route::post('/contact', [ContactController::class, 'sendMail'])->name('contact.s
 
 Route::middleware([
   'auth',
-  //\App\Http\Middleware\CheckActiveSubscription::class
+  App\Http\Middleware\CheckActiveSubscription::class
 ])->group(function () {
 
   Route::get('/guide', [StudyGuidesController::class, 'index'])->name('dashboard');
