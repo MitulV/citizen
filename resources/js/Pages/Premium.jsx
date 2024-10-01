@@ -17,10 +17,10 @@ export default function Premium({ auth }) {
         <>
             <GuestLayout user={auth.user}>
                 <Head title="Premium" />
-                <section className=" grid grid-cols-1 lg:grid-cols-12 gap-2 p-4 sm:p-6 md:px-10 lg:px-8  xl:px-40 bg-slate-50">
+                <section className=" grid grid-cols-1 lg:grid-cols-12 gap-2 p-4 sm:p-6 md:px-10 lg:px-8  xl:px-20 bg-slate-50">
                     {/* Left Section with Heading and Details */}
                     <div className="lg:col-span-6 flex flex-col space-y-6 p-6 md:p-10 xl:p-6">
-                        <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-4xl font-extrabold leading-tight">
+                        <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-3xl font-extrabold leading-tight">
                             Pass your Canadian Citizenship test on the <br />{" "}
                             first try.
                             <span className="text-indigo-600">
@@ -244,7 +244,7 @@ export default function Premium({ auth }) {
                     <img
                         src="/images/mobile chapt.png"
                         alt="Your Photo"
-                        className="w-full max-w-md rounded-lg shadow-md mb-4"
+                        className="w-full  rounded-lg shadow-md "
                     />
                     <p className="text-gray-600 font-inter text-center text-base lg:text-lg">
                         Get an effective pathway to success. Whether it's your
@@ -261,13 +261,14 @@ export default function Premium({ auth }) {
                         <p className="text-indigo-600 text-sm md:text-base lg:text-lg">
                             How it works
                         </p>
-                        <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold leading-snug">
+                        <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-3xl font-bold leading-snug">
                             It has never been so easy to pass the Canadian
                             Citizenship test
                         </h1>
-                        <p className="text-gray-600 text-sm md:text-base lg:text-lg xl:text-xl">
-                            Start driving sooner with our clear and stress-free
-                            approach.
+                        <p className="text-gray-600 text-sm md:text-base lg:text-lg xl:text-lg">
+                            Take the Canadian citizenship test with clarity and
+                            stress-free preparation, achieving your dream of
+                            becoming Canadian with ease.
                         </p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
@@ -276,10 +277,10 @@ export default function Premium({ auth }) {
                                 <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-semibold">
                                     STEP 1
                                 </h1>
-                                <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                                <h2 className="text-base sm:text-lg md:text-xl lg:text-xl font-semibold">
                                     Engaging quizzes
                                 </h2>
-                                <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-xl">
+                                <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-lg">
                                     Boost your confidence with quick, 5-minute
                                     quizzes that feel like mini-victories.
                                 </p>
@@ -290,10 +291,10 @@ export default function Premium({ auth }) {
                                 <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-semibold">
                                     STEP 2
                                 </h1>
-                                <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                                <h2 className="text-base sm:text-lg md:text-xl lg:text-xl font-semibold">
                                     Personalized learning
                                 </h2>
-                                <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-xl">
+                                <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-lg">
                                     Focus on what matters. Ditch mind-numbing
                                     lectures, learn faster and retain more.
                                 </p>
@@ -304,10 +305,10 @@ export default function Premium({ auth }) {
                                 <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-semibold">
                                     STEP 3
                                 </h1>
-                                <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                                <h2 className="text-base sm:text-lg md:text-xl lg:text-xl font-semibold">
                                     Real-time exam simulator
                                 </h2>
-                                <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-xl">
+                                <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-lg">
                                     Our advanced algorithm gauges your passing
                                     chances in real-time.
                                 </p>
@@ -318,10 +319,10 @@ export default function Premium({ auth }) {
                                 <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-semibold">
                                     STEP 4
                                 </h1>
-                                <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                                <h2 className="text-base sm:text-lg md:text-xl lg:text-xl font-semibold">
                                     Ace your exam 🎉
                                 </h2>
-                                <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-xl">
+                                <p className="text-gray-500 text-sm sm:text-base md:text-lg lg:text-lg">
                                     Feel confident and prepared on exam day,
                                     ready to pass with flying colors.
                                 </p>
@@ -368,9 +369,15 @@ export default function Premium({ auth }) {
                         have successfully prepared with CitizenshipTestPrep
                         Premium.
                     </p>
+
+                    {/* Bottom Left Half Circle */}
+                    <div className="absolute bottom-0 left-0 h-80 w-40 bg-red-300 rounded-r-full z-20 overflow-hidden"></div>
+
+                    {/* Top Right Half Circle */}
+                    <div className="absolute top-0 right-0 h-80 w-40 bg-amber-200 rounded-l-full z-10 overflow-hidden"></div>
                 </section>
 
-                <section className="container mx-auto px-2 py-8 bg-slate-50 xl:px-32">
+                <section className="container-fluid mx-auto px-2 py-8 bg-slate-50 xl:px-32">
                     {/* Heading */}
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center mt-8">
                         Our users find our questions <br /> very similar to the
@@ -432,7 +439,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container mx-auto px-4 md:px-10 py-10 bg-indigo-600 xl:px-32 relative overflow-hidden">
+                <section className="container-fluid mx-auto px-4 md:px-10 py-10 bg-indigo-600 xl:px-32 relative overflow-hidden">
                     {/* Decorative elements */}
                     <div className="absolute bottom-0 left-0 h-20 w-10 bg-orange-400 rounded-r-full z-20 overflow-hidden hidden sm:block"></div>
                     <div className="absolute top-0 right-0 h-20 w-10 bg-amber-400 rounded-l-full z-10 overflow-hidden hidden sm:block"></div>
@@ -498,7 +505,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container mx-auto px-4 md:px-10 lg:px-20 py-10 bg-slate-50">
+                <section className="container-fluid mx-auto px-4 md:px-10 lg:px-20 py-10 bg-slate-50">
                     <p className="text-center text-indigo-600 mt-8">
                         In-depth learning
                     </p>
@@ -553,13 +560,13 @@ export default function Premium({ auth }) {
                             <img
                                 src="/images/image.png"
                                 alt="Image"
-                                className="w-full h-auto lg:h-96 rounded-xl"
+                                className="w-full h-auto lg:h-96 lg:w-80 rounded-xl"
                             />
                         </div>
                     </div>
                 </section>
 
-                <section className="container  mx-auto px-4 md:px-10 lg:px-20 py-4 bg-indigo-600">
+                <section className="container-fluid  mx-auto px-4 md:px-10 lg:px-20 py-4 bg-indigo-600">
                     <p className="text-center text-xs text-white mt-8">
                         ONE CHAPTER AT A TIME
                     </p>

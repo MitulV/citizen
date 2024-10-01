@@ -19,7 +19,7 @@ export default function HomePage({ auth, chapters }) {
                 <div className="container mx-auto px-4">
                     <div className="bg-slate-50 py-8 sm:py-16 flex flex-col items-center">
                         <div className="container mx-auto px-4">
-                            <h1 className="text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-wide text-center custom-heading px-4 sm:px-8 lg:px-20">
+                            <h1 className="text-3xl sm:text-3xl md:text-5xl lg:text-5xl font-extrabold leading-tight tracking-wide text-center custom-heading px-4 sm:px-8 lg:px-20">
                                 Achieve Success in 2024 Canadian <br />
                                 Citizenship Test on Your
                                 <span className="text-secondary ml-2">
@@ -86,7 +86,7 @@ export default function HomePage({ auth, chapters }) {
                                 className="w-full md:h-full shadow-sm"
                             />
                             <div className="absolute top-20 md:top-80 left-0 md:left-48 p-2 rounded-xl shadow-lg bg-amber-400">
-                                <h1 className="text-xl md:text-2xl font-bold text-left text-black">
+                                <h1 className="text-xl md:text-2xl lg:text-2xl font-bold text-left text-black">
                                     2391
                                 </h1>
                                 <p className="text-xs md:text-sm font-semibold">
@@ -160,12 +160,12 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="bg-slate-50 lg:py-20 sm:py-0">
+                <section className="bg-slate-50 lg:py-20 sm:py-0 ">
                     <div className="container mx-auto px-4">
-                        <p className=" text-sm font-normal leading-8 text-center text-blue-500">
+                        <p className=" text-sm font-normal leading-8 text-center text-blue-500 mt-10">
                             CHAPTER-WISE PRACTICE TESTS
                         </p>
-                        <h1 className=" text-4xl font-bold leading-10 tracking-wide text-center">
+                        <h1 className=" text-4xl font-extrabold leading-10 tracking-wide text-center">
                             Start your 2024 Canadian citizenship test
                             <br />
                             practice with us
@@ -332,12 +332,12 @@ export default function HomePage({ auth, chapters }) {
                                     <img
                                         src="/images/chap 13.png"
                                         alt="Photos"
-                                        className="w-full rounded-lg"
+                                        className="w-full rounded-lg "
                                     />
                                 </div>
 
                                 <div className="md:w-7/8 md:pl-4">
-                                    <div className="bg-white rounded-r-3xl border border-gray-100 p-4 md:p-6">
+                                    <div className="bg-white rounded-r-3xl border border-gray-200 p-4 md:p-6">
                                         <h1 className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight tracking-wide mb-2">
                                             {chapter.name}
                                         </h1>
@@ -375,7 +375,7 @@ export default function HomePage({ auth, chapters }) {
                         ))}
                 </section>
 
-                <section className="container mx-auto text-center relative">
+                <section className="container-fluid mx-auto text-center relative">
                     <div className="bg-indigo-600 text-white p-8 md:p-20 mt-8 relative overflow-hidden">
                         <h2 className="text-sm font-base">
                             SPEED THROUGH TEST PREP
@@ -432,7 +432,7 @@ export default function HomePage({ auth, chapters }) {
                         {/* Decorative elements */}
                         <div className="absolute bottom-4 left-0 h-20 w-10 bg-orange-400 rounded-r-full z-20 overflow-hidden"></div>
                         <div className="absolute top-8 right-0 h-20 w-10 bg-orange-400 rounded-l-full z-10 overflow-hidden"></div>
-                        <div className="absolute top-32 left-40 transform -translate-x-1/2 -translate-y-1/2 h-16 w-16 bg-amber-400 rounded-full z-10 overflow-hidden hidden sm:block"></div>
+                        <div className="absolute top-32 left-80 transform -translate-x-1/2 -translate-y-1/2 h-20 w-20 bg-amber-400 rounded-full z-10 overflow-hidden hidden sm:block"></div>
                     </div>
                 </section>
 
@@ -447,7 +447,7 @@ export default function HomePage({ auth, chapters }) {
                                 <img
                                     src="/images/up.png"
                                     alt="Image Description"
-                                    className="w-52 h-96 md:w-3/4 lg:w-2/3 rounded-lg"
+                                    className="w-52 h-96 md:w-3/4 lg:w-80 rounded-lg"
                                 />
                             </div>
 
@@ -494,7 +494,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="container mx-auto relative">
+                <section className="container-fluid mx-auto relative">
                     <div className="bg-indigo-600 text-white p-8 md:p-20 relative overflow-hidden">
                         <div className="text-center">
                             <p className="text-base mb-2">
@@ -676,7 +676,7 @@ export default function HomePage({ auth, chapters }) {
                         </span>
                     </p>
                 </div>
-                <section className="container mx-auto px-4">
+                <section className="container-fluid   mt-20">
                     <div className="bg-indigo-600 py-12 text-white mt-4">
                         <h2 className="text-sm font-normal text-center mb-4">
                             HIGHLY RECOMMENDED
@@ -685,7 +685,7 @@ export default function HomePage({ auth, chapters }) {
                             What our users are saying about us
                         </h1>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-20">
                             <div className="w-full px-4 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
                                 <div className="p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                     <div>
