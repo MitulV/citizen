@@ -4254,7 +4254,7 @@ class DatabaseSeeder extends Seeder
               ],
             ],
             'topics' => [
-              ['name' => 'Canada’s History'],
+              ['name' => 'Aboriginal Peoples'],
               ['name' => 'The Timeline'],
             ],
             'flashcards' => [
@@ -6633,7 +6633,7 @@ class DatabaseSeeder extends Seeder
               ],
             ],
             'topics' => [
-              ['name' => 'How Canadians Govern Themselves	'],
+              ['name' => 'How Canadians Govern'],
               ['name' => 'The Timeline'],
             ],
             'flashcards' => [
