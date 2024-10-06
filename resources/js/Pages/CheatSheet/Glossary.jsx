@@ -5,7 +5,15 @@ export default function Glossary({ auth }) {
     return (
         <>
             <AuthenticatedLayout user={auth.user} isChapterPanelVisible={true}>
-                <Head title="Glossary" />
+                <Head>
+                    <title>
+                        Glossary - Canadian Citizenship Test - CitizenTestPrep
+                    </title>
+                    <meta
+                        name="description"
+                        content="Access the Glossary for important terms and concepts related to the Canadian Citizenship Test!"
+                    />
+                </Head>
 
                 {/* Main content */}
                 <section className="container-fluid max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl px-4 sm:px-6 md:px-8 lg:mx-8 py-6 sm:py-8 md:py-10 lg:py-12 mx-auto bg-slate-50 rounded-3xl">

@@ -8,7 +8,13 @@ export default function TnC({ auth, chapters }) {
     return (
         <>
             <GuestLayout>
-                <Head title="Contact Us" />
+                <Head>
+                    <title>Terms & Conditions - CitizenTestPrep</title>
+                    <meta
+                        name="description"
+                        content="Review the Terms & Conditions for CitizenTestPrep, outlining user responsibilities, service usage, and intellectual property rights."
+                    />
+                </Head>
                 <div className="bg-slate-50">
                     <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-60 xl:px-60 py-14">
                         <h1 className="text-3xl sm:text-4xl text-center font-bold mb-6 sm:mb-8 py-8">

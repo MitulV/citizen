@@ -437,7 +437,16 @@ export default function ImportantDates({ auth }) {
 
     return (
         <AuthenticatedLayout user={auth.user} isChapterPanelVisible={true}>
-            <Head title="Important Dates" />
+            <Head>
+                <title>
+                    Important Dates - Canadian Citizenship Test -
+                    CitizenTestPrep
+                </title>
+                <meta
+                    name="description"
+                    content="Discover Important Dates for the Canadian Citizenship Test to familiarize yourself with key events!"
+                />
+            </Head>
             <div className="p-4 mx-auto max-w-screen-lg sm:mx-4 md:mx-10 lg:mx-20 xl:mx-8 bg-slate-50">
                 {accordions.map((accordion, index) => (
                     <Accordion

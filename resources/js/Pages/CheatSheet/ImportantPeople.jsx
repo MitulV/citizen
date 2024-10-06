@@ -4,7 +4,16 @@ import { Head } from "@inertiajs/react";
 export default function ImportantPeople({ auth }) {
     return (
         <AuthenticatedLayout user={auth.user} isChapterPanelVisible={true}>
-            <Head title="Important People" />
+            <Head>
+                <title>
+                    Important People - Canadian Citizenship Test -
+                    CitizenTestPrep
+                </title>
+                <meta
+                    name="description"
+                    content="Learn about Important People in Canadian history for the citizenship test to enhance your knowledge!"
+                />
+            </Head>
 
             {/* Main content */}
             <section className="container-fluid px-4 py-8 bg-slate-50 mx-auto sm:px-6 lg:px-8 xl:mx-8  rounded-3xl">

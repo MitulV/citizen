@@ -14,6 +14,13 @@ export default function LoginPage() {
 
     return (
         <>
+            <Head>
+                <title>Account Login - CitizenTestPrep</title>
+                <meta
+                    name="description"
+                    content="Access your personalized study resources and track your progress. Log in to begin preparing for your Canadian Citizenship Test!"
+                />
+            </Head>
             <LoginHeader />
             <div className="relative min-h-screen md:flex">
                 <section

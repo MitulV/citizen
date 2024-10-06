@@ -15,7 +15,16 @@ export default function HomePage({ auth, chapters }) {
     return (
         <>
             <GuestLayout user={auth.user}>
-                <Head title="Welcome" />
+                <Head>
+                    <title>
+                        CitizenTestPrep Canada - Canadian Citizenship Practise
+                        Test Online
+                    </title>
+                    <meta
+                        name="description"
+                        content="Prepare for the Canadian Citizenship Test with our comprehensive resources! Access 800+ practice questions, flashcards, study guides, and more."
+                    />
+                </Head>
                 <div className="container mx-auto px-4">
                     <div className="bg-slate-50 py-8 sm:py-16 flex flex-col items-center">
                         <div className="container mx-auto px-4">

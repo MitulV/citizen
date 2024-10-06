@@ -8,7 +8,16 @@ export default function SimulationTestInfo({ auth }) {
     return (
         <>
             <AuthenticatedLayout user={auth.user}>
-                <Head title="Simulation Test" />
+                <Head>
+                    <title>
+                        Simulation Tests - Canadian Citizenship Test -
+                        CitizenTestPrep
+                    </title>
+                    <meta
+                        name="description"
+                        content="Experience Simulation Tests for the Canadian Citizenship Test to mimic the actual testing environment!"
+                    />
+                </Head>
                 <div className="bg-slate-100 min-h-screen">
                     {" "}
                     {/* Apply bg-slate-100 and ensure it covers the entire page height */}
