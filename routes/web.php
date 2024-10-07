@@ -22,6 +22,11 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 
+// Redirect any /public/* route to /* route
+Route::get('/public/{any}', function ($any) {
+  return redirect("/{$any}", 301);
+})->where('any', '.*');
+
 Route::get('/about-us', function () {
   return Inertia::render('About');
 })->name('about');
