@@ -13,7 +13,15 @@ export default function Index({ auth, chapters }) {
     return (
         <>
             <AuthenticatedLayout user={auth.user}>
-                <Head title="Flashcard" />
+                <Head>
+                    <title>
+                        Flashcards - Canadian Citizenship Test - CitizenTestPrep
+                    </title>
+                    <meta
+                        name="description"
+                        content="Use Flashcards for the Canadian Citizenship Test for quick and effective study of key concepts!"
+                    />
+                </Head>
                 <div className="relative min-h-screen md:flex bg-slate-100">
                     <section className="py-8 px-4 sm:mx-2 md:py-12 md:px-8 lg:py-16 lg:px-10 lg:mx-20 xl:mx-8 xl:px-4">
                         <div className="text-left mb-8">

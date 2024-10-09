@@ -16,7 +16,16 @@ export default function Premium({ auth }) {
     return (
         <>
             <GuestLayout user={auth.user}>
-                <Head title="Premium" />
+                <Head>
+                    <title>
+                        Pass Your Canadian Citizenship Test, Guaranteed -
+                        CitizenTestPrep Canada
+                    </title>
+                    <meta
+                        name="description"
+                        content="Pass your Canadian Citizenship test the first time or get your money back, guaranteed by using CitizenTestPrep Premium!"
+                    />
+                </Head>
                 <section className=" grid grid-cols-1 lg:grid-cols-12 gap-2 p-4 sm:p-6 md:px-10 lg:px-8  xl:px-20 bg-slate-50">
                     {/* Left Section with Heading and Details */}
                     <div className="lg:col-span-6 flex flex-col space-y-6 p-6 md:p-10 xl:p-6">

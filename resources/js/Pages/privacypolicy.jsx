@@ -8,6 +8,13 @@ export default function PrivacyPolicy({ auth, chapters }) {
     return (
         <>
             <GuestLayout>
+                <Head>
+                    <title>Privacy Policy - CitizenTestPrep</title>
+                    <meta
+                        name="description"
+                        content="Discover CitizenTestPrep's Privacy Policy, detailing how we collect, use, and protect your personal information."
+                    />
+                </Head>
                 <div className="bg-slate-50 min-h-screen">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="max-w-3xl mx-auto py-12">

@@ -28,7 +28,16 @@ export default function TopicDetail({
                 isChapterPanelVisible={true}
                 chapters={chapters}
             >
-                <Head title="Study Guide" />
+                <Head>
+                    <title>
+                        Study Guide - Canadian Citizenship Test -
+                        CitizenTestPrep
+                    </title>
+                    <meta
+                        name="description"
+                        content="Access our Study Guide for the Canadian Citizenship Test to enhance your preparation and confidence!"
+                    />
+                </Head>
                 {topic.name === "The Timeline" ? (
                     <>
                         <TheTimeLine chapter={chapterId} />

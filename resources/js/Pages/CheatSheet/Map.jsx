@@ -5,7 +5,16 @@ import { Head } from "@inertiajs/react";
 export default function Map({ auth }) {
     return (
         <AuthenticatedLayout user={auth.user} isChapterPanelVisible={true}>
-            <Head title="Interactive Map" />
+            <Head>
+                <title>
+                    Interactive Map - Canadian Citizenship Test -
+                    CitizenTestPrep
+                </title>
+                <meta
+                    name="description"
+                    content="Utilize our Interactive Map to visualize key Canadian locations relevant to the citizenship test!"
+                />
+            </Head>
 
             {/* Main content */}
             <section className="container-fluid mx-auto bg-gray-50 rounded-xl flex flex-col items-center justify-center sm:mx-10 md:mx-40 lg:mx-60 xl:mx-8 mt-10">

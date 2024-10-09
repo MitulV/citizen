@@ -4,7 +4,16 @@ import { Head } from "@inertiajs/react";
 export default function GovQuestions({ auth }) {
     return (
         <AuthenticatedLayout user={auth.user} isChapterPanelVisible={true}>
-            <Head title="Government Questions" />
+            <Head>
+                <title>
+                    Government Questions - Canadian Citizenship Test -
+                    CitizenTestPrep
+                </title>
+                <meta
+                    name="description"
+                    content="Explore Government Questions to understand Canada's political structure for the citizenship test!"
+                />
+            </Head>
 
             {/* Main content */}
             <section className="container-fluid mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:mx-8 py-6 sm:py-8 md:py-10 lg:py-12 xl:py-14 bg-gray-50 rounded-3xl">

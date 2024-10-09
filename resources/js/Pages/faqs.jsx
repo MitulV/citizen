@@ -16,7 +16,13 @@ export default function Faqs({}) {
 
     return (
         <GuestLayout>
-            <Head title="FAQ" />
+            <Head>
+                <title>Frequently Asked Questions - CitizenTestPrep</title>
+                <meta
+                    name="description"
+                    content="Explore the Frequently Asked Questions about the Canadian Citizenship Test at CitizenTestPrep."
+                />
+            </Head>
             <div className="p-4 mx-auto max-w-screen-lg sm:mx-10 md:mx-20 lg:mx-40 xl:mx-8 bg-slate-50 rounded-2xl">
                 <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
                     <AccordionHeader onClick={() => handleOpen(1)}>

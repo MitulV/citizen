@@ -37,6 +37,9 @@ export default function LoginHeader({ user }) {
                         <Dropdown.Item className="text-stone-500 px-8 ">
                             <Link href={route("profile.billing")}>Billing</Link>
                         </Dropdown.Item>
+                        <Dropdown.Item className="text-stone-500 px-8 ">
+                            <Link href={route("profile.edit")}>Profile</Link>
+                        </Dropdown.Item>
 
                         <Dropdown.Item className="text-stone-500 px-8 ">
                             <Link

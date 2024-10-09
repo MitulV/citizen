@@ -22,7 +22,12 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 
-Route::get('/about', function () {
+// Redirect any /public/* route to /* route
+Route::get('/public/{any}', function ($any) {
+  return redirect("/{$any}", 301);
+})->where('any', '.*');
+
+Route::get('/about-us', function () {
   return Inertia::render('About');
 })->name('about');
 
@@ -31,7 +36,7 @@ Route::get('/privacy-policy', function () {
   return Inertia::render('privacypolicy');
 })->name('privacyPolicy');
 
-Route::get('/terms', function () {
+Route::get('/term-conditions', function () {
   return Inertia::render('TnC');
 })->name('terms');
 
@@ -45,7 +50,7 @@ Route::get('/faqs', function () {
 
 Route::get('/', [HomePageController::class, 'index'])->name('homePage');
 Route::get('/premium', [PremiumPageController::class, 'index'])->name('premiumPage');
-Route::get('/test-info/{chapter_id}', [TestController::class, 'index'])->name('testInfoPage');
+Route::get('/canadian-citizenship-test/{chapter_id}', [TestController::class, 'index'])->name('testInfoPage');
 Route::get('/test/{chapterId}', [TestController::class, 'testPage'])->name('testPage');
 Route::post('/test/{chapterId}', [TestController::class, 'testPage'])->name('testPage');
 Route::post('/test-results', [TestController::class, 'testResult'])->name('testResultPage');
@@ -56,12 +61,12 @@ Route::post('/create-topics', [TopicController::class, 'store'])->name('createTo
 Route::get('/edit-topics', [TopicController::class, 'edit'])->name('createTopic.edit');
 Route::post('/edit-topics', [TopicController::class, 'update'])->name('createTopic.update');
 
-Route::get('/contact', [ContactController::class, 'index'])->name('contact');
-Route::post('/contact', [ContactController::class, 'sendMail'])->name('contact.sendMail');
+Route::get('/contact-us', [ContactController::class, 'index'])->name('contact');
+Route::post('/contact-us', [ContactController::class, 'sendMail'])->name('contact.sendMail');
 
 Route::middleware([
   'auth',
-  App\Http\Middleware\CheckActiveSubscription::class
+  //App\Http\Middleware\CheckActiveSubscription::class
 ])->group(function () {
 
   Route::get('/guide', [StudyGuidesController::class, 'index'])->name('dashboard');
@@ -85,7 +90,7 @@ Route::middleware([
   Route::get('/cheat-sheets/glossary', [CheatSheetController::class, 'glossary'])->name('glossary');
   Route::get('/cheat-sheets/faq', [CheatSheetController::class, 'faq'])->name('faq');
 
-  Route::get('simulation/info', [SimulationTestController::class, 'index'])->name('simulation.info');
+  Route::get('simulation-tests', [SimulationTestController::class, 'index'])->name('simulation.info');
   Route::post('simulation/test/{testId}', [SimulationTestController::class, 'testPage'])->name('simulation.test');
   Route::post('simulation/result', [SimulationTestController::class, 'testResult'])->name('simulation.testResult');
 

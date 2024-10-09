@@ -8,7 +8,16 @@ export default function TestInfo({ chapterId, auth }) {
     return (
         <>
             <GuestLayout user={auth.user}>
-                <Head title="Premium" />
+                <Head>
+                    <title>
+                        FREE Canadian Citizenship Test Practice 2024 -
+                        CitizenTestPrep
+                    </title>
+                    <meta
+                        name="description"
+                        content="Start with FREE Canadian Citizenship Test Practice for 2024 and succeed without any cost!"
+                    />
+                </Head>
 
                 <section className="py-4 md:py-8 px-4 md:px-20 bg-slate-50">
                     <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 rounded-2xl overflow-hidden bg-white shadow-sm p-8">
