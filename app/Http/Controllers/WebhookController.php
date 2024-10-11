@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\PremiumMembershipMail;
 use App\Models\Transaction;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Stripe\Exception\SignatureVerificationException;
 use Stripe\Webhook;
 
@@ -72,6 +75,14 @@ class WebhookController extends Controller
         $subscription->update(
           ['is_active' => true]
         );
+        $mailData = [
+          'USER_NAME' => User::find($userId)->name,
+          'PACKAGE_NAME' => $subscription->package->name,
+          'START_DATE' => $subscription->start_date,
+          'END_DATE' => $subscription->end_date,
+          'AMOUNT' => $transaction->total_amount
+        ];
+        Mail::to('contact@yourwebsite.com')->send(new PremiumMembershipMail($mailData));
       }
 
       $transaction->update([

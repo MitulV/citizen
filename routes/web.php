@@ -22,11 +22,6 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 
-// Redirect any /public/* route to /* route
-Route::get('/public/{any}', function ($any) {
-  return redirect("/{$any}", 301);
-})->where('any', '.*');
-
 Route::get('/about-us', function () {
   return Inertia::render('About');
 })->name('about');
@@ -66,7 +61,7 @@ Route::post('/contact-us', [ContactController::class, 'sendMail'])->name('contac
 
 Route::middleware([
   'auth',
-  //App\Http\Middleware\CheckActiveSubscription::class
+  App\Http\Middleware\CheckActiveSubscription::class
 ])->group(function () {
 
   Route::get('/guide', [StudyGuidesController::class, 'index'])->name('dashboard');

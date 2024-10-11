@@ -16,9 +16,9 @@ export default function LoginHeader({ user }) {
                     <Link href={route("homePage")}>
                         <span className="text-2xl font-bold leading-6 text-left">
                             <img
-                                src="/images/logo.png"
+                                src="/images/logo.svg"
                                 alt="Logo"
-                                className="h-6 w-40 ml-8"
+                                className="h-[1.60rem] w-40 ml-8"
                             />
                         </span>
                     </Link>

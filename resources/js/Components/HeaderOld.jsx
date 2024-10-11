@@ -10,8 +10,8 @@ export default function HeaderOld() {
                 <div className="flex items-center">
                     <Link href={route("homePage")}>
                         <img
-                            src="/images/logo.png"
-                            className="w-44 h-7"
+                            src="/images/logo.svg"
+                            className="w-44 h-[1.60rem]"
                             alt="Logo"
                         />
                     </Link>
