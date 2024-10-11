@@ -114,13 +114,15 @@
             <p>Welcome aboard and enjoy your premium experience!</p>
 
             <div>
-                <a href="#" class="button">View My Account</a>
+                <a href="{{ route('dashboard') }}"
+                    class="inline-block bg-green-600 text-white text-lg font-semibold py-3 px-6 rounded-lg hover:bg-green-700 transition">View
+                    My Account</a>
             </div>
         </div>
 
         <!-- Footer -->
         <div class="footer">
-            <p>If you have any questions, feel free to <a href="#"
+            <p>If you have any questions, feel free to <a href="{{ route('contact') }}"
                     style="color: #38a169; text-decoration: underline;">contact our support team</a>.</p>
             <p>&copy; 2024 CitizenPrep, All rights reserved.</p>
         </div>
