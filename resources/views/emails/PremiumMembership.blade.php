@@ -10,90 +10,121 @@
 
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+            /* Light gray background */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: #ffffff;
+            /* White background for the email content */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            /* Max width for better readability */
+        }
+
+        .header {
+            background-color: #38a169;
+            /* Green background */
+            color: #ffffff;
+            /* White text */
+            padding: 24px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 24px;
+        }
+
+        .footer {
+            background-color: #f7fafc;
+            /* Light gray background */
+            text-align: center;
+            padding: 16px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        .button {
+            background-color: #38a169;
+            /* Green background */
+            color: #ffffff;
+            /* White text */
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #2f855a;
+            /* Darker green on hover */
         }
     </style>
 </head>
 
-<body class="bg-gray-100">
-    <table class="w-full h-full bg-gray-100">
-        <tr>
-            <td></td>
-            <td class="w-full max-w-2xl mx-auto py-8">
-                <!-- Email Content -->
-                <table class="w-full bg-white rounded-lg shadow-md">
-                    <!-- Header -->
-                    <tr>
-                        <td class="bg-green-600 text-white p-6 rounded-t-lg">
-                            <h1 class="text-2xl font-semibold">Welcome to Our Premium Membership!</h1>
-                        </td>
-                    </tr>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Welcome to Our Premium Membership!</h1>
+        </div>
 
-                    <!-- Body -->
-                    <tr>
-                        <td class="p-6">
-                            <p class="text-gray-700 text-lg leading-relaxed">
-                                Hi {{ $mailData['USER_NAME'] }},
-                            </p>
-                            <p class="text-gray-700 text-lg leading-relaxed mt-4">
-                                Thank you for upgrading to our <strong>Premium Package</strong>! We’re thrilled to have
-                                you as a valued member. Here’s a summary of your package details:
-                            </p>
+        <!-- Body -->
+        <div class="content">
+            <p>Hi {{ $mailData['USER_NAME'] }},</p>
+            <p>Thank you for upgrading to our <strong>Premium Package</strong>! We’re thrilled to have you as a valued
+                member. Here’s a summary of your package details:</p>
 
-                            <!-- Package Details -->
-                            <table class="w-full mt-6">
-                                <tr>
-                                    <td class="text-gray-600 font-semibold py-2">Package Name:</td>
-                                    <td class="text-gray-900 py-2">{{ $mailData['PACKAGE_NAME'] }}</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-gray-600 font-semibold py-2">Start Date:</td>
-                                    <td class="text-gray-900 py-2">{{ $mailData['START_DATE'] }}</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-gray-600 font-semibold py-2">End Date:</td>
-                                    <td class="text-gray-900 py-2">{{ $mailData['END_DATE'] }}</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-gray-600 font-semibold py-2">Amount Paid:</td>
-                                    <td class="text-gray-900 py-2">{{ $mailData['AMOUNT'] }}</td>
-                                </tr>
-                            </table>
+            <!-- Package Details -->
+            <table style="width: 100%; margin-top: 16px;">
+                <tr>
+                    <td style="font-weight: bold;">Package Name:</td>
+                    <td>{{ $mailData['PACKAGE_NAME'] }}</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Start Date:</td>
+                    <td>{{ $mailData['START_DATE'] }}</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">End Date:</td>
+                    <td>{{ $mailData['END_DATE'] }}</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Amount Paid:</td>
+                    <td>{{ $mailData['AMOUNT'] }}</td>
+                </tr>
+            </table>
 
-                            <p class="text-gray-700 text-lg leading-relaxed mt-6">
-                                We hope you enjoy the full benefits of your premium package. If you have any questions
-                                or need assistance, feel free to reach out to our support team at any time.
-                            </p>
+            <p>We hope you enjoy the full benefits of your premium package. If you have any questions or need
+                assistance, feel free to reach out to our support team at any time.</p>
 
-                            <p class="text-gray-700 text-lg leading-relaxed mt-4">
-                                Welcome aboard and enjoy your premium experience!
-                            </p>
+            <p>Welcome aboard and enjoy your premium experience!</p>
 
-                            <div class="mt-6">
-                                <a href="#"
-                                    class="inline-block bg-green-600 text-white text-lg font-semibold py-3 px-6 rounded-lg hover:bg-green-700 transition">
-                                    View My Account
-                                </a>
-                            </div>
-                        </td>
-                    </tr>
+            <div>
+                <a href="#" class="button">View My Account</a>
+            </div>
+        </div>
 
-                    <!-- Footer -->
-                    <tr>
-                        <td class="bg-gray-100 text-gray-600 text-center p-6 rounded-b-lg">
-                            <p class="text-sm">
-                                If you have any questions, feel free to <a href="#"
-                                    class="text-green-600 underline">contact our support team</a>.
-                            </p>
-                            <p class="text-sm mt-2">
-                                &copy; 2024 CitizenPrep, All rights reserved.
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td></td>
-        </tr>
-    </table>
+        <!-- Footer -->
+        <div class="footer">
+            <p>If you have any questions, feel free to <a href="#"
+                    style="color: #38a169; text-decoration: underline;">contact our support team</a>.</p>
+            <p>&copy; 2024 CitizenPrep, All rights reserved.</p>
+        </div>
+    </div>
 </body>
 
 </html>
