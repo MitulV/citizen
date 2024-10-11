@@ -380,10 +380,26 @@ export default function Premium({ auth }) {
                     </p>
 
                     {/* Bottom Left Half Circle */}
-                    <div className="absolute bottom-0 left-0 h-80 w-40 bg-red-300 rounded-r-full z-20 overflow-hidden"></div>
+                    <div
+                        className="
+  absolute bottom-0 left-0 
+  sm:h-40 sm:w-20 
+  md:h-60 md:w-30 
+  lg:h-80 lg:w-40 
+  xl:h-96 xl:w-48 
+  bg-red-300 rounded-r-full z-20 overflow-hidden"
+                    ></div>
 
                     {/* Top Right Half Circle */}
-                    <div className="absolute top-0 right-0 h-80 w-40 bg-amber-200 rounded-l-full z-10 overflow-hidden"></div>
+                    <div
+                        className="
+  absolute top-0 right-0 
+  sm:h-40 sm:w-20 
+  md:h-60 md:w-30 
+  lg:h-80 lg:w-40 
+  xl:h-96 xl:w-48 
+  bg-amber-200 rounded-l-full z-10 overflow-hidden"
+                    ></div>
                 </section>
 
                 <section className="container-fluid mx-auto px-2 py-8 bg-slate-50 xl:px-32">
