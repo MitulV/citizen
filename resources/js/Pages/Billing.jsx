@@ -51,9 +51,11 @@ export default function Billing({ auth, subscriptions }) {
                                         <Table.Cell>
                                             {subscription.transactions.length >
                                             0
-                                                ? `$${subscription.transactions[0].total_amount.toFixed(
-                                                      2
-                                                  )}`
+                                                ? `$${parseFloat(
+                                                      subscription
+                                                          .transactions[0]
+                                                          .total_amount
+                                                  ).toFixed(2)}`
                                                 : "N/A"}
                                         </Table.Cell>
                                     </Table.Row>
