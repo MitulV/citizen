@@ -20,12 +20,52 @@ use App\Http\Controllers\WebhookController;
 use App\Http\Middleware\RedirectIfNotRegistered;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Spatie\Sitemap\Sitemap;
+use Spatie\Sitemap\Tags\Url;
 
+Route::get('/sitemap.xml', function () {
+
+  $sitemap = Sitemap::create()
+    ->add(Url::create(route('homePage')))
+    ->add(Url::create(route('about')))
+    ->add(Url::create(route('contact')))
+    ->add(Url::create(route('privacyPolicy')))
+    ->add(Url::create(route('terms')))
+    ->add(Url::create(route('refund')))
+    ->add(Url::create(route('faqs')))
+    ->add(Url::create(route('premiumPage')));
+
+  // Add static routes
+  $sitemap->add(Url::create(route('createTopic.create')))
+    ->add(Url::create(route('createTopic.edit')))
+    ->add(Url::create(route('flashcard')))
+    ->add(Url::create(route('cheatSheets')))
+    ->add(Url::create(route('importantPeople')))
+    ->add(Url::create(route('importantDates')))
+    ->add(Url::create(route('govQuestions')))
+    ->add(Url::create(route('map')))
+    ->add(Url::create(route('glossary')))
+    ->add(Url::create(route('faq')));
+
+  // Dynamic routes for Canadian Citizenship Test chapters
+  $chapters = \App\Models\Chapter::all(); // Assuming you have a Chapter model
+  foreach ($chapters as $chapter) {
+    $sitemap->add(Url::create(route('testInfoPage', ['chapter_id' => $chapter->id])));
+  }
+
+  // Dynamic routes for Practice Tests
+  $tests = \App\Models\Test::all(); // Assuming you have a Test model
+  foreach ($tests as $test) {
+    $sitemap->add(Url::create(route('testPage', ['chapterId' => $test->chapter_id])))
+      ->add(Url::create(route('practice.testStart', ['chapterId' => $test->chapter_id, 'testId' => $test->id])));
+  }
+
+  return $sitemap->writeToFile(public_path('sitemap.xml'));
+});
 
 Route::get('/about-us', function () {
   return Inertia::render('About');
 })->name('about');
-
 
 Route::get('/privacy-policy', function () {
   return Inertia::render('privacypolicy');
@@ -46,7 +86,7 @@ Route::get('/faqs', function () {
 Route::get('/', [HomePageController::class, 'index'])->name('homePage');
 Route::get('/premium', [PremiumPageController::class, 'index'])->name('premiumPage');
 Route::get('/canadian-citizenship-test/{chapter_id}', [TestController::class, 'index'])->name('testInfoPage');
-Route::get('/test/{chapterId}', [TestController::class, 'testPage'])->name('testPage');
+Route::get('/test/{chapterId}', [TestController::class, 'testPage'])->name('testPage.Index');
 Route::post('/test/{chapterId}', [TestController::class, 'testPage'])->name('testPage');
 Route::post('/test-results', [TestController::class, 'testResult'])->name('testResultPage');
 
@@ -89,10 +129,6 @@ Route::middleware([
   Route::post('simulation/test/{testId}', [SimulationTestController::class, 'testPage'])->name('simulation.test');
   Route::post('simulation/result', [SimulationTestController::class, 'testResult'])->name('simulation.testResult');
 
-  Route::get('/practice-tests/{chapterId}/{testId?}', [PracticeTestsController::class, 'testList'])->name('testList');
-  Route::post('/practice-tests/start/{chapterId}/{testId?}', [PracticeTestsController::class, 'testStart'])->name('practice.testStart');
-  Route::post('/practice-tests/result', [PracticeTestsController::class, 'testResult'])->name('practice.testResult');
-
   //Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
   Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
   Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -113,5 +149,8 @@ Route::get('/payment/success', [TransactionController::class, 'paymentSuccess'])
 Route::get('/payment/cancel', [TransactionController::class, 'paymentCancel'])->name('payment.cancel');
 
 Route::post('/webhook', [WebhookController::class, 'handle'])->name('webhook');
+
+
+
 
 require __DIR__ . '/auth.php';
