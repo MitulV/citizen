@@ -11,6 +11,7 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "spatie/laravel-sitemap": "^7.2",
+        "spatie/robots-txt": "^2.2",
         "stripe/stripe-php": "^14.10",
         "tightenco/ziggy": "^2.0",
         "van-ons/laraberg": "^2.0"

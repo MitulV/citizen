@@ -20,6 +20,7 @@ use App\Http\Controllers\WebhookController;
 use App\Http\Middleware\RedirectIfNotRegistered;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Spatie\Robots\Robots;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
 
@@ -61,6 +62,23 @@ Route::get('/sitemap.xml', function () {
   }
 
   return $sitemap->writeToFile(public_path('sitemap.xml'));
+});
+
+Route::get('/robots.txt', function () {
+  // Base URL for the sitemap, dynamically generated
+  $sitemapUrl = Illuminate\Support\Facades\URL::to('/sitemap.xml');
+
+  // Create the robots.txt content manually
+  $content = "User-agent: *\n";
+  $content .= "Disallow: /admin/\n";
+  $content .= "Disallow: /login/\n";
+  $content .= "Disallow: /signup/\n";
+  $content .= "Allow: /\n"; // Allow all other pages
+
+  // Add the dynamic sitemap link
+  $content .= "Sitemap: {$sitemapUrl}\n";
+
+  return response($content, 200, ['Content-Type' => 'text/plain']);
 });
 
 Route::get('/about-us', function () {
