@@ -131,7 +131,6 @@ export default function HomePage({ auth, chapters }) {
                         </div>
                     </div>
                 </section>
-
                 <section className="lg:hidden container-fluid px-2 ">
                     <div className="flex flex-wrap -mx-2">
                         <div className="w-1/3 px-2">
@@ -168,7 +167,6 @@ export default function HomePage({ auth, chapters }) {
                         </div>
                     </div>
                 </section>
-
                 <section className="bg-slate-50 lg:py-20 sm:py-0 ">
                     <div className="container mx-auto px-4">
                         <p className=" text-sm font-normal leading-8 text-center text-blue-500 mt-10">
@@ -194,7 +192,6 @@ export default function HomePage({ auth, chapters }) {
                         </p>
                     </div>
                 </section>
-
                 <section className="bg-slate-50 py-2">
                     {chapters
                         .filter((chapter) => chapter.step === 1)
@@ -265,15 +262,14 @@ export default function HomePage({ auth, chapters }) {
                         </p>
                     </div>
                 </section>
-
                 <div className="flex justify-center items-center">
                     <section className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-slate-50">
                         {chapters
                             .filter(
                                 (chapter) =>
                                     chapter.step === 2 &&
-                                    chapter.id !== 12 &&
-                                    chapter.id !== 13
+                                    chapter.id !== 10 &&
+                                    chapter.id !== 11
                             )
                             .map((chapter, index) => (
                                 <Link
@@ -295,26 +291,28 @@ export default function HomePage({ auth, chapters }) {
                     </section>
                 </div>
 
-                <section className="container mx-auto my-4 px-4 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 bg-slate-50">
-                    {chapters
-                        .filter(
-                            (chapter) =>
-                                chapter.step === 2 &&
-                                (chapter.id === 12 || chapter.id === 13)
-                        )
-                        .map((chapter, index) => (
-                            <HomeChapterCard
-                                key={index}
-                                image={chapter.image}
-                                name={chapter.name}
-                                title={chapter.title}
-                                description={chapter.description}
-                                questions={chapter.questions}
-                                mistakes={chapter.mistakes}
-                            />
-                        ))}
-                </section>
-
+                {/* Kajal e ahiya kam karvu */}
+                <div className="flex justify-center items-center">
+                    <section className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 bg-slate-50">
+                        {chapters
+                            .filter(
+                                (chapter) =>
+                                    chapter.step === 2 &&
+                                    (chapter.id === 10 || chapter.id === 11)
+                            )
+                            .map((chapter, index) => (
+                                <HomeChapterCard
+                                    key={index}
+                                    image={chapter.image}
+                                    name={chapter.name}
+                                    title={chapter.title}
+                                    description={chapter.description}
+                                    questions={chapter.questions}
+                                    mistakes={chapter.mistakes}
+                                />
+                            ))}
+                    </section>
+                </div>
                 <div className="container mx-auto px-4 md:px-10 mb-0 flex flex-col md:flex-row py-4 bg-slate-50">
                     <div className="md:w-1/2 flex items-center justify-left md:justify-start">
                         <h1 className="font-bold text-lg md:text-xl tracking-wide">
@@ -328,7 +326,6 @@ export default function HomePage({ auth, chapters }) {
                         </p>
                     </div>
                 </div>
-
                 <section className="bg-slate-50 py-4 sm:py-8">
                     {chapters
                         .filter((chapter) => chapter.step === 3)
@@ -383,7 +380,6 @@ export default function HomePage({ auth, chapters }) {
                             </div>
                         ))}
                 </section>
-
                 <section className="container-fluid mx-auto text-center relative">
                     <div className="bg-indigo-600 text-white p-8 md:p-20 mt-8 relative overflow-hidden">
                         <h2 className="text-sm font-base">
@@ -444,7 +440,6 @@ export default function HomePage({ auth, chapters }) {
                         <div className="absolute top-32 left-80 transform -translate-x-1/2 -translate-y-1/2 h-20 w-20 bg-amber-400 rounded-full z-10 overflow-hidden hidden sm:block"></div>
                     </div>
                 </section>
-
                 <section className="text-black p-8 md:p-20 bg-slate-50">
                     <div className="container mx-auto">
                         <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
@@ -502,7 +497,6 @@ export default function HomePage({ auth, chapters }) {
                         </div>
                     </div>
                 </section>
-
                 <section className="container-fluid mx-auto relative">
                     <div className="bg-indigo-600 text-white p-8 md:p-20 relative overflow-hidden">
                         <div className="text-center">
@@ -568,7 +562,6 @@ export default function HomePage({ auth, chapters }) {
                         <div className="absolute top-0 right-0 h-20 w-10 bg-orange-400 rounded-l-full z-10 overflow-hidden"></div>
                     </div>
                 </section>
-
                 <section className="py-16 bg-slate-50">
                     <div className="container mx-auto px-10">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
@@ -864,7 +857,6 @@ export default function HomePage({ auth, chapters }) {
                         </div>
                     </div>
                 </section>
-
                 <section className="hidden md:block bg-slate-50">
                     <div className="container mx-auto px-44">
                         <h1 className="text-4xl font-bold my-10 text-center">
@@ -956,7 +948,6 @@ export default function HomePage({ auth, chapters }) {
                         </p>
                     </div>
                 </section>
-
                 <section className="hidden md:block py-12 bg-slate-50">
                     <div className="container mx-auto px-44">
                         <h1 className="text-4xl font-bold mb-4 text-center">

@@ -109,7 +109,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canada is a theocracy'],
                       ['text' => 'Canada is a parliamentary democracy'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 25,
                     'explanation' => 'Canada is a constitutional monarchy, a parliamentary democracy and a federal state. Canadians are bound together by a shared commitment to the rule of law and to the institutions of parliamentary government. (P3)'
                   ],
                   [
@@ -120,7 +120,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'During your citizenship ceremony, you\'ll get your Citizenship Certificate.'],
                       ['text' => 'During your citizenship ceremony, you\'ll take the Oath of Citizenship.'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 27,
                     'explanation' => 'At the ceremony, you will take the Oath of Citizenship; sign the oath form; and receive your Canadian Citizenship Certificate. If you do not pass the test, you will receive a notification indicating the next steps. (P7)'
                   ],
                   [
@@ -131,7 +131,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Both English and French'],
                       ['text' => 'Either Spanish or French'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 32,
                     'explanation' => 'In order to apply for Canadian citizenship, you must provide proof that you know how to speak and write in 1 of Canada\'s official languages (either English or French). (P3)'
                   ],
                   [
@@ -140,7 +140,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'True'],
                       ['text' => 'False'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 36,
                     'explanation' => 'Canada personifies a King or Queen; however, our government is a democracy. (P2)'
                   ],
                   [
@@ -151,7 +151,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The United Kingdom'],
                       ['text' => 'The Prime Minister'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 37,
                     'explanation' => 'In Canada, we profess our loyalty to a person who represents all Canadians and not to a document such as a constitution, a banner such as a flag, or a geopolitical entity such as a country. (P2)'
                   ],
                   [
@@ -162,7 +162,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canadians have obligations as well as rights'],
                       ['text' => 'The laws of Canada must be followed by Canadians'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 42,
                     'explanation' => 'Canadian citizens enjoy many rights, but Canadians also have responsibilities. They must obey Canada’s laws and respect the rights and freedoms of others. (P3)'
                   ],
                   [
@@ -173,7 +173,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Officials will make sure you adhere to the rules.'],
                       ['text' => 'Officials will request gifts or money from you.'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 48,
                     'explanation' => 'When you apply for citizenship, officials will check your status, verify that you are not prohibited from applying, and ensure that you meet the requirements. (P6)'
                   ],
                   [
@@ -184,7 +184,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canada is a Oligarchy'],
                       ['text' => 'Canada is a Republic'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 50,
                     'explanation' => 'Canada is a constitutional monarchy, a parliamentary democracy and a federal state. Canadians are bound together by a shared commitment to the rule of law and to the institutions of parliamentary government. (P3)'
                   ],
                   [
@@ -195,7 +195,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '400 Years'],
                       ['text' => '500 Years'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 55,
                     'explanation' => 'For 400 years, settlers and immigrants have contributed to the diversity and richness of Canada, which is built on a proud history and a strong identity. (P3)'
                   ],
                   [
@@ -206,7 +206,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Knowledge of Canadian rights and responsibilities, and language proficiency'],
                       ['text' => 'Knowledge of Canadian geography and cultural diversity'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 59,
                     'explanation' => 'You will be tested on two basic requirements for citizenship: 1) knowledge of Canada and of the rights and responsibilities of citizenship, and 2) adequate knowledge of English or French. (P6)'
                   ],
                   [
@@ -217,7 +217,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Applicants aged 55 and above'],
                       ['text' => 'Applicants aged 65 and above'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 63,
                     'explanation' => 'Adult applicants 55 years of age and over do not need to write the citizenship test. (P6)'
                   ],
                   [
@@ -228,7 +228,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '20 to 60'],
                       ['text' => '22 to 58'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 66,
                     'explanation' => 'Immigrants between the ages of 18 and 54 must have adequate knowledge of English or French in order to become Canadian citizens. (P3)'
                   ],
                   [
@@ -239,7 +239,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canada\'s history, symbols, and democratic institutions'],
                       ['text' => 'International trade agreements'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 71,
                     'explanation' => 'Canada’s history, symbols, democratic institutions, geography, and the rights and responsibilities of citizenship. (P3)'
                   ],
                   [
@@ -250,7 +250,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Pledge of allegiance to the Canadian Constitution and its recognition of Indigenous rights'],
                       ['text' => 'Pledge of allegiance to the United Nations'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 75,
                     'explanation' => 'Excerpt from Oath: "I will faithfully observe the laws of Canada, including the Constitution which recognizes and affirms the Aboriginal and treaty rights of First Nations, Inuit and Métis peoples" (P2)'
                   ],
                 ]
@@ -337,7 +337,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '“Canada is a free country and home of the Braves”'],
                       ['text' => '“Whereas Canada is founded upon principles that recognize the supremacy of God and the rule of law”'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 80,
                     'explanation' => 'The Constitution of Canada was amended in 1982 to entrench the Canadian Charter of Rights and Freedoms, which begins with the words, “Whereas Canada is founded upon principles that recognize the supremacy of God and the rule of law.”(P8)'
                   ],
                   [
@@ -348,7 +348,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Obeying the law'],
                       ['text' => 'Taking responsibility for oneself and one\'s family'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 81,
                     'explanation' => 'Learning to speak both official languages is not a responsibility of Canadian citizens. (P9)'
                   ],
                   [
@@ -359,7 +359,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Basic living rights and Obey laws'],
                       ['text' => 'Aboriginal people\'s rights and to volunteer'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 85,
                     'explanation' => 'Freedom of belief and freedom of religion are two fundamental freedoms protected by the Canadian Charter of Rights and Freedoms. (P8)'
                   ],
                   [
@@ -370,7 +370,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Serve in the Canadian Army, obey the law and take responsibilities for oneself and one\'s family'],
                       ['text' => 'Obey the law, serve on a jury, vote in elections and help others in the community'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 90,
                     'explanation' => 'Obey the law, serve on a jury, vote in elections, and help others in the community are responsibilities of Canadian citizenship. (P9)'
                   ],
                   [
@@ -381,7 +381,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Any immigrant who has stayed a minimum of three years in Canada'],
                       ['text' => 'Wealthy citizens'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 94,
                     'explanation' => 'Canadian citizens have the right to apply for a Canadian passport. Canadians can live and work anywhere they choose in Canada, enter and leave the country freely, and apply for a passport. (P8)'
                   ],
                   [
@@ -392,7 +392,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The people of Canada'],
                       ['text' => 'The Prime Minister'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 98,
                     'explanation' => 'Queen Elizabeth II proclaimed the amended Constitution, Ottawa, 1982. (P8)'
                   ],
                   [
@@ -403,7 +403,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The supremacy of law and the rule of God'],
                       ['text' => 'Mobility right and the rule of law'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 101,
                     'explanation' => 'Canada is founded upon principles that recognize the supremacy of God and the rule of law. (P8)'
                   ],
                   [
@@ -414,7 +414,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1885'],
                       ['text' => '1972'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 106,
                     'explanation' => 'The Constitution of Canada was amended in 1982 to entrench the Canadian Charter of Rights and Freedoms. (P8)'
                   ],
                   [
@@ -425,7 +425,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canadian citizens'],
                       ['text' => 'British citizens'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 111,
                     'explanation' => 'Canadian citizens can enter and leave the country freely. (P8)'
                   ],
                   [
@@ -436,7 +436,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canadian Constitution'],
                       ['text' => 'Magna Carta'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 116,
                     'explanation' => 'The Magna Carta is also known as the Great Charter of Freedoms. (P8)'
                   ],
                   [
@@ -447,7 +447,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Judges'],
                       ['text' => 'A jury is made up of citizens'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 120,
                     'explanation' => 'A jury is made up of citizens. Serving on a jury is a privilege that makes the justice system work as it depends on impartial juries made up of citizens. (P9)'
                   ],
                   [
@@ -458,7 +458,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1982'],
                       ['text' => '1782'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 123,
                     'explanation' => 'The Canadian Charter of Rights and Freedoms became part of the Constitution in 1982. (P8)'
                   ],
                   [
@@ -469,7 +469,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Freedom of religion'],
                       ['text' => 'All of the above'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 128,
                     'explanation' => 'Canadians have rights and fundamental freedoms such as thought and belief, opinion and expression, and freedom of religion. (P8)'
                   ],
                   [
@@ -480,7 +480,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1982'],
                       ['text' => '1949'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 131,
                     'explanation' => 'The Constitution of Canada was amended in 1982 to entrench the Canadian Charter of Rights and Freedoms. (P8)'
                   ],
                   [
@@ -491,7 +491,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canadian festivals'],
                       ['text' => 'English culture'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 133,
                     'explanation' => 'Multiculturalism is a fundamental characteristic of Canadian heritage and identity. (P8)'
                   ],
                   [
@@ -502,7 +502,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Inequality of men and women'],
                       ['text' => 'Equality of men'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 137,
                     'explanation' => 'Post-war, Canada became a more flexible and open society based on the equality of men and women. (P9)'
                   ],
                   [
@@ -513,7 +513,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Aboriginal people\'s Rights, Voting Rights and official language rights'],
                       ['text' => 'Employment rights, Mobility rights and freedom rights'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 142,
                     'explanation' => 'The Canadian Charter of Rights and Freedoms includes mobility rights, Aboriginal people\'s rights and official language rights. (P8)'
                   ],
                   [
@@ -524,7 +524,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canadian citizens'],
                       ['text' => 'Job Seekers'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 147,
                     'explanation' => 'Canadian citizens have the right to enter and leave Canada at will. (P8)'
                   ],
                   [
@@ -535,7 +535,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Being able to live and fish anywhere in Canada'],
                       ['text' => 'Being able to play hockey anywhere in Canada'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 150,
                     'explanation' => 'Mobility rights mean being able to live and work anywhere in Canada. (P8)'
                   ],
                   [
@@ -546,7 +546,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Because of the equality of women and men in Canada'],
                       ['text' => 'Because she has a University degree'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 155,
                     'explanation' => 'Sarah can choose to take a job like any man because of the equality of women and men in Canada. (P9)'
                   ]
                 ]
@@ -563,7 +563,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "1425"],
                       ["text" => "1615"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 158,
                     "explanation" => "Together, these secure for Canadians an 800-year old tradition of ordered liberty, which dates back to the signing of Magna Carta in 1215 in England. (P8)"
                   ],
                   [
@@ -574,7 +574,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "the right to speak freely"],
                       ["text" => "the right to challenge unlawful detention by the state"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 164,
                     "explanation" => "Habeas corpus, the right to challenge unlawful detention by the state, comes from English common law. (P8)"
                   ],
                   [
@@ -585,7 +585,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Politicians"],
                       ["text" => "No one"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 168,
                     "correctAnswer" => "No one",
                     "explanation" => "No person or group is above the law. (P9)"
                   ],
@@ -597,7 +597,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "The right to travel, to live anywhere, to work anywhere, and to get married"],
                       ["text" => "The right to have a job, to vote, to drive, and to go to school"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 170,
                     "correctAnswer" => "The right to be educated in either official language, to vote, to apply for a Canadian passport, and to enter and leave Canada freely",
                     "explanation" => "The rights to receive education in either official language, to vote, to apply for a Canadian passport, and to freely enter and leave Canada are addressed in Mobility Rights, Aboriginal Peoples’ Rights, Official Language Rights and Minority Language Educational Rights, and Multiculturalism. (P8)"
                   ],
@@ -609,7 +609,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "All languages have equal status in Canada's government"],
                       ["text" => "French and English have equal status in Parliament and throughout the government"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 176,
                     "correctAnswer" => "French and English have equal status in Parliament and throughout the government",
                     "explanation" => "Official Language Rights and Minority Language Educational Rights – French and English have equal status in Parliament and throughout the government. (P8)"
                   ],
@@ -621,7 +621,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "The right to enter remain in or leave Canada"],
                       ["text" => "All of the above"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 180,
                     "correctAnswer" => "All of the above",
                     "explanation" => "Canadians have the right to run for office, to vote in federal, provincial, and territorial elections, and to enter, remain in, or leave Canada. (P8)"
                   ],
@@ -633,7 +633,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "The Canadian Charter of Rights and Freedoms"],
                       ["text" => "The Canadian Charter of Rights and free will"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 183,
                     "correctAnswer" => "The Canadian Charter of Rights and Freedoms",
                     "explanation" => "The Constitution of Canada was amended in 1982 to entrench the Canadian Charter of Rights and Freedoms, which begins with the words, “Whereas Canada is founded upon principles that recognize the supremacy of God and the rule of law.” (P8)"
                   ],
@@ -645,7 +645,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Capitalism"],
                       ["text" => "Individualism"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 186,
                     "correctAnswer" => "Pluralism",
                     "explanation" => "Canadians celebrate the gift of one another’s presence and work hard to respect pluralism and live in harmony. (P8)"
                   ],
@@ -657,7 +657,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Habeas corpus"],
                       ["text" => "Hockey"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 190,
                     "correctAnswer" => "Multiculturalism",
                     "explanation" => "Multiculturalism – A fundamental characteristic of the Canadian heritage and identity. Canadians celebrate the gift of one another’s presence and work hard to respect pluralism and live in harmony. (P8)"
                   ],
@@ -669,7 +669,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Laws of Canada"],
                       ["text" => "Citizenship responsibilities"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 196,
                     "correctAnswer" => "Citizenship responsibilities",
                     "explanation" => "A fundamental characteristic of the Canadian heritage and identity. Canadians celebrate the gift of one another’s presence and work hard to respect pluralism and live in harmony. (P9)"
                   ],
@@ -681,7 +681,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "By citizenship"],
                       ["text" => "None of the above"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 197,
                     "correctAnswer" => "By the Charter of Rights and Freedoms",
                     "explanation" => "The Constitution of Canada was amended in 1982 to entrench the Canadian Charter of Rights and Freedoms, which begins with the words, “Whereas Canada is founded upon principles that recognize the supremacy of God and the rule of law.” (P8)"
                   ],
@@ -693,7 +693,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "English common law"],
                       ["text" => "The military code of France"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 203,
                     "correctAnswer" => "English common law",
                     "explanation" => "Canadian law is derived from a variety of sources, including laws passed by Parliament and provincial legislatures, English common law, the French civil code, and the unwritten constitution that we inherited from the United Kingdom."
                   ],
@@ -705,7 +705,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Her Majesty Queen Anne the Second"],
                       ["text" => "Her Majesty Queen Victoria"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 206,
                     "correctAnswer" => "His Majesty King Charles the Third",
                     "explanation" => "Canada is a constitutional monarchy whereby the Sovereign is Canada’s Head of State. King Charles III automatically became Sovereign of Canada on the passing of his predecessor, Queen Elizabeth II."
                   ],
@@ -717,7 +717,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "The Senate"],
                       ["text" => "Queen Elizabeth II"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 212,
                     "correctAnswer" => "Queen Elizabeth II",
                     "explanation" => "The Canadian Constitution was amended in 1982 to include the Canadian Charter of Rights and Freedoms."
                   ],
@@ -727,7 +727,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "An option"],
                       ["text" => "A legal requirement"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 214,
                     "correctAnswer" => "A legal requirement",
                     "explanation" => "When called to do so, you are legally required to serve. Serving on a jury is a privilege that makes the justice system work as it depends on impartial juries made up of citizens."
                   ],
@@ -737,7 +737,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "A right"],
                       ["text" => "A responsibility"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 216,
                     "correctAnswer" => "A responsibility",
                     "explanation" => "One of Canada’s founding principles is the rule of law. Individuals and governments are regulated by laws and not by arbitrary actions. No person or group is above the law."
                   ],
@@ -749,7 +749,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Pluralism"],
                       ["text" => "Serve in the Air Force"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 217,
                     "correctAnswer" => "Volunteer",
                     "explanation" => "Millions of volunteers freely donate their time to help others without pay. Helping people in need, assisting at your child’s school, volunteering at a food bank or other charity, or encouraging newcomers to integrate are all excellent ways to gain useful skills and develop friends and contacts."
                   ],
@@ -761,7 +761,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Canadians may enter and leave the country freely, and apply for passports"],
                       ["text" => "Canadians have freedom of speech"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 221,
                     "correctAnswer" => "Canadians are free to enter and leave the nation at will, live and work anywhere they choose, and apply for passports.",
                     "explanation" => "Canadians can live and work anywhere they choose in Canada, enter and leave the country freely, and apply for a passport."
                   ],
@@ -773,7 +773,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "The Charter does not guarantee any rights to Aboriginal peoples."],
                       ["text" => "The rights of Aboriginal peoples are secondary to the rights guaranteed in the Charter."]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 226,
                     "correctAnswer" => "Aboriginal peoples' rights and freedoms are unaffected by the rights guaranteed in the Charter.",
                     "explanation" => "Aboriginal Peoples’ Rights — The rights guaranteed in the Charter will not adversely affect any treaty or other rights or freedoms of Aboriginal peoples. (P8)"
                   ]
@@ -921,7 +921,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Ontario"],
                       ["text" => "Prince Edward Island"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 230,
                     "correctAnswer" => "Quebec",
                     "explanation" => "(P11,47)"
                   ],
@@ -933,7 +933,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "North America"],
                       ["text" => "South America"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 235,
                     "correctAnswer" => "North America",
                     "explanation" => "Canada is known around the world as a strong and free country. Canadians are proud of their unique identity. We have inherited the oldest continuous constitutional tradition in the world. We are the only constitutional monarchy in North America. (P10)"
                   ],
@@ -945,7 +945,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "First Nations people speaking the Mischif dialect"],
                       ["text" => "A distinct people of mixed Aboriginal and European ancestry"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 240,
                     "correctAnswer" => "A distinct people of mixed Aboriginal and European ancestry",
                     "explanation" => "The Metis are a distinct people of mixed Aboriginal and European ancestry, the majority of whom live in the Prairie provinces. (P11)"
                   ],
@@ -957,7 +957,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Prairie Provinces"],
                       ["text" => "The Maritimes"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 243,
                     "correctAnswer" => "Prairie Provinces",
                     "explanation" => "The Metis are a distinct people of mixed Aboriginal and European ancestry, the majority of whom live in the Prairie provinces. (P11)"
                   ],
@@ -969,7 +969,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "The descendants of the first Australian immigrants to Canada"],
                       ["text" => "The first inhabitants of Canada"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 248,
                     "correctAnswer" => "The first inhabitants of Canada",
                     "explanation" => "The ancestors of Aboriginal peoples are believed to have migrated from Asia many thousands of years ago. They were well established here long before explorers from Europe first came to North America. (P10)"
                   ],
@@ -981,7 +981,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "French-speaking Catholics who live in Ontario"],
                       ["text" => "Aboriginal people of the Arctic."]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 252,
                     "correctAnswer" => "The descendants of French colonists who began settling in what are now the Maritime Provinces in 1604.",
                     "explanation" => "The Acadians are the descendants of French colonists who began settling in what are now the Maritime provinces in 1604. (P11)"
                   ],
@@ -993,7 +993,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "War order and good government"],
                       ["text" => "Mobility rights order and good government"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 254,
                     "correctAnswer" => "Peace, order and good government",
                     "explanation" => "Our institutions uphold a commitment to Peace, Order and Good Government, a key phrase in Canada’s original constitutional document in 1867, the British North America Act. (P10)"
                   ],
@@ -1005,7 +1005,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "“The people” in the Inuktitut language."],
                       ["text" => "“The Arctic Land” in Inuktitut language."]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 259,
                     "correctAnswer" => "“The people” in the Inuktitut language",
                     "explanation" => "The Inuit, which means “the people” in the Inuktitut language, live in small, scattered communities across the Arctic. (P11)"
                   ],
@@ -1017,7 +1017,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Indians"],
                       ["text" => "Metis"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 262,
                     "correctAnswer" => "First Nations",
                     "explanation" => "About 65% of the Aboriginal people are First Nations, while 30% are Metis and 4% Inuit. (P11)"
                   ],
@@ -1029,7 +1029,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Muslim"],
                       ["text" => "Hindu"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 265,
                     "correctAnswer" => "Christian",
                     "explanation" => "The great majority of Canadians identify as Christians. (P13)"
                   ],
@@ -1041,7 +1041,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Europe"],
                       ["text" => "Australia"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 269,
                     "correctAnswer" => "Asia",
                     "explanation" => "The ancestors of Aboriginal peoples are believed to have migrated from Asia many thousands of years ago. (P10)"
                   ],
@@ -1053,7 +1053,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "France"],
                       ["text" => "USA"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 273,
                     "correctAnswer" => "Asia",
                     "explanation" => "Since the 1970s, most immigrants have come from Asian countries. (P12)"
                   ],
@@ -1065,7 +1065,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "French, American and Indian"],
                       ["text" => "British, American and Aboriginal"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 278,
                     "correctAnswer" => "Aboriginal, French and British",
                     "explanation" => "To understand what it means to be Canadian, it is important to know about our three founding peoples – Aboriginal, French and British. (P10)"
                   ],
@@ -1077,7 +1077,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "British colonists who began settling in what are now the Maritime Provinces in 1604"],
                       ["text" => "French colonists who began settling in what are now the Maritime Provinces in 1604."]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 284,
                     "correctAnswer" => "French colonists who began settling in what are now the Maritime Provinces in 1604.",
                     "explanation" => "The Acadians are the descendants of French colonists who began settling in what are now the Maritime provinces in 1604. (P11)"
                   ],
@@ -1089,7 +1089,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Canada and United States of America"],
                       ["text" => "France, Great Britain and United States of America"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 285,
                     "correctAnswer" => "United Kingdom and United States of America",
                     "explanation" => "Believing it would be easy to conquer Canada, the United States launched an invasion in June 1812. The Americans were mistaken. Canadian volunteers and First Nations, including Shawnee led by Chief Tecumseh, supported British soldiers in Canada’s defence. (P17)"
                   ],
@@ -1101,7 +1101,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Descendants of the anglophones"],
                       ["text" => "People of Quebec"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 292,
                     "correctAnswer" => "People of Quebec",
                     "explanation" => "Quebecers are the people of Quebec, the vast majority French-speaking. (P11)"
                   ],
@@ -1113,7 +1113,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "In scattered communities across the Arctic"],
                       ["text" => "Prairie Provinces"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 295,
                     "correctAnswer" => "In scattered communities across the Arctic",
                     "explanation" => "The Inuit, which means “the people” in the Inuktitut language, live in small, scattered communities across the Arctic. (P10)"
                   ],
@@ -1125,7 +1125,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Muslim"],
                       ["text" => "Jewish"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 297,
                     "correctAnswer" => "Roman Catholic",
                     "explanation" => "The largest religious affiliation is Catholic, followed by various Protestant churches. (P13)"
                   ],
@@ -1137,7 +1137,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "American and Indian ancestry"],
                       ["text" => "Inuit and Indian ancestry"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 301,
                     "correctAnswer" => "Aboriginal and European ancestry",
                     "explanation" => "The Metis are a distinct people of mixed Aboriginal and European ancestry, the majority of whom live in the Prairie provinces. (P11)"
                   ],
@@ -1149,7 +1149,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "English, Welsh, Scottish and Metis"],
                       ["text" => "English, Welsh, Scottish and Irish"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 308,
                     "correctAnswer" => "English, Welsh, Scottish and Irish",
                     "explanation" => "The basic way of life in English-speaking areas was established by hundreds of thousands of English, Welsh, Scottish and Irish settlers, soldiers and migrants from the 1600s to the 20th century."
                   ]
@@ -1168,7 +1168,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "French and Chinese"],
                       ["text" => "Indians (First Nations) and Inuits (Eskimos)"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 312,
                     "correctAnswer" => "Indians (First Nations) and Inuits (Eskimos)",
                     "explanation" => "About 65% of the Aboriginal people are First Nations, while 30% are Metis and 4% Inuit. (P11)"
                   ],
@@ -1180,7 +1180,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Early French settlers, Metis and Indian"],
                       ["text" => "Metis, First Nations and Inuit"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 316,
                     "correctAnswer" => "Metis, First Nations and Inuit",
                     "explanation" => "About 65% of the Aboriginal people are First Nations, while 30% are Metis and 4% Inuit. (P11)"
                   ],
@@ -1192,7 +1192,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "The great Dominion"],
                       ["text" => "The land of the Brave"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 319,
                     "correctAnswer" => "The great Dominion",
                     "explanation" => "A belief in ordered liberty, enterprise, hard work and fair play has enabled Canadians to build a prosperous society in a rugged environment from our Atlantic shores to the Pacific Ocean and to the Arctic Circle – so much so that poets and songwriters have hailed Canada as the “Great Dominion” (P10)."
                   ],
@@ -1204,7 +1204,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Peace, order and good government"],
                       ["text" => "Discipline, education and good public"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 323,
                     "correctAnswer" => "Peace, order and good government",
                     "explanation" => "Our institutions uphold a commitment to Peace, Order and Good Government, a key phrase in Canada’s original constitutional document in 1867, the British North America Act. (P10)"
                   ],
@@ -1216,7 +1216,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "They are descendants of British settlers who live in Quebec."],
                       ["text" => "They are the Canadians who only speak French."]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 326,
                     "correctAnswer" => "They form a nation within a United Canada.",
                     "explanation" => "The House of Commons recognized in 2006 that the Quebecois form a nation within a united Canada. (P11)"
                   ],
@@ -1228,7 +1228,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Inuit"],
                       ["text" => "Indian"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 330,
                     "correctAnswer" => "Acadian",
                     "explanation" => "The Acadians are the descendants of French colonists who began settling in what are now the Maritime provinces in 1604. (P11)"
                   ],
@@ -1240,7 +1240,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "It lets Canadians enjoy more freedom"],
                       ["text" => "It made changes to the Citizenship Act"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 333,
                     "correctAnswer" => "Canada can modify the Constitution without the approval from the British government",
                     "explanation" => "The Constitution Act of 1982 allowed Canada to amend its own Constitution without requiring approval from the British government. (P12)"
                   ],
@@ -1252,7 +1252,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Freedom of conscience and religion"],
                       ["text" => "Freedom from taxes"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 339,
                     "correctAnswer" => "Freedom of conscience and religion",
                     "explanation" => "The Great Charter of Freedoms includes freedom of conscience and religion; freedom of thought, belief, opinion and expression, including freedom of speech and of the press; freedom of peaceful assembly; and freedom of association. (P11)"
                   ],
@@ -1264,7 +1264,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Your police record is cleared afterwards"],
                       ["text" => "You get paid very generously"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 342,
                     "correctAnswer" => "It makes the justice system work as it depends on impartial juries made up of citizens",
                     "explanation" => "Serving on a jury is a privilege that makes the justice system work as it depends on impartial juries made up of citizens. When called to do so, you are legally required to serve. (P14)"
                   ],
@@ -1276,7 +1276,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "France"],
                       ["text" => "Canada"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 346,
                     "correctAnswer" => "England",
                     "explanation" => "Magna Carta (also known as the Great Charter of Freedoms) was signed in the year 1215 in England. (P11)"
                   ],
@@ -1288,7 +1288,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "The British People"],
                       ["text" => "The Aboriginal People"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 350,
                     "correctAnswer" => "The Anglophones",
                     "explanation" => "Generations of pioneers and builders of British origins, as well as other groups, invested and endured hardship in laying the foundations of our country. This helps explain why Anglophones (English speakers) are generally referred to as English Canadians. (P15)"
                   ],
@@ -1300,7 +1300,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "From the 1700s until the 1970s"],
                       ["text" => "From the beginning of the 1900s until the 1980s"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 354,
                     "correctAnswer" => "From the 1800s until the 1980s",
                     "explanation" => "From the 1800s until the 1980s, the federal government placed many Aboriginal children in residential schools to educate and assimilate them into mainstream Canadian culture. The schools were poorly funded and inflicted hardship on the students. Ottawa formally apologized to the former students. (P17)"
                   ],
@@ -1312,7 +1312,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "By arbitrary actions"],
                       ["text" => "By laws"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 360,
                     "correctAnswer" => "By laws",
                     "explanation" => "One of Canada’s founding principles is the rule of law. Individuals and governments are regulated by laws and not by arbitrary actions. No person or group is above the law. (P17)"
                   ],
@@ -1324,7 +1324,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "A famous Canadian settler"],
                       ["text" => "The first woman to become Prime Minister"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 362,
                     "correctAnswer" => "An Olympian and descendant of black Loyalists",
                     "explanation" => "Olympian Marjorie Turner-Bailey of Nova Scotia is a descendant of black Loyalists, escaped slaves and freed men and women of African origin who in the 1780s fled to Canada from America, where slavery remained legal until 1863. (P19)"
                   ],
@@ -1336,7 +1336,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "65"],
                       ["text" => "80"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 367,
                     "correctAnswer" => "65",
                     "explanation" => "About 65% of the Aboriginal people are First Nations, while 30% are Métis and 4% Inuit. (P11)"
                   ],
@@ -1348,7 +1348,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Alberta"],
                       ["text" => "New Brunswick"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 372,
                     "correctAnswer" => "New Brunswick",
                     "explanation" => "While the majority of Francophones live in the province of Quebec, one million Francophones live in Ontario, New Brunswick and Manitoba, with a smaller presence in other provinces. New Brunswick is the only officially bilingual province. (P20)"
                   ],
@@ -1360,7 +1360,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "5 million"],
                       ["text" => "50 million"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 373,
                     "correctAnswer" => "7 million",
                     "explanation" => "Today, there are 18 million Anglophones—people who speak English as a first language—and seven million Francophones—people who speak French as their first language. (P20)"
                   ],
@@ -1372,7 +1372,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Magna Carta"],
                       ["text" => "Dominion of Canada"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 379,
                     "correctAnswer" => "Magna Carta",
                     "explanation" => "Magna Carta (also known as the Great Charter of Freedoms) was signed in the year 1215 in England. (P19)"
                   ],
@@ -1384,7 +1384,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "The British People"],
                       ["text" => "The Aboriginal People"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 382,
                     "correctAnswer" => "The Anglophones",
                     "explanation" => "Generations of pioneers and builders of British origins, as well as other groups, invested and endured hardship in laying the foundations of our country. This helps explain why Anglophones (English speakers) are generally referred to as English Canadians. (P20)"
                   ],
@@ -1396,7 +1396,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "From the 1700s until the 1970s"],
                       ["text" => "From the beginning of the 1900s until the 1980s"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 386,
                     "correctAnswer" => "From the 1800s until the 1980s",
                     "explanation" => "From the 1800s until the 1980s, the federal government placed many Aboriginal children in residential schools to educate and assimilate them into mainstream Canadian culture. The schools were poorly funded and inflicted hardship on the students. Ottawa formally apologized to the former students. (P21)"
                   ],
@@ -1408,7 +1408,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "By arbitrary actions"],
                       ["text" => "By laws"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 392,
                     "correctAnswer" => "By laws",
                     "explanation" => "One of Canada’s founding principles is the rule of law. Individuals and governments are regulated by laws and not by arbitrary actions. No person or group is above the law. (P21)"
                   ],
@@ -1420,7 +1420,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "A famous Canadian settler"],
                       ["text" => "The first woman to become Prime Minister"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 394,
                     "correctAnswer" => "An Olympian and descendant of black Loyalists",
                     "explanation" => "Olympian Marjorie Turner-Bailey of Nova Scotia is a descendant of black Loyalists, escaped slaves and freed men and women of African origin who in the 1780s fled to Canada from America, where slavery remained legal until 1863. (P22)"
                   ]
@@ -1439,7 +1439,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Work, Order and Home Ownership'],
                       ['text' => 'Work, Order, and Good Government'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 398,
                     'correct_answer' => 'B',
                     'explanation' => 'Canada’s institutions uphold a commitment to Peace, Order and Good Government, a key phrase in Canada’s original constitutional document in 1867, the British North America Act.',
                   ],
@@ -1452,7 +1452,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Northern provinces'],
                       ['text' => 'Prairie provinces'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 404,
                     'correct_answer' => 'D',
                     'explanation' => 'The Métis are a distinct people of mixed Aboriginal and European ancestry, the majority of whom live in the Prairie provinces. They come from both French and English-speaking backgrounds and speak their own dialect, Michif.',
                   ],
@@ -1465,7 +1465,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Acadian'],
                       ['text' => 'English-speaking and French-speaking Christians'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 408,
                     'correct_answer' => 'D',
                     'explanation' => 'The great majority of Canadians identify as Christians. The largest religious affiliation is Catholic, followed by various Protestant churches. The numbers of Muslims, Jews, Hindus, Sikhs and members of other religions, as well as people who state “no religion” are also growing.',
                   ],
@@ -1478,7 +1478,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '150 years'],
                       ['text' => '100 years'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 410,
                     'correct_answer' => 'B',
                     'explanation' => 'The House of Commons recognized in 2006 that the Quebecois form a nation within a united Canada. One million Anglo-Quebecers have a heritage of 250 years and form a vibrant part of the Quebec fabric.',
                   ],
@@ -1491,7 +1491,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Buying Canadian products, owning your own house, and using less water'],
                       ['text' => 'Obeying the law, taking responsibility for oneself and one\'s family, and serving on a jury'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 416,
                     'correct_answer' => 'D',
                     'explanation' => 'In Canada, rights come with responsibilities. These include obeying the law, taking responsibility for oneself and one’s family, and serving on a jury.',
                   ],
@@ -1504,7 +1504,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Acadian'],
                       ['text' => 'English'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 417,
                     'correct_answer' => 'A',
                     'explanation' => 'The Métis are a distinct people of mixed Aboriginal and European ancestry, the majority of whom live in the Prairie provinces. They come from both French- and English-speaking backgrounds and speak their own dialect, Michif.',
                   ],
@@ -1517,7 +1517,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Acadian'],
                       ['text' => 'Frenglish'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 421,
                     'correct_answer' => 'A',
                     'explanation' => 'The Métis are a distinct people of mixed Aboriginal and European ancestry, the majority of whom live in the Prairie provinces. They come from both French- and English-speaking backgrounds and speak their own dialect, Michif.',
                   ],
@@ -1530,7 +1530,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Alberta'],
                       ['text' => 'New Brunswick'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 425,
                     'correct_answer' => 'A',
                     'explanation' => 'The majority of Francophones live in the province of Quebec. One million Francophones live in Ontario, New Brunswick and Manitoba, with a smaller presence in other provinces.',
                   ],
@@ -1543,7 +1543,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Freedom of expression rights, property rights and fair trial rights'],
                       ['text' => 'Mobility rights, Aboriginal Peoples\' rights, and official language rights'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 432,
                     'correct_answer' => 'D',
                     'explanation' => 'The Charter attempts to summarize fundamental freedoms while also setting out additional rights. The most important of these include Mobility Rights, Aboriginal Peoples’ Rights, Official Language Rights and Minority Language Educational Rights and Multiculturalism.',
                   ],
@@ -1554,7 +1554,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'False'],
                       ['text' => 'True'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 433,
                     'correct_answer' => 'A',
                     'explanation' => 'Aboriginal and treaty rights are in the Canadian Constitution. Territorial rights were first guaranteed through the Royal Proclamation of 1763 by King George III, and established the basis for negotiating treaties with the newcomers— treaties that were not always fully respected.',
                   ],
@@ -1566,7 +1566,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The far North'],
                       ['text' => 'The village'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 436,
                     'correct_answer' => 'B',
                     'explanation' => 'The Inuit, which means “the people” in the Inuktitut language, live in small, scattered communities across the Arctic.',
                   ],
@@ -1579,7 +1579,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'British colonists who began settling in the 1600s in what are now the Maritime provinces'],
                       ['text' => 'Acadians'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 439,
                     'correct_answer' => 'A',
                     'explanation' => 'Quebecers are the people of Quebec, the vast majority French-speaking. Most are descendants of 8,500 French settlers from the 1600s and 1700s and maintain a unique identity, culture and language.',
                   ],
@@ -1592,7 +1592,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Spanish'],
                       ['text' => 'French'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 443,
                     'correct_answer' => 'A',
                     'explanation' => 'Non-official languages are widely spoken in Canadian homes. Chinese languages are the second most-spoken at home, after English, in two of Canada’s biggest cities. In Vancouver, 13% of the population speak Chinese languages at home; in Toronto, the number is 7%.',
                   ],
@@ -1603,7 +1603,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'False'],
                       ['text' => 'True'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 448,
                     'correct_answer' => 'B',
                     'explanation' => 'Canada’s diversity includes gay and lesbian Canadians, who enjoy the full protection of and equal treatment under the law, including access to civil marriage. Together, these diverse groups, sharing a common Canadian identity, make up today’s multicultural society.',
                   ],
@@ -1616,7 +1616,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '18 million'],
                       ['text' => '10 million'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 451,
                     'correct_answer' => 'C',
                     'explanation' => 'Today, there are 18 million Anglophones—people who speak English as a first language—and seven million Francophones—people who speak French as their first language.',
                   ],
@@ -1629,7 +1629,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'About one-third'],
                       ['text' => 'All of them'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 454,
                     'correct_answer' => 'B',
                     'explanation' => 'Between 1755 and 1763, during the war between Britain and France, more than two-thirds of the Acadians were deported from their homeland.',
                   ],
@@ -1642,7 +1642,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'About one third'],
                       ['text' => '1'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 475,
                     'correct_answer' => 'A',
                     'explanation' => 'Today, about half of First Nations people live on reserve land in about 600 communities while the other half live off-reserve, mainly in urban centers.',
                   ],
@@ -1655,7 +1655,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canada is a free country and home of the braves'],
                       ['text' => 'Canadian citizens have rights and responsibilities'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 462,
                     'correct_answer' => 'B',
                     'explanation' => 'The Constitution of Canada was amended in 1982 to entrench the Canadian Charter of Rights and Freedoms, which begins with the words, “Whereas Canada is founded upon principles that recognize the supremacy of God and the rule of law.”',
                   ],
@@ -1668,7 +1668,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The deportation of more than two-thirds of Aboriginal from their homeland between 1755 and 1763'],
                       ['text' => 'The deportation of more than two-thirds of Inuit from their homeland between 1755 and 1763'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 466,
                     'correct_answer' => 'B',
                     'explanation' => 'Between 1755 and 1763, during the war between Britain and France, more than two-thirds of the Acadians were deported from their homeland. Despite this ordeal, known as the “Great Upheaval,” the Acadians survived and maintained their unique identity.',
                   ],
@@ -1681,7 +1681,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'One of the Fathers of Confederation'],
                       ['text' => 'A victorious Canadian army General'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 470,
                     'correct_answer' => 'B',
                     'explanation' => 'John Buchan, the 1st Baron Tweedsmuir, was a popular Governor General of Canada (1935–40). Immigrant groups, he said, “should retain their individuality and each make its contribution to the national character.”',
                   ],
@@ -1701,7 +1701,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "England"],
                       ["text" => "India"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 473,
                     "correctAnswer" => "Canada",
                     "explanation" => "The majority of Canadians were born in this country and this has been true since the 1800s. However, Canada is often referred to as a land of immigrants because, over the past 200 years, millions of newcomers have helped to build and defend our way of life."
                   ],
@@ -1713,7 +1713,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "No unity"],
                       ["text" => "Complete cultural assimilation"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 477,
                     "correctAnswer" => "Unity in diversity",
                     "explanation" => "John Buchan, the 1st Baron Tweedsmuir, was a popular Governor General of Canada (1935–40). Immigrant groups, he said, “should retain their individuality and each make its contribution to the national character.”"
                   ],
@@ -1725,7 +1725,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "2006"],
                       ["text" => "1972"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 483,
                     "correctAnswer" => "2006",
                     "explanation" => "The House of Commons recognized in 2006 that the Quebecois form a nation within a united Canada."
                   ],
@@ -1737,7 +1737,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "1980"],
                       ["text" => "2000"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 485,
                     "correctAnswer" => "1867",
                     "explanation" => "Canada’s original constitutional document was created in 1867, the British North America Act."
                   ],
@@ -1749,7 +1749,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "2000"],
                       ["text" => "1900s"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 490,
                     "correctAnswer" => "1763",
                     "explanation" => "Aboriginal and treaty rights are in the Canadian Constitution. Territorial rights were first guaranteed through the Royal Proclamation of 1763 by King George III, and established the basis for negotiating treaties with the newcomers—treaties that were not always fully respected."
                   ],
@@ -1761,7 +1761,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Never"],
                       ["text" => "In the 1970s"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 496,
                     "correctAnswer" => "In the 1970s",
                     "explanation" => "Indian refers to all Aboriginal people who are not Inuit or Métis. In the 1970s, the term First Nations began to be used."
                   ],
@@ -1773,7 +1773,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "English, French and Chinese"],
                       ["text" => "English only"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 487,
                     "correctAnswer" => "English and French",
                     "explanation" => "English and French define the reality of day-to-day life for most people and are the country’s official languages. The federal government is required by law to provide services throughout Canada in English and French."
                   ],
@@ -1785,7 +1785,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Hinduism"],
                       ["text" => "Muslim"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 502,
                     "correctAnswer" => "Christian",
                     "explanation" => "The great majority of Canadians identify as Christians. The largest religious affiliation is Catholic, followed by various Protestant churches. The numbers of Muslims, Jews, Hindus, Sikhs and members of other religions, as well as people who state 'no religion' are also growing."
                   ],
@@ -1797,7 +1797,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "4"],
                       ["text" => "30"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 507,
                     "correctAnswer" => "4",
                     "explanation" => "About 65% of the Aboriginal people are First Nations, while 30% are Métis and 4% are Inuit."
                   ],
@@ -1809,7 +1809,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Metis and Inuit"],
                       ["text" => "Acadians, Metis and First Nations"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 509,
                     "correctAnswer" => "All aboriginal peoples who are not Inuit or Metis",
                     "explanation" => "Indian refers to all Aboriginal people who are not Inuit or Métis. In the 1970s, the term First Nations began to be used."
                   ],
@@ -1821,7 +1821,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "The Legislative Act"],
                       ["text" => "The British North America Act"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 516,
                     "correctAnswer" => "The British North America Act",
                     "explanation" => "Canada’s original constitutional document was created in 1867, the British North America Act."
                   ],
@@ -1833,7 +1833,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "French and British"],
                       ["text" => "First Nations and French"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 518,
                     "correctAnswer" => "English and French",
                     "explanation" => "English and French are the two official languages and are important symbols of identity. English speakers (Anglophones) and French speakers (Francophones) have lived together in partnership and creative tension for more than 300 years."
                   ],
@@ -1845,7 +1845,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "The House of Commons"],
                       ["text" => "The Cabinet Ministers"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 523,
                     "correctAnswer" => "The House of Commons",
                     "explanation" => "The House of Commons recognized in 2006 that the Quebecois form a nation within a united Canada."
                   ],
@@ -1857,7 +1857,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Outdoor life, hard work, and fair play"],
                       ["text" => "Hard work, fair play and ordered liberty"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 528,
                     "correctAnswer" => "Hard work, fair play and ordered liberty",
                     "explanation" => "A belief in ordered liberty, enterprise, hard work and fair play has enabled Canadians to build a prosperous society in a rugged environment from our Atlantic shores to the Pacific Ocean and to the Arctic Circle—so much so that poets and songwriters have hailed Canada as the “Great Dominion.”"
                   ],
@@ -1869,7 +1869,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Government, Work and Good Order"],
                       ["text" => "Peace, Order and Mobility Rights"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 530,
                     "correctAnswer" => "Peace, Order and Good Government",
                     "explanation" => "Canada’s institutions uphold a commitment to Peace, Order and Good Government, a key phrase in Canada’s original constitutional document in 1867, the British North America Act."
                   ],
@@ -1881,7 +1881,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Native Indian from America"],
                       ["text" => "Young people from France"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 534,
                     "correctAnswer" => "People who speak French as a first language",
                     "explanation" => "English and French are the two official languages and are important symbols of identity. English speakers (Anglophones) and French speakers (Francophones) have lived together in partnership and creative tension for more than 300 years."
                   ],
@@ -1891,7 +1891,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "True"],
                       ["text" => "False"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 538,
                     "correctAnswer" => "False",
                     "explanation" => "Canada is a constitutional monarchy, a parliamentary democracy and a federal state. Canadians are bound together by a shared commitment to the rule of law and to the institutions of parliamentary government."
                   ],
@@ -1903,7 +1903,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "By trading fur with other native in North America"],
                       ["text" => "Off the land, by raising crops"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 540,
                     "correctAnswer" => "Off the land, some by hunting and gathering, others by raising crops",
                     "explanation" => "The native people lived off the land, some by hunting and gathering, others by raising crops. The Huron-Wendat of the Great Lakes region, like the Iroquois, were farmers and hunters. The Cree and Dene of the Northwest were hunter-gatherers. The Sioux were nomadic, following the bison (buffalo) herd. The Inuit lived off Arctic wildlife. West Coast natives preserved fish by drying and smoking."
                   ],
@@ -1915,7 +1915,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "The French"],
                       ["text" => "The Irish"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 543,
                     "correctAnswer" => "The English",
                     "explanation" => "In the 1700s France and Great Britain battled for control of North America. In 1759, the British defeated the French in the Battle of the Plains of Abraham at Québec City — marking the end of France’s empire in America."
                   ],
@@ -1927,7 +1927,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Ontario, Quebec, New Brunswick and Nova Scotia"],
                       ["text" => "Ontario, Quebec, New Brunswick and British Columbia"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 548,
                     "correctAnswer" => "Ontario, Quebec, New Brunswick and Nova Scotia",
                     "explanation" => "Ontario and Quebec, which, together with New Brunswick and Nova Scotia, formed the new country called the Dominion of Canada."
                   ],
@@ -1939,7 +1939,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Never"],
                       ["text" => "In the 1800s"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 552,
                     "correctAnswer" => "In the 1700s",
                     "explanation" => "In the 1700s France and Great Britain battled for control of North America."
                   ],
@@ -1951,7 +1951,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "40"],
                       ["text" => "30"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 558,
                     "correctAnswer" => "30",
                     "explanation" => "About 65% of the Aboriginal people are First Nations, while 30% are Métis and 4% are Inuit."
                   ],
@@ -1963,7 +1963,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "1814"],
                       ["text" => "1867"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 561,
                     "correctAnswer" => "1814",
                     "explanation" => "By 1814, the American attempt to conquer Canada had failed. The British paid for a costly Canadian defence system, including the Citadels at Halifax and Québec City, the naval drydock at Halifax and Fort Henry at Kingston—today popular historic sites."
                   ],
@@ -1975,7 +1975,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "Europe"],
                       ["text" => "South America"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 563,
                     "correctAnswer" => "Asia",
                     "explanation" => "The largest groups are the English, French, Scottish, Irish, German, Italian, Chinese, Aboriginal, Ukrainian, Dutch, South Asian and Scandinavian. Since the 1970s, most immigrants have come from Asian countries."
                   ],
@@ -1987,7 +1987,7 @@ class DatabaseSeeder extends Seeder
                       ["text" => "The Fathers of Confederation"],
                       ["text" => "The Fathers of Dominion of Canada"]
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 567,
                     "correctAnswer" => "The Fathers of Confederation",
                     "explanation" => "The Fathers of Confederation established the Dominion of Canada on July 1, 1867, the birth of the country that we know today."
                   ]
@@ -2265,7 +2265,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canadian Confederation'],
                       ['text' => 'Dominion of Canada'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 574,
                     'correct_answer' => 'D',
                     'explanation' => 'The old Province of Canada was split into two new provinces: Ontario and Quebec, which, together with New Brunswick and Nova Scotia, formed the new country called the Dominion of Canada.',
                   ],
@@ -2278,7 +2278,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir Wilfred Laurier'],
                       ['text' => 'Sir John A. Macdonald'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 576,
                     'correct_answer' => 'B',
                     'explanation' => 'Sir George-Etienne Cartier was the key architect of confederation from Quebec. A railway lawyer, Montrealer, close ally of Macdonald and patriotic Canadien, Cartier led Quebec into confederation and helped negotiate the entry of the Northwest Territories, Manitoba and British Columbia into Canada.',
                   ],
@@ -2291,7 +2291,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Provided ammunition'],
                       ['text' => 'Sent 130,000 soldiers to take France back from the Germans'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 579,
                     'correct_answer' => 'A',
                     'explanation' => 'In World War II, Canada contributed more to the Allied air effort than any other Commonwealth country, with over 130,000 Allied air crew trained in Canada under the British Commonwealth Air Training Plan.',
                   ],
@@ -2304,7 +2304,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A network for Traders used to transport beaver pelts to the United States'],
                       ['text' => 'The first underground Subway tunnel in Toronto'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 583,
                     'correct_answer' => 'A',
                     'explanation' => 'Thousands of slaves escaped from the United States, followed “the North Star” and settled in Canada via the Underground Railroad, a Christian anti-slavery network.',
                   ],
@@ -2317,7 +2317,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'June 30th every year'],
                       ['text' => 'July 31st every year'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 588,
                     'correct_answer' => 'B',
                     'explanation' => 'Until 1982, July 1 was celebrated as “Dominion Day” to commemorate the day that Canada became a self-governing Dominion. Today it is officially known as Canada Day.',
                   ],
@@ -2330,7 +2330,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1786'],
                       ['text' => '1678'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 591,
                     'correct_answer' => 'A',
                     'explanation' => 'The Dominion of Canada was officially born on July 1, 1867.',
                   ],
@@ -2343,7 +2343,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The constitutional act of 1791'],
                       ['text' => 'The constitutional act of 1972'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 597,
                     'correct_answer' => 'C',
                     'explanation' => 'The Constitutional Act of 1791 divided the Province of Quebec into Upper Canada (later Ontario), which was mainly Loyalist, Protestant and English-speaking, and Lower Canada (later Quebec), heavily Catholic and French-speaking.',
                   ],
@@ -2356,7 +2356,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The suffrage movement led to the introduction of employment insurance'],
                       ['text' => 'Women achieved the right to vote'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 602,
                     'correct_answer' => 'D',
                     'explanation' => 'The effort by women to achieve the right to vote is known as the women’s suffrage movement.',
                   ],
@@ -2369,7 +2369,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Late 1700s'],
                       ['text' => 'Early 1600s'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 606,
                     'correct_answer' => 'D',
                     'explanation' => 'In 1604, the first European settlement north of Florida was established by French explorers Pierre de Monts and Samuel de Champlain.',
                   ],
@@ -2382,7 +2382,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canadian victory in World War II'],
                       ['text' => 'Sacrifices made by Canadian veterans and brave soldiers in Wars'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 610,
                     'correct_answer' => 'D',
                     'explanation' => 'Canadians remember the sacrifices of our veterans and brave fallen in all wars up to the present day in which Canadians took part, each year on November 11: Remembrance Day.',
                   ],
@@ -2394,7 +2394,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'To provide a spectacular tourist excursion across precipitous passes and bridges'],
                       ['text' => 'So British Columbia could handle trade of goods worth billions of dollars all around the world'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 612,
                     'correct_answer' => 'B',
                     'explanation' => 'British Columbia joined Canada in 1871 after Ottawa promised to build a railway to the West Coast.',
                   ],
@@ -2407,7 +2407,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'November 11th'],
                       ['text' => 'November 20th'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 617,
                     'correct_answer' => 'C',
                     'explanation' => 'Canadians remember the sacrifices of our veterans and brave fallen in all wars up to the present day in which Canadians took part, each year on November 11: Remembrance Day.',
                   ],
@@ -2420,7 +2420,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Newfoundland'],
                       ['text' => 'Yukon'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 621,
                     'correct_answer' => 'C',
                     'explanation' => 'Newfoundland was the last province to join Canada.',
                   ],
@@ -2433,7 +2433,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Ministers of the crown must have the support of a majority of the elected representatives in order to govern'],
                       ['text' => 'All Canadians are responsible for each other'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 625,
                     'correct_answer' => 'C',
                     'explanation' => 'The term "responsible government" means that the ministers of the Crown must have the support of a majority of the elected representatives in order to govern.',
                   ],
@@ -2446,7 +2446,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'John Cabot'],
                       ['text' => 'Shock Cartier'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 629,
                     'correct_answer' => 'C',
                     'explanation' => 'John Cabot, an Italian immigrant to England, was the first to map Canada’s Atlantic shore, setting foot on Newfoundland or Cape Breton Island in 1497 and claiming the New Founde Land for England.',
                   ],
@@ -2459,7 +2459,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir John A. Macdonald'],
                       ['text' => 'Sir William Riel'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 631,
                     'correct_answer' => 'A',
                     'explanation' => 'Louis Riel is seen by many as a hero, a defender of Metis rights and the father of Manitoba.',
                   ],
@@ -2472,7 +2472,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Early 1700s'],
                       ['text' => 'Late 1700s'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 638,
                     'correct_answer' => 'D',
                     'explanation' => 'The United Empire Loyalists came to Canada in the late 1700s.',
                   ],
@@ -2485,7 +2485,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The British defeated the French marking the end of France\'s Empire in America'],
                       ['text' => 'The French defeated the British in a battle for Quebec'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 641,
                     'correct_answer' => 'C',
                     'explanation' => 'In 1759, the British defeated the French in the Battle of the Plains of Abraham at Quebec City – marking the end of France’s empire in America.',
                   ],
@@ -2498,7 +2498,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A government that is against corruption'],
                       ['text' => 'The government must resign if it loses a confidence vote in the assembly'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 646,
                     'correct_answer' => 'D',
                     'explanation' => 'Responsible government means that the government must resign if it loses a confidence vote in the assembly. This is the system that Canada has today.',
                   ],
@@ -2511,7 +2511,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canada protected its independence from the United States'],
                       ['text' => 'Canada became an independent country'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 649,
                     'correct_answer' => 'C',
                     'explanation' => 'The War of 1812 with the USA ensured that Canada would protect its independence from the United States, contributing to the formation of the present-day Canada-U.S.A. border.',
                   ],
@@ -2530,7 +2530,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Gold mining'],
                       ['text' => 'Hunting'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 651,
                     'correct_answer' => 'A',
                     'explanation' => 'The French and Aboriginal people collaborated in the vast fur-trade economy, driven by the demand for beaver pelts in Europe.',
                   ],
@@ -2543,7 +2543,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'France'],
                       ['text' => 'Iceland'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 657,
                     'correct_answer' => 'C',
                     'explanation' => 'In 1604, the first European settlement north of Florida was established by French explorers Pierre de Monts and Samuel de Champlain.',
                   ],
@@ -2556,7 +2556,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The first head of a responsible government'],
                       ['text' => 'Canada\'s first prime minister'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 659,
                     'correct_answer' => 'A',
                     'explanation' => 'Sir George-Etienne Cartier was a key architect of Confederation from Quebec, a railway lawyer, Montrealer, and close ally of Macdonald who led Quebec into Confederation.',
                   ],
@@ -2569,7 +2569,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sam Steele'],
                       ['text' => 'George-Etienne Cartier'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 664,
                     'correct_answer' => 'B',
                     'explanation' => 'Louis Riel led an armed uprising and seized Fort Garry, the territorial capital.',
                   ],
@@ -2582,7 +2582,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Do nothing'],
                       ['text' => 'Must resign'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 670,
                     'correct_answer' => 'D',
                     'explanation' => 'If the government loses a confidence vote in the assembly, they must resign. This is the system of responsible government in Canada.',
                   ],
@@ -2595,7 +2595,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nova Scotia'],
                       ['text' => 'Manitoba'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 674,
                     'correct_answer' => 'D',
                     'explanation' => 'In 1916, Manitoba became the first province to grant voting rights to women.',
                   ],
@@ -2608,7 +2608,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'An explorer of western Canada'],
                       ['text' => 'A military leader of the Metis in the 19th century'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 675,
                     'correct_answer' => 'A',
                     'explanation' => 'General Sir Arthur Currie is considered Canada\'s greatest soldier in the First World War.',
                   ],
@@ -2621,7 +2621,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Upper Canada'],
                       ['text' => 'The province of Canada'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 682,
                     'correct_answer' => 'D',
                     'explanation' => 'The old Province of Canada was split into two new provinces: Ontario and Quebec, which, together with New Brunswick and Nova Scotia, formed the new country called the Dominion of Canada.',
                   ],
@@ -2634,7 +2634,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'American railroad engineers'],
                       ['text' => 'Chinese railroad workers'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 686,
                     'correct_answer' => 'D',
                     'explanation' => 'Chinese railroad workers played a significant role in building the Canadian Pacific Railway (CPR), which was completed in 1885.',
                   ],
@@ -2647,7 +2647,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'July 1st, 1867'],
                       ['text' => 'July 31st, 1820'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 687,
                     'correct_answer' => 'A',
                     'explanation' => 'Nunavut became a territory on April 1st, 1999.',
                   ],
@@ -2659,7 +2659,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Aboriginal people signed the act.'],
                       ['text' => 'It made Confederation legal'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 691,
                     'correct_answer' => 'D',
                     'explanation' => 'The British Parliament passed the British North America Act in 1867, which made Confederation legal. The Dominion of Canada was officially born on July 1, 1867.',
                   ],
@@ -2672,7 +2672,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Pierre Le Moyne, Sieur Iberville'],
                       ['text' => 'Great Britain'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 696,
                     'correct_answer' => 'B',
                     'explanation' => 'Outstanding leaders like Jean Talon, Bishop Laval, and Count Frontenac built a French Empire in North America that reached from Hudson Bay to the Gulf of Mexico.',
                   ],
@@ -2685,7 +2685,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canadian police'],
                       ['text' => 'RCMP'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 702,
                     'correct_answer' => 'D',
                     'explanation' => 'Today, the Royal Canadian Mounted Police (RCMP) or “the Mounties”) are the national police force and one of Canada’s best known symbols.',
                   ],
@@ -2698,7 +2698,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canada\'s tolerance of religious tradition under the law'],
                       ['text' => 'It gave the French more power'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 705,
                     'correct_answer' => 'C',
                     'explanation' => 'One of the constitutional foundations of Canada, the Quebec Act accommodated the principles of British institutions to the reality of the province. It allowed religious freedom for Catholics and permitted them to hold public office, a practice not then allowed in Britain.',
                   ],
@@ -2711,7 +2711,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Explorers searching for the Northwest Passage'],
                       ['text' => 'Geographers who first charted the coastline of British Columbia'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 707,
                     'correct_answer' => 'A',
                     'explanation' => 'In the fur trade era, the Voyageurs were Montreal-based traders who traveled by canoe, forming strong alliances with First Nations peoples.',
                   ],
@@ -2724,7 +2724,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'France and China'],
                       ['text' => 'America and British'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 712,
                     'correct_answer' => 'B',
                     'explanation' => 'In 1759, the Battle of the Plains of Abraham was fought between the British and the French, resulting in a decisive British victory and marking the end of France’s empire in North America.',
                   ],
@@ -2737,7 +2737,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A black tie'],
                       ['text' => 'A white shirt'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 715,
                     'correct_answer' => 'A',
                     'explanation' => 'Canadians wear a red poppy and observe a moment of silence at the 11th hour of the 11th day of the 11th month to honor the sacrifices of those who served in the military.',
                   ],
@@ -2750,7 +2750,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canadian Public Road'],
                       ['text' => 'Canadian people resource'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 719,
                     'correct_answer' => 'A',
                     'explanation' => 'C.P.R. stands for Canadian Pacific Railway, which was completed in 1885 and played a significant role in Canada’s development and unity.',
                   ],
@@ -2763,7 +2763,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Fur trade'],
                       ['text' => 'Fish trade'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 725,
                     'correct_answer' => 'C',
                     'explanation' => 'The first companies in Canada, during the French and British regimes, competed primarily in the fur trade, which was a lucrative industry at the time.',
                   ],
@@ -2776,7 +2776,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '200,000'],
                       ['text' => '70,000'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 727,
                     'correct_answer' => 'A',
                     'explanation' => 'During World War I, approximately 60,000 Canadians were killed, and another 170,000 were wounded.',
                   ],
@@ -2795,7 +2795,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Netherlands'],
                       ['text' => 'Japan'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 733,
                     'correct_answer' => 'C',
                     'explanation' => 'The Canadian Army liberated the Netherlands in 1944–45 and contributed significantly to the end of World War II in Europe.',
                   ],
@@ -2808,7 +2808,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir John A McDonald'],
                       ['text' => 'Rick Hansen'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 735,
                     'correct_answer' => 'A',
                     'explanation' => 'General Sir Arthur Currie is considered Canada’s greatest soldier, particularly for his leadership during World War I.',
                   ],
@@ -2821,7 +2821,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A tax imposed on beer beginning in 1867.'],
                       ['text' => 'Fee charged for moving westward in the early 1900s'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 739,
                     'correct_answer' => 'A',
                     'explanation' => 'The head tax was a race-based entry fee imposed on Chinese immigrants entering Canada, reflecting discriminatory practices of the time.',
                   ],
@@ -2834,7 +2834,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canada wishes to remain independent of the United States'],
                       ['text' => 'to prevent war between the two countries'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 745,
                     'correct_answer' => 'C',
                     'explanation' => 'The Canada-U.S. border, partly shaped by the War of 1812, ensured Canada’s independence from the United States.',
                   ],
@@ -2847,7 +2847,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'It results in the forcible relocation of Canadians of Japanese origin'],
                       ['text' => 'It led to the establishment of the Juno Awards'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 747,
                     'correct_answer' => 'A',
                     'explanation' => 'The D-Day invasion of Normandy on June 6, 1944, saw Canadians play a crucial role in defeating Nazism and fascism in Europe.',
                   ],
@@ -2860,7 +2860,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'by the 1550s'],
                       ['text' => 'by the 1650s'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 753,
                     'correct_answer' => 'C',
                     'explanation' => 'The name "Canada" began appearing on maps by the 1550s, reflecting early European explorations and settlements.',
                   ],
@@ -2873,7 +2873,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'To honor Prime Ministers who have died'],
                       ['text' => 'to celebrate Confederation'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 756,
                     'correct_answer' => 'B',
                     'explanation' => 'The Remembrance Day Poppy is worn to honor the sacrifices of Canadians who have served or died in wars, observed annually on November 11th.',
                   ],
@@ -2886,7 +2886,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Pierre Elliott Trudeau'],
                       ['text' => 'Sir John McDonald'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 759,
                     'correct_answer' => 'A',
                     'explanation' => 'Sir John Alexander Macdonald became Canada’s first Prime Minister in 1867, a key figure in the country’s early governance.',
                   ],
@@ -2899,7 +2899,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'it was an important victory in the Boer War'],
                       ['text' => 'out of it was formed the Canadian Corps'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 764,
                     'correct_answer' => 'B',
                     'explanation' => 'The Battle of Vimy Ridge in 1917 is considered a defining moment for Canada, symbolizing national unity and achievement.',
                   ],
@@ -2912,7 +2912,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'From the Inuit word meaning home'],
                       ['text' => 'From the First Nations word meaning land'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 768,
                     'correct_answer' => 'B',
                     'explanation' => 'The name "Canada" originates from the First Nations word "Kanata," meaning village, as recorded by early European explorers.',
                   ],
@@ -2924,7 +2924,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Fishery'],
                       ['text' => 'Fur'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 774,
                     'correct_answer' => 'D',
                     'explanation' => 'The Hudson’s Bay Company dominated the fur trade in the northwest from trading posts like Fort Garry (Winnipeg) and Fort Edmonton to Fort Langley and Fort Victoria, which later developed into cities.',
                   ],
@@ -2937,7 +2937,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Chief Tecumseh'],
                       ['text' => 'Major-General Robert Ross'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 777,
                     'correct_answer' => 'C',
                     'explanation' => 'Chief Tecumseh led Shawnee warriors in support of British and Canadian forces during the War of 1812, contributing significantly to Canada’s defense.',
                   ],
@@ -2950,7 +2950,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'the combination of neighborhood to build a larger community'],
                       ['text' => 'the merger of colonies to form a province'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 779,
                     'correct_answer' => 'A',
                     'explanation' => 'Confederation refers to the joining of provinces (Ontario, Quebec, New Brunswick, and Nova Scotia) to form the Dominion of Canada in 1867.',
                   ],
@@ -2963,7 +2963,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1920s'],
                       ['text' => '1860s'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 784,
                     'correct_answer' => 'B',
                     'explanation' => 'Canada’s economy saw significant growth and industrialization during the economic boom of the 1890s and early 1900s.',
                   ],
@@ -2976,7 +2976,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The election law'],
                       ['text' => 'The women\'s suffrage movement'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 790,
                     'correct_answer' => 'D',
                     'explanation' => 'The effort by women to achieve the right to vote is historically known as the women\'s suffrage movement.',
                   ],
@@ -2989,7 +2989,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'First Nations and British settlers'],
                       ['text' => 'Settlers from the United States during the American Revolution'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 794,
                     'correct_answer' => 'D',
                     'explanation' => 'United Empire Loyalists were settlers who fled the United States during the American Revolution due to their loyalty to the British Crown.',
                   ],
@@ -3002,7 +3002,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ontario, Nova Scotia, New Brunswick and British Columbia'],
                       ['text' => 'Ontario, Quebec, Manitoba and Nova Scotia'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 795,
                     'correct_answer' => 'A',
                     'explanation' => 'Ontario, Quebec, Nova Scotia, and New Brunswick were the four provinces that initially formed Confederation in 1867.',
                   ],
@@ -3015,7 +3015,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'London'],
                       ['text' => 'Paris'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 800,
                     'correct_answer' => 'B',
                     'explanation' => 'Canadian troops stormed and captured Juno Beach during the D-Day invasion in Normandy on June 6, 1944.',
                   ],
@@ -3028,7 +3028,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Fathers of Canada'],
                       ['text' => 'Fathers of Constitution'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 803,
                     'correct_answer' => 'A',
                     'explanation' => 'The men who worked to establish Canada from 1864 to 1867 are collectively known as the Fathers of Confederation.',
                   ],
@@ -3041,7 +3041,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1807'],
                       ['text' => '1833'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 809,
                     'correct_answer' => 'C',
                     'explanation' => 'The British Parliament passed laws in 1807 to prohibit the buying and selling of slaves, followed by abolition throughout the Empire in 1833.',
                   ],
@@ -3062,7 +3062,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir Georgette Cartier'],
                       ['text' => 'Sir Leonard Tilley'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 812,
                     'correct_answer' => 'B',
                     'explanation' => 'Sir Wilfrid Laurier became the first French-Canadian Prime Minister since Confederation and promoted immigration to Western Canada.',
                   ],
@@ -3075,7 +3075,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'British colonies'],
                       ['text' => 'Aboriginal peoples'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 815,
                     'correct_answer' => 'A',
                     'explanation' => 'United Empire Loyalists were settlers who fled the United States during the American Revolution due to their loyalty to the British Crown, settling primarily in Nova Scotia and Quebec.',
                   ],
@@ -3088,7 +3088,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Late 18th and early 19th centuries'],
                       ['text' => 'Early 18th century'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 821,
                     'correct_answer' => 'C',
                     'explanation' => 'The first financial institutions in Canada opened in the late 18th and early 19th centuries.',
                   ],
@@ -3101,7 +3101,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir Louis-Hippolyte LaFontaine'],
                       ['text' => 'Alec Baldwin'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 825,
                     'correct_answer' => 'C',
                     'explanation' => 'Sir Louis-Hippolyte LaFontaine became the first leader of a responsible government in the Canadas in 1849, advocating for democracy and French language rights.',
                   ],
@@ -3114,7 +3114,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir Louis Hippolyte La Fontaine'],
                       ['text' => 'Sir George-Etienne Cartier'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' =>  828,
                     'correct_answer' => 'B',
                     'explanation' => 'Lord Durham, an English reformer, recommended the merging of Upper and Lower Canada and granting them responsible government after reporting on the rebellions.',
                   ],
@@ -3127,7 +3127,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'About 900,000'],
                       ['text' => 'About 500,000'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 831,
                     'correct_answer' => 'A',
                     'explanation' => 'More than one million Canadians and Newfoundlanders served in World War II, a significant portion of the country\'s population at that time.',
                   ],
@@ -3140,7 +3140,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The military police'],
                       ['text' => 'The Northwest Mounted Police'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 835,
                     'correct_answer' => 'A',
                     'explanation' => 'The Royal Canadian Mounted Police (RCMP or "the Mounties") is Canada\'s national police force and one of its most recognizable symbols.',
                   ],
@@ -3153,7 +3153,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1791'],
                       ['text' => '1758'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 841,
                     'correct_answer' => 'C',
                     'explanation' => 'The name Canada became official in 1791 with the passage of the Constitutional Act, which also divided Quebec into Upper and Lower Canada.',
                   ],
@@ -3166,7 +3166,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1818'],
                       ['text' => '1918'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 846,
                     'correct_answer' => 'D',
                     'explanation' => 'In 1918, most Canadian female citizens aged 21 and over were granted the right to vote in federal elections, following their contributions during World War I.',
                   ],
@@ -3179,7 +3179,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'La Fontaine'],
                       ['text' => 'Sir John Alexander MacDonald'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 847,
                     'correct_answer' => 'A',
                     'explanation' => 'Sir Leonard Tilley, a Father of Confederation from New Brunswick, suggested the name Dominion of Canada during discussions in 1864.',
                   ],
@@ -3191,7 +3191,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'It was the largest Navy in the world'],
                       ['text' => 'It was the second largest Navy in the world'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 851,
                     'correct_answer' => 'A',
                     'explanation' => 'At the end of the Second World War, Canada had the third largest navy in the world, a testament to its significant naval contributions during the conflict. (P23)',
                   ],
@@ -3204,7 +3204,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'North America'],
                       ['text' => 'Lower Canada'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 856,
                     'correct_answer' => 'B',
                     'explanation' => 'Upper Canada, under Lieutenant-Colonel John Graves Simcoe, was the first province in the British Empire to move towards the abolition of slavery. Simcoe\'s efforts marked a significant step towards ending slavery in Canada. (P16)',
                   ],
@@ -3217,7 +3217,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Alexander MacKenzie'],
                       ['text' => 'Sir John A. Macdonald'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 862,
                     'correct_answer' => 'D',
                     'explanation' => 'Sir John A. Macdonald is considered a Father of Confederation for his pivotal role in the creation of Canada as a nation. In 1867, he became Canada\'s first Prime Minister. (P18)',
                   ],
@@ -3230,7 +3230,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1889'],
                       ['text' => '1609'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 864,
                     'correct_answer' => 'B',
                     'explanation' => 'The first representative assembly in Canada was elected in Halifax, Nova Scotia, in 1758, marking an early milestone in Canadian governance. (P16)',
                   ],
@@ -3243,7 +3243,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Built a Highway across the prairies'],
                       ['text' => 'A and C'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 868,
                     'correct_answer' => 'B',
                     'explanation' => 'The government built a railway across the prairies to facilitate immigration to Western Canada, enabling thousands of immigrants to settle and develop the region\'s agricultural sector. (P20)',
                   ],
@@ -3256,7 +3256,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The first head of state'],
                       ['text' => 'The first French-speaking Prime Minister'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 872,
                     'correct_answer' => 'B',
                     'explanation' => 'Sir Louis-Hippolyte La Fontaine was a champion of democracy and French language rights. He became the first leader of a responsible government in the Canadas, advocating for political reforms and linguistic equality. (P18)',
                   ],
@@ -3269,7 +3269,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Citizenship Act'],
                       ['text' => 'The Charter of Rights and Freedoms'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 876,
                     'correct_answer' => 'B',
                     'explanation' => 'The British North America Act, passed by the British Parliament in 1867, made Confederation legal and established the Dominion of Canada. (P18)',
                   ],
@@ -3282,7 +3282,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Unity'],
                       ['text' => 'Ribbons of Steel'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 881,
                     'correct_answer' => 'C',
                     'explanation' => 'The Canadian Pacific Railway symbolized unity, as its completion in 1885 connected Canada from coast to coast, facilitating national transportation and economic development. (P20)',
                   ],
@@ -3295,7 +3295,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'More than 60,000'],
                       ['text' => 'More than 600,000'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 886,
                     'correct_answer' => 'D',
                     'explanation' => 'More than 600,000 Canadians served in the First World War, reflecting significant national contribution and sacrifice during the conflict. (P21)',
                   ],
@@ -3308,7 +3308,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '“Dominion from Ocean to Ocean”'],
                       ['text' => '“Oh Canada, my home and native land”'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 888,
                     'correct_answer' => 'B',
                     'explanation' => '“Dominion from sea to sea and from the river to the ends of the Earth” embodied the vision for the Dominion of Canada, reflecting the ambition to build a powerful, united, wealthy, and free country across a vast continent. (P18)',
                   ],
@@ -3327,7 +3327,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1876'],
                       ['text' => '1786'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 891,
                     'correct_answer' => 'A',
                     'explanation' => 'A federation of colonies in British North America - New Brunswick, Nova Scotia, Quebec, and Ontario - joined together to become the Dominion of Canada on July 1, 1867. (P18)',
                   ],
@@ -3340,7 +3340,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Laura Secord'],
                       ['text' => 'Alice Munro'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 895,
                     'correct_answer' => 'A',
                     'explanation' => 'In 1921, Agnes Macphail became the first woman MP in Canada, marking a significant milestone for women in Canadian politics. (P21)',
                   ],
@@ -3353,7 +3353,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nazi'],
                       ['text' => 'Korea'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 901,
                     'correct_answer' => 'C',
                     'explanation' => 'In 1939, Canada joined its democratic allies to fight against Nazi Germany and its Axis powers during the Second World War. (P23)',
                   ],
@@ -3366,7 +3366,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'More than one million'],
                       ['text' => '40,000'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 904,
                     'correct_answer' => 'B',
                     'explanation' => 'Over 110,000 Canadians have died in wars, a fact commemorated annually on November 11 with the wearing of the red poppy and a moment of silence. (P22)',
                   ],
@@ -3379,7 +3379,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Laura Secord'],
                       ['text' => 'Alice Munro'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 909,
                     'correct_answer' => 'C',
                     'explanation' => 'Laura Secord bravely warned Lieutenant James FitzGibbon of a planned American attack during the War of 1812, contributing to a crucial Canadian victory. (P17)',
                   ],
@@ -3392,7 +3392,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Thanksgiving Day'],
                       ['text' => 'Boxing Day'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 911,
                     'correct_answer' => 'A',
                     'explanation' => 'April 9th is celebrated as Vimy Day in Canada, commemorating the Battle of Vimy Ridge and honoring those who served. (P21)',
                   ],
@@ -3405,7 +3405,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '50 years'],
                       ['text' => '200 years'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 915,
                     'correct_answer' => 'A',
                     'explanation' => 'The title "Dominion of Canada" was officially used for about 100 years, reflecting its historical significance in Canadian governance and identity. (P18)',
                   ],
@@ -3418,7 +3418,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The first Prime Minister of Canada'],
                       ['text' => 'The father of Manitoba'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 919,
                     'correct_answer' => 'A',
                     'explanation' => 'Sir Sam Steele was renowned as a great Frontier hero, mounted policeman, and soldier of the queen, known for his significant contributions to law enforcement and military service. (P19)',
                   ],
@@ -3431,7 +3431,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Liberty and pursuit of freedom'],
                       ['text' => 'Peace, order and good government'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 926,
                     'correct_answer' => 'D',
                     'explanation' => 'Canada\'s Constitution was founded on the principle of "Peace, Order and Good Government," which has shaped the country\'s legal and political framework since the British North America Act of 1867. (P16)',
                   ],
@@ -3444,7 +3444,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Because "Indian" means "aboriginal" in Irish'],
                       ['text' => 'They thought they had reached the East Indies'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 930,
                     'correct_answer' => 'D',
                     'explanation' => 'The first European explorers called the native peoples "Indians" because they mistakenly thought they had reached the East Indies. This misnomer has persisted in historical terminology despite the geographical error. ',
                   ],
@@ -3456,7 +3456,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Democratic'],
                       ['text' => 'Liberalist'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 933,
                     'correct_answer' => 'C',
                     'explanation' => 'Newcomers to Canada are expected to embrace democratic principles such as the rule of law, reflecting Canada\'s commitment to democracy and equality. Violent, extreme, or hateful prejudices are not acceptable. ',
                   ],
@@ -3469,7 +3469,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The land of the strong and free'],
                       ['text' => 'A land of immigrants'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 938,
                     'correct_answer' => 'D',
                     'explanation' => 'Canada is often referred to as a land of immigrants because millions of newcomers have immigrated to Canada over the past 200 years, contributing to its diversity and growth. ',
                   ],
@@ -3482,7 +3482,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The British Parliament'],
                       ['text' => 'The Quebec Parliament'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 941,
                     'correct_answer' => 'C',
                     'explanation' => 'The British Parliament passed the Quebec Act of 1774 to govern the French Roman Catholic majority in Quebec, adapting British institutions to accommodate Quebec\'s realities. It is a foundational part of Canada\'s constitutional history.',
                   ],
@@ -3495,7 +3495,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'During the French and British regimes'],
                       ['text' => 'During the British regime'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 945,
                     'correct_answer' => 'C',
                     'explanation' => 'The first companies in Canada were formed during the French and British regimes, primarily involved in the fur trade and laying the economic foundations of early Canada.',
                   ],
@@ -3508,7 +3508,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1867'],
                       ['text' => '1882'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 947,
                     'correct_answer' => 'A',
                     'explanation' => 'Upper and Lower Canada were united as the Province of Canada in 1840, following a period of political and social reforms led by figures like Sir Louis-Hippolyte La Fontaine and Robert Baldwin.',
                   ],
@@ -3521,7 +3521,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir John A. Macdonald'],
                       ['text' => 'Robert Baldwin'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 952,
                     'correct_answer' => 'B',
                     'explanation' => 'Sir Louis-Hippolyte La Fontaine became the first leader of a responsible government (similar to a prime minister) in Canada in 1849, advocating for French language rights and democratic reforms.',
                   ],
@@ -3534,7 +3534,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir Etienne-Paschal Tache'],
                       ['text' => 'Sir Louis-Hippolyte La Fontaine'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 958,
                     'correct_answer' => 'D',
                     'explanation' => 'Sir Louis-Hippolyte La Fontaine was a prominent advocate for French language rights in Canada and played a crucial role in establishing responsible government in the 19th century.',
                   ],
@@ -3547,7 +3547,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ontario and Quebec'],
                       ['text' => 'Prince Edward Island and Quebec'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 961,
                     'correct_answer' => 'C',
                     'explanation' => 'The Constitutional Act of 1791 divided the Province of Quebec into Upper Canada (later Ontario), which was primarily Loyalist and English-speaking, and Lower Canada (later Quebec), predominantly Catholic and French-speaking.',
                   ],
@@ -3560,7 +3560,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The unofficial railroad network linking small communities across Canada'],
                       ['text' => 'The name of the new railroad linking the East to the West of Canada'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 963,
                     'correct_answer' => 'A',
                     'explanation' => 'The Underground Railroad was a network of routes and safe houses used by enslaved African Americans to escape to free states and Canada. It was supported by abolitionists and played a significant role in the abolition of slavery.',
                   ],
@@ -3573,7 +3573,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'India'],
                       ['text' => 'Australia'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 967,
                     'correct_answer' => 'B',
                     'explanation' => 'Canada contributed more to the Allied air effort than any other Commonwealth country during World War II, training over 130,000 Allied air crew under the British Commonwealth Air Training Plan.',
                   ],
@@ -3592,7 +3592,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1964'],
                       ['text' => '1869'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 971,
                     'correct_answer' => 'A',
                     'explanation' => 'Sir John Alexander Macdonald became Canada’s first Prime Minister in 1867, the year of Confederation. He played a crucial role in the formation and early governance of Canada.',
                   ],
@@ -3605,7 +3605,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Jacques Cartier'],
                       ['text' => 'John Cabot'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 977,
                     'correct_answer' => 'C',
                     'explanation' => 'Jacques Cartier made three voyages between 1534 and 1542, claiming parts of Canada for King Francis I of France, which laid the foundation for French colonization in North America.',
                   ],
@@ -3618,7 +3618,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'It enacted the birth of Canada'],
                       ['text' => 'It provided peace, order and good government'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 979,
                     'correct_answer' => 'A',
                     'explanation' => 'The Quebec Act of 1774 was passed by the British Parliament to better govern the French Roman Catholic majority in Quebec. It granted religious freedoms and permitted Catholics to hold public office, addressing their specific needs and securing British rule in Quebec.',
                   ],
@@ -3631,7 +3631,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1 in 3'],
                       ['text' => '1 in 5'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 984,
                     'correct_answer' => 'B',
                     'explanation' => 'Approximately one in ten Allied soldiers on D-Day (June 6, 1944) was Canadian. The Canadian forces played a significant role in the Normandy landings and subsequent operations during the liberation of Europe.',
                   ],
@@ -3644,7 +3644,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Jean Talon'],
                       ['text' => 'Pierre Le Moyne'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 987,
                     'correct_answer' => 'A',
                     'explanation' => 'Count Frontenac, the Governor of New France, famously refused to surrender Quebec to the English during the Battle of Quebec in 1690, declaring his defiance with the statement, “My only reply will be from the mouths of my cannons!”',
                   ],
@@ -3657,7 +3657,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1597'],
                       ['text' => '1610'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 991,
                     'correct_answer' => 'A',
                     'explanation' => 'European exploration of Canada began in 1497 with the expedition of John Cabot, who explored the coast of Newfoundland and claimed it for England.',
                   ],
@@ -3670,7 +3670,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'She was the founder of the women\'s suffrage movement'],
                       ['text' => 'She was the founder of the Canadian feminist movement'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 996,
                     'correct_answer' => 'B',
                     'explanation' => 'Laura Secord is known for making a dangerous 19-mile (30-km) journey on foot to warn Lieutenant James FitzGibbon of an impending American attack during the War of 1812. Her bravery contributed to a crucial victory at the Battle of Beaver Dams.',
                   ],
@@ -3683,7 +3683,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Farming and exporting natural resources'],
                       ['text' => 'Farming'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1001,
                     'correct_answer' => 'C',
                     'explanation' => 'For centuries, Canada’s economy was based on farming and exporting natural resources such as fur, fish, and timber. These activities formed the economic backbone of early Canadian settlements and trading posts.',
                   ],
@@ -3696,7 +3696,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'They built a French Empire in North America that reached from Hudson Bay to the Gulf of Mexico'],
                       ['text' => 'They defeated the British armies during the War between France and England'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1005,
                     'correct_answer' => 'C',
                     'explanation' => 'Jean Talon, Bishop Laval, and Count Frontenac are famous for their roles in building and expanding the French colonial empire in North America, which extended from Hudson Bay to the Gulf of Mexico.',
                   ],
@@ -3709,7 +3709,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The demand for beaver pelts in Aboriginal communities'],
                       ['text' => 'The needs for beaver pelts in the settlers'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1007,
                     'correct_answer' => 'A',
                     'explanation' => 'The vast fur trade economy in Canada was primarily driven by the demand for beaver pelts in Europe. The fur trade was a significant economic activity that shaped early interactions between Europeans and Indigenous peoples in Canada.',
                   ],
@@ -3721,7 +3721,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The largest in the world'],
                       ['text' => 'The third largest in the world'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1014,
                     'correct_answer' => 'D',
                     'explanation' => 'The Royal Canadian Navy (RCN) became the third-largest navy in the world by the end of World War II, due to its significant contributions in the Battle of the Atlantic and other campaigns.',
                   ],
@@ -3734,7 +3734,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Religious'],
                       ['text' => 'Economic, religious and military'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1018,
                     'correct_answer' => 'D',
                     'explanation' => 'Aboriginals and Europeans formed strong bonds that were economic, religious, and military in nature during their first 200 years of coexistence, shaping early Canadian history.',
                   ],
@@ -3747,7 +3747,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Huron-Wendat of the Great Lakes region and the Iroquois'],
                       ['text' => 'The Inuit'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1021,
                     'correct_answer' => 'C',
                     'explanation' => 'The Huron-Wendat of the Great Lakes region, along with the Iroquois, were known as farming and hunting communities among the Indigenous peoples of Canada.',
                   ],
@@ -3760,7 +3760,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Hudson\'s Bay Company'],
                       ['text' => 'The Trading Post company'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1025,
                     'correct_answer' => 'C',
                     'explanation' => 'The Hudson\'s Bay Company dominated the fur trade in the Northwest during both the French and British colonial periods, establishing a network of trading posts across the region.',
                   ],
@@ -3773,7 +3773,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '11th of September'],
                       ['text' => 'First of July'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1030,
                     'correct_answer' => 'D',
                     'explanation' => 'Canada Day is celebrated on the 1st of July each year. It commemorates the day in 1867 when the Dominion of Canada was officially established under the British North America Act.',
                   ],
@@ -3786,7 +3786,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1720'],
                       ['text' => '1497'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1031,
                     'correct_answer' => 'A',
                     'explanation' => 'English settlement in Canada began around 1610, with significant efforts to establish permanent colonies and trading posts in various parts of what would become Canada.',
                   ],
@@ -3799,7 +3799,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Quebec'],
                       ['text' => 'Lower Canada'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1036,
                     'correct_answer' => 'B',
                     'explanation' => 'Upper Canada, under Lieutenant Governor John Graves Simcoe in 1793, was the first province in the British Empire to pass legislation that began the process of abolishing slavery.',
                   ],
@@ -3812,7 +3812,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The completion of the Canadian Pacific Railway'],
                       ['text' => 'The completion of the port of Vancouver'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1041,
                     'correct_answer' => 'C',
                     'explanation' => 'The completion of the Canadian Pacific Railway in the late 19th century facilitated large-scale immigration and settlement in Western Canada, opening up vast areas for agricultural development and urban growth.',
                   ],
@@ -3825,7 +3825,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1892'],
                       ['text' => '1864'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1044,
                     'correct_answer' => 'B',
                     'explanation' => 'The Royal Canadian Mounted Police (RCMP) was established in 1873 as the North West Mounted Police (NWMP) to bring law and order to the Western territories of Canada.',
                   ],
@@ -3838,7 +3838,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ottawa'],
                       ['text' => 'Quebec City'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1050,
                     'correct_answer' => 'D',
                     'explanation' => 'The fortress that Samuel de Champlain built in 1608 is located in Quebec City. This settlement played a crucial role in the establishment of French presence and influence in Canada.',
                   ],
@@ -3857,7 +3857,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1905'],
                       ['text' => '1887'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1051,
                     'correct_answer' => 'A',
                     'explanation' => 'The Montreal Stock Exchange opened in 1832, marking the beginning of organized trading in Canada\'s financial markets.',
                   ],
@@ -3870,7 +3870,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ontario'],
                       ['text' => 'British North America'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1058,
                     'correct_answer' => 'D',
                     'explanation' => 'In 1791, the Atlantic colonies (Nova Scotia, New Brunswick, Prince Edward Island, and Newfoundland) along with Upper Canada (Ontario) and Lower Canada (Quebec) were collectively known as British North America.',
                   ],
@@ -3883,7 +3883,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1812'],
                       ['text' => '1945'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1060,
                     'correct_answer' => 'B',
                     'explanation' => 'Lt. Col. John McCrae composed the poem "In Flanders Fields" in 1915 during World War I, which has since become an iconic piece recited on Remembrance Day in Canada and other Commonwealth countries.',
                   ],
@@ -3896,7 +3896,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'King James'],
                       ['text' => 'King George II'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1063,
                     'correct_answer' => 'A',
                     'explanation' => 'In 1670, King Charles II of England granted the Hudson’s Bay Company exclusive trading rights over the watershed draining into Hudson Bay, establishing its dominance in the fur trade.',
                   ],
@@ -3909,7 +3909,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1939'],
                       ['text' => '1942'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1067,
                     'correct_answer' => 'A',
                     'explanation' => 'The Bank of Canada, Canada\'s central bank responsible for monetary policy and financial stability, was established in 1934 during the Great Depression.',
                   ],
@@ -3920,7 +3920,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'False'],
                       ['text' => 'True'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1071,
                     'correct_answer' => 'A',
                     'explanation' => 'False. While there were discussions in the 1920s about integrating the British West Indies (territories in the Caribbean) into Canada, this did not materialize, although Canada maintains close ties with these territories.',
                   ],
@@ -3933,7 +3933,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Loyalist, Catholic and English-speaking people'],
                       ['text' => 'Catholic and French-speaking people'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1076,
                     'correct_answer' => 'D',
                     'explanation' => 'Lower Canada (later Quebec) mainly consisted of Catholic and French-speaking people, distinguishing it from Upper Canada (later Ontario) which had a majority of Loyalist, Protestant, and English-speaking population.',
                   ],
@@ -3946,7 +3946,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Joseph Brant, Joseph Howe, and James Macdonald'],
                       ['text' => 'Sir Etienne-Paschal Tache, Sir George-Etienne Cartier, and Sir John A. Macdonald'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1080,
                     'correct_answer' => 'D',
                     'explanation' => 'Sir Etienne-Paschal Tache, Sir George-Etienne Cartier, and Sir John A. Macdonald are considered Fathers of Confederation for their roles in the Confederation conferences and the establishment of Canada as a Dominion in 1867.',
                   ],
@@ -3957,7 +3957,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'False'],
                       ['text' => 'True'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1082,
                     'correct_answer' => 'B',
                     'explanation' => 'True. The arrival of European traders, missionaries, soldiers, and settlers irreversibly changed the way of life for Indigenous peoples in Canada, impacting their societies, cultures, and population dynamics.',
                   ],
@@ -3970,7 +3970,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The defeat of Napoleon Bonaparte\'s fleet'],
                       ['text' => 'The defeat of the British fleet'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1085,
                     'correct_answer' => 'C',
                     'explanation' => 'The Battle of Trafalgar in 1805 represented the decisive defeat of Napoleon Bonaparte\'s fleet by the British Royal Navy, securing British naval supremacy and impacting its global territories including Canada.',
                   ],
@@ -3982,7 +3982,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Protestant and French-speaking people'],
                       ['text' => 'Loyalist, Catholic and English-speaking people'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1087,
                     'correct_answer' => 'A',
                     'explanation' => 'Upper Canada (later Ontario) mainly consisted of Loyalist, Protestant, and English-speaking people according to the Constitutional Act of 1791.',
                   ],
@@ -3995,7 +3995,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Gradually and with a lot of fighting'],
                       ['text' => 'Gradually and peacefully'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1094,
                     'correct_answer' => 'D',
                     'explanation' => 'Democratic institutions in Canada developed gradually and peacefully. The first representative assembly was elected in Halifax, Nova Scotia, in 1758, marking the early stages of democratic governance.',
                   ],
@@ -4008,7 +4008,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'European traders, missionaries, soldiers and colonists killed most of the native population in Canada'],
                       ['text' => 'The arrival of European traders, missionaries, soldiers and colonists changed the native way of life forever'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1097,
                     'correct_answer' => 'C',
                     'explanation' => 'The statement that European traders, missionaries, soldiers, and colonists killed most of the native population in Canada is false. While diseases and conflicts did devastate Indigenous populations, there was not a deliberate extermination effort.',
                   ],
@@ -4021,7 +4021,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The British invaded Quebec City'],
                       ['text' => 'The British defeated the French in the Battle of the Plains of Abraham at Quebec City'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1102,
                     'correct_answer' => 'D',
                     'explanation' => 'The end of France’s empire in America in the 1700s was marked by the British victory in the Battle of the Plains of Abraham at Quebec City in 1759.',
                   ],
@@ -4034,7 +4034,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Quebec City'],
                       ['text' => 'Acadia'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1108,
                     'correct_answer' => 'B',
                     'explanation' => 'Following their victory over France, Great Britain renamed the French colony of the 1700s to the "Province of Quebec." This marked the beginning of British rule in the region.',
                   ],
@@ -4047,7 +4047,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A municipal police force'],
                       ['text' => 'Army police'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1107,
                     'correct_answer' => 'A',
                     'explanation' => 'The Royal Canadian Mounted Police (RCMP or “the Mounties”) are Canada’s national police force, recognized for their iconic role in law enforcement and maintaining order across the country.',
                   ],
@@ -4060,7 +4060,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Federal and municipal'],
                       ['text' => 'Provincial and municipal'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1112,
                     'correct_answer' => 'B',
                     'explanation' => 'The Fathers of Confederation created a system of federal and provincial government in Canada through the Confederation conferences from 1864 to 1867.',
                   ],
@@ -4073,7 +4073,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1853'],
                       ['text' => '1807'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1115,
                     'correct_answer' => 'A',
                     'explanation' => 'The British Parliament abolished slavery throughout the Empire in 1833, following earlier steps in 1807 to prohibit the transatlantic slave trade.',
                   ],
@@ -4086,7 +4086,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'France and Ireland'],
                       ['text' => 'France and Great Britain'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1122,
                     'correct_answer' => 'D',
                     'explanation' => 'In the 1700s, France and Great Britain battled for control of North America, with conflicts such as the French and Indian War (Seven Years\' War) shaping the continent\'s history.',
                   ],
@@ -4099,7 +4099,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1701'],
                       ['text' => '1601'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1125,
                     'correct_answer' => 'C',
                     'explanation' => 'The French and the Iroquois made peace in 1701. This agreement was significant in reducing hostilities and establishing diplomatic relations between the French settlers and the powerful Iroquois Confederacy.',
                   ],
@@ -4118,7 +4118,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Sioux'],
                       ['text' => 'Huron-Wendat of the Great Lakes region and the Iroquois'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1129,
                     'correct_answer' => 'C',
                     'explanation' => 'The Sioux were nomadic, following the bison (buffalo) herds across the Great Plains. This lifestyle was integral to their culture and survival in the region.',
                   ],
@@ -4131,7 +4131,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1849'],
                       ['text' => '1840'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1131,
                     'correct_answer' => 'A',
                     'explanation' => 'The United States launched an invasion on Canada in 1812, driven by grievances over British interference with American shipping and the desire to annex Canadian territory.',
                   ],
@@ -4144,7 +4144,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Sioux'],
                       ['text' => 'Huron-Wendat of the Great Lakes region and the Iroquois'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1136,
                     'correct_answer' => 'B',
                     'explanation' => 'The Inuit lived off Arctic wildlife, relying on hunting and fishing in the harsh Arctic environment for sustenance. Their adaptation to this environment is a testament to their resilience and ingenuity.',
                   ],
@@ -4157,7 +4157,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'He defeated the Americans in the Battle of Trafalgar'],
                       ['text' => 'He was a great hero of New England, winning many victories over the French in the late 17th and early 18th centuries'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1140,
                     'correct_answer' => 'B',
                     'explanation' => 'Pierre Le Moyne was a prominent figure in New France, known for his military prowess and leadership in winning numerous victories over the English during the late 17th and early 18th centuries.',
                   ],
@@ -4170,7 +4170,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1982'],
                       ['text' => '1867'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1146,
                     'correct_answer' => 'D',
                     'explanation' => 'The British Parliament passed the British North America Act in 1867, which established the Dominion of Canada as a self-governing entity within the British Empire.',
                   ],
@@ -4183,7 +4183,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The early 1600s'],
                       ['text' => 'The mid 1600s'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1149,
                     'correct_answer' => 'C',
                     'explanation' => 'English colonies began to appear along the Atlantic seaboard in the early 1600s, marking the initial establishment of permanent English settlements in North America.',
                   ],
@@ -4196,7 +4196,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The British Commonwealth of Nations'],
                       ['text' => 'The British Empire'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1153,
                     'correct_answer' => 'C',
                     'explanation' => 'After the First World War, the British Empire evolved into a free association of states known as the British Commonwealth of Nations. This association aimed to promote cooperation and mutual support among its members.',
                   ],
@@ -4209,7 +4209,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The stock market crash of 1929'],
                       ['text' => 'Low grain prices and a terrible drought in 1932'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1157,
                     'correct_answer' => 'C',
                     'explanation' => 'The Great Depression in the 1930s was primarily caused by the stock market crash of 1929, which triggered a severe economic downturn characterized by widespread unemployment and economic hardship.',
                   ],
@@ -4222,7 +4222,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Upper Canada'],
                       ['text' => 'Ontario'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1160,
                     'correct_answer' => 'B',
                     'explanation' => 'Nova Scotia was the first British North American colony to attain full responsible government in 1847–48, marking an important step towards self-governance in the region.',
                   ],
@@ -4235,7 +4235,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sierra Leone (West Africa)'],
                       ['text' => 'Abidjan (West Africa)'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1165,
                     'correct_answer' => 'C',
                     'explanation' => 'Freetown, Sierra Leone (West Africa), was established as a new British colony for freed slaves in 1792. It provided a settlement for black Loyalists and freedmen seeking a better life after the American Revolutionary War.',
                   ],
@@ -4247,7 +4247,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A confederation of five (later six) First Nations'],
                       ['text' => 'The English'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1169,
                     'correct_answer' => 'C',
                     'explanation' => 'A confederation of five (later six) First Nations, known as the Iroquois Confederacy, battled with the French settlements for a century from the early 1600s. This conflict shaped early European-native relations in the region.',
                   ],
@@ -4260,7 +4260,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir Etienne-Paschal Tache'],
                       ['text' => 'Sir George-Etienne Cartier'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1171,
                     'correct_answer' => 'A',
                     'explanation' => 'Sir John Alexander Macdonald, a prominent figure in Canadian history and the country’s first Prime Minister, is featured on the Canadian $10 bill. His leadership and contributions to Confederation are widely recognized.',
                   ],
@@ -4273,7 +4273,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Lower Canada\'s first Lieutenant Governor and founder of the City of Ottawa'],
                       ['text' => 'The leader of the loyalists'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1176,
                     'correct_answer' => 'B',
                     'explanation' => 'Lieutenant Colonel John Graves Simcoe was Upper Canada’s first Lieutenant Governor and the founder of the City of York, which later became Toronto. He also played a pivotal role in the abolition of slavery in Upper Canada.',
                   ],
@@ -4286,7 +4286,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Pierre de Monts'],
                       ['text' => 'Jacques Cartier'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1182,
                     'correct_answer' => 'D',
                     'explanation' => 'Jacques Cartier was the first European to explore the St. Lawrence River in 1534. His explorations paved the way for future French expeditions and the establishment of French colonies in Canada.',
                   ],
@@ -4299,7 +4299,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The English'],
                       ['text' => 'The Spanish'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1183,
                     'correct_answer' => 'A',
                     'explanation' => 'The French established the first European settlements in Canada, starting with St. Croix Island in present-day Maine in 1604, followed by Port-Royal in Acadia (Nova Scotia).',
                   ],
@@ -4312,7 +4312,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir Arthur Currie'],
                       ['text' => 'Lt. Col. John McCrae'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1190,
                     'correct_answer' => 'D',
                     'explanation' => 'Lt. Col. John McCrae, a Canadian medical officer, composed the famous poem "In Flanders Fields" in 1915 during World War I. It has since become an iconic symbol of remembrance for fallen soldiers.',
                   ],
@@ -4325,7 +4325,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Duke of Wellington'],
                       ['text' => 'Major-General Sir Isaac Brock'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1194,
                     'correct_answer' => 'C',
                     'explanation' => 'The Duke of Wellington, a British military leader, defeated Napoleon Bonaparte in the Battle of Waterloo in 1815, marking the end of the Napoleonic Wars.',
                   ],
@@ -4338,7 +4338,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Dr. Emily Stowe'],
                       ['text' => 'Madeline Parent'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1197,
                     'correct_answer' => 'C',
                     'explanation' => 'Dr. Emily Stowe, the first Canadian woman to practice medicine in Canada, initiated the women\'s suffrage movement in Canada. She was a prominent advocate for women\'s rights and suffrage in the late 19th century.',
                   ],
@@ -4351,7 +4351,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Irish'],
                       ['text' => 'Vikings'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1202,
                     'correct_answer' => 'D',
                     'explanation' => 'The Vikings were the first Europeans to reach Canada around 1000 AD. They established a short-lived settlement in Newfoundland known as l\'Anse aux Meadows, which is now a UNESCO World Heritage site.',
                   ],
@@ -4377,7 +4377,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'John Cabot'],
                       ['text' => 'Samuel de Champlain'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1205,
                     'correct_answer' => 'C',
                     'explanation' => 'European exploration in Canada began in 1497 with the expedition of John Cabot, an Italian explorer sailing under the English flag. He was the first European to explore and map Canada\'s East Coast.',
                   ],
@@ -4396,7 +4396,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Act granted to the Canadas, for the first time, legislative assemblies'],
                       ['text' => 'The Act officially made Canada a self-governing Dominion'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1210,
                     'correct_answer' => 'D',
                     'explanation' => 'The British North America Act, enacted in 1867, officially made Canada a self-governing Dominion within the British Empire. It laid the foundation for Canada as an independent nation, though still linked to Britain, and is considered a crucial milestone in Canadian history.',
                   ],
@@ -4409,7 +4409,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'All British Colonies in Canada'],
                       ['text' => 'The thirteen British colonies to the south of Quebec'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1218,
                     'correct_answer' => 'D',
                     'explanation' => 'In 1776, the thirteen British colonies to the south of Quebec declared independence from Britain and formed the United States of America, leading to the American Revolution and subsequent changes in North American geopolitics.',
                   ],
@@ -4422,7 +4422,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The British settlers who spoke French'],
                       ['text' => 'The Acadians'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1220,
                     'correct_answer' => 'B',
                     'explanation' => 'Following the British conquest of New France, the French-speaking Catholic people of Quebec and surrounding areas were known as "habitants" or "Canadiens". They played a significant role in shaping early Canadian society under British rule.',
                   ],
@@ -4435,7 +4435,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The two Canadas (upper and lower)'],
                       ['text' => 'Ontario and upper Canada'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1224,
                     'correct_answer' => 'B',
                     'explanation' => 'In 1791, "British North America" referred to the Atlantic colonies (such as Nova Scotia and New Brunswick) and the two Canadas (Upper Canada and Lower Canada). This term was used collectively for the British possessions in North America at the time.',
                   ],
@@ -4449,7 +4449,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The name of the new country formed in 1867 known today as Canada'],
                     ],
                     'correctAnswerId' => 22,
-                    'correct_answer' => 'D',
+                    'correct_answer' => '1230',
                     'explanation' => 'The Dominion of Canada was the name given to the new country formed in 1867 through the union of Ontario, Quebec, New Brunswick, and Nova Scotia. It marked the beginning of Canada as a self-governing entity within the British Empire.',
                   ],
 
@@ -4461,7 +4461,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1780'],
                       ['text' => '1550'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1234,
                     'correct_answer' => 'D',
                     'explanation' => 'The name Canada began appearing on maps around the 1550s. It originated from the Iroquoian word "kanata", meaning “village”, as heard by Jacques Cartier during his explorations of the northern North American coast.',
                   ],
@@ -4473,7 +4473,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Joseph Howe'],
                       ['text' => 'Joseph Brant'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1236,
                     'correct_answer' => 'B',
                     'explanation' => 'Lieutenant-Colonel John Graves Simcoe, as Upper Canada’s first Lieutenant Governor, introduced legislation in 1793 that made Upper Canada the first province in the British Empire to abolish slavery. This marked a significant early step towards the abolition of slavery in the British colonies.',
                   ],
@@ -4486,7 +4486,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The French troops'],
                       ['text' => 'The Caribbean troops'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1240,
                     'correct_answer' => 'B',
                     'explanation' => 'The Canadian troops, particularly the Canadian Corps, gained a reputation as the "shock troops of the British Empire" during World War I. Their decisive capture of Vimy Ridge in 1917 was a notable achievement, solidifying their reputation for bravery and effectiveness in military operations.',
                   ],
@@ -4499,7 +4499,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1867'],
                       ['text' => '1790'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1245,
                     'correct_answer' => 'C',
                     'explanation' => 'The Fathers of Confederation, representing Nova Scotia, New Brunswick, and the Province of Canada (Ontario and Quebec), with British support, worked together from 1864 to 1867 to establish the Dominion of Canada. This union formed the basis of modern Canada as a self-governing entity within the British Empire.',
                   ],
@@ -4512,7 +4512,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1791'],
                       ['text' => '1609'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1249,
                     'correct_answer' => 'C',
                     'explanation' => 'The name "Canada" became official in 1791 with the enactment of the Constitutional Act, which also established legislative assemblies for the Canadas (Upper and Lower). This marked the formal adoption of the name that has been used ever since to refer to the British colonies in North America.',
                   ],
@@ -4524,7 +4524,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The British settlers who spoke French'],
                       ['text' => 'The Acadians'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1252,
                     'correct_answer' => 'B',
                     'explanation' => 'After the British conquest of New France, the French-speaking Catholic people of Quebec and surrounding areas became known as "habitants" or "Canadiens". They played a crucial role in maintaining French cultural and linguistic heritage within the British-controlled territory.',
                   ],
@@ -4537,7 +4537,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'It is a World Heritage site where can be found the remains of the first European town built by the early settlers'],
                       ['text' => 'It is a World Heritage site where can be found the remains of the Battle of Trafalgar'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1255,
                     'correct_answer' => 'A',
                     'explanation' => 'L’Anse aux Meadows is a significant archaeological site in Newfoundland, Canada, where Norse Vikings from Iceland established a settlement around 1,000 years ago. It is considered evidence of pre-Columbian trans-oceanic contact and is a designated UNESCO World Heritage site.',
                   ],
@@ -4550,7 +4550,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1800'],
                       ['text' => '1912'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1259,
                     'correct_answer' => 'A',
                     'explanation' => 'Slavery was abolished throughout the British Empire in 1833. The Abolition Act of 1833 prohibited slavery throughout the empire, though it was not fully implemented until a few years later. This marked a significant step towards the end of legal slavery in British territories.',
                   ],
@@ -4563,7 +4563,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'From the Inuit word "kanata", meaning "village"'],
                       ['text' => 'From the Iroquoian word "kanata", meaning "land"'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1264,
                     'correct_answer' => 'B',
                     'explanation' => 'The name "Canada" originates from the Iroquoian word "kanata", which Jacques Cartier heard from indigenous people during his explorations. It means "village" or "settlement". The name began appearing on maps in the 16th century and has been used ever since to refer to the territory.',
                   ],
@@ -5096,7 +5096,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Terry Fox'],
                       ['text' => 'Gerhard Herzberg'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1268,
                     'correct_answer' => 'Rick Hansen',
                     'explanation' => 'In 1985, fellow British Columbian Rick Hansen circled the globe in a wheelchair to raise funds for spinal cord research. (P26)'
                   ],
@@ -5108,7 +5108,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A group of cowboys who defended Canada'],
                       ['text' => 'A group of Canadian landscape painters in the 1920s'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1274,
                     'correct_answer' => 'A group of Canadian landscape painters in the 1920s',
                     'explanation' => 'In the visual arts, Canada is historically perhaps best known for the Group of Seven, founded in 1920, who developed a style of painting to capture the rugged wilderness landscapes. (P25)'
                   ],
@@ -5120,7 +5120,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Donovan Bailey'],
                       ['text' => 'Terry Fox'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1275,
                     'correct_answer' => 'Wayne Gretzky',
                     'explanation' => 'One of the greatest hockey players of all time, Wayne Gretzky, played for the Edmonton Oilers from 1979 to 1988. (P26)'
                   ],
@@ -5132,7 +5132,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Alexander Graham Bell'],
                       ['text' => 'Harold Innis'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1279,
                     'correct_answer' => 'Gerhard Herzberg',
                     'explanation' => 'Gerhard Herzberg, a refugee from Nazi Germany, John Polanyi, Sidney Altman, Richard E. Taylor, Michael Smith and Bertram Brockhouse were Nobel Prize-winning scientists. (P26)'
                   ],
@@ -5144,7 +5144,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'His discovery of insulin saves millions of people\'s lives'],
                       ['text' => 'He was a brilliant Soldier'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1283,
                     'correct_answer' => 'He inspired people to contribute money for cancer research',
                     'explanation' => 'In 1980, Terry Fox, a British Columbian who lost his right leg to cancer at the age of 18, began a cross-country run, the “Marathon of Hope”, to raise money for cancer research. (P26)'
                   ],
@@ -5156,7 +5156,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The suffrage movement'],
                       ['text' => 'The Industrial Revolution'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1288,
                     'correct_answer' => 'The quiet Revolution',
                     'explanation' => 'Quebec experienced an era of rapid change in the 1960s known as the Quiet Revolution. (P24)'
                   ],
@@ -5168,7 +5168,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir Sanford Fleming'],
                       ['text' => 'Alexander Graham Bell'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1293,
                     'correct_answer' => 'Sir Sanford Fleming',
                     'explanation' => 'Sir Sandford Fleming – invented the worldwide system of Standard time zones. (P27)'
                   ],
@@ -5180,7 +5180,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canada participated in the UN operation defending South Korea in the Korean War'],
                       ['text' => 'Canadians volunteered to fight in the South African War'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1297,
                     'correct_answer' => 'Canada participated in the UN operation defending South Korea in the Korean War',
                     'explanation' => 'Canada joined international organizations such as the United Nations (UN). It participated in the UN operation defending South Korea in the Korean War (1950-53), with 500 dead and 1,000 wounded. (P24)'
                   ],
@@ -5192,7 +5192,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'It helped the treatment of heart diseases'],
                       ['text' => 'It was an important medicine to save soldiers life during World War II'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1300,
                     'correct_answer' => 'It saved millions of lives of people with diabetes',
                     'explanation' => 'Sir Frederick Banting of Toronto and Charles Best discovered insulin, a hormone to treat diabetes that has saved 16 million lives worldwide. (P27)'
                   ],
@@ -5204,7 +5204,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1950'],
                       ['text' => '1632'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1303,
                     'correct_answer' => '1960',
                     'explanation' => 'Aboriginal people were granted the vote in 1960. (P25)'
                   ],
@@ -5216,7 +5216,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir Sanford Fleming'],
                       ['text' => 'Mathew Evans and Henry Woodward'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1308,
                     'correct_answer' => 'Joseph-Armand Bombardier',
                     'explanation' => 'Joseph-Armand Bombardier – invented the snowmobile, a light-weight winter vehicle. (P27)'
                   ],
@@ -5228,7 +5228,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Mike Lazaridis'],
                       ['text' => 'Matthew Evans'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1311,
                     'correct_answer' => 'Reginald Fessenden',
                     'explanation' => 'Reginald Fessenden – contributed to the invention of radio, sending the first wireless voice message in the world. (P27)'
                   ],
@@ -5240,7 +5240,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Telephone'],
                       ['text' => 'Internet'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1317,
                     'correct_answer' => 'Telephone',
                     'explanation' => 'Alexander Graham Bell – hit on the idea of the telephone at his summer house in Canada. (P27)'
                   ],
@@ -5252,7 +5252,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1940'],
                       ['text' => '1965'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1321,
                     'correct_answer' => '1940',
                     'explanation' => 'Unemployment insurance (now called “employment insurance”) was introduced by the federal government in 1940. (P24)'
                   ],
@@ -5264,7 +5264,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'None of these'],
                       ['text' => 'Provincial and territorial governments'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1326,
                     'correct_answer' => 'Provincial and territorial governments',
                     'explanation' => 'Publicly funded education is provided by the provinces and territories. (P24)'
                   ],
@@ -5276,7 +5276,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'the Blackberry'],
                       ['text' => 'the iPhone'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1329,
                     'correct_answer' => 'the Blackberry',
                     'explanation' => 'Mike Lazaridis and Jim Balsillie – of Research in Motion (RIM) – a wireless communications company known for its most famous invention: the BlackBerry. (P27)'
                   ],
@@ -5288,7 +5288,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Donovan Bailey'],
                       ['text' => 'John Cabot'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1333,
                     'correct_answer' => 'Donovan Bailey',
                     'explanation' => 'In 1996 at the Olympic Summer Games, Donovan Bailey became a world record sprinter and double Olympic gold medalist. (P26)'
                   ],
@@ -5300,7 +5300,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Dr John A. Hopps'],
                       ['text' => 'Alexander Graham Bell'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1337,
                     'correct_answer' => 'Dr John A. Hopps',
                     'explanation' => 'Dr John A. Hopps – invented the first cardiac pacemaker, used today to save the lives of people with heart disorders. (P27)'
                   ],
@@ -5312,7 +5312,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Joy Kogawa, Michael Ondaatje, and Rohinton Mistry'],
                       ['text' => 'Emily Carr and Louis-Philippe Hebert'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1341,
                     'correct_answer' => 'Joy Kogawa, Michael Ondaatje, and Rohinton Mistry',
                     'explanation' => 'Writers such as Joy Kogawa, Michael Ondaatje, and Rohinton Mistry have diversified Canada’s literary experience. (P25)'
                   ],
@@ -5324,7 +5324,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir Sam Steele'],
                       ['text' => 'Terry Fox'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1346,
                     'correct_answer' => 'Terry Fox',
                     'explanation' => 'In 1980, Terry Fox, a British Columbian who lost his right leg to cancer at the age of 18, began a cross-country run, the “Marathon of Hope”, to raise money for cancer research. (P26)'
                   ],
@@ -5342,7 +5342,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Towns'],
                       ['text' => 'Mountains'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1348,
                     'correct_answer' => 'Cities',
                     'explanation' => 'Today, diversity enriches Canadian’s lives, particularly in our cities. (P25)'
                   ],
@@ -5354,7 +5354,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Since the discovery of oil in Alberta in 1947'],
                       ['text' => 'After the second World War'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1353,
                     'correct_answer' => 'Since the discovery of oil in Alberta in 1947',
                     'explanation' => 'The discovery of oil in Alberta in 1947 began Canada\'s modern energy industry. (P24)'
                   ],
@@ -5366,7 +5366,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir Frederick Banting and Charles Best'],
                       ['text' => 'Dr John A. Hopps'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1357,
                     'correct_answer' => 'Sir Frederick Banting and Charles Best',
                     'explanation' => 'Sir Frederick Banting of Toronto and Charles Best discovered insulin, a hormone to treat diabetes that has saved 16 million lives worldwide. (P27)'
                   ],
@@ -5378,7 +5378,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1982'],
                       ['text' => '2000'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1359,
                     'correct_answer' => '1969',
                     'explanation' => 'In 1963 Parliament established the Royal Commission on Bilingualism and Biculturalism. This led to the Official Languages Act (1969), which guarantees French and English services in the federal government across Canada. (P24)'
                   ],
@@ -5390,7 +5390,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir John A MacDonald'],
                       ['text' => 'Sir Sanford Fleming'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1363,
                     'correct_answer' => 'Dr Wilder Penfield',
                     'explanation' => 'Dr. Wilder Penfield was a pioneering brain surgeon at McGill University in Montreal and was known as “the greatest living Canadian”. (P27)'
                   ],
@@ -5402,7 +5402,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Lumber'],
                       ['text' => 'Gold'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1367,
                     'correct_answer' => 'Beaver fur trade',
                     'explanation' => 'The beaver fur trade spread across Canada making it important to the economy for over 300 years. (P25)'
                   ],
@@ -5414,7 +5414,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Norman Jewison'],
                       ['text' => 'Emily Carr'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1371,
                     'correct_answer' => 'Louis-Philippe Hebert',
                     'explanation' => 'Quebec’s Louis-Philippe Hébert was a celebrated sculptor of historical figures. Kenojuak Ashevak pioneered modern Inuit art with etchings, prints and soapstone sculptures.'
                   ],
@@ -5426,7 +5426,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Between 1945 and 1970'],
                       ['text' => 'Between 1970 and 1980'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1377,
                     'correct_answer' => 'Between 1945 and 1970',
                     'explanation' => 'Between 1945 and 1970, Canada drew closer to the United States and other trading partners, enjoying one of the strongest economies among industrialized nations.'
                   ],
@@ -5438,7 +5438,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1905'],
                       ['text' => '1869'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1382,
                     'correct_answer' => '1869',
                     'explanation' => 'Canada took over the vast northwest region from the Hudson’s Bay Company in 1869, the 12,000 Métis of the Red River were not consulted. In response, Louis Riel led an armed uprising and seized Fort Garry, the territorial capital.'
                   ],
@@ -5450,7 +5450,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1940'],
                       ['text' => '1970'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1384,
                     'correct_answer' => '1927',
                     'explanation' => 'Old Age Security was devised as early as 1927, and the Canada and Quebec Pension Plans in 1965.'
                   ],
@@ -5462,7 +5462,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir Frederick Banting of Toronto and Charles Best'],
                       ['text' => 'Sir Sandford Fleming and Charles Best'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1389,
                     'correct_answer' => 'Sir Frederick Banting of Toronto and Charles Best',
                     'explanation' => 'Sir Frederick Banting of Toronto and Charles Best discovered insulin, a hormone to treat diabetes that has saved 16 million lives worldwide.'
                   ],
@@ -5474,7 +5474,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The founder of the women\'s suffrage movement'],
                       ['text' => 'The first woman fur trader'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1392,
                     'correct_answer' => 'An anti-slavery activist and the first woman publisher in Canada',
                     'explanation' => 'Mary Ann Shadd Cary was an outspoken activist in the movement to abolish slavery in the U.S.A. In 1853 she became the first woman publisher in Canada, helping to found and edit The Provincial Freeman, a weekly newspaper dedicated to anti-slavery, black immigration to Canada, temperance (urging people to drink less alcohol) and upholding British rule.'
                   ],
@@ -5484,7 +5484,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'False'],
                       ['text' => 'True'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1396,
                     'correct_answer' => 'True',
                     'explanation' => 'Sir Frederick Banting of Toronto and Charles Best discovered insulin, a hormone to treat diabetes that has saved 16 million lives worldwide.'
                   ],
@@ -5496,7 +5496,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1600'],
                       ['text' => '1948'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1400,
                     'correct_answer' => '1948',
                     'explanation' => 'Most Canadians of Asian descent had in the past been denied the vote in federal and provincial elections. In 1948 the last of these, the Japanese Canadians, gained the right to vote.'
                   ],
@@ -5506,7 +5506,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'False'],
                       ['text' => 'True'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1401,
                     'correct_answer' => 'False',
                     'explanation' => 'The movement for Quebec sovereignty gained strength but was defeated in a referendum in the province in 1980. After much negotiation, in 1982 the Constitution was amended without the agreement of Quebec.'
                   ],
@@ -5518,7 +5518,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'By working hard and by being a NATO member'],
                       ['text' => 'Thanks to the Americans'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1404,
                     'correct_answer' => 'By working hard and by trading with other nations',
                     'explanation' => 'Canadians enjoy one of the world’s highest standards of living—maintained by the hard work of Canadians and by trade with other nations, in particular the United States.'
                   ],
@@ -5530,7 +5530,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The coming of the Old Age Security in Canada'],
                       ['text' => 'An era of rapid change in the 1960s in Quebec'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1410,
                     'correct_answer' => 'An era of rapid change in the 1960s in Quebec',
                     'explanation' => 'French-Canadian society and culture flourished in the postwar years. Quebec experienced an era of rapid change in the 1960s known as the Quiet Revolution. Many Quebecers sought to separate from Canada.'
                   ],
@@ -5542,7 +5542,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Publicly funded education'],
                       ['text' => 'Drinkable water for all Canadians'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1411,
                     'correct_answer' => 'Common elements and a basic standard of coverage',
                     'explanation' => 'As prosperity grew, so did the ability to support social assistance programs. The Canada Health Act ensures common elements and a basic standard of coverage.'
                   ],
@@ -5554,7 +5554,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '2000'],
                       ['text' => '1990'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1415,
                     'correct_answer' => '1947',
                     'explanation' => 'The discovery of oil in Alberta in 1947 began Canada’s modern energy industry. In 1951, for the first time, a majority of Canadians were able to afford adequate food, shelter, and clothing.'
                   ],
@@ -5564,7 +5564,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'False'],
                       ['text' => 'True'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1420,
                     'correct_answer' => 'True',
                     'explanation' => 'Canada joined international organizations such as the United Nations (UN). It participated in the UN operation defending South Korea in the Korean War (1950–53), with 500 dead and 1,000 wounded.'
                   ],
@@ -5583,7 +5583,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Interior Natives'],
                       ['text' => 'East Coast Natives'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1422,
                     'correct_answer' => 'West Coast natives',
                     'explanation' => 'West Coast natives preserved fish by drying and smoking. Warfare was common among Aboriginal groups as they competed for land, resources, and prestige.'
                   ],
@@ -5595,7 +5595,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Jean-Paul Riopelle'],
                       ['text' => 'Louis-Philippe Hebert'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1426,
                     'correct_answer' => 'Kenojuak Ashevak',
                     'explanation' => 'Kenojuak Ashevak pioneered modern Inuit art with etchings, prints, and soapstone sculptures.'
                   ],
@@ -5607,7 +5607,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1960'],
                       ['text' => '1949'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1431,
                     'correct_answer' => '1960',
                     'explanation' => 'Most Canadians of Asian descent had in the past been denied the vote in federal and provincial elections. Aboriginal people were granted the vote in 1960. Today, every citizen over the age of 18 may vote.'
                   ],
@@ -5619,7 +5619,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Union War'],
                       ['text' => 'The Soviet War'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1434,
                     'correct_answer' => 'The Cold War',
                     'explanation' => 'The Cold War began when several liberated countries of Eastern Europe became part of a Communist bloc controlled by the Soviet Union under the dictator Josef Stalin.'
                   ],
@@ -5629,7 +5629,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'False'],
                       ['text' => 'True'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1437,
                     'correct_answer' => 'False',
                     'explanation' => 'Canadian football is a popular game that differs in a number of ways from American football.'
                   ],
@@ -5641,7 +5641,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The films of Louis Hemon'],
                       ['text' => 'The films of Denys Arcand'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1442,
                     'correct_answer' => 'The films of Denys Arcand',
                     'explanation' => 'The films of Denys Arcand have been popular in Quebec and across the country, and have won international awards. Other noteworthy Canadian filmmakers include Norman Jewison and Atom Egoyan.'
                   ],
@@ -5653,7 +5653,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Jean-Paul Riopelle'],
                       ['text' => 'Sir Ernest MacMillan'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1443,
                     'correct_answer' => 'Pauline Johnson',
                     'explanation' => 'Canadians have made significant contributions to literature in English and in French. Men and women of letters included Pauline Johnson, Émile Nelligan, Robertson Davies, Margaret Laurence, and Mordecai Richler.'
                   ],
@@ -5665,7 +5665,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Louis-Philippe Hebert'],
                       ['text' => 'Healey Willan'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1448,
                     'correct_answer' => 'Michael Ondaatje',
                     'explanation' => 'Writers such as Joy Kogawa, Michael Ondaatje, and Rohinton Mistry have diversified Canada’s literary experience.'
                   ],
@@ -5677,7 +5677,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Pierre de Monts and Samuel de Champlain'],
                       ['text' => 'Jacques Cartier'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1453,
                     'correct_answer' => 'Pierre de Monts and Samuel de Champlain',
                     'explanation' => 'In 1604, the first European settlement north of Florida was established by French explorers Pierre de Monts and Samuel de Champlain, first on St. Croix Island (in present-day Maine), then at Port-Royal, in Acadia (present-day Nova Scotia).'
                   ],
@@ -5689,7 +5689,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1969'],
                       ['text' => '1945'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1456,
                     'correct_answer' => '1963',
                     'explanation' => 'In 1963, Parliament established the Royal Commission on Bilingualism and Biculturalism. This led to the Official Languages Act (1969), which guarantees French and English services in the federal government across Canada.'
                   ],
@@ -5701,7 +5701,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Two-thirds'],
                       ['text' => 'One-third'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1462,
                     'correct_answer' => 'One-third',
                     'explanation' => 'By the 1960s, one-third of Canadians had origins that were neither British nor French, and took pride in preserving their distinct culture in the Canadian fabric.'
                   ],
@@ -5711,7 +5711,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'False'],
                       ['text' => 'True'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1464,
                     'correct_answer' => 'True',
                     'explanation' => 'Mike Lazaridis and Jim Balsillie of Research in Motion (RIM), a wireless communications company, are known for their most famous invention: the BlackBerry.'
                   ],
@@ -5723,7 +5723,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '"Les Automatistes" of Quebec'],
                       ['text' => 'The Group of Seven'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1467,
                     'correct_answer' => '"Les Automatistes" of Quebec',
                     'explanation' => 'Les Automatistes of Quebec were pioneers of modern abstract art in the 1950s, most notably Jean-Paul Riopelle.'
                   ],
@@ -5735,7 +5735,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Energy Bill passed by the House of Commons'],
                       ['text' => 'The discovery of coal in Manitoba'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1470,
                     'correct_answer' => 'The discovery of oil in Alberta',
                     'explanation' => 'The discovery of oil in Alberta in 1947 began Canada’s modern energy industry. In 1951, for the first time, a majority of Canadians were able to afford adequate food, shelter, and clothing.'
                   ],
@@ -5907,7 +5907,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Education'],
                       ['text' => 'Inter-provincial trade and Communications'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1476,
                     'correct_answer' => 'Inter-provincial trade and Communications',
                     'explanation' => 'The federal government takes responsibility for matters of national and international concern, including inter-provincial trade and communications.'
                   ],
@@ -5919,7 +5919,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Education, foreign policy, natural resource and policing'],
                       ['text' => 'Nation defense, foreign policy, highways and aboriginal affairs'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1477,
                     'correct_answer' => 'Education, health care, natural resources and policing',
                     'explanation' => 'The provinces are responsible for municipal government, education, health, natural resources, property and civil rights, and highways.'
                   ],
@@ -5931,7 +5931,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Lieutenant-Governor'],
                       ['text' => 'Governor General'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1483,
                     'correct_answer' => 'Lieutenant-Governor',
                     'explanation' => 'In each of the ten provinces, the Sovereign is represented by the Lieutenant Governor.'
                   ],
@@ -5943,7 +5943,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Other judges'],
                       ['text' => 'The people'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1485,
                     'correct_answer' => 'The Governor General',
                     'explanation' => 'Nine judges of the Supreme Court of Canada are appointed by the Governor General.'
                   ],
@@ -5955,7 +5955,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'To run the federal government departments'],
                       ['text' => 'To focus on citizenship and Allegiance, be a symbol of Canadian sovereignty and a guardian of constitutional freedoms'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1492,
                     'correct_answer' => 'To focus on citizenship and Allegiance, be a symbol of Canadian sovereignty and a guardian of constitutional freedoms',
                     'explanation' => 'The Sovereign is a part of Parliament, playing an important, non-partisan role as the focus of citizenship and allegiance.'
                   ],
@@ -5967,7 +5967,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canada\'s head of state is a hereditary Sovereign (Queen or King) who Reigns in accordance with the Constitution'],
                       ['text' => 'The Sovereign queen or King is the lawmaker of Canada'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1495,
                     'correct_answer' => 'Canada\'s head of state is a hereditary Sovereign (Queen or King) who Reigns in accordance with the Constitution',
                     'explanation' => 'Canada’s head of state is a hereditary Sovereign (Queen or King), who reigns in accordance with the Constitution: the rule of law.'
                   ],
@@ -5979,7 +5979,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The governor-general of Canada'],
                       ['text' => 'The prime minister'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1499,
                     'correct_answer' => 'The governor-general of Canada',
                     'explanation' => 'The Sovereign is represented in Canada by the Governor General, who is appointed by the Sovereign on the advice of the Prime Minister.'
                   ],
@@ -5991,7 +5991,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A socialist country, a parliamentary democracy and a constitutional monarchy'],
                       ['text' => 'A federal country a constitutional democracy and a parliamentary monarchy'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1502,
                     'correct_answer' => 'A federal state, a parliamentary democracy and a constitutional monarchy',
                     'explanation' => 'Canada’s system of government includes being a federal state, a parliamentary democracy and a constitutional monarchy.'
                   ],
@@ -6003,7 +6003,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'By the voters'],
                       ['text' => 'By the Senators'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1505,
                     'correct_answer' => 'By the prime minister',
                     'explanation' => 'In the federal government, the Prime Minister selects the Cabinet ministers and is responsible for the operations and policy of the government.'
                   ],
@@ -6015,7 +6015,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Military rule'],
                       ['text' => 'Communism'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1510,
                     'correct_answer' => 'Parliamentary government',
                     'explanation' => 'Canada\'s system of government is called a parliamentary government.'
                   ],
@@ -6027,7 +6027,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Signs bills to make them law after they have been passed by parliament'],
                       ['text' => 'A and C'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1513,
                     'correct_answer' => 'Chooses the opposition party',
                     'explanation' => 'The Governor General does not choose the opposition party; rather, they perform ceremonial duties and sign bills into law.'
                   ],
@@ -6039,7 +6039,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The governor-general'],
                       ['text' => 'The prime minister'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1518,
                     'correct_answer' => 'A hereditary Sovereign (Queen or King)',
                     'explanation' => 'Canada’s head of state is a hereditary Sovereign (Queen or King), who reigns in accordance with the Constitution.'
                   ],
@@ -6051,7 +6051,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A new law'],
                       ['text' => 'A proposal of a law'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1522,
                     'correct_answer' => 'A bill',
                     'explanation' => 'A law before it is passed is called a bill. It must be passed by both chambers of Parliament and receive royal assent to become law.'
                   ],
@@ -6063,7 +6063,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1901'],
                       ['text' => '1876'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1525,
                     'correct_answer' => '1867',
                     'explanation' => 'The responsibilities of the federal and provincial governments were defined in 1867 in the British North America Act, now known as the Constitution Act, 1867.'
                   ],
@@ -6075,7 +6075,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '5 years'],
                       ['text' => '6 years'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1531,
                     'correct_answer' => '5 years',
                     'explanation' => 'In each of the ten provinces, the Lieutenant Governor is appointed by the Governor General, usually for a term of five years.'
                   ],
@@ -6087,7 +6087,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The commissioner'],
                       ['text' => 'The Governor General'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1534,
                     'correct_answer' => 'A Premier has a role similar to that of the Prime Minister in a federal government',
                     'explanation' => 'In each province, the Premier has a role similar to that of the Prime Minister in the federal government.'
                   ],
@@ -6099,7 +6099,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The premiere'],
                       ['text' => 'The commissioner'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1538,
                     'correct_answer' => 'The prime minister',
                     'explanation' => 'There is a clear distinction in Canada between the head of state – the Sovereign – and the head of government – the Prime Minister, who actually directs the governing of the country.'
                   ],
@@ -6111,7 +6111,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'the responsibilities Act'],
                       ['text' => 'the Constitution Act'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1544,
                     'correct_answer' => 'the Constitution Act',
                     'explanation' => 'The responsibilities of the federal and provincial governments were defined in 1867 in the British North America Act, now known as the Constitution Act, 1867.'
                   ],
@@ -6123,7 +6123,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Highways, policing, international trade and criminal justice'],
                       ['text' => 'Education, foreign policy, recycling programs and Aboriginal affairs'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1545,
                     'correct_answer' => 'Nation defense, foreign policy, international trade and Aboriginal affairs',
                     'explanation' => 'In our federal state, the federal government takes responsibility for matters of national and international concern, including defence, foreign policy, interprovincial trade and communications, currency, navigation, criminal law and citizenship.'
                   ],
@@ -6135,7 +6135,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '5 years'],
                       ['text' => '7 years'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1551,
                     'correct_answer' => '5 years',
                     'explanation' => 'In each of the ten provinces, the Sovereign is represented by the Lieutenant Governor, who is appointed by the Governor General on the advice of the Prime Minister, usually for five years.'
                   ],
@@ -6154,7 +6154,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Sovereign is head of state the Prime Minister oversees provincial policies'],
                       ['text' => 'The Sovereign is the guardian of constitutional freedoms the Prime Minister selects the cabinet ministers and is responsible for operations and policy of government'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1556,
                     'correct_answer' => 'The Sovereign is the guardian of constitutional freedoms the Prime Minister selects the cabinet ministers and is responsible for operations and policy of government',
                     'explanation' => 'The Sovereign is responsible for the guardian of constitutional freedoms, while the Prime Minister selects the cabinet ministers and directs the operations and policies of the government. (P29)'
                   ],
@@ -6166,7 +6166,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Members of the provincial Parliament'],
                       ['text' => 'the Lieutenant-Governor'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1560,
                     'correct_answer' => 'the Lieutenant-Governor',
                     'explanation' => 'In Canada, bills approved by the provincial Parliament are signed into law by the Lieutenant-Governor. (P28, 29)'
                   ],
@@ -6178,7 +6178,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Member of the provincial Parliament'],
                       ['text' => 'Member of the provincial publication'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1563,
                     'correct_answer' => 'Member of the provincial Parliament',
                     'explanation' => 'M.P.P. stands for Member of the provincial Parliament, who are elected representatives in the provincial legislatures. (P29)'
                   ],
@@ -6190,7 +6190,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Appointed by the governor-general on the advice of the Prime Minister'],
                       ['text' => 'Appointed by the king'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1567,
                     'correct_answer' => 'Appointed by the governor-general on the advice of the Prime Minister',
                     'explanation' => 'Senators in Canada are appointed by the governor-general on the advice of the Prime Minister. (P28)'
                   ],
@@ -6202,7 +6202,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Defense and health'],
                       ['text' => 'Natural resources'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1569,
                     'correct_answer' => 'Agriculture and immigration',
                     'explanation' => 'The federal government and the provinces share jurisdiction over agriculture and immigration in Canada. (P28)'
                   ],
@@ -6214,7 +6214,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '“Sir”'],
                       ['text' => 'Lieutenant-Governor'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1573,
                     'correct_answer' => 'Commissioner',
                     'explanation' => 'In the territories of Canada, the King\'s representative is called the Commissioner, who plays a ceremonial role representing the federal government. (P29)'
                   ],
@@ -6226,7 +6226,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'the queen or King the House of Commons and the Senate'],
                       ['text' => 'the House of Commons the legislative assembly and the Senate'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1579,
                     'correct_answer' => 'the queen or King, the House of Commons and the Senate',
                     'explanation' => 'Parliament in Canada consists of the Sovereign (Queen or King), the House of Commons, and the Senate. (P28)'
                   ],
@@ -6238,7 +6238,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Must be signed by the queen or King'],
                       ['text' => 'Must be approved by the members of the parliament'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1582,
                     'correct_answer' => 'Must be approved by a majority in the House of Commons and Senate and received royal assent',
                     'explanation' => 'For a bill to become law in Canada, it must be approved by a majority in both the House of Commons and the Senate, and then receive royal assent. (P29)'
                   ],
@@ -6250,7 +6250,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Executive police and judicial'],
                       ['text' => 'Executive legislative and judicial'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1588,
                     'correct_answer' => 'Executive legislative and judicial',
                     'explanation' => 'The three branches of the Canadian government are executive, legislative, and judicial, which work together to uphold the rights and freedoms of Canadians. (P29)'
                   ],
@@ -6262,7 +6262,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'the king'],
                       ['text' => 'Prime minister'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1592,
                     'correct_answer' => 'Prime minister',
                     'explanation' => 'The Prime Minister governs Canada on a daily basis at the federal level, directing the operations and policies of the government. (P29)'
                   ],
@@ -6274,7 +6274,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Germans'],
                       ['text' => 'Americans'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1593,
                     'correct_answer' => 'Canadians',
                     'explanation' => 'Basketball was invented by Canadian James Naismith in 1891. (P26)'
                   ],
@@ -6286,7 +6286,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Federal, provincial or Territorial and Municipal'],
                       ['text' => 'Federal, provincial and rural'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1599,
                     'correct_answer' => 'Federal, provincial or Territorial and municipal',
                     'explanation' => 'Canada has federal, provincial or territorial, and municipal levels of government. (P28)'
                   ],
@@ -6298,7 +6298,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '10'],
                       ['text' => '5'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1602,
                     'correct_answer' => '9',
                     'explanation' => 'The Supreme Court of Canada is composed of nine judges. (P29)'
                   ],
@@ -6310,7 +6310,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Currency'],
                       ['text' => 'Education'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1608,
                     'correct_answer' => 'Education',
                     'explanation' => 'Provinces in Canada are responsible for municipal government, education, health, natural resources, property and civil rights, and highways. (P28)'
                   ],
@@ -6322,7 +6322,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'All of the above'],
                       ['text' => 'None of the above'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1611,
                     'correct_answer' => 'All of the above',
                     'explanation' => 'The Governor General performs several roles, including inviting the party with the most votes to form the new government after an election, and signing bills to make them law. (P28)'
                   ],
@@ -6334,7 +6334,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Read by the Senate three times'],
                       ['text' => 'All of the above'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1616,
                     'correct_answer' => 'D',
                     'explanation' => 'In Canada, laws are passed after being read and approved by both the House of Commons and the Senate, and then receiving royal assent from the Governor General. (P29)'
                   ],
@@ -6346,7 +6346,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Premier'],
                       ['text' => 'Prime minister'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1618,
                     'correct_answer' => 'B',
                     'explanation' => 'No bill can become law in Canada until it has been passed by both chambers and has received royal assent, granted by the Governor General on behalf of the Sovereign. (P28, 29)'
                   ],
@@ -6358,7 +6358,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Belong to a union'],
                       ['text' => 'Learn both official languages'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1621,
                     'correct_answer' => 'A',
                     'explanation' => 'While there is no compulsory military service in Canada, serving in the regular Canadian Forces (navy, army, and air force) is considered a noble way to contribute to Canada and a respected career choice. (P9)'
                   ],
@@ -6370,7 +6370,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Member of land Association'],
                       ['text' => 'Member of land Aid'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1626,
                     'correct_answer' => 'B',
                     'explanation' => 'M.L.A. stands for Member of the Legislative Assembly. Members of the legislature in Canada are known by various titles depending on the province or territory they represent. (P29)'
                   ],
@@ -6389,7 +6389,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Everyone who lives in the provincial or territorial electoral District'],
                       ['text' => 'Everyone who lives in the municipal electoral District'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1631,
                     'correct_answer' => 'C',
                     'explanation' => 'Provincial members of the legislative or national assemblies represent everyone who lives in the provincial or territorial electoral district. (P28)'
                   ],
@@ -6401,7 +6401,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Approved by the governor-general'],
                       ['text' => 'Approved by a judge'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1635,
                     'correct_answer' => 'C',
                     'explanation' => 'The final step before a bill becomes law in Canada is being approved by the governor-general, who grants royal assent on behalf of the Sovereign. (P28, 29)'
                   ],
@@ -6413,7 +6413,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Prime minister'],
                       ['text' => 'The people'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1640,
                     'correct_answer' => 'D',
                     'explanation' => 'In Canada’s parliamentary democracy, members to the House of Commons and provincial/territorial legislatures are elected by the people. (P28)'
                   ],
@@ -6425,7 +6425,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Black nation Alliance'],
                       ['text' => 'Bank of National Association'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1642,
                     'correct_answer' => 'B',
                     'explanation' => 'B.N.A. stands for British North America Act, an important historical document in Canadian constitutional law. (P28)'
                   ],
@@ -6437,7 +6437,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Jean-Paul Riopelle'],
                       ['text' => 'Joy Kogawa'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1646,
                     'correct_answer' => 'B',
                     'explanation' => 'Sir Ernest MacMillan is a Canadian musician who achieved renown both in Canada and internationally. (P26)'
                   ],
@@ -6449,7 +6449,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Twelve'],
                       ['text' => 'Three'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1649,
                     'correct_answer' => 'A',
                     'explanation' => 'The Supreme Court of Canada consists of nine judges, all appointed by the Governor General. (P29)'
                   ],
@@ -6461,7 +6461,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The provincial MPs'],
                       ['text' => 'The provincial MPs and the elected Assembly'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1654,
                     'correct_answer' => 'B',
                     'explanation' => 'A provincial legislature comprises the Lieutenant Governor and the elected Assembly. (P29)'
                   ],
@@ -6473,7 +6473,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Lieutenant Governor'],
                       ['text' => 'Member of Parliament'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1659,
                     'correct_answer' => 'C',
                     'explanation' => 'The King’s or Queen’s representative in the provinces of Canada is called the Lieutenant Governor. (P29)'
                   ],
@@ -6485,7 +6485,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'In the House of Commons'],
                       ['text' => 'In the elected legislature'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1664,
                     'correct_answer' => 'D',
                     'explanation' => 'Provincial and territorial laws are passed in the elected legislature of each province and territory. (P28)'
                   ],
@@ -6497,7 +6497,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Queen or King appoints all Cabinet Ministers and Prime Ministers'],
                       ['text' => 'The Queen or King is a symbol of Canadian citizenship and mobility rights'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1665,
                     'correct_answer' => 'A',
                     'explanation' => 'The King or Queen in Canada is a symbol of Canadian sovereignty and a guardian of constitutional freedoms. (P28)'
                   ],
@@ -6509,7 +6509,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Four years'],
                       ['text' => 'Ten years'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1671,
                     'correct_answer' => 'C',
                     'explanation' => 'Members of Parliament in Canada are traditionally elected every four years. (P29)'
                   ],
@@ -6521,7 +6521,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Defence'],
                       ['text' => 'Interprovincial trade'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1673,
                     'correct_answer' => 'A',
                     'explanation' => 'Provinces in Canada are responsible for various areas including municipal government, education, health, natural resources, property and civil rights, and highways. (P28)'
                   ],
@@ -6533,7 +6533,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The House of Commons'],
                       ['text' => 'The people'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1677,
                     'correct_answer' => 'A',
                     'explanation' => 'Canada’s head of government is the Prime Minister, who directs the operations and policies of the government. (P29)'
                   ],
@@ -6545,7 +6545,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ten'],
                       ['text' => 'Three'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1682,
                     'correct_answer' => 'B',
                     'explanation' => 'The Lieutenant Governor in Canada is usually appointed for a term of five years. (P29)'
                   ],
@@ -6557,7 +6557,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Two'],
                       ['text' => 'None'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1685,
                     'correct_answer' => 'A',
                     'explanation' => 'A bill in Canada must go through three readings in Parliament (House of Commons and Senate) before it can become law. (P29)'
                   ],
@@ -6569,7 +6569,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The representative chamber made up of members of Parliament'],
                       ['text' => 'The representative chamber made up of Federal Deputies'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1691,
                     'correct_answer' => 'C',
                     'explanation' => 'The House of Commons in Canada is the representative chamber made up of members of Parliament elected by the people. (P29)'
                   ],
@@ -6581,7 +6581,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Supreme Court'],
                       ['text' => 'The Federal Court'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1695,
                     'correct_answer' => 'C',
                     'explanation' => 'The highest judiciary court in Canada is the Supreme Court, which plays a crucial role in interpreting laws and ensuring their application across the country. (P29)'
                   ],
@@ -6591,7 +6591,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'True'],
                       ['text' => 'False'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1698,
                     'correct_answer' => 'B',
                     'explanation' => 'Canada joined with other democratic countries of the West to form the North Atlantic Treaty Organization (NATO), a military alliance, and with the United States in the North American Aerospace Defence Command (NORAD).'
                   ],
@@ -6603,7 +6603,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A Senator'],
                       ['text' => 'A Queen or a King'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1702,
                     'correct_answer' => 'D',
                     'explanation' => 'As a constitutional monarchy, Canada’s Head of State is a hereditary Sovereign (Queen or King), who reigns in accordance with the Constitution: the rule of law.'
                   ],
@@ -6615,7 +6615,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Executive, Federal and Judicial'],
                       ['text' => 'Executive, Legislative and Monarchy'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1704,
                     'correct_answer' => 'B',
                     'explanation' => 'Canada’s system of government has three branches: the legislative, the executive and the judicial. Each one has separate powers and responsibilities that are defined in the Constitution: the legislative branch passes laws, the executive implements them, and the judicial interprets them.'
                   ],
@@ -6627,7 +6627,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'One'],
                       ['text' => 'Three'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1710,
                     'correct_answer' => 'D',
                     'explanation' => 'Canada has ten provinces and three territories. Each province and territory has its own capital city. You should know the capital of your province or territory as well as that of Canada.'
                   ],
@@ -6646,7 +6646,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The House of Commons and the Senate'],
                       ['text' => 'The House of Commons'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1713,
                     'correct_answer' => 'C',
                     'explanation' => 'Both the House of Commons and the Senate consider and review bills (proposals for new laws).'
                   ],
@@ -6658,7 +6658,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'the winning goal for Canada in the Canada-Soviet Summit Series in 1972'],
                       ['text' => 'the winning goal for Canada in the Canada-Soviet Summit Series in 1992'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1717,
                     'correct_answer' => 'C',
                     'explanation' => 'In 1972, Paul Henderson scored the winning goal for Canada in the Canada-Soviet Summit Series. This goal is often referred to as “the goal heard around the world” and is still remembered today as an important event in both sports and cultural history.'
                   ],
@@ -6670,7 +6670,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Lieutenant Governor'],
                       ['text' => 'The Premier'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1722,
                     'correct_answer' => 'D',
                     'explanation' => 'In each province, the Premier has a role similar to that of the Prime Minister in the federal government, just as the Lieutenant Governor has a role similar to that of the Governor General.'
                   ],
@@ -6682,7 +6682,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Gives all the power to the Prime Minister'],
                       ['text' => 'Allows different provinces to adopt policies tailored to their own populations'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1726,
                     'correct_answer' => 'D',
                     'explanation' => 'Federalism allows different provinces to adopt policies tailored to their own populations, and gives provinces the flexibility to experiment with new ideas and policies.'
                   ],
@@ -6692,7 +6692,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'True'],
                       ['text' => 'False'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1727,
                     'correct_answer' => 'A',
                     'explanation' => 'Every province has its own elected Legislative Assembly, like the House of Commons in Ottawa.'
                   ],
@@ -6704,7 +6704,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'French and English'],
                       ['text' => 'English and Inuit'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1731,
                     'correct_answer' => 'C',
                     'explanation' => 'English and French are the two official languages in Canada and are important symbols of identity.'
                   ],
@@ -6716,7 +6716,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The people elect members to the House of Commons in Ottawa and to the provincial and territorial legislatures'],
                       ['text' => 'The Queen elects members to the House of Commons in Ottawa and to the provincial and territorial legislatures'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1735,
                     'correct_answer' => 'C',
                     'explanation' => 'In Canada’s parliamentary democracy, the people elect members to the House of Commons in Ottawa and to the provincial and territorial legislatures.'
                   ],
@@ -6728,7 +6728,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Elected by the people'],
                       ['text' => 'Appointed by the Prime Minister'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1739,
                     'correct_answer' => 'B',
                     'explanation' => 'The Sovereign is represented in Canada by the Governor General, who is appointed by the Sovereign on the advice of the Prime Minister, usually for five years.'
                   ],
@@ -6740,7 +6740,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'They are appointed by the Governor General on the advice of the Prime Minister'],
                       ['text' => 'They are elected by the people'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1743,
                     'correct_answer' => 'C',
                     'explanation' => 'Senators are appointed by the Governor General on the advice of the Prime Minister and serve until age 75.'
                   ],
@@ -6752,7 +6752,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Matters of national and international concern'],
                       ['text' => 'Matters of international concern'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1747,
                     'correct_answer' => 'C',
                     'explanation' => 'In our federal state, the federal government takes responsibility for matters of national and international concern.'
                   ],
@@ -6764,7 +6764,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'They keep their positions for one more year only'],
                       ['text' => 'They have to resign'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1752,
                     'correct_answer' => 'D',
                     'explanation' => 'If the government loses a confidence vote in the assembly it must resign.'
                   ],
@@ -6776,7 +6776,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Cabinet ministers must swear allegiance to the House of England'],
                       ['text' => 'Cabinet ministers must retain the confidence of the people'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1754,
                     'correct_answer' => 'B',
                     'explanation' => 'Cabinet ministers are responsible to the elected representatives, which means they must retain the “confidence of the House” and have to resign if they are defeated in a non-confidence vote.'
                   ],
@@ -6788,7 +6788,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sovereign, Senate and House of Commons'],
                       ['text' => 'Sovereign, Premier and House of Commons'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1759,
                     'correct_answer' => 'C',
                     'explanation' => 'Parliament has three parts: the Sovereign (Queen or King), the Senate and the House of Commons. Provincial legislatures comprise the Lieutenant Governor and the elected Assembly.'
                   ],
@@ -6800,7 +6800,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'By the Prime Minister'],
                       ['text' => 'They are elected by the people'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1761,
                     'correct_answer' => 'A',
                     'explanation' => 'Senators are appointed by the Governor General on the advice of the Prime Minister and serve until age 75.'
                   ],
@@ -6812,7 +6812,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The operations and policy of the government'],
                       ['text' => 'The operations of the government'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1767,
                     'correct_answer' => 'C',
                     'explanation' => 'In the federal government, the Prime Minister selects the Cabinet ministers and is responsible for the operations and policy of the government.'
                   ],
@@ -6824,7 +6824,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The bill must be passed by the House of Commons and the Senate, and must receive royal assent'],
                       ['text' => 'The bill must be signed by the Queen or King of England'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1771,
                     'correct_answer' => 'C',
                     'explanation' => 'Both the House of Commons and the Senate consider and review bills (proposals for new laws). No bill can become law in Canada until it has been passed by both chambers and has received royal assent, granted by the Governor General on behalf of the Sovereign.'
                   ],
@@ -6836,7 +6836,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The different provinces can adopt policies tailored to their own populations'],
                       ['text' => 'The Federal Government has jurisdiction over certain matters'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1775,
                     'correct_answer' => 'C',
                     'explanation' => 'Federalism allows different provinces to adopt policies tailored to their own populations, and gives provinces the flexibility to experiment with new ideas and policies.'
                   ],
@@ -6848,7 +6848,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Constitutional Monarchy'],
                       ['text' => 'Republic'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1779,
                     'correct_answer' => 'C',
                     'explanation' => 'Canada is a constitutional monarchy, a parliamentary democracy and a federal state. Canadians are bound together by a shared commitment to the rule of law and to the institutions of parliamentary government.'
                   ],
@@ -6860,7 +6860,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'It passed by the House of Common and receives royal assent'],
                       ['text' => 'It passed by Senate and receives royal assent'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1782,
                     'correct_answer' => 'B',
                     'explanation' => 'No bill can become law in Canada until it has been passed by both chambers and has received royal assent, granted by the Governor General on behalf of the Sovereign.'
                   ],
@@ -6872,7 +6872,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Cabinet ministers are responsible to the elected representatives'],
                       ['text' => 'The Queen has to have confidence in the Cabinet ministers'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1787,
                     'correct_answer' => 'C',
                     'explanation' => 'Cabinet ministers are responsible to the elected representatives, which means they must retain the “confidence of the House” and have to resign if they are defeated in a non-confidence vote.'
                   ],
@@ -6891,7 +6891,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Keeping the government accountable'],
                       ['text' => 'Select the Cabinet Ministers'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1792,
                     'correct_answer' => 'D',
                     'explanation' => 'In Canada’s parliamentary democracy, the people elect members to the House of Commons in Ottawa and to the provincial and territorial legislatures. These representatives are responsible for passing laws, approving and monitoring expenditures, and keeping the government accountable.'
                   ],
@@ -6903,7 +6903,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1867'],
                       ['text' => '1988'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1795,
                     'correct_answer' => 'C',
                     'explanation' => 'Canada has been a constitutional monarchy in its own right since Confederation in 1867 during Queen Victoria’s reign.'
                   ],
@@ -6915,7 +6915,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '6'],
                       ['text' => '49'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1798,
                     'correct_answer' => 'B',
                     'explanation' => 'As Head of the Commonwealth, the Sovereign links Canada to 53 other nations that cooperate to advance social, economic and cultural progress.'
                   ],
@@ -6927,7 +6927,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1867'],
                       ['text' => '2000'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1803,
                     'correct_answer' => 'C',
                     'explanation' => 'The British Parliament passed the British North America Act in 1867. The Dominion of Canada was officially born on July 1, 1867. Until 1982, July 1 was celebrated as “Dominion Day” to commemorate the day that Canada became a self-governing Dominion.'
                   ],
@@ -6939,7 +6939,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Senate'],
                       ['text' => 'The Governor General'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1808,
                     'correct_answer' => 'D',
                     'explanation' => 'The Governor General is responsible for assigning nine judges to the Supreme Court of Canada.'
                   ],
@@ -6951,7 +6951,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Governor General'],
                       ['text' => 'The Lieutenant Governor'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1811,
                     'correct_answer' => 'C',
                     'explanation' => 'The Sovereign is represented in Canada by the Governor General, who is appointed by the Sovereign on the advice of the Prime Minister, usually for five years.'
                   ],
@@ -6963,7 +6963,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A bill'],
                       ['text' => 'A new law'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1815,
                     'correct_answer' => 'C',
                     'explanation' => 'Both the House of Commons and the Senate consider and review bills (proposals for new laws).'
                   ],
@@ -6975,7 +6975,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Matters of international concern'],
                       ['text' => 'Agriculture and immigration'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1817,
                     'correct_answer' => 'A',
                     'explanation' => 'In Canada’s parliamentary democracy, the people elect members to the House of Commons in Ottawa and to the provincial and territorial legislatures. These representatives are responsible for passing laws, approving and monitoring expenditures, and keeping the government accountable.'
                   ],
@@ -6987,7 +6987,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Federal, provincial, territorial and municipal'],
                       ['text' => 'Federal, provincial, and territorial'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1823,
                     'correct_answer' => 'C',
                     'explanation' => 'There are federal, provincial, territorial and municipal governments in Canada. The responsibilities of the federal and provincial governments were defined in 1867 in the British North America Act, now known as the Constitution Act, 1867.'
                   ],
@@ -6999,7 +6999,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Premier'],
                       ['text' => 'The King or Queen'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1825,
                     'correct_answer' => 'A',
                     'explanation' => 'In the three territories, the Commissioner represents the federal government and plays a ceremonial role.'
                   ],
@@ -7011,7 +7011,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1945'],
                       ['text' => '1951'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1832,
                     'correct_answer' => 'D',
                     'explanation' => 'In 1951, for the first time, a majority of Canadians were able to afford adequate food, shelter and clothing.'
                   ],
@@ -7023,7 +7023,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1867'],
                       ['text' => '1700'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1835,
                     'correct_answer' => 'C',
                     'explanation' => 'The British North America Act, commonly referred to as the Constitution Act, was adopted by the British Parliament in 1867.'
                   ],
@@ -7035,7 +7035,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Mike Lazaridis'],
                       ['text' => 'Joseph-Armand Bombardier'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1840,
                     'correct_answer' => 'D',
                     'explanation' => 'Joseph-Armand Bombardier invented the snowmobile, a light-weight winter vehicle.'
                   ],
@@ -7047,7 +7047,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Appointed by the Sovereign on the advice of the Prime Minister'],
                       ['text' => 'Appointed by the Prime Minister'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1841,
                     'correct_answer' => 'A',
                     'explanation' => 'The Sovereign is represented by the Lieutenant Governor, who is appointed by the Governor General on the advice of the Prime Minister, usually for five years.'
                   ],
@@ -7059,7 +7059,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Prime Minister'],
                       ['text' => 'The Senators'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1847,
                     'correct_answer' => 'C',
                     'explanation' => 'In the federal government, the Prime Minister selects the Cabinet ministers and is responsible for the operations and policy of the government.'
                   ],
@@ -7071,7 +7071,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Agriculture and civil rights'],
                       ['text' => 'Natural Resources and immigration'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1849,
                     'correct_answer' => 'A',
                     'explanation' => 'The federal government and the provinces share jurisdiction over agriculture and immigration.'
                   ],
@@ -7083,7 +7083,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1970'],
                       ['text' => '1965'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1856,
                     'correct_answer' => 'D',
                     'explanation' => 'Old Age Security was devised as early as 1927, and the Canada and Quebec Pension Plans in 1965.'
                   ],
@@ -7095,7 +7095,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Head of State appoints the Head of Government'],
                       ['text' => 'The Head of Government actually directs the governing of the country'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1860,
                     'correct_answer' => 'D',
                     'explanation' => 'There is a clear distinction in Canada between the head of state—the Sovereign—and the head of government—the Prime Minister, who actually directs the governing of the country.'
                   ],
@@ -7371,7 +7371,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Within 5 years of the last election'],
                       ['text' => 'The Prime Minister can call the election any time at his own will'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1862,
                     'correct_answer' => 'B',
                     'explanation' => 'Under legislation passed by Parliament, federal elections must be held on the third Monday in October every four years following the most recent general election.'
                   ],
@@ -7383,7 +7383,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'If a majority of the MPS vote against a major government decision'],
                       ['text' => 'If a minority of the MPS vote against a major government decision'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1867,
                     'correct_answer' => 'C',
                     'explanation' => 'If a majority of the members of the House of Commons vote against a major government decision, the party in power is defeated, which usually results in the Prime Minister asking the Governor General, on behalf of the Sovereign, to call an election.'
                   ],
@@ -7395,7 +7395,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Chosen by the king'],
                       ['text' => 'Elected by Canadian citizens'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1872,
                     'correct_answer' => 'D',
                     'explanation' => 'The citizens in each electoral district elect one MP who sits in the House of Commons to represent them, as well as all Canadians.'
                   ],
@@ -7407,7 +7407,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Database of all Canadian citizens'],
                       ['text' => 'Database of Canadian taxpayers'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1874,
                     'correct_answer' => 'B',
                     'explanation' => 'The National Register of Electors contains a database of Canadian citizens at least 18 years of age who are qualified to vote in federal elections and referendums.'
                   ],
@@ -7419,7 +7419,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Member of the Patriots'],
                       ['text' => 'Master of the province'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1877,
                     'correct_answer' => 'A',
                     'explanation' => 'Members of the House of Commons are also known as members of Parliament or MPs.'
                   ],
@@ -7431,7 +7431,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'You should assume you were not chosen to vote'],
                       ['text' => 'Contact Elections Canada'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1884,
                     'correct_answer' => 'D',
                     'explanation' => 'If you don’t receive a voter information card, call your local elections office to ensure that you are on the voter’s list. If you do not have the number, call Elections Canada, in Ottawa, at 1-800-463-6868.'
                   ],
@@ -7443,7 +7443,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Rival parties'],
                       ['text' => 'Opponents parties'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1886,
                     'correct_answer' => 'B',
                     'explanation' => 'The other parties that are not in power are known as opposition parties.'
                   ],
@@ -7455,7 +7455,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Place where the number of votes is counted'],
                       ['text' => 'Member of parliament\'s constituency'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1889,
                     'correct_answer' => 'A',
                     'explanation' => 'A polling station is the place where you go to vote either on election day or at advance polls.'
                   ],
@@ -7467,7 +7467,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'MP selected by the Prime Minister to run Federal departments'],
                       ['text' => 'MP selected by the king to make laws'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1895,
                     'correct_answer' => 'C',
                     'explanation' => 'The Prime Minister chooses the ministers of the Crown, most of them from among members of the House of Commons. Cabinet ministers are responsible for running the federal government departments.'
                   ],
@@ -7479,7 +7479,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Take the Canada citizenship test'],
                       ['text' => 'Vote in federal and provincial election'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1900,
                     'correct_answer' => 'D',
                     'explanation' => 'One of the privileges of Canadian citizenship is the right to vote.'
                   ],
@@ -7491,7 +7491,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Your local MP'],
                       ['text' => 'The prime minister'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1901,
                     'correct_answer' => 'A',
                     'explanation' => 'Canadian law ensures the right to a secret ballot, meaning no one can ask you about whom you voted for.'
                   ],
@@ -7503,7 +7503,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Prime Minister loses his job'],
                       ['text' => 'The prime minister is no longer the leader of his party'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1905,
                     'correct_answer' => 'A',
                     'explanation' => 'If a majority of the members of the House of Commons vote against a major government decision, the party in power is defeated, which usually results in the Prime Minister asking the Governor General, on behalf of the Sovereign, to call an election.'
                   ],
@@ -7515,7 +7515,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The king appoints the Prime Minister'],
                       ['text' => 'The leader of the party with the most elected Member of Parliament'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1912,
                     'correct_answer' => 'D',
                     'explanation' => 'Ordinarily, after an election, the leader of the political party with the most seats in the House of Commons is invited by the Governor General to form the government. After being appointed by the Governor General, the leader of this party becomes the Prime Minister.'
                   ],
@@ -7527,7 +7527,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'To prepare the budget and propose new laws to be implemented'],
                       ['text' => 'Defence'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1915,
                     'correct_answer' => 'C',
                     'explanation' => 'The Prime Minister and the Cabinet ministers are responsible for making important decisions about how the country is governed. They prepare the budget and propose most new laws.'
                   ],
@@ -7539,7 +7539,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Visiting the province of Quebec'],
                       ['text' => 'Going on a vacation'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1918,
                     'correct_answer' => 'B',
                     'explanation' => 'An electoral district is a geographical area represented by a member of Parliament (MP).'
                   ],
@@ -7551,7 +7551,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The party with the most elected representatives becomes the party in power. The leader of this party becomes the Prime Minister'],
                       ['text' => 'The party with the most elected representatives becomes the party in power. The king chooses the Prime Minister from this party'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1923,
                     'correct_answer' => 'C',
                     'explanation' => 'Ordinarily, after an election, the leader of the political party with the most seats in the House of Commons is invited by the Governor General to form the government. After being appointed by the Governor General, the leader of this party becomes the Prime Minister.'
                   ],
@@ -7563,7 +7563,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The House of Commons'],
                       ['text' => 'The Senate'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1926,
                     'correct_answer' => 'B',
                     'explanation' => 'The Prime Minister and the Cabinet ministers are collectively referred to as the Cabinet, responsible for making important decisions about how the country is governed.'
                   ],
@@ -7575,7 +7575,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The party with the second most votes'],
                       ['text' => 'Any independent candidate'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1931,
                     'correct_answer' => 'C',
                     'explanation' => 'The other parties that are not in power are known as opposition parties. The opposition party with the most members of the House of Commons is the official Opposition or Her Majesty’s Loyal Opposition.'
                   ],
@@ -7587,7 +7587,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Everyone who lives in his or her province'],
                       ['text' => 'Everyone in Northern Canada'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1933,
                     'correct_answer' => 'A',
                     'explanation' => 'An electoral district is a geographical area represented by a member of Parliament (MP). MPs represent everyone who lives in their electoral district.'
                   ],
@@ -7599,7 +7599,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'To oppose or try to improve government proposals'],
                       ['text' => 'To regulate government proposals'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1339,
                     'correct_answer' => 'C',
                     'explanation' => 'The role of opposition parties is to peacefully oppose or try to improve government proposals.'
                   ],
@@ -7618,7 +7618,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Alderman'],
                       ['text' => 'Premier'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1941,
                     'correct_answer' => 'A',
                     'explanation' => 'Local or municipal government typically includes a council with a mayor (or reeve) and councilors or aldermen who pass local laws called “by-laws”.'
                   ],
@@ -7630,7 +7630,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The date and time you are allowed to vote'],
                       ['text' => 'Where you should vote'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1945,
                     'correct_answer' => 'A',
                     'explanation' => 'The election ballot lists the names of the candidates running in your electoral district.'
                   ],
@@ -7642,7 +7642,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'To generate electricity'],
                       ['text' => 'To hold the nuclear button'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1950,
                     'correct_answer' => 'B',
                     'explanation' => 'A political party is considered “in power” if it has the most elected representatives in the legislative body (e.g., House of Commons).'
                   ],
@@ -7654,7 +7654,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Secret ballot'],
                       ['text' => 'Open ballot'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1955,
                     'correct_answer' => 'C',
                     'explanation' => 'Voting in Canada is done by secret ballot, ensuring the privacy and secrecy of each voter’s choice.'
                   ],
@@ -7666,7 +7666,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Garbage removal'],
                       ['text' => 'Highways'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1959,
                     'correct_answer' => 'C',
                     'explanation' => 'Municipalities are responsible for local services such as garbage removal, street cleaning, and local planning.'
                   ],
@@ -7678,7 +7678,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ballot paper'],
                       ['text' => 'None of these'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1961,
                     'correct_answer' => 'A',
                     'explanation' => 'On voting day, bring your voter information card and proof of identity and address to your polling station.'
                   ],
@@ -7690,7 +7690,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A form that tells you where and when to vote'],
                       ['text' => 'A card to let you register for voting'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1967,
                     'correct_answer' => 'C',
                     'explanation' => 'A voter information card informs you of your polling station location, voting date, and other election details.'
                   ],
@@ -7702,7 +7702,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A list of people who voted for the opposition party in the previous election'],
                       ['text' => 'A list of people who are not allowed to vote'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1969,
                     'correct_answer' => 'A',
                     'explanation' => 'The Register of Electors is a database of Canadian citizens who are eligible to vote in federal elections and referendums.'
                   ],
@@ -7714,7 +7714,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '21'],
                       ['text' => '16'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1973,
                     'correct_answer' => 'A',
                     'explanation' => 'The minimum voting age for federal, provincial, territorial, and municipal elections in Canada is 18 years old.'
                   ],
@@ -7726,7 +7726,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The party in power holds at least half of the seats in the House of Commons'],
                       ['text' => 'The party in power holds at least half of the seats in the Senate'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1978,
                     'correct_answer' => 'B',
                     'explanation' => 'A minority government occurs when the party in power does not have a majority of seats in the House of Commons.'
                   ],
@@ -7738,7 +7738,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sick and physically disabled'],
                       ['text' => 'All of the above'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1984,
                     'correct_answer' => 'D',
                     'explanation' => 'Advanced voting is available for those who are elderly, unable to vote on Election Day, or sick and physically disabled.'
                   ],
@@ -7750,7 +7750,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A sticker'],
                       ['text' => 'A thumbprint'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1986,
                     'correct_answer' => 'B',
                     'explanation' => 'On a federal election ballot, you mark an “X” next to the name of the candidate you wish to vote for.'
                   ],
@@ -7762,7 +7762,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The party in power holds less than half of the seats in the House of Commons'],
                       ['text' => 'The party in power holds at least half of the seats in the Senate'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1990,
                     'correct_answer' => 'B',
                     'explanation' => 'A majority government exists when the party in power holds more than half of the seats in the House of Commons.'
                   ],
@@ -7774,7 +7774,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Working for the government at least 21 years old and Canadian citizen'],
                       ['text' => 'Canadian citizen at least 16 years old and on the list of Voters'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1994,
                     'correct_answer' => 'B',
                     'explanation' => 'To vote in a federal election in Canada, you must be a Canadian citizen who is at least 18 years old and listed on the voters’ list.'
                   ],
@@ -7786,7 +7786,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Provincial and territorial governments'],
                       ['text' => 'Federal government'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 1997,
                     'correct_answer' => 'A',
                     'explanation' => 'On First Nations reserves, Band Chiefs and councillors hold significant responsibilities, including governance and service provision.'
                   ],
@@ -7798,7 +7798,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'National Defence, health care and transportation'],
                       ['text' => 'Social and Community Health, snow removal and transportation'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2004,
                     'correct_answer' => 'D',
                     'explanation' => 'Local governments typically handle local services such as social and community health, snow removal, transportation, and more.'
                   ],
@@ -7810,7 +7810,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Only the candidate you vote for can watch your marked ballot'],
                       ['text' => 'No one can watch you vote or look at your marked ballot'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2008,
                     'correct_answer' => 'D',
                     'explanation' => 'The right to a secret ballot means that no one can watch you vote or inspect your marked ballot according to Canadian law.'
                   ],
@@ -7822,7 +7822,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canadian citizens and landed immigrants'],
                       ['text' => 'A Canadian citizen who is 16 years or older'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2010,
                     'correct_answer' => 'B',
                     'explanation' => 'Canadian citizens who are at least 18 years old have the right to run as candidates in federal elections.'
                   ],
@@ -7834,7 +7834,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Member of Parliament'],
                       ['text' => 'Senator'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2015,
                     'correct_answer' => 'C',
                     'explanation' => 'Federal elections in Canada are held to elect Members of Parliament (MPs) who represent their electoral districts in the House of Commons.'
                   ],
@@ -7846,7 +7846,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Lieutenant Governor'],
                       ['text' => 'The Member of Parliament'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2020,
                     'correct_answer' => 'D',
                     'explanation' => 'An electoral district is represented by a Member of Parliament (MP) who is elected to represent the district in the House of Commons.'
                   ],
@@ -7867,7 +7867,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'States where you vote'],
                       ['text' => 'All of the above'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2024,
                     'correct_answer' => 'D',
                     'explanation' => 'A voter information card includes confirmation of your voter registration, the date and location of your polling station, and contact information for special services if needed.'
                   ],
@@ -7879,7 +7879,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Members of the provincial Parliament (MPPs)'],
                       ['text' => 'None of these'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2026,
                     'correct_answer' => 'B',
                     'explanation' => 'Members of the House of Commons are commonly referred to as Members of Parliament (MPs) in Canada.'
                   ],
@@ -7891,7 +7891,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'An Elections Canada official'],
                       ['text' => 'No one'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2032,
                     'correct_answer' => 'D',
                     'explanation' => 'Canadian law ensures the right to a secret ballot, meaning no one has the right to demand to know how you voted.'
                   ],
@@ -7903,7 +7903,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Vote the next day after election'],
                       ['text' => 'Vote a week later'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2036,
                     'correct_answer' => 'A',
                     'explanation' => 'If you cannot vote on Election Day, you can vote in advance at designated advance polling stations.'
                   ],
@@ -7915,7 +7915,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'He or she works for the Governor General'],
                       ['text' => 'He or she liaises with the municipal government'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2037,
                     'correct_answer' => 'A',
                     'explanation' => 'Members of Parliament (MPs) represent their constituents in the federal government, serving as a link between citizens and the government.'
                   ],
@@ -7927,7 +7927,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'One'],
                       ['text' => 'Two'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2043,
                     'correct_answer' => 'C',
                     'explanation' => 'In a federal election in Canada, each voter has the right to cast one vote for a candidate in their electoral district.'
                   ],
@@ -7939,7 +7939,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Police station'],
                       ['text' => 'Fire station'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2045,
                     'correct_answer' => 'A',
                     'explanation' => 'To vote in a federal election, you go to your designated polling station, which is listed on your voter information card.'
                   ],
@@ -7951,7 +7951,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Go to the voting station, take your voter’s card with proof of identity, highlight your choice on the ballot and deposit it in the Box'],
                       ['text' => 'Go to the voting station, take your voter information card and ID, mark an X next to your chosen candidate, fold the ballot and present it to the poll officials who will tear off the ballot number and give you the ballot to deposit in the Box'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2052,
                     'correct_answer' => 'D',
                     'explanation' => 'On Election Day, after identifying yourself and marking your ballot, you fold it and hand it to the poll officials who will prepare it for the ballot box.'
                   ],
@@ -7963,7 +7963,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Having a driver\'s license'],
                       ['text' => 'Being an immigrant'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2054,
                     'correct_answer' => 'B',
                     'explanation' => 'Canadian citizens who are on the official voters’ list are eligible to vote in federal elections in Canada.'
                   ],
@@ -7975,7 +7975,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The date and time you are allowed to vote'],
                       ['text' => 'Where you should vote'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2057,
                     'correct_answer' => 'A',
                     'explanation' => 'An election ballot lists the names of candidates running for election in your electoral district.'
                   ],
@@ -7987,7 +7987,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'When the MPs want a new Prime Minister'],
                       ['text' => 'On the third Monday in October every four years following the most recent general election'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2064,
                     'correct_answer' => 'D',
                     'explanation' => 'Federal elections in Canada are mandated by legislation to be held on the third Monday in October every four years following the most recent general election. (P30)'
                   ],
@@ -7999,7 +7999,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The best speaker running the election campaign'],
                       ['text' => 'Someone to become the premier of the Province'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2065,
                     'correct_answer' => 'A',
                     'explanation' => 'In a federal election, Canadians vote for a candidate they want to represent them in Parliament. Each electoral district elects one Member of Parliament (MP) to the House of Commons. (P30)'
                   ],
@@ -8011,7 +8011,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A geographical area represented by a member of the House of Commons'],
                       ['text' => 'The area where voting takes place in your locality'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2071,
                     'correct_answer' => 'C',
                     'explanation' => 'An electoral district in Canada is a specific geographical area represented by one Member of Parliament (MP) in the House of Commons. (P30)'
                   ],
@@ -8023,7 +8023,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canadian citizens who are 18 years old or older'],
                       ['text' => 'Canadian citizens'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2075,
                     'correct_answer' => 'C',
                     'explanation' => 'Canadian citizens who are 18 years old or older have the right to run as candidates in federal elections. (P30)'
                   ],
@@ -8035,7 +8035,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Prime Minister and the Cabinet ministers'],
                       ['text' => 'The Prime Minister and the House of Commons'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2079,
                     'correct_answer' => 'C',
                     'explanation' => 'The Cabinet in Canada consists of the Prime Minister and Cabinet ministers, who are appointed by the Prime Minister and are responsible for making significant governmental decisions. (P30)'
                   ],
@@ -8047,7 +8047,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Side parties'],
                       ['text' => 'Opposition parties'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2084,
                     'correct_answer' => 'D',
                     'explanation' => 'Opposition parties in Canada are those political parties that are not in power. The largest opposition party is known as the Official Opposition. (P30)'
                   ],
@@ -8059,7 +8059,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The party in power that holds at least half of the seats in the Senate and the House of Commons'],
                       ['text' => 'The party in power that holds at least half of the seats in the House of Commons'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2088,
                     'correct_answer' => 'D',
                     'explanation' => 'A majority government in Canada refers to the situation where the party in power holds more than half of the seats in the House of Commons, allowing it to pass legislation without relying on support from other parties. (P31)'
                   ],
@@ -8071,7 +8071,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'You cannot vote at all'],
                       ['text' => 'You can vote at the advance polls or by special ballot'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2092,
                     'correct_answer' => 'D',
                     'explanation' => 'If you are unable or choose not to vote on election day in Canada, you have the option to vote at advance polls or by special ballot. These options are provided to ensure accessibility for all eligible voters. (P32)'
                   ],
@@ -8083,7 +8083,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The citizens in his/her electoral district, as well as all Canadians'],
                       ['text' => 'The Provincial and Territorial governments'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2095,
                     'correct_answer' => 'C',
                     'explanation' => 'A member of Parliament (MP) in Canada represents the citizens of their electoral district in the House of Commons. MPs are elected to represent their constituents and to work on behalf of all Canadians. (P30)'
                   ],
@@ -8095,7 +8095,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Federal Act'],
                       ['text' => 'The French North American Act'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2097,
                     'correct_answer' => 'A',
                     'explanation' => 'The Constitution Act, 1867, was originally known as the British North America Act, 1867. This legislation established the framework of governance for Canada and defined the division of powers between the federal and provincial governments. (P34)'
                   ],
@@ -8115,7 +8115,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Highways'],
                       ['text' => 'Foreign Policy'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2104,
                     'correct_answer' => 'D',
                     'explanation' => 'In Canada, the federal government is responsible for matters of national and international concern, including foreign policy. Provincial and territorial governments handle areas like natural resources, property and civil rights, and highways.'
                   ],
@@ -8127,7 +8127,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Main Parliament'],
                       ['text' => 'Member of Parliament'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2108,
                     'correct_answer' => 'D',
                     'explanation' => 'An MP stands for Member of Parliament. Each electoral district in Canada elects one MP to represent them in the federal House of Commons.'
                   ],
@@ -8139,7 +8139,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nothing'],
                       ['text' => 'The voter information card'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2109,
                     'correct_answer' => 'A',
                     'explanation' => 'To vote on election day in Canada, you should bring your voter information card and proof of your identity and address.'
                   ],
@@ -8151,7 +8151,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'No ballot gets counted for 24 hours'],
                       ['text' => 'No ballot gets counted for 48 hours'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2113,
                     'correct_answer' => 'A',
                     'explanation' => 'When the polls close on election day in Canada, every ballot is counted and the results are made public. The results can be viewed on television or on the Elections Canada website.'
                   ],
@@ -8163,7 +8163,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Members of the House of Assembly'],
                       ['text' => 'Members of the Honourable Assembly'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2119,
                     'correct_answer' => 'C',
                     'explanation' => 'MHA stands for Members of the House of Assembly. This term is used in some provinces in Canada to refer to elected provincial representatives.'
                   ],
@@ -8175,7 +8175,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'By making decisions alone'],
                       ['text' => 'In accordance with the British Constitution only'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2121,
                     'correct_answer' => 'A',
                     'explanation' => 'As a constitutional monarchy, Canada’s Head of State (the King or Queen) reigns in accordance with the Constitution, which upholds the rule of law.'
                   ],
@@ -8187,7 +8187,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'They are elected by landowners and police chiefs'],
                       ['text' => 'They are appointed by the United Nations'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2125,
                     'correct_answer' => 'A',
                     'explanation' => 'Members of Parliament (MPs) in Canada are elected by voters in their respective electoral districts (constituencies) to represent them in the federal House of Commons.'
                   ],
@@ -8199,7 +8199,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'You can only vote online'],
                       ['text' => 'You cannot vote'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2129,
                     'correct_answer' => 'A',
                     'explanation' => 'If you do not receive a voter information card during an election period in Canada, you should contact your local elections office or Elections Canada in Ottawa to ensure that you are on the voters\' list.'
                   ],
@@ -8211,7 +8211,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A geographical area represented by a member of Parliament'],
                       ['text' => 'The building in which the voting poll is located'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2135,
                     'correct_answer' => 'C',
                     'explanation' => 'An electoral district in Canada is a specific geographical area represented by one Member of Parliament (MP) in the federal House of Commons.'
                   ],
@@ -8223,7 +8223,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1867'],
                       ['text' => '1749'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2139,
                     'correct_answer' => 'C',
                     'explanation' => 'The responsibilities of the federal and provincial governments in Canada were defined in 1867 in the British North America Act, which is now known as the Constitution Act, 1867.'
                   ],
@@ -8235,7 +8235,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Prepare the budget and propose most new laws'],
                       ['text' => 'Education'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2141,
                     'correct_answer' => 'C',
                     'explanation' => 'In Canada, the Cabinet is responsible for preparing the budget and proposing most new laws. Cabinet decisions can be questioned by all members of the House of Commons.'
                   ],
@@ -8247,7 +8247,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Member of Politics'],
                       ['text' => 'Member of Parliament'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2148,
                     'correct_answer' => 'D',
                     'explanation' => 'MP stands for Member of Parliament in Canadian politics. Each MP represents an electoral district (constituency) in the federal House of Commons.'
                   ],
@@ -8259,7 +8259,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Emergency Services'],
                       ['text' => 'Social and Community Health'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2150,
                     'correct_answer' => 'B',
                     'explanation' => 'Municipal elected officials in Canada are responsible for areas like transportation and utilities, emergency services, and social and community health. Citizenship matters are typically handled at the federal level.'
                   ],
@@ -8271,7 +8271,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Governor Generals'],
                       ['text' => 'Electorate College'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2154,
                     'correct_answer' => 'B',
                     'explanation' => 'Elected officials on the federal level in Canada are called Members of Parliament (MPs). Each MP represents an electoral district (constituency) in the federal House of Commons.'
                   ],
@@ -8283,7 +8283,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Fold it and present it to the poll officials'],
                       ['text' => 'Leave it on the table'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2159,
                     'correct_answer' => 'C',
                     'explanation' => 'On election day in Canada, once you mark your ballot behind the screen, you should fold it and present it to the poll officials. Your vote is secret and confidential.'
                   ],
@@ -8296,7 +8296,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Senators'],
                       ['text' => 'The Prime Minister'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2162,
                     'correct_answer' => 'B',
                     'explanation' => 'As a constitutional monarchy, Canada’s Head of State is a hereditary Sovereign (Queen or King), who reigns in accordance with the Constitution: the rule of law.'
                   ],
@@ -8308,7 +8308,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The party in power that holds at least half of the seats in the Senate and the House of Commons'],
                       ['text' => 'The party in power that holds at least half of the seats in the House of Commons'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2168,
                     'correct_answer' => 'D',
                     'explanation' => 'In Canadian politics, a majority government refers to the situation where the governing party holds at least half of the seats in the House of Commons. This allows them to pass legislation without relying on the support of other parties.'
                   ],
@@ -8320,7 +8320,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'You cannot vote at all'],
                       ['text' => 'You can vote at the advance polls or by special ballot'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2172,
                     'correct_answer' => 'D',
                     'explanation' => 'If you cannot or do not wish to vote on election day in Canada, you have the option to vote at the advance polls or by special ballot. Details about dates and locations for these options are provided on your voter information card.'
                   ],
@@ -8332,7 +8332,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The citizens in his/her electoral district, as well as all Canadians'],
                       ['text' => 'The Provincial and Territorial governments'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2175,
                     'correct_answer' => 'C',
                     'explanation' => 'A member of Parliament (MP) in Canada represents the citizens in his/her electoral district (constituency), as well as all Canadians. They are elected to the House of Commons to represent the interests of their constituents at the federal level.'
                   ],
@@ -8344,7 +8344,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Federal Act'],
                       ['text' => 'The French North American Act'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2177,
                     'correct_answer' => 'A',
                     'explanation' => 'The responsibilities of the federal and provincial governments in Canada were defined in 1867 in the British North America Act. This act is now known as the Constitution Act, 1867, which forms the basis of Canada\'s constitutional framework.'
                   ],
@@ -8364,7 +8364,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'In your local Member of Parliament\'s office'],
                       ['text' => 'On your ballot'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2182,
                     'correct_answer' => 'B',
                     'explanation' => 'To vote either on election day or at advance polls, go to the polling station listed on your voter information card.'
                   ],
@@ -8376,7 +8376,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Announced on television'],
                       ['text' => 'Announced in the newspaper'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2186,
                     'correct_answer' => 'B',
                     'explanation' => 'Immediately after the polling stations close, election officers count the ballots and the results are announced on radio and television, and in the newspapers.'
                   ],
@@ -8388,7 +8388,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'If a majority of the members of the House of Commons vote against a major government decision'],
                       ['text' => 'If the Governor General resigns'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2191,
                     'correct_answer' => 'C',
                     'explanation' => 'If a majority of the members of the House of Commons vote against a major government decision, the party in power is defeated, which usually results in the Prime Minister asking the Governor General, on behalf of the Sovereign, to call an election.'
                   ],
@@ -8400,7 +8400,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ten'],
                       ['text' => 'Two'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2194,
                     'correct_answer' => 'B',
                     'explanation' => 'The Sovereign is represented in Canada by the Governor General, who is appointed by the Sovereign on the advice of the Prime Minister, usually for five years.'
                   ],
@@ -8412,7 +8412,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '196'],
                       ['text' => '308'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2200,
                     'correct_answer' => 'D',
                     'explanation' => 'Canada is divided into 308 electoral districts, also known as ridings or constituencies. An electoral district is a geographical area represented by a member of Parliament (MP).'
                   ],
@@ -8424,7 +8424,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'They are responsible for running the House of Commons'],
                       ['text' => 'They are responsible for running the federal government departments'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2204,
                     'correct_answer' => 'D',
                     'explanation' => 'Cabinet ministers are responsible for running the federal government departments. The Prime Minister and the Cabinet ministers make important decisions about how the country is governed.'
                   ],
@@ -8436,7 +8436,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The leader of the political party with the most seats in the House of Commons'],
                       ['text' => 'The members of Parliament'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2207,
                     'correct_answer' => 'C',
                     'explanation' => 'Ordinarily, after an election, the leader of the political party with the most seats in the House of Commons is invited by the Governor General to form the government.'
                   ],
@@ -8448,7 +8448,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'As long as they have the support or confidence of the majority of the MPs'],
                       ['text' => 'As long as they have the support of the senators'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2211,
                     'correct_answer' => 'C',
                     'explanation' => 'The Prime Minister and the party in power run the government as long as they have the support or confidence of the majority of the MPs.'
                   ],
@@ -8460,7 +8460,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Online'],
                       ['text' => 'By open ballot'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2214,
                     'correct_answer' => 'B',
                     'explanation' => 'Canadian law secures the right to a secret ballot. This means that no one can watch you vote and no one should look at how you voted.'
                   ],
@@ -8472,7 +8472,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Members of the National Assembly'],
                       ['text' => 'Major National Assembly'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2219,
                     'correct_answer' => 'C',
                     'explanation' => 'The members of the legislature are called members of the Legislative Assembly (MLAs), members of the National Assembly (MNAs), members of the Provincial Parliament (MPPs) or members of the House of Assembly (MHAs), depending on the province or territory.'
                   ],
@@ -8484,7 +8484,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'By mail'],
                       ['text' => 'None of the above'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2223,
                     'correct_answer' => 'C',
                     'explanation' => 'Once an election has been called, Elections Canada mails a voter information card to each elector whose name is in the National Register of Electors.'
                   ],
@@ -8496,7 +8496,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'In your pocket'],
                       ['text' => 'It should stay on the voting table'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2226,
                     'correct_answer' => 'B',
                     'explanation' => 'The poll official will tear off the ballot number and give your ballot back to you to deposit in the ballot box.'
                   ],
@@ -8508,7 +8508,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Policing'],
                       ['text' => 'Education'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2232,
                     'correct_answer' => 'D',
                     'explanation' => 'In our federal state, the federal government takes responsibility for matters of national and international concern. These include defence, foreign policy, interprovincial trade and communications, currency, navigation, criminal law and citizenship.'
                   ],
@@ -8520,7 +8520,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Municipal Legislative Assembly'],
                       ['text' => 'Members of the Legislative Assembly'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2236,
                     'correct_answer' => 'D',
                     'explanation' => 'The members of the legislature are called members of the Legislative Assembly (MLAs), members of the National Assembly (MNAs), members of the Provincial Parliament (MPPs) or members of the House of Assembly (MHAs), depending on the province or territory.'
                   ],
@@ -8532,7 +8532,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'They are elected by the people'],
                       ['text' => 'They are elected by the Prime Minister'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2239,
                     'correct_answer' => 'C',
                     'explanation' => 'The House of Commons is the representative chamber, made up of members of Parliament elected by the people, traditionally every four years.'
                   ],
@@ -8544,7 +8544,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Candidates'],
                       ['text' => 'Member'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2243,
                     'correct_answer' => 'C',
                     'explanation' => 'The people who run for office are called candidates. There can be many candidates in an electoral district.'
                   ],
@@ -8554,7 +8554,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'False'],
                       ['text' => 'True'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2246,
                     'correct_answer' => 'B',
                     'explanation' => 'Your vote is secret. You will be invited to go behind the screen to mark your ballot. Once marked, fold it and present it to the poll officials.'
                   ],
@@ -8566,7 +8566,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Queen'],
                       ['text' => 'The Senators'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2247,
                     'correct_answer' => 'A',
                     'explanation' => 'The Prime Minister chooses the ministers of the Crown, most of them from among members of the House of Commons.'
                   ],
@@ -8578,7 +8578,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canadian citizens who are 18 years old or older'],
                       ['text' => 'Canadian citizens'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2253,
                     'correct_answer' => 'C',
                     'explanation' => 'Canadian citizens who are 18 years old or older may run in a federal election. The people who run for office are called candidates. There can be many candidates in an electoral district.'
                   ],
@@ -8590,7 +8590,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Prime Minister and the Cabinet ministers'],
                       ['text' => 'The Prime Minister and the House of Commons'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2257,
                     'correct_answer' => 'C',
                     'explanation' => 'The Prime Minister and the Cabinet ministers are called the Cabinet and they make important decisions about how the country is governed.'
                   ],
@@ -8602,7 +8602,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Side parties'],
                       ['text' => 'Opposition parties'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2262,
                     'correct_answer' => 'D',
                     'explanation' => 'The other parties that are not in power are known as opposition parties. The opposition party with the most members of the House of Commons is the Official Opposition or Her/His Majesty’s Loyal Opposition.'
                   ],
@@ -8621,7 +8621,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Snow removal'],
                       ['text' => 'Natural Resources'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2265,
                     'correct_answer' => 'C',
                     'explanation' => 'Municipalities are normally responsible for urban or regional planning, streets and roads, sanitation (such as garbage removal), snow removal, firefighting, ambulance and other emergency services, recreation facilities, public transit and some local health and social services.'
                   ],
@@ -8633,7 +8633,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'First Nation senators'],
                       ['text' => 'Band chiefs and councillors'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2270,
                     'correct_answer' => 'D',
                     'explanation' => 'The First Nations have band chiefs and councillors who have major responsibilities on First Nations reserves, including housing, schools and other services.'
                   ],
@@ -8645,7 +8645,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Go to your polling station'],
                       ['text' => 'Go to the nearest Election Canada\'s office'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2273,
                     'correct_answer' => 'C',
                     'explanation' => 'Go to your polling station. The location is on your voter information card. Bring this card and proof of your identity and address to the polling station.'
                   ],
@@ -8657,7 +8657,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Only on the Elections Canada website'],
                       ['text' => 'Only on television'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2276,
                     'correct_answer' => 'B',
                     'explanation' => 'You can see the results on television or on the Elections Canada website (www.elections.ca).'
                   ],
@@ -8669,7 +8669,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Conservative Party, Liberal Party and New Royal Party'],
                       ['text' => 'Conservative Party, Liberal Party and New Democratic Party'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2282,
                     'correct_answer' => 'D',
                     'explanation' => 'There are three major political parties currently represented in the House of Commons: the Conservative Party, the New Democratic Party, and the Liberal Party.'
                   ],
@@ -8681,7 +8681,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A database of Canadian citizens 18 years of age or older who are qualified to vote in federal elections and referendums'],
                       ['text' => 'A database of Canadian citizens 18 years of age or older who are qualified to run as a candidate in federal elections'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2285,
                     'correct_answer' => 'C',
                     'explanation' => 'The voters’ lists used during federal elections and referendums are produced from the National Register of Electors by a neutral agency of Parliament called Elections Canada.'
                   ],
@@ -8691,7 +8691,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'False'],
                       ['text' => 'True'],
                     ],
-                    'correct_answer' => 'B',
+                    'correct_answer' => '2288',
                     'explanation' => 'The people who run for office are called candidates. There can be many candidates in an electoral district.'
                   ],
                   [
@@ -8702,7 +8702,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'To peacefully oppose or try to improve government proposals'],
                       ['text' => 'To approve the leader party\'s bills'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2291,
                     'correct_answer' => 'C',
                     'explanation' => 'The role of opposition parties is to peacefully oppose or try to improve government proposals.'
                   ],
@@ -8714,7 +8714,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Senate only'],
                       ['text' => 'Only certain members of the House of Commons'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2294,
                     'correct_answer' => 'B',
                     'explanation' => 'The Prime Minister and the Cabinet ministers are called the Cabinet and they make important decisions about how the country is governed. They prepare the budget and propose most new laws. Their decisions can be questioned by all members of the House of Commons.'
                   ],
@@ -8726,7 +8726,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sanitation'],
                       ['text' => 'Education'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2299,
                     'correct_answer' => 'C',
                     'explanation' => 'Municipalities are normally responsible for urban or regional planning, streets and roads, sanitation (such as garbage removal), snow removal, firefighting, ambulance and other emergency services, recreation facilities, public transit and some local health and social services.'
                   ],
@@ -8738,7 +8738,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'You own a property in Canada'],
                       ['text' => 'You are a landed immigrant'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2302,
                     'correct_answer' => 'B',
                     'explanation' => 'One of the privileges of Canadian citizenship is the right to vote. You are eligible to vote in a federal election or cast a ballot in a federal referendum if you are: a Canadian citizen; and at least 18 years old on voting day; and on the voters’ list.'
                   ],
@@ -8748,7 +8748,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'False'],
                       ['text' => 'True'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2305,
                     'correct_answer' => 'A',
                     'explanation' => 'Provincial, territorial and municipal elections are held by secret ballot, but the rules are not the same as those for federal elections. It is important to find out the rules for voting in provincial, territorial and local elections so that you can exercise your right to vote.'
                   ],
@@ -8760,7 +8760,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Civil Rights'],
                       ['text' => 'Emergency services'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2309,
                     'correct_answer' => 'C',
                     'explanation' => 'Municipalities are normally responsible for urban or regional planning, streets and roads, sanitation (such as garbage removal), snow removal, firefighting, ambulance and other emergency services, recreation facilities, public transit and some local health and social services.'
                   ],
@@ -8772,7 +8772,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'City laws'],
                       ['text' => 'Municipal laws'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2311,
                     'correct_answer' => 'A',
                     'explanation' => 'Municipal governments usually have a council that passes laws called “by-laws” that affect only the local community.'
                   ],
@@ -8784,7 +8784,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Side Opposition'],
                       ['text' => 'The Outside Opposition or Her Majesty\'s Loyal Opposition'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2316,
                     'correct_answer' => 'B',
                     'explanation' => 'The opposition party with the most members of the House of Commons is the Official Opposition or Her Majesty’s Loyal Opposition.'
                   ],
@@ -8796,7 +8796,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Prime Minister must resign from his party'],
                       ['text' => 'The Prime Minister asks the Governor General, on behalf of the Sovereign, to call an election'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2322,
                     'correct_answer' => 'D',
                     'explanation' => 'If a majority of the members of the House of Commons vote against a major government decision, the party in power is defeated, which usually results in the Prime Minister asking the Governor General, on behalf of the Sovereign, to call an election.'
                   ],
@@ -8808,7 +8808,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'National Defence'],
                       ['text' => 'Civil Rights'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2325,
                     'correct_answer' => 'C',
                     'explanation' => 'In our federal state, the federal government takes responsibility for matters of national and international concern. These include defence, foreign policy, interprovincial trade and communications, currency, navigation, criminal law and citizenship.'
                   ],
@@ -8820,7 +8820,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'You must not tell anyone who you voted for'],
                       ['text' => 'You can only show your ballot to one person'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2328,
                     'correct_answer' => 'B',
                     'explanation' => 'You may choose to discuss how you voted with others, but no one, including family members, your employer or union representative, has the right to insist that you tell them how you voted.'
                   ],
@@ -8832,7 +8832,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The party in power that holds less than half of the seats in the Senate'],
                       ['text' => 'The party in power that holds at least half of the seats in the House of Commons'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2332,
                     'correct_answer' => 'B',
                     'explanation' => 'If the party in power holds at least half of the seats in the House of Commons, this is called a majority government. If the party in power holds less than half of the seats in the House of Commons, this is called a minority government.'
                   ],
@@ -8844,7 +8844,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A list with all the election candidates'],
                       ['text' => 'A card that confirms that your name is on the voters\' list and states when and where you vote'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2338,
                     'correct_answer' => 'D',
                     'explanation' => 'Electors whose information is in the National Register of Electors will receive a voter information card. This confirms that your name is on the voters’ list and states when and where you vote.'
                   ],
@@ -8856,7 +8856,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Electives Canada'],
                       ['text' => 'Voters Canada'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2340,
                     'correct_answer' => 'B',
                     'explanation' => 'The voters’ lists used during federal elections and referendums are produced from the National Register of Electors by a neutral agency of Parliament called Elections Canada.'
                   ],
@@ -8868,7 +8868,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The responsibilities of the federal and provincial governments are constitutional'],
                       ['text' => 'The Sovereign (Queen or King) has the constitutional rights to make laws in Canada'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2344,
                     'correct_answer' => 'B',
                     'explanation' => 'As a constitutional monarchy, Canada’s Head of State is a hereditary Sovereign (Queen or King), who reigns in accordance with the Constitution: the rule of law.'
                   ],
@@ -8880,7 +8880,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Monitoring expenditures, and keeping the government accountable'],
                       ['text' => 'Matters of international concern'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2348,
                     'correct_answer' => 'B',
                     'explanation' => 'In Canada’s parliamentary democracy, the people elect members to the House of Commons in Ottawa and to the provincial and territorial legislatures. These representatives are responsible for passing laws, approving and monitoring expenditures, and keeping the government accountable.'
                   ],
@@ -8892,7 +8892,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The province'],
                       ['text' => 'The local community'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2354,
                     'correct_answer' => 'D',
                     'explanation' => 'Municipal governments usually have a council that passes laws called “by-laws” that affect only the local community. The council usually includes a mayor (or a reeve) and councillors or aldermen.'
                   ],
@@ -8904,7 +8904,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'An "X"'],
                       ['text' => 'The party\'s name'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2357,
                     'correct_answer' => 'C',
                     'explanation' => 'Mark an “X” in the circle next to the name of the candidate of your choice.'
                   ],
@@ -8916,7 +8916,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'You can still be added to the voters\' list at any time, excluding election day'],
                       ['text' => 'You won\'t be able to vote'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2359,
                     'correct_answer' => 'A',
                     'explanation' => 'Even if you choose not to be listed in the National Register of Electors or do not receive a voter information card, you can still be added to the voters’ list at any time, including on election day.'
                   ],
@@ -8928,7 +8928,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Senator'],
                       ['text' => 'Governor General'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2364,
                     'correct_answer' => 'B',
                     'explanation' => 'Ordinarily, after an election, the leader of the political party with the most seats in the House of Commons is invited by the Governor General to form the government.'
                   ],
@@ -9254,7 +9254,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Apply for financial aid from the government to pay for legal fees'],
                       ['text' => 'Do not go to a court'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2368,
                     'correct_answer' => 'B',
                     'explanation' => 'If you cannot pay for a lawyer, in most communities there are legal aid services available free of charge or at a low cost.'
                   ],
@@ -9266,7 +9266,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Federal'],
                       ['text' => 'Senators'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2372,
                     'correct_answer' => 'B',
                     'explanation' => 'Municipal governments usually have a council that passes laws called “by-laws” that affect only the local community.'
                   ],
@@ -9278,7 +9278,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'a trial court'],
                       ['text' => 'a Provincial Court'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2376,
                     'correct_answer' => 'B',
                     'explanation' => 'There are small claims courts for civil cases involving small sums of money.'
                   ],
@@ -9290,7 +9290,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Everyone is innocent until proven guilty'],
                       ['text' => 'The judge can determine who is guilty without evidence'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2381,
                     'correct_answer' => 'C',
                     'explanation' => 'The Canadian justice system is founded on the presumption of innocence in criminal matters, meaning everyone is innocent until proven guilty.'
                   ],
@@ -9302,7 +9302,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'the courts enforce laws and the police settle disputes'],
                       ['text' => 'the court settled disputes and the police enforce the laws'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2386,
                     'correct_answer' => 'D',
                     'explanation' => 'The courts settle disputes and the police enforce the laws in the Canadian justice system.'
                   ],
@@ -9314,7 +9314,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'the Provincial Court'],
                       ['text' => 'the small claims courts'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2387,
                     'correct_answer' => 'A',
                     'explanation' => 'In most provinces, there is an appeal court and a trial court, sometimes called the Court of Queen’s Bench or the Supreme Court.'
                   ],
@@ -9326,7 +9326,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'our judicial system is founded on the presumption of innocence in criminal matters'],
                       ['text' => 'None of these'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2391,
                     'correct_answer' => 'A',
                     'explanation' => 'The blindfolded Lady Justice symbolizes the impartial manner in which our laws are administered: blind to all considerations but the facts.'
                   ],
@@ -9338,7 +9338,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Freedom of thought belief opinion, and expression'],
                       ['text' => 'To guarantee the due legal process under the law'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2398,
                     'correct_answer' => 'D',
                     'explanation' => 'The Canadian justice system guarantees everyone due process under the law, founded on the presumption of innocence in criminal matters.'
                   ],
@@ -9350,7 +9350,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Rule of law'],
                       ['text' => 'All of the above'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2402,
                     'correct_answer' => 'D',
                     'explanation' => 'Canada’s legal system is based on a heritage that includes the rule of law, freedom under the law, democratic principles, and due process.'
                   ],
@@ -9362,7 +9362,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'the Supreme Court'],
                       ['text' => 'the federal court'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2405,
                     'correct_answer' => 'C',
                     'explanation' => 'The Supreme Court of Canada is our country’s highest court.'
                   ],
@@ -9374,7 +9374,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The impartial manner in which the laws are administered'],
                       ['text' => 'None of these'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2407,
                     'correct_answer' => 'A',
                     'explanation' => 'Due process is the principle that the government must respect all the legal rights a person is entitled to under the law.'
                   ],
@@ -9386,7 +9386,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Members of parliament'],
                       ['text' => 'The police'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2412,
                     'correct_answer' => 'B',
                     'explanation' => 'Lawyers can help you with legal problems and act for you in court.'
                   ],
@@ -9398,7 +9398,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Quick process under the law'],
                       ['text' => 'Arbitrary process under the law'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2416,
                     'correct_answer' => 'B',
                     'explanation' => 'The Canadian justice system guarantees everyone due process under the law.'
                   ],
@@ -9410,7 +9410,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Member of Parliament'],
                       ['text' => 'Member of Politics'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2421,
                     'correct_answer' => 'C',
                     'explanation' => 'The citizens in each electoral district elect one MP who sits in the House of Commons to represent them.'
                   ],
@@ -9420,7 +9420,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'False'],
                       ['text' => 'True'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2424,
                     'correct_answer' => 'B',
                     'explanation' => 'The police in Canada are there to help you.'
                   ],
@@ -9432,7 +9432,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'To keep people safe and to enforce the law'],
                       ['text' => 'To provide National Security data to the Federal government'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2427,
                     'correct_answer' => 'C',
                     'explanation' => 'The role of the police in Canada is to keep people safe and to enforce the law.'
                   ],
@@ -9444,7 +9444,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Some people are innocent until proven otherwise'],
                       ['text' => 'Everyone is innocent until proven guilty'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2432,
                     'correct_answer' => 'D',
                     'explanation' => 'The Canadian justice system guarantees everyone due process under the law. Our judicial system is founded on the presumption of innocence in criminal matters, meaning everyone is innocent until proven guilty.'
                   ],
@@ -9456,7 +9456,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'None of the above'],
                       ['text' => 'Judges'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2435,
                     'correct_answer' => 'C',
                     'explanation' => 'The law applies to everyone. No one is above the law in Canada.'
                   ],
@@ -9468,7 +9468,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A Canadian citizen, at least 18 years old on voting day and on the voters\' list'],
                       ['text' => 'An adult Canadian citizen'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2439,
                     'correct_answer' => 'C',
                     'explanation' => 'One of the privileges of Canadian citizenship is the right to vote. You are eligible to vote in a federal election or cast a ballot in a federal referendum if you are:
                                 - a Canadian citizen; and
@@ -9483,7 +9483,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Governor General'],
                       ['text' => 'The MP'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2444,
                     'correct_answer' => 'D',
                     'explanation' => 'The people in each electoral district vote for the candidate and political party of their choice. The candidate who receives the most votes becomes the MP for that electoral district.'
                   ],
@@ -9502,7 +9502,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Serve as the provincial police in all provinces and territories except Ontario and Quebec'],
                       ['text' => 'Enforce federal laws throughout Canada'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2445,
                     'correct_answer' => 'A',
                     'explanation' => 'The Royal Canadian Mounted Police (RCMP) enforce federal laws throughout Canada, and serve as the provincial police in all provinces and territories except Ontario and Quebec, as well as in some municipalities.'
                   ],
@@ -9514,7 +9514,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A person to become the Premier of Canada'],
                       ['text' => 'The people they want to represent them in the House of Commons'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2452,
                     'correct_answer' => 'D',
                     'explanation' => 'Canadians vote in elections for the people they want to represent them in the House of Commons. In each election, voters may re-elect the same members of the House of Commons or choose new ones.'
                   ],
@@ -9526,7 +9526,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Many'],
                       ['text' => 'Three'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2455,
                     'correct_answer' => 'C',
                     'explanation' => 'The people who run for office are called candidates. There can be many candidates in an electoral district.'
                   ],
@@ -9538,7 +9538,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Go to University'],
                       ['text' => 'Drive a car'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2457,
                     'correct_answer' => 'A',
                     'explanation' => 'One of the privileges of Canadian citizenship is the right to vote. You are eligible to vote in a federal election or cast a ballot in a federal referendum if you are:
                                 - a Canadian citizen; and
@@ -9553,7 +9553,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Put more people in jail'],
                       ['text' => 'Express the values and beliefs of Canadians'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2463,
                     'correct_answer' => 'C',
                     'explanation' => 'Our laws are intended to provide order in society and a peaceful way to settle disputes, and to express the values and beliefs of Canadians.'
                   ],
@@ -9565,7 +9565,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Quebec'],
                       ['text' => 'Ontario and Quebec'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2468,
                     'correct_answer' => 'D',
                     'explanation' => 'The Royal Canadian Mounted Police (RCMP) enforce federal laws throughout Canada, and serve as the provincial police in all provinces and territories except Ontario and Quebec, as well as in some municipalities.'
                   ],
@@ -9577,7 +9577,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'By the people'],
                       ['text' => 'By elected representatives'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2472,
                     'correct_answer' => 'D',
                     'explanation' => 'Canada is governed by an organized system of laws. These laws are the written rules intended to guide people in our society. They are made by elected representatives.'
                   ],
@@ -9589,7 +9589,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'When and where to vote'],
                       ['text' => 'The elector\'s name'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2474,
                     'correct_answer' => 'B',
                     'explanation' => 'Once an election has been called, Elections Canada mails a voter information card to each elector whose name is in the National Register of Electors. The card lists when and where you vote and the number to call if you require an interpreter or other special services.'
                   ],
@@ -9601,7 +9601,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Randomly, it depends on the judge\'s personal opinion'],
                       ['text' => 'Only by the police'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2478,
                     'correct_answer' => 'B',
                     'explanation' => 'Justice in Canada is like the blindfolded Lady Justice. It symbolizes the impartial manner in which our laws are administered: blind to all considerations but the facts.'
                   ],
@@ -9613,7 +9613,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Go to the Police'],
                       ['text' => 'Borrow money from the government'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2482,
                     'correct_answer' => 'B',
                     'explanation' => 'Lawyers can help you with legal problems and act for you in court. If you cannot pay for a lawyer, in most communities there are legal aid services available free of charge or at a low cost.'
                   ],
@@ -9625,7 +9625,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Electors who own a house'],
                       ['text' => 'Electors who are 18 years or older'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2485,
                     'correct_answer' => 'A',
                     'explanation' => 'Once an election has been called, Elections Canada mails a voter information card to each elector whose name is in the National Register of Electors.'
                   ],
@@ -9637,7 +9637,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Roy\'s Corona Military Police'],
                       ['text' => 'Royal California Miller Protection'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2490,
                     'correct_answer' => 'B',
                     'explanation' => 'Today, the Royal Canadian Mounted Police (RCMP or “the Mounties”) are the national police force and one of Canada’s best-known symbols.'
                   ],
@@ -9649,7 +9649,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The rules intended to punish people whenever possible'],
                       ['text' => 'The oral rules intended to guide people in our society'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2493,
                     'correct_answer' => 'A',
                     'explanation' => 'Canada is governed by an organized system of laws. These laws are the written rules intended to guide people in our society.'
                   ],
@@ -9767,7 +9767,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'God Save the King (or Queen)'],
                       ['text' => 'Oh Canada'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2499,
                     'correct_answer' => 'C',
                     'explanation' => 'The Royal Anthem of Canada, “God Save the King (or Queen)”, can be played or sung on any occasion when Canadians wish to honour the Sovereign. (P40)'
                   ],
@@ -9779,7 +9779,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'To provide National Security intelligence to the government'],
                       ['text' => 'To conduct or support land Warfare, peacekeeping, or humanitarian missions'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2502,
                     'correct_answer' => 'B',
                     'explanation' => 'The police are there to keep people safe and to enforce the law. (P37)'
                   ],
@@ -9791,7 +9791,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'English and French'],
                       ['text' => 'Mandarin and English'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2507,
                     'correct_answer' => 'C',
                     'explanation' => 'English and French are the two official languages and are important symbols of identity. (P39)'
                   ],
@@ -9803,7 +9803,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A national motto, A mari usque Ad Mare, which, in Latin, means “from sea to sea”.'],
                       ['text' => 'The crown reflects the Greco-Roman heritage of Western civilization in which democracy originated'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2509,
                     'correct_answer' => 'A',
                     'explanation' => 'The Crown is a symbol of government, including Parliament, the legislatures, the courts, police services and the Canadian Forces. (P38)'
                   ],
@@ -9815,7 +9815,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'From land to Sea'],
                       ['text' => 'From sea to sea'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2516,
                     'correct_answer' => 'D',
                     'explanation' => 'A Mari Usque Ad Mare, which in Latin means “from sea to sea”. (P38)'
                   ],
@@ -9827,7 +9827,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Green and white'],
                       ['text' => 'Red and blue'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2518,
                     'correct_answer' => 'B',
                     'explanation' => 'The red-white-red pattern comes from the flag of the Royal Military College, Kingston, founded in 1876. (P38)'
                   ],
@@ -9839,7 +9839,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canada won a gold medal in 2008\'s Olympics in this event'],
                       ['text' => 'None of these'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2522,
                     'correct_answer' => 'B',
                     'explanation' => 'Hockey is Canada’s most popular spectator sport and is considered to be the national winter sport. (P39)'
                   ],
@@ -9851,7 +9851,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Boxing Day'],
                       ['text' => 'Canada Day'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2527,
                     'correct_answer' => 'C',
                     'explanation' => 'Boxing Day is celebrated on the 26th of December. (P41)'
                   ],
@@ -9863,7 +9863,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Hockey'],
                       ['text' => 'Golf'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2531,
                     'correct_answer' => 'C',
                     'explanation' => 'Hockey is Canada’s most popular spectator sport and is considered to be the national winter sport. (P39)'
                   ],
@@ -9875,7 +9875,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1949'],
                       ['text' => '1892'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2534,
                     'correct_answer' => 'B',
                     'explanation' => 'A new Canadian flag was raised for the first time in 1965. (P38)'
                   ],
@@ -9887,7 +9887,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'People who do not speak English as a first language'],
                       ['text' => 'People speaking English as a first language'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2540,
                     'correct_answer' => 'D',
                     'explanation' => 'English speakers (Anglophones) and French speakers (Francophones) have lived together in partnership and creative tension for more than 300 years. (P39)'
                   ],
@@ -9899,7 +9899,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The official summer sport'],
                       ['text' => 'The most popular sport in Canada'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2543,
                     'correct_answer' => 'C',
                     'explanation' => 'Lacrosse, an ancient sport first played by Aboriginals, is the official summer sport. (P39)'
                   ],
@@ -9911,7 +9911,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Victoria medal'],
                       ['text' => 'Victoria Cross'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2548,
                     'correct_answer' => 'D',
                     'explanation' => 'The Victoria Cross (V.C.) is the highest honour available to Canadians and is awarded for the most conspicuous bravery, a daring or pre-eminent act of valour or self-sacrifice, or extreme devotion to duty in the presence of the enemy. (P41)'
                   ],
@@ -9923,7 +9923,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The first Monday of September'],
                       ['text' => 'The first Monday of July'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2549,
                     'correct_answer' => 'A',
                     'explanation' => 'Canada celebrates Thanksgiving on the second Monday of October. (P41)'
                   ],
@@ -9935,7 +9935,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The national flag'],
                       ['text' => 'The snowbirds'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2554,
                     'correct_answer' => 'B',
                     'explanation' => 'The Crown is a symbol of government, including Parliament, the legislatures, the courts, police services and the Canadian Forces. (P38)'
                   ],
@@ -9947,7 +9947,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '2'],
                       ['text' => '1222'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2557,
                     'correct_answer' => 'A',
                     'explanation' => 'The Victoria Cross (V.C.) has been awarded to 96 Canadians since 1854 for acts of valour. (P41)'
                   ],
@@ -9959,7 +9959,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The beaver'],
                       ['text' => 'The snowbird'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2563,
                     'correct_answer' => 'C',
                     'explanation' => 'The beaver is an official symbol of Canada, appearing on coins and various coats of arms. (P39)'
                   ],
@@ -9971,7 +9971,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '22nd of November'],
                       ['text' => '2nd of November'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2566,
                     'correct_answer' => 'B',
                     'explanation' => 'Sir Wilfred Laurier Day is celebrated on the 20th of November. (P41)'
                   ],
@@ -9983,7 +9983,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'In the Parliament of Canada'],
                       ['text' => 'At the city hall'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2571,
                     'correct_answer' => 'C',
                     'explanation' => 'English and French have equal status in the Parliament of Canada, as per the Official Languages Act of 1969. (P39)'
                   ],
@@ -9995,7 +9995,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Any adult applicants who are 55 years of age and over'],
                       ['text' => 'Any adult applicants who are 55 years of age and under'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2575,
                     'correct_answer' => 'C',
                     'explanation' => 'Adult applicants who are 55 years of age and over are exempted from the requirement of adequate knowledge of English or French to become a Canadian citizen. (P39)'
                   ],
@@ -10014,7 +10014,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'White with a red border on each end and a red maple leaf in the center'],
                       ['text' => 'Red and white with provincial emblems'],
                     ],
-                    'correctAnswerId' => 22,
+                    'correctAnswerId' => 2579,
                     'correct_answer' => 'C',
                     'explanation' => 'The Canadian flag is white with a red border on each end and a red maple leaf in the center. (P38)'
                   ],
@@ -10026,7 +10026,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'RCMP, the national police force and one of Canada\'s best-known symbols'],
                       ['text' => 'Canada is a constitutional monarchy'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2584,
+
                     'explanation' => 'The Canadian Crown symbolizes Canada as a constitutional monarchy. It has been a symbol of the state in Canada for 400 years. (P38)'
                   ],
                   [
@@ -10037,7 +10038,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Best innovation of the year'],
                       ['text' => 'A Canadian showing conspicuous bravery or self-sacrifice'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2588,
                     'explanation' => 'The Victoria Cross (V.C.) is awarded to Canadians showing conspicuous bravery or self-sacrifice. It is the highest honour available. (P41)'
                   ],
                   [
@@ -10048,7 +10049,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Curling'],
                       ['text' => 'Basketball'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2590,
                     'explanation' => 'Soccer has the most registered players of any game in Canada. (P39)'
                   ],
                   [
@@ -10059,7 +10060,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The snowbirds'],
                       ['text' => 'The arms'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 2595,
                     'explanation' => 'The Snowbirds (431 Air Demonstration Squadron) are considered a Canadian icon. (P38)'
                   ],
                   [
@@ -10070,7 +10071,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'O Canada! Our home and native land!'],
                       ['text' => 'O Canada, we stand on guard for thee!'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2600,
                     'explanation' => 'The last line of Canada\'s national anthem "O Canada" is "O Canada, we stand on guard for thee!" (P40)'
                   ],
                   [
@@ -10081,7 +10082,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Red maple leaves'],
                       ['text' => 'All of the above'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2604,
                     'explanation' => 'The arms on Canadian dollar bills contain symbols of England, France, Scotland, and Ireland, as well as red maple leaves. (P38)'
                   ],
                   [
@@ -10092,7 +10093,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'People who are learning French'],
                       ['text' => 'People speaking French as a secondary language'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2605,
                     'explanation' => 'Francophones are people who speak French as their first language. (P39)'
                   ],
                   [
@@ -10103,7 +10104,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Oh Canada'],
                       ['text' => 'Great Canada'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2610,
                     'explanation' => '"O Canada" was proclaimed as Canada\'s national anthem in 1980. It was first sung in Québec City in 1880. (P40)'
                   ],
                   [
@@ -10114,7 +10115,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The 1st of May'],
                       ['text' => 'The 3rd Monday of October'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2614,
                     'explanation' => 'Labor Day is celebrated in Canada on the first Monday of September. (P41)'
                   ],
                   [
@@ -10125,7 +10126,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Hockey'],
                       ['text' => 'Basketball'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 2619,
                     'explanation' => 'Hockey is Canada\'s most popular spectator sport and is considered to be the national winter sport. (P39)'
                   ],
                   [
@@ -10136,7 +10137,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Korean War'],
                       ['text' => 'The Battle of the Plains of Abraham'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2621,
                     'explanation' => 'The Peace Tower was completed in 1927 in memory of the First World War. (P39)'
                   ],
                   [
@@ -10147,7 +10148,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canadian Languages Act'],
                       ['text' => 'Official English Act'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2626,
                     'explanation' => 'The rights of Canadians regarding official languages are protected by the Canadian Constitution and the Official Languages Act. (P39)'
                   ],
                   [
@@ -10158,7 +10159,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1865'],
                       ['text' => '1965'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2632,
+
                     'explanation' => 'The modern Canadian flag was first raised in 1965. The red-white-red pattern comes from the flag of the Royal Military College, Kingston, founded in 1876. (P38)'
                   ],
                   [
@@ -10169,7 +10171,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Someone has stolen something from you'],
                       ['text' => 'Your water pipes are leaking'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2636,
+
                     'explanation' => 'You can ask the police for help in situations such as accidents, assault, theft, or if you witness a crime. (P37)'
                   ],
                   [
@@ -10180,7 +10183,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The government'],
                       ['text' => 'The RCMP'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2637,
+
                     'explanation' => 'The Crown is a symbol of government in Canada, including Parliament, courts, police services, and the Canadian Forces. (P38)'
                   ],
                   [
@@ -10191,7 +10195,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'In the 1820s'],
                       ['text' => 'In the 1780s'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2642,
+
                     'explanation' => 'The Parliament buildings were completed in the 1860s. The Centre Block was destroyed by fire in 1916 and rebuilt in 1922. (P39)'
                   ],
                   [
@@ -10202,7 +10207,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1920'],
                       ['text' => '1980'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2648,
+
                     'explanation' => 'O Canada was proclaimed as the national anthem in 1980. It was first sung in Québec City in 1880. French and English Canadians sing different words to the national anthem. (P40)'
                   ],
                   [
@@ -10213,7 +10219,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The sacrifices of Canadian veterans and brave fallen in all wars'],
                       ['text' => 'The Canadian Victory in the war of 1812 against the United States'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2649,
+
                     'explanation' => 'Canadians celebrate the Sovereign’s birthday on Victoria Day, which falls on the Monday preceding May 25. (P41)'
                   ],
                   [
@@ -10224,7 +10231,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Members of the Anglican Church'],
                       ['text' => 'Native Indian People'],
                     ],
-                    'correctAnswerId' => 'A',
+
+                    'correctAnswerId' => 2653,
                     'explanation' => 'Anglophones are people who speak English as their first language. English and French are the two official languages of Canada. (P39)'
                   ],
                 ]
@@ -10242,7 +10250,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The most brilliant scientific research'],
                       ['text' => 'The best hockey player in the Stanley Cup'],
                     ],
-                    'correctAnswerId' => 'B',
+
+                    'correctAnswerId' => 2658,
                     'explanation' => 'The Victoria Cross (V.C.) is the highest honour available to Canadians and is awarded for the most conspicuous bravery, a daring or pre-eminent act of valour or self-sacrifice, or extreme devotion to duty in the presence of the enemy.',
                   ],
                   [
@@ -10253,7 +10262,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ice fishing'],
                       ['text' => 'Ice skating'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2662,
                     'explanation' => 'Ice hockey is considered Canada’s national winter sport, with Canadian teams historically dominating at the international level.',
                   ],
                   [
@@ -10264,7 +10273,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The beaver was adopted centuries ago as a mascot by the Natives'],
                       ['text' => 'The beaver was adopted centuries ago as a symbol of the Hudson\'s Bay Company'],
                     ],
-                    'correctAnswerId' => 'D',
+
+                    'correctAnswerId' => 2668,
                     'explanation' => 'The beaver was adopted centuries ago as a symbol of the Hudson’s Bay Company. It became an emblem of the St. Jean Baptiste Society, a French-Canadian patriotic association, in 1834, and was also adopted by other groups.',
                   ],
                   [
@@ -10275,7 +10285,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1947'],
                       ['text' => '1967'],
                     ],
-                    'correctAnswerId' => 'D',
+
+                    'correctAnswerId' => 2672,
                     'explanation' => 'After using British honours for many years, Canada started its own honours system with the Order of Canada in 1967, the centennial of Confederation.',
                   ],
                   [
@@ -10286,7 +10297,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1980'],
                       ['text' => '1947'],
                     ],
-                    'correctAnswerId' => 'C',
+
+                    'correctAnswerId' => 2675,
                     'explanation' => 'O Canada was proclaimed as the national anthem in 1980. It was first sung in Québec City in 1880. French and English Canadians sing different words to the national anthem.',
                   ],
                   [
@@ -10297,7 +10309,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Red-white-red stripes with the Queen emblem in the center'],
                       ['text' => 'Red-white-red stripes with a red lily flower in the center'],
                     ],
-                    'correctAnswerId' => 'B',
+
+                    'correctAnswerId' => 2678,
                     'explanation' => 'A new Canadian flag was raised for the first time in 1965. The red-white-red pattern comes from the flag of the Royal Military College, Kingston, founded in 1876.',
                   ],
                   [
@@ -10308,7 +10321,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => '"From sea to sea"'],
                       ['text' => 'From land to land'],
                     ],
-                    'correctAnswerId' => 'C',
+
+                    'correctAnswerId' => 2683,
                     'explanation' => 'As an expression of national pride after the First World War, Canada adopted an official coat of arms and a national motto, A mari usque ad mare, which in Latin means “from sea to sea.” The arms contain symbols of England, France, Scotland and Ireland as well as red maple leaves.',
                   ],
                   [
@@ -10319,7 +10333,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Stanley Cup'],
                       ['text' => 'The All Star Hockey Cup'],
                     ],
-                    'correctAnswerId' => 'C',
+
+                    'correctAnswerId' => 2687,
                     'explanation' => 'The National Hockey League (NHL) plays for the championship Stanley Cup, donated by Lord Stanley, the Governor General, in 1892.',
                   ],
                   [
@@ -10330,7 +10345,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => '200'],
                       ['text' => '100'],
                     ],
-                    'correctAnswerId' => 'B',
+
+                    'correctAnswerId' => 2690,
                     'explanation' => 'The Crown has been a symbol of the state in Canada for 400 years. Canada has been a constitutional monarchy in its own right since Confederation in 1867 during Queen Victoria’s reign.',
                   ],
                   [
@@ -10341,7 +10357,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Third Monday of September'],
                       ['text' => 'Second Monday of September'],
                     ],
-                    'correctAnswerId' => 'A',
+
+                    'correctAnswerId' => 2693,
                     'explanation' => 'Labour Day is celebrated on the first Monday of September.',
                   ],
                   [
@@ -10352,7 +10369,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nobody'],
                       ['text' => 'The police'],
                     ],
-                    'correctAnswerId' => 'C',
+
+                    'correctAnswerId' => 2699,
                     'explanation' => 'One of Canada’s founding principles is the rule of law. Individuals and governments are regulated by laws and not by arbitrary actions. No person or group is above the law.',
                   ],
                   [
@@ -10363,7 +10381,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'April 10th'],
                       ['text' => 'March 9th'],
                     ],
-                    'correctAnswerId' => 'A',
+
+                    'correctAnswerId' => 2701,
                     'explanation' => 'April 9th is celebrated as Vimy Day in Canada, commemorating the Battle of Vimy Ridge.',
                   ],
                   [
@@ -10374,7 +10393,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Matters concerning the police'],
                       ['text' => 'Matters concerning the federal government'],
                     ],
-                    'correctAnswerId' => 'D',
+
+                    'correctAnswerId' => 2708,
                     'explanation' => 'The Federal Court of Canada deals with matters concerning the federal government.',
                   ],
                   [
@@ -10385,7 +10405,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ice hockey'],
                       ['text' => 'Football'],
                     ],
-                    'correctAnswerId' => 'C',
+
+                    'correctAnswerId' => 2711,
                     'explanation' => 'Hockey is Canada’s most popular spectator sport and is considered to be the national winter sport. Ice hockey was developed in Canada in the 1800s.',
                   ],
                   [
@@ -10396,7 +10417,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canada Honour the Queen'],
                       ['text' => 'God Save the Queen'],
                     ],
-                    'correctAnswerId' => 'D',
+
+                    'correctAnswerId' => 2716,
                     'explanation' => 'The Royal Anthem of Canada is “God Save the Queen (or King),” and it can be played or sung on any occasion when Canadians wish to honour the Sovereign.',
                   ],
                   [
@@ -10407,7 +10429,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Order of Canada'],
                       ['text' => 'The Honour of Canada'],
                     ],
-                    'correctAnswerId' => 'C',
+
+                    'correctAnswerId' => 2719,
                     'explanation' => 'The Order of Canada is part of Canada’s honours system that recognizes outstanding citizens. It was established in 1967.',
                   ],
                   [
@@ -10418,7 +10441,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Restrict the ability to speak French outside of Quebec'],
                       ['text' => 'Promote equality of French and English in Canadian society'],
                     ],
-                    'correctAnswerId' => 'C',
+
+                    'correctAnswerId' => 2723,
                     'explanation' => 'The Official Languages Act, passed in 1969, aims to establish equality between French and English in Parliament, the Government of Canada, and institutions subject to the Act. It also aims to maintain and develop official language minority communities in Canada and promote equality of French and English in Canadian society.',
                   ],
                   [
@@ -10429,7 +10453,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Have adequate knowledge of English or French'],
                       ['text' => 'Play hockey'],
                     ],
-                    'correctAnswerId' => 'C',
+
+                    'correctAnswerId' => 2727,
                     'explanation' => 'One of the criteria to become a Canadian citizen is to have adequate knowledge of English or French. Immigrants between the ages of 18 and 54 must demonstrate proficiency in one of Canada’s official languages.',
                   ],
                   [
@@ -10440,7 +10465,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Peace Tower'],
                       ['text' => 'The Centre Block'],
                     ],
-                    'correctAnswerId' => 'A',
+
+                    'correctAnswerId' => 2731,
                     'explanation' => 'The Centre Block of the Parliament buildings was destroyed by an accidental fire in 1916 and rebuilt in 1922. The Library is the only part of the original building that remains intact.',
                   ],
                   [
@@ -10451,7 +10477,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Only on Canada Day'],
                       ['text' => 'Never'],
                     ],
-                    'correctAnswerId' => 'A',
+
+                    'correctAnswerId' => 2733,
                     'explanation' => 'The Royal Anthem of Canada, “God Save the Queen (or King),” can be played or sung on any occasion when Canadians wish to honour the Sovereign.',
                   ],
 
@@ -10469,7 +10496,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'In the 1900s'],
                       ['text' => 'In the 1600s'],
                     ],
-                    'correctAnswerId' => 'B',
+
+                    'correctAnswerId' => 2738,
                     'explanation' => 'The maple leaf was adopted as a symbol by French Canadians in the 1700s. It has since become Canada’s best-known national symbol.',
                   ],
                   [
@@ -10480,7 +10508,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'O Canada, we stand on guard for thee'],
                       ['text' => 'O Canada! Our home and native land!'],
                     ],
-                    'correctAnswerId' => 'D',
+
+                    'correctAnswerId' => 2744,
                     'explanation' => 'The first sentence of the National Anthem of Canada, "O Canada," is "O Canada! Our home and native land!"',
                   ],
                   [
@@ -10491,7 +10520,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'February 11th'],
                       ['text' => 'November 11th'],
                     ],
-                    'correctAnswerId' => 'B',
+
+                    'correctAnswerId' => 2746,
                     'explanation' => 'Sir John A. Macdonald Day is celebrated on January 11th in Canada to honour his contributions as a lawyer, politician, and Prime Minister.',
                   ],
                   [
@@ -10502,7 +10532,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Her Majesty personal Flag'],
                       ['text' => 'The Royal Arms Flag'],
                     ],
-                    'correctAnswerId' => 'B',
+
+                    'correctAnswerId' => 2750,
                     'explanation' => 'The official Royal Flag of Canada is the Union Jack Flag.',
                   ],
                   [
@@ -10513,7 +10544,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Symbols of England, France and Scotland'],
                       ['text' => 'Symbols of England and France'],
                     ],
-                    'correctAnswerId' => 'A',
+
+                    'correctAnswerId' => 2757,
                     'explanation' => 'The Canadian coat of arms contains symbols of England, France, Scotland, and Ireland, as well as red maple leaves.',
                   ],
                   [
@@ -10524,7 +10556,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Lacrosse'],
                       ['text' => 'Soccer'],
                     ],
-                    'correctAnswerId' => 'D',
+
+                    'correctAnswerId' => 2764,
                     'explanation' => 'Soccer has the most registered players of any game in Canada, making it highly popular across the country.',
                   ],
                   [
@@ -10535,7 +10568,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Victoria Cross'],
                       ['text' => 'The British Cross'],
                     ],
-                    'correctAnswerId' => 'C',
+
+                    'correctAnswerId' => 2767,
                     'explanation' => 'The Victoria Cross (V.C.) is the highest honour available to Canadians, awarded for conspicuous bravery or self-sacrifice in the presence of the enemy.',
                   ],
                   [
@@ -10546,7 +10580,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Corporal Filip Konowal'],
                       ['text' => 'Lieutenant Alexander Roberts Dunn'],
                     ],
-                    'correctAnswerId' => 'D',
+
+                    'correctAnswerId' => 2772,
                     'explanation' => 'Lieutenant Alexander Roberts Dunn was the first Canadian to be awarded the Victoria Cross for his bravery in the Crimean War.',
                   ],
                   [
@@ -10557,7 +10592,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Baseball'],
                       ['text' => 'Soccer'],
                     ],
-                    'correctAnswerId' => 'A',
+
+                    'correctAnswerId' => 2773,
                     'explanation' => 'Lacrosse, an ancient sport first played by Aboriginals, is recognized as Canada’s official summer sport.',
                   ],
                   [
@@ -10568,7 +10604,8 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'In memory of the war between Canada and the United States'],
                       ['text' => 'To portray Canada as a peaceful nation'],
                     ],
-                    'correctAnswerId' => 'A',
+
+                    'correctAnswerId' => 2777,
                     'explanation' => 'The Peace Tower in Ottawa was built in memory of the First World War and remains a significant national monument.',
                   ],
                   [
@@ -10579,6 +10616,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'As an expression of national pride after the First World War'],
                       ['text' => 'As an expression of imperialism after the First World War'],
                     ],
+
                     'correctAnswerId' => 'C',
                     'explanation' => 'Canada adopted an official coat of arms and a national motto, A mari usque ad mare ("From sea to sea"), as an expression of national pride after the First World War.',
                   ],
@@ -10590,6 +10628,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'October 20th'],
                       ['text' => 'November 21st'],
                     ],
+
                     'correctAnswerId' => 'B',
                     'explanation' => 'Sir Wilfrid Laurier Day is celebrated on November 20th in Canada to honour his contributions as a Prime Minister.',
                   ],
@@ -10601,6 +10640,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Court of Queen'],
                       ['text' => 'Traffic court'],
                     ],
+
                     'correctAnswerId' => 'B',
                     'explanation' => 'A high court is not typically classified as a provincial court in Canada.',
                   ],
@@ -10612,6 +10652,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Public buildings'],
                       ['text' => 'Government documents'],
                     ],
+
                     'correctAnswerId' => 'A',
                     'explanation' => 'The RCMP logo does not typically include the Canadian coat of arms, unlike dollar bills, public buildings, and government documents.',
                   ],
@@ -10623,6 +10664,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '2022'],
                       ['text' => '1988'],
                     ],
+
                     'correctAnswerId' => 'C',
                     'explanation' => 'King Charles III became King in 2022, succeeding Queen Elizabeth II as the monarch of Canada.',
                   ],
@@ -10634,6 +10676,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1949'],
                       ['text' => '1969'],
                     ],
+
                     'correctAnswerId' => 'D',
                     'explanation' => 'The Official Languages Act was passed in 1969 by Parliament to establish language rights and promote bilingualism in Canada.',
                   ],
@@ -10645,6 +10688,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The British Flag'],
                       ['text' => 'The French flag'],
                     ],
+
                     'correctAnswerId' => 'A',
                     'explanation' => 'The red-white-red pattern on the Canadian flag comes from the flag of the Royal Military College in Kingston, Ontario.',
                   ],
@@ -10656,6 +10700,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1849'],
                       ['text' => '1867'],
                     ],
+
                     'correctAnswerId' => 'D',
                     'explanation' => 'Canada has been a constitutional monarchy since Confederation in 1867 during Queen Victoria’s reign.',
                   ],
@@ -10667,6 +10712,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Democratic principles and due process'],
                       ['text' => 'The rule of law and freedom under the law'],
                     ],
+
                     'correctAnswerId' => 'B',
                     'explanation' => 'Canada’s legal system is based on a heritage that includes the rule of law, freedom under the law, democratic principles, and due process. Due process ensures that the government respects all legal rights entitled to individuals under the law.',
                   ],
@@ -10678,6 +10724,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1800s'],
                       ['text' => '1700s'],
                     ],
+
                     'correctAnswerId' => 'C',
                     'explanation' => 'Ice hockey, Canada’s most popular spectator sport and the national winter sport, was developed in Canada in the 1800s.',
                   ],
