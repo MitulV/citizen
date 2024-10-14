@@ -29,7 +29,7 @@ export default function Result({
         );
     };
 
-    const pathColor = result.totalCorrect < 15 ? "#FF0000" : "#3E9330";
+    const pathColor = result.totalCorrect < 12 ? "#FF0000" : "#3E9330";
     const message =
         result.percentage < 75
             ? "Not enough to pass :-("

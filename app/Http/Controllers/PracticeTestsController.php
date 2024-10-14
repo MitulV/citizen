@@ -231,7 +231,7 @@ class PracticeTestsController extends Controller
     // Calculate percentage
     $percentage = round(($totalCorrect / $totalQuestions) * 100);
 
-    $status = $totalCorrect >= 15 ? 'completed' : 'failed';
+    $status = $totalCorrect >= 12 ? 'completed' : 'failed';
 
     $user->tests()->syncWithoutDetaching([
       $testId => [

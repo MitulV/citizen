@@ -370,7 +370,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Serve in the Canadian Army, obey the law and take responsibilities for oneself and one\'s family'],
                       ['text' => 'Obey the law, serve on a jury, vote in elections and help others in the community'],
                     ],
-                    'correctAnswerId' => 90,
+                    'correctAnswerId' => 92,
                     'explanation' => 'Obey the law, serve on a jury, vote in elections, and help others in the community are responsibilities of Canadian citizenship. (P9)'
                   ],
                   [
@@ -8691,7 +8691,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'False'],
                       ['text' => 'True'],
                     ],
-                    'correct_answer' => '2288',
+                    'correctAnswerId' => 2288,
                     'explanation' => 'The people who run for office are called candidates. There can be many candidates in an electoral district.'
                   ],
                   [
@@ -14373,7 +14373,7 @@ class DatabaseSeeder extends Seeder
             'info' => $testData['info'],
           ]);
 
-
+          Log::info('Test name -> ' . $test->name);
           foreach ($testData['questions'] as $questionData) {
 
             $question = Question::create([
