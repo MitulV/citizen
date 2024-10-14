@@ -75,14 +75,16 @@ class WebhookController extends Controller
         $subscription->update(
           ['is_active' => true]
         );
+
+        $user = User::find($userId);
         $mailData = [
-          'USER_NAME' => User::find($userId)->name,
+          'USER_NAME' => $user->name,
           'PACKAGE_NAME' => $subscription->package->name,
           'START_DATE' => $subscription->start_date,
           'END_DATE' => $subscription->end_date,
           'AMOUNT' => $transaction->total_amount
         ];
-        Mail::to('contact@yourwebsite.com')->send(new PremiumMembershipMail($mailData));
+        Mail::to($user->email)->send(new PremiumMembershipMail($mailData));
       }
 
       $transaction->update([
