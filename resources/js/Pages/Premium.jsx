@@ -26,7 +26,7 @@ export default function Premium({ auth }) {
                         content="Pass your Canadian Citizenship test the first time or get your money back, guaranteed by using CitizenTestPrep Premium!"
                     />
                 </Head>
-                <section className=" grid grid-cols-1 lg:grid-cols-12 gap-2 p-4 sm:p-6 md:px-10 lg:px-8  xl:px-20 bg-slate-50">
+                <section className="container mx-auto  grid grid-cols-1 lg:grid-cols-12 gap-2 p-4 sm:p-6 md:px-10 lg:px-8  xl:px-20 bg-slate-50">
                     {/* Left Section with Heading and Details */}
                     <div className="lg:col-span-6 flex flex-col space-y-6 p-6 md:p-10 xl:p-6">
                         <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-3xl font-extrabold leading-tight">
@@ -238,7 +238,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="lg:col-span-12 flex flex-col items-center justify-center px-6 md:px-16 lg:px-32 xl:px-96">
+                <section className=" container mx-auto lg:col-span-12 flex flex-col items-center justify-center px-6 md:px-16 lg:px-32 xl:px-96">
                     <h1 className="text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-bold mb-4 text-center">
                         Lively and innovative method of test preparation!
                     </h1>
@@ -264,7 +264,7 @@ export default function Premium({ auth }) {
                         resources.
                     </p>
                 </section>
-                <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 sm:p-6 md:p-10 bg-slate-50 mt-10 xl:px-32">
+                <section className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 sm:p-6 md:p-10 bg-slate-50 mt-10 xl:px-32">
                     {/* Left Section: Text Content */}
                     <div className="lg:col-span-6 flex flex-col space-y-6 p-6 md:p-10">
                         <p className="text-indigo-600 text-sm md:text-base lg:text-lg">
@@ -280,7 +280,7 @@ export default function Premium({ auth }) {
                             becoming Canadian with ease.
                         </p>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+                        <div className=" container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
                             {/* Step 1 */}
                             <div className="p-1">
                                 <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-semibold">
@@ -351,7 +351,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="relative flex flex-col items-center py-10 px-4 md:px-10 bg-white">
+                <section className=" container mx-auto relative flex flex-col items-center py-10 px-4 md:px-10 bg-white">
                     {/* Image */}
                     <img
                         src="/images/pass guarantee.png"
@@ -402,7 +402,7 @@ export default function Premium({ auth }) {
                     ></div>
                 </section>
 
-                <section className="container-fluid mx-auto px-2 py-8 bg-slate-50 xl:px-32">
+                <section className="container mx-auto px-2 py-8 bg-slate-50 xl:px-32">
                     {/* Heading */}
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center mt-8">
                         Our users find our questions <br /> very similar to the
@@ -464,7 +464,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container-fluid mx-auto px-4 md:px-10 py-10 bg-indigo-600 xl:px-32 relative overflow-hidden">
+                <section className="container mx-auto px-4 md:px-10 py-10 bg-indigo-600 xl:px-32 relative overflow-hidden">
                     {/* Decorative elements */}
                     <div className="absolute bottom-0 left-0 h-20 w-10 bg-orange-400 rounded-r-full z-20 overflow-hidden hidden sm:block"></div>
                     <div className="absolute top-0 right-0 h-20 w-10 bg-amber-400 rounded-l-full z-10 overflow-hidden hidden sm:block"></div>
@@ -530,7 +530,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container-fluid mx-auto px-4 md:px-10 lg:px-20 py-10 bg-slate-50">
+                <section className="container  mx-auto px-4 md:px-10 lg:px-20 py-10 bg-slate-50">
                     <p className="text-center text-indigo-600 mt-8">
                         In-depth learning
                     </p>
@@ -591,7 +591,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container-fluid  mx-auto px-4 md:px-10 lg:px-20 py-4 bg-indigo-600">
+                <section className="container mx-auto px-4 md:px-10 lg:px-20 py-4 bg-indigo-600">
                     <p className="text-center text-xs text-white mt-8">
                         ONE CHAPTER AT A TIME
                     </p>
@@ -1024,17 +1024,17 @@ export default function Premium({ auth }) {
                                 <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
                                     <FontAwesomeIcon
                                         icon={faMessage}
-                                        className="text-indigo-600"
+                                        className="text-primary"
                                     />
                                     <span className="text-indigo-600 text-sm">
-                                        Send us an email
+                                        Chat With Us
                                     </span>
                                 </div>
                                 {/* Envelope Option */}
                                 <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
                                     <FontAwesomeIcon
                                         icon={faEnvelope}
-                                        className="text-indigo-600"
+                                        className="text-primary"
                                     />
                                     <span className="text-indigo-600 text-sm">
                                         Email
@@ -1044,7 +1044,7 @@ export default function Premium({ auth }) {
                                 <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
                                     <FontAwesomeIcon
                                         icon={faPhone}
-                                        className="text-indigo-600"
+                                        className="text-primary"
                                     />
                                     <span className="text-indigo-600 text-sm">
                                         Call 1-305-570-4774

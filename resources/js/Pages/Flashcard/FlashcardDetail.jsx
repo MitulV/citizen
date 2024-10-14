@@ -34,7 +34,7 @@ export default function FlashcardDetail({
                 chapters={chapters}
             >
                 <Head title="Flashcard Detail" />
-                <section className="mx-4 md:mx-8 lg:mx-16 xl:mx-20 bg-slate-50 py-12 md:py-12 px-4 md:px-8 lg:px-16 xl:px-20">
+                <section className="  md:mx-8 lg:mx-16 xl:mx-20 bg-slate-50 py-12 md:py-12 px-4 md:px-8 lg:px-16 xl:px-20">
                     <div className="flex flex-col items-center">
                         <h5 className="text-xl sm:text-xl md:text-3xl lg:text-4xl xl:text-xl mb-4 text-zinc-600">
                             Flashcards are an excellent way to challenge

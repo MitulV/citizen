@@ -18,14 +18,14 @@ export default function Header({ user }) {
                     <Link href={route("homePage")}>
                         <img
                             src="/images/logo.svg"
-                            className="w-44 h-[1.60rem]"
+                            className="w-36 h-[1.60rem]"
                             alt="Logo"
                         />
                     </Link>
                 </div>
 
                 {/* Hamburger Icon for small screens */}
-                <div className="block md:hidden">
+                <div className="block lg:hidden">
                     <button
                         onClick={toggleMenu}
                         className="bg-primary hover:bg-primary text-white rounded-full border-none p-2"
@@ -36,7 +36,7 @@ export default function Header({ user }) {
 
                 {/* Menu for small screens */}
                 {isMenuOpen && (
-                    <div className="absolute top-16 left-0 w-full bg-white shadow-lg md:hidden text-stone-500">
+                    <div className="absolute top-16 left-0 w-full bg-white shadow-lg lg:hidden text-stone-500 text-sm">
                         <ul className="space-y-4 p-4">
                             <li>
                                 <Link
@@ -71,7 +71,7 @@ export default function Header({ user }) {
                                             ? route("dashboard")
                                             : route("login")
                                     }
-                                    className="border-2 border-primary bg-white text-gray-800 px-4 py-2 rounded-full block text-center mx-auto w-80"
+                                    className="border-2 border-primary bg-white text-gray-800 px-4 py-2 rounded-full block text-center mx-auto w-auto"
                                 >
                                     {user ? "Dashboard" : "Sign In"}
                                 </Link>
@@ -80,7 +80,7 @@ export default function Header({ user }) {
                             <li>
                                 <Link
                                     href={route("premiumPage")}
-                                    className="bg-primary text-white px-4 py-2 rounded-full block text-center mx-auto w-80"
+                                    className="bg-primary text-white px-4 py-2 rounded-full block text-center mx-auto w-auto"
                                 >
                                     Unlock All Questions
                                 </Link>
@@ -90,8 +90,8 @@ export default function Header({ user }) {
                 )}
 
                 {/* Navbar for medium and large screens */}
-                <Navbar.Collapse className="hidden md:flex flex-grow items-center justify-center">
-                    <Navbar className="md:flex">
+                <Navbar.Collapse className="hidden md:hidden lg:flex flex-grow items-center justify-center ">
+                    <Navbar className="lg:flex">
                         <MegaMenu.Dropdown toggle={<>Help </>}>
                             <ul className="space-y-4 p-4">
                                 <li>
@@ -113,7 +113,7 @@ export default function Header({ user }) {
                             </ul>
                         </MegaMenu.Dropdown>
                     </Navbar>
-                    <Navbar className="md:flex">
+                    <Navbar className="lg:flex">
                         <MegaMenu.Dropdown toggle={<>Resources </>}>
                             <ul className="space-y-4 p-4">
                                 <li>
@@ -147,7 +147,7 @@ export default function Header({ user }) {
                             </ul>
                         </MegaMenu.Dropdown>
                     </Navbar>
-                    <Navbar className="md:flex">
+                    <Navbar className="lg:flex">
                         <Link
                             href={route("about")}
                             className="hover:text-primary cursor-pointer"
@@ -157,7 +157,8 @@ export default function Header({ user }) {
                     </Navbar>
                 </Navbar.Collapse>
 
-                <div className="hidden md:flex items-center space-x-4">
+                {/* User and Premium Links for large screens */}
+                <div className="hidden lg:flex items-center space-x-4">
                     <Link
                         href={user ? route("dashboard") : route("login")}
                         className="border-2 border-primary bg-white text-gray-800 px-4 py-2 rounded-full"
@@ -167,7 +168,7 @@ export default function Header({ user }) {
 
                     <Link
                         href={route("premiumPage")}
-                        className="bg-primary text-white px-4 py-2 rounded-full"
+                        className="bg-primary text-white px-4 py-2 rounded-full text-nowrap"
                     >
                         Pass the first time, guaranteed
                     </Link>

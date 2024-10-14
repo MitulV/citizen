@@ -11,7 +11,7 @@ import { Button, Dropdown, MegaMenu, Navbar } from "flowbite-react";
 export default function LoginHeader({ user }) {
     return (
         <MegaMenu>
-            <div className="container flex justify-between items-center px-2 py-2">
+            <div className="container mx-auto flex justify-between items-center px-4 md:px-8 lg:px-16 py-4">
                 <div className="flex items-center">
                     <Link href={route("homePage")}>
                         <span className="text-2xl font-bold leading-6 text-left">

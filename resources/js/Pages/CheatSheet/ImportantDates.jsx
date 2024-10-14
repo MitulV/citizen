@@ -447,48 +447,54 @@ export default function ImportantDates({ auth }) {
                     content="Discover Important Dates for the Canadian Citizenship Test to familiarize yourself with key events!"
                 />
             </Head>
-            <div className="p-4 mx-auto max-w-screen-lg sm:mx-4 md:mx-10 lg:mx-20 xl:mx-8 bg-slate-50">
-                {accordions.map((accordion, index) => (
-                    <Accordion
-                        key={index}
-                        open={open === index + 1}
-                        icon={<Icon id={index + 1} open={open} />}
-                    >
-                        <AccordionHeader onClick={() => handleOpen(index + 1)}>
-                            {accordion.header}
-                        </AccordionHeader>
-                        <AccordionBody>
-                            <VerticalTimeline lineColor="rgb(81,81,81)">
-                                {accordion.timeline.map((t, i) => (
-                                    <VerticalTimelineElement
-                                        key={i}
-                                        className="vertical-timeline-element--work"
-                                        contentStyle={{}}
-                                        contentArrowStyle={{
-                                            borderRight:
-                                                "7px solid rgb(81, 81, 81)",
-                                        }}
-                                        position={"right"}
-                                        date={
-                                            <div className="text-xl ml-4 font-bold text-black">
-                                                {t.date}
-                                            </div>
-                                        } // Apply Tailwind CSS class here
-                                        {...t.icon}
-                                    >
-                                        <h1 className="text-2xl">{t.title}</h1>
-                                        {t.subtitle && (
-                                            <h4 className="text-base vertical-timeline-element-subtitle">
-                                                {t.subtitle}
-                                            </h4>
-                                        )}
-                                        {t.desc && <p>{t.desc}</p>}
-                                    </VerticalTimelineElement>
-                                ))}
-                            </VerticalTimeline>
-                        </AccordionBody>
-                    </Accordion>
-                ))}
+            <div className="container mx-auto">
+                <div className="p-4 mx-auto max-w-screen-lg sm:mx-4 md:mx-10 lg:mx-20 xl:mx-8 bg-slate-50">
+                    {accordions.map((accordion, index) => (
+                        <Accordion
+                            key={index}
+                            open={open === index + 1}
+                            icon={<Icon id={index + 1} open={open} />}
+                        >
+                            <AccordionHeader
+                                onClick={() => handleOpen(index + 1)}
+                            >
+                                {accordion.header}
+                            </AccordionHeader>
+                            <AccordionBody>
+                                <VerticalTimeline lineColor="rgb(81,81,81)">
+                                    {accordion.timeline.map((t, i) => (
+                                        <VerticalTimelineElement
+                                            key={i}
+                                            className="vertical-timeline-element--work"
+                                            contentStyle={{}}
+                                            contentArrowStyle={{
+                                                borderRight:
+                                                    "7px solid rgb(81, 81, 81)",
+                                            }}
+                                            position={"right"}
+                                            date={
+                                                <div className="text-xl ml-4 font-bold text-black">
+                                                    {t.date}
+                                                </div>
+                                            } // Apply Tailwind CSS class here
+                                            {...t.icon}
+                                        >
+                                            <h1 className="text-2xl">
+                                                {t.title}
+                                            </h1>
+                                            {t.subtitle && (
+                                                <h4 className="text-base vertical-timeline-element-subtitle">
+                                                    {t.subtitle}
+                                                </h4>
+                                            )}
+                                            {t.desc && <p>{t.desc}</p>}
+                                        </VerticalTimelineElement>
+                                    ))}
+                                </VerticalTimeline>
+                            </AccordionBody>
+                        </Accordion>
+                    ))}
+                </div>
             </div>
         </AuthenticatedLayout>
     );

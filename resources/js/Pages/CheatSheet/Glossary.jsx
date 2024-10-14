@@ -16,7 +16,7 @@ export default function Glossary({ auth }) {
                 </Head>
 
                 {/* Main content */}
-                <section className="container-fluid max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl px-4 sm:px-6 md:px-8 lg:mx-8 py-6 sm:py-8 md:py-10 lg:py-12 mx-auto bg-slate-50 rounded-3xl">
+                <section className="container mx-auto max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl px-10 py-6 sm:py-8 md:py-10 lg:py-12 bg-slate-50 rounded-3xl">
                     <h1 className="text-4xl font-bold mb-8 text-gray-600 text-center">
                         Glossary
                     </h1>

@@ -35,6 +35,12 @@ export default function Authenticated({
         elements.forEach((element) => {
             element.classList.remove("css-1t8x7v1");
         });
+
+        if (window.innerWidth < 768) {
+            setCollapsed(true); // Collapse for mobile screens
+        } else {
+            setCollapsed(false); // Expand for larger screens
+        }
     }, []);
 
     const { url } = usePage();

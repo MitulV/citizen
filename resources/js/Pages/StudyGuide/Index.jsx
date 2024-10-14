@@ -28,7 +28,7 @@ export default function Index({ auth, chapters }) {
                     />
                 </Head>
 
-                <div className="relative min-h-screen md:flex bg-slate-100">
+                <div className="container mx-auto relative min-h-screen md:flex bg-slate-100">
                     <section className="py-8 px-4 sm:mx-2 md:py-12 md:px-8 lg:py-16 lg:px-10 lg:mx-2 xl:mx-8 xl:px-2">
                         <div className="text-left mb-8">
                             {message && (

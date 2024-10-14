@@ -24,7 +24,7 @@ export default function Faq({ auth }) {
                     content="Check out FAQs about the Canadian Citizenship Test for clear answers to common concerns!"
                 />
             </Head>
-            <div className="p-4 mx-auto max-w-screen-lg sm:mx-10 md:mx-20 lg:mx-40 xl:mx-8 bg-slate-50 rounded-2xl">
+            <div className="container mx-auto max-w-screen-lg bg-slate-50 rounded-2xl p-10">
                 <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
                     <AccordionHeader onClick={() => handleOpen(1)}>
                         Who’s qualified to take the Canadian Citizenship Test?

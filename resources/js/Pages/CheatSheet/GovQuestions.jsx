@@ -16,7 +16,7 @@ export default function GovQuestions({ auth }) {
             </Head>
 
             {/* Main content */}
-            <section className="container-fluid mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:mx-8 py-6 sm:py-8 md:py-10 lg:py-12 xl:py-14 bg-gray-50 rounded-3xl">
+            <section className="container mx-auto px-4 sm:px-6 md:px-8   py-6 sm:py-8 md:py-10 lg:py-12 xl:py-14 bg-gray-50 rounded-3xl">
                 {/* Main Heading */}
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl font-bold  text-gray-600 py-4 sm:py-2 md:py-4 lg:py-4 xl:py-4 ">
                     Government Questions
@@ -215,7 +215,7 @@ export default function GovQuestions({ auth }) {
                         </table>
                     </div>
 
-                    <h4 class="mt-10">British Columbia</h4>
+                    <h4 className="mt-10">British Columbia</h4>
                     <div className="overflow-x-auto">
                         <table className="min-w-full bg-white border border-gray-200 rounded-lg text-gray-500">
                             <thead>
@@ -288,7 +288,7 @@ export default function GovQuestions({ auth }) {
                         </table>
                     </div>
 
-                    <h4 class="mt-10">Manitoba</h4>
+                    <h4 className="mt-10">Manitoba</h4>
                     <div className="overflow-x-auto">
                         <table className="min-w-full bg-white border border-gray-200 rounded-lg text-gray-500">
                             <thead>
@@ -362,7 +362,7 @@ export default function GovQuestions({ auth }) {
                         </table>
                     </div>
 
-                    <h4 class="mt-10">New Brunswick</h4>
+                    <h4 className="mt-10">New Brunswick</h4>
                     <div className="overflow-x-auto">
                         <table className="min-w-full bg-white border border-gray-200 rounded-lg text-gray-500">
                             <thead>
@@ -436,7 +436,7 @@ export default function GovQuestions({ auth }) {
                         </table>
                     </div>
 
-                    <h4 class="mt-10">Newfoundland & Labrador</h4>
+                    <h4 className="mt-10">Newfoundland & Labrador</h4>
                     <div className="overflow-x-auto">
                         <table className="min-w-full bg-white border border-gray-200 rounded-lg text-gray-500">
                             <thead>
@@ -509,7 +509,7 @@ export default function GovQuestions({ auth }) {
                         </table>
                     </div>
 
-                    <h4 class="mt-10">Nova Scotia</h4>
+                    <h4 className="mt-10">Nova Scotia</h4>
                     <div className="overflow-x-auto">
                         <table className="min-w-full bg-white border border-gray-200 rounded-lg text-gray-500">
                             <thead>
@@ -582,7 +582,7 @@ export default function GovQuestions({ auth }) {
                         </table>
                     </div>
 
-                    <h4 class="mt-10">Ontario</h4>
+                    <h4 className="mt-10">Ontario</h4>
                     <div className="overflow-x-auto">
                         <table className="min-w-full bg-white border border-gray-200 rounded-lg text-gray-500">
                             <thead>
@@ -656,7 +656,7 @@ export default function GovQuestions({ auth }) {
                         </table>
                     </div>
 
-                    <h4 class="mt-10">Prince Edward Island</h4>
+                    <h4 className="mt-10">Prince Edward Island</h4>
                     <div className="overflow-x-auto">
                         <table className="min-w-full bg-white border border-gray-200 rounded-lg text-gray-500">
                             <thead>
@@ -730,7 +730,7 @@ export default function GovQuestions({ auth }) {
                         </table>
                     </div>
 
-                    <h4 class="mt-10">Quebec</h4>
+                    <h4 className="mt-10">Quebec</h4>
                     <div className="overflow-x-auto">
                         <table className="min-w-full bg-white border border-gray-200 rounded-lg text-gray-500">
                             <thead>
@@ -803,7 +803,7 @@ export default function GovQuestions({ auth }) {
                         </table>
                     </div>
 
-                    <h4 class="mt-10">Saskatchewan</h4>
+                    <h4 className="mt-10">Saskatchewan</h4>
                     <div className="overflow-x-auto">
                         <table className="min-w-full bg-white border border-gray-200 rounded-lg text-gray-500">
                             <thead>
