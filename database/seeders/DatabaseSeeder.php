@@ -10617,7 +10617,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'As an expression of imperialism after the First World War'],
                     ],
 
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 2779,
                     'explanation' => 'Canada adopted an official coat of arms and a national motto, A mari usque ad mare ("From sea to sea"), as an expression of national pride after the First World War.',
                   ],
                   [
@@ -10629,7 +10629,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'November 21st'],
                     ],
 
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2782,
                     'explanation' => 'Sir Wilfrid Laurier Day is celebrated on November 20th in Canada to honour his contributions as a Prime Minister.',
                   ],
                   [
@@ -10641,7 +10641,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Traffic court'],
                     ],
 
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2786,
                     'explanation' => 'A high court is not typically classified as a provincial court in Canada.',
                   ],
                   [
@@ -10653,7 +10653,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Government documents'],
                     ],
 
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2789,
                     'explanation' => 'The RCMP logo does not typically include the Canadian coat of arms, unlike dollar bills, public buildings, and government documents.',
                   ],
                   [
@@ -10665,7 +10665,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1988'],
                     ],
 
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 2795,
                     'explanation' => 'King Charles III became King in 2022, succeeding Queen Elizabeth II as the monarch of Canada.',
                   ],
                   [
@@ -10677,7 +10677,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1969'],
                     ],
 
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2800,
                     'explanation' => 'The Official Languages Act was passed in 1969 by Parliament to establish language rights and promote bilingualism in Canada.',
                   ],
                   [
@@ -10689,7 +10689,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The French flag'],
                     ],
 
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2801,
                     'explanation' => 'The red-white-red pattern on the Canadian flag comes from the flag of the Royal Military College in Kingston, Ontario.',
                   ],
                   [
@@ -10701,7 +10701,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1867'],
                     ],
 
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2808,
                     'explanation' => 'Canada has been a constitutional monarchy since Confederation in 1867 during Queen Victoria’s reign.',
                   ],
                   [
@@ -10713,7 +10713,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The rule of law and freedom under the law'],
                     ],
 
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2810,
                     'explanation' => 'Canada’s legal system is based on a heritage that includes the rule of law, freedom under the law, democratic principles, and due process. Due process ensures that the government respects all legal rights entitled to individuals under the law.',
                   ],
                   [
@@ -10725,7 +10725,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1700s'],
                     ],
 
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 2815,
                     'explanation' => 'Ice hockey, Canada’s most popular spectator sport and the national winter sport, was developed in Canada in the 1800s.',
                   ],
 
@@ -10741,7 +10741,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'True'],
                       ['text' => 'False'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2818,
                     'explanation' => 'You can question the police about their service or conduct if you feel the need to do so. Almost all police forces in Canada have a process for citizens to bring concerns and seek action.',
                   ],
                   [
@@ -10752,7 +10752,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The principle that the government must respect certain legal rights a person is entitled under the law'],
                       ['text' => 'The principle that the government has its own process when dealing with criminals'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2819,
                     'explanation' => 'Due process is the principle that the government must respect all the legal rights a person is entitled to under the law.',
                   ],
                   [
@@ -10763,7 +10763,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canadian Peace Act with the First Nations'],
                       ['text' => 'Canadian Armed Forces'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2824,
                     'explanation' => 'The lily flower ("fleur-de-lys") was adopted by French royalty in 496 AD and became a symbol of French royalty for over 1,000 years, including during the period of New France.',
                   ],
                   [
@@ -10774,7 +10774,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1865'],
                       ['text' => '1965'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2830,
                     'explanation' => 'A new Canadian flag was raised for the first time in 1965. The red-white-red pattern comes from the flag of the Royal Military College, Kingston, founded in 1876.',
                   ],
                   [
@@ -10785,7 +10785,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Someone has stolen something from you'],
                       ['text' => 'Your water pipes are leaking'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2834,
                     'explanation' => 'You can ask the police for help in various situations including accidents, assaults, and thefts. However, issues like water leaks are typically handled by other authorities.',
                   ],
                   [
@@ -10796,7 +10796,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The government'],
                       ['text' => 'The RCMP'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2838,
                     'explanation' => 'The Crown symbolizes the government of Canada, including Parliament, the legislatures, the courts, police services, and the Canadian Forces.',
                   ],
                   [
@@ -10807,7 +10807,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'In the 1820s'],
                       ['text' => 'In the 1780s'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2840,
                     'explanation' => 'The Parliament buildings were completed in the 1860s. The Centre Block, part of these buildings, was rebuilt in 1922 after being destroyed by fire in 1916.',
                   ],
                   [
@@ -10818,7 +10818,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1920'],
                       ['text' => '1980'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2846,
                     'explanation' => 'O Canada was proclaimed as the national anthem in 1980. It was first sung in Québec City in 1880. French and English Canadians sing different words to the national anthem.',
                   ],
                   [
@@ -10829,7 +10829,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The sacrifices of Canadian veterans and brave fallen in all wars'],
                       ['text' => 'The Canadian Victory in the war of 1812 against the United States'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2847,
                     'explanation' => 'Victoria Day is celebrated in Canada to commemorate the birthday of the Sovereign (currently Queen Victoria). It falls on the Monday preceding May 25th.',
                   ],
                   [
@@ -10840,7 +10840,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Members of the Anglican Church'],
                       ['text' => 'Native Indian People'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2851,
                     'explanation' => 'Anglophones are people who speak English. English and French are the two official languages of Canada, reflecting the country\'s linguistic diversity.',
                   ],
                   [
@@ -10851,7 +10851,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1921'],
                       ['text' => '1892'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 2857,
                     'explanation' => 'Red and white have been the national colors of Canada since 1921. These colors were historically associated with France and England, and were adopted as Canada\'s national colors to symbolize unity and diversity.',
                   ],
 
@@ -11028,7 +11028,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Free trade between Canada and the UK'],
                       ['text' => 'Free trade between Canada and Japan'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2859,
                     'explanation' => 'The main advantage of the NAFTA agreement was free trade among Canada, the USA, and Mexico, facilitating extensive economic cooperation and trade between these countries.',
                   ],
                   [
@@ -11039,7 +11039,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Tourism and government'],
                       ['text' => 'All answers are correct'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2866,
                     'explanation' => 'Service industries provide a wide range of jobs including communications, retail services, transportation, education, health care, construction, banking, tourism, and government.',
                   ],
                   [
@@ -11050,7 +11050,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canada has become a member of the World Trade Organization'],
                       ['text' => 'The French and Aboriginal people collaborated with Canada in the vast fur-trade economy'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2868,
                     'explanation' => 'Trade with other countries is important to Canada because it helps to increase trade and maintain one of the world\'s highest standards of living, supporting economic growth and prosperity.',
                   ],
                   [
@@ -11061,7 +11061,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The United Kingdom'],
                       ['text' => 'Mexico'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2872,
                     'explanation' => 'The United States of America is Canada\'s largest trading partner, with extensive bilateral trade and economic relations.',
                   ],
                   [
@@ -11072,7 +11072,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Canada exports very few goods to the USA'],
                       ['text' => 'The relationship between Canada and the USA is the closest and the most extensive in the world'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 2877,
                     'explanation' => 'Canada and the USA are indeed each other\'s largest trading partners, and they share the longest undefended international border. Canada exports a significant amount of goods to the USA, making option C incorrect.',
                   ],
                   [
@@ -11083,7 +11083,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Quebec'],
                       ['text' => 'Manitoba'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 2881,
                     'explanation' => 'More than half of Canada\'s Aeronautics and Space industry is located in Quebec, where the province plays a leading role in these cutting-edge sectors.',
                   ],
                   [
@@ -11094,7 +11094,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Farming'],
                       ['text' => 'Natural resources'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2883,
                     'explanation' => 'The majority of working Canadians are employed in service industries, which encompass a broad range of sectors including retail, healthcare, education, and more.',
                   ],
                   [
@@ -11105,7 +11105,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Oil, tourism and Manufacturing'],
                       ['text' => 'Fishery, tourism and services'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2887,
                     'explanation' => 'The three main types of industry in Canada are natural resources (including forestry, mining, energy), manufacturing, and services (which cover a wide array of sectors).',
                   ],
                   [
@@ -11116,7 +11116,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Over three-quarters of Canadian exports are destined for the USA'],
                       ['text' => 'Millions of Canadians and Americans cross the border every year in safety'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2894,
                     'explanation' => 'The phrase refers to the fact that millions of Canadians and Americans cross the Canada-US border every year without significant security or defense infrastructure, symbolizing peaceful and cooperative relations.',
                   ],
                   [
@@ -11127,7 +11127,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Two-thirds'],
                       ['text' => 'Half'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2896,
                     'explanation' => 'Over three-quarters of Canadian exports are destined for the USA, reflecting the close economic ties and extensive trade relationship between the two countries.',
                   ],
                   [
@@ -11138,7 +11138,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Service'],
                       ['text' => 'Manufacturing and Technology'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 2901,
                     'explanation' => 'Most Canadians work in service industries, which form a significant part of the Canadian economy and provide diverse job opportunities.',
                   ],
                   [
@@ -11149,7 +11149,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'International Peace Garden Crossing between Canada and the United States'],
                       ['text' => 'White Pass in Yukon'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2903,
                     'explanation' => 'The Peace Arch in Blaine, Washington, symbolizes the close ties and common interests between Canada and the United States, emphasizing their historic and cooperative relationship.',
                   ],
                   [
@@ -11160,7 +11160,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Peace Arch'],
                       ['text' => 'The Library'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2907,
                     'explanation' => 'The names of soldiers, sailors, and airmen who died serving Canada in wars or on duty are written in the Memorial Chamber within the Tower, a solemn tribute to their sacrifice.',
                   ],
                   [
@@ -11171,7 +11171,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '3'],
                       ['text' => '20'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2911,
                     'explanation' => 'Canada has one of the top ten largest economies in the world, positioning it among the leading industrialized nations globally.',
                   ],
                   [
@@ -11182,7 +11182,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Service industries'],
                       ['text' => 'Manufacturing industries'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2916,
                     'explanation' => 'Forestry, fishing, agriculture, mining, and energy belong to the natural resources industries in Canada, which have historically played a crucial role in the country\'s development.',
                   ],
                   [
@@ -11193,7 +11193,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The moose'],
                       ['text' => 'The beaver'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2922,
                     'explanation' => 'The beaver is an official symbol of Canada, representing industriousness and resilience. It has been an emblem of Canada for centuries.',
                   ],
                   [
@@ -11204,7 +11204,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Natural resources industries'],
                       ['text' => 'Manufacturing industries'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 2925,
                     'explanation' => 'Natural resources industries including forestry, fishing, agriculture, mining, and energy have significantly contributed to Canada’s history and economic development.',
                   ],
                   [
@@ -11215,7 +11215,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Half'],
                       ['text' => 'Two-thirds'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2928,
                     'explanation' => 'Over three-quarters of Canadian exports are destined for the U.S.A., highlighting the critical importance of the economic relationship between the two countries.',
                   ],
                   [
@@ -11226,7 +11226,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Over $1 trillion'],
                       ['text' => 'About $500 billion'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 2933,
                     'explanation' => 'In 2008, NAFTA facilitated over $1 trillion in merchandise trade among Canada, the United States, and Mexico, underscoring its substantial economic impact and integration.',
                   ],
                   [
@@ -11237,7 +11237,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'In the 1600s'],
                       ['text' => 'In the 1900s'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2935,
                     'explanation' => 'Ice hockey was developed in Canada in the 1800s, becoming a beloved national sport with deep cultural significance.',
                   ],
 
@@ -11255,7 +11255,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Mexico-U.S.A border'],
                       ['text' => 'Both Canadian Atlantic and Pacific coasts'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2941,
                     'explanation' => 'Millions of Canadians and Americans cross every year in safety what is traditionally known as “the world’s longest undefended border.” Over three-quarters of Canadian exports are destined for the U.S.A., highlighting the deep economic integration and cooperation between the two countries.',
                   ],
                   [
@@ -11266,7 +11266,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Service industries'],
                       ['text' => 'Trading Industries'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 2945,
                     'explanation' => 'Service industries encompass a wide range of sectors including transportation, education, health care, construction, banking, communications, retail services, tourism, and government, providing diverse employment opportunities across Canada.',
                   ],
                   [
@@ -11277,7 +11277,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The group of 8 Fathers of Confederation'],
                       ['text' => 'The 8 countries involved in NAFTA'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2948,
                     'explanation' => 'The G8 refers to a group of 8 leading industrialized countries, including Canada, the United States, Germany, the United Kingdom, Italy, France, Japan, and Russia, who meet annually to discuss economic policies and global issues.',
                   ],
                   [
@@ -11288,7 +11288,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Second Tuesday of October'],
                       ['text' => 'Second Monday of November'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2952,
                     'explanation' => 'Thanksgiving in Canada is celebrated on the second Monday of October, marking a time of gratitude and harvest.',
                   ],
                   [
@@ -11299,7 +11299,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'They have the biggest bilateral trading relationship in the world'],
                       ['text' => 'Canada exports almost no goods to the U.S.A.'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2958,
                     'explanation' => 'Over three-quarters of Canadian exports are destined for the U.S.A., and the Canada-U.S.A. border is known as the world\'s longest undefended border, facilitating significant economic and cultural exchange between the two nations.',
                   ],
                   [
@@ -11310,7 +11310,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'English'],
                       ['text' => 'French-Canadians'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2962,
                     'explanation' => 'The maple leaf was adopted as a symbol by French Canadians in the 1700s, and has since become an enduring symbol of Canada, appearing on various insignia, uniforms, and official documents.',
                   ],
                   [
@@ -11321,7 +11321,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Curling'],
                       ['text' => 'Football'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2966,
                     'explanation' => 'Canadian football is the second most popular sport in Canada, following ice hockey.',
                   ],
                   [
@@ -11332,7 +11332,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'People born in England'],
                       ['text' => 'Native American People'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2968,
                     'explanation' => 'Francophones are people who speak French as their first language. Canada has a significant Francophone population, particularly in Quebec and other parts of Canada.',
                   ],
                   [
@@ -11343,7 +11343,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1814'],
                       ['text' => '1810'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2972,
                     'explanation' => 'The Free Trade Agreement between Canada and the United States was signed in 1988, marking a significant milestone in economic relations between the two countries.',
                   ],
                   [
@@ -11354,7 +11354,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Mexico'],
                       ['text' => 'China'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2975,
                     'explanation' => 'The United States is Canada’s largest international trading partner, with extensive trade relations spanning various industries and sectors.',
                   ],
                   [
@@ -11365,7 +11365,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Monday preceding June 25th'],
                       ['text' => 'Tuesday preceding May 25th'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2980,
                     'explanation' => 'Victoria Day is celebrated on the Monday preceding May 25th in Canada, commemorating the birthday of Queen Victoria.',
                   ],
                   [
@@ -11376,7 +11376,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Service industries'],
                       ['text' => 'Trading Industries'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2984,
                     'explanation' => 'Manufacturing industries encompass a wide range of sectors producing goods such as paper, high technology equipment, aerospace technology, automobiles, machinery, food, clothing, and more.',
                   ],
 
@@ -11482,7 +11482,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Prairies'],
                       ['text' => 'Central Canada'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 2990,
                     'explanation' => 'More than half of the people in Canada live in cities and towns near the Great Lakes and the St. Lawrence River in southern Quebec and Ontario, known as Central Canada and the industrial and manufacturing heartland.',
                   ],
                   [
@@ -11493,7 +11493,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'North Region'],
                       ['text' => 'Southern territories'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 2991,
                     'explanation' => 'The Northwest Territories, Nunavut, and Yukon cover one-third of Canada’s land mass, although they have a small population.',
                   ],
                   [
@@ -11504,7 +11504,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'British Columbia'],
                       ['text' => 'Alberta'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 2996,
                     'explanation' => 'Saskatchewan is known as the “breadbasket of the world” with 40% of Canada’s arable land, and is the largest producer of grains and oilseeds in the country.',
                   ],
                   [
@@ -11515,7 +11515,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Lake Michigan, Lake Victoria, Lake Mexico, Lake Ontario, Lake St. Louis'],
                       ['text' => 'None of the above'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3000,
                     'explanation' => 'The five Great Lakes between Canada and the U.S. are Lake Superior, Lake Michigan, Lake Huron, Lake Erie, and Lake Ontario. These lakes provide freshwater and extensive waterways for both countries.',
                   ],
                   [
@@ -11526,7 +11526,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Central Canada'],
                       ['text' => 'West Coast'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3005,
                     'explanation' => 'Central Canada, specifically the region near the Great Lakes and the St. Lawrence River in Quebec and Ontario, is known as the industrial and manufacturing heartland of Canada.',
                   ],
                   [
@@ -11537,7 +11537,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Quebec and New Brunswick'],
                       ['text' => 'Alberta and Saskatchewan'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3007,
                     'explanation' => 'Central Canada includes Ontario and Quebec, where the majority of Canadians live and where significant industrial and manufacturing activities are concentrated.',
                   ],
                   [
@@ -11548,7 +11548,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Saskatchewan'],
                       ['text' => 'Ontario'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3011,
                     'explanation' => 'Quebec is Canada\'s main producer of pulp and paper, contributing significantly to the forestry industry in the province.',
                   ],
                   [
@@ -11559,7 +11559,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Alberta'],
                       ['text' => 'Newfoundland and Labrador'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3018,
                     'explanation' => 'Newfoundland and Labrador is the oldest colony of the British Empire in Canada, known for its rich maritime history and unique cultural heritage.',
                   ],
                   [
@@ -11570,7 +11570,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Prairie Provinces'],
                       ['text' => 'Maritime Provinces'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3021,
                     'explanation' => 'The Prairie Provinces of Manitoba, Saskatchewan, and Alberta are known for their fertile agricultural land and abundant energy resources, contributing significantly to Canada\'s economy.',
                   ],
                   [
@@ -11581,7 +11581,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'They provide waterways'],
                       ['text' => 'They are tourist attractions'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3024,
                     'explanation' => 'The Great Lakes are important to Canada because they provide a significant source of freshwater and extensive waterways, supporting transportation, trade, and ecological diversity.',
                   ],
                   [
@@ -11592,7 +11592,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Fraser River'],
                       ['text' => 'St. Lawrence River'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3030,
                     'explanation' => 'Nearly eight million people live in Quebec, the vast majority along or near the St. Lawrence River.',
                   ],
                   [
@@ -11603,7 +11603,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'It is night most of the time'],
                       ['text' => 'Summer daylight can last up to 24 hours'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3034,
                     'explanation' => 'The North is often referred to as the “Land of the Midnight Sun” because at the height of summer, daylight can last up to 24 hours.',
                   ],
                   [
@@ -11614,7 +11614,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Alberta'],
                       ['text' => 'Ontario'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3038,
                     'explanation' => 'Ontario is home to more than 12 million people, making up more than one-third of Canada\'s population.',
                   ],
                   [
@@ -11625,7 +11625,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Queen Victoria'],
                       ['text' => 'Queen Anne'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3041,
                     'explanation' => 'Ottawa was chosen as the capital in 1857 by Queen Victoria, the great-great-grandmother of Queen Elizabeth II.',
                   ],
                   [
@@ -11636,7 +11636,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Northwest Territories (Yellowknife)'],
                       ['text' => 'Alaska (Juneau) and Yukon (White horse)'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3043,
                     'explanation' => 'The territories of Northern Canada and their capital cities are Yukon (Whitehorse), Northwest Territories (Yellowknife), and Nunavut (Iqaluit).',
                   ],
                   [
@@ -11647,7 +11647,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'New Brunswick'],
                       ['text' => 'British Columbia'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3050,
                     'explanation' => 'British Columbia (B.C.), on the Pacific coast, is Canada’s westernmost province, with a population of four million.',
                   ],
                   [
@@ -11658,7 +11658,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Six'],
                       ['text' => 'Seven'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3052,
                     'explanation' => 'There are five Great Lakes located between Ontario and the United States: Lake Superior, Lake Michigan, Lake Huron, Lake Erie, and Lake Ontario.',
                   ],
                   [
@@ -11669,7 +11669,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'First Nations'],
                       ['text' => 'Inuit'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3058,
                     'explanation' => 'Inuit have the largest population among Aboriginal peoples in the Northern Territories (Yukon, Northwest Territories, Nunavut) of Canada.',
                   ],
                   [
@@ -11680,7 +11680,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Quebec'],
                       ['text' => 'British Columbia'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3062,
                     'explanation' => 'British Columbia has the most valuable forestry industry in Canada, producing a significant portion of the country\'s lumber, newsprint, and pulp and paper products.',
                   ],
                   [
@@ -11691,7 +11691,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Edmonton'],
                       ['text' => 'Vancouver'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3066,
                     'explanation' => 'Vancouver is a key city for shipping and air links across the Pacific Ocean, serving as Canada\'s largest and busiest port.',
                   ],
 
@@ -11709,7 +11709,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Zinc, gold and bronze'],
                       ['text' => 'Zinc, lead and aluminum'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3067,
                     'explanation' => 'The Northwest Territories, Nunavut and Yukon contain one-third of Canada’s land mass but have a population of only 100,000. There are gold, lead, copper, diamond and zinc mines.',
                   ],
                   [
@@ -11720,7 +11720,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Atlantic, North, Central, Prairies and West Coast'],
                       ['text' => 'Rockies, Ontario, Quebec and Prairies'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3073,
                     'explanation' => 'The regions of Canada are Atlantic, North, Central, Prairies and West Coast.',
                   ],
                   [
@@ -11731,7 +11731,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nova Scotia'],
                       ['text' => 'New Brunswick'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3078,
                     'explanation' => 'New Brunswick is the only officially bilingual province, with about one-third of the population living and working in French.',
                   ],
                   [
@@ -11742,7 +11742,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ontario'],
                       ['text' => 'New Brunswick'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3080,
                     'explanation' => 'Nearly eight million people live in Quebec, the vast majority along or near the St. Lawrence River. More than three-quarters speak French as their first language.',
                   ],
                   [
@@ -11753,7 +11753,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Prairies'],
                       ['text' => 'The Maritimes'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3084,
                     'explanation' => 'The North is often referred to as the “Land of Midnight Sun” because at the height of summer, daylight can last up to 24 hours.',
                   ],
                   [
@@ -11764,7 +11764,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ontario and Quebec'],
                       ['text' => 'Alberta and Ontario'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3089,
                     'explanation' => 'Together, Ontario and Quebec produce more than three-quarters of all Canadian manufactured goods.',
                   ],
                   [
@@ -11775,7 +11775,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ontario'],
                       ['text' => 'Alberta'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3094,
                     'explanation' => 'Alberta is the largest producer of oil and gas in Canada, including significant development of the oil sands in the north.',
                   ],
                   [
@@ -11786,7 +11786,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nova Scotia'],
                       ['text' => 'Prince Edward Island'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3096,
                     'explanation' => 'Newfoundland and Labrador is the most easterly point in North America and has its own time zone.',
                   ],
                   [
@@ -11797,7 +11797,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nova Scotia'],
                       ['text' => 'Alberta'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3099,
                     'explanation' => 'Ontario is home to more than 12 million people, making up more than one-third of Canadians.',
                   ],
                   [
@@ -11808,7 +11808,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Arctic Ocean to the north'],
                       ['text' => 'All of the above'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3106,
                     'explanation' => 'Three oceans line Canada’s frontiers: the Pacific Ocean in the west, the Atlantic Ocean in the east, and the Arctic Ocean to the north.',
                   ],
                   [
@@ -11819,7 +11819,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nova Scotia'],
                       ['text' => 'Alberta'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3107,
                     'explanation' => 'Manitoba has the largest Aboriginal population of any province, with over 15% of its population being of Aboriginal descent.',
                   ],
                   [
@@ -11830,7 +11830,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'About 11 million square kilometers'],
                       ['text' => 'About 9 million square kilometers'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3112,
                     'explanation' => 'Canada is the second largest country on earth, covering about 10 million square kilometers.',
                   ],
                   [
@@ -11841,7 +11841,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Halifax'],
                       ['text' => 'Quebec'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3117,
                     'explanation' => 'Halifax is Canada’s largest east coast port, strategically located and home to the country’s largest naval base.',
                   ],
                   [
@@ -11852,7 +11852,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Pacific, Indian and Atlantic'],
                       ['text' => 'Atlantic, Arctic and Pacific'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3122,
                     'explanation' => 'Canada is bordered by three oceans: the Pacific Ocean to the west, the Atlantic Ocean to the east, and the Arctic Ocean to the north.',
                   ],
                   [
@@ -11863,7 +11863,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Labrador Sea'],
                       ['text' => 'Arctic'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3123,
                     'explanation' => 'Newfoundland is closest to the Atlantic Ocean.',
                   ],
                   [
@@ -11874,7 +11874,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Fruit orchards'],
                       ['text' => 'Sunrise and sunset'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3129,
                     'explanation' => 'The Okanagan Valley in British Columbia is famous for its fruit orchards and wine industry.',
                   ],
                   [
@@ -11885,7 +11885,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Between Ontario and the United States'],
                       ['text' => 'Northern Quebec'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3133,
                     'explanation' => 'The Great Lakes are located between Ontario in Canada and the United States.',
                   ],
                   [
@@ -11896,7 +11896,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1780s'],
                       ['text' => '1890s'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3138,
                     'explanation' => 'Thousands of miners came to Yukon during the Gold Rush of the 1890s.',
                   ],
                   [
@@ -11907,7 +11907,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nova Scotia, Newfoundland, New Brunswick and Prince Edward Island'],
                       ['text' => 'New Brunswick, Nova Scotia, Ontario and Quebec'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3141,
                     'explanation' => 'The provinces of the Atlantic region are Nova Scotia, Newfoundland, New Brunswick, and Prince Edward Island.',
                   ],
                   [
@@ -11918,7 +11918,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Michigan'],
                       ['text' => 'United States of America'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3146,
                     'explanation' => 'The United States of America lies on Canada\'s southern border.',
                   ],
 
@@ -11936,7 +11936,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Saskatchewan, Alberta, and Manitoba'],
                       ['text' => 'Saskatchewan and Alberta'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3149,
                     'explanation' => 'The Prairie Provinces are Saskatchewan, Alberta, and Manitoba. (P45)',
                   ],
                   [
@@ -11947,7 +11947,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Newfoundland and British Columbia'],
                       ['text' => 'Prince Edward Island and Ontario'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3153,
                     'explanation' => 'Nova Scotia and New Brunswick are on the Atlantic coast of Canada. (P45)',
                   ],
                   [
@@ -11958,7 +11958,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nine provinces and two territories'],
                       ['text' => 'Ten provinces and three territories'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3158,
                     'explanation' => 'Canada has ten provinces and three territories. (P44)',
                   ],
                   [
@@ -11969,7 +11969,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Michigan and Okanagan'],
                       ['text' => 'Huron and Erie'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3159,
                     'explanation' => 'Lake Huron and Lake Erie are two of the Great Lakes located between Ontario and the United States. (P48)',
                   ],
                   [
@@ -11980,7 +11980,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Plan for the celebration of Canada Day'],
                       ['text' => 'Work with the local governments'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3164,
                     'explanation' => 'Political parties in Canada share ideas about how government should work. (P31)',
                   ],
                   [
@@ -11991,7 +11991,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ontario'],
                       ['text' => 'Quebec'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3170,
                     'explanation' => 'Quebec is Canada’s largest producer of hydroelectricity due to its abundant fresh water supply. (P47)',
                   ],
                   [
@@ -12002,7 +12002,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Northwest Territories'],
                       ['text' => 'Yukon Territory'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3174,
                     'explanation' => 'Yukon Territory shares a border with the United States (Alaska). (P50)',
                   ],
                   [
@@ -12013,7 +12013,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Late 1800s'],
                       ['text' => 'Early 1700s'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3177,
                     'explanation' => 'The Canadian Pacific Railway was completed in the late 1800s, specifically on November 7, 1885. (P20)',
                   ],
                   [
@@ -12024,7 +12024,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Yukon and Northwest Territories'],
                       ['text' => 'Yukon Territory, Northwest Territories, and Nunavut'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3182,
                     'explanation' => 'The territories of Northern Canada are Yukon Territory, Northwest Territories, and Nunavut. (P50)',
                   ],
                   [
@@ -12035,7 +12035,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Because many people of Asian origin live there'],
                       ['text' => 'Because it attracts many tourists all year round'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3183,
                     'explanation' => 'British Columbia is known as Canada\'s Pacific Gateway because billions of dollars in goods are shipped to and from Asia through its ports, particularly Vancouver. (P49)',
                   ],
                   [
@@ -12046,7 +12046,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Montreal'],
                       ['text' => 'Calgary'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3188,
                     'explanation' => 'Toronto is the largest city in Canada and the country’s main financial centre. (P48)',
                   ],
                   [
@@ -12057,7 +12057,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'German as their first language'],
                       ['text' => 'English as their first language'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3192,
                     'explanation' => 'More than three-quarters of people in Quebec speak French as their first language. (P47)',
                   ],
                   [
@@ -12068,7 +12068,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Alberta'],
                       ['text' => 'Ontario'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3196,
                     'explanation' => 'Prince Edward Island is connected to mainland Canada by the Confederation Bridge, one of the longest continuous multi-span bridges in the world. (P46)',
                   ],
                   [
@@ -12079,7 +12079,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'They make up one-third of all Canadians'],
                       ['text' => 'They make up half of all Canadians'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3201,
                     'explanation' => 'At more than 12 million, the people of Ontario make up more than one-third of Canadians. (P48)',
                   ],
                   [
@@ -12090,7 +12090,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Prince Edward Island'],
                       ['text' => 'Ontario'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3204,
                     'explanation' => 'Nova Scotia has a long history of coal mining, forestry, and agriculture. Today there is also offshore oil and gas exploration. (P46)',
                   ],
                   [
@@ -12101,7 +12101,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'It is the largest country on Earth'],
                       ['text' => 'It is the seventh largest country on Earth'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3207,
                     'explanation' => 'Canada is the second largest country on Earth, covering approximately 10 million square kilometers. (P44)',
                   ],
                   [
@@ -12112,7 +12112,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Alberta'],
                       ['text' => 'Saskatchewan'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3214,
                     'explanation' => 'Saskatchewan, known as the "breadbasket of the world", has 40% of Canada\'s arable land and is the largest producer of grains and oilseeds. (P48)',
                   ],
                   [
@@ -12123,7 +12123,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The port of Vancouver'],
                       ['text' => 'The port of Victoria'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3217,
                     'explanation' => 'The Port of Vancouver is Canada’s largest and busiest, handling billions of dollars in goods traded worldwide. (P49)',
                   ],
                   [
@@ -12134,7 +12134,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Alberta, Saskatchewan, and Manitoba'],
                       ['text' => 'Nova Scotia, New Brunswick, Quebec, and Ontario'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3220,
                     'explanation' => 'The Atlantic provinces are New Brunswick, Newfoundland, Nova Scotia, and Prince Edward Island. (P45)',
                   ],
 
@@ -12152,7 +12152,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Toronto'],
                       ['text' => 'Ontario'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3225,
                     'explanation' => 'Ottawa, located on the Ottawa River, was chosen as the capital in 1857 by Queen Victoria, the great-great-grandmother of Queen Elizabeth II. (P44)',
                   ],
                   [
@@ -12163,7 +12163,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'New Brunswick, Newfoundland, Nova Scotia, Prince Edward Island'],
                       ['text' => 'Ontario, Nova Scotia, New Brunswick and Alberta'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3227,
                     'explanation' => 'The Prairie Provinces include Manitoba, Alberta, and Saskatchewan. (P45)',
                   ],
                   [
@@ -12174,7 +12174,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nova Scotia'],
                       ['text' => 'Newfoundland and Labrador'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3234,
                     'explanation' => 'Newfoundland and Labrador is the most easterly point in North America and has its own time zone. (P46)',
                   ],
                   [
@@ -12185,7 +12185,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Halifax'],
                       ['text' => 'Toronto'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3237,
                     'explanation' => 'Halifax is Canada’s largest east coast port, deep-water and ice-free, and is home to Canada’s largest naval base. (P46)',
                   ],
                   [
@@ -12196,7 +12196,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ontario'],
                       ['text' => 'Alberta'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3241,
                     'explanation' => 'Ontario is the most populated province in Canada. (P48)',
                   ],
                   [
@@ -12207,7 +12207,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Because of the discovery of oil'],
                       ['text' => 'To build the Pacific Railway'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3244,
                     'explanation' => 'Thousands of miners came to the Yukon during the Gold Rush of the 1890s. (P50)',
                   ],
                   [
@@ -12218,7 +12218,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Quebec and Ontario'],
                       ['text' => 'British Columbia and Alberta'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3249,
                     'explanation' => 'Quebec and Ontario are known as Central Canada, the industrial and manufacturing heartland. (P47)',
                   ],
                   [
@@ -12229,7 +12229,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Alberta'],
                       ['text' => 'New Brunswick'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3252,
                     'explanation' => 'Prince Edward Island (P.E.I.) is the smallest province in Canada. (P46)',
                   ],
                   [
@@ -12240,7 +12240,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Terry Fox'],
                       ['text' => 'Wayne Gretzky'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3255,
                     'explanation' => 'Mount Logan, the highest mountain in Canada, is named after Sir William Logan, a renowned geologist. (P50)',
                   ],
                   [
@@ -12251,7 +12251,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Citizenship and maintaining highways'],
                       ['text' => 'Healthcare and education'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3259,
                     'explanation' => 'Two responsibilities of the federal government of Canada are National Defense and foreign policy. (P54)',
                   ],
                   [
@@ -12262,7 +12262,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Free trade between Canada, the United States and Europe'],
                       ['text' => 'Free trade between Canada, the United States and Mexico'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3266,
                     'explanation' => 'NAFTA stands for North American Free Trade Agreement, which is an agreement for free trade between Canada, the United States, and Mexico. (Explanation provided)',
                   ],
                   [
@@ -12273,7 +12273,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nunavut'],
                       ['text' => 'Yukon'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3267,
                     'explanation' => 'Newfoundland and Labrador is the most easterly point in North America and has its own time zone. (Explanation provided)',
                   ],
                   [
@@ -12284,7 +12284,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nunavut'],
                       ['text' => 'Newfoundland and Labrador'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3273,
                     'explanation' => 'The territory of Nunavut borders the Arctic Ocean. (Explanation provided)',
                   ],
                   [
@@ -12295,7 +12295,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Montreal'],
                       ['text' => 'Ottawa'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3277,
                     'explanation' => 'Montreal is Canada’s second largest city and the second largest mainly French-speaking city in the world after Paris. (Explanation provided)',
                   ],
                   [
@@ -12306,7 +12306,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'New Brunswick'],
                       ['text' => 'Atlantic Ocean'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3280,
                     'explanation' => 'Nova Scotia does not border Quebec. (Explanation provided)',
                   ],
                   [
@@ -12317,7 +12317,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Queen Victoria'],
                       ['text' => 'Queen Elizabeth II'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3285,
                     'explanation' => 'Ottawa was chosen as the capital in 1857 by Queen Victoria, the great-great-grandmother of Queen Elizabeth II. (Explanation provided)',
                   ],
                   [
@@ -12328,7 +12328,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Manitoba'],
                       ['text' => 'Yukon'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3288,
                     'explanation' => 'Saskatchewan has 40% of the arable land in Canada and is the country’s largest producer of grains and oilseeds. (Explanation provided)',
                   ],
                   [
@@ -12339,7 +12339,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'British Columbia, Alberta and Yukon'],
                       ['text' => 'Manitoba, Ontario and Quebec'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3292,
                     'explanation' => 'Manitoba, Saskatchewan, and Alberta are known for having some of the most fertile farmland in the world. (Explanation provided)',
                   ],
                   [
@@ -12350,7 +12350,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Farming products'],
                       ['text' => 'Forestry products'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3298,
                     'explanation' => 'About one-half of all the goods produced in British Columbia are forestry products, making it the most valuable forestry industry in Canada. (Explanation provided)',
                   ],
                   [
@@ -12361,7 +12361,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Selkirk Mountains'],
                       ['text' => 'Interior Mountains'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3300,
                     'explanation' => 'Lake Louise is located in the Rocky Mountains of Alberta, Canada. (Explanation provided)',
                   ],
 
@@ -12379,7 +12379,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Calgary'],
                       ['text' => 'Edmonton'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3304,
                     'explanation' => 'Victoria is the capital of British Columbia. (Explanation provided)',
                   ],
                   [
@@ -12390,7 +12390,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1'],
                       ['text' => 'More than three-quarters'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3310,
                     'explanation' => 'More than three-quarters of people in Quebec speak French as their first language. (Explanation provided)',
                   ],
                   [
@@ -12401,7 +12401,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ontario'],
                       ['text' => 'Prince Edward Island'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3314,
                     'explanation' => 'Prince Edward Island (P.E.I.) is connected to mainland Canada by one of the longest continuous multispan bridges in the world, the Confederation Bridge. (Explanation provided)',
                   ],
                   [
@@ -12412,7 +12412,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Charlottetown'],
                       ['text' => 'Fredericton'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3316,
                     'explanation' => 'Halifax is the capital of Nova Scotia. (Explanation provided)',
                   ],
                   [
@@ -12423,7 +12423,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Largest metropolitan area'],
                       ['text' => 'Fourth largest metropolitan area'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3322,
                     'explanation' => 'Ottawa’s metropolitan area is the fourth largest in Canada. (Explanation provided)',
                   ],
                   [
@@ -12434,7 +12434,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Acadian'],
                       ['text' => 'Inuktitut'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3326,
                     'explanation' => 'Inuktitut is an official language and the first language in schools in Nunavut. (Explanation provided)',
                   ],
                   [
@@ -12445,7 +12445,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Eight provinces and five territories'],
                       ['text' => 'Nine provinces and three territories'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3327,
                     'explanation' => 'Canada has ten provinces and three territories. (Explanation provided)',
                   ],
                   [
@@ -12456,7 +12456,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Largest dam in the world'],
                       ['text' => 'Largest fresh water fishing industry in the world'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3332,
                     'explanation' => 'Lake Superior is known as the largest fresh water lake in the world. (Explanation provided)',
                   ],
                   [
@@ -12467,7 +12467,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Fredericton'],
                       ['text' => 'Winnipeg'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3337,
                     'explanation' => 'Fredericton is the capital of New Brunswick. (Explanation provided)',
                   ],
                   [
@@ -12478,7 +12478,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Central Canada'],
                       ['text' => 'Prairie provinces'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3341,
                     'explanation' => 'More than half of the people in Canada live in Central Canada, near the Great Lakes and the St. Lawrence River. (Explanation provided)',
                   ],
                   [
@@ -12489,7 +12489,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Second largest country on earth'],
                       ['text' => 'Fourth largest country on earth'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3345,
                     'explanation' => 'Canada is the second largest country on earth, covering 10 million square kilometers. (Explanation provided)',
                   ],
                   [
@@ -12500,7 +12500,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ten'],
                       ['text' => 'Three'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3348,
                     'explanation' => 'Alberta has five national parks, including Banff National Park. (Explanation provided)',
                   ],
                   [
@@ -12511,7 +12511,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Edmonton'],
                       ['text' => 'Calgary'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3351,
                     'explanation' => 'Winnipeg is the capital of Manitoba. (Explanation provided)',
                   ],
                   [
@@ -12522,7 +12522,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nova Scotia'],
                       ['text' => 'Saskatchewan'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3355,
                     'explanation' => 'Prince Edward Island (P.E.I.) is the smallest province in Canada. (Explanation provided)',
                   ],
                   [
@@ -12533,7 +12533,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Montreal'],
                       ['text' => 'Halifax'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3361,
                     'explanation' => 'Montreal is Canada’s second largest city and the second largest mainly French-speaking city in the world after Paris. (Explanation provided)',
                   ],
                   [
@@ -12544,7 +12544,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Toronto'],
                       ['text' => 'Ottawa'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3366,
                     'explanation' => 'Ottawa is Canada’s national capital. (Explanation provided)',
                   ],
                   [
@@ -12555,7 +12555,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Four'],
                       ['text' => 'Five'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3370,
                     'explanation' => 'There are five Great Lakes located between Ontario and the United States. (Explanation provided)',
                   ],
                   [
@@ -12566,7 +12566,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Prince Edward Island'],
                       ['text' => 'Ontario'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3373,
                     'explanation' => 'Prince Edward Island (P.E.I.) is known as the birthplace of Confederation. (Explanation provided)',
                   ],
                   [
@@ -12577,7 +12577,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Red Deer'],
                       ['text' => 'Regina'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3376,
                     'explanation' => 'Edmonton is the capital of Alberta. (Explanation provided)',
                   ],
                   [
@@ -12588,7 +12588,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Halifax'],
                       ['text' => 'Fredericton'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3380,
                     'explanation' => 'St. John’s is the capital of Newfoundland and Labrador. (Explanation provided)',
                   ],
 
@@ -12607,7 +12607,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Yellowknife'],
                       ['text' => 'Inuit'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3384,
                     'explanation' => 'Iqaluit is the capital of Nunavut.',
                   ],
 
@@ -12619,7 +12619,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Quebec'],
                       ['text' => 'Atlantic Ocean'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3388,
                     'explanation' => 'Prince Edward Island does not border New Brunswick.',
                   ],
 
@@ -12631,7 +12631,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Chicoutimi'],
                       ['text' => 'Saint-Jean'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3391,
                     'explanation' => 'Quebec City is the capital of Quebec.',
                   ],
 
@@ -12643,7 +12643,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Yukon'],
                       ['text' => 'Northwest Territories'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3395,
                     'explanation' => 'Saskatchewan does not border British Columbia.',
                   ],
 
@@ -12655,7 +12655,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Whitehorse'],
                       ['text' => 'Edmonton'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3401,
                     'explanation' => 'Whitehorse is the capital of the Yukon.',
                   ],
 
@@ -12667,7 +12667,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Arctic Ocean'],
                       ['text' => 'Manitoba'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3404,
                     'explanation' => 'Ontario does not border Nunavut.',
                   ],
 
@@ -12679,7 +12679,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'New Brunswick'],
                       ['text' => 'Prince Edward Island'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3409,
                     'explanation' => 'New Brunswick borders Nova Scotia.',
                   ],
 
@@ -12691,7 +12691,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nova Scotia'],
                       ['text' => 'Newfoundland and Labrador'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3414,
                     'explanation' => 'Newfoundland and Labrador is the oldest colony of the British Empire and a strategic prize in Canada’s early history, known for its fisheries, coastal fishing villages, and distinct culture.',
                   ],
 
@@ -12703,7 +12703,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Charlottetown'],
                       ['text' => 'Halifax'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3417,
                     'explanation' => 'Charlottetown is the capital of Prince Edward Island.',
                   ],
 
@@ -12715,7 +12715,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Yukon River'],
                       ['text' => 'Mackenzie River'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3422,
                     'explanation' => 'The Mackenzie River, at 4,200 kilometres, is the second-longest river system in North America after the Mississippi and drains an area of 1.8 million square kilometres.',
                   ],
                   [
@@ -12726,7 +12726,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'About 42 million people'],
                       ['text' => 'About 68 million people'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3424,
                     'explanation' => 'Canada has a population of about 34 million people. While the majority live in cities, Canadians also live in small towns, rural areas and everywhere in between.',
                   ],
 
@@ -12738,7 +12738,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Northwest Territories and Yukon'],
                       ['text' => 'Nunavut, Northwest Territories and Yukon'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3430,
                     'explanation' => 'Northern Canada includes Nunavut, Northwest Territories and Yukon.',
                   ],
 
@@ -12750,7 +12750,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nova Scotia'],
                       ['text' => 'Atlantic Ocean'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3434,
                     'explanation' => 'The Atlantic Ocean borders Prince Edward Island.',
                   ],
 
@@ -12762,7 +12762,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Quebec'],
                       ['text' => 'U.S.A.'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3437,
                     'explanation' => 'Quebec does not border Manitoba.',
                   ],
 
@@ -12774,7 +12774,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Manitoba'],
                       ['text' => 'Northwest Territories'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3441,
                     'explanation' => 'Manitoba does not border Alberta.',
                   ],
 
@@ -12786,7 +12786,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Edmonton'],
                       ['text' => 'Regina'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3446,
                     'explanation' => 'Regina is the capital of Saskatchewan.',
                   ],
 
@@ -12798,7 +12798,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Manitoba'],
                       ['text' => 'Quebec'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3448,
                     'explanation' => 'Nova Scotia does not border Ontario.',
                   ],
 
@@ -12810,7 +12810,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Prince Edward Island'],
                       ['text' => 'Nova Scotia'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3451,
                     'explanation' => 'Newfoundland and Labrador is the most easterly point in North America and has its own time zone. In addition to its natural beauty, the province has a unique heritage linked to the sea.',
                   ],
 
@@ -12822,7 +12822,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Yellowknife'],
                       ['text' => 'Edmonton'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3457,
                     'explanation' => 'Yellowknife is the capital of the Northwest Territories.',
                   ],
 
@@ -12834,7 +12834,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Quebec and Manitoba'],
                       ['text' => 'Ontario and Saskatchewan'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3460,
                     'explanation' => 'More than half the people in Canada live in cities and towns near the Great Lakes and the St. Lawrence River in southern Quebec and Ontario, known as Central Canada and the industrial and manufacturing heartland.',
                   ],
 
@@ -12853,7 +12853,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Trapping'],
                       ['text' => 'Fishing'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3463,
                     'explanation' => 'Thousands of miners came to the Yukon during the Gold Rush of the 1890s, as celebrated in the poetry of Robert W. Service. Mining remains a significant part of the economy.',
                   ],
 
@@ -12865,7 +12865,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'British Columbia'],
                       ['text' => 'Saskatchewan'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3467,
                     'explanation' => 'Winnipeg’s French Quarter, St. Boniface, has Western Canada’s largest Francophone community at 45,000. Manitoba is also an important centre of Ukrainian culture, with 14% reporting Ukrainian origins, and the largest Aboriginal population of any province, at over 15%.',
                   ],
 
@@ -12877,7 +12877,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ontario'],
                       ['text' => 'New Brunswick'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3472,
                     'explanation' => 'Halifax, Nova Scotia has played an important role in Atlantic trade and defence and is home to Canada’s largest naval base.',
                   ],
 
@@ -12889,7 +12889,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Yukon'],
                       ['text' => 'Nova Scotia'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3476,
                     'explanation' => 'The Port of Vancouver is our gateway to the Asia-Pacific. About one-half of all the goods produced in B.C. are forestry products, including lumber, newsprint, and pulp and paper products—the most valuable forestry industry in Canada.',
                   ],
 
@@ -12901,7 +12901,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Alberta'],
                       ['text' => 'Northwest Territories'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3479,
                     'explanation' => 'British Columbia borders the Pacific Ocean.',
                   ],
 
@@ -12913,7 +12913,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Between Ontario and Quebec'],
                       ['text' => 'Between Manitoba and the United States'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3484,
                     'explanation' => 'There are five Great Lakes located between Ontario and the United States: Lake Ontario, Lake Erie, Lake Huron, Lake Michigan (in the U.S.A.) and Lake Superior, the largest freshwater lake in the world.',
                   ],
 
@@ -12925,7 +12925,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Manitoba'],
                       ['text' => 'Northwest Territories'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3490,
                     'explanation' => 'Northwest Territories does not border Hudson Bay.',
                   ],
 
@@ -12937,7 +12937,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'British Columbia'],
                       ['text' => 'Alberta'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3494,
                     'explanation' => 'Alberta does not border the Yukon.',
                   ],
 
@@ -12949,7 +12949,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'British Columbia'],
                       ['text' => 'Newfoundland and Labrador'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3498,
                     'explanation' => 'Newfoundland and Labrador borders with the Atlantic Ocean.',
                   ],
 
@@ -12961,7 +12961,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'In the 1920s'],
                       ['text' => 'In the 1890s'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3502,
                     'explanation' => 'Thousands of miners came to the Yukon during the Gold Rush of the 1890s, as celebrated in the poetry of Robert W. Service. Mining remains a significant part of the economy.',
                   ],
                   [
@@ -12972,7 +12972,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Yukon'],
                       ['text' => 'Nunavut'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3504,
                     'explanation' => 'Ontario does not border the Northwest Territories.',
                   ],
 
@@ -12984,7 +12984,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Vancouver'],
                       ['text' => 'Nanaimo'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3508,
                     'explanation' => 'The capital, Victoria, is a tourist centre and headquarters of the Navy’s Pacific fleet.',
                   ],
 
@@ -12996,7 +12996,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Toronto'],
                       ['text' => 'Halifax'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3511,
                     'explanation' => 'British Columbia is known for its majestic mountains and as Canada’s Pacific gateway. The Port of Vancouver, Canada’s largest and busiest, handles billions of dollars in goods traded around the world.',
                   ],
 
@@ -13008,7 +13008,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Vancouver'],
                       ['text' => 'Toronto'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3518,
                     'explanation' => 'Toronto is the largest city in Canada and the country’s main financial centre. Many people work in the service or manufacturing industries, which produce a large percentage of Canada’s exports.',
                   ],
 
@@ -13020,7 +13020,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Manitoba'],
                       ['text' => 'British Columbia'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3522,
                     'explanation' => 'British Columbia does not border Saskatchewan.',
                   ],
 
@@ -13032,7 +13032,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Lake Ontario'],
                       ['text' => 'Lake Superior'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3526,
                     'explanation' => 'There are five Great Lakes located between Ontario and the United States: Lake Ontario, Lake Erie, Lake Huron, Lake Michigan (in the U.S.A.) and Lake Superior, the largest freshwater lake in the world.',
                   ],
 
@@ -13044,7 +13044,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Alberta'],
                       ['text' => 'Yukon'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3530,
                     'explanation' => 'Mount Logan, located in the Yukon, is the highest mountain in Canada. It is named in honour of Sir William Logan, a world-famous geologist, born in Montreal in 1798 to Scottish immigrant parents.',
                   ],
 
@@ -13056,7 +13056,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'In small towns'],
                       ['text' => 'In cities'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3534,
                     'explanation' => 'Canada has a population of about 34 million people. While the majority live in cities, Canadians also live in small towns, rural areas and everywhere in between.',
                   ],
 
@@ -13068,7 +13068,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1657'],
                       ['text' => '1957'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3535,
                     'explanation' => 'Ottawa, located on the Ottawa River, was chosen as the capital in 1857 by Queen Victoria, the great-great-grandmother of Queen Elizabeth II.',
                   ],
 
@@ -13080,7 +13080,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'British Columbia'],
                       ['text' => 'Ontario'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3542,
                     'explanation' => 'At more than 12 million, the people of Ontario make up more than one-third of Canadians. The large and culturally diverse population, natural resources and strategic location contribute to a vital economy.',
                   ],
 
@@ -13098,7 +13098,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'British Columbia'],
                       ['text' => 'Nunavut'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3546,
                     'explanation' => 'The territory of Nunavut borders the Arctic Ocean.',
                   ],
 
@@ -13110,7 +13110,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Natural resources industries'],
                       ['text' => 'Manufacturing industries'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3550,
                     'explanation' => 'Manufacturing industries make products to sell in Canada and around the world. Manufactured products include paper, high technology equipment, aerospace technology, automobiles, machinery, food, clothing and many other goods.',
                   ],
 
@@ -13122,7 +13122,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Newfoundland and Labrador'],
                       ['text' => 'New Brunswick'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3553,
                     'explanation' => 'Newfoundland and Labrador is the oldest colony of the British Empire and a strategic prize in Canada’s early history, the province has long been known for its fisheries, coastal fishing villages and distinct culture.',
                   ],
 
@@ -13134,7 +13134,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Tourism and natural resources'],
                       ['text' => 'Farming and fishing'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3556,
                     'explanation' => 'Canada’s main types of industries are service, manufacturing and natural resources.',
                   ],
 
@@ -13146,7 +13146,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Charlottetown'],
                       ['text' => 'Quebec City'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3560,
                     'explanation' => 'Saint John is the largest city, port and manufacturing centre; Moncton is the principal Francophone Acadian centre; and Fredericton, the historic capital.',
                   ],
 
@@ -13158,7 +13158,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Central Canada'],
                       ['text' => 'The Northern Territories'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3566,
                     'explanation' => 'The Northwest Territories, Nunavut and Yukon contain one-third of Canada’s land mass but have a population of only 100,000.',
                   ],
 
@@ -13170,7 +13170,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'British Columbia'],
                       ['text' => 'Alaska'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3569,
                     'explanation' => 'British Columbia is Canada’s most westerly province.',
                   ],
 
@@ -13182,7 +13182,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => '1892'],
                       ['text' => '1988'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3574,
                     'explanation' => 'In 1988, Canada enacted free trade with the United States. Mexico became a partner in 1994 in the broader North American Free Trade Agreement (NAFTA), with over 444 million people and over $1 trillion in merchandise trade in 2008.',
                   ],
 
@@ -13194,7 +13194,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir William Logan, a world-famous navy officer'],
                       ['text' => 'Sir William Logan, a world-famous mountain climber'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3571,
                     'explanation' => 'Mount Logan, located in the Yukon, is the highest mountain in Canada. It is named in honour of Sir William Logan, a world-famous geologist, born in Montreal in 1798 to Scottish immigrant parents. Logan founded and directed the Geological Survey of Canada from 1842 to 1869 and is considered one of Canada’s greatest scientists.',
                   ],
 
@@ -13206,7 +13206,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Lake Hudson and Lake Michigan'],
                       ['text' => 'Lake Hudson and Lake Erie'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3580,
                     'explanation' => 'There are five Great Lakes located between Ontario and the United States: Lake Ontario, Lake Erie, Lake Huron, Lake Michigan (in the U.S.A.) and Lake Superior, the largest freshwater lake in the world.',
                   ],
                   [
@@ -13217,7 +13217,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The land of the midnight sun'],
                       ['text' => 'Our country'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3584,
                     'explanation' => 'Nunavut, meaning “our land” in Inuktitut, was established in 1999 from the eastern part of the Northwest Territories, including all of the former District of Keewatin.',
                   ],
 
@@ -13229,7 +13229,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Quebec'],
                       ['text' => 'New Brunswick'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3589,
                     'explanation' => 'Quebec borders Newfoundland and Labrador.',
                   ],
 
@@ -13241,7 +13241,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Manitoba, Saskatchewan and Alberta'],
                       ['text' => 'Manitoba and Saskatchewan'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3593,
                     'explanation' => 'Manitoba, Saskatchewan and Alberta are the Prairie Provinces, rich in energy resources and some of the most fertile farmland in the world.',
                   ],
 
@@ -13253,7 +13253,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Statue of Liberty'],
                       ['text' => 'The Peace Arch'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3598,
                     'explanation' => 'At Blaine in the State of Washington, the Peace Arch, inscribed with the words “children of a common mother” and “brethren dwelling together in unity,” symbolizes our close ties and common interests.',
                   ],
 
@@ -13265,7 +13265,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'North American Free Treasury Agreement'],
                       ['text' => 'North American Free Trade Agreement'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3602,
                     'explanation' => 'In 1988, Canada enacted free trade with the United States. Mexico became a partner in 1994 in the broader North American Free Trade Agreement (NAFTA), with over 444 million people and over $1 trillion in merchandise trade in 2008.',
                   ],
 
@@ -13277,7 +13277,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Manufacturing industries'],
                       ['text' => 'Farming industries'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3604,
                     'explanation' => 'Service industries provide thousands of different jobs in areas like transportation, education, health care, construction, banking, communications, retail services, tourism and government.',
                   ],
 
@@ -13289,7 +13289,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Yellowknife'],
                       ['text' => 'Edmonton'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3609,
                     'explanation' => 'Yellowknife (population 20,000), is called the “diamond capital of North America.” More than half the population is Aboriginal (Dene, Inuit and Métis).',
                   ],
 
@@ -13301,7 +13301,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Port Edward Island'],
                       ['text' => 'Prince Edward Island'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3614,
                     'explanation' => 'P.E.I. stands for Prince Edward Island.',
                   ],
 
@@ -13313,7 +13313,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Manitoba'],
                       ['text' => 'Saskatchewan'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3618,
                     'explanation' => 'Saskatchewan boasts the world’s richest deposits of uranium and potash, used in fertilizer, and produces oil and natural gas.',
                   ],
 
@@ -13325,7 +13325,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Newfoundland and Labrador, Prince Edward Island, New Brunswick and Quebec'],
                       ['text' => 'Newfoundland and Labrador, Nova Scotia, New Brunswick and Prince Edward Island'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3622,
                     'explanation' => 'The Atlantic Provinces are Newfoundland and Labrador, Nova Scotia, New Brunswick and Prince Edward Island.',
                   ],
 
@@ -13343,7 +13343,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The East'],
                       ['text' => 'The North'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3626,
                     'explanation' => 'The North is often referred to as the “Land of the Midnight Sun” because at the height of summer, daylight can last up to 24 hours. In winter, the sun disappears and darkness sets in for three months. The Northern territories have long cold winters and short cool summers.',
                   ],
 
@@ -13355,7 +13355,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'United States, Germany, the United Kingdom, Japan, Canada, Russia, France and China'],
                       ['text' => 'United States, Germany, the United Kingdom, Italy, France, Japan, Canada and Russia'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3630,
                     'explanation' => 'Today, Canada has one of the ten largest economies in the world and is part of the G8 group of leading industrialized countries with the United States, Germany, the United Kingdom, Italy, France, Japan and Russia.',
                   ],
 
@@ -13367,7 +13367,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Quebec'],
                       ['text' => 'Ontario'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3633,
                     'explanation' => 'Quebec is Canada’s main producer of pulp and paper.',
                   ],
 
@@ -13379,7 +13379,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Winnipeg'],
                       ['text' => 'Saskatoon'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3638,
                     'explanation' => 'Saskatoon, the largest city, is the headquarters of the mining industry and an important educational, research and technology centre.',
                   ],
 
@@ -13391,7 +13391,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ontario'],
                       ['text' => 'Saskatchewan'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3642,
                     'explanation' => 'Saskatchewan, once known as the “breadbasket of the world” and the “wheat province,” has 40% of the arable land in Canada and is the country’s largest producer of grains and oilseeds.',
                   ],
 
@@ -13403,7 +13403,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Nunavut'],
                       ['text' => 'Alberta'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3643,
                     'explanation' => 'Yukon holds the record for the coldest temperature ever recorded in Canada (-63°C).',
                   ],
 
@@ -13415,7 +13415,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Manitoba'],
                       ['text' => 'British Columbia'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3648,
                     'explanation' => 'Alberta is the largest producer of oil and gas, and the oil sands in the north are being developed as a major energy source.',
                   ],
 
@@ -13427,7 +13427,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'British Columbia'],
                       ['text' => 'Alberta'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3654,
                     'explanation' => 'Alberta is also renowned for agriculture, especially for the vast cattle ranches that make Canada one of the world’s major beef producers.',
                   ],
 
@@ -13439,7 +13439,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Quebec'],
                       ['text' => 'Ontario'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3657,
                     'explanation' => 'Quebec produces the most hydroelectricity in Canada, with British Columbia, Manitoba, Newfoundland and Labrador, and Ontario also producing large amounts.',
                   ],
 
@@ -13451,7 +13451,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'U.S.A.'],
                       ['text' => 'Central America'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3661,
                     'explanation' => 'U.S.A. lies on Canada’s southern border.',
                   ],
                   [
@@ -13462,7 +13462,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Atlantic Provinces, Central Canada, Prairie Provinces, and West Coast'],
                       ['text' => 'South Provinces, Northern Canada, West Provinces, East Provinces, and Central Territories'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3664,
                     'explanation' => 'Canada includes many different geographical areas and five distinct regions:
                                         - The Atlantic Provinces
                                         - Central Canada
@@ -13479,7 +13479,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Daylight can last up to 24 hours in fall'],
                       ['text' => 'Daylight can last up to 24 hours in spring'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3667,
                     'explanation' => 'The North is often referred to as the “Land of the Midnight Sun” because at the height of summer, daylight can last up to 24 hours.',
                   ],
 
@@ -13491,7 +13491,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The Canadian Northern mountain range'],
                       ['text' => 'The first pioneers of the North'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3671,
                     'explanation' => 'Canada’s vast North brings security and sovereignty challenges. The Canadian Rangers, part of the Canadian Forces Reserves (militia), play a key role. Drawing on indigenous knowledge and experience, the Rangers travel by snowmobile in the winter and all-terrain vehicles in the summer from Resolute to the Magnetic North Pole, and keep the flag flying in Canada’s Arctic.',
                   ],
 
@@ -13503,7 +13503,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Pacific Ocean, Atlantic Ocean and Arctic Ocean'],
                       ['text' => 'Atlantic Ocean and Pacific Ocean'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3677,
                     'explanation' => 'Canada is the second largest country on earth—10 million square kilometres. Three oceans line Canada’s frontiers: the Pacific Ocean in the west, the Atlantic Ocean in the east, and the Arctic Ocean to the north.',
                   ],
 
@@ -13515,7 +13515,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'First Nations'],
                       ['text' => 'Metis'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3680,
                     'explanation' => 'In Nunavut, the population is about 85% Inuit, and Inuktitut is an official language and the first language in schools.',
                   ],
 
@@ -13527,7 +13527,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Manitoba'],
                       ['text' => 'New Brunswick'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3683,
                     'explanation' => 'Saskatchewan, once known as the “breadbasket of the world” and the “wheat province,” has 40% of the arable land in Canada and is the country’s largest producer of grains and oilseeds.',
                   ],
 
@@ -13539,7 +13539,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'A traditional French music'],
                       ['text' => 'A French-Canadian political party'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3687,
                     'explanation' => 'Quebec films, music, literary works and food have international stature, especially in La Francophonie, an association of French-speaking nations. Montreal, Canada’s second largest city and the second largest mainly French-speaking city in the world after Paris, is famous for its cultural diversity.',
                   ],
 
@@ -13551,7 +13551,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'New Brunswick'],
                       ['text' => 'Nova Scotia'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3693,
                     'explanation' => 'Situated in the Appalachian Range, the province was founded by the United Empire Loyalists and has the second largest river system on North America’s Atlantic coastline, the St. John River system.',
                   ],
 
@@ -13563,7 +13563,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Manitoba, Saskatchewan and Alberta'],
                       ['text' => 'Saskatchewan, Alberta and Nova Scotia'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3697,
                     'explanation' => 'Manitoba, Saskatchewan and Alberta are all Prairie Provinces in Canada.',
                   ],
 
@@ -13575,7 +13575,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'British Columbia'],
                       ['text' => 'Nunavut'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3702,
                     'explanation' => 'The territory of Nunavut borders the Arctic Ocean.',
                   ],
 
@@ -13587,7 +13587,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ontario'],
                       ['text' => 'Yukon'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3704,
                     'explanation' => 'The most valuable forestry industry in Canada. B.C. is also known for mining, fishing, and the fruit orchards and wine industry of the Okanagan Valley. B.C. has the most extensive park system in Canada, with approximately 600 provincial parks.',
                   ],
 
@@ -13599,7 +13599,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Edmonton'],
                       ['text' => 'Regina'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3710,
                     'explanation' => 'Regina, the capital, is home to the training academy of the Royal Canadian Mounted Police. Saskatoon, the largest city, is the headquarters of the mining industry and an important educational, research and technology centre.',
                   ],
 
@@ -13611,7 +13611,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Newfoundland and Labrador'],
                       ['text' => 'Nova Scotia'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3714,
                     'explanation' => 'Nova Scotia’s Celtic and Gaelic traditions sustain a vibrant culture. Nova Scotia is home to over 700 annual festivals, including the spectacular military tattoo in Halifax.',
                   ],
 
@@ -13623,7 +13623,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'British Columbia'],
                       ['text' => 'Nova Scotia'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3718,
                     'explanation' => 'Nova Scotia is known for the world’s highest tides in the Bay of Fundy. The province’s identity is linked to shipbuilding, fisheries, and shipping.',
                   ],
 
@@ -13635,7 +13635,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Charlottetown'],
                       ['text' => 'Halifax'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3722,
                     'explanation' => 'As Canada’s largest east coast port, Halifax is deep-water and ice-free. It has played an important role in Atlantic trade and defence and is home to Canada’s largest naval base.',
                   ],
                   [
@@ -13646,7 +13646,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'New Brunswick'],
                       ['text' => 'Manitoba'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3726,
                     'explanation' => 'Manitoba is also an important centre of Ukrainian culture, with 14% reporting Ukrainian origins, and the largest Aboriginal population of any province, at over 15%.',
                   ],
 
@@ -13658,7 +13658,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ontario'],
                       ['text' => 'Ontario and Manitoba'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3728,
                     'explanation' => 'Southern Ontario and Quebec have cold winters and warm humid summers. Together, Ontario and Quebec produce more than three-quarters of all Canadian manufactured goods.',
                   ],
 
@@ -13670,7 +13670,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The moose'],
                       ['text' => 'The polar bear'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3732,
                     'explanation' => 'The caribou (reindeer) is a popular game for hunters and a symbol of Canada’s North.',
                   ],
 
@@ -14124,7 +14124,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Promise to obey the constitution of Canada'],
                       ['text' => 'Pledge loyalty to the King, observe the laws and fulfill the duties of a Canadian'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3738,
                     'explanation' => 'I swear (or affirm) that I will be faithful, observe the laws and fulfill the duties of a Canadian.',
                   ],
                   [
@@ -14135,7 +14135,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'The United Kingdom'],
                       ['text' => 'The Prime Minister'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3739,
                     'explanation' => 'In Canada, we profess our loyalty to a person who represents all Canadians and not to a document such as a constitution, a banner such as a flag, or a geopolitical entity such as a country.',
                   ],
                   [
@@ -14146,7 +14146,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Obeying the law'],
                       ['text' => 'Taking responsibility for oneself and one\'s family'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3743,
                     'explanation' => 'Learning to speak both official languages is not a responsibility of Canadian citizens.',
                   ],
                   [
@@ -14157,7 +14157,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'the right to speak freely'],
                       ['text' => 'the right to challenge unlawful detention by the state'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3750,
                     'explanation' => 'Habeas corpus, the right to challenge unlawful detention by the state, comes from English common law.',
                   ],
                   [
@@ -14168,7 +14168,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Indians'],
                       ['text' => 'Metis'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3752,
                     'explanation' => 'About 65% of the Aboriginal people are First Nations, while 30% are Metis and 4% Inuit.',
                   ],
                   [
@@ -14179,7 +14179,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'British colonists who began settling in what are now the Maritime Provinces in 1604'],
                       ['text' => 'French colonists who began settling in what are now the Maritime Provinces in 1604.'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3758,
                     'explanation' => 'The Acadians are the descendants of French colonists who began settling in what are now the Maritime provinces in 1604.',
                   ],
                   [
@@ -14190,7 +14190,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Acadian'],
                       ['text' => 'English-speaking and French-speaking Christians'],
                     ],
-                    'correctAnswerId' => 'D',
+                    'correctAnswerId' => 3762,
                     'explanation' => 'The great majority of Canadians identify as Christians. The largest religious affiliation is Catholic, followed by various Protestant churches.',
                   ],
                   [
@@ -14201,7 +14201,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Alberta'],
                       ['text' => 'New Brunswick'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3763,
                     'explanation' => 'The majority of Francophones live in the province of Quebec. One million Francophones live in Ontario, New Brunswick and Manitoba, with a smaller presence in other provinces.',
                   ],
                   [
@@ -14212,7 +14212,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir Wilfred Laurier'],
                       ['text' => 'Sir John A. Macdonald'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3768,
                     'explanation' => 'Sir George-Etienne Cartier was the key architect of confederation from Quebec. A railway lawyer, Montrealer, close ally of Macdonald and patriotic Canadien, Cartier led Quebec into confederation and helped negotiate the entry of the Northwest Territories, Manitoba and British Columbia into Canada.',
                   ],
                   [
@@ -14223,7 +14223,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Sir John A. McDonald'],
                       ['text' => 'Rick Hansen'],
                     ],
-                    'correctAnswerId' => 'A',
+                    'correctAnswerId' => 3771,
                     'explanation' => 'In 1918, under the command of General Sir Arthur Currie, Canada’s greatest soldier, the Canadian Corps advanced alongside the French and British Empire troops in the last hundred days.',
                   ],
                   [
@@ -14234,7 +14234,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'it was an important victory in the Boer War'],
                       ['text' => 'out of it was formed the Canadian Corps'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3776,
                     'explanation' => 'One Canadian officer said: “It was Canada from the Atlantic to the Pacific on parade.. In those few minutes I witnessed the birth of a nation. “April 9 is celebrated as Vimy Day.',
                   ],
                   [
@@ -14245,7 +14245,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Since the discovery of oil in Alberta in 1947'],
                       ['text' => 'After the second World War'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3781,
                     'explanation' => 'The discovery of oil in Alberta in 1947 began Canada\'s modern energy industry.',
                   ],
                   [
@@ -14254,7 +14254,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'False'],
                       ['text' => 'True'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3784,
                     'explanation' => 'Sir Frederick Banting of Toronto and Charles Best discovered insulin, a hormone to treat diabetes that has saved 16 million lives worldwide.',
                   ],
                   [
@@ -14265,7 +14265,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'the King, the House of Commons and the Senate'],
                       ['text' => 'the House of Commons, the legislative assembly and the Senate'],
                     ],
-                    'correctAnswerId' => 'C',
+                    'correctAnswerId' => 3787,
                     'explanation' => 'Parliament has three parts: the Sovereign (King), the Senate and the House of Commons. Provincial legislatures comprise the Lieutenant Governor and the elected Assembly.',
                   ],
                   [
@@ -14276,7 +14276,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Rival parties'],
                       ['text' => 'Opponents parties'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3790,
                     'explanation' => 'The other parties that are not in power are known as opposition parties.',
                   ],
                   [
@@ -14287,7 +14287,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Ice fishing'],
                       ['text' => 'Ice skating'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3794,
                     'explanation' => 'Many major league sports boast Canadian talent and in the national sport of ice hockey, Canadian teams have dominated the world.',
                   ],
                   [
@@ -14298,7 +14298,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Roy\'s Corona Military Police'],
                       ['text' => 'Royal California Miller Protection'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3798,
                     'explanation' => 'Today, the Royal Canadian Mounted Police (RCMP or “the Mounties”) are the national police force and one of Canada’s best-known symbols.',
                   ],
                   [
@@ -14309,7 +14309,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Montreal'],
                       ['text' => 'Calgary'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3802,
                     'explanation' => 'Toronto is the largest city in Canada and the country’s main financial centre.',
                   ],
                   [
@@ -14320,7 +14320,7 @@ class DatabaseSeeder extends Seeder
                       ['text' => 'Between Ontario and Quebec'],
                       ['text' => 'Between Manitoba and the United States'],
                     ],
-                    'correctAnswerId' => 'B',
+                    'correctAnswerId' => 3806,
                     'explanation' => 'There are five Great Lakes located between Ontario and the United States: Lake Ontario, Lake Erie, Lake Huron, Lake Michigan (in the U.S.A.) and Lake Superior, the largest freshwater lake in the world.',
                   ],
                 ]
