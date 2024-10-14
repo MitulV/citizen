@@ -14373,7 +14373,7 @@ class DatabaseSeeder extends Seeder
             'info' => $testData['info'],
           ]);
 
-          Log::info('Test name -> ' . $test->name);
+
           foreach ($testData['questions'] as $questionData) {
 
             $question = Question::create([
