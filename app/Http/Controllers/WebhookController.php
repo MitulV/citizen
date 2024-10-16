@@ -16,6 +16,8 @@ class WebhookController extends Controller
   public function handle(Request $request)
   {
 
+    Log::info('inside handle method');
+
     $payload = $request->getContent();
     $sig_header = $request->header('Stripe-Signature');
     $endpoint_secret = env('STRIPE_WEBHOOK_SECRET_KEY');
@@ -27,6 +29,7 @@ class WebhookController extends Controller
         $endpoint_secret
       );
     } catch (SignatureVerificationException $e) {
+      Log::error('Invalid signature');
       return response()->json(['error' => 'Invalid signature'], 400);
     }
 
@@ -54,6 +57,7 @@ class WebhookController extends Controller
   public function handleCheckoutSession($session, $request)
   {
     Log::info('inside handleCheckoutSession');
+    Log::info('session : ', $session);
     try {
       $transactionId = $session->metadata->transaction_id;
       $userId = $session->metadata->user_id;
