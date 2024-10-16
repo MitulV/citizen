@@ -23,9 +23,13 @@ export default function Faqs({}) {
                     content="Explore the Frequently Asked Questions about the Canadian Citizenship Test at CitizenTestPrep."
                 />
             </Head>
+
             <div className="container mx-auto max-w-screen-lg bg-slate-50 rounded-2xl">
+                <h1 className="text-4xl font-bold m-10 text-center">
+                    Frequently Asked Questions
+                </h1>
                 <Accordion
-                    className="p-10"
+                    className="p-5"
                     open={open === 1}
                     icon={<Icon id={1} open={open} />}
                 >
@@ -44,7 +48,11 @@ export default function Faqs({}) {
                         55 years when signing your application.
                     </AccordionBody>
                 </Accordion>
-                <Accordion open={open === 2} icon={<Icon id={2} open={open} />}>
+                <Accordion
+                    className="p-5"
+                    open={open === 2}
+                    icon={<Icon id={2} open={open} />}
+                >
                     <AccordionHeader onClick={() => handleOpen(2)}>
                         Is the Canadian Citizenship Test difficult?
                     </AccordionHeader>
@@ -60,7 +68,11 @@ export default function Faqs({}) {
                         that being a citizen present.
                     </AccordionBody>
                 </Accordion>
-                <Accordion open={open === 3} icon={<Icon id={3} open={open} />}>
+                <Accordion
+                    className="p-5"
+                    open={open === 3}
+                    icon={<Icon id={3} open={open} />}
+                >
                     <AccordionHeader onClick={() => handleOpen(3)}>
                         After applying for Citizenship, how long does it take
                         before you do the Citizenship Test?
@@ -80,7 +92,11 @@ export default function Faqs({}) {
                         fast processing, you should check if you qualify.
                     </AccordionBody>
                 </Accordion>
-                <Accordion open={open === 4} icon={<Icon id={4} open={open} />}>
+                <Accordion
+                    className="p-5"
+                    open={open === 4}
+                    icon={<Icon id={4} open={open} />}
+                >
                     <AccordionHeader onClick={() => handleOpen(4)}>
                         Where can I find test questions to help me prepare for
                         the Citizenship Test?
@@ -90,7 +106,11 @@ export default function Faqs({}) {
                         ready for exam day.
                     </AccordionBody>
                 </Accordion>
-                <Accordion open={open === 5} icon={<Icon id={5} open={open} />}>
+                <Accordion
+                    className="p-5"
+                    open={open === 5}
+                    icon={<Icon id={5} open={open} />}
+                >
                     <AccordionHeader onClick={() => handleOpen(5)}>
                         What happens if I fail the Citizenship Test?
                     </AccordionHeader>
@@ -107,7 +127,11 @@ export default function Faqs({}) {
                         restart the entire Citizenship application process.
                     </AccordionBody>
                 </Accordion>
-                <Accordion open={open === 6} icon={<Icon id={6} open={open} />}>
+                <Accordion
+                    className="p-5"
+                    open={open === 6}
+                    icon={<Icon id={6} open={open} />}
+                >
                     <AccordionHeader onClick={() => handleOpen(6)}>
                         What happens if I failed to attend my appointment with
                         IRCC? Can it be rescheduled?
@@ -129,7 +153,11 @@ export default function Faqs({}) {
                         again and pay the necessary fees.
                     </AccordionBody>
                 </Accordion>
-                <Accordion open={open === 7} icon={<Icon id={7} open={open} />}>
+                <Accordion
+                    className="p-5"
+                    open={open === 7}
+                    icon={<Icon id={7} open={open} />}
+                >
                     <AccordionHeader onClick={() => handleOpen(7)}>
                         How can I know if I passed the Canadian Citizenship
                         Test?
@@ -155,7 +183,11 @@ export default function Faqs({}) {
                         citizenship and the date of the ceremony.
                     </AccordionBody>
                 </Accordion>
-                <Accordion open={open === 8} icon={<Icon id={8} open={open} />}>
+                <Accordion
+                    className="p-5"
+                    open={open === 8}
+                    icon={<Icon id={8} open={open} />}
+                >
                     <AccordionHeader onClick={() => handleOpen(8)}>
                         What is the format of the citizenship test?
                     </AccordionHeader>
@@ -165,7 +197,11 @@ export default function Faqs({}) {
                         minutes to complete the test.
                     </AccordionBody>
                 </Accordion>
-                <Accordion open={open === 9} icon={<Icon id={9} open={open} />}>
+                <Accordion
+                    className="p-5"
+                    open={open === 9}
+                    icon={<Icon id={9} open={open} />}
+                >
                     <AccordionHeader onClick={() => handleOpen(9)}>
                         What is the pass mark for the citizenship test?
                     </AccordionHeader>
@@ -176,6 +212,7 @@ export default function Faqs({}) {
                     </AccordionBody>
                 </Accordion>
                 <Accordion
+                    className="p-5"
                     open={open === 10}
                     icon={<Icon id={10} open={open} />}
                 >

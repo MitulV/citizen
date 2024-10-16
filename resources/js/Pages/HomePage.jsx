@@ -37,13 +37,12 @@ export default function HomePage({ auth, chapters }) {
                             </h1>
                         </div>
                         <div className="container mx-auto px-4 mt-4 sm:mt-8">
-                            <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
-                                Get access to 700+ test questions, chapter-based
-                                quizzes, realistic
+                            <h3 className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
+                                Get access to 850 practice questions, study
+                                guides for each chapter, realistic test
                                 <br className="hidden sm:block" />
-                                test simulations, study quizzes, flashcards, and
-                                more.
-                            </p>
+                                simulations, flashcards, cheat sheets, and more.
+                            </h3>
                         </div>
                         <div className="container mx-auto px-4 mt-4 sm:mt-8 flex justify-center">
                             <Link
@@ -81,12 +80,12 @@ export default function HomePage({ auth, chapters }) {
                                 className="relative object-cover w-full sm:w-48 sm:h-full rounded-b-full"
                             />
                             <div className="absolute top-1/2 left-[-50%] sm:left-[-25%] md:left-0 z-60 p-2 rounded-xl shadow-lg bg-gray-200 transform -translate-y-1/2">
-                                <h3 className="text-xl sm:text-2xl font-bold text-center text-black">
+                                <h4 className="text-xl sm:text-2xl font-bold text-center text-black">
                                     2024
-                                </h3>
-                                <p className="text-xs sm:text-sm text-center font-semibold">
+                                </h4>
+                                <h4 className="text-xs sm:text-sm text-center font-semibold">
                                     Updated
-                                </p>
+                                </h4>
                             </div>
                         </div>
 
@@ -98,9 +97,9 @@ export default function HomePage({ auth, chapters }) {
                                 className="w-full md:h-full shadow-sm"
                             />
                             <div className="absolute top-20 md:top-80 left-0 md:left-36 lg:left-48 p-2 rounded-xl shadow-lg bg-amber-400">
-                                <h3 className="text-xl sm:text-2xl lg:text-2xl font-bold text-left text-black">
+                                <h4 className="text-xl sm:text-2xl lg:text-2xl font-bold text-left text-black">
                                     2391
-                                </h3>
+                                </h4>
                                 <p className="text-xs sm:text-sm font-semibold">
                                     Test completed today
                                 </p>
@@ -126,12 +125,12 @@ export default function HomePage({ auth, chapters }) {
                                 className="relative object-cover w-full sm:w-48 sm:h-full rounded-b-full"
                             />
                             <div className="absolute bottom-20 md:bottom-40 left-0 md:left-40 z-40 p-2 rounded-xl shadow-lg bg-green-300">
-                                <h3 className="text-xl sm:text-2xl font-bold text-center text-black">
+                                <h4 className="text-xl sm:text-2xl font-bold text-center text-black">
                                     95.2%
-                                </h3>
-                                <p className="text-xs sm:text-sm font-semibold text-center">
+                                </h4>
+                                <h4 className="text-xs sm:text-sm font-semibold text-center">
                                     Industry-leading <br /> pass rate
-                                </p>
+                                </h4>
                             </div>
                         </div>
                     </div>
@@ -179,27 +178,27 @@ export default function HomePage({ auth, chapters }) {
 
                 <section className="bg-slate-50 lg:py-20 sm:py-0 ">
                     <div className="container mx-auto px-4">
-                        <p className=" text-sm font-normal leading-8 text-center text-blue-500 mt-10">
+                        <h4 className=" text-sm font-normal leading-8 text-center text-blue-500 mt-10">
                             CHAPTER-WISE PRACTICE TESTS
-                        </p>
-                        <h1 className=" text-4xl font-extrabold leading-10 tracking-wide text-center">
+                        </h4>
+                        <h3 className=" text-4xl font-extrabold leading-10 tracking-wide text-center">
                             Start your 2024 Canadian citizenship test
                             <br />
                             practice with us
-                        </h1>
+                        </h3>
                     </div>
                 </section>
                 <section className="container mx-auto px-4 sm:px-6 md:px-10 mb-0 flex flex-col md:flex-row bg-slate-50">
                     <div className="md:w-1/2 flex items-center justify-center md:justify-start">
-                        <h1 className="font-bold text-lg sm:text-xl md:text-2xl tracking-wide text-center md:text-left">
+                        <h4 className="font-bold text-lg sm:text-xl md:text-2xl tracking-wide text-center md:text-left">
                             Step 1
-                        </h1>
+                        </h4>
                     </div>
 
                     <div className="md:w-1/2 flex items-center justify-center mt-4 md:mt-0 md:justify-end">
-                        <p className="text-sm sm:text-base md:text-lg font-normal text-gray-500 text-center md:text-right">
+                        <h4 className="text-sm sm:text-base md:text-lg font-normal text-gray-500 text-center md:text-right">
                             See how much you don’t know
-                        </p>
+                        </h4>
                     </div>
                 </section>
 
@@ -224,9 +223,9 @@ export default function HomePage({ auth, chapters }) {
                                     </div>
 
                                     <div className="md:w-1/2 px-4 py-2 bg-white rounded-r-xl">
-                                        <h1 className=" text-2xl font-bold leading-10 tracking-wide text-left">
+                                        <h3 className=" text-2xl font-bold leading-10 tracking-wide text-left">
                                             {chapter.name}
-                                        </h1>
+                                        </h3>
                                         <p className="text-sm font-normal leading-8 tracking-tight text-gray-500">
                                             {chapter.description}
                                         </p>
@@ -234,9 +233,9 @@ export default function HomePage({ auth, chapters }) {
                                         <div className="container mx-auto px-4 flex flex-col md:flex-row flex-wrap">
                                             <div className="md:w-1/2 w-full mb-4 md:mb-0 py-4">
                                                 <div>
-                                                    <h1 className="font-bold text-xl tracking-wide mb-1">
+                                                    <h4 className="font-bold text-xl tracking-wide mb-1">
                                                         {chapter.questions}
-                                                    </h1>
+                                                    </h4>
                                                     <p className="text-lg font-normal text-gray-500">
                                                         Questions
                                                     </p>
@@ -245,10 +244,10 @@ export default function HomePage({ auth, chapters }) {
 
                                             <div className="md:w-1/2 w-full py-4">
                                                 <div>
-                                                    <h1 className="font-bold text-xl tracking-wide mb-1">
+                                                    <h4 className="font-bold text-xl tracking-wide mb-1">
                                                         {chapter.mistakes}{" "}
                                                         Mistakes
-                                                    </h1>
+                                                    </h4>
                                                     <p className="text-lg font-normal text-gray-500">
                                                         Allowed to pass
                                                     </p>
@@ -262,9 +261,9 @@ export default function HomePage({ auth, chapters }) {
                 </section>
                 <section className="container mx-auto px-4 md:px-10 mb-0 flex flex-col md:flex-row py-4 bg-slate-50">
                     <div className="md:w-1/2 flex items-center justify-center md:justify-start">
-                        <h1 className="font-bold text-lg md:text-xl tracking-wide text-center md:text-left">
+                        <h3 className="font-bold text-lg md:text-xl tracking-wide text-center md:text-left">
                             Step 2
-                        </h1>
+                        </h3>
                     </div>
 
                     <div className="md:w-1/2 flex items-center justify-center mt-4 md:mt-0 md:justify-end">
@@ -301,7 +300,6 @@ export default function HomePage({ auth, chapters }) {
                     </section>
                 </div>
 
-                {/* Kajal e ahiya kam karvu */}
                 <div className="container mx-auto flex justify-center items-center py-8">
                     <section className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 bg-slate-50">
                         {chapters
@@ -325,15 +323,15 @@ export default function HomePage({ auth, chapters }) {
                 </div>
                 <div className="container mx-auto px-4 md:px-10 mb-0 flex flex-col md:flex-row py-4 bg-slate-50">
                     <div className="md:w-1/2 flex items-center justify-left md:justify-start">
-                        <h1 className="font-bold text-lg md:text-xl tracking-wide">
+                        <h4 className="font-bold text-lg md:text-xl tracking-wide">
                             Step 3
-                        </h1>
+                        </h4>
                     </div>
 
                     <div className="md:w-1/2 flex items-center justify-left md:justify-end mt-4 md:mt-0">
-                        <p className="text-sm md:text-base font-normal text-gray-500">
+                        <h4 className="text-sm md:text-base font-normal text-gray-500">
                             Prepare with exam simulator
-                        </p>
+                        </h4>
                     </div>
                 </div>
                 <section className="bg-slate-50 py-4 sm:py-8">
@@ -342,7 +340,7 @@ export default function HomePage({ auth, chapters }) {
                         .map((chapter, index) => (
                             <div
                                 key={index}
-                                className="container mx-auto px-4 flex flex-col md:flex-row shadow-sm transform hover:-translate-y-1 transition duration-500 ease-out mb-4"
+                                className="container mx-auto flex flex-col md:flex-row shadow-sm transform hover:-translate-y-1 transition duration-500 ease-out"
                             >
                                 <div className="md:w-1/8 pr-2 md:pr-4">
                                     <img
@@ -354,9 +352,9 @@ export default function HomePage({ auth, chapters }) {
 
                                 <div className="md:w-7/8 md:pl-4">
                                     <div className="bg-white rounded-r-3xl border border-gray-200 p-4 md:p-6">
-                                        <h1 className="text-xl sm:text-2xl md:text-xl font-bold leading-tight tracking-wide mb-2">
+                                        <h4 className="text-xl sm:text-2xl md:text-xl font-bold leading-tight tracking-wide mb-2">
                                             {chapter.name}
-                                        </h1>
+                                        </h4>
                                         <p className="text-sm sm:text-base md:text-lg font-normal leading-6 md:leading-8 tracking-tight text-gray-500 mb-4">
                                             {chapter.description}
                                         </p>
@@ -364,24 +362,24 @@ export default function HomePage({ auth, chapters }) {
                                         <div className="flex flex-col md:flex-row items-center md:items-start justify-between md:flex-wrap">
                                             <div className="w-full md:w-1/2 mb-4 md:mb-0 pr-0 md:pr-4">
                                                 <div>
-                                                    <h2 className="text-lg sm:text-xl md:text-xl font-bold tracking-wide mb-1">
+                                                    <h4 className="text-lg sm:text-xl md:text-xl font-bold tracking-wide mb-1">
                                                         {chapter.questions}
-                                                    </h2>
-                                                    <p className="text-base sm:text-lg font-normal text-gray-500">
+                                                    </h4>
+                                                    <h5 className="text-base sm:text-lg font-normal text-gray-500">
                                                         Questions
-                                                    </p>
+                                                    </h5>
                                                 </div>
                                             </div>
 
                                             <div className="w-full md:w-1/2 pr-0 md:pr-4">
                                                 <div>
-                                                    <h2 className="text-lg sm:text-xl md:text-2xl font-bold tracking-wide mb-1">
+                                                    <h4 className="text-lg sm:text-xl md:text-2xl font-bold tracking-wide mb-1">
                                                         {chapter.mistakes}{" "}
                                                         Mistakes
-                                                    </h2>
-                                                    <p className="text-base sm:text-lg font-normal text-gray-500">
+                                                    </h4>
+                                                    <h5 className="text-base sm:text-lg font-normal text-gray-500">
                                                         Allowed to pass
-                                                    </p>
+                                                    </h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -392,12 +390,12 @@ export default function HomePage({ auth, chapters }) {
                 </section>
                 <section className="container mx-auto text-center relative">
                     <div className="bg-indigo-600 text-white p-8 md:p-20 mt-8 relative overflow-hidden">
-                        <h2 className="text-sm font-base">
+                        <h4 className="text-sm font-base">
                             SPEED THROUGH TEST PREP
-                        </h2>
-                        <h1 className="text-3xl font-bold mb-4 mt-4">
+                        </h4>
+                        <h3 className="text-3xl font-bold mb-4 mt-4">
                             Offering the simplest way to prepare
-                        </h1>
+                        </h3>
 
                         <div className="grid grid-cols-1 gap-8 md:grid-cols-3 p-4 md:p-10">
                             <div className="text-center p-4 text-white rounded-md">
@@ -405,9 +403,9 @@ export default function HomePage({ auth, chapters }) {
                                     icon={faQuestion}
                                     className="mb-4 text-4xl"
                                 />
-                                <h1 className="text-lg font-bold mb-2">
+                                <h3 className="text-lg font-bold mb-2">
                                     700+ Practice Questions
-                                </h1>
+                                </h3>
                                 <p>
                                     Access over 700 Canadian citizenship test
                                     practice questions similar to those on the
@@ -419,9 +417,9 @@ export default function HomePage({ auth, chapters }) {
                                     icon={faPenToSquare}
                                     className="mb-4 text-4xl"
                                 />
-                                <h1 className="text-lg font-bold mb-2">
+                                <h3 className="text-lg font-bold mb-2">
                                     Realistic Test Simulations
-                                </h1>
+                                </h3>
                                 <p>
                                     Take Citizenship practice tests that mimic
                                     the actual exam format. This will help you
@@ -433,9 +431,9 @@ export default function HomePage({ auth, chapters }) {
                                     icon={faArrowTrendUp}
                                     className="mb-4 text-4xl"
                                 />
-                                <h1 className="text-lg font-bold mb-2">
+                                <h3 className="text-lg font-bold mb-2">
                                     Weakness Evaluations
-                                </h1>
+                                </h3>
                                 <p>
                                     Benefit from advanced evaluations to
                                     identify areas for improvement. This will
@@ -452,9 +450,9 @@ export default function HomePage({ auth, chapters }) {
                 </section>
                 <section className="text-black p-8 md:p-20 bg-slate-50">
                     <div className="container mx-auto">
-                        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
+                        <h3 className="text-3xl md:text-4xl font-bold text-center mb-8">
                             Questions designed to feel just like the real test
-                        </h1>
+                        </h3>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                             <div className="flex justify-center">
@@ -467,9 +465,9 @@ export default function HomePage({ auth, chapters }) {
 
                             <div>
                                 <div className="mb-8">
-                                    <h1 className="text-xl md:text-2xl font-bold mb-2">
+                                    <h4 className="text-xl md:text-2xl font-bold mb-2">
                                         Current and accurate
-                                    </h1>
+                                    </h4>
                                     <p className="text-gray-500 text-base">
                                         Our practice tests are based on the
                                         latest version of the Discover Canada
@@ -481,9 +479,9 @@ export default function HomePage({ auth, chapters }) {
                                     </p>
                                 </div>
                                 <div className="mb-8">
-                                    <h1 className="text-xl md:text-2xl font-bold mb-2">
+                                    <h4 className="text-xl md:text-2xl font-bold mb-2">
                                         Topic-based quizzes
-                                    </h1>
+                                    </h4>
                                     <p className="text-gray-500 text-base">
                                         Test yourself with quizzes designed for
                                         each chapter based on the Discover
@@ -493,9 +491,9 @@ export default function HomePage({ auth, chapters }) {
                                     </p>
                                 </div>
                                 <div className="mb-8">
-                                    <h1 className="text-xl md:text-2xl font-bold mb-2">
+                                    <h4 className="text-xl md:text-2xl font-bold mb-2">
                                         Prepare on the go
-                                    </h1>
+                                    </h4>
                                     <p className="text-gray-500 text-base">
                                         Our platform is easy to access from any
                                         device, so you can study and attend the
@@ -520,9 +518,9 @@ export default function HomePage({ auth, chapters }) {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                             <div>
                                 <div className="mb-8">
-                                    <h1 className="text-lg md:text-xl font-bold mb-2">
+                                    <h4 className="text-lg md:text-xl font-bold mb-2">
                                         Simplify your preparation
-                                    </h1>
+                                    </h4>
                                     <p className="text-base">
                                         We help ensure effective preparation
                                         with a structured study plan. You will
@@ -531,9 +529,9 @@ export default function HomePage({ auth, chapters }) {
                                     </p>
                                 </div>
                                 <div className="mb-8">
-                                    <h1 className="text-lg md:text-xl font-bold mb-2">
+                                    <h4 className="text-lg md:text-xl font-bold mb-2">
                                         Learn from your mistakes
-                                    </h1>
+                                    </h4>
                                     <p className="text-base">
                                         Taking unlimited test simulations and
                                         topic-based quizzes helps you find your
@@ -543,9 +541,9 @@ export default function HomePage({ auth, chapters }) {
                                     </p>
                                 </div>
                                 <div className="mb-8">
-                                    <h1 className="text-lg md:text-xl font-bold mb-2">
+                                    <h4 className="text-lg md:text-xl font-bold mb-2">
                                         Review your toughest questions
-                                    </h1>
+                                    </h4>
                                     <p className="text-base">
                                         Go over citizenship test practice
                                         questions that were tough or often
@@ -580,9 +578,9 @@ export default function HomePage({ auth, chapters }) {
                                     icon={faQuestion}
                                     className="text-3xl text-white mb-4"
                                 />
-                                <h1 className="text-lg font-bold mb-2 text-white">
+                                <h4 className="text-lg font-bold mb-2 text-white">
                                     700+ Questions
-                                </h1>
+                                </h4>
                                 <p className="text-base text-white">
                                     Access more than 700+ Canadian citizenship
                                     test practice questions, similar to those on
@@ -595,9 +593,9 @@ export default function HomePage({ auth, chapters }) {
                                     icon={faPenToSquare}
                                     className="text-3xl text-white mb-4"
                                 />{" "}
-                                <h1 className="text-lg font-bold mb-2 text-white">
+                                <h4 className="text-lg font-bold mb-2 text-white">
                                     Real-Life Test Simulations
-                                </h1>
+                                </h4>
                                 <p className="text-base text-white">
                                     Take citizenship practice tests that mimic
                                     the actual exam format. This helps you
@@ -610,9 +608,9 @@ export default function HomePage({ auth, chapters }) {
                                     icon={faArrowTrendUp}
                                     className="text-3xl text-white mb-4"
                                 />{" "}
-                                <h1 className="text-lg font-bold mb-2 text-white">
+                                <h4 className="text-lg font-bold mb-2 text-white">
                                     Weakness Evaluations
-                                </h1>
+                                </h4>
                                 <p className="text-base text-white">
                                     Benefit from advanced evaluations that
                                     pinpoint your weaknesses, helping you target
@@ -625,9 +623,9 @@ export default function HomePage({ auth, chapters }) {
                                     icon={faQuestion}
                                     className="text-3xl text-white mb-4"
                                 />{" "}
-                                <h1 className="text-lg font-bold mb-2 text-white">
+                                <h4 className="text-lg font-bold mb-2 text-white">
                                     Chapter Quizzes
-                                </h1>
+                                </h4>
                                 <p className="text-base text-white">
                                     Study using chapter-based questions from the
                                     Discover Canada study guide and delve deeply
@@ -640,9 +638,9 @@ export default function HomePage({ auth, chapters }) {
                                     icon={faQuestion}
                                     className="text-3xl text-white mb-4"
                                 />{" "}
-                                <h1 className="text-lg font-bold mb-2 text-white">
+                                <h4 className="text-lg font-bold mb-2 text-white">
                                     Important Dates
-                                </h1>
+                                </h4>
                                 <p className="text-base text-white">
                                     Understand key events and historical context
                                     using a timeline of Canada's history, making
@@ -655,9 +653,9 @@ export default function HomePage({ auth, chapters }) {
                                     icon={faQuestion}
                                     className="text-3xl text-white mb-4"
                                 />{" "}
-                                <h1 className="text-lg font-bold mb-2 text-white">
+                                <h4 className="text-lg font-bold mb-2 text-white">
                                     Flashcards
-                                </h1>
+                                </h4>
                                 <p className="text-base text-white">
                                     Memorize details from the study material
                                     using interactive flashcards, as you can
@@ -690,20 +688,20 @@ export default function HomePage({ auth, chapters }) {
                 </div>
                 <section className="container mx-auto  mt-20">
                     <div className="bg-indigo-600 py-12 text-white mt-4">
-                        <h2 className="text-sm font-normal text-center mb-4">
+                        <h3 className="text-sm font-normal text-center mb-4">
                             HIGHLY RECOMMENDED
-                        </h2>
-                        <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+                        </h3>
+                        <h4 className="text-3xl md:text-4xl font-bold mb-8 text-center">
                             What our users are saying about us
-                        </h1>
+                        </h4>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-1 mx-4 sm:mx-10 lg:mx-1 xl:mx-10">
                             <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
                                 <div className="p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                     <div>
-                                        <h1 className="text-xl font-bold mb-2 text-left">
+                                        <h3 className="text-xl font-bold mb-2 text-left">
                                             “Passed on my first attempt”
-                                        </h1>
+                                        </h3>
                                         <p className="text-sm mb-2 text-gray-500 text-left ">
                                             I was so nervous about the Canadian
                                             Citizenship Test, but this platform
@@ -727,9 +725,9 @@ export default function HomePage({ auth, chapters }) {
                                             className="w-12 h-12 rounded-full mr-2"
                                         />
                                         <div>
-                                            <h2 className="text-nowrap text-sm font-bold text-gray-600">
+                                            <h3 className="text-nowrap text-sm font-bold text-gray-600">
                                                 Jillian McAllister
-                                            </h2>
+                                            </h3>
                                             <p className="text-sm text-gray-600">
                                                 British Columbia
                                             </p>
@@ -763,9 +761,9 @@ export default function HomePage({ auth, chapters }) {
                             <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
                                 <div className="p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                     <div>
-                                        <h1 className="text-xl font-bold mb-2 text-left">
+                                        <h3 className="text-xl font-bold mb-2 text-left">
                                             “Exactly What I Needed”
-                                        </h1>
+                                        </h3>
                                         <p className="text-sm mb-14 text-gray-500 text-left">
                                             If you want to prepare for the
                                             Canadian Citizenship test, this is
@@ -784,9 +782,9 @@ export default function HomePage({ auth, chapters }) {
                                             className="w-12 h-12 rounded-full mr-2"
                                         />
                                         <div className="flex flex-col text-center sm:text-left">
-                                            <h2 className="text-nowrap text-sm font-bold text-gray-600">
+                                            <h3 className="text-nowrap text-sm font-bold text-gray-600">
                                                 Marcus Tremblay
-                                            </h2>
+                                            </h3>
                                             <p className="text-sm text-gray-600">
                                                 Nova Scotia
                                             </p>
@@ -820,9 +818,9 @@ export default function HomePage({ auth, chapters }) {
                             <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
                                 <div className="p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                     <div>
-                                        <h1 className="text-xl font-bold mb-2 text-left">
+                                        <h3 className="text-xl font-bold mb-2 text-left">
                                             “Best Resource For The Test”
-                                        </h1>
+                                        </h3>
                                         <p className="text-sm mb-10 text-gray-500 text-left">
                                             I failed the test in my first
                                             attempt. I was looking for an online
@@ -841,9 +839,9 @@ export default function HomePage({ auth, chapters }) {
                                             className="w-12 h-12 rounded-full mr-2"
                                         />
                                         <div>
-                                            <h2 className="text-nowrap text-sm font-bold text-gray-600">
+                                            <h3 className="text-nowrap text-sm font-bold text-gray-600">
                                                 Hitoshi Matsumoto
-                                            </h2>
+                                            </h3>
                                             <p className="text-sm text-gray-600">
                                                 Saskatchewan
                                             </p>
@@ -878,9 +876,9 @@ export default function HomePage({ auth, chapters }) {
                 </section>
                 <section className="hidden md:block bg-slate-50">
                     <div className="container mx-auto px-44">
-                        <h1 className="text-4xl font-bold my-10 text-center">
+                        <h2 className="text-4xl font-bold my-10 text-center">
                             What is the Canadian Citizenship Test?
-                        </h1>
+                        </h2>
                         <p className="text-sm text-gray-600">
                             The Canadian Citizenship Test evaluates applicants'
                             knowledge of Canada. Applicants must pass the test
@@ -895,13 +893,13 @@ export default function HomePage({ auth, chapters }) {
                         </p>
                     </div>
                     <div className="container mx-auto px-44">
-                        <h1 className="text-4xl font-bold my-4 text-center">
+                        <h3 className="text-4xl font-bold my-4 text-center">
                             What to remember before attending a Canadian
                             citizenship test?
-                        </h1>
-                        <h2 className="text-lg font-bold my-4">
+                        </h3>
+                        <h3 className="text-lg font-bold my-4">
                             Eligibility for Canadian Citizenship
-                        </h2>
+                        </h3>
                         <p className="text-sm text-gray-600 mt-2">
                             To be eligible for Canadian citizenship, there are
                             several key requirements that must be met. You must
@@ -913,9 +911,9 @@ export default function HomePage({ auth, chapters }) {
                             skills. You cannot have been convicted of any
                             serious crimes.
                         </p>
-                        <h2 className="text-lg font-bold my-4">
+                        <h3 className="text-lg font-bold my-4">
                             Test day procedures
-                        </h2>
+                        </h3>
                         <p className="text-sm text-gray-600 mt-2">
                             On the day of your scheduled Canadian Citizenship
                             Test, there are several important procedures to
@@ -930,7 +928,7 @@ export default function HomePage({ auth, chapters }) {
                             total of 30 minutes to complete the 20-question
                             test.
                         </p>
-                        <h2 className="text-lg font-bold my-4">Test Format</h2>
+                        <h3 className="text-lg font-bold my-4">Test Format</h3>
                         <p className="text-sm text-gray-600 mt-2">
                             The Canadian Citizenship Test itself consists of 20
                             multiple-choice questions. These questions cover a
@@ -941,9 +939,9 @@ export default function HomePage({ auth, chapters }) {
                             permitted during the test itself.  You’ll have 45
                             minutes to complete the test.
                         </p>
-                        <h2 className="text-lg font-bold my-4">
+                        <h3 className="text-lg font-bold my-4">
                             Scoring and Results
-                        </h2>
+                        </h3>
                         <p className="text-sm text-gray-600 mt-2">
                             To pass the Canadian Citizenship Test, you must
                             correctly answer at least 15 out of the 20
@@ -956,10 +954,10 @@ export default function HomePage({ auth, chapters }) {
                             to re-take the test after re-applying and meeting
                             the eligibility requirements again.
                         </p>
-                        <h2 className="text-lg font-bold my-4">
+                        <h3 className="text-lg font-bold my-4">
                             How many attempts to pass the Canadian citizenship
                             test?
-                        </h2>
+                        </h3>
                         <p className="text-sm text-gray-600 mt-2">
                             You have up to 3 attempts to pass the test. For
                             example, you can take the test a maximum of two more
@@ -969,11 +967,11 @@ export default function HomePage({ auth, chapters }) {
                 </section>
                 <section className="hidden md:block py-12 bg-slate-50">
                     <div className="container mx-auto px-44">
-                        <h1 className="text-4xl font-bold mb-4 text-center">
+                        <h2 className="text-4xl font-bold mb-4 text-center">
                             Tips to pass Canadian citizenship test in one
                             <br />
                             attempt
-                        </h1>
+                        </h2>
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
@@ -1110,14 +1108,14 @@ export default function HomePage({ auth, chapters }) {
                     <div className="container mx-auto flex flex-col md:flex-row rounded-2xl overflow-hidden bg-white shadow-lg p-4 md:p-8">
                         <div className="w-full md:w-1/2 bg-white text-black p-4 md:p-8">
                             <div className="flex flex-col items-center">
-                                <h1 className="text-xl font-bold text-center md:hidden">
+                                <h2 className="text-xl font-bold text-center md:hidden">
                                     Get all the essential tools to ensure you
                                     pass your test.
-                                </h1>
-                                <h1 className="hidden md:block text-xl sm:text-2xl md:text-3xl font-bold">
+                                </h2>
+                                <h2 className="hidden md:block text-xl sm:text-2xl md:text-3xl font-bold">
                                     Make sure you have everything you need to
                                     pass your test.
-                                </h1>
+                                </h2>
                             </div>
                         </div>
 

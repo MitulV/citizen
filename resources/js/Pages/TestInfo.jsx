@@ -133,16 +133,16 @@ export default function TestInfo({ chapterId, auth }) {
                     <div className="container mx-auto flex flex-col md:flex-row rounded-2xl overflow-hidden bg-white shadow-sm p-8">
                         {/* Left Side */}
                         <div className="w-full md:w-1/2 p-8">
-                            <h1 className="text-2xl sm:text-2xl font-bold mb-4">
+                            <h2 className="text-2xl sm:text-2xl font-bold mb-4">
                                 About this test
-                            </h1>
-                            <h2 className="text-lg sm:text-sm text-gray-500 mb-2">
+                            </h2>
+                            <h3 className="text-lg sm:text-sm text-gray-500 mb-2">
                                 <FontAwesomeIcon
                                     icon={faClock}
                                     className="mr-2"
                                 />
                                 30 minutes to complete
-                            </h2>
+                            </h3>
                             <p className="text-base sm:text-sm mb-4 text-gray-600">
                                 This practice test is designed to assess your
                                 understanding of the content from Chapter 1 of
@@ -160,43 +160,43 @@ export default function TestInfo({ chapterId, auth }) {
 
                         {/* Right Side */}
                         <div className="w-full md:w-1/2 p-8">
-                            <h1 className="text-2xl sm:text-3xl font-bold mb-8">
+                            <h2 className="text-2xl sm:text-3xl font-bold mb-8">
                                 What to expect on the actual test
-                            </h1>
+                            </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 {/* First row */}
                                 <div className="bg-slate-50">
-                                    <h1 className="text-sm text-gray-600 sm:text-lg  mb-2">
+                                    <h3 className="text-sm text-gray-600 sm:text-lg  mb-2">
                                         Questions
-                                    </h1>
-                                    <h2 className="text-lg sm:text-lg font-bold mb-2">
+                                    </h3>
+                                    <h4 className="text-lg sm:text-lg font-bold mb-2">
                                         20
-                                    </h2>
+                                    </h4>
                                 </div>
                                 <div className="bg-slate-50">
-                                    <h1 className="text-sm text-gray-600 sm:text-lg  mb-2">
+                                    <h3 className="text-sm text-gray-600 sm:text-lg  mb-2">
                                         Allowed to pass
-                                    </h1>
-                                    <h2 className="text-lg sm:text-lg font-bold mb-2">
+                                    </h3>
+                                    <h4 className="text-lg sm:text-lg font-bold mb-2">
                                         5 mistakes
-                                    </h2>
+                                    </h4>
                                 </div>
                                 {/* Second row */}
                                 <div className="bg-slate-50">
-                                    <h1 className="text-sm text-gray-600 sm:text-lg  mb-2">
+                                    <h3 className="text-sm text-gray-600 sm:text-lg  mb-2">
                                         Passing Score
-                                    </h1>
-                                    <h2 className="text-lg sm:text-lg font-bold mb-2">
+                                    </h3>
+                                    <h4 className="text-lg sm:text-lg font-bold mb-2">
                                         75%{" "}
-                                    </h2>
+                                    </h4>
                                 </div>
                                 <div className="bg-slate-50">
-                                    <h1 className="text-sm text-gray-600 sm:text-lg  mb-2">
+                                    <h3 className="text-sm text-gray-600 sm:text-lg  mb-2">
                                         Your Score:
-                                    </h1>
-                                    <h2 className="text-lg sm:text-lg font-bold mb-2">
+                                    </h3>
+                                    <h4 className="text-lg sm:text-lg font-bold mb-2">
                                         13%
-                                    </h2>
+                                    </h4>
                                 </div>
                             </div>
                         </div>

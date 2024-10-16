@@ -8,6 +8,13 @@ export default function Refundpolicy({ auth, chapters }) {
     return (
         <>
             <GuestLayout>
+                <Head>
+                    <title>Refund Policy - CitizenTestPrep</title>
+                    <meta
+                        name="description"
+                        content="Discover CitizenTestPrep's Refund Policy"
+                    />
+                </Head>
                 <div className="bg-slate-50 min-h-screen">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="max-w-3xl mx-auto py-12">
@@ -35,9 +42,9 @@ export default function Refundpolicy({ auth, chapters }) {
                             {/* Section 2 */}
                             <div className="py-8 rounded-lg mb-8">
                                 <div className="container mx-auto px-4">
-                                    <h1 className="text-3xl font-bold mb-4">
+                                    <h2 className="text-3xl font-bold mb-4">
                                         Refund Eligibility
-                                    </h1>
+                                    </h2>
                                     <p className="text-lg mb-4 text-zinc-600">
                                         Refunds may be considered under the
                                         following conditions:
@@ -72,9 +79,9 @@ export default function Refundpolicy({ auth, chapters }) {
                                         will initiate the refund process.
                                     </p>
 
-                                    <h1 className="text-3xl font-bold mb-4">
+                                    <h2 className="text-3xl font-bold mb-4">
                                         Ineligible for Refund
-                                    </h1>
+                                    </h2>
                                     <p className="text-lg mb-4  text-zinc-600">
                                         Please ensure thorough consideration of
                                         the course details to align with your
@@ -113,9 +120,9 @@ export default function Refundpolicy({ auth, chapters }) {
                             </div>
                             <div className="py-2 rounded-lg mb-2 hidden sm:block">
                                 <div className="container mx-auto px-4">
-                                    <h1 className="text-3xl font-bold mb-4">
+                                    <h2 className="text-3xl font-bold mb-4">
                                         To Claim
-                                    </h1>
+                                    </h2>
                                     <p className="text-lg mb-2 text-zinc-600">
                                         Just send us an email with your full
                                         name (which must match the name and
@@ -128,9 +135,9 @@ export default function Refundpolicy({ auth, chapters }) {
 
                             <div className="py-2 rounded-lg mb-2 hidden sm:block">
                                 <div className="container mx-auto px-4">
-                                    <h1 className="text-3xl font-bold mb-4">
+                                    <h2 className="text-3xl font-bold mb-4">
                                         What Happens Next
-                                    </h1>
+                                    </h2>
                                     <p className="text-lg mb-4 text-zinc-600">
                                         We'll check your account to make sure
                                         you've successfully completed the entire

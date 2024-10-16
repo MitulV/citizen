@@ -27,20 +27,20 @@ export default function Footer() {
                             guarantee.
                         </p>
                         <div className="mt-4 sm:flex sm:flex-col sm:items-left md:hidden lg:hidden xl:hidden">
-                            <h1 className="text-xs md:text-sm text-gray-600 mt-2">
+                            <h3 className="text-xs md:text-sm text-gray-600 mt-2">
                                 <FontAwesomeIcon
                                     icon={faEnvelope}
                                     className="mr-2"
                                 />
                                 hello@citizentestprep.ca
-                            </h1>
-                            <h1 className="text-xs md:text-sm text-gray-600 mt-2 sm:mt-0">
+                            </h3>
+                            <h3 className="text-xs md:text-sm text-gray-600 mt-2 sm:mt-0">
                                 <FontAwesomeIcon
                                     icon={faPhone}
                                     className="mr-2"
                                 />{" "}
                                 +1 672-558-4037
-                            </h1>
+                            </h3>
                         </div>
                     </div>
 
@@ -156,14 +156,14 @@ export default function Footer() {
                 </div>
 
                 <div className="my-4 hidden md:flex flex-wrap items-center justify-center md:justify-start">
-                    <h1 className="text-xs md:text-sm text-gray-600">
+                    <h3 className="text-xs md:text-sm text-gray-600">
                         <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                         hello@citizentestprep.ca
-                    </h1>
-                    <h1 className="text-xs md:text-sm text-gray-600 ml-4">
+                    </h3>
+                    <h3 className="text-xs md:text-sm text-gray-600 ml-4">
                         <FontAwesomeIcon icon={faPhone} className="mr-2" /> +1
                         672-558-4037
-                    </h1>
+                    </h3>
                 </div>
             </div>
 

@@ -33,8 +33,8 @@ export default function HomeChapterCard({
             <div className="flex-1 px-5 py-4">
                 {" "}
                 {/* Flex-grow for equal height */}
-                <h1 className="text-lg font-bold">{name}</h1>
-                <h2 className="text-gray-800 text-lg font-semibold">{title}</h2>
+                <h3 className="text-lg font-bold">{name}</h3>
+                <h4 className="text-gray-800 text-lg font-semibold">{title}</h4>
                 <p className="text-gray-500 text-base">{description}</p>
             </div>
 
@@ -43,12 +43,12 @@ export default function HomeChapterCard({
                 <div className="w-full md:w-1/2 mb-4 md:mb-0">
                     <div className="flex flex-row items-center">
                         <div>
-                            <h1 className="font-bold text-lg tracking-wide mb-1">
+                            <h3 className="font-bold text-lg tracking-wide mb-1">
                                 {questions}
-                            </h1>
-                            <p className="text-base font-normal text-gray-500">
+                            </h3>
+                            <h4 className="text-base font-normal text-gray-500">
                                 Questions
-                            </p>
+                            </h4>
                         </div>
                     </div>
                 </div>
@@ -57,12 +57,12 @@ export default function HomeChapterCard({
                 <div className="w-full md:w-1/2">
                     <div className="flex flex-row items-center">
                         <div>
-                            <h1 className="font-bold text-lg tracking-wide mb-1">
+                            <h3 className="font-bold text-lg tracking-wide mb-1">
                                 {mistakes} Mistakes
-                            </h1>
-                            <p className="text-base font-normal text-gray-500">
+                            </h3>
+                            <h4 className="text-base font-normal text-gray-500">
                                 Allowed to pass
-                            </p>
+                            </h4>
                         </div>
                     </div>
                 </div>

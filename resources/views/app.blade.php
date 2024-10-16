@@ -2,6 +2,9 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ url()->current() }}" />
+    <!-- Other meta tags and styles -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TYKJRWE13Z"></script>
     <script>
         window.dataLayer = window.dataLayer || [];

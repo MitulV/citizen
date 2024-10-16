@@ -46,13 +46,13 @@ export default function PrivacyPolicy({ auth, chapters }) {
                             {/* Section 2 */}
                             <div className="py-4 rounded-lg ">
                                 <div className="container mx-auto px-4">
-                                    <h1 className="text-2xl font-bold mb-4">
+                                    <h2 className="text-2xl font-bold mb-4">
                                         Detailed Information on the Processing
                                         of Personal Data
-                                    </h1>
-                                    <h2 className="text-xl font-bold mb-2 mt-10">
-                                        Advertising
                                     </h2>
+                                    <h3 className="text-xl font-bold mb-2 mt-10">
+                                        Advertising
+                                    </h3>
                                     <p className="text-lg mb-4 font-semibold text-zinc-600">
                                         Google AdSense (Google LLC):
                                     </p>
@@ -208,10 +208,10 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                     {/* Displaying Content from External Platforms */}
                                     <div className="py-2 rounded-lg mb-8">
                                         <div className="container mx-auto">
-                                            <h1 className="text-2xl font-bold mb-4">
+                                            <h2 className="text-2xl font-bold mb-4">
                                                 Displaying Content from External
                                                 Platforms
-                                            </h1>
+                                            </h2>
 
                                             <p className="text-lg mb-4 text-zinc-600">
                                                 These services allow us to
@@ -327,10 +327,10 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                     <div className="py-2 rounded-lg mb-8">
                                         <div className="container">
                                             {/* Displaying Content from External Platforms */}
-                                            <h1 className="text-2xl font-bold mb-4 ">
+                                            <h2 className="text-2xl font-bold mb-4 ">
                                                 Displaying Content from External
                                                 Platforms
-                                            </h1>
+                                            </h2>
                                             <p className="text-lg mb-4 text-zinc-600">
                                                 These services allow us to
                                                 display content hosted on
@@ -432,9 +432,9 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                             </ul>
 
                                             {/* Handling Payments */}
-                                            <h1 className="text-2xl font-bold mb-4 ">
+                                            <h2 className="text-2xl font-bold mb-4 ">
                                                 Handling Payments
-                                            </h1>
+                                            </h2>
                                             <p className="text-lg mb-4 text-zinc-600 ">
                                                 Payment processing services
                                                 enable us to process payments
@@ -488,10 +488,10 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                     </div>
                                     <div className="py-2 rounded-lg mb-8">
                                         <div className="container mx-auto">
-                                            <h1 className="text-2xl mb-4  font-bold">
+                                            <h2 className="text-2xl mb-4  font-bold">
                                                 Hosting and Backend
                                                 Infrastructure
-                                            </h1>
+                                            </h2>
 
                                             <p className="text-lg mb-4 text-zinc-600">
                                                 These services host data and
@@ -521,10 +521,10 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                                 </li>
                                             </ul>
 
-                                            <h1 className="text-2xl  mb-4 font-bold">
+                                            <h2 className="text-2xl  mb-4 font-bold">
                                                 Interaction with External Social
                                                 Networks and Platforms
-                                            </h1>
+                                            </h2>
 
                                             <p className="text-lg mb-4 text-zinc-600">
                                                 These services allow interaction
@@ -586,10 +586,10 @@ export default function PrivacyPolicy({ auth, chapters }) {
                             {/* Section 3 - Further Information about the Processing of Personal Data */}
                             <div className=" py-2 rounded-lg mb-8">
                                 <div className="container mx-auto ">
-                                    <h1 className="text-3xl font-bold mb-4">
+                                    <h2 className="text-3xl font-bold mb-4">
                                         Further Information about the Processing
                                         of Personal Data
-                                    </h1>
+                                    </h2>
 
                                     {/* Legal Basis of Processing */}
                                     <h2 className="text-xl font-bold my-4">
@@ -641,9 +641,9 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                     </p>
                                     <div className="py-2 rounded-lg mb-8">
                                         <div className="container mx-auto">
-                                            <h1 className="text-2xl font-bold mb-4">
+                                            <h2 className="text-2xl font-bold mb-4">
                                                 Your Rights
-                                            </h1>
+                                            </h2>
                                             <p className="text-lg mb-4 ">
                                                 We may process Personal Data if
                                                 one of the following applies:
@@ -683,9 +683,9 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                                 </li>
                                             </ul>
 
-                                            <h1 className="text-2xl font-bold mb-4">
+                                            <h2 className="text-2xl font-bold mb-4">
                                                 Changes to This Privacy Policy
-                                            </h1>
+                                            </h2>
                                             <p className="text-lg mb-4 text-zinc-600">
                                                 We reserve the right to make
                                                 changes to this Privacy Policy
@@ -699,9 +699,9 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                                 you, where required.
                                             </p>
 
-                                            <h1 className="text-2xl font-bold mb-4 ">
+                                            <h2 className="text-2xl font-bold mb-4 ">
                                                 Definitions and Legal References
-                                            </h1>
+                                            </h2>
                                             <p className="text-lg mb-4 text-zinc-600">
                                                 Personal Data (or Data): Any
                                                 information that directly,
@@ -751,9 +751,9 @@ export default function PrivacyPolicy({ auth, chapters }) {
 
                                     <div className="py-2 rounded-lg mb-8">
                                         <div className="container mx-auto">
-                                            <h1 className="text-2xl font-bold mb-4 ">
+                                            <h2 className="text-2xl font-bold mb-4 ">
                                                 Information We Collect
-                                            </h1>
+                                            </h2>
                                             <p className="text-lg mb-4 text-zinc-600">
                                                 The personal information that
                                                 you are asked to provide, and
@@ -780,9 +780,9 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                                 number.
                                             </p>
 
-                                            <h1 className="text-2xl font-bold mb-4">
+                                            <h2 className="text-2xl font-bold mb-4">
                                                 How We Use Your Information
-                                            </h1>
+                                            </h2>
                                             <p className="text-lg mb-4 text-zinc-600">
                                                 We use the information we
                                                 collect in various ways,
@@ -822,9 +822,9 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                                 <li>Find and prevent fraud</li>
                                             </ul>
 
-                                            <h1 className="text-2xl font-bold mb-4">
+                                            <h2 className="text-2xl font-bold mb-4">
                                                 Log Files
-                                            </h1>
+                                            </h2>
                                             <p className="text-lg mb-4 text-zinc-600">
                                                 CitizenTestPrep follows a
                                                 standard procedure of using log
@@ -850,9 +850,9 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                                 demographic information.
                                             </p>
 
-                                            <h1 className="text-2xl font-bold mb-4 ">
+                                            <h2 className="text-2xl font-bold mb-4 ">
                                                 Cookies
-                                            </h1>
+                                            </h2>
                                             <p className="text-lg mb-4 text-zinc-600">
                                                 Like any other website,
                                                 CitizenTestPrep uses ‘cookies’.
@@ -868,10 +868,10 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                                 and/or other information.
                                             </p>
 
-                                            <h1 className="text-2xl font-bold mb-4">
+                                            <h2 className="text-2xl font-bold mb-4">
                                                 Advertising Partners Privacy
                                                 Policies
-                                            </h1>
+                                            </h2>
                                             <p className="text-lg mb-4 text-zinc-600">
                                                 Third-party ad servers or ad
                                                 networks use technologies like
@@ -895,9 +895,9 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                                 third-party advertisers.
                                             </p>
 
-                                            <h1 className="text-2xl font-bold mb-4">
+                                            <h2 className="text-2xl font-bold mb-4">
                                                 Third Party Privacy Policies
-                                            </h1>
+                                            </h2>
                                             <p className="text-lg mb-4 text-zinc-600">
                                                 CitizenTestPrep’s Privacy Policy
                                                 does not apply to other
@@ -918,9 +918,9 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                                 browsers’ respective websites.
                                             </p>
 
-                                            <h1 className="text-2xl font-bold mb-4 ">
+                                            <h2 className="text-2xl font-bold mb-4 ">
                                                 GDPR Data Protection Rights
-                                            </h1>
+                                            </h2>
                                             <p className="text-lg mb-4 text-zinc-600">
                                                 We would like to make sure you
                                                 are fully aware of all of your
@@ -1007,9 +1007,9 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                                 of these rights, please contact
                                                 us.
                                             </p>
-                                            <h1 className="text-2xl font-bold mb-4 ">
+                                            <h2 className="text-2xl font-bold mb-4 ">
                                                 Our Results
-                                            </h1>
+                                            </h2>
                                             <p className="text-lg mb-4 text-zinc-600">
                                                 We are proud of the success
                                                 stories from our users who have

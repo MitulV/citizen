@@ -45,9 +45,9 @@ export default function About({}) {
 
                     {/* Section 2 */}
                     <div className="text-left mb-10 md:px-20 lg:px-40">
-                        <h1 className="text-lg md:text-xl font-bold mb-4">
+                        <h2 className="text-lg md:text-xl font-bold mb-4">
                             Our Mission and Goals
-                        </h1>
+                        </h2>
                         <p className="text-sm md:text-base text-gray-400 mb-4">
                             At CitizenTestPrep, our mission is to empower
                             aspiring Canadian citizens by providing them with
@@ -62,9 +62,9 @@ export default function About({}) {
                     </div>
 
                     <div className="text-left mb-10 md:px-20 lg:px-40">
-                        <h1 className="text-lg md:text-xl font-bold mb-4">
+                        <h2 className="text-lg md:text-xl font-bold mb-4">
                             Our Tests
-                        </h1>
+                        </h2>
                         <p className="text-sm md:text-base text-gray-400 mb-4">
                             Our tests are meticulously crafted to mirror the
                             structure and content of the actual Canadian
@@ -80,9 +80,9 @@ export default function About({}) {
                     </div>
 
                     <div className="text-left mb-10 md:px-20 lg:px-40">
-                        <h1 className="text-lg md:text-xl font-bold mb-4">
+                        <h2 className="text-lg md:text-xl font-bold mb-4">
                             Our Quality Control and Updates
-                        </h1>
+                        </h2>
                         <p className="text-sm md:text-base text-gray-400 mb-4">
                             Quality and accuracy are at the heart of what we do.
                             Our team of experts continually reviews and updates
@@ -97,9 +97,9 @@ export default function About({}) {
                     </div>
 
                     <div className="text-left mb-10 md:px-20 lg:px-40">
-                        <h1 className="text-lg md:text-xl font-bold mb-4">
+                        <h2 className="text-lg md:text-xl font-bold mb-4">
                             Our Team
-                        </h1>
+                        </h2>
                         <p className="text-sm md:text-base text-gray-400 mb-4">
                             The CitizenTestPrep team is composed of experienced
                             individuals who are passionate about helping people
@@ -151,9 +151,9 @@ export default function About({}) {
                     </div>
 
                     <div className="text-left mb-10 md:px-20 lg:px-40 mt-8">
-                        <h1 className="text-lg md:text-xl font-bold mb-4">
+                        <h2 className="text-lg md:text-xl font-bold mb-4">
                             Our Results
-                        </h1>
+                        </h2>
                         <p className="text-sm md:text-base text-gray-400 mb-4">
                             We are proud of the success stories from our users
                             who have achieved their dream of Canadian
@@ -175,10 +175,10 @@ export default function About({}) {
                     <section className="bg-slate-50 py-8 md:py-16 px-4 md:px-8">
                         <div className="container mx-auto flex flex-col md:flex-row rounded-2xl overflow-hidden bg-white shadow-lg p-4 md:p-8">
                             <div className="w-full md:w-1/2 bg-white text-black p-4 md:p-8">
-                                <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">
+                                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">
                                     Get all the essential tools to ensure you
                                     pass your test.
-                                </h1>
+                                </h2>
                             </div>
 
                             <div className="w-full md:w-1/2 md:p-8 flex flex-col justify-center items-center">
