@@ -759,7 +759,7 @@ export default function Premium({ auth }) {
                                     </h2>
                                     <p className="text-gray-600 text-xs sm:text-sm mb-4">
                                         When every day counts, get maximum
-                                        knowledge in 30-days.
+                                        knowledge in three months.
                                     </p>
                                     <div className="flex justify-between">
                                         <p className="font-bold text-xl sm:text-2xl">
@@ -780,10 +780,32 @@ export default function Premium({ auth }) {
                                     </p>
                                     <ul className="space-y-2 text-zinc-600 text-xs sm:text-sm mt-2">
                                         {[
-                                            "Customized chapter-wise practice tests",
-                                            "Access 700+ test questions",
-                                            "Unlimited exam simulation",
-                                            "Advanced AI delivers a performance review",
+                                            "Access to over 700+ test questions",
+                                            "Practice tests for each chapter",
+                                            "Unlimited exam simulators",
+                                            "Personalized study guides",
+                                        ].map((text, index) => (
+                                            <li
+                                                key={index}
+                                                className="flex items-center"
+                                            >
+                                                <FontAwesomeIcon
+                                                    icon={faCheck}
+                                                    className="mr-2"
+                                                />
+                                                {text}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <p className="text-xs sm:text-sm text-zinc-600 mt-4">
+                                        Features
+                                    </p>
+                                    <ul className="space-y-2 text-zinc-600 text-xs sm:text-sm mt-2">
+                                        {[
+                                            "500+ Flashcards for every chapter",
+                                            "Complete list of significant dates",
+                                            "Directory of important people",
+                                            "Comprehensive Q&A",
                                         ].map((text, index) => (
                                             <li
                                                 key={index}
@@ -816,18 +838,18 @@ export default function Premium({ auth }) {
                                 />
                                 <div className="bg-white border-4 border-indigo-600 rounded-3xl p-4 sm:p-6 shadow-2xl">
                                     <h2 className="text-2xl sm:text-3xl font-bold mb-2">
-                                        3-Month Exam Prep
+                                        6-Month Exam Prep
                                     </h2>
                                     <p className="text-gray-600 text-xs sm:text-sm mb-4">
-                                        When every day counts, get maximum
-                                        knowledge in 30-days.
+                                        When diving deep matters. A complete
+                                        package to ace the exam.
                                     </p>
                                     <div className="flex justify-between">
                                         <p className="font-bold text-xl sm:text-2xl">
-                                            $19.99
+                                            $29.99
                                         </p>
                                         <p className="text-gray-600 text-xs sm:text-sm">
-                                            Just $0.6/day
+                                            Just $1/day
                                         </p>
                                     </div>
                                     <button className="bg-primary text-white py-2 w-full rounded-full mt-4">
@@ -838,10 +860,32 @@ export default function Premium({ auth }) {
                                     </p>
                                     <ul className="space-y-2 text-zinc-600 text-xs sm:text-sm mt-2">
                                         {[
-                                            "Customized chapter-wise practice tests",
-                                            "Access 700+ test questions",
-                                            "Unlimited exam simulation",
-                                            "Advanced AI delivers a performance review",
+                                            "Access to over 700+ test questions",
+                                            "Practice tests for each chapter",
+                                            "Unlimited exam simulators",
+                                            "Personalized study guides",
+                                        ].map((text, index) => (
+                                            <li
+                                                key={index}
+                                                className="flex items-center"
+                                            >
+                                                <FontAwesomeIcon
+                                                    icon={faCheck}
+                                                    className="mr-2"
+                                                />
+                                                {text}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <p className="text-xs sm:text-sm text-zinc-600 mt-4">
+                                        Features
+                                    </p>
+                                    <ul className="space-y-2 text-zinc-600 text-xs sm:text-sm mt-2">
+                                        {[
+                                            "500+ Flashcards for every chapter",
+                                            "Complete list of significant dates",
+                                            "Directory of important people",
+                                            "Comprehensive Q&A",
                                         ].map((text, index) => (
                                             <li
                                                 key={index}
@@ -874,18 +918,15 @@ export default function Premium({ auth }) {
                                 />
                                 <div className="bg-white border-2 border-blue-50 rounded-3xl p-4 sm:p-6 shadow-xl">
                                     <h2 className="text-2xl sm:text-3xl font-bold mb-2">
-                                        3-Month Exam Prep
+                                        Lifetime Unlimited
                                     </h2>
                                     <p className="text-gray-600 text-xs sm:text-sm mb-4">
-                                        When every day counts, get maximum
-                                        knowledge in 30-days.
+                                        When one time is all the time. Access
+                                        today and always, covering all renewals.
                                     </p>
                                     <div className="flex justify-between">
                                         <p className="font-bold text-xl sm:text-2xl">
-                                            $19.99
-                                        </p>
-                                        <p className="text-gray-600 text-xs sm:text-sm">
-                                            Just $0.6/day
+                                            $59.99
                                         </p>
                                     </div>
                                     <button className="bg-primary text-white py-2 w-full rounded-full mt-4">
@@ -896,10 +937,32 @@ export default function Premium({ auth }) {
                                     </p>
                                     <ul className="space-y-2 text-zinc-600 text-xs sm:text-sm mt-2">
                                         {[
-                                            "Customized chapter-wise practice tests",
-                                            "Access 700+ test questions",
-                                            "Unlimited exam simulation",
-                                            "Advanced AI delivers a performance review",
+                                            "Access to over 700+ test questions",
+                                            "Practice tests for each chapter",
+                                            "Unlimited exam simulators",
+                                            "Personalized study guides",
+                                        ].map((text, index) => (
+                                            <li
+                                                key={index}
+                                                className="flex items-center"
+                                            >
+                                                <FontAwesomeIcon
+                                                    icon={faCheck}
+                                                    className="mr-2"
+                                                />
+                                                {text}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <p className="text-xs sm:text-sm text-zinc-600 mt-4">
+                                        Features
+                                    </p>
+                                    <ul className="space-y-2 text-zinc-600 text-xs sm:text-sm mt-2">
+                                        {[
+                                            "500+ Flashcards for every chapter",
+                                            "Complete list of significant dates",
+                                            "Directory of important people",
+                                            "Comprehensive Q&A",
                                         ].map((text, index) => (
                                             <li
                                                 key={index}
