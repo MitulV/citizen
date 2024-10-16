@@ -14426,7 +14426,7 @@ class DatabaseSeeder extends Seeder
         ],
         [
           'name' => 'Lifetime Unlimited',
-          'price' => 19.99,
+          'price' => 59.99,
           'validity' => 36500,
         ],
       ];
