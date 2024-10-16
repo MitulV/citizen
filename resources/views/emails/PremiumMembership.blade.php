@@ -55,8 +55,8 @@
         }
 
         .button {
-            background-color: #38a169;
-            /* Green background */
+            background-color: #FE753E;
+            /* Custom button color */
             color: #ffffff;
             /* White text */
             text-decoration: none;
@@ -69,8 +69,32 @@
         }
 
         .button:hover {
-            background-color: #2f855a;
-            /* Darker green on hover */
+            background-color: #d86834;
+            /* Darker shade on hover */
+        }
+
+        .table {
+            width: 100%;
+            margin-top: 16px;
+            border-collapse: collapse;
+            /* Collapse borders */
+        }
+
+        .table th,
+        .table td {
+            padding: 12px;
+            /* Padding for table cells */
+            text-align: left;
+            /* Align text to the left */
+            border-bottom: 1px solid #e2e8f0;
+            /* Light gray border */
+        }
+
+        .table th {
+            font-weight: 600;
+            /* Bold text for headers */
+            background-color: #f0f0f0;
+            /* Light background for header */
         }
     </style>
 </head>
@@ -89,21 +113,21 @@
                 member. Here’s a summary of your package details:</p>
 
             <!-- Package Details -->
-            <table style="width: 100%; margin-top: 16px;">
+            <table class="table">
                 <tr>
-                    <td style="font-weight: bold;">Package Name:</td>
+                    <th>Package Name</th>
                     <td>{{ $mailData['PACKAGE_NAME'] }}</td>
                 </tr>
                 <tr>
-                    <td style="font-weight: bold;">Start Date:</td>
+                    <th>Start Date</th>
                     <td>{{ $mailData['START_DATE'] }}</td>
                 </tr>
                 <tr>
-                    <td style="font-weight: bold;">End Date:</td>
+                    <th>End Date</th>
                     <td>{{ $mailData['END_DATE'] }}</td>
                 </tr>
                 <tr>
-                    <td style="font-weight: bold;">Amount Paid:</td>
+                    <th>Amount Paid</th>
                     <td>{{ $mailData['AMOUNT'] }}</td>
                 </tr>
             </table>
@@ -114,9 +138,7 @@
             <p>Welcome aboard and enjoy your premium experience!</p>
 
             <div>
-                <a href="{{ route('dashboard') }}"
-                    class="inline-block bg-green-600 text-white text-lg font-semibold py-3 px-6 rounded-lg hover:bg-green-700 transition">View
-                    My Account</a>
+                <a href="{{ route('dashboard') }}" class="button">View My Account</a> <!-- Updated button class -->
             </div>
         </div>
 
