@@ -17,8 +17,8 @@ export default function HomePage({ auth, chapters }) {
             <GuestLayout user={auth.user}>
                 <Head>
                     <title>
-                        CitizenTestPrep Canada - Canadian Citizenship Practise
-                        Test Online
+                        CitizenTestPrep - Canadian Citizenship Practise Test
+                        Online
                     </title>
                     <meta
                         name="description"
