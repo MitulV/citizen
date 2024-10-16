@@ -4,7 +4,11 @@
     # Redirect non-www to www
     RewriteCond %{HTTP_HOST} ^citizentestprep\.ca [NC]
     RewriteRule ^(.*)$ https://www.citizentestprep.ca/$1 [L,R=301]
-    
+
+    # Redirect /public URLs to root
+    RewriteCond %{REQUEST_URI} ^/public [NC]
+    RewriteRule ^public/(.*)$ /$1 [L,R=301]
+
     # Existing rule to redirect all traffic to the public/ folder
     RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>
