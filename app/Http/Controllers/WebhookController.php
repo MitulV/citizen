@@ -6,7 +6,6 @@ use App\Mail\PremiumMembershipMail;
 use App\Models\Transaction;
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Log\Logger;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Stripe\Exception\SignatureVerificationException;
@@ -54,6 +53,7 @@ class WebhookController extends Controller
 
   public function handleCheckoutSession($session, $request)
   {
+    Log::info('inside handleCheckoutSession');
     try {
       $transactionId = $session->metadata->transaction_id;
       $userId = $session->metadata->user_id;
