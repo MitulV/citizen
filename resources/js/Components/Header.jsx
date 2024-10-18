@@ -43,7 +43,9 @@ export default function Header({ user }) {
                                     href="#"
                                     className="hover:text-primary block"
                                 >
-                                    Help
+                                    <div className="font-inter text-[14px] font-normal leading-[16.94px] text-center">
+                                        Help
+                                    </div>
                                 </Link>
                             </li>
                             <li>
@@ -161,7 +163,7 @@ export default function Header({ user }) {
                 <div className="hidden lg:flex items-center space-x-4">
                     <Link
                         href={user ? route("dashboard") : route("login")}
-                        className="border-2 border-primary bg-white text-gray-800 px-4 py-2 rounded-full"
+                        className="border border-primary bg-white text-gray-800 px-4 py-2 rounded-full flex justify-center items-center"
                     >
                         {user ? "Dashboard" : "Sign In"}
                     </Link>

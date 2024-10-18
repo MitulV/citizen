@@ -59,7 +59,7 @@ export default function HomePage({ auth, chapters }) {
                         <div className="container mx-auto px-4 mt-4 sm:mt-8">
                             <p className="text-xs sm:text-xs md:text-xl lg:text-lg xl:text-xl font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
                                 or pass the first time, guaranteed with
-                                <span className="text-primary ml-1 underline underline-offset-1">
+                                <span className="text-primary ml-1 underline underline-offset-4">
                                     <Link href={route("premiumPage")}>
                                         Premium
                                     </Link>
@@ -178,9 +178,10 @@ export default function HomePage({ auth, chapters }) {
 
                 <section className="bg-slate-50 lg:py-20 sm:py-0 ">
                     <div className="container mx-auto px-4">
-                        <h4 className=" text-sm font-normal leading-8 text-center text-blue-500 mt-10">
+                        <h4 className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-blue-500 mt-10 mb-3">
                             CHAPTER-WISE PRACTICE TESTS
                         </h4>
+
                         <h3 className=" text-4xl font-extrabold leading-10 tracking-wide text-center">
                             Start your 2024 Canadian citizenship test
                             <br />
@@ -188,7 +189,7 @@ export default function HomePage({ auth, chapters }) {
                         </h3>
                     </div>
                 </section>
-                <section className="container mx-auto px-4 sm:px-6 md:px-10 mb-0 flex flex-col md:flex-row bg-slate-50">
+                <section className="container mx-auto mb-0 flex flex-col md:flex-row bg-slate-50">
                     <div className="md:w-1/2 flex items-center justify-center md:justify-start">
                         <h4 className="font-bold text-lg sm:text-xl md:text-2xl tracking-wide text-center md:text-left">
                             Step 1
@@ -259,9 +260,10 @@ export default function HomePage({ auth, chapters }) {
                             </Link>
                         ))}
                 </section>
-                <section className="container mx-auto px-4 md:px-10 mb-0 flex flex-col md:flex-row py-4 bg-slate-50">
+
+                <section className="container mx-auto my-2 mb-0 flex flex-col md:flex-row py-4 bg-slate-50">
                     <div className="md:w-1/2 flex items-center justify-center md:justify-start">
-                        <h3 className="font-bold text-lg md:text-xl tracking-wide text-center md:text-left">
+                        <h3 className="font-bold text-lg sm:text-xl md:text-2xl tracking-wide text-center md:text-left">
                             Step 2
                         </h3>
                     </div>
@@ -321,20 +323,22 @@ export default function HomePage({ auth, chapters }) {
                             ))}
                     </section>
                 </div>
-                <div className="container mx-auto px-4 md:px-10 mb-0 flex flex-col md:flex-row py-4 bg-slate-50">
-                    <div className="md:w-1/2 flex items-center justify-left md:justify-start">
-                        <h4 className="font-bold text-lg md:text-xl tracking-wide">
+
+                <section className="container mx-auto my-2 mb-0 flex flex-col md:flex-row bg-slate-50">
+                    <div className="md:w-1/2 flex items-center justify-center md:justify-start">
+                        <h4 className="font-bold text-lg sm:text-xl md:text-2xl tracking-wide text-center md:text-left">
                             Step 3
                         </h4>
                     </div>
 
-                    <div className="md:w-1/2 flex items-center justify-left md:justify-end mt-4 md:mt-0">
-                        <h4 className="text-sm md:text-base font-normal text-gray-500">
+                    <div className="md:w-1/2 flex items-center justify-center mt-4 md:mt-0 md:justify-end">
+                        <h4 className="text-sm sm:text-base md:text-lg font-normal text-gray-500 text-center md:text-right">
                             Prepare with exam simulator
                         </h4>
                     </div>
-                </div>
-                <section className="bg-slate-50 py-4 sm:py-8">
+                </section>
+
+                <section className="bg-slate-50 py-2">
                     {chapters
                         .filter((chapter) => chapter.step === 3)
                         .map((chapter, index) => (
@@ -389,7 +393,7 @@ export default function HomePage({ auth, chapters }) {
                         ))}
                 </section>
                 <section className="container mx-auto text-center relative">
-                    <div className="bg-indigo-600 text-white p-8 md:p-20 mt-8 relative overflow-hidden">
+                    <div className="bg-indigo-600 text-white p-8 md:p-20 mt-8 relative overflow-hidden rounded-2xl">
                         <h4 className="text-sm font-base">
                             SPEED THROUGH TEST PREP
                         </h4>
@@ -506,7 +510,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
                 <section className="container mx-auto relative">
-                    <div className="bg-indigo-600 text-white p-8 md:p-20 relative overflow-hidden">
+                    <div className="bg-indigo-600 text-white p-8 md:p-20 relative overflow-hidden rounded-2xl">
                         <div className="text-center">
                             <p className="text-base mb-2">
                                 YOUR ULTIMATE ALL-IN-ONE RESOURCE
@@ -669,7 +673,7 @@ export default function HomePage({ auth, chapters }) {
                 <div className="container mx-auto px-4 mt-4 sm:mt-8 flex justify-center bg-slate-50">
                     <Link
                         as="button"
-                        className="bg-primary text-white px-6 py-2 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
+                        className="bg-primary text-white text-lg md:text-xl xl:text-xl font-bold px-8 md:px-12 xl:px-16 py-3 md:py-4 xl:py-5 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
                         href={route("testInfoPage", {
                             chapter_id: 12,
                             auth,
@@ -681,13 +685,13 @@ export default function HomePage({ auth, chapters }) {
                 <div className="container mx-auto bg-slate-50  mt-5 lg:mt-5">
                     <p className=" text-lg sm:text-lg font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
                         or pass the first time, guaranteed with
-                        <span className="text-primary ml-1 underline underline-offset-1">
+                        <span className="text-primary ml-1 underline underline-offset-4">
                             <Link href={route("premiumPage")}>Premium</Link>
                         </span>
                     </p>
                 </div>
                 <section className="container mx-auto  mt-20">
-                    <div className="bg-indigo-600 py-12 text-white mt-4">
+                    <div className="bg-indigo-600 py-12 text-white mt-4 rounded-2xl">
                         <h3 className="text-sm font-normal text-center mb-4">
                             HIGHLY RECOMMENDED
                         </h3>
@@ -874,7 +878,7 @@ export default function HomePage({ auth, chapters }) {
                         </div>
                     </div>
                 </section>
-                <section className="hidden md:block bg-slate-50">
+                <section className="hidden md:block bg-slate-50 mt-5">
                     <div className="container mx-auto px-44">
                         <h2 className="text-4xl font-bold my-10 text-center">
                             What is the Canadian Citizenship Test?
@@ -1123,7 +1127,7 @@ export default function HomePage({ auth, chapters }) {
                             <div className="w-full flex justify-center mt-4 sm:mt-8 lg:mt-2">
                                 <Link
                                     as="button"
-                                    className=" bg-primary shadow-lg text-white px-6 py-2 rounded-full transform hover:-translate-y-1 transition duration-500 ease-out"
+                                    className="bg-primary text-white text-lg md:text-xl xl:text-xl font-bold px-8 md:px-12 xl:px-16 py-3 md:py-4 xl:py-5 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
                                     href={route("testInfoPage", {
                                         chapter_id: 12,
                                         auth,
@@ -1132,9 +1136,9 @@ export default function HomePage({ auth, chapters }) {
                                     Take free practice tests
                                 </Link>
                             </div>
-                            <p className="text-xs sm:text-xs leading-6 sm:leading-8 tracking-tight text-center text-gray-500 ">
+                            <p className="text-lg leading-6 sm:leading-8 tracking-tight text-center text-gray-500 mt-3">
                                 or pass the first time, guaranteed with
-                                <span className="underline ml-1 underline-offset-1 text-primary">
+                                <span className="underline ml-1 underline-offset-4 text-primary">
                                     <Link href={route("premiumPage")}>
                                         Premium
                                     </Link>
