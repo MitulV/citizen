@@ -178,7 +178,7 @@ export default function HomePage({ auth, chapters }) {
 
                 <section className="bg-slate-50 lg:py-20 sm:py-0 ">
                     <div className="container mx-auto px-4">
-                        <h4 className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-blue-500 mt-10 mb-3">
+                        <h4 className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-blue-500 xl:mt-10 md:mt-10 mb-3">
                             CHAPTER-WISE PRACTICE TESTS
                         </h4>
 
@@ -189,15 +189,15 @@ export default function HomePage({ auth, chapters }) {
                         </h3>
                     </div>
                 </section>
-                <section className="container mx-auto mb-0 flex flex-col md:flex-row bg-slate-50">
-                    <div className="md:w-1/2 flex items-center justify-center md:justify-start">
-                        <h4 className="font-bold text-lg sm:text-xl md:text-2xl tracking-wide text-center md:text-left">
+                <section className="container mx-auto my-10 mb-0 flex flex-col md:flex-row bg-slate-50">
+                    <div className="md:w-1/2 flex items-center justify-start">
+                        <h4 className="font-bold text-2xl sm:text-xl md:text-2xl tracking-wide text-center ml-5">
                             Step 1
                         </h4>
                     </div>
 
-                    <div className="md:w-1/2 flex items-center justify-center mt-4 md:mt-0 md:justify-end">
-                        <h4 className="text-sm sm:text-base md:text-lg font-normal text-gray-500 text-center md:text-right">
+                    <div className="md:w-1/2 flex items-center justify-start md:justify-end lg:justify-end">
+                        <h4 className="text-base md:text-lg font-normal text-gray-500 text-center ml-5">
                             See how much you don’t know
                         </h4>
                     </div>
@@ -214,7 +214,7 @@ export default function HomePage({ auth, chapters }) {
                                     auth,
                                 })}
                             >
-                                <div className="container mx-auto my-2 flex flex-col md:flex-row border border-gray-100 rounded-2xl transform hover:-translate-y-1 transition duration-500 ease-out">
+                                <div className="container mx-auto  my-2 flex flex-col md:flex-row border border-gray-100 rounded-2xl transform hover:-translate-y-1 transition duration-500 ease-out">
                                     <div className="md:w-1/8">
                                         <img
                                             src="/images/chap 1.png"
@@ -261,17 +261,17 @@ export default function HomePage({ auth, chapters }) {
                         ))}
                 </section>
 
-                <section className="container mx-auto my-2 mb-0 flex flex-col md:flex-row py-4 bg-slate-50">
-                    <div className="md:w-1/2 flex items-center justify-center md:justify-start">
-                        <h3 className="font-bold text-lg sm:text-xl md:text-2xl tracking-wide text-center md:text-left">
+                <section className="container mx-auto my-10 mb-0 flex flex-col md:flex-row bg-slate-50">
+                    <div className="md:w-1/2 flex items-center justify-start">
+                        <h4 className="font-bold text-2xl sm:text-xl md:text-2xl tracking-wide text-center ml-5">
                             Step 2
-                        </h3>
+                        </h4>
                     </div>
 
-                    <div className="md:w-1/2 flex items-center justify-center mt-4 md:mt-0 md:justify-end">
-                        <p className="text-sm md:text-base font-normal text-gray-500 text-center md:text-right">
+                    <div className="md:w-1/2 flex items-center justify-start md:justify-end lg:justify-end">
+                        <h4 className="text-base md:text-lg font-normal text-gray-500 text-center ml-5 mb-5">
                             Complete all chapter test
-                        </p>
+                        </h4>
                     </div>
                 </section>
                 <div className="container mx-auto flex justify-center items-center">
@@ -324,15 +324,15 @@ export default function HomePage({ auth, chapters }) {
                     </section>
                 </div>
 
-                <section className="container mx-auto my-2 mb-0 flex flex-col md:flex-row bg-slate-50">
-                    <div className="md:w-1/2 flex items-center justify-center md:justify-start">
-                        <h4 className="font-bold text-lg sm:text-xl md:text-2xl tracking-wide text-center md:text-left">
+                <section className="container mx-auto my-10 mb-0 flex flex-col md:flex-row bg-slate-50">
+                    <div className="md:w-1/2 flex items-center justify-start">
+                        <h4 className="font-bold text-2xl sm:text-xl md:text-2xl tracking-wide text-center ml-5">
                             Step 3
                         </h4>
                     </div>
 
-                    <div className="md:w-1/2 flex items-center justify-center mt-4 md:mt-0 md:justify-end">
-                        <h4 className="text-sm sm:text-base md:text-lg font-normal text-gray-500 text-center md:text-right">
+                    <div className="md:w-1/2 flex items-center justify-start md:justify-end lg:justify-end">
+                        <h4 className="text-base md:text-lg font-normal text-gray-500 text-center ml-5 mb-5">
                             Prepare with exam simulator
                         </h4>
                     </div>
