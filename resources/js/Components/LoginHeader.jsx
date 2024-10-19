@@ -9,6 +9,23 @@ import { Link } from "@inertiajs/react";
 import { Button, Dropdown, MegaMenu, Navbar } from "flowbite-react";
 
 export default function LoginHeader({ user }) {
+    const [isMobile, setIsMobile] = useState(false);
+
+    // Set `isMobile` based on the screen width
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 640); // sm breakpoint (640px)
+        };
+
+        // Initial check
+        handleResize();
+
+        // Listen for window resize events
+        window.addEventListener("resize", handleResize);
+
+        // Cleanup the event listener on component unmount
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
     return (
         <MegaMenu>
             <div className="container mx-auto flex justify-between items-center px-4 md:px-8 lg:px-16 py-4">
@@ -26,12 +43,25 @@ export default function LoginHeader({ user }) {
 
                 <div className="flex items-center space-x-4 bg-primary hover:bg-primary text-white px-4 py-2 rounded-full">
                     <Dropdown
-                        label={user.name}
+                        label={
+                            <>
+                                {/* Show FontAwesome bars icon on mobile */}
+                                <span className="sm:hidden">
+                                    <FontAwesomeIcon icon={faBars} />
+                                </span>
+
+                                {/* Show user name on larger screens */}
+                                <span className="hidden sm:inline">
+                                    {user.name}
+                                </span>
+                            </>
+                        }
                         placement="bottom"
                         inline
                         className="rounded-xl mt-2 border-none"
+                        arrowIcon={!isMobile} // Show arrow on larger screens, hide on mobile
                     >
-                        <Dropdown.Item className="text-stone-500 px-8 ">
+                        <Dropdown.Item className="text-stone-500 px-8">
                             <Link href={route("dashboard")}>Dashboard</Link>
                         </Dropdown.Item>
                         <Dropdown.Item className="text-stone-500 px-8 ">

@@ -28,7 +28,7 @@ export default function Header({ user }) {
                 <div className="block lg:hidden">
                     <button
                         onClick={toggleMenu}
-                        className="bg-primary hover:bg-primary text-white rounded-full border-none p-2"
+                        className="bg-primary hover:bg-primary text-white px-4 rounded-full border-none p-2"
                     >
                         <FontAwesomeIcon icon={faBars} />
                     </button>
@@ -43,7 +43,7 @@ export default function Header({ user }) {
                                     href="#"
                                     className="hover:text-primary block"
                                 >
-                                    <div className="font-inter text-[14px] font-normal leading-[16.94px] text-center">
+                                    <div className="font-inter text-[14px] font-normal leading-[16.94px]">
                                         Help
                                     </div>
                                 </Link>
