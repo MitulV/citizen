@@ -36,7 +36,7 @@ export default function HomeChapterCard({
                 {" "}
                 {/* Flex-grow for equal height */}
                 <h3 className="text-lg font-bold">{name}</h3>
-                <h4 className="text-gray-800 text-lg font-semibold">{title}</h4>
+                <h3 className="text-gray-800 text-lg font-semibold">{title}</h3>
                 <p className="text-gray-500 text-base">{description}</p>
             </div>
 
@@ -45,12 +45,12 @@ export default function HomeChapterCard({
                 <div className="w-full md:w-1/2 mb-4 md:mb-0">
                     <div className="flex flex-row items-center">
                         <div>
-                            <h3 className="font-bold text-lg tracking-wide mb-1">
+                            <p className="font-bold text-lg tracking-wide mb-1">
                                 {questions}
-                            </h3>
-                            <h4 className="text-base font-normal text-gray-500">
+                            </p>
+                            <p className="text-base font-normal text-gray-500">
                                 Questions
-                            </h4>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -59,12 +59,12 @@ export default function HomeChapterCard({
                 <div className="w-full md:w-1/2">
                     <div className="flex flex-row items-center">
                         <div>
-                            <h3 className="font-bold text-lg tracking-wide mb-1">
+                            <p className="font-bold text-lg tracking-wide mb-1">
                                 {mistakes} Mistakes
-                            </h3>
-                            <h4 className="text-base font-normal text-gray-500">
+                            </p>
+                            <p className="text-base font-normal text-gray-500">
                                 Allowed to pass
-                            </h4>
+                            </p>
                         </div>
                     </div>
                 </div>
