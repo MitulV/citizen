@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
+
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ url()->current() }}" />
     <!-- Other meta tags and styles -->
@@ -19,6 +20,22 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content="CitizenTestPrep Canada - Canadian Citizenship Practise Test Online">
+    <meta property="og:description"
+        content="Prepare for the Canadian Citizenship Test with our comprehensive resources! Access 800+ practice questions, flashcards, study guides, and more.">
+    <meta property="og:url" content="https://www.citizentestprep.ca/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.citizentestprep.ca/images/citizenship-test-prep.jpg">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CitizenTestPrep Canada - Canadian Citizenship Practise Test Online">
+    <meta name="twitter:description"
+        content="Prepare for the Canadian Citizenship Test with our comprehensive resources! Access 800+ practice questions, flashcards, study guides, and more.">
+    <meta name="twitter:image" content="https://www.citizentestprep.ca/images/citizenship-test-prep.jpg">
 
     <title inertia>{{ config('app.name', 'Laravel') }}</title>
 
