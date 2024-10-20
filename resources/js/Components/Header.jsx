@@ -36,7 +36,7 @@ export default function Header({ user }) {
 
                 {/* Menu for small screens */}
                 {isMenuOpen && (
-                    <div className="absolute top-20 left-0 w-full bg-white shadow-lg lg:hidden text-stone-500 text-sm">
+                    <div className="absolute top-20 left-0 w-full bg-white shadow-lg lg:hidden text-stone-500 text-sm z-10">
                         <ul className="space-y-1">
                             <Navbar>
                                 <div className="flex md:order-2 ml-1">
