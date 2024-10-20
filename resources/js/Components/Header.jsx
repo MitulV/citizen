@@ -36,9 +36,9 @@ export default function Header({ user }) {
 
                 {/* Menu for small screens */}
                 {isMenuOpen && (
-                    <div className="absolute top-16 left-0 w-full bg-white shadow-lg lg:hidden text-stone-500 text-sm">
-                        <ul className="space-y-4 p-4">
-                            <li>
+                    <div className="absolute top-20 left-0 w-full bg-white shadow-lg lg:hidden text-stone-500 text-sm">
+                        <ul className="space-y-1">
+                            <Navbar>
                                 <Link
                                     href="#"
                                     className="hover:text-primary block"
@@ -47,42 +47,42 @@ export default function Header({ user }) {
                                         Help
                                     </div>
                                 </Link>
-                            </li>
-                            <li>
+                            </Navbar>
+                            <Navbar>
                                 <Link
                                     href="#"
                                     className="hover:text-primary block"
                                 >
                                     Resources
                                 </Link>
-                            </li>
+                            </Navbar>
 
-                            <li>
+                            <Navbar>
                                 <Link
                                     href={route("about")}
                                     className="hover:text-primary block"
                                 >
                                     About
                                 </Link>
-                            </li>
+                            </Navbar>
 
-                            <li>
+                            <li className="p-1">
                                 <Link
                                     href={
                                         user
                                             ? route("dashboard")
                                             : route("login")
                                     }
-                                    className="border-2 border-primary bg-white text-gray-800 px-4 py-2 rounded-full block text-center mx-auto w-auto"
+                                    className="border-2 text-lg md:text-xl xl:text-xl font-bold border-primary bg-white text-gray-800 px-4 py-2 rounded-full block text-center mx-auto w-auto"
                                 >
                                     {user ? "Dashboard" : "Sign In"}
                                 </Link>
                             </li>
 
-                            <li>
+                            <li className="p-1 pb-2">
                                 <Link
                                     href={route("premiumPage")}
-                                    className="bg-primary text-white px-4 py-2 rounded-full block text-center mx-auto w-auto"
+                                    className="bg-primary text-white text-lg md:text-xl xl:text-xl font-bold px-4 py-2 rounded-full block text-center mx-auto w-auto"
                                 >
                                     Unlock All Questions
                                 </Link>
