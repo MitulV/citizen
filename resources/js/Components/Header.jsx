@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "@inertiajs/react";
-import { MegaMenu, Navbar } from "flowbite-react";
+import { MegaMenu, Navbar, Avatar, Dropdown } from "flowbite-react";
 
 export default function Header({ user }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,28 +39,86 @@ export default function Header({ user }) {
                     <div className="absolute top-20 left-0 w-full bg-white shadow-lg lg:hidden text-stone-500 text-sm">
                         <ul className="space-y-1">
                             <Navbar>
-                                <Link
-                                    href="#"
-                                    className="hover:text-primary block"
-                                >
-                                    <div className="font-inter text-[14px] font-normal leading-[16.94px]">
-                                        Help
-                                    </div>
-                                </Link>
+                                <div className="flex md:order-2 ml-1">
+                                    <Dropdown
+                                        toggle={<> Help</>}
+                                        arrowIcon={true}
+                                        inline
+                                        label={<> Help</>}
+                                    >
+                                        <ul className="space-y-4 p-4">
+                                            <li>
+                                                <Link
+                                                    href={route("faqs")}
+                                                    className="hover:text-primary"
+                                                >
+                                                    FAQs
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    href={route("contact")}
+                                                    className="hover:text-primary"
+                                                >
+                                                    Contact Us
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </Dropdown>
+                                </div>
                             </Navbar>
                             <Navbar>
-                                <Link
-                                    href="#"
-                                    className="hover:text-primary block"
-                                >
-                                    Resources
-                                </Link>
+                                <div className="flex md:order-2 ml-1">
+                                    <Dropdown
+                                        toggle={<> Resources</>}
+                                        arrowIcon={true}
+                                        inline
+                                        label={<> Resources</>}
+                                    >
+                                        <ul className="space-y-4 p-4">
+                                            <li>
+                                                <Link
+                                                    href={route("dashboard")}
+                                                    className="hover:text-primary"
+                                                >
+                                                    Study Guide
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    href={route(
+                                                        "testInfoPage",
+                                                        {
+                                                            chapter_id: 12,
+                                                        }
+                                                    )}
+                                                    className="hover:text-primary"
+                                                >
+                                                    Practice Tests
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    href={route(
+                                                        "testInfoPage",
+                                                        {
+                                                            chapter_id: 12,
+                                                        }
+                                                    )}
+                                                    className="hover:text-primary"
+                                                >
+                                                    Diagnostic Test
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </Dropdown>
+                                </div>
                             </Navbar>
 
                             <Navbar>
                                 <Link
                                     href={route("about")}
-                                    className="hover:text-primary block"
+                                    className="hover:text-primary block ml-1"
                                 >
                                     About
                                 </Link>
