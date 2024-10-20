@@ -66,20 +66,20 @@ export default function Header({ user }) {
                                 </Link>
                             </Navbar>
 
-                            <li className="p-1">
+                            <li className="mx-5 pt-3">
                                 <Link
                                     href={
                                         user
                                             ? route("dashboard")
                                             : route("login")
                                     }
-                                    className="border-2 text-lg md:text-xl xl:text-xl font-bold border-primary bg-white text-gray-800 px-4 py-2 rounded-full block text-center mx-auto w-auto"
+                                    className="border text-lg md:text-xl xl:text-xl font-bold border-primary bg-white text-gray-800 px-4 py-2 rounded-full block text-center mx-auto w-auto"
                                 >
                                     {user ? "Dashboard" : "Sign In"}
                                 </Link>
                             </li>
 
-                            <li className="p-1 pb-2">
+                            <li className="mx-5 pt-2 pb-3">
                                 <Link
                                     href={route("premiumPage")}
                                     className="bg-primary text-white text-lg md:text-xl xl:text-xl font-bold px-4 py-2 rounded-full block text-center mx-auto w-auto"
