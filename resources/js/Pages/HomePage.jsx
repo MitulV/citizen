@@ -81,8 +81,8 @@ export default function HomePage({ auth, chapters }) {
                                 Take free practice tests
                             </Link>
                         </div>
-                        <div className="container mx-auto px-4 mt-4 sm:mt-8">
-                            <p className="text-xs sm:text-xs md:text-xl lg:text-lg xl:text-xl font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
+                        <div className="container mx-auto px-2 mt-4 sm:mt-8">
+                            <p className="text-lg sm:text-lg font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
                                 or pass the first time, guaranteed with
                                 <span className="text-primary ml-1 underline underline-offset-4">
                                     <Link href={route("premiumPage")}>
@@ -631,7 +631,7 @@ export default function HomePage({ auth, chapters }) {
                             <h3 className="text-lg font-bold mb-2 text-white">
                                 850+ Questions
                             </h3>
-                            <p className="text-base text-white">
+                            <p className="text-base text-white text-center">
                                 Access more than 700+ Canadian citizenship test
                                 practice questions, similar to those on the real
                                 exam, for effective preparation.
@@ -646,7 +646,7 @@ export default function HomePage({ auth, chapters }) {
                             <h3 className="text-lg font-bold mb-2 text-white">
                                 Real-Life Test Simulations
                             </h3>
-                            <p className="text-base text-white">
+                            <p className="text-base text-white text-center">
                                 Take citizenship practice tests that mimic the
                                 actual exam format. This helps you prepare in
                                 advance for the main exam.
@@ -661,7 +661,7 @@ export default function HomePage({ auth, chapters }) {
                             <h3 className="text-lg font-bold mb-2 text-white">
                                 Weakness Evaluations
                             </h3>
-                            <p className="text-base text-white">
+                            <p className="text-base text-white text-center">
                                 Benefit from advanced evaluations that pinpoint
                                 your weaknesses, helping you target areas for
                                 improvement.
@@ -676,7 +676,7 @@ export default function HomePage({ auth, chapters }) {
                             <h3 className="text-lg font-bold mb-2 text-white">
                                 Chapter Quizzes
                             </h3>
-                            <p className="text-base text-white">
+                            <p className="text-base text-white text-center">
                                 Study using chapter-based questions from the
                                 Discover Canada study guide and delve deeply
                                 into each topic.
@@ -691,7 +691,7 @@ export default function HomePage({ auth, chapters }) {
                             <h3 className="text-lg font-bold mb-2 text-white">
                                 Important Dates
                             </h3>
-                            <p className="text-base text-white">
+                            <p className="text-base text-white text-center">
                                 Understand key events and historical context
                                 using a timeline of Canada's history, making it
                                 easier to remember.
@@ -706,7 +706,7 @@ export default function HomePage({ auth, chapters }) {
                             <h3 className="text-lg font-bold mb-2 text-white">
                                 Flashcards
                             </h3>
-                            <p className="text-base text-white">
+                            <p className="text-base text-white text-center">
                                 Memorize details from the study material using
                                 interactive flashcards, as you can learn more
                                 efficiently by incorporating them into your
@@ -1186,7 +1186,7 @@ export default function HomePage({ auth, chapters }) {
                                     Take free practice tests
                                 </Link>
                             </div>
-                            <p className="text-lg leading-6 sm:leading-8 tracking-tight text-center text-gray-500 mt-3">
+                            <p className="text-lg sm:text-lg font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500 mt-3">
                                 or pass the first time, guaranteed with
                                 <span className="underline ml-1 underline-offset-4 text-primary">
                                     <Link href={route("premiumPage")}>
