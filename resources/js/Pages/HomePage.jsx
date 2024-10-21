@@ -28,7 +28,7 @@ export default function HomePage({ auth, chapters }) {
                 <div className="container mx-auto px-6 md:px-16 lg:px-8  xl:px-36">
                     <div className="bg-slate-50 py-8 sm:py-16 flex flex-col items-center">
                         <div className="container mx-auto px-4">
-                            <h1 className="text-xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-tight tracking-wide text-center  px-4 sm:px-8 lg:px-20 xl:px-32">
+                            <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-tight tracking-wide text-center  px-2 sm:px-8 lg:px-20 xl:px-32">
                                 Achieve Success in 2024 Canadian Citizenship
                                 Test on Your
                                 <span className="text-secondary ml-2">
