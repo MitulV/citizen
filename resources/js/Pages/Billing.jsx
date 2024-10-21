@@ -6,7 +6,7 @@ import React from "react";
 export default function Billing({ auth, subscriptions }) {
     return (
         <AuthenticatedLayout user={auth.user}>
-            <Head title="Simulation Test" />
+            <Head title="Billing" />
             <div className="py-12">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
                     <div className="overflow-x-auto p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">

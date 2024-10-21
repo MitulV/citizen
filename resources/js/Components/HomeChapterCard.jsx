@@ -35,8 +35,12 @@ export default function HomeChapterCard({
             <div className="flex-1 px-5 py-4">
                 {" "}
                 {/* Flex-grow for equal height */}
-                <h3 className="text-lg font-bold">{name}</h3>
-                <h3 className="text-gray-800 text-lg font-semibold">{title}</h3>
+                <div className="flex flex-wrap items-center">
+                    <h3 className="text-lg font-bold">{name}</h3>
+                    <h3 className="text-gray-800 text-lg font-semibold ml-2">
+                        {title}
+                    </h3>
+                </div>
                 <p className="text-gray-500 text-base">{description}</p>
             </div>
 
