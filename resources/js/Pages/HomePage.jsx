@@ -7,11 +7,37 @@ import {
     faCircleCheck,
     faArrowTrendUp,
 } from "@fortawesome/free-solid-svg-icons";
+import { useState, useEffect } from "react";
 
 import GuestLayout from "@/Layouts/GuestLayout";
 import HomeChapterCard from "@/Components/HomeChapterCard";
 
 export default function HomePage({ auth, chapters }) {
+    const [showAll, setShowAll] = useState(false);
+
+    // State to track screen size for mobile behavior
+    const [isMobile, setIsMobile] = useState(false);
+
+    // Function to toggle the view
+    const toggleShowAll = () => {
+        setShowAll((prev) => !prev);
+    };
+
+    // Detect screen size for mobile-only behavior
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 640); // Mobile is <640px (sm breakpoint)
+        };
+
+        // Set initial screen size and add resize event listener
+        handleResize();
+        window.addEventListener("resize", handleResize);
+
+        // Clean up event listener on unmount
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
     return (
         <>
             <GuestLayout user={auth.user}>
@@ -188,7 +214,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="container mx-auto  flex flex-col md:flex-row bg-slate-50 px-6 md:px-16 lg:px-8  xl:px-36">
+                <section className="container mx-auto  flex flex-col md:flex-row bg-slate-50 px-6 md:px-16 lg:px-8   ">
                     <div className="md:w-1/2 flex items-center justify-start">
                         <p className="font-bold text-2xl sm:text-xl md:text-2xl">
                             Step 1
@@ -196,13 +222,13 @@ export default function HomePage({ auth, chapters }) {
                     </div>
 
                     <div className="md:w-1/2 flex items-center justify-start md:justify-end lg:justify-end ">
-                        <p className="text-base md:text-lg font-normal text-gray-500  mb-1">
+                        <p className="text-base md:text-lg font-normal text-gray-500  ">
                             Complete all chapter test
                         </p>
                     </div>
                 </section>
 
-                <section className="bg-slate-50 py-4 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+                <section className="bg-slate-50 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
                     {chapters
                         .filter((chapter) => chapter.step === 1)
                         .map((chapter, index) => (
@@ -213,7 +239,7 @@ export default function HomePage({ auth, chapters }) {
                                     auth,
                                 })}
                             >
-                                <div className="container mx-auto my-4 flex flex-col md:flex-row border border-gray-100 rounded-2xl transform hover:-translate-y-1 transition duration-500 ease-out p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
+                                <div className="container mx-auto flex flex-col md:flex-row border border-gray-200 rounded-2xl transform hover:-translate-y-1 transition duration-500 ease-out">
                                     {/* Image Section */}
                                     <div className="w-full md:w-2/3 lg:w-8/12">
                                         <img
@@ -257,7 +283,7 @@ export default function HomePage({ auth, chapters }) {
                         ))}
                 </section>
 
-                <section className="container mx-auto  flex flex-col md:flex-row bg-slate-50 px-6 md:px-16 lg:px-8  xl:px-36">
+                <section className="container mx-auto  flex flex-col md:flex-row bg-slate-50 px-6 md:px-16 lg:px-8  xl:px-60 pt-10">
                     <div className="md:w-1/2 flex items-center justify-start">
                         <p className="font-bold text-2xl sm:text-xl md:text-2xl">
                             Step 2
@@ -270,8 +296,9 @@ export default function HomePage({ auth, chapters }) {
                         </p>
                     </div>
                 </section>
-                <div className="container mx-auto flex justify-center items-center px-6 md:px-16 lg:px-8  xl:px-36">
+                <div className="container mx-auto flex justify-center items-center px-6 md:px-16 lg:px-8 xl:px-60">
                     <section className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 bg-slate-50">
+                        {/* Filter and map chapters, and conditionally show only the first 3 on mobile */}
                         {chapters
                             .filter(
                                 (chapter) =>
@@ -279,6 +306,10 @@ export default function HomePage({ auth, chapters }) {
                                     chapter.id !== 10 &&
                                     chapter.id !== 11
                             )
+                            .slice(
+                                0,
+                                isMobile && !showAll ? 3 : chapters.length
+                            ) // Show first 3 on mobile if not "showAll"
                             .map((chapter) => (
                                 <Link
                                     href={`/practice-tests/${chapter.id}`}
@@ -298,28 +329,43 @@ export default function HomePage({ auth, chapters }) {
                     </section>
                 </div>
 
-                <div className="container mx-auto flex justify-center items-center py-8 px-6 md:px-16 lg:px-8  xl:px-36">
-                    <section className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 bg-slate-50">
-                        {chapters
-                            .filter(
-                                (chapter) =>
-                                    chapter.step === 2 &&
-                                    (chapter.id === 10 || chapter.id === 11)
-                            )
-                            .map((chapter, index) => (
-                                <HomeChapterCard
-                                    key={index}
-                                    image={chapter.image}
-                                    name={chapter.name}
-                                    title={chapter.title}
-                                    description={chapter.description}
-                                    questions={chapter.questions}
-                                    mistakes={chapter.mistakes}
-                                />
-                            ))}
-                    </section>
-                </div>
-                <section className="container mx-auto  flex flex-col md:flex-row bg-slate-50 px-6 md:px-16 lg:px-8  xl:px-36">
+                {(isMobile && showAll) || !isMobile ? (
+                    <div className="container mx-auto flex justify-center items-center py-8 px-6 md:px-16 lg:px-8 xl:px-60">
+                        <section className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 bg-slate-50">
+                            {chapters
+                                .filter(
+                                    (chapter) =>
+                                        chapter.step === 2 &&
+                                        (chapter.id === 10 || chapter.id === 11)
+                                )
+                                .map((chapter, index) => (
+                                    <HomeChapterCard
+                                        key={index}
+                                        image={chapter.image}
+                                        name={chapter.name}
+                                        title={chapter.title}
+                                        description={chapter.description}
+                                        questions={chapter.questions}
+                                        mistakes={chapter.mistakes}
+                                    />
+                                ))}
+                        </section>
+                    </div>
+                ) : null}
+
+                {/* Button to toggle between showing all and showing first 3, only visible on mobile */}
+                {isMobile && (
+                    <div className="my-10 justify-center bg-slate-50 px-6 md:px-16 lg:px-8  xl:px-36 ">
+                        <button
+                            className="border w-full text-lg md:text-xl xl:text-xl font-bold border-primary bg-white text-gray-800 px-4 py-2 rounded-full block text-center mx-auto"
+                            onClick={toggleShowAll}
+                        >
+                            {showAll ? "Show Less" : "View all"}
+                        </button>
+                    </div>
+                )}
+
+                <section className="container mx-auto flex flex-col md:flex-row bg-slate-50 px-6 md:px-16 lg:px-8  ">
                     <div className="md:w-1/2 flex items-center justify-start">
                         <p className="font-bold text-2xl sm:text-xl md:text-2xl">
                             Step 3
@@ -327,18 +373,18 @@ export default function HomePage({ auth, chapters }) {
                     </div>
 
                     <div className="md:w-1/2 flex items-center justify-start md:justify-end lg:justify-end ">
-                        <p className="text-base md:text-lg font-normal text-gray-500  mb-1">
+                        <p className="text-base md:text-lg font-normal text-gray-500  ">
                             Complete all chapter test
                         </p>
                     </div>
                 </section>
-                <section className="container mx-auto bg-slate-50 py-4">
+                <section className="container mx-auto bg-slate-50">
                     {chapters
                         .filter((chapter) => chapter.step === 3)
                         .map((chapter, index) => (
                             <div
                                 key={index}
-                                className="container mx-auto my-4 grid grid-cols-12 rounded-2xl transform hover:-translate-y-1 transition duration-500 ease-out p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12"
+                                className="container mx-auto  grid grid-cols-12 rounded-2xl transform hover:-translate-y-1 transition duration-500 ease-out "
                             >
                                 {/* Image in 8 columns */}
                                 <div className="col-span-12 lg:col-span-8">
@@ -350,7 +396,7 @@ export default function HomePage({ auth, chapters }) {
                                 </div>
 
                                 {/* Text in 4 columns */}
-                                <div className="col-span-12 lg:col-span-4 px-4 py-2 bg-white rounded-b-xl lg:rounded-r-xl">
+                                <div className="col-span-12 lg:col-span-4 px-4  bg-white rounded-b-xl lg:rounded-r-xl">
                                     <div className="bg-white rounded-lg p-4 md:p-6">
                                         <h3 className="text-xl sm:text-2xl lg:text-xl font-bold leading-tight tracking-wide mb-2">
                                             {chapter.name}
@@ -391,7 +437,7 @@ export default function HomePage({ auth, chapters }) {
 
                 <section className="container mx-auto text-center relative  px-6 md:px-16 lg:px-8  xl:px-36 ">
                     <div className="bg-indigo-600 text-white p-8 md:p-20 mt-8 relative overflow-hidden rounded-2xl">
-                        <p className="text-sm font-base">
+                        <p className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-white">
                             SPEED THROUGH TEST PREP
                         </p>
                         <h2 className="text-3xl font-bold mb-4 mt-4">
@@ -450,6 +496,9 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
                 <section className="container mx-auto text-black p-8 md:p-20 bg-slate-50 px-6 md:px-16 lg:px-8  xl:px-36  ">
+                    <p className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-indigo-600 xl:mt-10 md:mt-10 mb-3">
+                        LEARN FAST
+                    </p>
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
                         Questions designed to feel just like the real test
                     </h2>
@@ -506,9 +555,10 @@ export default function HomePage({ auth, chapters }) {
                 <section className="container mx-auto relative  px-6 md:px-16 lg:px-8  xl:px-36 ">
                     <div className="bg-indigo-600 text-white p-8 md:p-20 relative overflow-hidden rounded-2xl">
                         <div className="text-center">
-                            <h2 className="text-base mb-2">
+                            <p className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-white mb-2">
                                 YOUR ULTIMATE ALL-IN-ONE RESOURCE
-                            </h2>
+                            </p>
+
                             <h2 className="text-3xl md:text-4xl font-bold mb-10">
                                 Pass the Canadian citizenship test with ease
                             </h2>
@@ -685,11 +735,11 @@ export default function HomePage({ auth, chapters }) {
                         </span>
                     </p>
                 </div>
-                <section className="container mx-auto  mt-20  px-6 md:px-16 lg:px-8  xl:px-36 ">
+                <section className="container mx-auto  mt-20  px-6 md:px-16 lg:px-8  ">
                     <div className="bg-indigo-600 py-12 text-white mt-4 rounded-2xl">
-                        <h2 className="text-sm font-normal text-center mb-4">
+                        <p className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-white mb-2">
                             HIGHLY RECOMMENDED
-                        </h2>
+                        </p>
                         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
                             What our users are saying about us
                         </h2>
@@ -731,7 +781,7 @@ export default function HomePage({ auth, chapters }) {
                                                 British Columbia
                                             </p>
                                         </div>
-                                        <div className="hidden sm:flex text-sm mt-4 ml-auto  space-x-1">
+                                        <div className="hidden sm:flex text-sm mt-4 ml-auto space-x-1">
                                             <FontAwesomeIcon
                                                 icon={faStar}
                                                 className="text-greenStar"
@@ -873,12 +923,15 @@ export default function HomePage({ auth, chapters }) {
                         </div>
                     </div>
                 </section>
-                <section className="container mx-auto  hidden md:block bg-slate-50 mt-5  px-6 md:px-16 lg:px-8  xl:px-36 ">
+                <section className="container mx-auto  hidden md:block bg-slate-50 mt-16  px-6 md:px-16 lg:px-8  xl:px-36 ">
                     <div className="  px-6 md:px-16 lg:px-8  xl:px-36">
-                        <h2 className="text-4xl font-bold my-10 text-center">
+                        <p className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-indigo-600">
+                            STUDY GUIDE
+                        </p>
+                        <h2 className="text-4xl font-extrabold mt-1 mb-10 text-center">
                             What is the Canadian Citizenship Test?
                         </h2>
-                        <p className="text-sm text-gray-600">
+                        <p className="text-lg text-gray-600">
                             The Canadian Citizenship Test evaluates applicants'
                             knowledge of Canada. Applicants must pass the test
                             to obtain Canadian citizenship. The test contains
@@ -891,15 +944,15 @@ export default function HomePage({ auth, chapters }) {
                             applicants understand Canadian ways of life.
                         </p>
                     </div>
-                    <div className="container mx-auto px-44">
-                        <h2 className="text-4xl font-bold my-4 text-center">
+                    <div className="container mx-auto px-44 mt-16">
+                        <h2 className="text-4xl font-extrabold my-4 text-center">
                             What to remember before attending a Canadian
                             citizenship test?
                         </h2>
-                        <h3 className="text-lg font-bold my-4">
+                        <h3 className="text-2xl font-bold mt-6 mb-2">
                             Eligibility for Canadian Citizenship
                         </h3>
-                        <p className="text-sm text-gray-600 mt-2">
+                        <p className="text-lg text-gray-600 mt-2">
                             To be eligible for Canadian citizenship, there are
                             several key requirements that must be met. You must
                             have been a permanent resident of Canada for at
@@ -910,10 +963,10 @@ export default function HomePage({ auth, chapters }) {
                             skills. You cannot have been convicted of any
                             serious crimes.
                         </p>
-                        <h3 className="text-lg font-bold my-4">
+                        <h3 className="text-2xl font-bold mt-6 mb-2">
                             Test day procedures
                         </h3>
-                        <p className="text-sm text-gray-600 mt-2">
+                        <p className="text-lg text-gray-600 mt-2">
                             On the day of your scheduled Canadian Citizenship
                             Test, there are several important procedures to
                             follow. First and foremost, you must bring valid
@@ -927,8 +980,10 @@ export default function HomePage({ auth, chapters }) {
                             total of 30 minutes to complete the 20-question
                             test.
                         </p>
-                        <h3 className="text-lg font-bold my-4">Test Format</h3>
-                        <p className="text-sm text-gray-600 mt-2">
+                        <h3 className="text-2xl font-bold mt-6 mb-2">
+                            Test Format
+                        </h3>
+                        <p className="text-lg text-gray-600 mt-2">
                             The Canadian Citizenship Test itself consists of 20
                             multiple-choice questions. These questions cover a
                             range of topics, including Canadian rights and
@@ -938,10 +993,10 @@ export default function HomePage({ auth, chapters }) {
                             permitted during the test itself.  You’ll have 45
                             minutes to complete the test.
                         </p>
-                        <h3 className="text-lg font-bold my-4">
+                        <h3 className="text-2xl font-bold mt-6 mb-2">
                             Scoring and Results
                         </h3>
-                        <p className="text-sm text-gray-600 mt-2">
+                        <p className="text-lg text-gray-600 mt-2">
                             To pass the Canadian Citizenship Test, you must
                             correctly answer at least 15 out of the 20
                             questions. This represents a passing score of 75%.
@@ -953,30 +1008,30 @@ export default function HomePage({ auth, chapters }) {
                             to re-take the test after re-applying and meeting
                             the eligibility requirements again.
                         </p>
-                        <h3 className="text-lg font-bold my-4">
+                        <h3 className="text-2xl font-bold mt-6 mb-2">
                             How many attempts to pass the Canadian citizenship
                             test?
                         </h3>
-                        <p className="text-sm text-gray-600 mt-2">
+                        <p className="text-lg text-gray-600 mt-2">
                             You have up to 3 attempts to pass the test. For
                             example, you can take the test a maximum of two more
                             times if you fail the first time.
                         </p>
                     </div>
                 </section>
-                <section className=" container mx-auto  hidden md:block py-12 bg-slate-50  px-6 md:px-16 lg:px-8  xl:px-36">
+                <section className=" container mx-auto hidden md:block py-16 bg-slate-50  px-6 md:px-16 lg:px-8  xl:px-36">
                     <div className="  px-6 md:px-16 lg:px-8  xl:px-36">
-                        <h2 className="text-4xl font-bold mb-4 text-center   ">
+                        <h2 className="text-4xl font-extrabold mb-6 text-center">
                             Tips to pass Canadian citizenship test in one
                             <br />
                             attempt
                         </h2>
-                        <div className="flex items-center mb-2   ">
+                        <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
-                                className="text-primary text-lg mr-2"
+                                className="text-primary text-2xl mr-4"
                             />
-                            <p className="text-sm">
+                            <p className="text-lg">
                                 Know Canada's history, rights, responsibilities,
                                 geography, economy, and political system
                             </p>
@@ -984,9 +1039,9 @@ export default function HomePage({ auth, chapters }) {
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
-                                className="text-primary text-lg mr-2"
+                                className="text-primary text-2xl mr-4"
                             />
-                            <p className="text-sm">
+                            <p className="text-lg">
                                 Practice with sample test questions from various
                                 sources
                             </p>
@@ -994,9 +1049,9 @@ export default function HomePage({ auth, chapters }) {
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
-                                className="text-primary text-lg mr-2"
+                                className="text-primary text-2xl mr-4"
                             />
-                            <p className="text-sm">
+                            <p className="text-lg">
                                 Take online practice tests to identify and
                                 improve weak areas
                             </p>
@@ -1004,9 +1059,9 @@ export default function HomePage({ auth, chapters }) {
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
-                                className="text-primary text-lg mr-2"
+                                className="text-primary text-2xl mr-4"
                             />
-                            <p className="text-sm">
+                            <p className="text-lg">
                                 Learn important Canadian symbols, figures, and
                                 cultural elements
                             </p>
@@ -1014,9 +1069,9 @@ export default function HomePage({ auth, chapters }) {
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
-                                className="text-primary text-lg mr-2"
+                                className="text-primary text-2xl mr-4"
                             />
-                            <p className="text-sm">
+                            <p className="text-lg">
                                 Understand the responsibilities and rights of
                                 Canadian citizens
                             </p>
@@ -1024,9 +1079,9 @@ export default function HomePage({ auth, chapters }) {
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
-                                className="text-primary text-lg mr-2"
+                                className="text-primary text-2xl mr-4"
                             />
-                            <p className="text-sm">
+                            <p className="text-lg">
                                 Know about Canada's legal system, laws, and
                                 democratic principles
                             </p>
@@ -1034,9 +1089,9 @@ export default function HomePage({ auth, chapters }) {
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
-                                className="text-primary text-lg mr-2"
+                                className="text-primary text-2xl mr-4"
                             />
-                            <p className="text-sm">
+                            <p className="text-lg">
                                 Study Canada's diverse population, immigration
                                 history, and multiculturalism
                             </p>
@@ -1044,9 +1099,9 @@ export default function HomePage({ auth, chapters }) {
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
-                                className="text-primary text-lg mr-2"
+                                className="text-primary text-2xl mr-4"
                             />
-                            <p className="text-sm">
+                            <p className="text-lg">
                                 Familiarize yourself with the Canadian Charter
                                 of Rights and Freedoms
                             </p>
@@ -1054,9 +1109,9 @@ export default function HomePage({ auth, chapters }) {
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
-                                className="text-primary text-lg mr-2"
+                                className="text-primary text-2xl mr-4"
                             />
-                            <p className="text-sm">
+                            <p className="text-lg">
                                 Understand the roles of different levels of
                                 government (federal, provincial, municipal)
                             </p>
@@ -1064,9 +1119,9 @@ export default function HomePage({ auth, chapters }) {
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
-                                className="text-primary text-lg mr-2"
+                                className="text-primary text-2xl mr-4"
                             />
-                            <p className="text-sm">
+                            <p className="text-lg">
                                 You need to stay updated on current events and
                                 issues in Canada
                             </p>
@@ -1074,9 +1129,9 @@ export default function HomePage({ auth, chapters }) {
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
-                                className="text-primary text-lg mr-2"
+                                className="text-primary text-2xl mr-4"
                             />
-                            <p className="text-sm">
+                            <p className="text-lg">
                                 You need to stay updated on current events and
                                 issues in Canada
                             </p>
@@ -1084,9 +1139,9 @@ export default function HomePage({ auth, chapters }) {
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
-                                className="text-primary text-lg mr-2"
+                                className="text-primary text-2xl mr-4"
                             />
-                            <p className="text-sm">
+                            <p className="text-lg">
                                 Develop effective test-taking strategies and
                                 time management
                             </p>
@@ -1094,9 +1149,9 @@ export default function HomePage({ auth, chapters }) {
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
-                                className="text-primary text-lg mr-2"
+                                className="text-primary text-2xl mr-4"
                             />
-                            <p className="text-sm">
+                            <p className="text-lg">
                                 Maintain a positive mindset and confidence
                                 during preparation
                             </p>
@@ -1104,14 +1159,14 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
                 <section className="container mx-auto  bg-slate-50 py-8 md:py-16   px-6 md:px-16 lg:px-8  xl:px-36">
-                    <div className="flex flex-col md:flex-row rounded-2xl overflow-hidden bg-white shadow-lg p-4 md:p-8 ">
+                    <div className="flex flex-col md:flex-row rounded-2xl overflow-hidden bg-white p-4 md:p-8 border border-gray-200">
                         <div className="w-full md:w-1/2 bg-white text-black p-4 md:p-8">
                             <div className="flex flex-col items-center">
                                 <p className="text-xl font-bold text-center md:hidden">
                                     Get all the essential tools to ensure you
                                     pass your test.
                                 </p>
-                                <p className="hidden md:block text-xl sm:text-2xl md:text-3xl font-bold">
+                                <p className="hidden md:block text-xl sm:text-2xl md:text-3xl xl:text-4xl font-extrabold text-center">
                                     Make sure you have everything you need to
                                     pass your test.
                                 </p>
