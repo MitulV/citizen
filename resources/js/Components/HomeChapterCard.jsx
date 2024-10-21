@@ -8,7 +8,7 @@ export default function HomeChapterCard({
     auth,
 }) {
     return (
-        <div className="bg-slate-50 rounded-2xl shadow-md transform hover:-translate-y-1 transition duration-500 ease-out hover:shadow-lg hover:shadow-gray-300 flex flex-col h-full">
+        <div className="continer mx-auto bg-slate-50 rounded-2xl shadow-md transform hover:-translate-y-1 transition duration-500 ease-out hover:shadow-lg hover:shadow-gray-300 flex flex-col h-full">
             {/* Image */}
             <img
                 src={image}
@@ -36,9 +36,9 @@ export default function HomeChapterCard({
                 {" "}
                 {/* Flex-grow for equal height */}
                 <div className="flex flex-wrap items-center">
-                    <h3 className="text-lg font-bold">{name}</h3>
-                    <h3 className="text-gray-800 text-lg font-semibold ml-2">
-                        {title}
+                    <h3 className="text-base font-bold">{name}</h3>
+                    <h3 className="text-gray-800 text-base font-semibold ml-2">
+                        -{title}
                     </h3>
                 </div>
                 <p className="text-gray-500 text-base">{description}</p>

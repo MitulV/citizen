@@ -36,12 +36,11 @@ export default function HomePage({ auth, chapters }) {
                                 </span>
                             </h1>
                         </div>
-                        <div className="container mx-auto  mt-4 sm:mt-8 px-6 md:px-16 lg:px-8  xl:px-36">
-                            <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
-                                Get access to 850 practice questions, study
-                                guides for each chapter, realistic test
-                                <br className="hidden sm:block" />
-                                simulations, flashcards, cheat sheets, and more.
+                        <div className="container mx-auto  mt-4 sm:mt-8 px-6 md:px-28 lg:px-32  xl:px-48">
+                            <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500 ">
+                                Get access to 700+ test questions, study guides,
+                                chapter-based quizzes, realistic test
+                                simulations, flashcards and more.
                             </p>
                         </div>
                         <div className="container mx-auto px-4 mt-4 sm:mt-8 flex justify-center">
@@ -96,8 +95,8 @@ export default function HomePage({ auth, chapters }) {
                                 alt="Image 2"
                                 className="w-full md:h-full  shadow-sm  xl:ml-14 "
                             />
-                            <div className="absolute top-20 md:top-80 left-0  lg:left-48 p-2 rounded-xl shadow-lg bg-amber-400">
-                                <p className="text-xl sm:text-2xl lg:text-2xl font-bold text-left text-black">
+                            <div className="absolute w-28 md:top-60 lg:top-80 xl:top-96  right-[-50%] lg:right-[-25%]  p-2 rounded-xl shadow-lg bg-amber-400">
+                                <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-left text-black">
                                     2391
                                 </p>
                                 <p className="text-xs sm:text-sm font-semibold">
@@ -118,7 +117,7 @@ export default function HomePage({ auth, chapters }) {
 
                         {/* Card 4 */}
                         <div className="relative w-full justify-center transform hover:-translate-y-1 transition duration-500 ease-out ">
-                            <div className="absolute  lg:left-5 xl:ml-0 w-full h-60  sm:w-48 sm:h-40  md:w-36 md:h-60  lg:w-44 lg:h-52 xl:w-48 xl:h-48 bg-amber-300 rounded-t-full shadow-sm"></div>
+                            <div className="absolute  lg:left-5 xl:ml-0 w-full h-60  sm:w-48 sm:h-40  md:w-36 md:h-60  lg:w-44 lg:h-52 xl:w-48 xl:h-48 bg-orange-300 rounded-t-full shadow-sm"></div>
                             <img
                                 src="/images/person 3.png"
                                 alt="Image 4"
@@ -176,15 +175,15 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="bg-slate-50 lg:py-20 sm:py-0 px-6 md:px-16 lg:px-8  xl:px-36 ">
-                    <div className="container mx-auto px-4">
+                <section className="bg-slate-50 lg:py-20 sm:py-0 ">
+                    <div className="container mx-auto px-6 md:px-16 lg:px-8  xl:px-36 ">
                         <p className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-indigo-600 xl:mt-10 md:mt-10 mb-3">
                             CHAPTER-WISE PRACTICE TESTS
                         </p>
 
-                        <h2 className=" text-4xl font-extrabold leading-10 tracking-wide text-center ">
-                            Start Practicing for Your 2024 Canadian Citizenship
-                            Test Today!
+                        <h2 className=" text-xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl px-10 font-extrabold text-center ">
+                            Start your 2024 Canadian citizenship test practice
+                            with us!
                         </h2>
                     </div>
                 </section>
@@ -203,7 +202,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="bg-slate-50 py-2 px-6 md:px-16 lg:px-8  xl:px-36 ">
+                <section className="bg-slate-50 py-4 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
                     {chapters
                         .filter((chapter) => chapter.step === 1)
                         .map((chapter, index) => (
@@ -214,45 +213,42 @@ export default function HomePage({ auth, chapters }) {
                                     auth,
                                 })}
                             >
-                                <div className="container mx-auto  my-2 flex flex-col md:flex-row border border-gray-100 rounded-2xl transform hover:-translate-y-1 transition duration-500 ease-out px-6 md:px-16 lg:px-8  xl:px-36">
-                                    <div className="md:w-1/8">
+                                <div className="container mx-auto my-4 flex flex-col md:flex-row border border-gray-100 rounded-2xl transform hover:-translate-y-1 transition duration-500 ease-out p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
+                                    {/* Image Section */}
+                                    <div className="w-full md:w-2/3 lg:w-8/12">
                                         <img
                                             src="/images/chap 1.png"
                                             alt="Photos"
-                                            className="w-full"
+                                            className="w-full h-full object-cover rounded-t-xl md:rounded-l-xl md:rounded-tr-none"
                                         />
                                     </div>
 
-                                    <div className="md:w-1/2 px-4 py-2 bg-white rounded-r-xl">
-                                        <h3 className=" text-2xl font-bold leading-10 tracking-wide text-left">
+                                    {/* Text Section */}
+                                    <div className="w-full md:w-1/3 lg:w-4/12 px-4 py-4 bg-white rounded-b-xl md:rounded-r-xl">
+                                        <h3 className="text-xl sm:text-2xl font-bold leading-tight tracking-wide text-left mb-2">
                                             {chapter.name}
                                         </h3>
-                                        <p className="text-sm font-normal leading-8 tracking-tight text-gray-500">
+                                        <p className="text-sm sm:text-base font-normal leading-6 tracking-tight text-gray-500 mb-4">
                                             {chapter.description}
                                         </p>
 
-                                        <div className="container mx-auto px-4 flex flex-col md:flex-row flex-wrap">
-                                            <div className="md:w-1/2 w-full mb-4 md:mb-0 py-4">
-                                                <div>
-                                                    <p className="font-bold text-xl tracking-wide mb-1">
-                                                        {chapter.questions}
-                                                    </p>
-                                                    <p className="text-lg font-normal text-gray-500">
-                                                        Questions
-                                                    </p>
-                                                </div>
+                                        <div className="flex flex-col md:flex-row justify-between">
+                                            <div className="w-full md:w-1/2 mb-4 md:mb-0">
+                                                <p className="font-bold text-lg sm:text-xl tracking-wide mb-1">
+                                                    {chapter.questions}
+                                                </p>
+                                                <p className="text-base sm:text-lg font-normal text-gray-500">
+                                                    Questions
+                                                </p>
                                             </div>
 
-                                            <div className="md:w-1/2 w-full py-4">
-                                                <div>
-                                                    <p className="font-bold text-xl tracking-wide mb-1">
-                                                        {chapter.mistakes}{" "}
-                                                        Mistakes
-                                                    </p>
-                                                    <p className="text-lg font-normal text-gray-500">
-                                                        Allowed to pass
-                                                    </p>
-                                                </div>
+                                            <div className="w-full md:w-1/2">
+                                                <p className="font-bold text-lg sm:text-xl tracking-wide mb-1">
+                                                    {chapter.mistakes} Mistakes
+                                                </p>
+                                                <p className="text-base sm:text-lg font-normal text-gray-500">
+                                                    Allowed to pass
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -336,33 +332,37 @@ export default function HomePage({ auth, chapters }) {
                         </p>
                     </div>
                 </section>
-
-                <section className="container mx-auto bg-slate-50  ">
+                <section className="container mx-auto bg-slate-50 py-4">
                     {chapters
                         .filter((chapter) => chapter.step === 3)
                         .map((chapter, index) => (
-                            <div className="container mx-auto    my-2 flex flex-col md:flex-row rounded-2xl transform hover:-translate-y-1 transition duration-500 ease-out px-6 md:px-16 lg:px-8  xl:px-36">
-                                <div className="md:w-1/8">
+                            <div
+                                key={index}
+                                className="container mx-auto my-4 grid grid-cols-12 rounded-2xl transform hover:-translate-y-1 transition duration-500 ease-out p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12"
+                            >
+                                {/* Image in 8 columns */}
+                                <div className="col-span-12 lg:col-span-8">
                                     <img
                                         src="/images/chap 13.png"
                                         alt="Photos"
-                                        className="w-full"
+                                        className="w-full h-full rounded-t-xl "
                                     />
                                 </div>
 
-                                <div className="md:w-1/2 px-4 py-2 bg-white rounded-r-xl">
-                                    <div className="bg-white rounded-r-3xl  p-4 md:p-6">
-                                        <h3 className="text-xl sm:text-2xl md:text-xl font-bold leading-tight tracking-wide mb-2">
+                                {/* Text in 4 columns */}
+                                <div className="col-span-12 lg:col-span-4 px-4 py-2 bg-white rounded-b-xl lg:rounded-r-xl">
+                                    <div className="bg-white rounded-lg p-4 md:p-6">
+                                        <h3 className="text-xl sm:text-2xl lg:text-xl font-bold leading-tight tracking-wide mb-2">
                                             {chapter.name}
                                         </h3>
-                                        <p className="text-sm sm:text-base md:text-lg font-normal leading-6 md:leading-8 tracking-tight text-gray-500 mb-4">
+                                        <p className="text-sm sm:text-base md:text-lg font-normal leading-6 lg:leading-8 tracking-tight text-gray-500 mb-4">
                                             {chapter.description}
                                         </p>
 
                                         <div className="flex flex-col md:flex-row items-center md:items-start justify-between md:flex-wrap">
                                             <div className="w-full md:w-1/2 mb-4 md:mb-0 pr-0 md:pr-4">
                                                 <div>
-                                                    <p className="text-lg sm:text-xl md:text-xl font-bold tracking-wide mb-1">
+                                                    <p className="text-lg sm:text-xl lg:text-xl font-bold tracking-wide mb-1">
                                                         {chapter.questions}
                                                     </p>
                                                     <p className="text-base sm:text-lg font-normal text-gray-500">
@@ -373,7 +373,7 @@ export default function HomePage({ auth, chapters }) {
 
                                             <div className="w-full md:w-1/2 pr-0 md:pr-4">
                                                 <div>
-                                                    <p className="text-lg sm:text-xl md:text-2xl font-bold tracking-wide mb-1">
+                                                    <p className="text-lg sm:text-xl lg:text-xl font-bold tracking-wide mb-1">
                                                         {chapter.mistakes}{" "}
                                                         Mistakes
                                                     </p>
@@ -569,6 +569,9 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
                 <section className="container mx-auto  py-16 bg-slate-50 px-6 md:px-16 lg:px-8  xl:px-36 ">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-8">
+                        Offering a perfect learning environment
+                    </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
                         <div className="text-center p-8 bg-indigo-600 rounded-xl shadow-md">
                             <FontAwesomeIcon
