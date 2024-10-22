@@ -208,8 +208,8 @@ export default function HomePage({ auth, chapters }) {
                         </p>
 
                         <h2 className=" text-xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl px-10 font-bold text-center ">
-                            Start your 2024 Canadian citizenship test practice
-                            with us!
+                            Start Practicing for Your 2024 Canadian Citizenship
+                            Test Today!
                         </h2>
                     </div>
                 </section>
@@ -228,7 +228,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="bg-slate-50 px-4 sm:px-6 md:px-8 lg:px-12  ">
+                <section className="bg-slate-50 px-4 sm:px-6 md:px-8 lg:px-12">
                     {chapters
                         .filter((chapter) => chapter.step === 1)
                         .map((chapter, index) => (
@@ -239,9 +239,9 @@ export default function HomePage({ auth, chapters }) {
                                     auth,
                                 })}
                             >
-                                <div className="container mx-auto flex flex-col md:flex-row  xl:px-44">
+                                <div className="container mx-auto flex flex-col md:flex-row xl:px-44">
                                     {/* Image Section */}
-                                    <div className="w-full md:w-2/3 lg:w-8/12">
+                                    <div className="w-full md:w-2/3 lg:w-8/12 border-l border-t border-b border-gray-200 shadow-sm rounded-l-2xl bg-white">
                                         <img
                                             src="/images/chap 1.png"
                                             alt="Photos"
@@ -250,7 +250,7 @@ export default function HomePage({ auth, chapters }) {
                                     </div>
 
                                     {/* Text Section */}
-                                    <div className="w-full md:w-1/3 lg:w-4/12 px-4 py-4 bg-white">
+                                    <div className="w-full md:w-1/3 lg:w-4/12 px-4 py-4 border-r border-t border-b border-gray-200 shadow-sm rounded-r-2xl bg-white">
                                         <h3 className="text-xl sm:text-2xl font-bold leading-tight tracking-wide text-left mb-2">
                                             {chapter.name}
                                         </h3>
@@ -383,7 +383,7 @@ export default function HomePage({ auth, chapters }) {
                         .map((chapter, index) => (
                             <div
                                 key={index}
-                                className="container mx-auto grid grid-cols-12  border border-gray-300 rounded-2xl bg-white"
+                                className="container mx-auto grid grid-cols-12  border border-gray-200 shadow-sm rounded-2xl bg-white"
                             >
                                 {/* Image in 8 columns */}
                                 <div className="col-span-12 lg:col-span-8">
@@ -458,45 +458,73 @@ export default function HomePage({ auth, chapters }) {
 
                         <div className="grid grid-cols-1 gap-8 md:grid-cols-3 p-4 md:p-10">
                             <div className="text-center p-4 text-white rounded-md">
-                                <FontAwesomeIcon
-                                    icon={faQuestion}
-                                    className="mb-4 text-4xl"
-                                />
+                                <svg
+                                    width="80"
+                                    height="81"
+                                    viewBox="0 0 80 81"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M36.8959 41.6666C39.4626 37.0333 44.3959 34.2999 47.2626 30.1999C50.2959 25.8999 48.5959 17.8666 39.9959 17.8666C34.3626 17.8666 31.5959 22.1333 30.4292 25.6666L21.7959 22.0333C24.1626 14.9333 30.5959 8.83325 39.9626 8.83325C47.7959 8.83325 53.1626 12.3999 55.8959 16.8666C58.2292 20.6999 59.5959 27.8666 55.9959 33.1999C51.9959 39.0999 48.1626 40.8999 46.0959 44.6999C45.2626 46.2333 44.9292 47.2332 44.9292 52.1666H35.2959C35.2626 49.5666 34.8626 45.3333 36.8959 41.6666ZM46.6626 65.4999C46.6626 69.1666 43.6626 72.1666 39.9959 72.1666C36.3292 72.1666 33.3292 69.1666 33.3292 65.4999C33.3292 61.8333 36.3292 58.8333 39.9959 58.8333C43.6626 58.8333 46.6626 61.8333 46.6626 65.4999Z"
+                                        fill="#FEFDFE"
+                                    />
+                                </svg>
+
                                 <h3 className="text-lg font-bold mb-2">
                                     850+ Practice Questions
                                 </h3>
                                 <p>
-                                    Access over 700 Canadian citizenship test
-                                    practice questions similar to those on the
-                                    real exam for effective preparation.
+                                    Access over 850+ practice questions that are
+                                    similar to the real exam questions, helping
+                                    you prepare effectively.
                                 </p>
                             </div>
                             <div className="text-center p-4 text-white rounded-md">
-                                <FontAwesomeIcon
-                                    icon={faPenToSquare}
-                                    className="mb-4 text-4xl"
-                                />
+                                <svg
+                                    width="80"
+                                    height="81"
+                                    viewBox="0 0 80 81"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M9.77917 28.8333H46.4458V35.5H9.77917V28.8333ZM9.77917 22.1667H46.4458V15.5H9.77917V22.1667ZM9.77917 48.8333H33.1125V42.1667H9.77917V48.8333ZM59.8125 38.4L62.1792 36.0333C63.4792 34.7333 65.5792 34.7333 66.8792 36.0333L69.2458 38.4C70.5458 39.7 70.5458 41.8 69.2458 43.1L66.8792 45.4667L59.8125 38.4ZM57.4458 40.7667L39.7792 58.4333V65.5H46.8458L64.5125 47.8333L57.4458 40.7667Z"
+                                        fill="#FEFDFE"
+                                    />
+                                </svg>
+
                                 <h3 className="text-lg font-bold mb-2">
-                                    Realistic Test Simulations
+                                    Simulation Tests
                                 </h3>
                                 <p>
-                                    Take Citizenship practice tests that mimic
-                                    the actual exam format. This will help you
-                                    prepare in advance for the main exam.
+                                    Take simulation tests that follow the same
+                                    format as the actual exam. This will help
+                                    you feel ready for the big day.
                                 </p>
                             </div>
                             <div className="text-center p-4 text-white rounded-md">
-                                <FontAwesomeIcon
-                                    icon={faArrowTrendUp}
-                                    className="mb-4 text-4xl"
-                                />
+                                <svg
+                                    width="80"
+                                    height="81"
+                                    viewBox="0 0 80 81"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M46.8667 36.1334L40 33.0001L46.8667 29.8668L50 23.0001L53.1333 29.8668L60 33.0001L53.1333 36.1334L50 43.0001L46.8667 36.1334ZM13.3333 49.6667L16.4667 42.8001L23.3333 39.6667L16.4667 36.5334L13.3333 29.6667L10.2 36.5334L3.33334 39.6667L10.2 42.8001L13.3333 49.6667ZM28.3333 33.0001L31.9667 24.9667L40 21.3334L31.9667 17.7001L28.3333 9.66675L24.7 17.7001L16.6667 21.3334L24.7 24.9667L28.3333 33.0001ZM15 71.3334L35 51.3001L48.3333 64.6334L76.6667 32.7668L71.9667 28.0667L48.3333 54.6334L35 41.3001L10 66.3334L15 71.3334Z"
+                                        fill="#FEFDFE"
+                                    />
+                                </svg>
+
                                 <h3 className="text-lg font-bold mb-2">
-                                    Weakness Evaluations
+                                    Identify Your Weaknesses
                                 </h3>
                                 <p>
-                                    Benefit from advanced evaluations to
-                                    identify areas for improvement. This will
-                                    help you target where you need to improve.
+                                    Get an explanation on incorrect answers that
+                                    points out your mistakes, allowing you to
+                                    focus on the areas where you need the most
+                                    improvement.
                                 </p>
                             </div>
                         </div>
@@ -512,7 +540,7 @@ export default function HomePage({ auth, chapters }) {
                         LEARN FAST
                     </p>
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-                        Questions designed to feel just like the real test
+                        Questions Designed To Feel Just Like The Real Test
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -531,35 +559,35 @@ export default function HomePage({ auth, chapters }) {
                                 </h3>
                                 <p className="text-gray-500 text-base">
                                     Our practice tests are based on the latest
-                                    version of the Discover Canada booklet,
-                                    ensuring they're up-to-date. Whenever the
-                                    official study guide is updated, we promptly
-                                    revise our questions too. You'll never
-                                    encounter outdated test information.
+                                    version of the Discover Canada booklet, so
+                                    you can be sure the information is current.
+                                    Whenever the official guide is updated, we
+                                    quickly change our questions, so you’ll
+                                    always have the latest test info.
                                 </p>
                             </div>
                             <div className="mb-8">
                                 <h3 className="text-xl md:text-2xl font-bold mb-2">
-                                    Chapter-based quizzes
+                                    Chapter-Based Tests
                                 </h3>
                                 <p className="text-gray-500 text-base">
-                                    Test yourself with quizzes designed for each
-                                    chapter based on the official Discover
-                                    Canada book. Dive into chapter-specific and
-                                    topic-specific quizzes for thorough
-                                    practice.
+                                    Test your knowledge with practice tests that
+                                    focus on each chapter of the Discover Canada
+                                    booklet. Our practice tests cover specific
+                                    chapters and chapters, giving you a thorough
+                                    way to practice.
                                 </p>
                             </div>
                             <div className="mb-8">
                                 <h3 className="text-xl md:text-2xl font-bold mb-2">
-                                    Just like the real Canadian citizenship test
+                                    Learn Anytime, Anywhere
                                 </h3>
                                 <p className="text-gray-500 text-base">
-                                    Our practice tests mirror the real Canadian
-                                    citizenship test. We use questions straight
-                                    from the official handbook, so what you
-                                    practice is what you'll likely see on the
-                                    actual test.
+                                    You can access our platform from any device,
+                                    so you can study for the Canadian
+                                    citizenship practice tests wherever and
+                                    whenever you want. Study on the go and make
+                                    the most of your time!
                                 </p>
                             </div>
                         </div>
@@ -573,43 +601,43 @@ export default function HomePage({ auth, chapters }) {
                             </p>
 
                             <h2 className="text-3xl md:text-4xl font-bold mb-10">
-                                Pass the Canadian citizenship test with ease
+                                Pass The Canadian Citizenship Test With Ease
                             </h2>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                             <div>
                                 <div className="mb-8">
                                     <h3 className="text-lg md:text-xl font-bold mb-2">
-                                        Simplify your preparation
+                                        Simplify Your Preparation
                                     </h3>
                                     <p className="text-base">
-                                        We help ensure effective preparation
-                                        with a structured study plan. You will
-                                        receive detailed, easy-to-access, and
-                                        organized chapter-wise quizzes.
+                                        We make your study process easier with a
+                                        chapter-by-chapter curriculum. You’ll
+                                        receive detailed, easy-to-use study
+                                        materials organized by chapter.
                                     </p>
                                 </div>
                                 <div className="mb-8">
                                     <h3 className="text-lg md:text-xl font-bold mb-2">
-                                        Learn from your mistakes
+                                        Learn from Your Mistakes
                                     </h3>
                                     <p className="text-base">
-                                        Taking unlimited test simulations and
-                                        topic-based quizzes helps you find your
-                                        weak spots. This lets you concentrate on
-                                        important study areas without wasting
-                                        time.
+                                        By taking unlimited practice tests and
+                                        answering chapter-based questions, you
+                                        can find your weak spots. This way, you
+                                        can focus on important study areas
+                                        without wasting time.
                                     </p>
                                 </div>
                                 <div className="mb-8">
                                     <h3 className="text-lg md:text-xl font-bold mb-2">
-                                        Review your toughest questions
+                                        Review Your Toughest Questions
                                     </h3>
                                     <p className="text-base">
-                                        Go over citizenship test practice
-                                        questions that were tough or often
-                                        answered wrong. This focused review
-                                        helps strengthen your understanding and
+                                        After each practice test, review the
+                                        questions that were most challenging for
+                                        you. This focused review helps
+                                        strengthen your understanding and build
                                         confidence in those areas.
                                     </p>
                                 </div>
@@ -633,97 +661,161 @@ export default function HomePage({ auth, chapters }) {
                 </section>
                 <section className="container mx-auto  py-16 bg-slate-50 px-6 md:px-16 lg:px-8  xl:px-44 ">
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-                        Offering a perfect learning environment
+                        Offering A Perfect Learning Environment
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
                         <div className="text-center p-8 bg-indigo-600 rounded-xl shadow-md">
-                            <FontAwesomeIcon
-                                icon={faQuestion}
-                                className="text-3xl text-white mb-4"
-                            />
+                            <svg
+                                width="38"
+                                height="64"
+                                viewBox="0 0 38 64"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M15.8959 33.1666C18.4626 28.5333 23.3959 25.8 26.2626 21.7C29.2959 17.4 27.5959 9.36665 18.9959 9.36665C13.3626 9.36665 10.5959 13.6333 9.42923 17.1666L0.795898 13.5333C3.16256 6.43331 9.5959 0.333313 18.9626 0.333313C26.7959 0.333313 32.1626 3.89998 34.8959 8.36665C37.2292 12.2 38.5959 19.3666 34.9959 24.7C30.9959 30.6 27.1626 32.4 25.0959 36.2C24.2626 37.7333 23.9292 38.7333 23.9292 43.6666H14.2959C14.2626 41.0666 13.8626 36.8333 15.8959 33.1666ZM25.6626 57C25.6626 60.6666 22.6626 63.6666 18.9959 63.6666C15.3292 63.6666 12.3292 60.6666 12.3292 57C12.3292 53.3333 15.3292 50.3333 18.9959 50.3333C22.6626 50.3333 25.6626 53.3333 25.6626 57Z"
+                                    fill="#FEFDFE"
+                                />
+                            </svg>
+
                             <h3 className="text-lg font-bold mb-2 text-white">
                                 850+ Questions
                             </h3>
                             <p className="text-base text-white text-center">
-                                Access more than 700+ Canadian citizenship test
+                                Access more than 850+ Canadian citizenship test
                                 practice questions, similar to those on the real
                                 exam, for effective preparation.
                             </p>
                         </div>
 
                         <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
-                            <FontAwesomeIcon
-                                icon={faPenToSquare}
-                                className="text-3xl text-white mb-4"
-                            />{" "}
+                            <svg
+                                width="80"
+                                height="80"
+                                viewBox="0 0 80 80"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M9.77917 28.3333H46.4458V35H9.77917V28.3333ZM9.77917 21.6667H46.4458V15H9.77917V21.6667ZM9.77917 48.3333H33.1125V41.6667H9.77917V48.3333ZM59.8125 37.9L62.1792 35.5333C63.4792 34.2333 65.5792 34.2333 66.8792 35.5333L69.2458 37.9C70.5458 39.2 70.5458 41.3 69.2458 42.6L66.8792 44.9667L59.8125 37.9ZM57.4458 40.2667L39.7792 57.9333V65H46.8458L64.5125 47.3333L57.4458 40.2667Z"
+                                    fill="#FEFDFE"
+                                />
+                            </svg>
+
                             <h3 className="text-lg font-bold mb-2 text-white">
-                                Real-Life Test Simulations
+                                Chapter-Based
                             </h3>
                             <p className="text-base text-white text-center">
-                                Take citizenship practice tests that mimic the
-                                actual exam format. This helps you prepare in
-                                advance for the main exam.
+                                Learn important concepts with chapter-based
+                                practice tests based on the Discover Canada
+                                guide. These practice tests help you check your
+                                understanding and memory of specific chapters.
                             </p>
                         </div>
 
                         <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
-                            <FontAwesomeIcon
-                                icon={faArrowTrendUp}
-                                className="text-3xl text-white mb-4"
-                            />{" "}
+                            <svg
+                                width="80"
+                                height="80"
+                                viewBox="0 0 80 80"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M9.77917 28.3333H46.4458V35H9.77917V28.3333ZM9.77917 21.6667H46.4458V15H9.77917V21.6667ZM9.77917 48.3333H33.1125V41.6667H9.77917V48.3333ZM59.8125 37.9L62.1792 35.5333C63.4792 34.2333 65.5792 34.2333 66.8792 35.5333L69.2458 37.9C70.5458 39.2 70.5458 41.3 69.2458 42.6L66.8792 44.9667L59.8125 37.9ZM57.4458 40.2667L39.7792 57.9333V65H46.8458L64.5125 47.3333L57.4458 40.2667Z"
+                                    fill="#FEFDFE"
+                                />
+                            </svg>
+
                             <h3 className="text-lg font-bold mb-2 text-white">
-                                Weakness Evaluations
+                                Test Simulation
                             </h3>
                             <p className="text-base text-white text-center">
-                                Benefit from advanced evaluations that pinpoint
-                                your weaknesses, helping you target areas for
-                                improvement.
+                                Use our special test simulations to practice for
+                                the Canadian Citizenship test. Practicing in a
+                                test-like setting will help you feel more
+                                confident and ready for the real exam.
                             </p>
                         </div>
 
                         <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
-                            <FontAwesomeIcon
-                                icon={faQuestion}
-                                className="text-3xl text-white mb-4"
-                            />{" "}
+                            <svg
+                                width="80"
+                                height="80"
+                                viewBox="0 0 80 80"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M23.3333 53.3333H46.6667V60H23.3333V53.3333ZM23.3333 40H56.6667V46.6667H23.3333V40ZM23.3333 26.6667H56.6667V33.3333H23.3333V26.6667ZM63.3333 13.3333H49.4C48 9.46666 44.3333 6.66666 40 6.66666C35.6667 6.66666 32 9.46666 30.6 13.3333H16.6667C16.2 13.3333 15.7667 13.3667 15.3333 13.4667C14.0333 13.7333 12.8667 14.4 11.9667 15.3C11.3667 15.9 10.8667 16.6333 10.5333 17.4333C10.2 18.2 10 19.0667 10 20V66.6667C10 67.5667 10.2 68.4667 10.5333 69.2667C10.8667 70.0667 11.3667 70.7667 11.9667 71.4C12.8667 72.3 14.0333 72.9667 15.3333 73.2333C15.7667 73.3 16.2 73.3333 16.6667 73.3333H63.3333C67 73.3333 70 70.3333 70 66.6667V20C70 16.3333 67 13.3333 63.3333 13.3333ZM40 12.5C41.3667 12.5 42.5 13.6333 42.5 15C42.5 16.3667 41.3667 17.5 40 17.5C38.6333 17.5 37.5 16.3667 37.5 15C37.5 13.6333 38.6333 12.5 40 12.5ZM63.3333 66.6667H16.6667V20H63.3333V66.6667Z"
+                                    fill="#FEFDFE"
+                                />
+                            </svg>
+
                             <h3 className="text-lg font-bold mb-2 text-white">
-                                Chapter Quizzes
+                                Important People
                             </h3>
                             <p className="text-base text-white text-center">
-                                Study using chapter-based questions from the
-                                Discover Canada study guide and delve deeply
-                                into each topic.
+                                Get to know key figures in Canadian history with
+                                our descriptions, making it easier to understand
+                                their impact and context.
                             </p>
                         </div>
 
                         <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
-                            <FontAwesomeIcon
-                                icon={faQuestion}
-                                className="text-3xl text-white mb-4"
-                            />{" "}
+                            <svg
+                                width="80"
+                                height="80"
+                                viewBox="0 0 80 80"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M63.3333 13.3333H60V6.66666H53.3333V13.3333H26.6667V6.66666H20V13.3333H16.6667C12.9667 13.3333 10.0333 16.3333 10.0333 20L10 66.6667C10 70.3333 12.9667 73.3333 16.6667 73.3333H63.3333C67 73.3333 70 70.3333 70 66.6667V20C70 16.3333 67 13.3333 63.3333 13.3333ZM63.3333 66.6667H16.6667V33.3333H63.3333V66.6667ZM63.3333 26.6667H16.6667V20H63.3333V26.6667ZM30 46.6667H23.3333V40H30V46.6667ZM43.3333 46.6667H36.6667V40H43.3333V46.6667ZM56.6667 46.6667H50V40H56.6667V46.6667ZM30 60H23.3333V53.3333H30V60ZM43.3333 60H36.6667V53.3333H43.3333V60ZM56.6667 60H50V53.3333H56.6667V60Z"
+                                    fill="#FEFDFE"
+                                />
+                            </svg>
+
                             <h3 className="text-lg font-bold mb-2 text-white">
                                 Important Dates
                             </h3>
                             <p className="text-base text-white text-center">
-                                Understand key events and historical context
-                                using a timeline of Canada's history, making it
-                                easier to remember.
+                                Learn about significant events in Canadian
+                                history with our timeline overview. Our visual
+                                timelines help you remember important milestones
+                                more effectively.
                             </p>
                         </div>
 
                         <div className="text-center p-8 bg-indigo-600 rounded-xl shadow-md">
-                            <FontAwesomeIcon
-                                icon={faQuestion}
-                                className="text-3xl text-white mb-4"
-                            />{" "}
+                            <svg
+                                width="80"
+                                height="81"
+                                viewBox="0 0 80 81"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M9.30751 65.1667L13.7742 67.0333V36.9333L5.67418 56.4667C4.30751 59.8667 5.94085 63.7667 9.30751 65.1667ZM74.3075 52.8333L57.7742 12.9333C56.7408 10.4333 54.3075 8.90001 51.7408 8.83334C50.8742 8.83334 49.9742 8.96668 49.1075 9.33334L24.5408 19.5C22.0408 20.5333 20.5075 22.9333 20.4408 25.5C20.4075 26.4 20.5742 27.3 20.9408 28.1667L37.4742 68.0667C38.5075 70.6 40.9742 72.1333 43.5742 72.1667C44.4408 72.1667 45.3075 72 46.1408 71.6667L70.6742 61.5C74.0742 60.1 75.7075 56.2 74.3075 52.8333ZM43.6408 65.5L27.1075 25.6333L51.6075 15.5H51.6408L68.1408 55.3333L43.6408 65.5Z"
+                                    fill="#FEFDFE"
+                                />
+                                <path
+                                    d="M37.5408 33C39.3818 33 40.8742 31.5076 40.8742 29.6667C40.8742 27.8257 39.3818 26.3333 37.5408 26.3333C35.6999 26.3333 34.2075 27.8257 34.2075 29.6667C34.2075 31.5076 35.6999 33 37.5408 33Z"
+                                    fill="#FEFDFE"
+                                />
+                                <path
+                                    d="M20.4742 65.5C20.4742 69.1667 23.4742 72.1667 27.1408 72.1667H31.9742L20.4742 44.3667V65.5Z"
+                                    fill="#FEFDFE"
+                                />
+                            </svg>
+
                             <h3 className="text-lg font-bold mb-2 text-white">
-                                Flashcards
+                                450+ Flashcards
                             </h3>
                             <p className="text-base text-white text-center">
-                                Memorize details from the study material using
-                                interactive flashcards, as you can learn more
-                                efficiently by incorporating them into your
-                                study routine.
+                                Use interactive 450+ flashcards to memorize
+                                details from the study materials. Flashcards can
+                                make your studying more efficient and enjoyable.
                             </p>
                         </div>
                     </div>
@@ -754,7 +846,7 @@ export default function HomePage({ auth, chapters }) {
                             HIGHLY RECOMMENDED
                         </p>
                         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-                            What our users are saying about us
+                            What Our Users Are Saying About Us
                         </h2>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-1 mx-4 sm:mx-10 lg:mx-1 xl:mx-8">
@@ -765,14 +857,15 @@ export default function HomePage({ auth, chapters }) {
                                             “Passed on my first attempt”
                                         </p>
                                         <p className="text-sm mb-2 text-gray-500 text-left ">
-                                            I was so nervous about the Canadian
-                                            Citizenship Test, but this platform
-                                            made all the difference. The test
-                                            exams helped me a lot to understand
-                                            the question patterns. I passed on
-                                            my first attempt. If you are
-                                            preparing for the exam, you should
-                                            join the platform.
+                                            I was really nervous about the
+                                            Canadian Citizenship Test, but this
+                                            platform made a big difference. The
+                                            practice exams helped me understand
+                                            the question patterns, and I passed
+                                            on my first try! If you're preparing
+                                            for the exam, you should definitely
+                                            join this platform. - Jillian
+                                            McAllister British Columbia
                                         </p>
                                     </div>
                                     <div>
@@ -829,10 +922,11 @@ export default function HomePage({ auth, chapters }) {
                                         <p className="text-sm mb-14 text-gray-500 text-left">
                                             If you want to prepare for the
                                             Canadian Citizenship test, this is
-                                            the place to prepare. The
-                                            chapter-wise practice tests were
-                                            exactly what I needed to understand
-                                            each section thoroughly.
+                                            the right place. The chapter-wise
+                                            practice tests were exactly what I
+                                            needed to fully understand each
+                                            section. - Marcus Tremblay Nova
+                                            Scotia.
                                         </p>
                                     </div>
                                     <hr className="border-1 border-gray-200  mb-3" />
@@ -884,12 +978,13 @@ export default function HomePage({ auth, chapters }) {
                                             “Best Resource For The Test”
                                         </h3>
                                         <p className="text-sm mb-10 text-gray-500 text-left">
-                                            I failed the test in my first
-                                            attempt. I was looking for an online
-                                            platform to help me out.
-                                            CitizenTestPrep premium is without a
-                                            doubt the best resource for the
-                                            Canadian Citizenship Test.
+                                            I failed the test on my first
+                                            attempt and was looking for an
+                                            online platform to help me.
+                                            CitizenTestPrep is, without a doubt,
+                                            the best resource for the Canadian
+                                            Citizenship Test!" Hitoshi Matsumoto
+                                            Saskatchewan.
                                         </p>
                                     </div>
                                     <hr className="border-1 border-gray-200 my-2" />
@@ -945,16 +1040,17 @@ export default function HomePage({ auth, chapters }) {
                             What is the Canadian Citizenship Test?
                         </h2>
                         <p className="text-lg text-gray-600">
-                            The Canadian Citizenship Test evaluates applicants'
-                            knowledge of Canada. Applicants must pass the test
-                            to obtain Canadian citizenship. The test contains
-                            questions about Canadian rights, responsibilities,
-                            history, geography, economy, government, laws, and
-                            values. Questions come from the official Canadian
-                            citizenship study guide. The test has multiple
-                            choice questions. Applicants must correctly answer
-                            many questions to pass. Passing the test shows
-                            applicants understand Canadian ways of life.
+                            The Canadian Citizenship Test checks how well
+                            applicants know Canada. To become a Canadian
+                            citizen, applicants must pass this test. The test
+                            includes questions about Canadian rights,
+                            responsibilities, history, geography, economy,
+                            government, laws, and values. The questions come
+                            from the official guide called "Discover Canada."
+                            The test has 20 multiple-choice questions, and
+                            applicants need to get at least 15 right within 45
+                            minutes. Passing the test shows that applicants
+                            understand Canadian life and values.
                         </p>
                     </div>
                     <div className="container mx-auto px-44 mt-16">
@@ -977,67 +1073,113 @@ export default function HomePage({ auth, chapters }) {
                             serious crimes.
                         </p>
                         <h3 className="text-2xl font-bold mt-6 mb-2">
-                            Test day procedures
+                            Test Question & Format
                         </h3>
                         <p className="text-lg text-gray-600 mt-2">
-                            On the day of your scheduled Canadian Citizenship
-                            Test, there are several important procedures to
-                            follow. First and foremost, you must bring valid
-                            proof of your permanent residency in Canada, as well
-                            as a piece of government-issued identification. It
-                            is recommended to arrive at least 30 minutes before
-                            your scheduled test time to allow for check-in and
-                            any necessary formalities. Once the test begins, all
-                            electronic devices, including phones and tablets,
-                            must be turned off and put away. You will have a
-                            total of 30 minutes to complete the 20-question
-                            test.
+                            The Canadian citizenship test consists of 20
+                            questions focused on the rights and responsibilities
+                            of Canadian citizens, as well as the country's
+                            history, geography, economy, government, laws, and
+                            symbols. The questions are presented in
+                            multiple-choice or true/false formats and are
+                            available in both English and French. Test takers
+                            have 45 minutes to complete the exam and must answer
+                            at least 15 out of 20 questions correctly to pass.
+                            Most applicants will be invited to take the test
+                            online, but accommodations can be made for those who
+                            require accessibility support; options include
+                            taking the test via Microsoft Teams or in person, or
+                            receiving it in a different format.
                         </p>
                         <h3 className="text-2xl font-bold mt-6 mb-2">
-                            Test Format
+                            Wait For Test Invitation
                         </h3>
                         <p className="text-lg text-gray-600 mt-2">
-                            The Canadian Citizenship Test itself consists of 20
-                            multiple-choice questions. These questions cover a
-                            range of topics, including Canadian rights and
-                            responsibilities, history, geography, politics,
-                            economy, and cultural values. The test is a written
-                            examination, and no aids or study materials are
-                            permitted during the test itself.  You’ll have 45
-                            minutes to complete the test.
+                            You should wait for your test invitation, which we
+                            typically send within one week after you receive
+                            your Acknowledgement of Receipt (AOR) letter or
+                            email. The AOR confirms that your application is
+                            complete. If you haven’t received your AOR yet,
+                            check to see if it will arrive soon. The time it
+                            takes to get your invitation can vary based on your
+                            situation, especially if your application is more
+                            complex. If you have an emergency and need to take
+                            the test sooner, please check if you qualify for
+                            urgent processing. This option is available for
+                            specific urgent situations. If you need to
+                            reschedule your test, contact the email address
+                            provided in your test invitation. In your email,
+                            include a detailed explanation for the rescheduling,
+                            your application number, and your unique client
+                            identifier (UCI). You will receive your invitation
+                            by email if you provided an email address in your
+                            application. To avoid missing it, check your junk or
+                            spam folders for emails from an address ending in
+                            “@cic.gc.ca.” If you didn’t give an email address,
+                            you can provide one using IRCC’s web form, or they
+                            will call you, so remember to check your voicemail.
+                        </p>
+                        <h3 className="text-2xl font-bold mt-6 mb-2">
+                            Test Day Procedures
+                        </h3>
+                        <p className="text-lg text-gray-600 mt-2">
+                            To take the test, you must first receive your
+                            invitation, which outlines the specific format
+                            you'll follow. If you're taking the online test,
+                            ensure you read the tutorial, prepare the required
+                            identification, and confirm your device and browser
+                            compatibility. You have 30 calendar days from the
+                            invitation date to complete the test, with up to
+                            three chances to pass; if you fail all three
+                            attempts, a hearing with a citizenship official will
+                            be scheduled. If you need accommodations, you may be
+                            invited to take the test on Microsoft Teams or in
+                            person, and the same three-attempt rule applies.
                         </p>
                         <h3 className="text-2xl font-bold mt-6 mb-2">
                             Scoring and Results
                         </h3>
                         <p className="text-lg text-gray-600 mt-2">
-                            To pass the Canadian Citizenship Test, you must
-                            correctly answer at least 15 out of the 20
-                            questions. This represents a passing score of 75%.
-                            Immediately after completing the test, you will
-                            receive your results, indicating whether you have
-                            passed or failed. If you pass, you can proceed with
-                            the next steps in the citizenship application
-                            process. If you fail, you will have the opportunity
-                            to re-take the test after re-applying and meeting
-                            the eligibility requirements again.
+                            To pass the citizenship test, you must correctly
+                            answer at least 15 out of 20 questions, achieving a
+                            minimum score of 75%. If you pass, you may be
+                            invited to an interview with a citizenship official,
+                            depending on your case, and will definitely receive
+                            an invitation to the citizenship ceremony. If you do
+                            not pass the test, you have up to three attempts to
+                            succeed, whether you take the test online, via
+                            Microsoft Teams, or in person. Failing three times
+                            will lead to a hearing with a citizenship official,
+                            where you will be asked questions similar to those
+                            on the test. If you pass this hearing, your
+                            application will continue to be processed; however,
+                            if you fail, your application will be refused, and
+                            you will need to reapply and pay the fees again if
+                            you still wish to pursue citizenship. For those who
+                            applied as a family or group, all applications are
+                            processed together. If one applicant needs to retest
+                            or attend a hearing, the others may still be invited
+                            to the citizenship ceremony. If you prefer that
+                            everyone attends the same ceremony, you can request
+                            to pause processing of the applications until you
+                            successfully pass the test or hearing.
                         </p>
                         <h3 className="text-2xl font-bold mt-6 mb-2">
-                            How many attempts to pass the Canadian citizenship
-                            test?
+                            How Many Attempts to Pass the Canadian Citizenship
+                            Test?
                         </h3>
                         <p className="text-lg text-gray-600 mt-2">
-                            You have up to 3 attempts to pass the test. For
-                            example, you can take the test a maximum of two more
-                            times if you fail the first time.
+                            You can take the test up to 3 times. For example, if
+                            you fail the first time, you can take the test two
+                            more times.
                         </p>
                     </div>
                 </section>
                 <section className=" container mx-auto hidden md:block py-16 bg-slate-50  px-6 md:px-16 lg:px-8  xl:px-44">
                     <div className="  px-6 md:px-16 lg:px-8  xl:px-36">
                         <h2 className="text-4xl font-bold mb-6 text-center">
-                            Tips to pass Canadian citizenship test in one
-                            <br />
-                            attempt
+                            Tips to pass Canadian Citizenship Test in One
+                            Attempt
                         </h2>
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
@@ -1045,80 +1187,100 @@ export default function HomePage({ auth, chapters }) {
                                 className="text-primary text-2xl mr-4"
                             />
                             <p className="text-lg">
-                                Know Canada's history, rights, responsibilities,
-                                geography, economy, and political system
+                                Study the official Discover Canada guide
+                                carefully.
                             </p>
                         </div>
+
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
                                 className="text-primary text-2xl mr-4"
                             />
                             <p className="text-lg">
-                                Practice with sample test questions from various
-                                sources
+                                Learn about Canada’s history, rights,
+                                responsibilities, geography, economy, and
+                                political system.
                             </p>
                         </div>
+
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
                                 className="text-primary text-2xl mr-4"
                             />
                             <p className="text-lg">
-                                Take online practice tests to identify and
-                                improve weak areas
+                                Practice with sample test questions from
+                                different sources.
                             </p>
                         </div>
+
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
                                 className="text-primary text-2xl mr-4"
                             />
                             <p className="text-lg">
-                                Learn important Canadian symbols, figures, and
-                                cultural elements
+                                Take online practice tests to find and improve
+                                your weak areas.
                             </p>
                         </div>
+
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
                                 className="text-primary text-2xl mr-4"
                             />
                             <p className="text-lg">
-                                Understand the responsibilities and rights of
-                                Canadian citizens
+                                Learn about important Canadian symbols, figures,
+                                and cultural aspects.
                             </p>
                         </div>
+
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
                                 className="text-primary text-2xl mr-4"
                             />
                             <p className="text-lg">
-                                Know about Canada's legal system, laws, and
-                                democratic principles
+                                Understand the rights and responsibilities of
+                                Canadian citizens.
                             </p>
                         </div>
+
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
                                 className="text-primary text-2xl mr-4"
                             />
                             <p className="text-lg">
-                                Study Canada's diverse population, immigration
-                                history, and multiculturalism
+                                Know about Canada’s legal system, laws, and
+                                democratic values.
                             </p>
                         </div>
+
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
                                 className="text-primary text-2xl mr-4"
                             />
                             <p className="text-lg">
-                                Familiarize yourself with the Canadian Charter
-                                of Rights and Freedoms
+                                Study Canada’s diverse population, immigration
+                                history, and multiculturalism.
                             </p>
                         </div>
+
+                        <div className="flex items-center mb-2">
+                            <FontAwesomeIcon
+                                icon={faCircleCheck}
+                                className="text-primary text-2xl mr-4"
+                            />
+                            <p className="text-lg">
+                                Get familiar with the Canadian Charter of Rights
+                                and Freedoms.
+                            </p>
+                        </div>
+
                         <div className="flex items-center mb-2">
                             <FontAwesomeIcon
                                 icon={faCircleCheck}
@@ -1126,7 +1288,40 @@ export default function HomePage({ auth, chapters }) {
                             />
                             <p className="text-lg">
                                 Understand the roles of different levels of
-                                government (federal, provincial, municipal)
+                                government (federal, provincial, municipal).
+                            </p>
+                        </div>
+
+                        <div className="flex items-center mb-2">
+                            <FontAwesomeIcon
+                                icon={faCircleCheck}
+                                className="text-primary text-2xl mr-4"
+                            />
+                            <p className="text-lg">
+                                Learn about Canada’s role in international
+                                affairs and peacekeeping efforts.
+                            </p>
+                        </div>
+
+                        <div className="flex items-center mb-2">
+                            <FontAwesomeIcon
+                                icon={faCircleCheck}
+                                className="text-primary text-2xl mr-4"
+                            />
+                            <p className="text-lg">
+                                Stay updated on current events and issues in
+                                Canada.
+                            </p>
+                        </div>
+
+                        <div className="flex items-center mb-2">
+                            <FontAwesomeIcon
+                                icon={faCircleCheck}
+                                className="text-primary text-2xl mr-4"
+                            />
+                            <p className="text-lg">
+                                Develop good test-taking strategies and manage
+                                your time well.
                             </p>
                         </div>
                         <div className="flex items-center mb-2">
@@ -1135,38 +1330,8 @@ export default function HomePage({ auth, chapters }) {
                                 className="text-primary text-2xl mr-4"
                             />
                             <p className="text-lg">
-                                You need to stay updated on current events and
-                                issues in Canada
-                            </p>
-                        </div>
-                        <div className="flex items-center mb-2">
-                            <FontAwesomeIcon
-                                icon={faCircleCheck}
-                                className="text-primary text-2xl mr-4"
-                            />
-                            <p className="text-lg">
-                                You need to stay updated on current events and
-                                issues in Canada
-                            </p>
-                        </div>
-                        <div className="flex items-center mb-2">
-                            <FontAwesomeIcon
-                                icon={faCircleCheck}
-                                className="text-primary text-2xl mr-4"
-                            />
-                            <p className="text-lg">
-                                Develop effective test-taking strategies and
-                                time management
-                            </p>
-                        </div>
-                        <div className="flex items-center mb-2">
-                            <FontAwesomeIcon
-                                icon={faCircleCheck}
-                                className="text-primary text-2xl mr-4"
-                            />
-                            <p className="text-lg">
-                                Maintain a positive mindset and confidence
-                                during preparation
+                                Keep a positive mindset and build your
+                                confidence during your preparation.
                             </p>
                         </div>
                     </div>

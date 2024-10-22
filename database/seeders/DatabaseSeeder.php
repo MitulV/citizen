@@ -14105,9 +14105,10 @@ class DatabaseSeeder extends Seeder
           ],
           [
             'image' => '/images/chap 1.png',
-            'name' => 'Free Simulation Test',
-            'title' => 'Free Simulation Test',
-            'description' => "Take part in our free diagnostic Canadian citizenship test practice to assess your current knowledge and skills. It will help you tailor your study plan for maximum effectiveness.",
+            'name' => 'Free Practise Test',
+            'title' => 'Free Practise Test',
+            'description' => "Take our free practice test for the Canadian citizenship exam to see what you know and where you need to improve. This will help you create a study plan that works best for you.
+",
             'questions' => 20,
             'mistakes' => 5,
             'step' => 1,
