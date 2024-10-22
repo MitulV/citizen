@@ -8,12 +8,12 @@ export default function HomeChapterCard({
     auth,
 }) {
     return (
-        <div className="continer mx-auto bg-slate-50 rounded-2xl shadow-md transform hover:-translate-y-1 transition duration-500 ease-out hover:shadow-lg hover:shadow-gray-300 flex flex-col h-full">
+        <div className="continer mx-auto bg-white rounded-2xl shadow-sm transform transition duration-600 ease-out hover:shadow-lg hover:shadow-gray-300 flex flex-col h-full">
             {/* Image */}
             <img
                 src={image}
                 alt="Photo"
-                className="rounded-t-2xl w-full h-48 object-cover" // Fixed height for uniformity
+                className="rounded-t-2xl w-full h-24 md:h-36 lg:h-36 xl:h-44 object-cover" // Fixed height for uniformity
             />
 
             {/* Lock Icon */}
@@ -43,12 +43,12 @@ export default function HomeChapterCard({
                 <p className="text-gray-500 text-base">{description}</p>
             </div>
 
-            <div className="flex flex-col md:flex-row px-5 pb-5">
+            <div className="flex flex-row md:flex-row items-center md:items-start justify-between md:flex-wrap px-5 pb-5">
                 {/* Questions Section */}
                 <div className="w-full md:w-1/2 mb-4 md:mb-0">
                     <div className="flex flex-row items-center">
                         <div>
-                            <p className="font-bold text-lg tracking-wide mb-1">
+                            <p className="font-bold text-lg tracking-wide mb-1 mt-4 md:mt-0 lg:mt-0 xl:mt-0">
                                 {questions}
                             </p>
                             <p className="text-base font-normal text-gray-500">
