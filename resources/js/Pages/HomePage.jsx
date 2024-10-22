@@ -228,7 +228,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="bg-slate-50 px-4 sm:px-6 md:px-8 lg:px-12">
+                <section className="container mx-auto bg-slate-50 px-6 md:px-16 lg:px-8 xl:px-44">
                     {chapters
                         .filter((chapter) => chapter.step === 1)
                         .map((chapter, index) => (
@@ -239,41 +239,52 @@ export default function HomePage({ auth, chapters }) {
                                     auth,
                                 })}
                             >
-                                <div className="container mx-auto flex flex-col md:flex-row xl:px-44">
-                                    {/* Image Section */}
-                                    <div className="w-full md:w-2/3 lg:w-8/12 border-l border-t border-b border-gray-200 shadow-sm rounded-l-2xl bg-white">
+                                <div
+                                    key={index}
+                                    className="container mx-auto grid grid-cols-12  border border-gray-200 shadow-sm rounded-2xl bg-white"
+                                >
+                                    {/* Image in 8 columns */}
+                                    <div className="col-span-12 lg:col-span-8">
                                         <img
                                             src="/images/chap 1.png"
                                             alt="Photos"
-                                            className="w-full h-full object-cover"
+                                            className="w-full h-full rounded-t-xl"
                                         />
                                     </div>
 
-                                    {/* Text Section */}
-                                    <div className="w-full md:w-1/3 lg:w-4/12 px-4 py-4 border-r border-t border-b border-gray-200 shadow-sm rounded-r-2xl bg-white">
-                                        <h3 className="text-xl sm:text-2xl font-bold leading-tight tracking-wide text-left mb-2">
-                                            {chapter.name}
-                                        </h3>
-                                        <p className="text-sm sm:text-base font-normal leading-6 tracking-tight text-gray-500 mb-4">
-                                            {chapter.description}
-                                        </p>
+                                    {/* Text in 4 columns */}
+                                    <div className="col-span-12 lg:col-span-4">
+                                        <div className="p-4 md:p-6">
+                                            <h3 className="text-xl sm:text-2xl lg:text-xl font-bold leading-tight tracking-wide mb-2">
+                                                {chapter.name}
+                                            </h3>
+                                            <p className="text-sm sm:text-base md:text-lg font-normal leading-6 lg:leading-8 tracking-tight text-gray-500 mb-4">
+                                                {chapter.description}
+                                            </p>
 
-                                        <div className="flex flex-row md:flex-row items-center md:items-start justify-between md:flex-wrap">
-                                            <div className="w-full md:w-1/2 mb-4 md:mb-0">
-                                                <p className="font-bold text-lg sm:text-xl tracking-wide mb-1">
-                                                    {chapter.questions}
-                                                </p>
-                                                <p className="text-base sm:text-lg font-normal text-gray-500">
-                                                    Questions
-                                                </p>
-                                            </div>
-                                            <div className="w-full md:w-1/2">
-                                                <p className="font-bold text-lg sm:text-xl tracking-wide mb-1">
-                                                    {chapter.mistakes} Mistakes
-                                                </p>
-                                                <p className="text-base sm:text-lg font-normal text-gray-500">
-                                                    Allowed to pass
-                                                </p>
+                                            <div className="flex flex-row md:flex-row items-center md:items-start justify-between md:flex-wrap">
+                                                <div className="w-full md:w-1/2 mb-4 md:mb-0 pr-0 md:pr-4">
+                                                    <div>
+                                                        <p className="text-lg sm:text-xl lg:text-xl font-bold tracking-wide mb-1 mt-2 ">
+                                                            {chapter.questions}
+                                                        </p>
+                                                        <p className="text-sm sm:text-lg font-normal text-gray-500">
+                                                            Questions
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div className="w-full md:w-1/2 pr-0 md:pr-4">
+                                                    <div>
+                                                        <p className="text-lg sm:text-xl lg:text-xl font-bold tracking-wide mb-1 ">
+                                                            {chapter.mistakes}{" "}
+                                                            Mistakes
+                                                        </p>
+                                                        <p className="text-sm sm:text-lg font-normal text-gray-500">
+                                                            Allowed to pass
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
