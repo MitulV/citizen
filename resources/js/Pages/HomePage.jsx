@@ -546,7 +546,7 @@ export default function HomePage({ auth, chapters }) {
                         {/* Decorative elements */}
                         <div className="absolute bottom-4 left-0 h-20 w-10 bg-orange-400 rounded-r-full z-20 overflow-hidden"></div>
                         <div className="absolute top-8 right-0 h-20 w-10 bg-orange-400 rounded-l-full z-10 overflow-hidden"></div>
-                        <div className="absolute top-32 left-48 transform -translate-x-1/2 -translate-y-1/2 h-20 w-20 bg-amber-400 rounded-full z-10 overflow-hidden hidden sm:block"></div>
+                        <div className="absolute top-24 left-48 transform -translate-x-1/2 -translate-y-1/2 h-20 w-20 bg-amber-400 rounded-full z-10 overflow-hidden hidden sm:block"></div>
                     </div>
                 </section>
                 <section className="container mx-auto text-black p-16 md:p-20 bg-slate-50 px-6 md:px-16 lg:px-8  xl:px-36  ">
