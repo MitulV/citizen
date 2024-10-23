@@ -445,8 +445,8 @@ export default function HomePage({ auth, chapters }) {
                         ))}
                 </section>
 
-                <section className="container mx-auto text-center relative  px-6 md:px-16 lg:px-8  xl:px-44">
-                    <div className="bg-indigo-600 text-white p-8 md:p-20 mt-20 relative overflow-hidden rounded-2xl">
+                <section className="container mx-auto text-center relative  px-6 md:px-0 lg:px-4  xl:px-44">
+                    <div className="bg-indigo-600 text-white p-4 md:p-10 mt-20 relative overflow-hidden rounded-2xl">
                         <div>
                             {/* Content for medium and larger screens */}
                             <div className="hidden md:block">
@@ -468,70 +468,73 @@ export default function HomePage({ auth, chapters }) {
                         </div>
 
                         <div className="grid grid-cols-1 gap-8 md:grid-cols-3 p-4 md:p-10">
-                            <div className="text-center p-4 text-white rounded-md">
-                                <svg
-                                    width="80"
-                                    height="81"
-                                    viewBox="0 0 80 81"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M36.8959 41.6666C39.4626 37.0333 44.3959 34.2999 47.2626 30.1999C50.2959 25.8999 48.5959 17.8666 39.9959 17.8666C34.3626 17.8666 31.5959 22.1333 30.4292 25.6666L21.7959 22.0333C24.1626 14.9333 30.5959 8.83325 39.9626 8.83325C47.7959 8.83325 53.1626 12.3999 55.8959 16.8666C58.2292 20.6999 59.5959 27.8666 55.9959 33.1999C51.9959 39.0999 48.1626 40.8999 46.0959 44.6999C45.2626 46.2333 44.9292 47.2332 44.9292 52.1666H35.2959C35.2626 49.5666 34.8626 45.3333 36.8959 41.6666ZM46.6626 65.4999C46.6626 69.1666 43.6626 72.1666 39.9959 72.1666C36.3292 72.1666 33.3292 69.1666 33.3292 65.4999C33.3292 61.8333 36.3292 58.8333 39.9959 58.8333C43.6626 58.8333 46.6626 61.8333 46.6626 65.4999Z"
-                                        fill="#FEFDFE"
-                                    />
-                                </svg>
-
-                                <h3 className="text-lg font-bold mb-2">
+                            <div className="text-center p-2 ">
+                                <div className="flex flex-col items-center">
+                                    <svg
+                                        width="80"
+                                        height="81"
+                                        viewBox="0 0 80 81"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M36.8959 41.6666C39.4626 37.0333 44.3959 34.2999 47.2626 30.1999C50.2959 25.8999 48.5959 17.8666 39.9959 17.8666C34.3626 17.8666 31.5959 22.1333 30.4292 25.6666L21.7959 22.0333C24.1626 14.9333 30.5959 8.83325 39.9626 8.83325C47.7959 8.83325 53.1626 12.3999 55.8959 16.8666C58.2292 20.6999 59.5959 27.8666 55.9959 33.1999C51.9959 39.0999 48.1626 40.8999 46.0959 44.6999C45.2626 46.2333 44.9292 47.2332 44.9292 52.1666H35.2959C35.2626 49.5666 34.8626 45.3333 36.8959 41.6666ZM46.6626 65.4999C46.6626 69.1666 43.6626 72.1666 39.9959 72.1666C36.3292 72.1666 33.3292 69.1666 33.3292 65.4999C33.3292 61.8333 36.3292 58.8333 39.9959 58.8333C43.6626 58.8333 46.6626 61.8333 46.6626 65.4999Z"
+                                            fill="#FEFDFE"
+                                        />
+                                    </svg>
+                                </div>
+                                <h3 className="text-xl font-bold mb-2 ">
                                     850+ Practice Questions
                                 </h3>
-                                <p>
+                                <p className="text-base mt-4">
                                     Access over 850+ practice questions that are
                                     similar to the real exam questions, helping
                                     you prepare effectively.
                                 </p>
                             </div>
-                            <div className="text-center p-4 text-white rounded-md">
-                                <svg
-                                    width="80"
-                                    height="81"
-                                    viewBox="0 0 80 81"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M9.77917 28.8333H46.4458V35.5H9.77917V28.8333ZM9.77917 22.1667H46.4458V15.5H9.77917V22.1667ZM9.77917 48.8333H33.1125V42.1667H9.77917V48.8333ZM59.8125 38.4L62.1792 36.0333C63.4792 34.7333 65.5792 34.7333 66.8792 36.0333L69.2458 38.4C70.5458 39.7 70.5458 41.8 69.2458 43.1L66.8792 45.4667L59.8125 38.4ZM57.4458 40.7667L39.7792 58.4333V65.5H46.8458L64.5125 47.8333L57.4458 40.7667Z"
-                                        fill="#FEFDFE"
-                                    />
-                                </svg>
-
+                            <div className="text-center p-2">
+                                <div className="flex flex-col items-center justify-center">
+                                    <svg
+                                        width="80"
+                                        height="81"
+                                        viewBox="0 0 80 81"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9.77917 28.8333H46.4458V35.5H9.77917V28.8333ZM9.77917 22.1667H46.4458V15.5H9.77917V22.1667ZM9.77917 48.8333H33.1125V42.1667H9.77917V48.8333ZM59.8125 38.4L62.1792 36.0333C63.4792 34.7333 65.5792 34.7333 66.8792 36.0333L69.2458 38.4C70.5458 39.7 70.5458 41.8 69.2458 43.1L66.8792 45.4667L59.8125 38.4ZM57.4458 40.7667L39.7792 58.4333V65.5H46.8458L64.5125 47.8333L57.4458 40.7667Z"
+                                            fill="#FEFDFE"
+                                        />
+                                    </svg>
+                                </div>
                                 <h3 className="text-lg font-bold mb-2">
                                     Simulation Tests
                                 </h3>
-                                <p>
+                                <p className="text-base mt-4">
                                     Take simulation tests that follow the same
                                     format as the actual exam. This will help
                                     you feel ready for the big day.
                                 </p>
                             </div>
-                            <div className="text-center p-4 text-white rounded-md">
-                                <svg
-                                    width="80"
-                                    height="81"
-                                    viewBox="0 0 80 81"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M46.8667 36.1334L40 33.0001L46.8667 29.8668L50 23.0001L53.1333 29.8668L60 33.0001L53.1333 36.1334L50 43.0001L46.8667 36.1334ZM13.3333 49.6667L16.4667 42.8001L23.3333 39.6667L16.4667 36.5334L13.3333 29.6667L10.2 36.5334L3.33334 39.6667L10.2 42.8001L13.3333 49.6667ZM28.3333 33.0001L31.9667 24.9667L40 21.3334L31.9667 17.7001L28.3333 9.66675L24.7 17.7001L16.6667 21.3334L24.7 24.9667L28.3333 33.0001ZM15 71.3334L35 51.3001L48.3333 64.6334L76.6667 32.7668L71.9667 28.0667L48.3333 54.6334L35 41.3001L10 66.3334L15 71.3334Z"
-                                        fill="#FEFDFE"
-                                    />
-                                </svg>
-
+                            <div className="text-center p-2 ">
+                                <div className="flex flex-col items-center justify-center">
+                                    <svg
+                                        width="80"
+                                        height="81"
+                                        viewBox="0 0 80 81"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M46.8667 36.1334L40 33.0001L46.8667 29.8668L50 23.0001L53.1333 29.8668L60 33.0001L53.1333 36.1334L50 43.0001L46.8667 36.1334ZM13.3333 49.6667L16.4667 42.8001L23.3333 39.6667L16.4667 36.5334L13.3333 29.6667L10.2 36.5334L3.33334 39.6667L10.2 42.8001L13.3333 49.6667ZM28.3333 33.0001L31.9667 24.9667L40 21.3334L31.9667 17.7001L28.3333 9.66675L24.7 17.7001L16.6667 21.3334L24.7 24.9667L28.3333 33.0001ZM15 71.3334L35 51.3001L48.3333 64.6334L76.6667 32.7668L71.9667 28.0667L48.3333 54.6334L35 41.3001L10 66.3334L15 71.3334Z"
+                                            fill="#FEFDFE"
+                                        />
+                                    </svg>
+                                </div>
                                 <h3 className="text-lg font-bold mb-2">
                                     Identify Your Weaknesses
                                 </h3>
-                                <p>
+                                <p className="text-base mt-4">
                                     Get an explanation on incorrect answers that
                                     points out your mistakes, allowing you to
                                     focus on the areas where you need the most
@@ -604,91 +607,27 @@ export default function HomePage({ auth, chapters }) {
                         </div>
                     </div>
                 </section>
-                <section className="container mx-auto relative  px-0 md:px-0 lg:px-0 xl:px-44">
-                    <div className="bg-indigo-600 text-white p-8 md:p-20 relative overflow-hidden rounded-2xl">
-                        <div className="text-center">
-                            <p className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-white mb-2">
-                                YOUR ULTIMATE ALL-IN-ONE RESOURCE
-                            </p>
 
-                            <h2 className="text-3xl md:text-4xl font-bold mb-10">
-                                Pass The Canadian Citizenship Test With Ease
-                            </h2>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                            <div>
-                                <div className="mb-8">
-                                    <h3 className="text-lg md:text-xl font-bold mb-2">
-                                        Simplify Your Preparation
-                                    </h3>
-                                    <p className="text-base">
-                                        We make your study process easier with a
-                                        chapter-by-chapter curriculum. You’ll
-                                        receive detailed, easy-to-use study
-                                        materials organized by chapter.
-                                    </p>
-                                </div>
-                                <div className="mb-8">
-                                    <h3 className="text-lg md:text-xl font-bold mb-2">
-                                        Learn from Your Mistakes
-                                    </h3>
-                                    <p className="text-base">
-                                        By taking unlimited practice tests and
-                                        answering chapter-based questions, you
-                                        can find your weak spots. This way, you
-                                        can focus on important study areas
-                                        without wasting time.
-                                    </p>
-                                </div>
-                                <div className="mb-8">
-                                    <h3 className="text-lg md:text-xl font-bold mb-2">
-                                        Review Your Toughest Questions
-                                    </h3>
-                                    <p className="text-base">
-                                        After each practice test, review the
-                                        questions that were most challenging for
-                                        you. This focused review helps
-                                        strengthen your understanding and build
-                                        confidence in those areas.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="flex flex-col justify-between items-center md:items-end sm:px-2 md:px-16 lg:px-32">
-                                <div className="mb-8 w-full">
-                                    <img
-                                        src="/images/ctp premium.png"
-                                        alt="Image Description"
-                                        className="w-full h-auto rounded-lg"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Decorative elements */}
-                        <div className="absolute bottom-0 left-0 h-20 w-10 bg-amber-400 rounded-r-full z-20 overflow-hidden"></div>
-                        <div className="absolute top-0 right-0 h-20 w-10 bg-orange-400 rounded-l-full z-10 overflow-hidden"></div>
-                    </div>
-                </section>
                 <section className="container mx-auto  py-16 bg-slate-50 px-6 md:px-16 lg:px-8  xl:px-44 ">
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
                         Offering A Perfect Learning Environment
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                         <div className="text-center p-8 bg-indigo-600 rounded-xl shadow-md">
-                            <svg
-                                width="38"
-                                height="64"
-                                viewBox="0 0 38 64"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M15.8959 33.1666C18.4626 28.5333 23.3959 25.8 26.2626 21.7C29.2959 17.4 27.5959 9.36665 18.9959 9.36665C13.3626 9.36665 10.5959 13.6333 9.42923 17.1666L0.795898 13.5333C3.16256 6.43331 9.5959 0.333313 18.9626 0.333313C26.7959 0.333313 32.1626 3.89998 34.8959 8.36665C37.2292 12.2 38.5959 19.3666 34.9959 24.7C30.9959 30.6 27.1626 32.4 25.0959 36.2C24.2626 37.7333 23.9292 38.7333 23.9292 43.6666H14.2959C14.2626 41.0666 13.8626 36.8333 15.8959 33.1666ZM25.6626 57C25.6626 60.6666 22.6626 63.6666 18.9959 63.6666C15.3292 63.6666 12.3292 60.6666 12.3292 57C12.3292 53.3333 15.3292 50.3333 18.9959 50.3333C22.6626 50.3333 25.6626 53.3333 25.6626 57Z"
-                                    fill="#FEFDFE"
-                                />
-                            </svg>
-
+                            <div className="flex flex-col items-center justify-center">
+                                <svg
+                                    width="38"
+                                    height="64"
+                                    viewBox="0 0 38 64"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M15.8959 33.1666C18.4626 28.5333 23.3959 25.8 26.2626 21.7C29.2959 17.4 27.5959 9.36665 18.9959 9.36665C13.3626 9.36665 10.5959 13.6333 9.42923 17.1666L0.795898 13.5333C3.16256 6.43331 9.5959 0.333313 18.9626 0.333313C26.7959 0.333313 32.1626 3.89998 34.8959 8.36665C37.2292 12.2 38.5959 19.3666 34.9959 24.7C30.9959 30.6 27.1626 32.4 25.0959 36.2C24.2626 37.7333 23.9292 38.7333 23.9292 43.6666H14.2959C14.2626 41.0666 13.8626 36.8333 15.8959 33.1666ZM25.6626 57C25.6626 60.6666 22.6626 63.6666 18.9959 63.6666C15.3292 63.6666 12.3292 60.6666 12.3292 57C12.3292 53.3333 15.3292 50.3333 18.9959 50.3333C22.6626 50.3333 25.6626 53.3333 25.6626 57Z"
+                                        fill="#FEFDFE"
+                                    />
+                                </svg>
+                            </div>
                             <h3 className="text-lg font-bold mb-2 text-white">
                                 850+ Questions
                             </h3>
@@ -700,18 +639,20 @@ export default function HomePage({ auth, chapters }) {
                         </div>
 
                         <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
-                            <svg
-                                width="80"
-                                height="80"
-                                viewBox="0 0 80 80"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M9.77917 28.3333H46.4458V35H9.77917V28.3333ZM9.77917 21.6667H46.4458V15H9.77917V21.6667ZM9.77917 48.3333H33.1125V41.6667H9.77917V48.3333ZM59.8125 37.9L62.1792 35.5333C63.4792 34.2333 65.5792 34.2333 66.8792 35.5333L69.2458 37.9C70.5458 39.2 70.5458 41.3 69.2458 42.6L66.8792 44.9667L59.8125 37.9ZM57.4458 40.2667L39.7792 57.9333V65H46.8458L64.5125 47.3333L57.4458 40.2667Z"
-                                    fill="#FEFDFE"
-                                />
-                            </svg>
+                            <div className="flex flex-col items-center justify-center">
+                                <svg
+                                    width="80"
+                                    height="80"
+                                    viewBox="0 0 80 80"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M9.77917 28.3333H46.4458V35H9.77917V28.3333ZM9.77917 21.6667H46.4458V15H9.77917V21.6667ZM9.77917 48.3333H33.1125V41.6667H9.77917V48.3333ZM59.8125 37.9L62.1792 35.5333C63.4792 34.2333 65.5792 34.2333 66.8792 35.5333L69.2458 37.9C70.5458 39.2 70.5458 41.3 69.2458 42.6L66.8792 44.9667L59.8125 37.9ZM57.4458 40.2667L39.7792 57.9333V65H46.8458L64.5125 47.3333L57.4458 40.2667Z"
+                                        fill="#FEFDFE"
+                                    />
+                                </svg>
+                            </div>
 
                             <h3 className="text-lg font-bold mb-2 text-white">
                                 Chapter-Based
@@ -725,19 +666,20 @@ export default function HomePage({ auth, chapters }) {
                         </div>
 
                         <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
-                            <svg
-                                width="80"
-                                height="80"
-                                viewBox="0 0 80 80"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M9.77917 28.3333H46.4458V35H9.77917V28.3333ZM9.77917 21.6667H46.4458V15H9.77917V21.6667ZM9.77917 48.3333H33.1125V41.6667H9.77917V48.3333ZM59.8125 37.9L62.1792 35.5333C63.4792 34.2333 65.5792 34.2333 66.8792 35.5333L69.2458 37.9C70.5458 39.2 70.5458 41.3 69.2458 42.6L66.8792 44.9667L59.8125 37.9ZM57.4458 40.2667L39.7792 57.9333V65H46.8458L64.5125 47.3333L57.4458 40.2667Z"
-                                    fill="#FEFDFE"
-                                />
-                            </svg>
-
+                            <div className="flex flex-col items-center justify-center">
+                                <svg
+                                    width="80"
+                                    height="81"
+                                    viewBox="0 0 80 81"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M46.8667 36.1334L40 33L46.8667 29.8667L50 23L53.1333 29.8667L60 33L53.1333 36.1334L50 43L46.8667 36.1334ZM13.3333 49.6667L16.4667 42.8L23.3333 39.6667L16.4667 36.5334L13.3333 29.6667L10.2 36.5334L3.33334 39.6667L10.2 42.8L13.3333 49.6667ZM28.3333 33L31.9667 24.9667L40 21.3334L31.9667 17.7L28.3333 9.66669L24.7 17.7L16.6667 21.3334L24.7 24.9667L28.3333 33ZM15 71.3334L35 51.3L48.3333 64.6334L76.6667 32.7667L71.9667 28.0667L48.3333 54.6334L35 41.3L10 66.3334L15 71.3334Z"
+                                        fill="#FEFDFE"
+                                    />
+                                </svg>
+                            </div>
                             <h3 className="text-lg font-bold mb-2 text-white">
                                 Test Simulation
                             </h3>
@@ -750,19 +692,20 @@ export default function HomePage({ auth, chapters }) {
                         </div>
 
                         <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
-                            <svg
-                                width="80"
-                                height="80"
-                                viewBox="0 0 80 80"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M23.3333 53.3333H46.6667V60H23.3333V53.3333ZM23.3333 40H56.6667V46.6667H23.3333V40ZM23.3333 26.6667H56.6667V33.3333H23.3333V26.6667ZM63.3333 13.3333H49.4C48 9.46666 44.3333 6.66666 40 6.66666C35.6667 6.66666 32 9.46666 30.6 13.3333H16.6667C16.2 13.3333 15.7667 13.3667 15.3333 13.4667C14.0333 13.7333 12.8667 14.4 11.9667 15.3C11.3667 15.9 10.8667 16.6333 10.5333 17.4333C10.2 18.2 10 19.0667 10 20V66.6667C10 67.5667 10.2 68.4667 10.5333 69.2667C10.8667 70.0667 11.3667 70.7667 11.9667 71.4C12.8667 72.3 14.0333 72.9667 15.3333 73.2333C15.7667 73.3 16.2 73.3333 16.6667 73.3333H63.3333C67 73.3333 70 70.3333 70 66.6667V20C70 16.3333 67 13.3333 63.3333 13.3333ZM40 12.5C41.3667 12.5 42.5 13.6333 42.5 15C42.5 16.3667 41.3667 17.5 40 17.5C38.6333 17.5 37.5 16.3667 37.5 15C37.5 13.6333 38.6333 12.5 40 12.5ZM63.3333 66.6667H16.6667V20H63.3333V66.6667Z"
-                                    fill="#FEFDFE"
-                                />
-                            </svg>
-
+                            <div className="flex flex-col items-center justify-center">
+                                <svg
+                                    width="80"
+                                    height="80"
+                                    viewBox="0 0 80 80"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M23.3333 53.3333H46.6667V60H23.3333V53.3333ZM23.3333 40H56.6667V46.6667H23.3333V40ZM23.3333 26.6667H56.6667V33.3333H23.3333V26.6667ZM63.3333 13.3333H49.4C48 9.46666 44.3333 6.66666 40 6.66666C35.6667 6.66666 32 9.46666 30.6 13.3333H16.6667C16.2 13.3333 15.7667 13.3667 15.3333 13.4667C14.0333 13.7333 12.8667 14.4 11.9667 15.3C11.3667 15.9 10.8667 16.6333 10.5333 17.4333C10.2 18.2 10 19.0667 10 20V66.6667C10 67.5667 10.2 68.4667 10.5333 69.2667C10.8667 70.0667 11.3667 70.7667 11.9667 71.4C12.8667 72.3 14.0333 72.9667 15.3333 73.2333C15.7667 73.3 16.2 73.3333 16.6667 73.3333H63.3333C67 73.3333 70 70.3333 70 66.6667V20C70 16.3333 67 13.3333 63.3333 13.3333ZM40 12.5C41.3667 12.5 42.5 13.6333 42.5 15C42.5 16.3667 41.3667 17.5 40 17.5C38.6333 17.5 37.5 16.3667 37.5 15C37.5 13.6333 38.6333 12.5 40 12.5ZM63.3333 66.6667H16.6667V20H63.3333V66.6667Z"
+                                        fill="#FEFDFE"
+                                    />
+                                </svg>
+                            </div>
                             <h3 className="text-lg font-bold mb-2 text-white">
                                 Important People
                             </h3>
@@ -774,19 +717,20 @@ export default function HomePage({ auth, chapters }) {
                         </div>
 
                         <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
-                            <svg
-                                width="80"
-                                height="80"
-                                viewBox="0 0 80 80"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M63.3333 13.3333H60V6.66666H53.3333V13.3333H26.6667V6.66666H20V13.3333H16.6667C12.9667 13.3333 10.0333 16.3333 10.0333 20L10 66.6667C10 70.3333 12.9667 73.3333 16.6667 73.3333H63.3333C67 73.3333 70 70.3333 70 66.6667V20C70 16.3333 67 13.3333 63.3333 13.3333ZM63.3333 66.6667H16.6667V33.3333H63.3333V66.6667ZM63.3333 26.6667H16.6667V20H63.3333V26.6667ZM30 46.6667H23.3333V40H30V46.6667ZM43.3333 46.6667H36.6667V40H43.3333V46.6667ZM56.6667 46.6667H50V40H56.6667V46.6667ZM30 60H23.3333V53.3333H30V60ZM43.3333 60H36.6667V53.3333H43.3333V60ZM56.6667 60H50V53.3333H56.6667V60Z"
-                                    fill="#FEFDFE"
-                                />
-                            </svg>
-
+                            <div className="flex flex-col items-center justify-center">
+                                <svg
+                                    width="80"
+                                    height="80"
+                                    viewBox="0 0 80 80"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M63.3333 13.3333H60V6.66666H53.3333V13.3333H26.6667V6.66666H20V13.3333H16.6667C12.9667 13.3333 10.0333 16.3333 10.0333 20L10 66.6667C10 70.3333 12.9667 73.3333 16.6667 73.3333H63.3333C67 73.3333 70 70.3333 70 66.6667V20C70 16.3333 67 13.3333 63.3333 13.3333ZM63.3333 66.6667H16.6667V33.3333H63.3333V66.6667ZM63.3333 26.6667H16.6667V20H63.3333V26.6667ZM30 46.6667H23.3333V40H30V46.6667ZM43.3333 46.6667H36.6667V40H43.3333V46.6667ZM56.6667 46.6667H50V40H56.6667V46.6667ZM30 60H23.3333V53.3333H30V60ZM43.3333 60H36.6667V53.3333H43.3333V60ZM56.6667 60H50V53.3333H56.6667V60Z"
+                                        fill="#FEFDFE"
+                                    />
+                                </svg>
+                            </div>
                             <h3 className="text-lg font-bold mb-2 text-white">
                                 Important Dates
                             </h3>
@@ -798,28 +742,29 @@ export default function HomePage({ auth, chapters }) {
                             </p>
                         </div>
 
-                        <div className="text-center p-8 bg-indigo-600 rounded-xl shadow-md">
-                            <svg
-                                width="80"
-                                height="81"
-                                viewBox="0 0 80 81"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M9.30751 65.1667L13.7742 67.0333V36.9333L5.67418 56.4667C4.30751 59.8667 5.94085 63.7667 9.30751 65.1667ZM74.3075 52.8333L57.7742 12.9333C56.7408 10.4333 54.3075 8.90001 51.7408 8.83334C50.8742 8.83334 49.9742 8.96668 49.1075 9.33334L24.5408 19.5C22.0408 20.5333 20.5075 22.9333 20.4408 25.5C20.4075 26.4 20.5742 27.3 20.9408 28.1667L37.4742 68.0667C38.5075 70.6 40.9742 72.1333 43.5742 72.1667C44.4408 72.1667 45.3075 72 46.1408 71.6667L70.6742 61.5C74.0742 60.1 75.7075 56.2 74.3075 52.8333ZM43.6408 65.5L27.1075 25.6333L51.6075 15.5H51.6408L68.1408 55.3333L43.6408 65.5Z"
-                                    fill="#FEFDFE"
-                                />
-                                <path
-                                    d="M37.5408 33C39.3818 33 40.8742 31.5076 40.8742 29.6667C40.8742 27.8257 39.3818 26.3333 37.5408 26.3333C35.6999 26.3333 34.2075 27.8257 34.2075 29.6667C34.2075 31.5076 35.6999 33 37.5408 33Z"
-                                    fill="#FEFDFE"
-                                />
-                                <path
-                                    d="M20.4742 65.5C20.4742 69.1667 23.4742 72.1667 27.1408 72.1667H31.9742L20.4742 44.3667V65.5Z"
-                                    fill="#FEFDFE"
-                                />
-                            </svg>
-
+                        <div className="text-center p-8 bg-indigo-600 shadow-md rounded-xl">
+                            <div className="flex flex-col items-center justify-center">
+                                <svg
+                                    width="80"
+                                    height="81"
+                                    viewBox="0 0 80 81"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M9.30751 65.1667L13.7742 67.0333V36.9333L5.67418 56.4667C4.30751 59.8667 5.94085 63.7667 9.30751 65.1667ZM74.3075 52.8333L57.7742 12.9333C56.7408 10.4333 54.3075 8.90001 51.7408 8.83334C50.8742 8.83334 49.9742 8.96668 49.1075 9.33334L24.5408 19.5C22.0408 20.5333 20.5075 22.9333 20.4408 25.5C20.4075 26.4 20.5742 27.3 20.9408 28.1667L37.4742 68.0667C38.5075 70.6 40.9742 72.1333 43.5742 72.1667C44.4408 72.1667 45.3075 72 46.1408 71.6667L70.6742 61.5C74.0742 60.1 75.7075 56.2 74.3075 52.8333ZM43.6408 65.5L27.1075 25.6333L51.6075 15.5H51.6408L68.1408 55.3333L43.6408 65.5Z"
+                                        fill="#FEFDFE"
+                                    />
+                                    <path
+                                        d="M37.5408 33C39.3818 33 40.8742 31.5076 40.8742 29.6667C40.8742 27.8257 39.3818 26.3333 37.5408 26.3333C35.6999 26.3333 34.2075 27.8257 34.2075 29.6667C34.2075 31.5076 35.6999 33 37.5408 33Z"
+                                        fill="#FEFDFE"
+                                    />
+                                    <path
+                                        d="M20.4742 65.5C20.4742 69.1667 23.4742 72.1667 27.1408 72.1667H31.9742L20.4742 44.3667V65.5Z"
+                                        fill="#FEFDFE"
+                                    />
+                                </svg>
+                            </div>
                             <h3 className="text-lg font-bold mb-2 text-white">
                                 450+ Flashcards
                             </h3>
@@ -853,10 +798,10 @@ export default function HomePage({ auth, chapters }) {
                 </div>
                 <section className="container mx-auto  mt-20  px-0 md:px-0 lg:px-0 xl:px-44 ">
                     <div className="bg-indigo-600 py-12 text-white mt-4 rounded-2xl ">
-                        <p className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-white mb-2">
+                        <p className="font-inter text-sm font-bold leading-[14.52px] tracking-[1px] text-center text-white mb-2">
                             HIGHLY RECOMMENDED
                         </p>
-                        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center px-4 mt-8">
                             What Our Users Are Saying About Us
                         </h2>
 
