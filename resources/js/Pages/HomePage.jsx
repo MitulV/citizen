@@ -236,15 +236,14 @@ export default function HomePage({ auth, chapters }) {
                                 key={index}
                                 href={route("testInfoPage", {
                                     chapter_id: chapter.id,
-                                    auth,
                                 })}
                             >
                                 <div
                                     key={index}
-                                    className="container mx-auto grid grid-cols-12  border border-gray-200 shadow-sm rounded-2xl bg-white "
+                                    className="container mx-auto grid grid-cols-12  border border-gray-200 rounded-2xl bg-white shadow-sm transform transition duration-600 ease-out hover:shadow-lg hover:shadow-gray-300"
                                 >
                                     {/* Image in 8 columns */}
-                                    <div className="col-span-12 lg:col-span-8">
+                                    <div className="col-span-12  lg:col-span-7">
                                         <img
                                             src="/images/chap 1.png"
                                             alt="Photos"
@@ -253,7 +252,7 @@ export default function HomePage({ auth, chapters }) {
                                     </div>
 
                                     {/* Text in 4 columns */}
-                                    <div className="col-span-12 lg:col-span-4">
+                                    <div className="col-span-12  lg:col-span-5">
                                         <div className="p-4 md:p-6">
                                             <h3 className="text-xl sm:text-2xl lg:text-xl font-bold leading-tight tracking-wide mb-2">
                                                 {chapter.name}
@@ -349,15 +348,20 @@ export default function HomePage({ auth, chapters }) {
                                         (chapter.id === 10 || chapter.id === 11)
                                 )
                                 .map((chapter, index) => (
-                                    <HomeChapterCard
-                                        key={index}
-                                        image={chapter.image}
-                                        name={chapter.name}
-                                        title={chapter.title}
-                                        description={chapter.description}
-                                        questions={chapter.questions}
-                                        mistakes={chapter.mistakes}
-                                    />
+                                    <Link
+                                        href={`/practice-tests/${chapter.id}`}
+                                        key={chapter.id}
+                                    >
+                                        <HomeChapterCard
+                                            key={index}
+                                            image={chapter.image}
+                                            name={chapter.name}
+                                            title={chapter.title}
+                                            description={chapter.description}
+                                            questions={chapter.questions}
+                                            mistakes={chapter.mistakes}
+                                        />
+                                    </Link>
                                 ))}
                         </section>
                     </div>
@@ -392,56 +396,62 @@ export default function HomePage({ auth, chapters }) {
                     {chapters
                         .filter((chapter) => chapter.step === 3)
                         .map((chapter, index) => (
-                            <div
+                            <Link
                                 key={index}
-                                className="container mx-auto grid grid-cols-12  border border-gray-200 shadow-sm rounded-2xl bg-white"
+                                href={route("simulation.test", 1)}
+                                method="post"
                             >
-                                {/* Image in 8 columns */}
-                                <div className="col-span-12 lg:col-span-8">
-                                    <img
-                                        src="/images/chap 13.png"
-                                        alt="Photos"
-                                        className="w-full h-full rounded-t-xl"
-                                    />
-                                </div>
+                                <div
+                                    key={index}
+                                    className="container mx-auto grid grid-cols-12  border border-gray-200 rounded-2xl bg-white shadow-sm transform transition duration-600 ease-out hover:shadow-lg hover:shadow-gray-300"
+                                >
+                                    {/* Image in 8 columns */}
+                                    <div className="col-span-12 lg:col-span-7">
+                                        <img
+                                            src="/images/chap 13.png"
+                                            alt="Photos"
+                                            className="w-full h-full rounded-t-xl"
+                                        />
+                                    </div>
 
-                                {/* Text in 4 columns */}
-                                <div className="col-span-12 lg:col-span-4">
-                                    <div className="p-4 md:p-6">
-                                        <h3 className="text-xl sm:text-2xl lg:text-xl font-bold leading-tight tracking-wide mb-2">
-                                            {chapter.name}
-                                        </h3>
-                                        <p className="text-sm sm:text-base md:text-lg font-normal leading-6 lg:leading-8 tracking-tight text-gray-500 mb-4">
-                                            {chapter.description}
-                                        </p>
+                                    {/* Text in 4 columns */}
+                                    <div className="col-span-12 lg:col-span-5">
+                                        <div className="p-4 md:p-6">
+                                            <h3 className="text-xl sm:text-2xl lg:text-xl font-bold leading-tight tracking-wide mb-2">
+                                                {chapter.name}
+                                            </h3>
+                                            <p className="text-sm sm:text-base md:text-lg font-normal leading-6 lg:leading-8 tracking-tight text-gray-500 mb-4">
+                                                {chapter.description}
+                                            </p>
 
-                                        <div className="flex flex-row md:flex-row items-center md:items-start justify-between md:flex-wrap">
-                                            <div className="w-full md:w-1/2 mb-4 md:mb-0 pr-0 md:pr-4">
-                                                <div>
-                                                    <p className="text-lg sm:text-xl lg:text-xl font-bold tracking-wide mb-1 mt-2 ">
-                                                        {chapter.questions}
-                                                    </p>
-                                                    <p className="text-sm sm:text-lg font-normal text-gray-500">
-                                                        Questions
-                                                    </p>
+                                            <div className="flex flex-row md:flex-row items-center md:items-start justify-between md:flex-wrap">
+                                                <div className="w-full md:w-1/2 mb-4 md:mb-0 pr-0 md:pr-4">
+                                                    <div>
+                                                        <p className="text-lg sm:text-xl lg:text-xl font-bold tracking-wide mb-1 mt-2 ">
+                                                            {chapter.questions}
+                                                        </p>
+                                                        <p className="text-sm sm:text-lg font-normal text-gray-500">
+                                                            Questions
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div className="w-full md:w-1/2 pr-0 md:pr-4">
-                                                <div>
-                                                    <p className="text-lg sm:text-xl lg:text-xl font-bold tracking-wide mb-1 ">
-                                                        {chapter.mistakes}{" "}
-                                                        Mistakes
-                                                    </p>
-                                                    <p className="text-sm sm:text-lg font-normal text-gray-500">
-                                                        Allowed to pass
-                                                    </p>
+                                                <div className="w-full md:w-1/2 pr-0 md:pr-4">
+                                                    <div>
+                                                        <p className="text-lg sm:text-xl lg:text-xl font-bold tracking-wide mb-1 ">
+                                                            {chapter.mistakes}{" "}
+                                                            Mistakes
+                                                        </p>
+                                                        <p className="text-sm sm:text-lg font-normal text-gray-500">
+                                                            Allowed to pass
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         ))}
                 </section>
 
@@ -666,6 +676,9 @@ export default function HomePage({ auth, chapters }) {
                 </section>
 
                 <section className="container mx-auto  py-16 bg-slate-50 px-6 md:px-16 lg:px-8  xl:px-44 ">
+                    <p className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-indigo-600 xl:mt-10 md:mt-10 mb-3">
+                        PREPARE TO EXCEL
+                    </p>
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
                         Offering A Perfect Learning Environment
                     </h2>
@@ -1044,8 +1057,8 @@ export default function HomePage({ auth, chapters }) {
                         </div>
                     </div>
                 </section>
-                <section className="container mx-auto bg-slate-50 mt-16  px-6 md:px-8 lg:px-8  xl:px-36 ">
-                    <div className="  px-6 md:px-16 lg:px-8  xl:px-36">
+                <section className="container mx-auto bg-slate-50 mt-16 px-6 md:px-8 lg:px-8  xl:px-36 ">
+                    <div className="">
                         <p className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-indigo-600">
                             STUDY GUIDE
                         </p>
@@ -1066,8 +1079,8 @@ export default function HomePage({ auth, chapters }) {
                             understand Canadian life and values.
                         </p>
                     </div>
-                    <div className="container mx-auto  px-6 md:px-8 lg:px-8  xl:px-36  mt-16">
-                        <h2 className=" text-2xl md:text-4xl font-bold my-4 text-center">
+                    <div className="container mx-auto mt-16">
+                        <h2 className=" text-2xl md:text-4xl font-bold mt-10 mb-5 text-center">
                             What to remember before attending a Canadian
                             citizenship test?
                         </h2>
@@ -1147,15 +1160,17 @@ export default function HomePage({ auth, chapters }) {
                             attempts, a hearing with a citizenship official will
                             be scheduled. If you need accommodations, you may be
                             invited to take the test on Microsoft Teams or in
-                            person, and the same three-attempt rule applies.
+                            person, and the same three-attempt rule applies. To
+                            pass the citizenship test, you must correctly To
+                            pass the citizenship test, you must correctly
                         </p>
+                        minimum score of 75%. If you pass, you may be minimum
+                        score of 75%. If you pass, you may be
                         <h3 className="text-xl md:text-2xl font-bold mt-6 mb-2">
                             Scoring and Results
                         </h3>
                         <p className="text-lg text-gray-600 mt-2">
-                            To pass the citizenship test, you must correctly
                             answer at least 15 out of 20 questions, achieving a
-                            minimum score of 75%. If you pass, you may be
                             invited to an interview with a citizenship official,
                             depending on your case, and will definitely receive
                             an invitation to the citizenship ceremony. If you do
@@ -1164,10 +1179,10 @@ export default function HomePage({ auth, chapters }) {
                             Microsoft Teams, or in person. Failing three times
                             will lead to a hearing with a citizenship official,
                             where you will be asked questions similar to those
-                            on the test. If you pass this hearing, your
+                            on the test. If you pass this hearing, your you will
+                            need to reapply and pay the fees again if
                             application will continue to be processed; however,
                             if you fail, your application will be refused, and
-                            you will need to reapply and pay the fees again if
                             you still wish to pursue citizenship. For those who
                             applied as a family or group, all applications are
                             processed together. If one applicant needs to retest
