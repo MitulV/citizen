@@ -401,6 +401,7 @@ export default function HomePage({ auth, chapters }) {
                                 key={index}
                                 href={route("simulation.test", 1)}
                                 method="post"
+                                as="button"
                             >
                                 <div
                                     key={index}
@@ -713,7 +714,7 @@ export default function HomePage({ auth, chapters }) {
                             <div className="flex flex-col items-center justify-center">
                                 <svg
                                     width="70"
-                                    height=""
+                                    height="60"
                                     viewBox="0 0 80 80"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
