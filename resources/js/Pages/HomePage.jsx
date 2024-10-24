@@ -64,9 +64,10 @@ export default function HomePage({ auth, chapters }) {
                         </div>
                         <div className="container mx-auto  mt-4 sm:mt-8 px-6 md:px-28 lg:px-32   xl:px-44">
                             <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500 ">
-                                Get access to 700+ test questions, study guides,
-                                chapter-based quizzes, realistic test
-                                simulations, flashcards and more.
+                                Get access to 850+ practice questions, study
+                                guides for each chapter, realistic test
+                                simulations, 450+ flashcards, cheat sheets, and
+                                more.
                             </p>
                         </div>
                         <div className="container mx-auto px-4 mt-4 sm:mt-8 flex justify-center">
