@@ -215,7 +215,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="container mx-auto  flex flex-col md:flex-row bg-slate-50 px-6 md:px-16 lg:px-8  pt-10 xl:px-44">
+                <section className="container mx-auto  flex flex-col md:flex-row bg-slate-50 px-6 md:px-16 lg:px-8 pt-10 xl:px-44">
                     <div className="md:w-1/2 flex items-center justify-start">
                         <p className="font-bold text-xl sm:text-xl md:text-2xl">
                             Step 1
@@ -241,7 +241,7 @@ export default function HomePage({ auth, chapters }) {
                             >
                                 <div
                                     key={index}
-                                    className="container mx-auto grid grid-cols-12  border border-gray-200 rounded-2xl bg-white shadow-sm transform transition duration-600 ease-out hover:shadow-lg hover:shadow-gray-300"
+                                    className="container mx-auto grid grid-cols-12 border border-gray-200 rounded-2xl bg-white shadow-sm transform transition duration-600 ease-out hover:shadow-lg hover:shadow-gray-300"
                                 >
                                     {/* Image in 8 columns */}
                                     <div className="col-span-12  lg:col-span-7">
@@ -254,7 +254,7 @@ export default function HomePage({ auth, chapters }) {
 
                                     {/* Text in 4 columns */}
                                     <div className="col-span-12  lg:col-span-5">
-                                        <div className="p-4 md:p-6">
+                                        <div className="p-4">
                                             <h3 className="text-xl sm:text-2xl lg:text-xl font-bold leading-tight tracking-wide mb-2">
                                                 {chapter.name}
                                             </h3>
@@ -417,7 +417,7 @@ export default function HomePage({ auth, chapters }) {
 
                                     {/* Text in 4 columns */}
                                     <div className="col-span-12 lg:col-span-5">
-                                        <div className="p-4 md:p-6">
+                                        <div className="p-4">
                                             <h3 className="text-xl sm:text-2xl lg:text-xl font-bold leading-tight tracking-wide mb-2">
                                                 {chapter.name}
                                             </h3>
