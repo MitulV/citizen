@@ -867,7 +867,7 @@ export default function HomePage({ auth, chapters }) {
                         </span>
                     </p>
                 </div>
-                <section className="container mx-auto  mt-20  px-0 md:px-0 lg:px-0 xl:px-44 ">
+                <section className="container mx-auto  mt-20  px-0 md:px-0 lg:px-20">
                     <div className="bg-indigo-600 py-12 text-white mt-4 rounded-2xl ">
                         <p className="font-inter text-sm font-bold leading-[14.52px] tracking-[1px] text-center text-white mb-2">
                             HIGHLY RECOMMENDED
