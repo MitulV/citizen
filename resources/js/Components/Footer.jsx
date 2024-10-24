@@ -11,7 +11,7 @@ export default function Footer() {
     return (
         <footer className="container mx-auto  px-0 md:px-16 lg:px-8 xl:px-44 ">
             <div className="px-4 sm:px-6 md:px-8  pt-10  bg-white text-black ">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-4  xl:grid-cols-4 gap-8">
                     <div className="text-center md:text-left">
                         <div className="flex  md:justify-start">
                             <span className="text-xl font-black leading-6">
@@ -86,7 +86,7 @@ export default function Footer() {
                     </div>
 
                     {/* Other sections remain unchanged */}
-                    <div className="mt-2 md:mt-0 md:ml-10 xl:ml-40">
+                    <div className="mt-2 md:mt-0 px-2 lg:ml-5 xl:ml-40">
                         <p className="text-lg font-semibold mb-2">About</p>
                         <ul className="text-nowrap space-y-3">
                             <li>
@@ -124,7 +124,7 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    <div className=" md:ml-10 xl:ml-24">
+                    <div className=" px-2 xl:ml-24">
                         <p className="text-lg font-semibold mb-2">Platform</p>
                         <ul className="text-base space-y-3">
                             <li>
@@ -152,7 +152,7 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    <div className=" xl:ml-10">
+                    <div className="px-2  xl:ml-10">
                         <p className="text-lg font-semibold mb-2 md:mb-5 ">
                             Resources
                         </p>
