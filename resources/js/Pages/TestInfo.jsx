@@ -19,10 +19,10 @@ export default function TestInfo({ chapterId, auth }) {
                     />
                 </Head>
 
-                <section className="py-4 md:py-8 px-4 md:px-20 bg-slate-50">
-                    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 rounded-2xl overflow-hidden bg-white shadow-sm p-8">
+                <section className="container mx-auto py-4 md:py-8  bg-slate-50  md:px-16 lg:px-8 xl:px-44">
+                    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 rounded-2xl overflow-hidden bg-white shadow-sm p-8 ">
                         {/* Left Part: h1 Tag, p Tag, 2 Columns with Sentences, and Buttons */}
-                        <div className="flex flex-col space-y-6">
+                        <div className="flex flex-col space-y-6 ">
                             <h1 className="text-2xl sm:text-3xl font-bold">
                                 Free Simulation Test
                             </h1>
@@ -129,7 +129,7 @@ export default function TestInfo({ chapterId, auth }) {
                         </div>
                     </div>
                 </section>
-                <section className="py-4 md:py-8 px-4 md:px-20 bg-slate-50 ">
+                <section className="container mx-auto py-4 md:py-8  bg-slate-50 md:px-16 lg:px-8 xl:px-44">
                     <div className="container mx-auto flex flex-col md:flex-row rounded-2xl overflow-hidden bg-white shadow-sm p-8">
                         {/* Left Side */}
                         <div className="w-full md:w-1/2 p-8">

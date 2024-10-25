@@ -55,9 +55,9 @@ export default function HomePage({ auth, chapters }) {
                     <div className=" py-8 sm:py-16 flex flex-col items-center">
                         <div className="container mx-auto px-4">
                             <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-tight tracking-wide text-center  px-2 sm:px-8 lg:px-20 xl:px-32">
-                                Achieve Success in 2024 Canadian Citizenship
-                                Test on Your
-                                <span className="text-secondary ml-2">
+                                Achieve Success in Canadian Citizenship Test on
+                                Your{" "}
+                                <span className="text-secondary ml-1">
                                     First Attempt
                                 </span>
                             </h1>
@@ -209,8 +209,8 @@ export default function HomePage({ auth, chapters }) {
                         </p>
 
                         <h2 className=" text-xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl px-10 font-bold text-center ">
-                            Start Practicing for Your 2024 Canadian Citizenship
-                            Test Today!
+                            Start Practicing for Your Canadian Citizenship Test
+                            Today!
                         </h2>
                     </div>
                 </section>
@@ -262,27 +262,35 @@ export default function HomePage({ auth, chapters }) {
                                                 {chapter.description}
                                             </p>
 
-                                            <div className="flex flex-row md:flex-row items-center md:items-start justify-between md:flex-wrap">
-                                                <div className="w-full md:w-1/2 mb-4 md:mb-0 pr-0 md:pr-4">
-                                                    <div>
-                                                        <p className="text-lg sm:text-xl lg:text-xl font-bold tracking-wide mb-1 mt-2 ">
-                                                            {chapter.questions}
-                                                        </p>
-                                                        <p className="text-sm sm:text-lg font-normal text-gray-500">
-                                                            Questions
-                                                        </p>
+                                            <div className="flex flex-row md:flex-row items-center md:items-start justify-between md:flex-wrap px-5 pb-5">
+                                                <div className="w-full md:w-1/2 mb-4 md:mb-0">
+                                                    <div className="flex flex-row items-center">
+                                                        <div>
+                                                            <p className="font-bold text-lg tracking-wide mb-1 mt-4 md:mt-0 lg:mt-0 xl:mt-0">
+                                                                {
+                                                                    chapter.questions
+                                                                }
+                                                            </p>
+                                                            <p className="text-base font-normal text-gray-500">
+                                                                Questions
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
 
-                                                <div className="w-full md:w-1/2 pr-0 md:pr-4">
-                                                    <div>
-                                                        <p className="text-lg sm:text-xl lg:text-xl font-bold tracking-wide mb-1 ">
-                                                            {chapter.mistakes}{" "}
-                                                            Mistakes
-                                                        </p>
-                                                        <p className="text-sm sm:text-lg font-normal text-gray-500">
-                                                            Allowed to pass
-                                                        </p>
+                                                <div className="w-full md:w-1/2">
+                                                    <div className="flex flex-row items-center">
+                                                        <div>
+                                                            <p className="font-bold text-lg tracking-wide mb-1">
+                                                                {
+                                                                    chapter.mistakes
+                                                                }{" "}
+                                                                Mistakes
+                                                            </p>
+                                                            <p className="text-base font-normal text-gray-500">
+                                                                Allowed to pass
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -417,7 +425,7 @@ export default function HomePage({ auth, chapters }) {
                                     </div>
 
                                     {/* Text in 4 columns */}
-                                    <div className="col-span-12 lg:col-span-5">
+                                    <div className="col-span-12 lg:col-span-5 text-left">
                                         <div className="p-4">
                                             <h3 className="text-xl sm:text-2xl lg:text-xl font-bold leading-tight tracking-wide mb-2">
                                                 {chapter.name}
@@ -426,27 +434,35 @@ export default function HomePage({ auth, chapters }) {
                                                 {chapter.description}
                                             </p>
 
-                                            <div className="flex flex-row md:flex-row items-center md:items-start justify-between md:flex-wrap">
-                                                <div className="w-full md:w-1/2 mb-4 md:mb-0 pr-0 md:pr-4">
-                                                    <div>
-                                                        <p className="text-lg sm:text-xl lg:text-xl font-bold tracking-wide mb-1 mt-2 ">
-                                                            {chapter.questions}
-                                                        </p>
-                                                        <p className="text-sm sm:text-lg font-normal text-gray-500">
-                                                            Questions
-                                                        </p>
+                                            <div className="flex flex-row md:flex-row items-center md:items-start justify-between md:flex-wrap px-5 pb-5">
+                                                <div className="w-full md:w-1/2 mb-4 md:mb-0">
+                                                    <div className="flex flex-row items-center">
+                                                        <div>
+                                                            <p className="font-bold text-lg tracking-wide mb-1 mt-4 md:mt-0 lg:mt-0 xl:mt-0">
+                                                                {
+                                                                    chapter.questions
+                                                                }
+                                                            </p>
+                                                            <p className="text-base font-normal text-gray-500">
+                                                                Questions
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
 
-                                                <div className="w-full md:w-1/2 pr-0 md:pr-4">
-                                                    <div>
-                                                        <p className="text-lg sm:text-xl lg:text-xl font-bold tracking-wide mb-1 ">
-                                                            {chapter.mistakes}{" "}
-                                                            Mistakes
-                                                        </p>
-                                                        <p className="text-sm sm:text-lg font-normal text-gray-500">
-                                                            Allowed to pass
-                                                        </p>
+                                                <div className="w-full md:w-1/2">
+                                                    <div className="flex flex-row items-center">
+                                                        <div>
+                                                            <p className="font-bold text-lg tracking-wide mb-1">
+                                                                {
+                                                                    chapter.mistakes
+                                                                }{" "}
+                                                                Mistakes
+                                                            </p>
+                                                            <p className="text-base font-normal text-gray-500">
+                                                                Allowed to pass
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -466,7 +482,7 @@ export default function HomePage({ auth, chapters }) {
                                 SPEED THROUGH TEST PREP
                             </p>
                             <h2 className="text-2xl  md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 mt-4 md:mt-12">
-                                Offering the simplest way to prepare
+                                Offering The Simplest Way To Prepare
                             </h2>
 
                             {/* Content for small screens */}
@@ -594,8 +610,8 @@ export default function HomePage({ auth, chapters }) {
                                     Test your knowledge with practice tests that
                                     focus on each chapter of the Discover Canada
                                     booklet. Our practice tests cover specific
-                                    chapters and chapters, giving you a thorough
-                                    way to practice.
+                                    chapters, giving you a thorough way to
+                                    practice.
                                 </p>
                             </div>
                             <div className="mb-8">
@@ -618,10 +634,10 @@ export default function HomePage({ auth, chapters }) {
                         {/* Heading */}
                         <div className="text-center mb-6 md:mb-8 lg:mb-10">
                             <h2 className="text-base md:text-base lg:text-base tracking-wide ">
-                                Your ultimate all-in-one resource
+                                YOUR ULTIMATE ALL-IN-ONE RESOURCE
                             </h2>
                             <p className="text-3xl md:text-4xl lg:text-5xl my-5 font-bold  mb-20 px-2">
-                                Pass the Canadian citizenship test with ease
+                                Pass The Canadian Citizenship Test With Ease
                             </p>
                         </div>
 
@@ -630,34 +646,35 @@ export default function HomePage({ auth, chapters }) {
                             {/* Left Column (Text content) */}
                             <div className="text-left space-y-4 md:space-y-6 lg:space-y-8">
                                 <h3 className="text-xl md:text-xl lg:text-2xl font-semibold">
-                                    Simplify your preparation
+                                    Simplify Your Preparation
                                 </h3>
                                 <p className="text-base md:text-base lg:text-lg">
-                                    We help ensure effective preparation with a
-                                    structured study plan. You will receive
-                                    detailed, easy-to-access, and organized
-                                    chapter-wise quizzes.
+                                    We make your study process easier with a
+                                    chapter-by-chapter curriculum. You’ll
+                                    receive detailed, easy-to-use study
+                                    materials organized by chapter.
                                 </p>
 
                                 <h3 className="text-xl md:text-xl lg:text-2xl font-semibold">
-                                    Learn from your mistakes
+                                    Learn from Your Mistakes
                                 </h3>
                                 <p className="text-base md:text-base lg:text-lg">
-                                    Look at the right answer for each question
-                                    right away. You'll also get a clear
-                                    explanation to understand why it's right.
-                                    Plus, we'll praise you for getting it right!
+                                    By taking unlimited practice tests and
+                                    answering chapter-based questions, you can
+                                    find your weak spots. This way, you can
+                                    focus on important study areas without
+                                    wasting time.
                                 </p>
 
                                 <h3 className="text-xl md:text-xl lg:text-2xl font-semibold">
-                                    Prepare with cheat sheets
+                                    Review Your Toughest Questions
                                 </h3>
                                 <p className="text-base md:text-base lg:text-lg">
-                                    Get ready for the Canadian citizenship test
-                                    with helpful study aids. They cover key
-                                    figures, important dates, government
-                                    questions, detailed maps, and common
-                                    vocabulary.
+                                    After each practice test, review the
+                                    questions that were most challenging for
+                                    you. This focused review helps strengthen
+                                    your understanding and build confidence in
+                                    those areas.
                                 </p>
                             </div>
 
@@ -892,8 +909,7 @@ export default function HomePage({ auth, chapters }) {
                                             the question patterns, and I passed
                                             on my first try! If you're preparing
                                             for the exam, you should definitely
-                                            join this platform. - Jillian
-                                            McAllister British Columbia
+                                            join this platform.
                                         </p>
                                     </div>
                                     <div>
@@ -953,8 +969,7 @@ export default function HomePage({ auth, chapters }) {
                                             the right place. The chapter-wise
                                             practice tests were exactly what I
                                             needed to fully understand each
-                                            section. - Marcus Tremblay Nova
-                                            Scotia.
+                                            section.
                                         </p>
                                     </div>
                                     <hr className="border-1 border-gray-200  mb-3" />
@@ -1011,8 +1026,7 @@ export default function HomePage({ auth, chapters }) {
                                             online platform to help me.
                                             CitizenTestPrep is, without a doubt,
                                             the best resource for the Canadian
-                                            Citizenship Test!" Hitoshi Matsumoto
-                                            Saskatchewan.
+                                            Citizenship Test!
                                         </p>
                                     </div>
                                     <hr className="border-1 border-gray-200 my-2" />
@@ -1090,15 +1104,15 @@ export default function HomePage({ auth, chapters }) {
                             Eligibility for Canadian Citizenship
                         </h3>
                         <p className="text-lg text-gray-600 mt-2">
-                            To be eligible for Canadian citizenship, there are
-                            several key requirements that must be met. You must
-                            have been a permanent resident of Canada for at
-                            least three out of the last five years preceding
-                            your application. Additionally, you must have filed
-                            income taxes in Canada. If you’re between 18 and 54,
-                            you must demonstrate adequate English or French
-                            skills. You cannot have been convicted of any
-                            serious crimes.
+                            To be eligible for Canadian citizenship, you must
+                            meet several key requirements. You need to have been
+                            a permanent resident of Canada for at least three
+                            out of the last five years before applying. You also
+                            must have filed income taxes in Canada. If you are
+                            between 18 and 54 years old, you must show that you
+                            have good English or French skills. Additionally,
+                            you cannot have been convicted of any serious
+                            crimes.
                         </p>
                         <h3 className="text-xl md:text-2xl font-bold mt-6 mb-2">
                             Test Question & Format
@@ -1123,8 +1137,8 @@ export default function HomePage({ auth, chapters }) {
                             Wait For Test Invitation
                         </h3>
                         <p className="text-lg text-gray-600 mt-2">
-                            You should wait for your test invitation, which we
-                            typically send within one week after you receive
+                            You should wait for your test invitation, which IRCC
+                            typically sends within one week after you receive
                             your Acknowledgement of Receipt (AOR) letter or
                             email. The AOR confirms that your application is
                             complete. If you haven’t received your AOR yet,
@@ -1141,11 +1155,7 @@ export default function HomePage({ auth, chapters }) {
                             your application number, and your unique client
                             identifier (UCI). You will receive your invitation
                             by email if you provided an email address in your
-                            application. To avoid missing it, check your junk or
-                            spam folders for emails from an address ending in
-                            “@cic.gc.ca.” If you didn’t give an email address,
-                            you can provide one using IRCC’s web form, or they
-                            will call you, so remember to check your voicemail.
+                            application.
                         </p>
                         <h3 className="text-xl md:text-2xl font-bold mt-6 mb-2">
                             Test Day Procedures
@@ -1162,9 +1172,7 @@ export default function HomePage({ auth, chapters }) {
                             attempts, a hearing with a citizenship official will
                             be scheduled. If you need accommodations, you may be
                             invited to take the test on Microsoft Teams or in
-                            person, and the same three-attempt rule applies. To
-                            pass the citizenship test, you must correctly To
-                            pass the citizenship test, you must correctly
+                            person, and the same three-attempt rule applies.
                         </p>
                         minimum score of 75%. If you pass, you may be minimum
                         score of 75%. If you pass, you may be
@@ -1172,7 +1180,9 @@ export default function HomePage({ auth, chapters }) {
                             Scoring and Results
                         </h3>
                         <p className="text-lg text-gray-600 mt-2">
+                            To pass the citizenship test, you must correctly
                             answer at least 15 out of 20 questions, achieving a
+                            minimum score of 75%. If you pass, you may be
                             invited to an interview with a citizenship official,
                             depending on your case, and will definitely receive
                             an invitation to the citizenship ceremony. If you do
@@ -1181,10 +1191,10 @@ export default function HomePage({ auth, chapters }) {
                             Microsoft Teams, or in person. Failing three times
                             will lead to a hearing with a citizenship official,
                             where you will be asked questions similar to those
-                            on the test. If you pass this hearing, your you will
-                            need to reapply and pay the fees again if
+                            on the test. If you pass this hearing, your
                             application will continue to be processed; however,
                             if you fail, your application will be refused, and
+                            you will need to reapply and pay the fees again if
                             you still wish to pursue citizenship. For those who
                             applied as a family or group, all applications are
                             processed together. If one applicant needs to retest
@@ -1205,8 +1215,8 @@ export default function HomePage({ auth, chapters }) {
                         </p>
                     </div>
                 </section>
-                <section className=" container mx-auto hidden md:block py-16 bg-slate-50  px-6 md:px-8 lg:px-8  xl:px-36">
-                    <div className="  px-6 md:px-16 lg:px-8  xl:px-36">
+                <section className="container mx-auto  md:block py-16 bg-slate-50  px-6 md:px-8 lg:px-8  xl:px-36">
+                    <div className="px-6 md:px-16 lg:px-8  xl:px-36">
                         <h2 className="text-4xl font-bold mb-6 text-center">
                             Tips to pass Canadian Citizenship Test in One
                             Attempt

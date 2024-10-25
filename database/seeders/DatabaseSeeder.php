@@ -14115,8 +14115,8 @@ class DatabaseSeeder extends Seeder
             'title' => 'Free Practise Test',
             'description' => "Take our free practice test for the Canadian citizenship exam to see what you know and where you need to improve. This will help you create a study plan that works best for you.
 ",
-            'questions' => 20,
-            'mistakes' => 5,
+            'questions' => 15,
+            'mistakes' => 3,
             'step' => 1,
             'tests' => [
               [
