@@ -1215,9 +1215,9 @@ export default function HomePage({ auth, chapters }) {
                         </p>
                     </div>
                 </section>
-                <section className="container mx-auto  md:block py-16 bg-slate-50  px-6 md:px-8 lg:px-8  xl:px-36">
-                    <div className="px-6 md:px-16 lg:px-8  xl:px-36">
-                        <h2 className="text-4xl font-bold mb-6 text-center">
+                <section className="container mx-auto md:block py-16 bg-slate-50  px-4 md:px-8 lg:px-8  xl:px-36">
+                    <div className="px-4 md:px-16 lg:px-8  xl:px-36">
+                        <h2 className="text-2xl md:text-4xl font-bold mb-6 text-start">
                             Tips to pass Canadian Citizenship Test in One
                             Attempt
                         </h2>
