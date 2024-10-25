@@ -1174,8 +1174,6 @@ export default function HomePage({ auth, chapters }) {
                             invited to take the test on Microsoft Teams or in
                             person, and the same three-attempt rule applies.
                         </p>
-                        minimum score of 75%. If you pass, you may be minimum
-                        score of 75%. If you pass, you may be
                         <h3 className="text-xl md:text-2xl font-bold mt-6 mb-2">
                             Scoring and Results
                         </h3>

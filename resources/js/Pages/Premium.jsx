@@ -30,59 +30,94 @@ export default function Premium({ auth }) {
                     {/* Left Section with Heading and Details */}
                     <div className="lg:col-span-7 flex flex-col space-y-6 p-2">
                         <h1 className="text-4xl sm:text-4xl md:text-3xl lg:text-4xl  xl:text-5xl  px-2 font-extrabold text-center lg:text-left">
-                            Pass your Canadian Citizenship test on first try.
-                            <span className="text-indigo-600">Guaranteed.</span>
+                            Pass Your Canadian Citizenship Test On The First
+                            Try.{" "}
+                            <span className="text-indigo-600">Guaranteed!</span>
                         </h1>
-                        <p className="text-gray-700 text-base sm:text-lg  md:text-base lg:text-lg leading-relaxed text-center">
-                            The complete all-in-one toolkit for success: Prepare
-                            thoroughly with 700+ exam-like questions, study
-                            guides, realistic test simulations, and enjoy the
-                            peace of mind with our unwavering Pass Guarantee.
-                            Perfect for first-timers, seniors, or newcomers to
-                            Canada. Entirely online, from just $39.
+                        <p className="text-gray-700 text-xl  md:text-xl lg:text-xl leading-relaxed text-start">
+                            Your complete toolkit for success: Get fully
+                            prepared with over 850+ practice questions,
+                            chapter-wise study guide, test simulations, 450+
+                            flashcards, cheat sheets, and more. Everything you
+                            need to pass the test is all in one place!
                         </p>
                         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
-                            <button className="bg-primary text-white px-8 py-4 rounded-full text-base lg:text-lg  transition-all">
+                            <button className="bg-primary text-white px-10 py-4 rounded-full text-base lg:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out">
                                 Get all exam-like questions
                             </button>
                             <img
                                 src="/images/pass guarantee.png"
                                 alt="Pass Guarantee"
-                                className="h-12 w-auto mt-8"
+                                className="h-14 w-auto mt-8"
                             />
                         </div>
-                        <p className="text-gray-700 text-base sm:text-lg lg:text-xl mt-4 text-center px-6">
-                            Join the 18,300+ new citizens who passed their tests
-                            with our help.
+                        <p className="text-gray-700 text-base font-bold sm:text-lg lg:text-xl mt-4 text-start px-6">
+                            Join over 18,300+ new citizens who have passed with
+                            our help.
                         </p>
-                        <ul className="space-y-2 text-gray-700 text-base sm:text-lg lg:text-xl px-6">
+                        <ul className="space-y-2 text-gray-800 text-base sm:text-lg lg:text-xl px-6">
                             <li className="flex items-center">
-                                <FontAwesomeIcon
-                                    icon={faCheck}
+                                <svg
                                     className="mr-2 text-indigo-600"
-                                />
-                                700+ exam-like questions
+                                    width="18"
+                                    height="14"
+                                    viewBox="0 0 18 14"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M5.79508 10.8749L1.62508 6.70492L0.205078 8.11492L5.79508 13.7049L17.7951 1.70492L16.3851 0.294922L5.79508 10.8749Z"
+                                        fill="#5459E9"
+                                    />
+                                </svg>
+                                850+ exam-style questions
                             </li>
                             <li className="flex items-center">
-                                <FontAwesomeIcon
-                                    icon={faCheck}
+                                <svg
                                     className="mr-2 text-indigo-600"
-                                />
+                                    width="18"
+                                    height="14"
+                                    viewBox="0 0 18 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M5.79508 10.8749L1.62508 6.70492L0.205078 8.11492L5.79508 13.7049L17.7951 1.70492L16.3851 0.294922L5.79508 10.8749Z"
+                                        fill="#5459E9"
+                                    />
+                                </svg>
+                                450+ flashcards
+                            </li>
+                            <li className="flex items-center">
+                                <svg
+                                    className="mr-2 text-indigo-600"
+                                    width="18"
+                                    height="14"
+                                    viewBox="0 0 18 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M5.79508 10.8749L1.62508 6.70492L0.205078 8.11492L5.79508 13.7049L17.7951 1.70492L16.3851 0.294922L5.79508 10.8749Z"
+                                        fill="#5459E9"
+                                    />
+                                </svg>
                                 Advanced test simulations
                             </li>
                             <li className="flex items-center">
-                                <FontAwesomeIcon
-                                    icon={faCheck}
+                                <svg
                                     className="mr-2 text-indigo-600"
-                                />
-                                Pass Guarantee or it's on us
-                            </li>
-                            <li className="flex items-center">
-                                <FontAwesomeIcon
-                                    icon={faCheck}
-                                    className="mr-2 text-indigo-600"
-                                />
-                                Tailored study plan
+                                    width="18"
+                                    height="14"
+                                    viewBox="0 0 18 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M5.79508 10.8749L1.62508 6.70492L0.205078 8.11492L5.79508 13.7049L17.7951 1.70492L16.3851 0.294922L5.79508 10.8749Z"
+                                        fill="#5459E9"
+                                    />
+                                </svg>
+                                Pass Guarantee – it's on us!
                             </li>
                         </ul>
                     </div>
@@ -98,124 +133,156 @@ export default function Premium({ auth }) {
 
                     {/* Testimonials Section */}
                     <div className="lg:col-span-12 flex flex-col items-center space-y-8 p-4 px-6 mt-8">
-                        <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center px-6 ">
-                            Why busy learners love CitizenTestPrep Premium
-                        </h3>
-                        <div className="text-gray-700 text-lg flex flex-col lg:flex-row items-center lg:space-x-4">
-                            <p className="text-center  text-lg lg:text-lg lg:text-left mb-4">
-                                Our customers rate us{" "}
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center px-6 ">
+                            Why Learners Love The Citizentestprep Premium
+                        </h2>
+                        <div className="text-gray-800 text-lg flex flex-col lg:flex-row items-center lg:space-x-2">
+                            <p className="text-center text-lg lg:text-lg lg:text-left mb-4">
+                                Our customers think we're{" "}
                                 <span className="font-extrabold">
-                                    Excellent
+                                    outstanding!
                                 </span>
                             </p>
-                            <div className="flex items-center">
-                                {[...Array(5)].map((_, i) => (
-                                    <FontAwesomeIcon
-                                        key={i}
-                                        icon={faStar}
-                                        className="text-yellow-400 mx-1"
-                                    />
-                                ))}
-                            </div>
-                            <p className="text-center lg:text-left text-lg lg:text-lg mt-4">
-                                Rated 5 out of 5 based on over 200+ reviews.
+
+                            <svg
+                                className="flex items-center mb-4"
+                                width="121"
+                                height="24"
+                                viewBox="0 0 121 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12.5 17.77L18.68 21.5L17.04 14.47L22.5 9.74L15.31 9.13L12.5 2.5L9.69 9.13L2.5 9.74L7.96 14.47L6.32 21.5L12.5 17.77Z"
+                                    fill="#FFB900"
+                                />
+                                <path
+                                    d="M36.5 17.77L42.68 21.5L41.04 14.47L46.5 9.74L39.31 9.13L36.5 2.5L33.69 9.13L26.5 9.74L31.96 14.47L30.32 21.5L36.5 17.77Z"
+                                    fill="#FFB900"
+                                />
+                                <path
+                                    d="M60.5 17.77L66.68 21.5L65.04 14.47L70.5 9.74L63.31 9.13L60.5 2.5L57.69 9.13L50.5 9.74L55.96 14.47L54.32 21.5L60.5 17.77Z"
+                                    fill="#FFB900"
+                                />
+                                <path
+                                    d="M84.5 17.77L90.68 21.5L89.04 14.47L94.5 9.74L87.31 9.13L84.5 2.5L81.69 9.13L74.5 9.74L79.96 14.47L78.32 21.5L84.5 17.77Z"
+                                    fill="#FFB900"
+                                />
+                                <path
+                                    d="M108.5 17.77L114.68 21.5L113.04 14.47L118.5 9.74L111.31 9.13L108.5 2.5L105.69 9.13L98.5 9.74L103.96 14.47L102.32 21.5L108.5 17.77Z"
+                                    fill="#FFB900"
+                                />
+                            </svg>
+
+                            <p className="text-center lg:text-left text-lg lg:text-lg mb-4">
+                                With over 200+ reviews, we've earned a perfect 5
+                                out of 5 rating.
                             </p>
                         </div>
 
                         {/* Responsive Testimonials */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {/* Testimonial 1 */}
-                            <div className="p-6 bg-white rounded-lg shadow-lg flex flex-col justify-between">
-                                <div>
-                                    <h2 className="text-2xl font-bold mb-2">
-                                        “Passed on my first attempt”
-                                    </h2>
-                                    <p className="text-gray-500 text-lg">
-                                        I failed my Canadian citizenship test
-                                        initially. Then I found CitizenTestPrep.
-                                        The platform helped me pass the exam
-                                        with confidence.
-                                    </p>
-                                </div>
-                                <div className="flex items-center mt-4">
-                                    <img
-                                        src="/images/review 3.png"
-                                        alt="Profile Picture"
-                                        className="w-12 h-12 rounded-full mr-4"
-                                    />
-                                    <div>
-                                        <hr className="border-1 border-gray-200  mb-3" />
 
-                                        <h3 className="text-gray-700 font-bold">
-                                            Jillian McAllister
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-1 mx-4 sm:mx-10 lg:mx-1 xl:mx-8">
+                            <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
+                                <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
+                                    <div>
+                                        <h3 className="text-xl font-bold mb-2 text-left">
+                                            “Passed on my first attempt“
                                         </h3>
-                                        <p className="text-gray-500">
-                                            British Columbia
+                                        <p className="text-sm mb-2 text-gray-500 text-left ">
+                                            I failed my Canadian citizenship
+                                            test initially. Then I found
+                                            CitizenTestPrep. The platform helped
+                                            me pass the exam with confidence.
                                         </p>
+                                    </div>
+                                    <div>
+                                        {" "}
+                                        <hr className="border-1 border-gray-200 my-2" />
+                                    </div>
+
+                                    <div className="flex items-left mt-2">
+                                        <img
+                                            src="/images/review 3.png"
+                                            alt="Profile Picture"
+                                            className="w-12 h-12 rounded-full mr-2"
+                                        />
+                                        <div>
+                                            <p className="text-ellipsis text-sm font-bold text-gray-600">
+                                                Jillian McAllister
+                                            </p>
+                                            <p className="text-sm text-gray-600">
+                                                British Columbia
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            {/* Testimonial 2 */}
-                            <div className="p-6 bg-white rounded-lg shadow-lg flex flex-col justify-between">
-                                <div>
-                                    <h2 className="text-xl font-bold mb-2">
-                                        “Exactly What I Needed”
-                                    </h2>
-                                    <p className="text-gray-500 text-base">
-                                        If you want to prepare for the Canadian
-                                        Citizenship test, this platform has
-                                        everything you need, especially the
-                                        chapter-wise practice tests.
-                                    </p>
-                                </div>
-                                <div className="flex items-center mt-4">
-                                    <img
-                                        src="/images/review 2.png"
-                                        alt="Profile Picture"
-                                        className="w-12 h-12 rounded-full mr-4"
-                                    />
+                            <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
+                                <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                     <div>
-                                        <hr className="border-1 w-full border-gray-200  mb-3" />
-                                        <h3 className="text-gray-700 font-bold">
-                                            Marcus Tremblay
+                                        <h3 className="text-xl font-bold mb-2 text-left">
+                                            “Exactly What I Needed”
                                         </h3>
-                                        <p className="text-gray-500">
-                                            Nova Scotia
+                                        <p className="text-sm mb-14 text-gray-500 text-left">
+                                            If you want to prepare for the
+                                            Canadian Citizenship test, this
+                                            platform has everything you need,
+                                            especially the chapter-wise practice
+                                            tests.
                                         </p>
+                                    </div>
+                                    <hr className="border-1 border-gray-200  mb-3" />
+
+                                    <div className="flex items-left mb-2 mt-2">
+                                        <img
+                                            src="/images/review 2.png"
+                                            alt="Profile Picture"
+                                            className="w-12 h-12 rounded-full mr-2"
+                                        />
+                                        <div className="flex flex-col text-center sm:text-left">
+                                            <p className="text-ellipsis text-sm font-bold text-gray-600">
+                                                Marcus Tremblay
+                                            </p>
+                                            <p className="text-sm text-gray-600">
+                                                Nova Scotia
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            {/* Testimonial 3 */}
-                            <div className="p-6 bg-white rounded-lg shadow-lg flex flex-col justify-between">
-                                <div>
-                                    <h2 className="text-xl font-bold mb-2">
-                                        “Best Resource For The Test”
-                                    </h2>
-                                    <p className="text-gray-500 text-base">
-                                        After failing the test on my first
-                                        attempt, I used CitizenTestPrep Premium,
-                                        and it was the best resource to pass the
-                                        Canadian Citizenship Test.
-                                    </p>
-                                </div>
-                                <div className="flex items-center mt-4">
-                                    <img
-                                        src="/images/review 1.png"
-                                        alt="Profile Picture"
-                                        className="w-12 h-12 rounded-full mr-4"
-                                    />
-
+                            <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
+                                <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                     <div>
-                                        <hr className="border-1 border-gray-200  mb-3" />
-
-                                        <h3 className="text-gray-700 font-bold">
-                                            Hitoshi Matsumoto
+                                        <h3 className="text-xl font-bold mb-2 text-left">
+                                            “Best Resource For The Test”
                                         </h3>
-                                        <p className="text-gray-500">
-                                            Saskatchewan
+                                        <p className="text-sm mb-10 text-gray-500 text-left">
+                                            After failing the test on my first
+                                            attempt, I used CitizenTestPrep
+                                            Premium, and it was the best
+                                            resource to pass the Canadian
+                                            Citizenship Test.
                                         </p>
+                                    </div>
+                                    <hr className="border-1 border-gray-200 my-2" />
+
+                                    <div className="flex items-left mb-2">
+                                        <img
+                                            src="/images/review 1.png"
+                                            alt="Profile Picture"
+                                            className="w-12 h-12 rounded-full mr-2"
+                                        />
+                                        <div>
+                                            <p className="text-ellipsis text-sm font-bold text-gray-600">
+                                                Hitoshi Matsumoto
+                                            </p>
+                                            <p className="text-sm text-gray-600">
+                                                Saskatchewan
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -224,23 +291,27 @@ export default function Premium({ auth }) {
                 </section>
 
                 <section className=" container mx-auto lg:col-span-12 flex flex-col items-center justify-center px-6 md:px-16 lg:px-32 xl:px-28">
-                    <h1 className="text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-bold mb-4 text-center">
-                        Lively and innovative method of test preparation!
-                    </h1>
-                    <p className="text-gray-600 font-inter text-center text-base lg:text-lg max-h-20 md:max-h-24 lg:max-h-32 overflow-hidden">
-                        We offer valuable and useful resources to help people
-                        prepare for the Canadian citizenship test. Our
-                        comprehensive platform provides an organized way to
-                        prepare thoroughly. You will gain a better understanding
-                        of Canadian values and principles. Familiarize yourself
-                        with the question format and content of the real exam.
+                    <h2 className="text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-bold mb-4 text-center">
+                        A Fun And Easy Way To Prepare For Your Test!
+                    </h2>
+                    <p className="text-gray-600 font-inter text-start text-lg lg:text-lg max-h-20 md:max-h-24 lg:max-h-32 overflow-hidden">
+                        We have everything you need to get ready for the
+                        Canadian citizenship test. Our platform helps you study
+                        well and learn about Canadian values and principles.
+                        You’ll also see what the real exam questions look like.
+                        <br />
+                        Whether it’s your first time or not, our study tools
+                        will help you. Our simple and mobile-friendly design
+                        lets you study at your own pace. Join thousands of happy
+                        students who have passed their citizenship tests with
+                        our trusted study resources!
                     </p>
                     <img
                         src="/images/mobile chapt.png"
                         alt="Your Photo"
-                        className="w-full  rounded-lg shadow-md "
+                        className="w-full"
                     />
-                    <p className="text-gray-600 font-inter text-center text-base lg:text-lg">
+                    <p className="text-gray-600 font-inter text-center text-base lg:text-lg mt-10">
                         Get an effective pathway to success. Whether it's your
                         first time or not, you will be benefited. Our
                         user-friendly interface makes it easy to study at your
@@ -255,10 +326,10 @@ export default function Premium({ auth }) {
                         <p className="text-indigo-600 text-sm md:text-base lg:text-lg">
                             How it works
                         </p>
-                        <h1 className="text-3xl lg:text-3xl xl:text-3xl font-extrabold text-center md:text-left px-md:px-0 lg:px-0">
+                        <p className="text-3xl lg:text-3xl xl:text-3xl font-extrabold text-center md:text-left px-md:px-0 lg:px-0">
                             It has never been so easy to pass the Canadian
                             Citizenship test
-                        </h1>
+                        </p>
                         <p className="text-gray-600 text-lg md:text-lg lg:text-lg xl:text-lg text-center md:text-left">
                             Take the Canadian citizenship test with clarity and
                             stress-free preparation, achieving your dream of
@@ -269,56 +340,59 @@ export default function Premium({ auth }) {
                             {/* Step 1 */}
                             <div className="p-1">
                                 <p className="text-xl sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-bold">
-                                    STEP 1
+                                    Step 1
                                 </p>
-                                <p className="text-lg md:text-xl lg:text-xl font-bold">
-                                    Engaging quizzes
-                                </p>
+                                <h3 className="text-lg md:text-xl lg:text-xl font-bold">
+                                    Enjoyable Study Guide and Practice Tests
+                                </h3>
                                 <p className="text-gray-500 text-base sm:text-base md:text-lg lg:text-lg mt-2">
-                                    Boost your confidence with quick, 5-minute
-                                    quizzes that feel like mini-victories.
+                                    Build your confidence with quick 20-question
+                                    practice tests that feel just like the real
+                                    exam.
                                 </p>
                             </div>
 
                             {/* Step 2 */}
                             <div className="p-1">
                                 <p className="text-xl sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-bold">
-                                    STEP 2
+                                    Step 2
                                 </p>
-                                <p className="text-lg md:text-xl lg:text-xl font-bold">
-                                    Personalized learning
-                                </p>
+                                <h3 className="text-lg md:text-xl lg:text-xl font-bold">
+                                    Personalized Learning
+                                </h3>
                                 <p className="text-gray-500 text-base sm:text-base md:text-lg lg:text-lg mt-2">
-                                    Focus on what matters. Ditch mind-numbing
-                                    lectures, learn faster and retain more.
+                                    Focus on what’s important. Skip the boring
+                                    lectures and learn faster while remembering
+                                    more.
                                 </p>
                             </div>
 
                             {/* Step 3 */}
                             <div className="p-1">
                                 <p className="text-xl sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-bold">
-                                    STEP 3
+                                    Step 3
                                 </p>
-                                <p className="text-lg md:text-xl lg:text-xl font-bold">
-                                    Real-time exam simulator
-                                </p>
+                                <h3 className="text-lg md:text-xl lg:text-xl font-bold">
+                                    Real-Time Exam Simulator
+                                </h3>
                                 <p className="text-gray-500 text-base sm:text-base md:text-lg lg:text-lg mt-2">
-                                    Our advanced algorithm gauges your passing
-                                    chances in real-time.
+                                    Our advanced exam simulator helps you
+                                    practice in a setting that closely matches
+                                    the actual test format.
                                 </p>
                             </div>
 
                             {/* Step 4 */}
                             <div className="p-1">
                                 <p className="text-xl sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-bold">
-                                    STEP 4
+                                    Step 4
                                 </p>
-                                <p className="text-lg md:text-xl lg:text-xl font-bold">
-                                    Ace your exam 🎉
-                                </p>
+                                <h3 className="text-lg md:text-xl lg:text-xl font-bold">
+                                    Ace Your Exam! 🎉
+                                </h3>
                                 <p className="text-gray-500 text-base sm:text-base md:text-lg lg:text-lg mt-2">
-                                    Feel confident and prepared on exam day,
-                                    ready to pass with flying colors.
+                                    Feel ready and confident on exam day, and
+                                    pass with flying colors!
                                 </p>
                             </div>
                         </div>
@@ -345,23 +419,21 @@ export default function Premium({ auth }) {
                     />
 
                     {/* Main Heading */}
-                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl text-black font-extrabold  text-center leading-tight mt-10 ">
-                        Pass the citizenship test or get your money back
-                    </h3>
-
-                    {/* Subheading */}
-                    <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-indigo-700 font-extrabold mt-2 text-center">
-                        Get your money back
+                    <p className="text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg text-black text-center leading-relaxed mt-10 mx-32">
+                        At CitizenTestPrep Premium, we believe you will succeed
+                        using our high-quality study materials. If you go
+                        through our resources and don’t pass the Canadian
+                        citizenship test, we’ll give you your money back.
+                        <br />
+                        Our guarantee shows how much we trust our program. Get
+                        ready for your Canadian citizenship test with
+                        CitizenTestPrep Premium and join many others who have
+                        succeeded!
                     </p>
 
-                    {/* Paragraph */}
-                    <p className="text-gray-600 text-center text-lg md:text-lg lg:text-lg xl:text-xl max-w-2xl px-2 mt-2 md:mt-10">
-                        We guarantee your success with our comprehensive study
-                        resources. If you diligently use our materials and do
-                        not pass the Canadian citizenship test, we will provide
-                        a full refund. Join thousands of satisfied users who
-                        have successfully prepared with CitizenshipTestPrep
-                        Premium.
+                    {/* Subheading */}
+                    <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-indigo-700 font-extrabold text-center mt-10">
+                        Get started today
                     </p>
 
                     {/* Bottom Left Half Circle */}
@@ -389,56 +461,228 @@ export default function Premium({ auth }) {
 
                 <section className="container mx-auto px-2 py-8 bg-slate-50 xl:px-32">
                     {/* Heading */}
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center mt-8">
-                        Our users find our questions <br /> very similar to the
-                        actual test.
-                    </h1>
+                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold mb-8 text-center mt-8">
+                        Realistic Questions That Prepare You For The Actual
+                        Test!
+                    </h2>
 
-                    {/* User Reviews */}
-                    <div className="flex flex-wrap -mx-4">
-                        {Array(6)
-                            .fill()
-                            .map((_, i) => (
-                                <div
-                                    key={i}
-                                    className="w-full md:w-1/2 lg:w-1/3 px-4 mb-4"
-                                >
-                                    <div className="p-6 md:p-8 bg-white rounded-2xl shadow-sm flex flex-col justify-between h-full text-black">
-                                        <div>
-                                            <h1 className="text-xl sm:text-2xl font-bold mb-2">
-                                                “Passed on My First Try!”{" "}
-                                                {i + 1}
-                                            </h1>
-                                            <p className="text-lg text-gray-500">
-                                                I struggled to retain
-                                                information from the Discover
-                                                Canada book until a friend
-                                                recommended CitizenshipTestPrep
-                                                Premium. Their practice tests
-                                                and timeline recaps made a huge
-                                                difference, and I passed on my
-                                                first try! {i + 1}.
-                                            </p>
-                                        </div>
-                                        <div className="border-t-2 border-gray-100 mt-2"></div>
-                                        <div className="flex items-center mt-4">
-                                            <img
-                                                src="/images/1pass.png"
-                                                alt="Profile Picture"
-                                                className="w-12 h-12 rounded-full mr-4"
-                                            />
-                                            <div>
-                                                <h2 className="text-lg font-bold text-gray-600">
-                                                    Charlotte Morrison {i + 1}
-                                                </h2>
-                                                <p className="text-lg text-gray-600">
-                                                    British Columbia
-                                                </p>
-                                            </div>
-                                        </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-1 mx-4 sm:mx-10 lg:mx-1 xl:mx-8">
+                        <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
+                            <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
+                                <div>
+                                    <h3 className="text-xl font-bold mb-2 text-left">
+                                        “Passed with CitizenTestPrep”
+                                    </h3>
+                                    <p className="text-sm mb-2 text-gray-500 text-left ">
+                                        I was really struggling to prepare for
+                                        the Canadian citizenship test. No matter
+                                        how much I studied the Discover Canada
+                                        book, I couldn’t remember everything. A
+                                        friend told me about CitizenTestPrep,
+                                        and it made a huge difference!
+                                    </p>
+                                </div>
+                                <div>
+                                    {" "}
+                                    <hr className="border-1 border-gray-200 my-2" />
+                                </div>
+
+                                <div className="flex items-left mt-2">
+                                    <img
+                                        src="/images/review 3.png"
+                                        alt="Profile Picture"
+                                        className="w-12 h-12 rounded-full mr-2"
+                                    />
+                                    <div>
+                                        <p className="text-ellipsis text-sm font-bold text-gray-600">
+                                            Jillian McAllister
+                                        </p>
+                                        <p className="text-sm text-gray-600">
+                                            British Columbia
+                                        </p>
                                     </div>
                                 </div>
-                            ))}
+                            </div>
+                        </div>
+
+                        <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
+                            <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
+                                <div>
+                                    <h3 className="text-xl font-bold mb-2 text-left">
+                                        “Identified My Weak Spots”
+                                    </h3>
+                                    <p className="text-sm mb-14 text-gray-500 text-left">
+                                        Their chapter-by-chapter practice tests
+                                        helped me see my weak spots so I could
+                                        work on them. The timeline recaps were
+                                        super helpful too. I passed the test on
+                                        my third try!
+                                    </p>
+                                </div>
+                                <hr className="border-1 border-gray-200  mb-3" />
+
+                                <div className="flex items-left mb-2 mt-2">
+                                    <img
+                                        src="/images/review 2.png"
+                                        alt="Profile Picture"
+                                        className="w-12 h-12 rounded-full mr-2"
+                                    />
+                                    <div className="flex flex-col text-center sm:text-left">
+                                        <p className="text-ellipsis text-sm font-bold text-gray-600">
+                                            Marcus Tremblay
+                                        </p>
+                                        <p className="text-sm text-gray-600">
+                                            Nova Scotia
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
+                            <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
+                                <div>
+                                    <h3 className="text-xl font-bold mb-2 text-left">
+                                        “Responsive Customer Support”
+                                    </h3>
+                                    <p className="text-sm mb-10 text-gray-500 text-left">
+                                        As a busy professional, I didn’t have a
+                                        lot of time to study. CitizenTestPrep
+                                        made it easy to fit in a few practice
+                                        questions during my commute or lunch
+                                        break. Their customer support was
+                                        great—they quickly answered all my
+                                        questions.
+                                    </p>
+                                </div>
+                                <hr className="border-1 border-gray-200 my-2" />
+
+                                <div className="flex items-left mb-2">
+                                    <img
+                                        src="/images/review 1.png"
+                                        alt="Profile Picture"
+                                        className="w-12 h-12 rounded-full mr-2"
+                                    />
+                                    <div>
+                                        <p className="text-ellipsis text-sm font-bold text-gray-600">
+                                            Hitoshi Matsumoto
+                                        </p>
+                                        <p className="text-sm text-gray-600">
+                                            Saskatchewan
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-1 mx-4 sm:mx-10 lg:mx-1 xl:mx-8">
+                        <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
+                            <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
+                                <div>
+                                    <h3 className="text-xl font-bold mb-2 text-left">
+                                        “Comprehensive Practice Questions”
+                                    </h3>
+                                    <p className="text-sm mb-2 text-gray-500 text-left ">
+                                        The practice questions covered
+                                        everything on the test, and the
+                                        explanations helped me understand the
+                                        concepts better. The simulation tests
+                                        felt just like the real exam, which was
+                                        really helpful.
+                                    </p>
+                                </div>
+                                <div>
+                                    {" "}
+                                    <hr className="border-1 border-gray-200 my-2" />
+                                </div>
+
+                                <div className="flex items-left mt-2">
+                                    <img
+                                        src="/images/review 3.png"
+                                        alt="Profile Picture"
+                                        className="w-12 h-12 rounded-full mr-2"
+                                    />
+                                    <div>
+                                        <p className="text-ellipsis text-sm font-bold text-gray-600">
+                                            Jillian McAllister
+                                        </p>
+                                        <p className="text-sm text-gray-600">
+                                            British Columbia
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
+                            <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
+                                <div>
+                                    <h3 className="text-xl font-bold mb-2 text-left">
+                                        “Easy to Remember“
+                                    </h3>
+                                    <p className="text-sm mb-14 text-gray-500 text-left">
+                                        I struggled with names and dates, but
+                                        CitizenTestPrep made those chapters
+                                        interesting and easy to remember. I
+                                        highly recommend CitizenTestPrep to
+                                        anyone getting ready for this important
+                                        exam.
+                                    </p>
+                                </div>
+                                <hr className="border-1 border-gray-200  mb-3" />
+
+                                <div className="flex items-left mb-2 mt-2">
+                                    <img
+                                        src="/images/review 2.png"
+                                        alt="Profile Picture"
+                                        className="w-12 h-12 rounded-full mr-2"
+                                    />
+                                    <div className="flex flex-col text-center sm:text-left">
+                                        <p className="text-ellipsis text-sm font-bold text-gray-600">
+                                            Marcus Tremblay
+                                        </p>
+                                        <p className="text-sm text-gray-600">
+                                            Nova Scotia
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
+                            <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
+                                <div>
+                                    <h3 className="text-xl font-bold mb-2 text-left">
+                                        “Great Resource”
+                                    </h3>
+                                    <p className="text-sm mb-10 text-gray-500 text-left">
+                                        CitizenTestPrep made my preparation
+                                        smooth. The simulation test helped me
+                                        find my weaknesses. I’m so grateful for
+                                        this amazing resource that helped me
+                                        embrace my new identity as a Canadian
+                                        citizen.
+                                    </p>
+                                </div>
+                                <hr className="border-1 border-gray-200 my-2" />
+
+                                <div className="flex items-left mb-2">
+                                    <img
+                                        src="/images/review 1.png"
+                                        alt="Profile Picture"
+                                        className="w-12 h-12 rounded-full mr-2"
+                                    />
+                                    <div>
+                                        <p className="text-ellipsis text-sm font-bold text-gray-600">
+                                            Hitoshi Matsumoto
+                                        </p>
+                                        <p className="text-sm text-gray-600">
+                                            Saskatchewan
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Read All Reviews Button */}
@@ -460,14 +704,10 @@ export default function Premium({ auth }) {
                     </p>
 
                     {/* Main Heading */}
-                    <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 text-center text-white hidden lg:block md:px-40">
-                        Everything you need to pass your Canadian Citizenship
+                    <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 text-center text-white hidden lg:block md:px-40">
+                        Everything You Need To Pass Your Canadian Citizenship
                         Test
-                    </h1>
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center text-white lg:hidden">
-                        Pass The Citizenship Test
-                    </h1>
-
+                    </h2>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                         {/* Left Column Image */}
                         <div className="hidden lg:flex justify-center items-center">
@@ -480,21 +720,20 @@ export default function Premium({ auth }) {
 
                         {/* Right Column Content */}
                         <div className="flex flex-col justify-center space-y-4 text-xl  font-thin">
-                            <h1 className="text-white mb-4 text-justify md:text-left ">
-                                Gain a deeper understanding of the test
-                                material. Practice with real-life test
-                                questions, including multiple-choice,
-                                true-false, and more.
-                            </h1>
+                            <p className="text-white mb-4 text-justify md:text-left ">
+                                Get a better understanding of the test
+                                materials. Practice with real questions,
+                                including multiple-choice and true/false.
+                            </p>
                             <ul className="space-y-2 text-white ">
                                 {[
-                                    "Customized chapter-wise practice tests",
-                                    "Access 700+ test questions",
-                                    "Unlimited exam simulation",
-                                    "Advanced AI delivers a performance review",
-                                    "Flashcards for each chapter",
-                                    "Profiles notable figures",
-                                    "Providence-specific government queries",
+                                    "52 Practice Tests with easy-to-understand answer explanations",
+                                    "850+ Practice Questions for thorough preparation",
+                                    "Simulation Tests that feel like the real exam",
+                                    "The Official Study Guide in a fun and engaging format",
+                                    "350+ Flash Cards covering all the important chapters",
+                                    "Cheat Sheets with key figures, dates, maps, and a glossary",
+                                    "Priority Customer Support to help you whenever you need it",
                                 ].map((text, index) => (
                                     <li
                                         key={index}
@@ -520,45 +759,46 @@ export default function Premium({ auth }) {
                         IN-DEPTH LEARNING
                     </p>
 
-                    <h1 className="text-2xl md:text-2xl lg:text-5xl font-extrabold mb-2 text-center mt-2 md:mt-6 lg:mt-2 px-5 md:px-10 lg:px-64">
-                        Learn faster with our effective study guide
-                    </h1>
+                    <h2 className="text-2xl md:text-2xl lg:text-5xl font-extrabold mb-2 text-center mt-2 md:mt-6 lg:mt-2 px-5 md:px-10 lg:px-64">
+                        Learn Faster with Our Effective Study Guide
+                    </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12">
                         {/* Left Column */}
                         <div className="space-y-6 text-left md:text-left">
                             <div>
-                                <h2 className="text-xl md:text-2xl font-bold mb-4">
+                                <h3 className="text-xl md:text-2xl font-bold mb-4">
                                     User-Friendly Interface
-                                </h2>
+                                </h3>
                                 <p className="text-gray-500 text-lg mb-10">
-                                    Our platform features a user-friendly
-                                    interface, making studying intuitive and
-                                    accessible for everyone. Easily navigate
-                                    study materials, quizzes, and resources on
-                                    any device.
+                                    Our platform is easy to use. It makes
+                                    studying simple and accessible for everyone.
+                                    You can easily navigate through study
+                                    materials, practice questions, and resources
+                                    on any device.
                                 </p>
                             </div>
                             <div>
-                                <h1 className="text-xl md:text-2xl font-bold mb-4">
-                                    Structured Study Material
-                                </h1>
+                                <h3 className="text-xl md:text-2xl font-bold mb-4">
+                                    Organized Study Material
+                                </h3>
                                 <p className="text-gray-500 text-lg mb-10">
-                                    The study guide is divided into clearly
-                                    defined chapters, each focusing on specific
-                                    topics relevant to the Canadian citizenship
-                                    test. This structure facilitates targeted
-                                    learning and comprehension.
+                                    The study guide is divided into clear
+                                    chapters, each focusing on specific chapters
+                                    for the Canadian citizenship test. This
+                                    organization helps you learn and understand
+                                    better.
                                 </p>
                             </div>
                             <div>
-                                <h1 className="text-xl md:text-2xl font-bold mb-4">
+                                <h3 className="text-xl md:text-2xl font-bold mb-4">
                                     Study Anytime, Anywhere
-                                </h1>
+                                </h3>
                                 <p className="text-gray-500 text-lg">
-                                    Access our study guide anytime, anywhere.
-                                    Study during breaks, commutes, or at home
-                                    with our accessible resources.
+                                    Access our study guide whenever and wherever
+                                    you want. Whether you like to study during
+                                    breaks, on your commute, or at home, our
+                                    resources are always available for you.
                                 </p>
                             </div>
                         </div>
@@ -579,9 +819,9 @@ export default function Premium({ auth }) {
                         ONE CHAPTER AT A TIME
                     </p>
 
-                    <h1 className="text-2xl md:text-5xl font-bold mb-2 text-center text-white mt-2 md:mt-6 lg:mt-2 px-2 md:px-10 sm:px-60">
-                        700+ Practice Questions and Answers to prepare
-                    </h1>
+                    <h2 className="text-2xl md:text-5xl font-bold mb-2 text-center text-white mt-2 md:mt-6 lg:mt-2 px-2 md:px-10 sm:px-60">
+                        850+ Practice Questions and Answers
+                    </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12">
                         {/* Left Column */}
@@ -597,31 +837,32 @@ export default function Premium({ auth }) {
                         {/* Right Column */}
                         <div className="space-y-6 lg:text-left text-white mb-10 px-2 md:px-10">
                             <div>
-                                <p className="text-2xl font-bold  mb-4">
-                                    Detailed and Exam-Like Questions
-                                </p>
+                                <h3 className="text-2xl font-bold  mb-4">
+                                    Dynamic Exam-Like Questions
+                                </h3>
                                 <p className="text-white text-lg  md:text-xl md:mb-10 ">
-                                    Benefit from dynamic and weighted questions
-                                    that cover a range of topics.
+                                    Enjoy a variety of engaging questions that
+                                    cover all chapters, helping you prepare
+                                    thoroughly.
                                 </p>
                             </div>
                             <div>
-                                <p className="text-2xl font-bold  mb-4">
+                                <h3 className="text-2xl font-bold  mb-4">
                                     Test Simulations
-                                </p>
+                                </h3>
                                 <p className="text-white text-xl mb-10">
-                                    Participate in test simulations that mimic
-                                    the real Canadian citizenship test to
-                                    understand the exam format.
+                                    Experience test simulations that closely
+                                    mimic the real Canadian citizenship test, so
+                                    you can get familiar with the exam format.
                                 </p>
                             </div>
                             <div>
-                                <p className="text-2xl font-bold  mb-4">
-                                    Flashcards
-                                </p>
+                                <h3 className="text-2xl font-bold  mb-4">
+                                    450+ Flashcards
+                                </h3>
                                 <p className="text-white    text-xl mb-5 md:mb-32">
-                                    Use flashcards to reinforce key concepts and
-                                    information while studying.
+                                    Use 450+ flashcards to reinforce important
+                                    concepts and information while you study.
                                 </p>
                             </div>
                         </div>
@@ -629,23 +870,25 @@ export default function Premium({ auth }) {
                 </section>
                 <section className="container mx-auto px-4  py-8 bg-slate-50 hidden sm:block">
                     <p className="text-sm text-indigo-600 mb-4 mt-10 text-center">
-                        IMPORTANT TOOLS
+                        CHEAT SHEETS
                     </p>
 
-                    <h3 className="text-5xl font-extrabold mb-6 text-center">
-                        Additional tools and resources
-                    </h3>
+                    <h2 className="text-5xl font-extrabold mb-6 text-center">
+                        Additional Tools And Resources
+                    </h2>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
                         {/* Column 1 */}
                         <div className="rounded-lg p-6 flex flex-col justify-between">
                             <div>
-                                <h2 className="text-2xl font-bold mb-4">
-                                    Important Dates
-                                </h2>
+                                <h3 className="text-2xl font-bold mb-4">
+                                    Interactive Regional Map
+                                </h3>
                                 <p className="text-gray-600 text-lg mb-8">
-                                    See the big picture by scrolling through our
-                                    extensive
+                                    Explore Canada’s regions, provinces, and
+                                    territories with our interactive map, making
+                                    it easy to learn about the country’s
+                                    geography.
                                 </p>
                             </div>
                             <img
@@ -658,13 +901,13 @@ export default function Premium({ auth }) {
                         {/* Column 2 */}
                         <div className="rounded-lg   p-6 flex flex-col justify-between">
                             <div>
-                                <h2 className="text-2xl font-bold mb-4">
-                                    Important People
-                                </h2>
+                                <h3 className="text-2xl font-bold mb-4">
+                                    Important Dates
+                                </h3>
                                 <p className="text-gray-600 text-lg mb-8">
-                                    View a detailed list of all the important
-                                    people in Canada’s vibrant history and
-                                    cultural identity.
+                                    Discover all the key dates that could be
+                                    asked about on the Canadian citizenship
+                                    test.
                                 </p>
                             </div>
                             <img
@@ -677,13 +920,13 @@ export default function Premium({ auth }) {
                         {/* Column 3 */}
                         <div className="rounded-lg p-6 flex flex-col justify-between">
                             <div>
-                                <h2 className="text-2xl font-bold mb-4">
-                                    Interactive Regional Map
-                                </h2>
+                                <h3 className="text-2xl font-bold mb-4">
+                                    Important People
+                                </h3>
                                 <p className="text-gray-600 text-lg mb-8">
-                                    Learn about the different regions,
-                                    provinces/territories and more in Canada,
-                                    with a visual Interactive map.
+                                    Check out a detailed list of significant
+                                    figures in Canada’s rich history and
+                                    cultural identity.
                                 </p>
                             </div>
                             <img
@@ -696,15 +939,15 @@ export default function Premium({ auth }) {
                 </section>
                 <section className="container mx-auto px-4 md:px-10 lg:px-20 mt-20">
                     {/* Heading */}
-                    <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-6 text-center mt-10">
-                        Get started today and ace the test
-                    </h1>
+                    <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-6 text-center mt-10">
+                        Get Started Today and Let Us Help You Succeed!
+                    </h2>
 
                     {/* Subheading */}
                     <p className="text-lg text-zinc-500 mb-8 text-center">
-                        Begin your Canadian citizenship journey with confidence.
-                        Sign up now <br /> for instant access to our premium
-                        study resources.
+                        Start your Canadian citizenship journey with confidence.
+                        Sign up now to get instant access to our top-quality
+                        study resources!
                     </p>
 
                     {/* Image */}
@@ -737,11 +980,11 @@ export default function Premium({ auth }) {
                                     autoComplete="off"
                                 />
                                 <div className="bg-white border-2 border-blue-50 rounded-3xl p-6 sm:p-8 md:p-8 lg:p-8 xl:p-8 shadow-xl flex-1 flex flex-col">
-                                    <h2 className="text-2xl sm:text-3xl font-extrabold mb-2 mt-2 sm:mt-2">
+                                    <p className="text-2xl sm:text-3xl font-extrabold mb-2 mt-2 sm:mt-2">
                                         3-Month Exam Prep
-                                    </h2>
+                                    </p>
                                     <p className="text-gray-600 text-base sm:text-lg mb-4">
-                                        When every day counts, get maximum
+                                        When every day counts, gain maximum
                                         knowledge in three months.
                                     </p>
                                     <div className="flex justify-between">
@@ -763,31 +1006,14 @@ export default function Premium({ auth }) {
                                     </p>
                                     <ul className="space-y-2 text-zinc-600 text-sm sm:text-lg mt-2">
                                         {[
-                                            "Access to over 700+ test questions",
+                                            "Access to over 850+ test questions",
                                             "Practice tests for each chapter",
                                             "Unlimited exam simulators",
-                                            "Personalized study guides",
-                                        ].map((text, index) => (
-                                            <li
-                                                key={index}
-                                                className="flex items-center"
-                                            >
-                                                <FontAwesomeIcon
-                                                    icon={faCheck}
-                                                    className="mr-2"
-                                                />
-                                                {text}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                    <p className="text-lg sm:text-xl text-zinc-600 mt-4">
-                                        More Features
-                                    </p>
-                                    <ul className="space-y-2 text-zinc-600 text-sm sm:text-lg mt-2">
-                                        {[
-                                            "500+ Flashcards for every chapter",
+                                            "Chapter-wise study guides",
+                                            "450+ Flashcards for every chapter",
                                             "Complete list of significant dates",
                                             "Directory of important people",
+                                            "Interactive Canadian Map",
                                             "Comprehensive Q&A",
                                         ].map((text, index) => (
                                             <li
@@ -802,6 +1028,7 @@ export default function Premium({ auth }) {
                                             </li>
                                         ))}
                                     </ul>
+
                                     <p className="flex items-center bg-slate-100 text-sm sm:text-lg text-zinc-600 mt-4 rounded-3xl">
                                         <svg
                                             width="25"
@@ -858,31 +1085,14 @@ export default function Premium({ auth }) {
                                     </p>
                                     <ul className="space-y-2 text-zinc-600 text-sm sm:text-lg mt-2">
                                         {[
-                                            "Access to over 700+ test questions",
+                                            "Access to over 850+ test questions",
                                             "Practice tests for each chapter",
                                             "Unlimited exam simulators",
-                                            "Personalized study guides",
-                                        ].map((text, index) => (
-                                            <li
-                                                key={index}
-                                                className="flex items-center"
-                                            >
-                                                <FontAwesomeIcon
-                                                    icon={faCheck}
-                                                    className="mr-2"
-                                                />
-                                                {text}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                    <p className="text-lg sm:text-xl text-zinc-600 mt-4">
-                                        More Features
-                                    </p>
-                                    <ul className="space-y-2 text-zinc-600 text-sm sm:text-lg mt-2">
-                                        {[
-                                            "500+ Flashcards for every chapter",
+                                            "Chapter-wise study guides",
+                                            "450+ Flashcards for every chapter",
                                             "Complete list of significant dates",
                                             "Directory of important people",
+                                            "Interactive Canadian Map",
                                             "Comprehensive Q&A",
                                         ].map((text, index) => (
                                             <li
@@ -897,6 +1107,7 @@ export default function Premium({ auth }) {
                                             </li>
                                         ))}
                                     </ul>
+
                                     <p className="flex items-center bg-slate-100 text-sm sm:text-lg text-zinc-600 mt-4 rounded-3xl">
                                         <svg
                                             width="25"
@@ -953,31 +1164,14 @@ export default function Premium({ auth }) {
                                     </p>
                                     <ul className="space-y-2 text-zinc-600 text-sm sm:text-lg mt-2">
                                         {[
-                                            "Access to over 700+ test questions",
+                                            "Access to over 850+ test questions",
                                             "Practice tests for each chapter",
                                             "Unlimited exam simulators",
-                                            "Personalized study guides",
-                                        ].map((text, index) => (
-                                            <li
-                                                key={index}
-                                                className="flex items-center"
-                                            >
-                                                <FontAwesomeIcon
-                                                    icon={faCheck}
-                                                    className="mr-2"
-                                                />
-                                                {text}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                    <p className="text-lg sm:text-xl text-zinc-600 mt-4">
-                                        More Features
-                                    </p>
-                                    <ul className="space-y-2 text-zinc-600 text-sm sm:text-lg mt-2">
-                                        {[
-                                            "500+ Flashcards for every chapter",
+                                            "Chapter-wise study guides",
+                                            "450+ Flashcards for every chapter",
                                             "Complete list of significant dates",
                                             "Directory of important people",
+                                            "Interactive Canadian Map",
                                             "Comprehensive Q&A",
                                         ].map((text, index) => (
                                             <li
@@ -992,20 +1186,37 @@ export default function Premium({ auth }) {
                                             </li>
                                         ))}
                                     </ul>
+                                    <p className="flex items-center bg-slate-100 text-sm sm:text-lg text-zinc-600 mt-4 rounded-3xl">
+                                        <svg
+                                            width="25"
+                                            height="25"
+                                            viewBox="0 0 25 25"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fillRule="evenodd"
+                                                clipRule="evenodd"
+                                                d="M3.87752 5.33241C3.5 5.87028 3.5 7.46907 3.5 10.6667V12.2414C3.5 17.8794 7.73896 20.6155 10.3986 21.7773C11.12 22.0924 11.4807 22.25 12.5 22.25C13.5193 22.25 13.88 22.0924 14.6014 21.7773C17.261 20.6155 21.5 17.8794 21.5 12.2414V10.6667C21.5 7.46907 21.5 5.87028 21.1225 5.33241C20.745 4.79454 19.2417 4.27996 16.2351 3.25079L15.6623 3.05472C14.095 2.51824 13.3114 2.25 12.5 2.25C11.6886 2.25 10.905 2.51824 9.33772 3.05472L8.76491 3.25079C5.75832 4.27996 4.25503 4.79454 3.87752 5.33241ZM15.5595 10.7495C15.8353 10.4405 15.8085 9.96642 15.4995 9.69055C15.1905 9.41467 14.7164 9.44151 14.4405 9.75049L11.4286 13.1239L10.5595 12.1505C10.2836 11.8415 9.80947 11.8147 9.50049 12.0905C9.19151 12.3664 9.16467 12.8405 9.44055 13.1495L10.8691 14.7495C11.0114 14.9089 11.2149 15 11.4286 15C11.6422 15 11.8457 14.9089 11.988 14.7495L15.5595 10.7495Z"
+                                                fill="#5459E8"
+                                            />
+                                        </svg>
+                                        Pass Guarantee (100% money back)
+                                    </p>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </section>
 
-                <section className="container mx-auto px-4 md:px-10 lg:px-2 py-8 bg-slate-100">
+                <section className="container mx-auto px-4 md:px-10 lg:px-2 py-8 ">
                     {/* FAQ Heading */}
                     <p className="text-sm sm:text-base text-indigo-600 mb-4 mt-8 text-center">
-                        Common FAQs
+                        COMMON FAQS
                     </p>
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center">
-                        Your questions, answered
-                    </h1>
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center">
+                        Your Questions, Answered
+                    </h2>
 
                     {/* FAQ Accordion */}
                     <div className="mx-auto px-4 md:px-10 lg:px-64 py-8">
