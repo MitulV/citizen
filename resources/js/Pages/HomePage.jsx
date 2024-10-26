@@ -899,7 +899,7 @@ export default function HomePage({ auth, chapters }) {
                                 <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                     <div>
                                         <p className="text-xl font-bold mb-2 text-left">
-                                            “Passed on my first attempt”
+                                            “Passed On My First Attempt”
                                         </p>
                                         <p className="text-sm mb-2 text-gray-500 text-left ">
                                             I was really nervous about the
@@ -1097,8 +1097,8 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                     <div className="container mx-auto mt-16">
                         <h2 className=" text-2xl md:text-4xl font-bold mt-10 mb-5 text-center">
-                            What to remember before attending a Canadian
-                            citizenship test?
+                            What to Remember Before Attending a Canadian
+                            Citizenship Test?
                         </h2>
                         <h3 className="text-xl md:text-2xl font-bold mt-6 mb-2">
                             Eligibility for Canadian Citizenship
@@ -1216,7 +1216,7 @@ export default function HomePage({ auth, chapters }) {
                 <section className="container mx-auto md:block py-16 bg-slate-50  px-4 md:px-8 lg:px-8  xl:px-36">
                     <div className="px-4 md:px-16 lg:px-8  xl:px-36">
                         <h2 className="text-2xl md:text-4xl font-bold mb-6 text-start">
-                            Tips to pass Canadian Citizenship Test in One
+                            Tips to Pass Canadian Citizenship Test in One
                             Attempt
                         </h2>
                         <div className="flex items-center mb-2">
