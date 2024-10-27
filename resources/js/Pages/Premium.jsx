@@ -10,9 +10,23 @@ import {
     faCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
 import GuestLayout from "@/Layouts/GuestLayout";
-import { Accordion } from "flowbite-react";
+// import { Accordion } from "flowbite-react";
+
+import {
+    Accordion,
+    AccordionHeader,
+    AccordionBody,
+} from "@material-tailwind/react";
 
 export default function Premium({ auth }) {
+    const [open, setOpen] = React.useState(1);
+
+    const handleOpen = (value) => setOpen(open === value ? 0 : value);
+
+    const CUSTOM_ANIMATION = {
+        mount: { scale: 1 },
+        unmount: { scale: 0.9 },
+    };
     return (
         <>
             <GuestLayout user={auth.user}>
@@ -1220,85 +1234,178 @@ export default function Premium({ auth }) {
 
                     {/* FAQ Accordion */}
                     <div className="mx-auto px-4 md:px-10 lg:px-64 py-8">
-                        <Accordion className="bg-white border-none">
-                            {/* FAQ Item 1 */}
-                            <Accordion.Panel>
-                                <Accordion.Title className="mb-2">
-                                    Which plan is best for me?
-                                </Accordion.Title>
-                                <Accordion.Content>
-                                    <p className="mb-2 text-sm sm:text-base">
-                                        Studying on your own can be tough
-                                        because there's so much information to
-                                        retain. Our "Learn-Quiz-Learn" framework
-                                        is a proven approach that has helped
-                                        thousands of learners across Canada pass
-                                        their tests, bringing them one step
-                                        closer to Canadian citizenship.
-                                    </p>
-                                </Accordion.Content>
-                            </Accordion.Panel>
+                        <Accordion
+                            icon={
+                                <svg
+                                    className={`transition-transform duration-500 ${
+                                        open === 1 ? "-rotate-180" : "rotate-0"
+                                    }`}
+                                    width="16"
+                                    height="11"
+                                    viewBox="0 0 16 11"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1.88 0.810059L8 6.91673L14.12 0.810059L16 2.69006L8 10.6901L0 2.69006L1.88 0.810059Z"
+                                        fill="#141414"
+                                    />
+                                </svg>
+                            }
+                            animate={CUSTOM_ANIMATION}
+                            open={open === 1}
+                            className="mb-2 rounded-lg border border-blue-gray-100 px-4 bg-white"
+                        >
+                            <AccordionHeader
+                                onClick={() => handleOpen(1)}
+                                className={`border-b-0 transition-colors ${
+                                    open === 1
+                                        ? "text-blue-500 hover:!text-blue-700"
+                                        : ""
+                                }`}
+                            >
+                                Which plan is best for me?
+                            </AccordionHeader>
+                            <AccordionBody className="pt-0 text-base font-normal">
+                                Studying on your own can be tough because
+                                there's so much information to retain. Our
+                                "Learn-Quiz-Learn" framework is a proven
+                                approach that has helped thousands of learners
+                                across Canada pass their tests, bringing them
+                                one step closer to Canadian citizenship.
+                            </AccordionBody>
+                        </Accordion>
 
-                            {/* FAQ Item 2 */}
-                            <Accordion.Panel className="mt-8 border-none">
-                                <Accordion.Title className="mb-2">
-                                    I have only a few days left for the exam,
-                                    will this help me?
-                                </Accordion.Title>
-                                <Accordion.Content>
-                                    <p className="mb-2 text-sm sm:text-base">
-                                        Studying on your own can be tough
-                                        because there's so much information to
-                                        retain. Our "Learn-Quiz-Learn" framework
-                                        is a proven approach that has helped
-                                        thousands of learners across Canada pass
-                                        their tests, bringing them one step
-                                        closer to Canadian citizenship.
-                                    </p>
-                                </Accordion.Content>
-                            </Accordion.Panel>
+                        <Accordion
+                            icon={
+                                <svg
+                                    className={`transition-transform duration-500 ${
+                                        open === 2 ? "-rotate-180" : "rotate-0"
+                                    }`}
+                                    width="16"
+                                    height="11"
+                                    viewBox="0 0 16 11"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1.88 0.810059L8 6.91673L14.12 0.810059L16 2.69006L8 10.6901L0 2.69006L1.88 0.810059Z"
+                                        fill="#141414"
+                                    />
+                                </svg>
+                            }
+                            animate={CUSTOM_ANIMATION}
+                            open={open === 2}
+                            className="mb-2 rounded-lg border border-blue-gray-100 px-4 bg-white"
+                        >
+                            <AccordionHeader
+                                onClick={() => handleOpen(2)}
+                                className={`border-b-0 transition-colors ${
+                                    open === 2
+                                        ? "text-blue-500 hover:!text-blue-700"
+                                        : ""
+                                }`}
+                            >
+                                I have only a few days left for the exam, will
+                                this help me?
+                            </AccordionHeader>
+                            <AccordionBody className="pt-0 text-base font-normal">
+                                Studying on your own can be tough because
+                                there's so much information to retain. Our
+                                "Learn-Quiz-Learn" framework is a proven
+                                approach that has helped thousands of learners
+                                across Canada pass their tests, bringing them
+                                one step closer to Canadian citizenship.
+                            </AccordionBody>
+                        </Accordion>
 
-                            {/* FAQ Item 3 */}
-                            <Accordion.Panel className="mt-8 border-none">
-                                <Accordion.Title className="mb-2">
-                                    I have already attended the test and have
-                                    knowledge about the question pattern, should
-                                    I join here?
-                                </Accordion.Title>
-                                <Accordion.Content>
-                                    <p className="mb-2 text-sm sm:text-base">
-                                        Studying on your own can be tough
-                                        because there's so much information to
-                                        retain. Our "Learn-Quiz-Learn" framework
-                                        is a proven approach that has helped
-                                        thousands of learners across Canada pass
-                                        their tests, bringing them one step
-                                        closer to Canadian citizenship.
-                                    </p>
-                                </Accordion.Content>
-                            </Accordion.Panel>
+                        <Accordion
+                            icon={
+                                <svg
+                                    className={`transition-transform duration-500 ${
+                                        open === 3 ? "-rotate-180" : "rotate-0"
+                                    }`}
+                                    width="16"
+                                    height="11"
+                                    viewBox="0 0 16 11"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1.88 0.810059L8 6.91673L14.12 0.810059L16 2.69006L8 10.6901L0 2.69006L1.88 0.810059Z"
+                                        fill="#141414"
+                                    />
+                                </svg>
+                            }
+                            animate={CUSTOM_ANIMATION}
+                            open={open === 3}
+                            className="mb-2 rounded-lg border border-blue-gray-100 px-4 bg-white"
+                        >
+                            <AccordionHeader
+                                onClick={() => handleOpen(3)}
+                                className={`border-b-0 transition-colors ${
+                                    open === 3
+                                        ? "text-blue-500 hover:!text-blue-700"
+                                        : ""
+                                }`}
+                            >
+                                I have already attended the test and have
+                                knowledge about the question pattern, should I
+                                join here?
+                            </AccordionHeader>
+                            <AccordionBody className="pt-0 text-base font-normal">
+                                Studying on your own can be tough because
+                                there's so much information to retain. Our
+                                "Learn-Quiz-Learn" framework is a proven
+                                approach that has helped thousands of learners
+                                across Canada pass their tests, bringing them
+                                one step closer to Canadian citizenship.
+                            </AccordionBody>
+                        </Accordion>
 
-                            {/* FAQ Item 4 */}
-                            <Accordion.Panel className="mt-8 border-none">
-                                <Accordion.Title className="mb-2">
-                                    How can I be sure that premium will help me
-                                    pass?
-                                </Accordion.Title>
-                                <Accordion.Content>
-                                    <p className="mb-2 text-sm sm:text-base">
-                                        Studying on your own can be tough
-                                        because there's so much information to
-                                        retain. Our "Learn-Quiz-Learn" framework
-                                        is a proven approach that has helped
-                                        thousands of learners across Canada pass
-                                        their tests, bringing them one step
-                                        closer to Canadian citizenship.
-                                    </p>
-                                </Accordion.Content>
-                            </Accordion.Panel>
+                        <Accordion
+                            icon={
+                                <svg
+                                    className={`transition-transform duration-500 ${
+                                        open === 4 ? "-rotate-180" : "rotate-0"
+                                    }`}
+                                    width="16"
+                                    height="11"
+                                    viewBox="0 0 16 11"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1.88 0.810059L8 6.91673L14.12 0.810059L16 2.69006L8 10.6901L0 2.69006L1.88 0.810059Z"
+                                        fill="#141414"
+                                    />
+                                </svg>
+                            }
+                            animate={CUSTOM_ANIMATION}
+                            open={open === 4}
+                            className="mb-2 rounded-lg border border-blue-gray-100 px-4 bg-white"
+                        >
+                            <AccordionHeader
+                                onClick={() => handleOpen(4)}
+                                className={`border-b-0 transition-colors ${
+                                    open === 4
+                                        ? "text-blue-500 hover:!text-blue-700"
+                                        : ""
+                                }`}
+                            >
+                                How can I be sure that premium will help me
+                                pass?
+                            </AccordionHeader>
+                            <AccordionBody className="pt-0 text-base font-normal">
+                                Studying on your own can be tough because
+                                there's so much information to retain. Our
+                                "Learn-Quiz-Learn" framework is a proven
+                                approach that has helped thousands of learners
+                                across Canada pass their tests, bringing them
+                                one step closer to Canadian citizenship.
+                            </AccordionBody>
                         </Accordion>
                     </div>
-
                     {/* Contact Section */}
                     <div className="container mx-auto mt-8">
                         <div className="max-w-4xl mx-auto p-4 flex flex-col md:flex-row items-start md:items-center">
