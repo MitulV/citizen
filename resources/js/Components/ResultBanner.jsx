@@ -5,6 +5,7 @@ import {
     faArrowUpRightFromSquare,
     faXmark,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "@inertiajs/react";
 
 export default function ResultBanner({ setIsBannerVisible }) {
     return (
@@ -78,13 +79,17 @@ export default function ResultBanner({ setIsBannerVisible }) {
                                 </h1>
                             </div>
                             <div className="container mx-auto px-4 mt-4 sm:mt-8 flex justify-center">
-                                <button className="bg-primary text-white px-16 py-2 rounded-full shadow-xl">
+                                <Link
+                                    href={route("premiumPage", {})}
+                                    as="button"
+                                    className="bg-primary text-white px-16 py-2 rounded-full shadow-xl"
+                                >
                                     Unlock all questions{" "}
                                     <FontAwesomeIcon
                                         icon={faArrowUpRightFromSquare}
                                         className="text-white ml-2"
                                     />
-                                </button>
+                                </Link>
                             </div>
                             <p className="text-xs md:text-sm mt-4 text-gray-600">
                                 Opens in new window, your results won’t be lost

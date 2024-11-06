@@ -24,7 +24,7 @@ export default function TestInfo({ chapterId, auth }) {
                         {/* Left Part: h1 Tag, p Tag, 2 Columns with Sentences, and Buttons */}
                         <div className="flex flex-col space-y-6 ">
                             <h1 className="text-2xl sm:text-3xl font-bold">
-                                Free Simulation Test
+                                Free Canadian Citizenship Test Practice
                             </h1>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -35,7 +35,7 @@ export default function TestInfo({ chapterId, auth }) {
                                             className="text-gray-500 text-sm mr-3"
                                         />
                                         <p className="text-gray-600 text-sm">
-                                            Chapter Weakness Analysis
+                                            Perfect for first-timers
                                         </p>
                                     </div>
                                     <div className="flex items-start">
@@ -44,7 +44,7 @@ export default function TestInfo({ chapterId, auth }) {
                                             className="text-gray-500 text-sm mr-3"
                                         />
                                         <p className="text-gray-600 text-sm">
-                                            Topic Weakness Analysis
+                                            Based on the official booklet
                                         </p>
                                     </div>
                                     <div className="flex items-start">
@@ -53,16 +53,7 @@ export default function TestInfo({ chapterId, auth }) {
                                             className="text-gray-500 text-sm mr-3"
                                         />
                                         <p className="text-gray-600 text-sm">
-                                            Instant Answer feedback
-                                        </p>
-                                    </div>
-                                    <div className="md:hidden flex items-start">
-                                        <FontAwesomeIcon
-                                            icon={faCheck}
-                                            className="text-gray-500 text-sm mr-3"
-                                        />
-                                        <p className="text-gray-600 text-sm">
-                                            The test is 45 minutes Long
+                                            Triple-checked for accuracy
                                         </p>
                                     </div>
                                 </div>
@@ -73,16 +64,7 @@ export default function TestInfo({ chapterId, auth }) {
                                             className="text-gray-500 text-sm mr-3"
                                         />
                                         <p className="text-gray-600 text-sm">
-                                            20 questions
-                                        </p>
-                                    </div>
-                                    <div className="flex items-start">
-                                        <FontAwesomeIcon
-                                            icon={faCheck}
-                                            className="text-gray-500 text-sm mr-3"
-                                        />
-                                        <p className="text-gray-600 text-sm">
-                                            The test is 45 minutes long
+                                            15 questions
                                         </p>
                                     </div>
                                     <div className="flex items-start">
@@ -92,6 +74,15 @@ export default function TestInfo({ chapterId, auth }) {
                                         />
                                         <p className="text-gray-600 text-sm">
                                             75% passing score
+                                        </p>
+                                    </div>
+                                    <div className="flex items-start">
+                                        <FontAwesomeIcon
+                                            icon={faCheck}
+                                            className="text-gray-500 text-sm mr-3"
+                                        />
+                                        <p className="text-gray-600 text-sm">
+                                            30 minutes long
                                         </p>
                                     </div>
                                 </div>
@@ -114,9 +105,13 @@ export default function TestInfo({ chapterId, auth }) {
                                     Start Now
                                 </Link>
 
-                                <button className="bg-white text-balck border border-primary px-6 py-2 rounded-full flex-1">
+                                <Link
+                                    href={route("premiumPage", {})}
+                                    as="button"
+                                    className="bg-white text-balck border border-primary px-6 py-2 rounded-full flex-1"
+                                >
                                     Unlock All Chapters
-                                </button>
+                                </Link>
                             </div>
                         </div>
                         {/* Right Part: Image */}
@@ -136,32 +131,32 @@ export default function TestInfo({ chapterId, auth }) {
                             <h2 className="text-2xl sm:text-2xl font-bold mb-4">
                                 About this test
                             </h2>
-                            <h3 className="text-lg sm:text-sm text-gray-500 mb-2">
+                            {/* <h3 className="text-lg sm:text-sm text-gray-500 mb-2">
                                 <FontAwesomeIcon
                                     icon={faClock}
                                     className="mr-2"
                                 />
                                 30 minutes to complete
-                            </h3>
+                            </h3> */}
                             <p className="text-base sm:text-sm mb-4 text-gray-600">
-                                This practice test is designed to assess your
-                                understanding of the content from Chapter 1 of
-                                Discover Canada. This chapter covers the Oath of
-                                Citizenship and the process of applying for
-                                Canadian citizenship. After completing the test,
-                                you'll receive an AI-powered Weakness Analysis,
-                                which provides a detailed evaluation of any
-                                areas where you may need additional study. This
-                                feature is useful for identifying gaps in your
-                                knowledge and helps you focus on topics that
-                                require more attention.
+                                This free Canadian citizenship practice test
+                                helps you check your knowledge about Canada. It
+                                has 15 multiple-choice questions that you should
+                                complete in 30 minutes. After finishing, you’ll
+                                find out if you passed or failed, along with
+                                feedback to show where you can improve. The
+                                questions come from the official Discover Canada
+                                Handbook, similar to the real citizenship test,
+                                which has 20 questions that must be answered
+                                correctly in 45 minutes. Good luck with your
+                                practice and the actual test!
                             </p>
                         </div>
 
                         {/* Right Side */}
                         <div className="w-full md:w-1/2 p-8">
                             <h2 className="text-2xl sm:text-3xl font-bold mb-8">
-                                What to expect on the actual test
+                                What to expect on the test
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 {/* First row */}
@@ -170,7 +165,7 @@ export default function TestInfo({ chapterId, auth }) {
                                         Questions
                                     </h3>
                                     <h4 className="text-lg sm:text-lg font-bold mb-2">
-                                        20
+                                        15
                                     </h4>
                                 </div>
                                 <div className="bg-slate-50">
@@ -178,7 +173,7 @@ export default function TestInfo({ chapterId, auth }) {
                                         Allowed to pass
                                     </h3>
                                     <h4 className="text-lg sm:text-lg font-bold mb-2">
-                                        5 mistakes
+                                        3 mistakes
                                     </h4>
                                 </div>
                                 {/* Second row */}
@@ -192,10 +187,10 @@ export default function TestInfo({ chapterId, auth }) {
                                 </div>
                                 <div className="bg-slate-50">
                                     <h3 className="text-sm text-gray-600 sm:text-lg  mb-2">
-                                        Your Score:
+                                        Time:
                                     </h3>
                                     <h4 className="text-lg sm:text-lg font-bold mb-2">
-                                        13%
+                                        30 minutes to complete
                                     </h4>
                                 </div>
                             </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Head, router } from "@inertiajs/react";
+import { Head, Link, router } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCheck,
@@ -322,7 +322,7 @@ export default function TestStart({
                     {/* Right Side (spans 4 columns on large screens) */}
                     <div className="order-1 md:h-64 lg:order-2 lg:col-span-4 flex flex-col space-y-4 border rounded-xl bg-white p-10">
                         <h1 className="hidden sm:flex text-xl text-gray-800 mb-4">
-                            Featured Highlights
+                            Your Progress
                         </h1>
                         {/* Circles for Small Screens */}
                         <div className="flex space-x-1 mb-4 sm:hidden">
@@ -358,13 +358,17 @@ export default function TestStart({
                         </div>
                         {/* Buttons outside the main right div, only visible on large screens */}
                         <div className="hidden lg:flex order-3 lg:col-span-4 flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4 lg:justify-end lg:py-4">
-                            <button className="bg-white text-black  border border-primary px-6 py-2 rounded-full flex-1 flex items-center justify-center">
+                            <Link
+                                href={route("homePage", {})}
+                                as="button"
+                                className="bg-white text-black  border border-primary px-6 py-2 rounded-full flex-1 flex items-center justify-center"
+                            >
                                 <FontAwesomeIcon
                                     icon={faChevronLeft}
                                     className="mr-4 text-sm"
                                 />
                                 All Tests
-                            </button>
+                            </Link>
 
                             <button
                                 onClick={handleReset}
