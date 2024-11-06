@@ -11,15 +11,17 @@ use Illuminate\Support\Facades\Route;
 class TestController extends Controller
 {
 
-  public function index($chapter_id)
+  public function index()
   {
+    $chapter_id = 12;
     return Inertia::render('TestInfo', [
       'chapterId' => $chapter_id
     ]);
   }
 
-  public function testPage(Request $request, $chapterId)
+  public function testPage(Request $request)
   {
+    $chapterId = 12;
     if ($request->filled('questionId') && $request->filled('answerId') && $request->filled('testId')) {
       // Answer validation logic
       $questionId = $request->input('questionId');

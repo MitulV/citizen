@@ -74,10 +74,7 @@ export default function HomePage({ auth, chapters }) {
                             <Link
                                 as="button"
                                 className="bg-primary text-white text-lg md:text-xl xl:text-2xl font-bold px-8 md:px-12 xl:px-20 py-3 md:py-4 xl:py-5 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
-                                href={route("testInfoPage", {
-                                    chapter_id: 12,
-                                    auth,
-                                })}
+                                href={route("testInfoPage", {})}
                             >
                                 Take free practice tests
                             </Link>
@@ -869,10 +866,7 @@ export default function HomePage({ auth, chapters }) {
                     <Link
                         as="button"
                         className="bg-primary text-white text-lg md:text-xl xl:text-xl font-bold px-8 md:px-12 xl:px-16 py-3 md:py-4 xl:py-5 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
-                        href={route("testInfoPage", {
-                            chapter_id: 12,
-                            auth,
-                        })}
+                        href={route("testInfoPage", {})}
                     >
                         Take free practice tests
                     </Link>
@@ -1390,10 +1384,7 @@ export default function HomePage({ auth, chapters }) {
                                 <Link
                                     as="button"
                                     className="bg-primary text-white text-lg md:text-xl xl:text-xl font-bold px-8 md:px-7 xl:px-16 py-3 md:py-2 xl:py-5 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
-                                    href={route("testInfoPage", {
-                                        chapter_id: 12,
-                                        auth,
-                                    })}
+                                    href={route("testInfoPage", {})}
                                 >
                                     Take free practice tests
                                 </Link>

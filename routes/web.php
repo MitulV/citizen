@@ -103,10 +103,11 @@ Route::get('/faqs', function () {
 
 Route::get('/', [HomePageController::class, 'index'])->name('homePage');
 Route::get('/premium', [PremiumPageController::class, 'index'])->name('premiumPage');
-Route::get('/canadian-citizenship-test/{chapter_id}', [TestController::class, 'index'])->name('testInfoPage');
-Route::get('/test/{chapterId}', [TestController::class, 'testPage'])->name('testPage.Index');
-Route::post('/test/{chapterId}', [TestController::class, 'testPage'])->name('testPage');
-Route::post('/test-results', [TestController::class, 'testResult'])->name('testResultPage');
+
+Route::get('/canadian-citizenship-test', [TestController::class, 'index'])->name('testInfoPage');
+//Route::get('/test/{chapterId}', [TestController::class, 'testPage'])->name('testPage.Index');
+Route::post('/canadian-citizenship-test', [TestController::class, 'testPage'])->name('testPage');
+Route::post('/canadian-citizenship-test-results', [TestController::class, 'testResult'])->name('testResultPage');
 
 Route::get('/create-topics', [TopicController::class, 'create'])->name('createTopic.create');
 Route::post('/create-topics', [TopicController::class, 'store'])->name('createTopic.store');
