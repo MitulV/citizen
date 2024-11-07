@@ -19,7 +19,7 @@ import {
 } from "@material-tailwind/react";
 
 export default function Premium({ auth }) {
-    const [open, setOpen] = React.useState(1);
+    const [open, setOpen] = React.useState(0);
 
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
