@@ -94,7 +94,7 @@ export default function TestStart({
     const handleAnswerSelection = (questionId, answerId, testId, index) => {
         currentQuestion.isOptionSelected = true;
         router.post(
-            `/canadian-citizenship-test`,
+            `/canadian-citizenship-test-practise`,
             { questionId, answerId, testId, chapterId, index },
             { preserveState: true, replace: true, preserveScroll: true }
         );
@@ -151,7 +151,7 @@ export default function TestStart({
 
     const handleReset = () => {
         router.post(
-            `/canadian-citizenship-test`,
+            `/canadian-citizenship-test-practise`,
             {},
             { preserveState: false, replace: true }
         );

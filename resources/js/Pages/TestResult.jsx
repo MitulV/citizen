@@ -70,9 +70,9 @@ export default function TestStart({ result, totalTimeTaken }) {
                                 <button className="bg-primary text-white px-6 py-3 rounded-full mt-6 w-3/4 sm:w-full">
                                     Pass with Premium Guaranteed
                                 </button>
-                                <h2 className="text-sm mt-4">
+                                <p className="text-sm mt-4">
                                     100% Money Back Guarantee
-                                </h2>
+                                </p>
                             </div>
                         </div>
 
@@ -130,8 +130,6 @@ export default function TestStart({ result, totalTimeTaken }) {
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                     {[
                                         "Restart this test",
-                                        "Continue to the next test",
-                                        "Review your answers",
                                         "Unlock all 600+ Questions",
                                     ].map((title, index) => (
                                         <div

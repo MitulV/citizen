@@ -131,13 +131,13 @@ export default function TestInfo({ chapterId, auth }) {
                             <h2 className="text-2xl sm:text-2xl font-bold mb-4">
                                 About this test
                             </h2>
-                            {/* <h3 className="text-lg sm:text-sm text-gray-500 mb-2">
+                            {/* <p className="text-lg sm:text-sm text-gray-500 mb-2">
                                 <FontAwesomeIcon
                                     icon={faClock}
                                     className="mr-2"
                                 />
                                 30 minutes to complete
-                            </h3> */}
+                            </p> */}
                             <p className="text-base sm:text-sm mb-4 text-gray-600">
                                 This free Canadian citizenship practice test
                                 helps you check your knowledge about Canada. It
@@ -161,37 +161,37 @@ export default function TestInfo({ chapterId, auth }) {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 {/* First row */}
                                 <div className="bg-slate-50">
-                                    <h3 className="text-sm text-gray-600 sm:text-lg  mb-2">
+                                    <p className="text-sm text-gray-600 sm:text-lg  mb-2">
                                         Questions
-                                    </h3>
-                                    <h4 className="text-lg sm:text-lg font-bold mb-2">
+                                    </p>
+                                    <p className="text-lg sm:text-lg font-bold mb-2">
                                         15
-                                    </h4>
+                                    </p>
                                 </div>
                                 <div className="bg-slate-50">
-                                    <h3 className="text-sm text-gray-600 sm:text-lg  mb-2">
+                                    <p className="text-sm text-gray-600 sm:text-lg  mb-2">
                                         Allowed to pass
-                                    </h3>
-                                    <h4 className="text-lg sm:text-lg font-bold mb-2">
+                                    </p>
+                                    <p className="text-lg sm:text-lg font-bold mb-2">
                                         3 mistakes
-                                    </h4>
+                                    </p>
                                 </div>
                                 {/* Second row */}
                                 <div className="bg-slate-50">
-                                    <h3 className="text-sm text-gray-600 sm:text-lg  mb-2">
+                                    <p className="text-sm text-gray-600 sm:text-lg  mb-2">
                                         Passing Score
-                                    </h3>
-                                    <h4 className="text-lg sm:text-lg font-bold mb-2">
+                                    </p>
+                                    <p className="text-lg sm:text-lg font-bold mb-2">
                                         75%{" "}
-                                    </h4>
+                                    </p>
                                 </div>
                                 <div className="bg-slate-50">
-                                    <h3 className="text-sm text-gray-600 sm:text-lg  mb-2">
+                                    <p className="text-sm text-gray-600 sm:text-lg  mb-2">
                                         Time:
-                                    </h3>
-                                    <h4 className="text-lg sm:text-lg font-bold mb-2">
+                                    </p>
+                                    <p className="text-lg sm:text-lg font-bold mb-2">
                                         30 minutes to complete
-                                    </h4>
+                                    </p>
                                 </div>
                             </div>
                         </div>
