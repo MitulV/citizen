@@ -325,11 +325,11 @@ export default function TestStart({
                             Your Progress
                         </h1>
                         {/* Circles for Small Screens */}
-                        <div className="flex space-x-1 mb-4 sm:hidden">
+                        <div className="flex space-x-1 mb-4 sm:mb-0 sm:hidden">
                             {questionResults.map((result) => (
                                 <div
                                     key={result.index}
-                                    className={`w-8 h-2 rounded-full ${
+                                    className={`w-10 h-2 rounded-full ${
                                         result.result === "pass"
                                             ? "bg-green-500"
                                             : result.result === "fail"
@@ -339,6 +339,7 @@ export default function TestStart({
                                 />
                             ))}
                         </div>
+
                         {/* Circles for Larger Screens */}
                         <div className="hidden sm:grid grid-cols-5 gap-2 mb-4">
                             {questionResults.map((result) => (
