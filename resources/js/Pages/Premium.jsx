@@ -56,7 +56,7 @@ export default function Premium({ auth }) {
                             need to pass the test is all in one place!
                         </p>
                         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
-                            <button className="bg-primary text-white px-10 py-4 rounded-full text-base lg:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out">
+                            <button className="bg-primary font-bold text-white px-10 py-4 rounded-full text-base lg:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out">
                                 Get all exam-like questions
                             </button>
                             <img
@@ -380,7 +380,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className=" container mx-auto  bg-white lg:col-span-12 flex flex-col items-center justify-center px-6 md:px-16 lg:px-32 xl:px-28 py-20">
+                <section className=" container mx-auto  bg-white lg:col-span-12 flex flex-col items-center justify-center px-6 md:px-16 lg:px-32 xl:px-28 py-10">
                     <h2 className="text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-bold mb-4 text-center">
                         A Fun And Easy Way To Prepare For Your Test!
                     </h2>
@@ -410,7 +410,7 @@ export default function Premium({ auth }) {
                         resources.
                     </p>
                 </section>
-                <section className="container mx-auto relative flex flex-col items-center py-20 px-4 md:px-10 bg-white sm:block md:hidden lg:hidden xl:hidden">
+                <section className="container mx-auto relative flex flex-col items-center px-4 md:px-10 bg-white sm:block md:hidden lg:hidden xl:hidden">
                     {/* Image */}
                     <img
                         src="/images/pass guarantee.png"
@@ -462,9 +462,10 @@ export default function Premium({ auth }) {
                 <section className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 sm:p-2 bg-slate-100 mt-10">
                     {/* Left Section: Text Content */}
                     <div className="lg:col-span-6 flex flex-col space-y-6 p-5 ">
-                        <p className="text-indigo-600 text-sm md:text-base lg:text-lg text-center">
+                        <p className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-indigo-600">
                             How it works
                         </p>
+
                         <p className="text-3xl lg:text-3xl xl:text-3xl font-extrabold text-center md:text-left px-md:px-0 lg:px-0">
                             It has never been so easy to pass the Canadian
                             Citizenship test
@@ -597,7 +598,7 @@ export default function Premium({ auth }) {
                     ></div>
                 </section>
 
-                <section className="container mx-auto px-2 py-8 bg-slate-50 px-6 xl:px-32">
+                <section className="container mx-auto px-2 py-8 bg-slate-50 xl:px-32">
                     {/* Heading */}
                     <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold mb-8 text-center mt-8">
                         Realistic Questions That Prepare You For The Actual
@@ -840,10 +841,7 @@ export default function Premium({ auth }) {
                     <p className="text-xs sm:text-sm md:text-base text-white mb-2 text-center mt-10">
                         A FASTER, SMARTER WAY TO STUDY
                     </p>
-                    <h2
-                        h2
-                        className="text-3xl  text-white mb-6 text-center  font-bold"
-                    >
+                    <h2 className="text-3xl  text-white mb-6 text-center  font-bold">
                         Pass The Citizenship Test
                     </h2>
 
