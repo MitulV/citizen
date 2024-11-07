@@ -48,7 +48,7 @@ export default function Premium({ auth }) {
                             Try.{" "}
                             <span className="text-indigo-600">Guaranteed!</span>
                         </h1>
-                        <p className="text-gray-700 text-xl  md:text-xl lg:text-xl leading-relaxed text-start">
+                        <p className="text-gray-700 text-lg  md:text-xl lg:text-xl leading-relaxed text-center">
                             Your complete toolkit for success: Get fully
                             prepared with over 850+ practice questions,
                             chapter-wise study guide, test simulations, 450+
@@ -62,10 +62,10 @@ export default function Premium({ auth }) {
                             <img
                                 src="/images/pass guarantee.png"
                                 alt="Pass Guarantee"
-                                className="h-14 w-auto mt-8"
+                                className="h-14 w-auto mt-8 "
                             />
                         </div>
-                        <p className="text-gray-700 text-base font-bold sm:text-lg lg:text-xl mt-4 text-start px-6">
+                        <p className="text-gray-700 text-base sm:text-lg lg:text-2xl  px-6 text-center">
                             Join over 18,300+ new citizens who have passed with
                             our help.
                         </p>
@@ -147,7 +147,7 @@ export default function Premium({ auth }) {
 
                     {/* Testimonials Section */}
                     <div className="lg:col-span-12 flex flex-col items-center space-y-8 p-4 px-6 mt-8">
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center px-6 ">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center px-3 ">
                             Why Learners Love The Citizentestprep Premium
                         </h2>
                         <div className="text-gray-800 text-lg flex flex-col lg:flex-row items-center lg:space-x-2">
@@ -196,115 +196,191 @@ export default function Premium({ auth }) {
 
                         {/* Responsive Testimonials */}
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-1 mx-4 sm:mx-10 lg:mx-1 xl:mx-8">
-                            <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
-                                <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
-                                    <div>
-                                        <h3 className="text-xl font-bold mb-2 text-left">
-                                            “Passed on my first attempt“
-                                        </h3>
-                                        <p className="text-sm mb-2 text-gray-500 text-left ">
-                                            I failed my Canadian citizenship
-                                            test initially. Then I found
-                                            CitizenTestPrep. The platform helped
-                                            me pass the exam with confidence.
-                                        </p>
+                        <section className="container mx-auto  mt-20  px-0 md:px-0 lg:px-5">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-1   xl:mx-8">
+                                <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
+                                    <div className="p-8 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
+                                        <div>
+                                            <p className="text-2xl font-bold mb-2 text-left">
+                                                “Passed On My First Attempt”
+                                            </p>
+                                            <p className="text-lg mb-2 text-gray-500 text-left ">
+                                                I was really nervous about the
+                                                Canadian Citizenship Test, but
+                                                this platform made a big
+                                                difference. The practice exams
+                                                helped me understand the
+                                                question patterns, and I passed
+                                                on my first try! If you're
+                                                preparing for the exam, you
+                                                should definitely join this
+                                                platform.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            {" "}
+                                            <hr className="border-1 border-gray-200 my-2" />
+                                        </div>
+
+                                        <div className="flex items-left mt-2">
+                                            <img
+                                                src="/images/review 3.png"
+                                                alt="Profile Picture"
+                                                className="w-12 h-12 rounded-full mr-2"
+                                            />
+                                            <div>
+                                                <p className="text-ellipsis text-sm font-bold text-gray-600">
+                                                    Jillian McAllister
+                                                </p>
+                                                <p className="text-sm text-gray-600">
+                                                    British Columbia
+                                                </p>
+                                            </div>
+                                            <div className="hidden sm:flex text-sm mt-4  ml-auto ">
+                                                <FontAwesomeIcon
+                                                    icon={faStar}
+                                                    className="text-greenStar"
+                                                />
+                                                <FontAwesomeIcon
+                                                    icon={faStar}
+                                                    className="text-greenStar"
+                                                />
+                                                <FontAwesomeIcon
+                                                    icon={faStar}
+                                                    className="text-greenStar"
+                                                />
+                                                <FontAwesomeIcon
+                                                    icon={faStar}
+                                                    className="text-greenStar"
+                                                />
+                                                <FontAwesomeIcon
+                                                    icon={faStar}
+                                                    className="text-greenStar"
+                                                />
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        {" "}
+                                </div>
+
+                                <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
+                                    <div className="p-8 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
+                                        <div>
+                                            <p className="text-2xl font-bold mb-2 text-left">
+                                                “Exactly What I Needed”
+                                            </p>
+                                            <p className="text-lg mb-14 text-gray-500 text-left">
+                                                If you want to prepare for the
+                                                Canadian Citizenship test, this
+                                                is the right place. The
+                                                chapter-wise practice tests were
+                                                exactly what I needed to fully
+                                                understand each section.
+                                            </p>
+                                        </div>
+                                        <hr className="border-1 border-gray-200  mb-3" />
+
+                                        <div className="flex items-left mb-2 mt-2">
+                                            <img
+                                                src="/images/review 2.png"
+                                                alt="Profile Picture"
+                                                className="w-12 h-12 rounded-full mr-2"
+                                            />
+                                            <div className="flex flex-col text-center sm:text-left">
+                                                <p className="text-ellipsis text-sm font-bold text-gray-600">
+                                                    Marcus Tremblay
+                                                </p>
+                                                <p className="text-sm text-gray-600">
+                                                    Nova Scotia
+                                                </p>
+                                            </div>
+                                            <div className="hidden sm:flex text-sm mt-4  ml-auto ">
+                                                <FontAwesomeIcon
+                                                    icon={faStar}
+                                                    className="text-greenStar"
+                                                />
+                                                <FontAwesomeIcon
+                                                    icon={faStar}
+                                                    className="text-greenStar"
+                                                />
+                                                <FontAwesomeIcon
+                                                    icon={faStar}
+                                                    className="text-greenStar"
+                                                />
+                                                <FontAwesomeIcon
+                                                    icon={faStar}
+                                                    className="text-greenStar"
+                                                />
+                                                <FontAwesomeIcon
+                                                    icon={faStar}
+                                                    className="text-greenStar"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
+                                    <div className="p-8 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
+                                        <div>
+                                            <h3 className="text-2xl font-bold mb-2 text-left">
+                                                “Best Resource For The Test”
+                                            </h3>
+                                            <p className="text-lg mb-10 text-gray-500 text-left">
+                                                I failed the test on my first
+                                                attempt and was looking for an
+                                                online platform to help me.
+                                                CitizenTestPrep is, without a
+                                                doubt, the best resource for the
+                                                Canadian Citizenship Test!
+                                            </p>
+                                        </div>
                                         <hr className="border-1 border-gray-200 my-2" />
-                                    </div>
 
-                                    <div className="flex items-left mt-2">
-                                        <img
-                                            src="/images/review 3.png"
-                                            alt="Profile Picture"
-                                            className="w-12 h-12 rounded-full mr-2"
-                                        />
-                                        <div>
-                                            <p className="text-ellipsis text-sm font-bold text-gray-600">
-                                                Jillian McAllister
-                                            </p>
-                                            <p className="text-sm text-gray-600">
-                                                British Columbia
-                                            </p>
+                                        <div className="flex items-left mb-2">
+                                            <img
+                                                src="/images/review 1.png"
+                                                alt="Profile Picture"
+                                                className="w-12 h-12 rounded-full mr-2"
+                                            />
+                                            <div>
+                                                <p className="text-ellipsis text-sm font-bold text-gray-600">
+                                                    Hitoshi Matsumoto
+                                                </p>
+                                                <p className="text-sm text-gray-600">
+                                                    Saskatchewan
+                                                </p>
+                                            </div>
+                                            <div className="hidden sm:flex text-sm mt-4  ml-auto ">
+                                                <FontAwesomeIcon
+                                                    icon={faStar}
+                                                    className="text-greenStar"
+                                                />
+                                                <FontAwesomeIcon
+                                                    icon={faStar}
+                                                    className="text-greenStar"
+                                                />
+                                                <FontAwesomeIcon
+                                                    icon={faStar}
+                                                    className="text-greenStar"
+                                                />
+                                                <FontAwesomeIcon
+                                                    icon={faStar}
+                                                    className="text-greenStar"
+                                                />
+                                                <FontAwesomeIcon
+                                                    icon={faStar}
+                                                    className="text-greenStar"
+                                                />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
-                                <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
-                                    <div>
-                                        <h3 className="text-xl font-bold mb-2 text-left">
-                                            “Exactly What I Needed”
-                                        </h3>
-                                        <p className="text-sm mb-14 text-gray-500 text-left">
-                                            If you want to prepare for the
-                                            Canadian Citizenship test, this
-                                            platform has everything you need,
-                                            especially the chapter-wise practice
-                                            tests.
-                                        </p>
-                                    </div>
-                                    <hr className="border-1 border-gray-200  mb-3" />
-
-                                    <div className="flex items-left mb-2 mt-2">
-                                        <img
-                                            src="/images/review 2.png"
-                                            alt="Profile Picture"
-                                            className="w-12 h-12 rounded-full mr-2"
-                                        />
-                                        <div className="flex flex-col text-center sm:text-left">
-                                            <p className="text-ellipsis text-sm font-bold text-gray-600">
-                                                Marcus Tremblay
-                                            </p>
-                                            <p className="text-sm text-gray-600">
-                                                Nova Scotia
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
-                                <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
-                                    <div>
-                                        <h3 className="text-xl font-bold mb-2 text-left">
-                                            “Best Resource For The Test”
-                                        </h3>
-                                        <p className="text-sm mb-10 text-gray-500 text-left">
-                                            After failing the test on my first
-                                            attempt, I used CitizenTestPrep
-                                            Premium, and it was the best
-                                            resource to pass the Canadian
-                                            Citizenship Test.
-                                        </p>
-                                    </div>
-                                    <hr className="border-1 border-gray-200 my-2" />
-
-                                    <div className="flex items-left mb-2">
-                                        <img
-                                            src="/images/review 1.png"
-                                            alt="Profile Picture"
-                                            className="w-12 h-12 rounded-full mr-2"
-                                        />
-                                        <div>
-                                            <p className="text-ellipsis text-sm font-bold text-gray-600">
-                                                Hitoshi Matsumoto
-                                            </p>
-                                            <p className="text-sm text-gray-600">
-                                                Saskatchewan
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </section>
                     </div>
                 </section>
 
-                <section className=" container mx-auto lg:col-span-12 flex flex-col items-center justify-center px-6 md:px-16 lg:px-32 xl:px-28">
+                <section className=" container mx-auto  bg-white lg:col-span-12 flex flex-col items-center justify-center px-6 md:px-16 lg:px-32 xl:px-28 py-20">
                     <h2 className="text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-bold mb-4 text-center">
                         A Fun And Easy Way To Prepare For Your Test!
                     </h2>
@@ -334,10 +410,59 @@ export default function Premium({ auth }) {
                         resources.
                     </p>
                 </section>
+                <section className="container mx-auto relative flex flex-col items-center py-20 px-4 md:px-10 bg-white sm:block md:hidden lg:hidden xl:hidden">
+                    {/* Image */}
+                    <img
+                        src="/images/pass guarantee.png"
+                        alt="Pass Guarantee Logo"
+                        className="w-60 h-28 md:w-96 md:h-40 lg:w-96 lg:h-40 xl:max-w-6xl xl:h-40"
+                    />
+
+                    {/* Main Heading */}
+                    <p className="text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg text-black text-center leading-relaxed mt-10 lg:mx-32">
+                        At CitizenTestPrep Premium, we believe you will succeed
+                        using our high-quality study materials. If you go
+                        through our resources and don’t pass the Canadian
+                        citizenship test, we’ll give you your money back.
+                        <br />
+                        Our guarantee shows how much we trust our program. Get
+                        ready for your Canadian citizenship test with
+                        CitizenTestPrep Premium and join many others who have
+                        succeeded!
+                    </p>
+
+                    {/* Subheading */}
+                    <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-indigo-700 font-extrabold text-center mt-10">
+                        Get started today
+                    </p>
+
+                    {/* Bottom Left Half Circle */}
+                    <div
+                        className="
+        absolute bottom-0 left-0 
+        sm:h-40 sm:w-20 
+        md:h-60 md:w-30 
+        lg:h-80 lg:w-40 
+        xl:h-96 xl:w-48 
+        bg-red-300 rounded-r-full z-20 overflow-hidden"
+                    ></div>
+
+                    {/* Top Right Half Circle */}
+                    <div
+                        className="
+        absolute top-0 right-0 
+        sm:h-40 sm:w-20 
+        md:h-60 md:w-30 
+        lg:h-80 lg:w-40 
+        xl:h-96 xl:w-48 
+        bg-amber-200 rounded-l-full z-10 overflow-hidden"
+                    ></div>
+                </section>
+
                 <section className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 sm:p-2 bg-slate-100 mt-10">
                     {/* Left Section: Text Content */}
-                    <div className="lg:col-span-6 flex flex-col space-y-6 p-6 ">
-                        <p className="text-indigo-600 text-sm md:text-base lg:text-lg">
+                    <div className="lg:col-span-6 flex flex-col space-y-6 p-5 ">
+                        <p className="text-indigo-600 text-sm md:text-base lg:text-lg text-center">
                             How it works
                         </p>
                         <p className="text-3xl lg:text-3xl xl:text-3xl font-extrabold text-center md:text-left px-md:px-0 lg:px-0">
@@ -418,13 +543,12 @@ export default function Premium({ auth }) {
                             <img
                                 src="/images/result2.jpg"
                                 alt="Sample"
-                                className="w-96 h-96 rounded-xl "
+                                className="w-72 h-80 rounded-xl "
                             />
                         </div>
                     </div>
                 </section>
-
-                <section className="container mx-auto relative flex flex-col items-center py-20 px-4 md:px-10 bg-white ">
+                <section className="hidden container mx-auto relative sm:flex flex-col items-center py-20 px-4 md:px-10 bg-white ">
                     {/* Image */}
                     <img
                         src="/images/pass guarantee.png"
@@ -433,7 +557,7 @@ export default function Premium({ auth }) {
                     />
 
                     {/* Main Heading */}
-                    <p className="text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg text-black text-center leading-relaxed mt-10 mx-32">
+                    <p className="text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg text-black text-center leading-relaxed mt-10 lg:mx-32">
                         At CitizenTestPrep Premium, we believe you will succeed
                         using our high-quality study materials. If you go
                         through our resources and don’t pass the Canadian
@@ -453,27 +577,27 @@ export default function Premium({ auth }) {
                     {/* Bottom Left Half Circle */}
                     <div
                         className="
-  absolute bottom-0 left-0 
-  sm:h-40 sm:w-20 
-  md:h-60 md:w-30 
-  lg:h-80 lg:w-40 
-  xl:h-96 xl:w-48 
-  bg-red-300 rounded-r-full z-20 overflow-hidden"
+        absolute bottom-0 left-0 
+        sm:h-40 sm:w-20 
+        md:h-60 md:w-30 
+        lg:h-80 lg:w-40 
+        xl:h-96 xl:w-48 
+        bg-red-300 rounded-r-full z-20 overflow-hidden"
                     ></div>
 
                     {/* Top Right Half Circle */}
                     <div
                         className="
-  absolute top-0 right-0 
-  sm:h-40 sm:w-20 
-  md:h-60 md:w-30 
-  lg:h-80 lg:w-40 
-  xl:h-96 xl:w-48 
-  bg-amber-200 rounded-l-full z-10 overflow-hidden"
+        absolute top-0 right-0 
+        sm:h-40 sm:w-20 
+        md:h-60 md:w-30 
+        lg:h-80 lg:w-40 
+        xl:h-96 xl:w-48 
+        bg-amber-200 rounded-l-full z-10 overflow-hidden"
                     ></div>
                 </section>
 
-                <section className="container mx-auto px-2 py-8 bg-slate-50 xl:px-32">
+                <section className="container mx-auto px-2 py-8 bg-slate-50 px-6 xl:px-32">
                     {/* Heading */}
                     <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold mb-8 text-center mt-8">
                         Realistic Questions That Prepare You For The Actual
@@ -707,15 +831,21 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container mx-auto px-4 md:px-10 py-10 bg-indigo-600 xl:px-32 relative overflow-hidden">
+                <section className="container mx-auto px-10 md:px-10 py-20 bg-indigo-600 xl:px-32 relative overflow-hidden">
                     {/* Decorative elements */}
                     <div className="absolute bottom-0 left-0 h-20 w-10 bg-orange-400 rounded-r-full z-20 overflow-hidden hidden sm:block"></div>
                     <div className="absolute top-0 right-0 h-20 w-10 bg-amber-400 rounded-l-full z-10 overflow-hidden hidden sm:block"></div>
 
                     {/* Subheading */}
-                    <p className="text-xs sm:text-sm md:text-base text-white mb-6 text-center mt-10">
+                    <p className="text-xs sm:text-sm md:text-base text-white mb-2 text-center mt-10">
                         A FASTER, SMARTER WAY TO STUDY
                     </p>
+                    <h2
+                        h2
+                        className="text-3xl  text-white mb-6 text-center  font-bold"
+                    >
+                        Pass The Citizenship Test
+                    </h2>
 
                     {/* Main Heading */}
                     <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 text-center text-white hidden lg:block md:px-40">
@@ -734,12 +864,12 @@ export default function Premium({ auth }) {
 
                         {/* Right Column Content */}
                         <div className="flex flex-col justify-center space-y-4 text-xl  font-thin">
-                            <p className="text-white mb-4 text-justify md:text-left ">
+                            <p className="text-white mb-4 text-center md:text-left ">
                                 Get a better understanding of the test
                                 materials. Practice with real questions,
                                 including multiple-choice and true/false.
                             </p>
-                            <ul className="space-y-2 text-white ">
+                            <ul className="space-y-2 text-white text-lg ">
                                 {[
                                     "52 Practice Tests with easy-to-understand answer explanations",
                                     "850+ Practice Questions for thorough preparation",
@@ -761,14 +891,14 @@ export default function Premium({ auth }) {
                                     </li>
                                 ))}
                             </ul>
-                            <button className="bg-primary text-white px-4 py-3 w-80   rounded-full shadow-xl font-normal">
+                            <button className="bg-primary text-white text-lg px-4 py-3 w-80   rounded-full shadow-xl font-normal">
                                 Unlock all exam-like questions
                             </button>
                         </div>
                     </div>
                 </section>
 
-                <section className="container  mx-auto px-4 md:px-10 lg:px-20 py-10 bg-slate-50">
+                <section className="container  mx-auto px-6 md:px-10 lg:px-20 py-10 bg-slate-50">
                     <p className="text-center text-indigo-600 mt-8 text-base ">
                         IN-DEPTH LEARNING
                     </p>
@@ -828,7 +958,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container mx-auto px-4 md:px-10 lg:px-20 py-4 bg-indigo-600 mt-10">
+                <section className="container mx-auto px-4 md:px-10 lg:px-20 py-20 bg-indigo-600 mt-10 ">
                     <p className="text-center text-xs text-white mt-8">
                         ONE CHAPTER AT A TIME
                     </p>
@@ -840,7 +970,7 @@ export default function Premium({ auth }) {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12">
                         {/* Left Column */}
 
-                        <div className="flex justify-center">
+                        <div className="hidden sm:flex justify-center">
                             <img
                                 src="/images/practisquestion.png"
                                 alt="Image"
@@ -874,10 +1004,17 @@ export default function Premium({ auth }) {
                                 <h3 className="text-2xl font-bold  mb-4">
                                     450+ Flashcards
                                 </h3>
-                                <p className="text-white    text-xl mb-5 md:mb-32">
+                                <p className="text-white    text-xl mb-10 md:mb-32">
                                     Use 450+ flashcards to reinforce important
                                     concepts and information while you study.
                                 </p>
+                            </div>
+                            <div className="block sm:block md:hidden lg:hidden xl:hidden mb-10">
+                                <img
+                                    src="/images/practisquestion.png"
+                                    alt="Image"
+                                    className="w-[627px] h-[500px] rounded-2xl"
+                                />
                             </div>
                         </div>
                     </div>
@@ -951,7 +1088,7 @@ export default function Premium({ auth }) {
                         </div>
                     </div>
                 </section>
-                <section className="container mx-auto px-4 md:px-10 lg:px-20 mt-20">
+                <section className="container mx-auto px-6 md:px-10 lg:px-20 mt-20">
                     {/* Heading */}
                     <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-6 text-center mt-10">
                         Get Started Today and Let Us Help You Succeed!
@@ -974,9 +1111,6 @@ export default function Premium({ auth }) {
                     </div>
 
                     {/* Recommended Button */}
-                    <button className="bg-indigo-600 text-white text-xs sm:text-sm md:text-base py-2 px-4 w-full sm:w-48 rounded-lg mx-auto block mt-4">
-                        Recommended
-                    </button>
 
                     {/* Plans Section */}
                     <div className="flex flex-col md:flex-row mt-6">
@@ -1075,7 +1209,12 @@ export default function Premium({ auth }) {
                                     value={2}
                                     autoComplete="off"
                                 />
-                                <div className="bg-white border-2 border-indigo-600 rounded-3xl p-6 sm:p-8 shadow-xl flex-1 flex flex-col">
+                                <div className="relative bg-white border-4 border-indigo-600 rounded-3xl p-6 sm:p-8 shadow-xl flex-1 flex flex-col">
+                                    {/* Recommended Tag */}
+                                    <div className="absolute -top-4 left-28 transform -translate-x-1/2 bg-indigo-600 text-white text-xs sm:text-sm md:text-base py-1 px-4 rounded-full w-max">
+                                        Recommended
+                                    </div>
+
                                     <h2 className="text-2xl sm:text-3xl font-extrabold mb-2 mt-2">
                                         6-Month Exam Prep
                                     </h2>
@@ -1083,6 +1222,7 @@ export default function Premium({ auth }) {
                                         When diving deep matters. A complete
                                         package to ace the exam.
                                     </p>
+
                                     <div className="flex justify-between">
                                         <p className="font-bold text-xl sm:text-3xl">
                                             $29.99
@@ -1091,9 +1231,11 @@ export default function Premium({ auth }) {
                                             Just $1/day
                                         </p>
                                     </div>
+
                                     <button className="bg-primary text-white py-2 sm:py-3 w-full rounded-full mt-4 text-base sm:text-lg">
                                         Get instant access
                                     </button>
+
                                     <p className="text-lg sm:text-xl text-zinc-600 mt-4">
                                         Features
                                     </p>
@@ -1408,7 +1550,7 @@ export default function Premium({ auth }) {
                     </div>
                     {/* Contact Section */}
                     <div className="container mx-auto mt-8">
-                        <div className="max-w-4xl mx-auto p-4 flex flex-col md:flex-row items-start md:items-center">
+                        <div className="max-w-4xl mx-auto p-4 flex flex-col md:flex-row items-center md:items-center">
                             <p className="text-gray-900 mb-4 md:mb-0 md:mr-4 text-center md:text-left text-sm sm:text-base">
                                 Have more questions or want to chat about plan
                                 selection?
