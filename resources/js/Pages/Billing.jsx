@@ -23,7 +23,7 @@ export default function Billing({ auth, subscriptions }) {
                                 {subscriptions.map((subscription) => (
                                     <Table.Row
                                         key={subscription.id}
-                                        className="bg-white dark:border-gray-700 dark:bg-gray-800"
+                                        className="container mx-auto bg-white dark:border-gray-700 dark:bg-gray-800"
                                     >
                                         {/* Package Name */}
                                         <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">

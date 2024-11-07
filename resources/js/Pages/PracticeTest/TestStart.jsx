@@ -195,9 +195,9 @@ export default function TestStart({
                 chapters={chapters}
             >
                 <Head title="Premium" />
-                <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 p-10 bg-slate-50">
+                <section className="container mx-auto min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 p-5 bg-slate-50  px-2 md:px-16 lg:px-8 xl:px-36">
                     {/* Left Side (spans 8 columns on large screens) */}
-                    <div className="order-2 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl bg-white p-10">
+                    <div className="order-2 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl  p-5">
                         <div className="flex justify-between items-center">
                             <p className="text-zinc-400 text-sm">
                                 Question {currentQuestionIndex + 1} / 15

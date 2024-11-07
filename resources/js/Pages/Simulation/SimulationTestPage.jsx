@@ -187,9 +187,9 @@ export default function SimulationTestPage({
         <>
             <AuthenticatedLayout user={auth.user}>
                 <Head title="Premium" />
-                <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 p-10 bg-slate-50">
+                <section className="container mx-auto  min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 p-5  px-4 md:px-16 lg:px-8 xl:px-44  bg-slate-50">
                     {/* Left Side (spans 8 columns on large screens) */}
-                    <div className="order-2 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl bg-white p-10">
+                    <div className="order-2 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl bg-white p-5">
                         <div className="flex justify-between items-center">
                             <p className="text-zinc-400 text-sm">
                                 Question {currentQuestionIndex + 1} / 15
@@ -323,10 +323,11 @@ export default function SimulationTestPage({
                     </div>
 
                     {/* Right Side (spans 4 columns on large screens) */}
-                    <div className="order-1 md:h-64 lg:order-2 lg:col-span-4 flex flex-col space-y-4 border rounded-xl bg-white p-10">
+                    <div className="order-1 md:h-64 lg:order-2 lg:col-span-4 flex flex-col border rounded-xl bg-white p-6">
                         <h1 className="hidden sm:flex text-xl text-gray-800 mb-4">
                             Featured Highlights
                         </h1>
+
                         {/* Circles for Small Screens */}
                         <div className="flex space-x-1 mb-4 sm:hidden">
                             {questionResults.map((result) => (
@@ -342,6 +343,7 @@ export default function SimulationTestPage({
                                 />
                             ))}
                         </div>
+
                         {/* Circles for Larger Screens */}
                         <div className="hidden sm:grid grid-cols-5 gap-2 mb-4">
                             {questionResults.map((result) => (
@@ -359,23 +361,24 @@ export default function SimulationTestPage({
                                 </div>
                             ))}
                         </div>
+
                         {/* Buttons outside the main right div, only visible on large screens */}
-                        <div className="hidden lg:flex order-3 lg:col-span-4 flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4 lg:justify-end lg:py-4">
-                            <button className="bg-white text-black  border border-primary px-6 py-2 rounded-full flex-1 flex items-center justify-center">
+                        <div className="hidden lg:flex flex-col sm:flex-row justify-between lg:py-4  sm:py-3 sm:px-4 space-y-2 sm:space-y-0 sm:space-x-4 mt-10">
+                            <button className="bg-white text-black border border-primary px-6 py-3 rounded-full sm:px-4 sm:py-2 flex-1 sm:flex-none flex items-center justify-center text-sm sm:text-base">
                                 <FontAwesomeIcon
                                     icon={faChevronLeft}
-                                    className="mr-4 text-sm"
+                                    className="mr-2 text-sm sm:text-base"
                                 />
                                 All Tests
                             </button>
 
                             <button
                                 onClick={handleReset}
-                                className="bg-white text-black border border-primary px-6 py-2 rounded-full flex-1 flex items-center justify-center"
+                                className="bg-white text-black border border-primary px-6 py-3 rounded-full sm:px-4 sm:py-2 flex-1 sm:flex-none flex items-center justify-center text-sm sm:text-base"
                             >
                                 <FontAwesomeIcon
                                     icon={faRedo}
-                                    className="mr-4 text-sm"
+                                    className="mr-2 text-sm sm:text-base"
                                 />
                                 Restart
                             </button>

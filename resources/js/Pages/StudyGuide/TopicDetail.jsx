@@ -59,7 +59,7 @@ export default function TopicDetail({
                             </div>
                         )}
                         {topic.content && (
-                            <div className="relative min-h-screen flex flex-col items-center justify-center ">
+                            <div className="container mx-auto relative flex flex-col items-center justify-center ">
                                 <div className="container-fluid py-8 md:py-12 md:px-8 lg:px-20 ">
                                     <div>
                                         <p className="text-blue-400">
@@ -79,7 +79,7 @@ export default function TopicDetail({
                                 </div>
 
                                 {/* Navigation Bar */}
-                                <div className="container-fluid py-4 px-4 md:px-8 lg:px-20 w-full flex justify-between items-center">
+                                <div className="container mx-auto py-4 px-4 md:px-8 lg:px-20 w-full flex justify-between items-center">
                                     <Link
                                         as="button"
                                         method="get"

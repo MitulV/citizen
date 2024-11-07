@@ -37,16 +37,14 @@ export default function SimulationResult({
             <Head title="Premium" />
             <div className="flex">
                 {/* Sidebar Component */}
-                <div className="w-64 h-screen bg-gray-800 text-white">
-                    {/* Sidebar Content */}
-                </div>
+                {/* Sidebar Content */}
 
-                <main className="flex-1 p-4 md:p-10 bg-slate-50">
-                    <section className="min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-10">
-                        <div className="order-1 lg:order-2 lg:col-span-12 flex flex-col space-y-10 md:space-y-8 rounded-2xl bg-white md:p-10">
+                <main className="flex-1 p-4  bg-slate-50">
+                    <section className="container mx-auto min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-6 sm:px-4 md:px-8 lg:px-16 xl:px-24">
+                        <div className="order-1 lg:order-2 lg:col-span-12 flex flex-col space-y-8 md:space-y-10 rounded-2xl bg-white p-6 md:p-10">
                             {/* First Section on Right */}
-                            <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                                <div className="w-40 h-40">
+                            <div className="flex flex-col sm:flex-row items-center space-y-6 sm:space-y-0 sm:space-x-6">
+                                <div className="w-36 h-36 sm:w-40 sm:h-40">
                                     <CircularProgressbar
                                         value={result.percentage}
                                         text={`${result.percentage}%`}
@@ -58,34 +56,41 @@ export default function SimulationResult({
                                     />
                                 </div>
                                 <div className="flex flex-col">
-                                    <h1 className="text-3xl font-bold text-lime-700 p-2">
+                                    <h1 className="text-2xl sm:text-3xl font-bold text-lime-700">
                                         {message}
                                     </h1>
-                                    <p className="text-zinc-600 p-2">
+                                    <p className="text-zinc-600 mt-2">
                                         There are more practice questions left
                                         to go, unlock 600+ practice questions
                                         today.
                                     </p>
-                                    <div className="flex items-center space-x-4 p-2">
-                                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                                        <span className="text-zinc-500">
-                                            {result.totalCorrect} Correct
-                                        </span>
-                                        <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                                        <span className="text-zinc-500">
-                                            {result.totalWrong} Wrong
-                                        </span>
-                                        <FontAwesomeIcon
-                                            icon={faClock}
-                                            className="text-zinc-500"
-                                        />
-                                        <span className="text-zinc-500">
-                                            {totalTimeTaken.minutes} minutes{" "}
-                                            {totalTimeTaken.seconds} seconds
-                                        </span>
+                                    <div className="flex flex-row space-x-6 mt-4">
+                                        <div className="flex items-center space-x-2">
+                                            <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                                            <span className="text-zinc-500 text-sm sm:text-base">
+                                                {result.totalCorrect} Correct
+                                            </span>
+                                        </div>
+                                        <div className="flex items-center space-x-2">
+                                            <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                                            <span className="text-zinc-500 text-sm sm:text-base">
+                                                {result.totalWrong} Wrong
+                                            </span>
+                                        </div>
+                                        <div className="flex items-center space-x-2">
+                                            <FontAwesomeIcon
+                                                icon={faClock}
+                                                className="text-zinc-500"
+                                            />
+                                            <span className="text-zinc-500 text-sm sm:text-base">
+                                                {totalTimeTaken.minutes} minutes{" "}
+                                                {totalTimeTaken.seconds} seconds
+                                            </span>
+                                        </div>
                                     </div>
+
                                     <Link
-                                        className="bg-primary text-white px-6 py-2 rounded-full mt-4 w-full sm:w-auto"
+                                        className="bg-primary text-white px-6 py-2 rounded-full mt-6 w-full sm:w-auto"
                                         as="button"
                                         href={route("simulation.test", 1)}
                                         method="post"
@@ -100,17 +105,17 @@ export default function SimulationResult({
                             </div>
 
                             {/* Answer Results Section */}
-                            <section>
-                                <h1 className="text-xl sm:text-2xl font-bold mt-12">
+                            <section className="mt-10">
+                                <h1 className="text-xl sm:text-2xl font-bold mb-6">
                                     Answer Results
                                 </h1>
                                 {questionResults.map(
                                     (question, currentQuestionIndex) => (
                                         <div
                                             key={question.question_id}
-                                            className="flex flex-col space-y-4 border rounded-xl bg-white p-10 mt-2 mb-1"
+                                            className="flex flex-col space-y-6 border rounded-xl bg-white p-4 md:p-8 mb-4"
                                         >
-                                            <div className="flex justify-between items-center">
+                                            <div className="flex justify-between items-center ">
                                                 <p className="text-zinc-400 text-sm">
                                                     Question{" "}
                                                     {question.index + 1} /{" "}
@@ -118,12 +123,12 @@ export default function SimulationResult({
                                                 </p>
                                             </div>
                                             <div>
-                                                <h1 className="text-2xl font-bold">
+                                                <h1 className="text-xl lg:text-2xl font-semibold">
                                                     {question.question_text}
                                                 </h1>
                                             </div>
                                             <div>
-                                                <div className="mt-2 space-y-2">
+                                                <div className="mt-4 space-y-2">
                                                     {question.answer_text.map(
                                                         (answer) => {
                                                             const isSelected =
@@ -145,7 +150,7 @@ export default function SimulationResult({
                                                                     key={
                                                                         answer.id
                                                                     }
-                                                                    className={`flex items-center space-x-2 text-sm px-6 py-2 rounded-xl flex-1 hover:bg-gray-200 ${
+                                                                    className={`flex items-center space-x-4 text-base px-2 py-3 rounded-xl cursor-pointer ${
                                                                         isPass
                                                                             ? "border border-lime-700"
                                                                             : isFail
@@ -216,11 +221,11 @@ export default function SimulationResult({
                                             </div>
 
                                             {question.explanation && (
-                                                <div>
-                                                    <h1 className="text-lg sm:text-lg font-bold mb-4">
+                                                <div className="mt-6">
+                                                    <h1 className="text-lg font-semibold mb-4">
                                                         Explanation
                                                     </h1>
-                                                    <p className="text-gray-600 text-sm bg-slate-50 p-2 rounded-lg">
+                                                    <p className="text-gray-600 text-base bg-slate-50 p-2 rounded-lg ">
                                                         {question.explanation}
                                                     </p>
                                                 </div>
