@@ -11,13 +11,14 @@ import {
 import Countdown from "react-countdown";
 import GuestLayout from "@/Layouts/GuestLayout";
 
-export default function TestStart({
+export default function TestPage({
     chapterId,
     question,
     nextQuestion,
     result,
     index,
     selectedAnswerId,
+    correctAnswerId,
     explanation,
 }) {
     const renderer = ({ minutes, seconds, completed }) => {
@@ -64,6 +65,7 @@ export default function TestStart({
             result: "none", //['none', 'pass', 'fail'][Math.floor(Math.random() * 3)], // Randomly assigning 'none', 'pass', or 'fail' for demonstration
             answer_text: [],
             selectedAnswerId: null,
+            correctAnswerId: null,
             isOptionSelected: false,
         }))
     );
@@ -143,6 +145,7 @@ export default function TestStart({
                 const newResults = [...prevResults];
                 newResults[index].result = result;
                 newResults[index].selectedAnswerId = selectedAnswerId;
+                newResults[index].correctAnswerId = correctAnswerId;
                 newResults[index].explanation = explanation;
                 return newResults;
             });
@@ -229,7 +232,10 @@ export default function TestStart({
                                             <label
                                                 key={answer.id}
                                                 className={`flex items-center space-x-2 text-sm px-6 py-2 rounded-xl flex-1 hover:bg-gray-200 ${
-                                                    isPass
+                                                    answer.id ===
+                                                    correctAnswerId
+                                                        ? "border border-lime-700"
+                                                        : isPass
                                                         ? "border border-lime-700"
                                                         : isFail
                                                         ? "border border-red-500"
@@ -258,14 +264,19 @@ export default function TestStart({
                                                     />
                                                     <div
                                                         className={`w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:bg-${
-                                                            isPass
+                                                            answer.id ===
+                                                            correctAnswerId
+                                                                ? "green"
+                                                                : isPass
                                                                 ? "green"
                                                                 : isFail
                                                                 ? "red"
                                                                 : "gray"
                                                         }-500`}
                                                     >
-                                                        {isPass ? (
+                                                        {answer.id ===
+                                                            correctAnswerId ||
+                                                        isPass ? (
                                                             <FontAwesomeIcon
                                                                 icon={faCheck}
                                                                 className="text-green-500"

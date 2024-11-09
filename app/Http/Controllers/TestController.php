@@ -32,11 +32,20 @@ class TestController extends Controller
       $question = Question::where('id', $questionId)->first();
       $result = $question->correct_answer_id == $answerId ? 'pass' : 'fail';
 
-      $nextQuestion = Question::where('test_id', $testId)
-        ->where('id', '>', $questionId)
-        ->with('answers')
-        ->select('id', 'text', 'test_id')
-        ->first();
+      // Retrieve the shuffled questions from the session
+      $shuffledQuestions = session()->get("shuffled_questions_$testId");
+
+      // Increment the index for the next question
+      $nextIndex = $index + 1;
+      $nextQuestion = $nextIndex < count($shuffledQuestions) ? $shuffledQuestions[$nextIndex] : null;
+
+
+      // $nextQuestion = Question::where('test_id', $testId)
+      //   ->where('id', '>', $questionId)
+      //   ->with('answers')
+      //   ->select('id', 'text', 'test_id')
+      //   ->inRandomOrder() // Shuffle the next question
+      //   ->first();
 
       return Inertia::render('TestPage', [
         'index' => $index,
@@ -45,6 +54,7 @@ class TestController extends Controller
         'result' => $result,
         'selectedQuestionId' => $questionId,
         'selectedAnswerId' => $answerId,
+        'correctAnswerId' => $question->correct_answer_id,
         'explanation' => $question->explanation
       ]);
     } else {
@@ -53,14 +63,22 @@ class TestController extends Controller
         ->select('id', 'chapter_id', 'name')
         ->first();
 
-      $question = Question::where('test_id', $test->id)
+      // Get all questions, shuffle them, and store in session
+      $questions = Question::where('test_id', $test->id)
         ->with('answers')
         ->select('id', 'text', 'test_id')
-        ->first();
+        ->inRandomOrder()
+        ->get();
+
+      session()->put("shuffled_questions_$test->id", $questions);
+
+      // Start with the first question in the shuffled list
+      $question = $questions->first();
 
       return Inertia::render('TestPage', [
         'chapterId' => $chapterId,
-        'question' => $question
+        'question' => $question,
+        'index' => 0 // Initialize the index at 0 for the first question
       ]);
     }
   }

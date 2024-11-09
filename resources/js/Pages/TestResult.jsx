@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Head, router } from "@inertiajs/react";
+import { Head, Link, router } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCheck,
@@ -40,14 +40,14 @@ export default function TestStart({ result, totalTimeTaken }) {
                         {/* Left Side */}
                         <div className="order-2 lg:order-1 lg:col-span-4 flex flex-col space-y-6 bg-white rounded-xl p-6 sm:p-8 md:p-10">
                             <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold">
-                                How to Pass the First Time
+                                How to Pass on Your First Try
                             </h1>
                             <ul className="space-y-2 text-gray-600 mt-4">
                                 {[
-                                    "Access to Over 600+ Test Questions",
-                                    "Practice tests for each chapter",
-                                    "Unlimited exam simulation runs",
-                                    "Tailored study plan",
+                                    "Access to 850+ Practice Questions",
+                                    "Comprehensive Chapter-Wise Study Plan",
+                                    "450+ Interactive Flashcards",
+                                    "Unlimited Test Simulations for Mastery",
                                 ].map((text, index) => (
                                     <li
                                         key={index}
@@ -67,9 +67,14 @@ export default function TestStart({ result, totalTimeTaken }) {
                                     alt="Placeholder"
                                     className="w-full max-w-[300px] rounded-tl-[24px]"
                                 />
-                                <button className="bg-primary text-white px-6 py-3 rounded-full mt-6 w-3/4 sm:w-full">
-                                    Pass with Premium Guaranteed
-                                </button>
+                                <Link
+                                    href={route("premiumPage", {})}
+                                    as="button"
+                                    className="bg-primary text-white px-6 py-3 rounded-full mt-6 w-3/4 sm:w-full"
+                                >
+                                    Pass with Premium
+                                </Link>
+
                                 <p className="text-sm mt-4">
                                     100% Money Back Guarantee
                                 </p>
@@ -116,9 +121,14 @@ export default function TestStart({ result, totalTimeTaken }) {
                                             {totalTimeTaken.seconds} sec
                                         </span>
                                     </div>
-                                    <button className="bg-primary text-white px-6 py-2 rounded-full mt-6 w-full sm:w-auto">
+
+                                    <Link
+                                        href={route("premiumPage", {})}
+                                        as="button"
+                                        className="bg-primary text-white px-6 py-2 rounded-full mt-6 w-full sm:w-auto"
+                                    >
                                         Next up, Practice Test 2
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
 
