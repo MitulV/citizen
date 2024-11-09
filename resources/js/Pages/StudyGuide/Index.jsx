@@ -29,21 +29,29 @@ export default function Index({ auth, chapters }) {
                 </Head>
 
                 <div className="container mx-auto relative min-h-screen md:flex bg-slate-100">
-                    <section className="py-8 px-4 sm:mx-2 md:py-12 md:px-8 lg:py-16 lg:px-10 lg:mx-2 xl:mx-8 xl:px-2">
+                    <section className="py-6 px-4 sm:mx-2 md:py-4 md:px-8 lg:py-2 lg:px-10 lg:mx-2 xl:mx-8 xl:px-2">
                         <div className="text-left mb-8">
                             {message && (
                                 <Alert color="success">{message}</Alert>
                             )}
-                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-4 text-gray-900 py-5">
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-4 text-gray-900 pt-2">
                                 Study Guide
                             </h1>
                             <p className="text-base sm:text-lg md:text-xl lg:text-lg text-gray-600 mb-4">
-                                Get ready for your Canadian Citizenship Test
-                                with guided lessons paired with chapter practice
-                                tests. By systematically covering each chapter
-                                with engaging lessons and quizzes, you'll be
-                                fully prepared and equipped with all the
-                                essential knowledge from Discover Canada.
+                                This study guide helps you learn the entire
+                                official{" "}
+                                <a
+                                    className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+                                    target="_blank"
+                                    href="https://www.canada.ca/content/dam/ircc/migration/ircc/english/pdf/pub/discover.pdf"
+                                >
+                                    Discover Canada
+                                </a>{" "}
+                                book by breaking it into smaller chapters. It
+                                also features a timeline that shows important
+                                dates from each chapter. This makes it easier
+                                for you to understand and remember the key
+                                information!
                             </p>
                         </div>
 

@@ -1,8 +1,26 @@
+/* Remove CKEditor Border */
 .ck-editor__editable_inline {
+    border: none !important;
+    border-top: none !important; /* Ensure the top border is removed */
     min-height: 500px; /* Set the desired height */
 }
 
-/* ckeditor-styles.css */
+/* Remove borders from the main editor container */
+.ck.ck-editor__main {
+    border: none !important;
+}
+
+/* Remove top border from the editable area */
+.ck-editor__editable {
+    border-top: none !important;
+}
+
+/* Optional: Add padding to the editor */
+.ck-editor__editable_inline {
+    padding: 0 30px !important;
+}
+
+/* Custom headings for the content */
 .ck-content h1 {
     font-size: 2.25rem; /* text-3xl */
     font-weight: 700; /* font-bold */
@@ -21,12 +39,8 @@
     margin-bottom: 0.5rem;
 }
 
-/* Optionally for the toolbar */
+/* Optional for the toolbar */
 .ck-toolbar .ck-button__label {
     font-size: inherit;
     font-weight: inherit;
-}
-
-.ck-editor__editable_inline {
-    padding: 0 30px !important;
 }

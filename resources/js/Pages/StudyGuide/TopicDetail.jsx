@@ -60,21 +60,21 @@ export default function TopicDetail({
                         )}
                         {topic.content && (
                             <div className="container mx-auto relative flex flex-col items-center justify-center ">
-                                <div className="container-fluid py-8 md:py-12 md:px-8 lg:px-20 ">
+                                <div className="container-fluid py-8 md:py-6 md:px-8 lg:px-20 ">
                                     <div>
-                                        <p className="text-blue-400">
-                                            All lessons
+                                        <p className="text-primary">
+                                            <FontAwesomeIcon
+                                                icon={faChevronLeft}
+                                            />{" "}
+                                            <span className="text-lg">
+                                                View all chapters
+                                            </span>
                                         </p>
                                         <h1 className="text-3xl font-bold mb-4 text-gray-600">
                                             Lesson {topic.id}
                                         </h1>
                                     </div>
-                                    {/* <div
-                                className="m-10 ck ck-content"
-                                dangerouslySetInnerHTML={{
-                                    __html: topic.content,
-                                }}
-                            /> */}
+
                                     <EditorShow value={topic.content} />
                                 </div>
 
