@@ -33,7 +33,7 @@ export default function Premium({ auth }) {
                 <Head>
                     <title>
                         Pass Your Canadian Citizenship Test, Guaranteed -
-                        CitizenTestPrep Canada
+                        CitizenTestPrep
                     </title>
                     <meta
                         name="description"
@@ -48,7 +48,7 @@ export default function Premium({ auth }) {
                             Try.{" "}
                             <span className="text-indigo-600">Guaranteed!</span>
                         </h1>
-                        <p className="text-gray-700 text-lg  md:text-xl lg:text-xl leading-relaxed text-center">
+                        <p className="text-gray-700 text-lg  md:text-xl lg:text-xl leading-relaxed text-start">
                             Your complete toolkit for success: Get fully
                             prepared with over 850+ practice questions,
                             chapter-wise study guide, test simulations, 450+
@@ -65,7 +65,7 @@ export default function Premium({ auth }) {
                                 className="h-14 w-auto mt-8 "
                             />
                         </div>
-                        <p className="text-gray-700 text-base sm:text-lg lg:text-2xl  px-6 text-center">
+                        <p className="text-gray-700 text-base sm:text-lg lg:text-2xl  px-6 text-start">
                             Join over 18,300+ new citizens who have passed with
                             our help.
                         </p>
@@ -380,21 +380,19 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className=" container mx-auto  bg-white lg:col-span-12 flex flex-col items-center justify-center px-6 md:px-16 lg:px-32 xl:px-28 py-10">
+                <section className=" container mx-auto   lg:col-span-12 flex flex-col items-center justify-center px-6 md:px-16 lg:px-32 xl:px-28 py-10">
                     <h2 className="text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-bold mb-4 text-center">
                         A Fun And Easy Way To Prepare For Your Test!
                     </h2>
                     <p className="text-gray-600 font-inter text-start text-lg lg:text-lg max-h-20 md:max-h-24 lg:max-h-32 overflow-hidden">
-                        We have everything you need to get ready for the
-                        Canadian citizenship test. Our platform helps you study
-                        well and learn about Canadian values and principles.
-                        You’ll also see what the real exam questions look like.
-                        <br />
-                        Whether it’s your first time or not, our study tools
-                        will help you. Our simple and mobile-friendly design
-                        lets you study at your own pace. Join thousands of happy
-                        students who have passed their citizenship tests with
-                        our trusted study resources!
+                        We have everything you need to prepare for the Canadian
+                        citizenship test. Our platform helps you learn about
+                        Canadian values and principles while showing you real
+                        test questions. Whether it's your first time or not, our
+                        easy-to-use, mobile-friendly design lets you study at
+                        your own pace. Join thousands of students who have
+                        successfully passed their tests using our trusted study
+                        tools!
                     </p>
                     <img
                         src="/images/mobile chapt.png"
@@ -420,15 +418,22 @@ export default function Premium({ auth }) {
 
                     {/* Main Heading */}
                     <p className="text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg text-black text-center leading-relaxed mt-10 lg:mx-32">
-                        At CitizenTestPrep Premium, we believe you will succeed
-                        using our high-quality study materials. If you go
-                        through our resources and don’t pass the Canadian
-                        citizenship test, we’ll give you your money back.
-                        <br />
-                        Our guarantee shows how much we trust our program. Get
-                        ready for your Canadian citizenship test with
-                        CitizenTestPrep Premium and join many others who have
-                        succeeded!
+                        At CitizenTestPrep Premium, we’re confident you’ll
+                        succeed with our high-quality study materials. If you
+                        use our resources and don’t pass the Canadian
+                        citizenship test, we’ll give you your money back. Our
+                        guarantee shows how much we believe in our program. Get
+                        ready for your test with CitizenTestPrep Premium and
+                        join many others who have passed! For full details,
+                        please see our refund policy{" "}
+                        <a
+                            className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+                            target="_blank"
+                            href="https://www.citizentestprep.ca/refund"
+                        >
+                            here
+                        </a>
+                        .
                     </p>
 
                     {/* Subheading */}
@@ -466,10 +471,10 @@ export default function Premium({ auth }) {
                             How it works
                         </p>
 
-                        <p className="text-3xl lg:text-3xl xl:text-3xl font-extrabold text-center md:text-left px-md:px-0 lg:px-0">
+                        <h2 className="text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-extrabold text-center md:text-left px-md:px-0 lg:px-0">
                             It has never been so easy to pass the Canadian
                             Citizenship test
-                        </p>
+                        </h2>
                         <p className="text-gray-600 text-lg md:text-lg lg:text-lg xl:text-lg text-center md:text-left">
                             Take the Canadian citizenship test with clarity and
                             stress-free preparation, achieving your dream of
@@ -559,20 +564,22 @@ export default function Premium({ auth }) {
 
                     {/* Main Heading */}
                     <p className="text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg text-black text-center leading-relaxed mt-10 lg:mx-32">
-                        At CitizenTestPrep Premium, we believe you will succeed
-                        using our high-quality study materials. If you go
-                        through our resources and don’t pass the Canadian
-                        citizenship test, we’ll give you your money back.
-                        <br />
-                        Our guarantee shows how much we trust our program. Get
-                        ready for your Canadian citizenship test with
-                        CitizenTestPrep Premium and join many others who have
-                        succeeded!
-                    </p>
-
-                    {/* Subheading */}
-                    <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-indigo-700 font-extrabold text-center mt-10">
-                        Get started today
+                        At CitizenTestPrep Premium, we’re confident you’ll
+                        succeed with our high-quality study materials. If you
+                        use our resources and don’t pass the Canadian
+                        citizenship test, we’ll give you your money back. Our
+                        guarantee shows how much we believe in our program. Get
+                        ready for your test with CitizenTestPrep Premium and
+                        join many others who have passed! For full details,
+                        please see our refund policy{" "}
+                        <a
+                            className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+                            target="_blank"
+                            href="https://www.citizentestprep.ca/refund"
+                        >
+                            here
+                        </a>
+                        .
                     </p>
 
                     {/* Bottom Left Half Circle */}
@@ -841,9 +848,6 @@ export default function Premium({ auth }) {
                     <p className="text-xs sm:text-sm md:text-base text-white mb-2 text-center mt-10">
                         A FASTER, SMARTER WAY TO STUDY
                     </p>
-                    <h2 className="text-3xl  text-white mb-6 text-center  font-bold">
-                        Pass The Citizenship Test
-                    </h2>
 
                     {/* Main Heading */}
                     <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 text-center text-white hidden lg:block md:px-40">
@@ -862,18 +866,18 @@ export default function Premium({ auth }) {
 
                         {/* Right Column Content */}
                         <div className="flex flex-col justify-center space-y-4 text-xl  font-thin">
-                            <p className="text-white mb-4 text-center md:text-left ">
+                            <p className="text-white mb-4 text-center md:text-left text-xl">
                                 Get a better understanding of the test
                                 materials. Practice with real questions,
                                 including multiple-choice and true/false.
                             </p>
-                            <ul className="space-y-2 text-white text-lg ">
+                            <ul className="space-y-2 text-white text-xl">
                                 {[
                                     "52 Practice Tests with easy-to-understand answer explanations",
                                     "850+ Practice Questions for thorough preparation",
                                     "Simulation Tests that feel like the real exam",
                                     "The Official Study Guide in a fun and engaging format",
-                                    "350+ Flash Cards covering all the important chapters",
+                                    "450+ Flash Cards covering all the important chapters",
                                     "Cheat Sheets with key figures, dates, maps, and a glossary",
                                     "Priority Customer Support to help you whenever you need it",
                                 ].map((text, index) => (
@@ -1404,15 +1408,16 @@ export default function Premium({ auth }) {
                                         : ""
                                 }`}
                             >
-                                Which plan is best for me?
+                                How quickly will I see results?
                             </AccordionHeader>
                             <AccordionBody className="pt-0 text-base font-normal">
-                                Studying on your own can be tough because
-                                there's so much information to retain. Our
-                                "Learn-Quiz-Learn" framework is a proven
-                                approach that has helped thousands of learners
-                                across Canada pass their tests, bringing them
-                                one step closer to Canadian citizenship.
+                                With our Premium package, you'll start noticing
+                                improvements right away. Our 20-minute quizzes
+                                and interactive flashcards help you learn fast
+                                and get instant feedback, so you can grasp key
+                                concepts quickly. Many users see better test
+                                scores within just a few days of focused
+                                practice.
                             </AccordionBody>
                         </Accordion>
 
@@ -1446,16 +1451,12 @@ export default function Premium({ auth }) {
                                         : ""
                                 }`}
                             >
-                                I have only a few days left for the exam, will
-                                this help me?
+                                Is CitizenTestPrep.ca Premium a recurring
+                                subscription?
                             </AccordionHeader>
                             <AccordionBody className="pt-0 text-base font-normal">
-                                Studying on your own can be tough because
-                                there's so much information to retain. Our
-                                "Learn-Quiz-Learn" framework is a proven
-                                approach that has helped thousands of learners
-                                across Canada pass their tests, bringing them
-                                one step closer to Canadian citizenship.
+                                No, CitizenTestPrep.ca Premium is a one-time
+                                payment. There are no automatic renewals.
                             </AccordionBody>
                         </Accordion>
 
@@ -1489,17 +1490,14 @@ export default function Premium({ auth }) {
                                         : ""
                                 }`}
                             >
-                                I have already attended the test and have
-                                knowledge about the question pattern, should I
-                                join here?
+                                I’ve failed my test. How can I be sure this will
+                                help me?
                             </AccordionHeader>
                             <AccordionBody className="pt-0 text-base font-normal">
-                                Studying on your own can be tough because
-                                there's so much information to retain. Our
-                                "Learn-Quiz-Learn" framework is a proven
-                                approach that has helped thousands of learners
-                                across Canada pass their tests, bringing them
-                                one step closer to Canadian citizenship.
+                                If you've failed before, it means you need a new
+                                strategy. Our study material in the premium
+                                package helps you remember key information and
+                                feel confident.
                             </AccordionBody>
                         </Accordion>
 
@@ -1533,16 +1531,12 @@ export default function Premium({ auth }) {
                                         : ""
                                 }`}
                             >
-                                How can I be sure that premium will help me
-                                pass?
+                                Is the study material available in other
+                                languages?
                             </AccordionHeader>
                             <AccordionBody className="pt-0 text-base font-normal">
-                                Studying on your own can be tough because
-                                there's so much information to retain. Our
-                                "Learn-Quiz-Learn" framework is a proven
-                                approach that has helped thousands of learners
-                                across Canada pass their tests, bringing them
-                                one step closer to Canadian citizenship.
+                                Right now, our study materials and cheat sheets
+                                are only available in English.
                             </AccordionBody>
                         </Accordion>
                     </div>
@@ -1550,40 +1544,35 @@ export default function Premium({ auth }) {
                     <div className="container mx-auto mt-8">
                         <div className="max-w-4xl mx-auto p-4 flex flex-col md:flex-row items-center md:items-center">
                             <p className="text-gray-900 mb-4 md:mb-0 md:mr-4 text-center md:text-left text-sm sm:text-base">
-                                Have more questions or want to chat about plan
-                                selection?
+                                Have more questions or want to contact us?
                             </p>
                             <div className="flex flex-col md:flex-row gap-4 justify-center">
-                                {/* Email Option */}
-                                <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
-                                    <FontAwesomeIcon
-                                        icon={faMessage}
-                                        className="text-primary"
-                                    />
-                                    <span className="text-indigo-600 text-sm">
-                                        Chat With Us
-                                    </span>
-                                </div>
                                 {/* Envelope Option */}
                                 <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
                                     <FontAwesomeIcon
                                         icon={faEnvelope}
                                         className="text-primary"
                                     />
-                                    <span className="text-indigo-600 text-sm">
-                                        Email
-                                    </span>
+                                    <Link
+                                        href="/contact-us"
+                                        className="text-indigo-600 text-sm"
+                                    >
+                                        {" "}
+                                        Contact Via Email
+                                    </Link>
                                 </div>
                                 {/* Phone Option */}
-                                <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
-                                    <FontAwesomeIcon
-                                        icon={faPhone}
-                                        className="text-primary"
-                                    />
-                                    <span className="text-indigo-600 text-sm">
-                                        Call 1-305-570-4774
-                                    </span>
-                                </div>
+                                <a href="tel:672-558-4037" className="block">
+                                    <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
+                                        <FontAwesomeIcon
+                                            icon={faPhone}
+                                            className="text-primary"
+                                        />
+                                        <span className="text-indigo-600 text-sm">
+                                            Call Us
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
