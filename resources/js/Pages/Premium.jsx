@@ -18,6 +18,8 @@ import {
     AccordionBody,
 } from "@material-tailwind/react";
 
+import { Link as ScrollLink } from "react-scroll";
+
 export default function Premium({ auth }) {
     const [open, setOpen] = React.useState(0);
 
@@ -40,15 +42,15 @@ export default function Premium({ auth }) {
                         content="Pass your Canadian Citizenship test the first time or get your money back, guaranteed by using CitizenTestPrep Premium!"
                     />
                 </Head>
-                <section className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-2 py-4 p-4 lg:px-8 xl:px-16 bg-slate-50">
+                <section className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-2 py-4  lg:px-8 xl:px-16 bg-slate-50">
                     {/* Left Section with Heading and Details */}
                     <div className="lg:col-span-7 flex flex-col space-y-6 p-2">
-                        <h1 className="text-4xl sm:text-4xl md:text-3xl lg:text-4xl  xl:text-5xl  px-2 font-extrabold text-center lg:text-left">
+                        <h1 className="text-3xl md:text-3xl lg:text-4xl  xl:text-5xl  px-2 font-extrabold text-center lg:text-left">
                             Pass Your Canadian Citizenship Test On The First
                             Try.{" "}
                             <span className="text-indigo-600">Guaranteed!</span>
                         </h1>
-                        <p className="text-gray-700 text-lg  md:text-xl lg:text-xl leading-relaxed text-start">
+                        <p className="text-gray-700 text-lg  md:text-xl lg:text-xl leading-relaxed p-2 px-4 text-center">
                             Your complete toolkit for success: Get fully
                             prepared with over 850+ practice questions,
                             chapter-wise study guide, test simulations, 450+
@@ -56,9 +58,16 @@ export default function Premium({ auth }) {
                             need to pass the test is all in one place!
                         </p>
                         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
-                            <button className="bg-primary font-bold text-white px-10 py-4 rounded-full text-base lg:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out">
+                            <ScrollLink
+                                to="pricing"
+                                smooth={true}
+                                duration={1000}
+                                offset={-50}
+                                className="bg-primary font-bold text-white px-10 py-4 rounded-full text-base lg:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out cursor-pointer"
+                            >
                                 Get all exam-like questions
-                            </button>
+                            </ScrollLink>
+
                             <img
                                 src="/images/pass guarantee.png"
                                 alt="Pass Guarantee"
@@ -236,28 +245,6 @@ export default function Premium({ auth }) {
                                                     British Columbia
                                                 </p>
                                             </div>
-                                            <div className="hidden sm:flex text-sm mt-4  ml-auto ">
-                                                <FontAwesomeIcon
-                                                    icon={faStar}
-                                                    className="text-greenStar"
-                                                />
-                                                <FontAwesomeIcon
-                                                    icon={faStar}
-                                                    className="text-greenStar"
-                                                />
-                                                <FontAwesomeIcon
-                                                    icon={faStar}
-                                                    className="text-greenStar"
-                                                />
-                                                <FontAwesomeIcon
-                                                    icon={faStar}
-                                                    className="text-greenStar"
-                                                />
-                                                <FontAwesomeIcon
-                                                    icon={faStar}
-                                                    className="text-greenStar"
-                                                />
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -293,28 +280,6 @@ export default function Premium({ auth }) {
                                                     Nova Scotia
                                                 </p>
                                             </div>
-                                            <div className="hidden sm:flex text-sm mt-4  ml-auto ">
-                                                <FontAwesomeIcon
-                                                    icon={faStar}
-                                                    className="text-greenStar"
-                                                />
-                                                <FontAwesomeIcon
-                                                    icon={faStar}
-                                                    className="text-greenStar"
-                                                />
-                                                <FontAwesomeIcon
-                                                    icon={faStar}
-                                                    className="text-greenStar"
-                                                />
-                                                <FontAwesomeIcon
-                                                    icon={faStar}
-                                                    className="text-greenStar"
-                                                />
-                                                <FontAwesomeIcon
-                                                    icon={faStar}
-                                                    className="text-greenStar"
-                                                />
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -349,28 +314,6 @@ export default function Premium({ auth }) {
                                                 <p className="text-sm text-gray-600">
                                                     Saskatchewan
                                                 </p>
-                                            </div>
-                                            <div className="hidden sm:flex text-sm mt-4  ml-auto ">
-                                                <FontAwesomeIcon
-                                                    icon={faStar}
-                                                    className="text-greenStar"
-                                                />
-                                                <FontAwesomeIcon
-                                                    icon={faStar}
-                                                    className="text-greenStar"
-                                                />
-                                                <FontAwesomeIcon
-                                                    icon={faStar}
-                                                    className="text-greenStar"
-                                                />
-                                                <FontAwesomeIcon
-                                                    icon={faStar}
-                                                    className="text-greenStar"
-                                                />
-                                                <FontAwesomeIcon
-                                                    icon={faStar}
-                                                    className="text-greenStar"
-                                                />
                                             </div>
                                         </div>
                                     </div>
@@ -471,7 +414,7 @@ export default function Premium({ auth }) {
                             How it works
                         </p>
 
-                        <h2 className="text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-extrabold text-center md:text-left px-md:px-0 lg:px-0">
+                        <h2 className="text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-extrabold text-center px-md:px-0 lg:px-0">
                             It has never been so easy to pass the Canadian
                             Citizenship test
                         </h2>
@@ -549,21 +492,28 @@ export default function Premium({ auth }) {
                             <img
                                 src="/images/result2.jpg"
                                 alt="Sample"
-                                className="w-72 h-80 rounded-xl "
+                                className="rounded-xl "
                             />
                         </div>
                     </div>
                 </section>
-                <section className="hidden container mx-auto relative sm:flex flex-col items-center py-20 px-4 md:px-10 bg-white ">
+                <section className="hidden container mx-auto relative sm:flex flex-col items-center py-40 px-4 md:px-10 bg-white ">
                     {/* Image */}
                     <img
                         src="/images/pass guarantee.png"
                         alt="Pass Guarantee Logo"
-                        className="w-60 h-28 md:w-96 md:h-40 lg:w-96 lg:h-40 xl:max-w-6xl xl:h-40"
+                        className="h-60"
                     />
+                    {/*  <p className="text-xl sm:text-lg md:text-xl lg:text-5xl font-extrabold  text-center mt-8">
+                        Pass the citizenship test or
+                        <span className=" text-indigo-600 ">
+                            <br />
+                            get your money back
+                        </span>{" "}
+                    </p> */}
 
                     {/* Main Heading */}
-                    <p className="text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg text-black text-center leading-relaxed mt-10 lg:mx-32">
+                    <p className="text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg text-black text-center leading-relaxed mt-10 md:mx-10 lg:mx-44">
                         At CitizenTestPrep Premium, we’re confident you’ll
                         succeed with our high-quality study materials. If you
                         use our resources and don’t pass the Canadian
@@ -839,7 +789,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container mx-auto px-10 md:px-10 py-20 bg-indigo-600 xl:px-32 relative overflow-hidden">
+                <section className="container mx-auto px-10 md:px-10 py-20 bg-indigo-600 xl:px-32 relative overflow-hidden rounded-xl">
                     {/* Decorative elements */}
                     <div className="absolute bottom-0 left-0 h-20 w-10 bg-orange-400 rounded-r-full z-20 overflow-hidden hidden sm:block"></div>
                     <div className="absolute top-0 right-0 h-20 w-10 bg-amber-400 rounded-l-full z-10 overflow-hidden hidden sm:block"></div>
@@ -893,7 +843,7 @@ export default function Premium({ auth }) {
                                     </li>
                                 ))}
                             </ul>
-                            <button className="bg-primary text-white text-lg px-4 py-3 w-80   rounded-full shadow-xl font-normal">
+                            <button className="bg-primary font-bold text-white px-10 py-4 w-96 rounded-full text-base lg:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out">
                                 Unlock all exam-like questions
                             </button>
                         </div>
@@ -960,7 +910,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container mx-auto px-4 md:px-10 lg:px-20 py-20 bg-indigo-600 mt-10 ">
+                <section className="container mx-auto px-4 md:px-10 lg:px-20 py-20 bg-indigo-600 mt-10  rounded-xl">
                     <p className="text-center text-xs text-white mt-8">
                         ONE CHAPTER AT A TIME
                     </p>
@@ -1090,7 +1040,7 @@ export default function Premium({ auth }) {
                         </div>
                     </div>
                 </section>
-                <section className="container mx-auto px-6 md:px-10 lg:px-20 mt-20">
+                <section className="container mx-auto  mt-20" id="pricing">
                     {/* Heading */}
                     <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-6 text-center mt-10">
                         Get Started Today and Let Us Help You Succeed!
@@ -1115,8 +1065,8 @@ export default function Premium({ auth }) {
                     {/* Recommended Button */}
 
                     {/* Plans Section */}
-                    <div className="flex flex-col md:flex-row mt-6">
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
+                    <div className="container mx-auto flex flex-col md:flex-row mt-6  px-6 md:px-0 lg:px-0">
+                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
                             {/* Plan 1 */}
                             <form
                                 action={route("checkout.register")}
@@ -1130,7 +1080,7 @@ export default function Premium({ auth }) {
                                     autoComplete="off"
                                 />
                                 <div className="bg-white border-2 border-blue-50 rounded-3xl p-6 sm:p-8 md:p-8 lg:p-8 xl:p-8 shadow-xl flex-1 flex flex-col">
-                                    <p className="text-2xl sm:text-3xl font-extrabold mb-2 mt-2 sm:mt-2">
+                                    <p className="text-xl sm:text-3xl font-extrabold mb-2 mt-2 sm:mt-2">
                                         3-Month Exam Prep
                                     </p>
                                     <p className="text-gray-600 text-base sm:text-lg mb-4">
@@ -1138,16 +1088,23 @@ export default function Premium({ auth }) {
                                         knowledge in three months.
                                     </p>
                                     <div className="flex justify-between">
-                                        <p className="font-bold text-xl sm:text-3xl">
+                                        <p className="font-bold text-xl sm:text-xl">
                                             $19.99
                                         </p>
                                         <p className="text-gray-600 text-xs sm:text-lg">
-                                            Just $0.6/day
+                                            <span className="text-red-600">
+                                                Today 50% off
+                                            </span>
+
+                                            <span className="line-through ml-2">
+                                                $40.00
+                                            </span>
                                         </p>
                                     </div>
+
                                     <button
                                         type="submit"
-                                        className="bg-primary text-white py-2 sm:py-3 w-full rounded-full mt-4 text-base sm:text-lg"
+                                        className="bg-primary text-white py-2 sm:py-3 w-full rounded-full mt-4 text-base sm:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
                                     >
                                         Get instant access
                                     </button>
@@ -1217,7 +1174,7 @@ export default function Premium({ auth }) {
                                         Recommended
                                     </div>
 
-                                    <h2 className="text-2xl sm:text-3xl font-extrabold mb-2 mt-2">
+                                    <h2 className="text-xl sm:text-3xl font-extrabold mb-2 mt-2">
                                         6-Month Exam Prep
                                     </h2>
                                     <p className="text-gray-600 text-base sm:text-lg mb-4">
@@ -1226,15 +1183,21 @@ export default function Premium({ auth }) {
                                     </p>
 
                                     <div className="flex justify-between">
-                                        <p className="font-bold text-xl sm:text-3xl">
+                                        <p className="font-bold text-xl sm:text-xl">
                                             $29.99
                                         </p>
                                         <p className="text-gray-600 text-xs sm:text-lg">
-                                            Just $1/day
+                                            <span className="text-red-600">
+                                                Today 50% off
+                                            </span>
+
+                                            <span className="line-through ml-2">
+                                                $60.00
+                                            </span>
                                         </p>
                                     </div>
 
-                                    <button className="bg-primary text-white py-2 sm:py-3 w-full rounded-full mt-4 text-base sm:text-lg">
+                                    <button className="bg-primary text-white py-2 sm:py-3 w-full rounded-full mt-4 text-base sm:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out">
                                         Get instant access
                                     </button>
 
@@ -1299,22 +1262,28 @@ export default function Premium({ auth }) {
                                     autoComplete="off"
                                 />
                                 <div className="bg-white border-2 border-blue-50 rounded-3xl p-6 sm:p-8 shadow-xl flex-1 flex flex-col">
-                                    <h2 className="text-2xl sm:text-3xl font-extrabold mb-2 mt-2">
+                                    <h2 className="text-xl sm:text-3xl font-extrabold mb-2 mt-2">
                                         12-Month Exam Prep
                                     </h2>
                                     <p className="text-gray-600 text-base sm:text-lg mb-4">
                                         When persistence pays off, get a
                                         comprehensive year-long package.
                                     </p>
-                                    <div className="flex justify-between">
-                                        <p className="font-bold text-xl sm:text-3xl">
+                                    <div className="flex justify-between ">
+                                        <p className="font-bold text-xl sm:text-xl">
                                             $49.99
                                         </p>
                                         <p className="text-gray-600 text-xs sm:text-lg">
-                                            Just $0.14/day
+                                            <span className="text-red-600">
+                                                Today 50% off
+                                            </span>
+
+                                            <span className="line-through ml-2">
+                                                $100.00
+                                            </span>
                                         </p>
                                     </div>
-                                    <button className="bg-primary text-white py-2 sm:py-3 w-full rounded-full mt-4 text-base sm:text-lg">
+                                    <button className="bg-primary text-white py-2 sm:py-3 w-full rounded-full mt-4 text-base sm:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out">
                                         Get instant access
                                     </button>
                                     <p className="text-lg sm:text-xl text-zinc-600 mt-4">

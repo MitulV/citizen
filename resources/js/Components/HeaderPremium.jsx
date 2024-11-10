@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link, usePage } from "@inertiajs/react";
 import { MegaMenu, Navbar, Avatar, Dropdown } from "flowbite-react";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function HeaderPremium({ user }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,29 +40,38 @@ export default function HeaderPremium({ user }) {
                     <div className="absolute top-20 left-0 w-full bg-white shadow-lg lg:hidden text-stone-500 text-sm z-10">
                         <ul className="space-y-1">
                             <Navbar>
-                                <Link
-                                    href={route("about")}
-                                    className="hover:text-primary block ml-1"
+                                <ScrollLink
+                                    to="pricing"
+                                    smooth={true}
+                                    duration={1000}
+                                    offset={-50}
+                                    className="hover:text-primary cursor-pointer"
                                 >
                                     Features
-                                </Link>
+                                </ScrollLink>
                             </Navbar>
                             <Navbar>
-                                <Link
-                                    href={route("about")}
-                                    className="hover:text-primary block ml-1"
+                                <ScrollLink
+                                    to="pricing"
+                                    smooth={true}
+                                    duration={1000}
+                                    offset={-50}
+                                    className="hover:text-primary cursor-pointer"
                                 >
-                                    About
-                                </Link>
+                                    Pricing
+                                </ScrollLink>
                             </Navbar>
 
                             <Navbar>
-                                <Link
-                                    href={route("about")}
-                                    className="hover:text-primary block ml-1"
+                                <ScrollLink
+                                    to="pricing"
+                                    smooth={true}
+                                    duration={1000}
+                                    offset={-50}
+                                    className="hover:text-primary cursor-pointer"
                                 >
-                                    Pricing
-                                </Link>
+                                    Pass Guarantee
+                                </ScrollLink>
                             </Navbar>
 
                             <li className="mx-5 pt-3">
@@ -100,12 +110,15 @@ export default function HeaderPremium({ user }) {
                         </Link>
                     </Navbar>
                     <Navbar className="lg:flex">
-                        <Link
-                            href={route("about")}
+                        <ScrollLink
+                            to="pricing"
+                            smooth={true}
+                            duration={1000}
+                            offset={-50}
                             className="hover:text-primary cursor-pointer"
                         >
                             Pricing
-                        </Link>
+                        </ScrollLink>
                     </Navbar>
                     <Navbar className="lg:flex">
                         <Link
@@ -126,12 +139,15 @@ export default function HeaderPremium({ user }) {
                         {user ? "Dashboard" : "Sign In"}
                     </Link>
 
-                    <Link
-                        href={route("premiumPage")}
-                        className="bg-primary text-white px-4 py-2 rounded-full text-nowrap"
+                    <ScrollLink
+                        to="pricing"
+                        smooth={true}
+                        duration={1000}
+                        offset={-50}
+                        className="bg-primary text-white px-4 py-2 rounded-full text-nowrap cursor-pointer"
                     >
                         Get Instant Access
-                    </Link>
+                    </ScrollLink>
                 </div>
             </div>
         </MegaMenu>
