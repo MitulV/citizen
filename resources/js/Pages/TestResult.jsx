@@ -13,7 +13,7 @@ import "react-circular-progressbar/dist/styles.css";
 import ResultBanner from "@/Components/ResultBanner";
 import GuestLayout from "@/Layouts/GuestLayout";
 
-export default function TestStart({ result, totalTimeTaken }) {
+export default function TestResult({ result, totalTimeTaken }) {
     const [isBannerVisible, setIsBannerVisible] = useState(true);
     const handleRestart = () => {
         router.post(
@@ -140,12 +140,12 @@ export default function TestStart({ result, totalTimeTaken }) {
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                     {[
                                         "Restart this test",
-                                        "Unlock all 600+ Questions",
+                                        "Pass the first time guarantee",
                                     ].map((title, index) => (
                                         <div
                                             key={index}
                                             className={`border p-6 rounded-2xl ${
-                                                index === 3
+                                                index === 1
                                                     ? "bg-indigo-600 text-white"
                                                     : "bg-white"
                                             } `}
@@ -153,13 +153,42 @@ export default function TestStart({ result, totalTimeTaken }) {
                                             <h1 className="text-lg font-bold">
                                                 {title}
                                             </h1>
-                                            <p className="mt-2">
-                                                Customize as needed for each
-                                                step here.
-                                            </p>
-                                            <button className="text-primary underline underline-offset-1 mt-4">
-                                                Click here
-                                            </button>
+                                            {index == 0 ? (
+                                                <p className="mt-2">
+                                                    Want to revisit the same
+                                                    questions you just did? Take
+                                                    this test once again.
+                                                </p>
+                                            ) : (
+                                                <p className="mt-2">
+                                                    Be fully prepared and ace
+                                                    your Canadian citizenship
+                                                    test on the first attempt
+                                                </p>
+                                            )}
+                                            {index == 0 ? (
+                                                <Link
+                                                    as="button"
+                                                    className="text-primary underline underline-offset-1 mt-4"
+                                                    href={route(
+                                                        "testInfoPage",
+                                                        {}
+                                                    )}
+                                                >
+                                                    Restart
+                                                </Link>
+                                            ) : (
+                                                <Link
+                                                    href={route(
+                                                        "premiumPage",
+                                                        {}
+                                                    )}
+                                                    as="button"
+                                                    className="bg-primary text-white px-16 py-2 rounded-full mt-4 text-center"
+                                                >
+                                                    Unlock all 600+ Questions
+                                                </Link>
+                                            )}
                                         </div>
                                     ))}
                                 </div>

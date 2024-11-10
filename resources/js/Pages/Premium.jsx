@@ -492,7 +492,7 @@ export default function Premium({ auth }) {
                             <img
                                 src="/images/result2.jpg"
                                 alt="Sample"
-                                className="rounded-xl "
+                                className="rounded-xl"
                             />
                         </div>
                     </div>
