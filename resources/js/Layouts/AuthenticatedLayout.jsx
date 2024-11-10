@@ -192,7 +192,7 @@ export default function Authenticated({
                         <polyline points="15 18 9 12 15 6"></polyline>
                     </svg>
                 </button>
-                <main className="flex-1">{children}</main>
+                <main className="flex-1 bg-slate-100">{children}</main>
             </div>
         </div>
     );
