@@ -494,7 +494,10 @@ export default function Premium({ auth }) {
                         </div>
                     </div>
                 </section>
-                <section className="hidden container mx-auto relative sm:flex flex-col items-center py-40 px-4 md:px-10 mt-10 ">
+                <section
+                    id="passguarantee"
+                    className="hidden container mx-auto relative sm:flex flex-col items-center py-40 px-4 md:px-10 mt-10 "
+                >
                     {/* Image */}
                     <img
                         src="/images/pass guarantee.png"
@@ -786,7 +789,10 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container mx-auto px-10 md:px-10 py-12 bg-indigo-600 xl:px-32 relative overflow-hidden rounded-xl">
+                <section
+                    id="Features"
+                    className="container mx-auto px-10 md:px-10 py-12 bg-indigo-600 xl:px-32 relative overflow-hidden rounded-xl"
+                >
                     {/* Decorative elements */}
                     <div className="absolute bottom-0 left-0 h-20 w-10 bg-orange-400 rounded-r-full z-20 overflow-hidden hidden sm:block"></div>
                     <div className="absolute top-0 right-0 h-20 w-10 bg-amber-400 rounded-l-full z-10 overflow-hidden hidden sm:block"></div>

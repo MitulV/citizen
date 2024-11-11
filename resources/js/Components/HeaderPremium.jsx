@@ -41,7 +41,7 @@ export default function HeaderPremium({ user }) {
                         <ul className="space-y-1">
                             <Navbar>
                                 <ScrollLink
-                                    to="pricing"
+                                    to="Features"
                                     smooth={true}
                                     duration={1000}
                                     offset={-50}
@@ -64,7 +64,7 @@ export default function HeaderPremium({ user }) {
 
                             <Navbar>
                                 <ScrollLink
-                                    to="pricing"
+                                    to="passguarantee"
                                     smooth={true}
                                     duration={1000}
                                     offset={-50}
@@ -102,12 +102,15 @@ export default function HeaderPremium({ user }) {
                 {/* Navbar for medium and large screens */}
                 <Navbar.Collapse className="hidden md:hidden lg:flex flex-grow items-center justify-center ">
                     <Navbar className="lg:flex">
-                        <Link
-                            href={route("about")}
+                        <ScrollLink
+                            to="Features"
+                            smooth={true}
+                            duration={1000}
+                            offset={-50}
                             className="hover:text-primary cursor-pointer"
                         >
                             Features
-                        </Link>
+                        </ScrollLink>
                     </Navbar>
                     <Navbar className="lg:flex">
                         <ScrollLink
@@ -121,12 +124,15 @@ export default function HeaderPremium({ user }) {
                         </ScrollLink>
                     </Navbar>
                     <Navbar className="lg:flex">
-                        <Link
-                            href={route("about")}
+                        <ScrollLink
+                            to="passguarantee"
+                            smooth={true}
+                            duration={1000}
+                            offset={-50}
                             className="hover:text-primary cursor-pointer"
                         >
                             Pass Guarantee
-                        </Link>
+                        </ScrollLink>
                     </Navbar>
                 </Navbar.Collapse>
 
