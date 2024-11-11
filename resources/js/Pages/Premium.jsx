@@ -74,11 +74,11 @@ export default function Premium({ auth }) {
                                 className="h-14 w-auto mt-8 "
                             />
                         </div>
-                        <p className="text-gray-700 text-base sm:text-lg lg:text-2xl  px-6 text-start">
+                        <p className="text-gray-700 text-base sm:text-lg lg:text-2xl  px-3 text-start">
                             Join over 18,300+ new citizens who have passed with
                             our help.
                         </p>
-                        <ul className="space-y-2 text-gray-800 text-base sm:text-lg lg:text-xl px-6">
+                        <ul className="space-y-2 text-gray-800 text-base sm:text-lg lg:text-xl px-3">
                             <li className="flex items-center">
                                 <svg
                                     className="mr-2 text-indigo-600"

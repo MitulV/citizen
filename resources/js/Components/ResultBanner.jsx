@@ -80,17 +80,17 @@ export default function ResultBanner({ setIsBannerVisible }) {
                                 </h1>
                             </div>
                             <div className="container mx-auto px-4 mt-4 sm:mt-8 flex justify-center">
-                                <Link
-                                    href={route("premiumPage", {})}
-                                    as="button"
-                                    className="bg-primary text-white px-16 py-2 rounded-full shadow-xl"
+                                <a
+                                    href="/premium"
+                                    target="_blank"
+                                    className="bg-primary text-white px-16 py-2 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out cursor-pointer"
                                 >
                                     Unlock all questions{" "}
                                     <FontAwesomeIcon
                                         icon={faArrowUpRightFromSquare}
                                         className="text-white ml-2"
                                     />
-                                </Link>
+                                </a>
                             </div>
                             <p className="text-xs md:text-sm mt-4 text-gray-600">
                                 Opens in new window, your results won’t be lost

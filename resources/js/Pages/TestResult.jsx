@@ -28,6 +28,12 @@ export default function TestResult({ result, totalTimeTaken }) {
         result.percentage < 75
             ? "Not enough to pass :-("
             : "Great. You Passed!";
+
+    const descriptionMessage =
+        result.percentage < 75
+            ? "No worries! A little more practice and you'll nail it. Upgrade to premium to guarantee a first-time pass!"
+            : "Well done! You're almost there—take it to the next level with premium access and ace your citizenship test!";
+
     return (
         <>
             {isBannerVisible && (
@@ -101,7 +107,7 @@ export default function TestResult({ result, totalTimeTaken }) {
                                         {message}
                                     </h1>
                                     <p className="text-gray-600 mt-2">
-                                        Unlock 600+ practice questions today.
+                                        {descriptionMessage}
                                     </p>
                                     <div className="flex items-center space-x-4 mt-4">
                                         <div className="w-2 h-2 bg-green-500 rounded-full"></div>
