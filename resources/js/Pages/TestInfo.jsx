@@ -19,7 +19,7 @@ export default function TestInfo({ chapterId, auth }) {
                     />
                 </Head>
 
-                <section className="container mx-auto py-4 md:py-8  bg-slate-50  md:px-16 lg:px-8 xl:px-44">
+                <section className="container mx-auto py-4  bg-slate-50  md:px-16 lg:px-8 xl:px-44">
                     <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 rounded-2xl overflow-hidden bg-white shadow-sm p-8 ">
                         {/* Left Part: h1 Tag, p Tag, 2 Columns with Sentences, and Buttons */}
                         <div className="flex flex-col space-y-6 ">
@@ -32,68 +32,65 @@ export default function TestInfo({ chapterId, auth }) {
                                     <div className="flex items-start">
                                         <FontAwesomeIcon
                                             icon={faCheck}
-                                            className="text-gray-500 text-sm mr-3"
+                                            className="text-gray-500  text-base mr-3"
                                         />
-                                        <p className="text-gray-600 text-sm">
+                                        <p className="text-gray-600 text-base">
                                             Perfect for first-timers
                                         </p>
                                     </div>
                                     <div className="flex items-start">
                                         <FontAwesomeIcon
                                             icon={faCheck}
-                                            className="text-gray-500 text-sm mr-3"
+                                            className="text-gray-500  text-base mr-3"
                                         />
-                                        <p className="text-gray-600 text-sm">
+                                        <p className="text-gray-600  text-base">
                                             Based on the official booklet
                                         </p>
                                     </div>
                                     <div className="flex items-start">
                                         <FontAwesomeIcon
                                             icon={faCheck}
-                                            className="text-gray-500 text-sm mr-3"
+                                            className="text-gray-500  mr-3"
                                         />
-                                        <p className="text-gray-600 text-sm">
+                                        <p className="text-gray-600  text-base">
                                             Triple-checked for accuracy
                                         </p>
                                     </div>
                                 </div>
-                                <div className="hidden md:block flex-col space-y-4">
+                                <div className="hidden md:block flex-col space-y-4 ">
                                     <div className="flex items-start">
                                         <FontAwesomeIcon
                                             icon={faCheck}
-                                            className="text-gray-500 text-sm mr-3"
+                                            className="text-gray-500  text-base mr-3"
                                         />
-                                        <p className="text-gray-600 text-sm">
+                                        <p className="text-gray-600  text-base">
                                             15 questions
                                         </p>
                                     </div>
                                     <div className="flex items-start">
                                         <FontAwesomeIcon
                                             icon={faCheck}
-                                            className="text-gray-500 text-sm mr-3"
+                                            className="text-gray-500  text-base mr-3"
                                         />
-                                        <p className="text-gray-600 text-sm">
+                                        <p className="text-gray-600  text-base">
                                             75% passing score
                                         </p>
                                     </div>
                                     <div className="flex items-start">
                                         <FontAwesomeIcon
                                             icon={faCheck}
-                                            className="text-gray-500 text-sm mr-3"
+                                            className="text-gray-500  text-base mr-3"
                                         />
-                                        <p className="text-gray-600 text-sm">
+                                        <p className="text-gray-600  text-base">
                                             30 minutes long
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <p className="text-gray-600 text-sm bg-slate-50">
-                                Ensuring the accuracy and quality of our
-                                practice tests is paramount. Learn more about
-                                our rigorous standards in our{" "}
-                                <span className="text-primary underline underline-offset-1">
-                                    Quality Assurance Guidelines.
-                                </span>
+                            <p className="text-gray-600  text-base bg-slate-50">
+                                We maintain high standards to ensure that our
+                                practice tests are both accurate and reliable,
+                                following strict quality assurance guidelines.{" "}
                             </p>
                             <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
                                 <Link
@@ -124,11 +121,11 @@ export default function TestInfo({ chapterId, auth }) {
                         </div>
                     </div>
                 </section>
-                <section className="container mx-auto py-4 md:py-8  bg-slate-50 md:px-16 lg:px-8 xl:px-44">
-                    <div className="container mx-auto flex flex-col md:flex-row rounded-2xl overflow-hidden bg-white shadow-sm p-8">
+                <section className="container mx-auto   bg-slate-50 md:px-16 lg:px-8 xl:px-44">
+                    <div className="container mx-auto flex flex-col md:flex-row rounded-2xl overflow-hidden bg-white shadow-sm ">
                         {/* Left Side */}
                         <div className="w-full md:w-1/2 p-8">
-                            <h2 className="text-2xl sm:text-2xl font-bold mb-4">
+                            <h2 className="text-2xl sm:text-3xl font-bold mb-8">
                                 About this test
                             </h2>
                             {/* <p className="text-lg sm:text-sm text-gray-500 mb-2">
@@ -138,7 +135,7 @@ export default function TestInfo({ chapterId, auth }) {
                                 />
                                 30 minutes to complete
                             </p> */}
-                            <p className="text-base sm:text-sm mb-4 text-gray-600">
+                            <p className="text-base  mb-4 text-gray-600">
                                 This free Canadian citizenship practice test
                                 helps you check your knowledge about Canada. It
                                 has 15 multiple-choice questions that you should
@@ -160,7 +157,7 @@ export default function TestInfo({ chapterId, auth }) {
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 {/* First row */}
-                                <div className="bg-slate-50">
+                                <div className="bg-slate-50 p-4 ">
                                     <p className="text-sm text-gray-600 sm:text-lg  mb-2">
                                         Questions
                                     </p>
@@ -168,7 +165,7 @@ export default function TestInfo({ chapterId, auth }) {
                                         15
                                     </p>
                                 </div>
-                                <div className="bg-slate-50">
+                                <div className="bg-slate-50 p-4">
                                     <p className="text-sm text-gray-600 sm:text-lg  mb-2">
                                         Allowed to pass
                                     </p>
@@ -177,7 +174,7 @@ export default function TestInfo({ chapterId, auth }) {
                                     </p>
                                 </div>
                                 {/* Second row */}
-                                <div className="bg-slate-50">
+                                <div className="bg-slate-50 p-4">
                                     <p className="text-sm text-gray-600 sm:text-lg  mb-2">
                                         Passing Score
                                     </p>
@@ -185,7 +182,7 @@ export default function TestInfo({ chapterId, auth }) {
                                         75%{" "}
                                     </p>
                                 </div>
-                                <div className="bg-slate-50">
+                                <div className="bg-slate-50 p-4">
                                     <p className="text-sm text-gray-600 sm:text-lg  mb-2">
                                         Time:
                                     </p>

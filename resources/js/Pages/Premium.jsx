@@ -50,14 +50,14 @@ export default function Premium({ auth }) {
                             Try.{" "}
                             <span className="text-indigo-600">Guaranteed!</span>
                         </h1>
-                        <p className="text-gray-700 text-lg  md:text-xl lg:text-xl leading-relaxed p-2 px-4 text-left">
+                        <p className="text-gray-700 text-lg md:text-xl lg:text-xl leading-relaxed p-2 px-3 text-left">
                             Your complete toolkit for success: Get fully
                             prepared with over 850+ practice questions,
                             chapter-wise study guide, test simulations, 450+
                             flashcards, cheat sheets, and more. Everything you
                             need to pass the test is all in one place!
                         </p>
-                        <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 pl-6">
+                        <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 pl-2">
                             <ScrollLink
                                 to="pricing"
                                 smooth={true}
@@ -321,10 +321,10 @@ export default function Premium({ auth }) {
                 </section>
 
                 <section className=" container mx-auto   lg:col-span-12 flex flex-col items-center justify-center px-6 md:px-16 lg:px-32 xl:px-28 py-10">
-                    <h2 className="text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-bold mb-4 text-center">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-center">
                         A Fun And Easy Way To Prepare For Your Test!
                     </h2>
-                    <p className="text-gray-600 font-inter text-start text-lg lg:text-lg max-h-20 md:max-h-24 lg:max-h-32 overflow-hidden">
+                    <p className="text-gray-600 font-inter text-start text-lg lg:text-lg">
                         We have everything you need to prepare for the Canadian
                         citizenship test. Our platform helps you learn about
                         Canadian values and principles while showing you real
@@ -412,8 +412,8 @@ export default function Premium({ auth }) {
                         </p>
 
                         <h2 className="text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-extrabold text-center px-md:px-0 lg:px-0">
-                            It has never been so easy to pass the Canadian
-                            Citizenship test
+                            Passing the Canadian Citizenship Test Has Never Been
+                            Easier
                         </h2>
                         <p className="text-gray-600 text-lg md:text-lg lg:text-lg xl:text-lg text-center md:text-left">
                             Take the Canadian citizenship test with clarity and
@@ -567,31 +567,27 @@ export default function Premium({ auth }) {
                             <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                 <div>
                                     <h3 className="text-xl font-bold mb-2 text-left">
-                                        “Passed with CitizenTestPrep”
+                                        “Identified My Weak Spots”
                                     </h3>
                                     <p className="text-sm mb-2 text-gray-500 text-left ">
-                                        I was really struggling to prepare for
-                                        the Canadian citizenship test. No matter
-                                        how much I studied the Discover Canada
-                                        book, I couldn’t remember everything. A
-                                        friend told me about CitizenTestPrep,
-                                        and it made a huge difference!
+                                        Their chapter-by-chapter practice tests
+                                        helped me see my weak spots so I could
+                                        work on them. The timeline recaps were
+                                        super helpful too. I passed the test on
+                                        my second try!
                                     </p>
                                 </div>
-                                <div>
-                                    {" "}
-                                    <hr className="border-1 border-gray-200 my-2" />
-                                </div>
+                                <div> </div>
 
                                 <div className="flex items-left mt-2">
                                     <img
-                                        src="/images/review 3.png"
+                                        src="/images/1pass.png"
                                         alt="Profile Picture"
                                         className="w-12 h-12 rounded-full mr-2"
                                     />
                                     <div>
                                         <p className="text-ellipsis text-sm font-bold text-gray-600">
-                                            Jillian McAllister
+                                            Charlotte Morrison
                                         </p>
                                         <p className="text-sm text-gray-600">
                                             British Columbia
@@ -605,30 +601,30 @@ export default function Premium({ auth }) {
                             <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                 <div>
                                     <h3 className="text-xl font-bold mb-2 text-left">
-                                        “Identified My Weak Spots”
+                                        “Comprehensive Practice Questions”
                                     </h3>
                                     <p className="text-sm mb-14 text-gray-500 text-left">
-                                        Their chapter-by-chapter practice tests
-                                        helped me see my weak spots so I could
-                                        work on them. The timeline recaps were
-                                        super helpful too. I passed the test on
-                                        my third try!
+                                        The practice questions covered
+                                        everything on the test, and the
+                                        explanations helped me understand the
+                                        concepts better. The simulation tests
+                                        felt just like the real exam, which was
+                                        really helpful.
                                     </p>
                                 </div>
-                                <hr className="border-1 border-gray-200  mb-3" />
 
                                 <div className="flex items-left mb-2 mt-2">
                                     <img
-                                        src="/images/review 2.png"
+                                        src="/images/p-2.png"
                                         alt="Profile Picture"
                                         className="w-12 h-12 rounded-full mr-2"
                                     />
                                     <div className="flex flex-col text-center sm:text-left">
                                         <p className="text-ellipsis text-sm font-bold text-gray-600">
-                                            Marcus Tremblay
+                                            Jacob Thompson
                                         </p>
                                         <p className="text-sm text-gray-600">
-                                            Nova Scotia
+                                            Manitoba
                                         </p>
                                     </div>
                                 </div>
@@ -639,32 +635,29 @@ export default function Premium({ auth }) {
                             <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                 <div>
                                     <h3 className="text-xl font-bold mb-2 text-left">
-                                        “Responsive Customer Support”
+                                        “Easy to Remember”
                                     </h3>
                                     <p className="text-sm mb-10 text-gray-500 text-left">
-                                        As a busy professional, I didn’t have a
-                                        lot of time to study. CitizenTestPrep
-                                        made it easy to fit in a few practice
-                                        questions during my commute or lunch
-                                        break. Their customer support was
-                                        great—they quickly answered all my
-                                        questions.
+                                        I struggled with names and dates, but
+                                        CitizenTestPrep made it interesting and
+                                        easy to remember. I highly recommend
+                                        CitizenTestPrep to anyone getting ready
+                                        for this important exam.
                                     </p>
                                 </div>
-                                <hr className="border-1 border-gray-200 my-2" />
 
                                 <div className="flex items-left mb-2">
                                     <img
-                                        src="/images/review 1.png"
+                                        src="/images/p-3.png"
                                         alt="Profile Picture"
                                         className="w-12 h-12 rounded-full mr-2"
                                     />
                                     <div>
                                         <p className="text-ellipsis text-sm font-bold text-gray-600">
-                                            Hitoshi Matsumoto
+                                            Olivia Bullock
                                         </p>
                                         <p className="text-sm text-gray-600">
-                                            Saskatchewan
+                                            Alberta
                                         </p>
                                     </div>
                                 </div>
@@ -676,66 +669,28 @@ export default function Premium({ auth }) {
                             <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                 <div>
                                     <h3 className="text-xl font-bold mb-2 text-left">
-                                        “Comprehensive Practice Questions”
+                                        “Great Resource”
                                     </h3>
                                     <p className="text-sm mb-2 text-gray-500 text-left ">
-                                        The practice questions covered
-                                        everything on the test, and the
-                                        explanations helped me understand the
-                                        concepts better. The simulation tests
-                                        felt just like the real exam, which was
-                                        really helpful.
+                                        CitizenTestPrep made my preparation
+                                        smooth. The simulation test helped me
+                                        find my weaknesses. I’m so grateful for
+                                        this amazing resource that helped me
+                                        embrace my new identity as a Canadian
+                                        citizen.
                                     </p>
                                 </div>
-                                <div>
-                                    {" "}
-                                    <hr className="border-1 border-gray-200 my-2" />
-                                </div>
+                                <div> </div>
 
                                 <div className="flex items-left mt-2">
                                     <img
-                                        src="/images/review 3.png"
+                                        src="/images/p4.png"
                                         alt="Profile Picture"
                                         className="w-12 h-12 rounded-full mr-2"
                                     />
                                     <div>
                                         <p className="text-ellipsis text-sm font-bold text-gray-600">
-                                            Jillian McAllister
-                                        </p>
-                                        <p className="text-sm text-gray-600">
-                                            British Columbia
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
-                            <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
-                                <div>
-                                    <h3 className="text-xl font-bold mb-2 text-left">
-                                        “Easy to Remember“
-                                    </h3>
-                                    <p className="text-sm mb-14 text-gray-500 text-left">
-                                        I struggled with names and dates, but
-                                        CitizenTestPrep made those chapters
-                                        interesting and easy to remember. I
-                                        highly recommend CitizenTestPrep to
-                                        anyone getting ready for this important
-                                        exam.
-                                    </p>
-                                </div>
-                                <hr className="border-1 border-gray-200  mb-3" />
-
-                                <div className="flex items-left mb-2 mt-2">
-                                    <img
-                                        src="/images/review 2.png"
-                                        alt="Profile Picture"
-                                        className="w-12 h-12 rounded-full mr-2"
-                                    />
-                                    <div className="flex flex-col text-center sm:text-left">
-                                        <p className="text-ellipsis text-sm font-bold text-gray-600">
-                                            Marcus Tremblay
+                                            Liam Mcdonald
                                         </p>
                                         <p className="text-sm text-gray-600">
                                             Nova Scotia
@@ -749,31 +704,62 @@ export default function Premium({ auth }) {
                             <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                 <div>
                                     <h3 className="text-xl font-bold mb-2 text-left">
-                                        “Great Resource”
+                                        “Clear & Detailed Explanations“
                                     </h3>
-                                    <p className="text-sm mb-10 text-gray-500 text-left">
-                                        CitizenTestPrep made my preparation
-                                        smooth. The simulation test helped me
-                                        find my weaknesses. I’m so grateful for
-                                        this amazing resource that helped me
-                                        embrace my new identity as a Canadian
-                                        citizen.
+                                    <p className="text-sm mb-14 text-gray-500 text-left">
+                                        Their clear approach and detailed
+                                        explanations made even the toughest
+                                        chapters easier to understand. I’m so
+                                        glad I didn’t just have to memorize the
+                                        Discover Canada book.
                                     </p>
                                 </div>
-                                <hr className="border-1 border-gray-200 my-2" />
+
+                                <div className="flex items-left mb-2 mt-2">
+                                    <img
+                                        src="/images/p-5.jpg"
+                                        alt="Profile Picture"
+                                        className="w-12 h-12 rounded-full mr-2"
+                                    />
+                                    <div className="flex flex-col text-center sm:text-left">
+                                        <p className="text-ellipsis text-sm font-bold text-gray-600">
+                                            Emily Chen
+                                        </p>
+                                        <p className="text-sm text-gray-600">
+                                            Ontario
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
+                            <div className="p-4 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
+                                <div>
+                                    <h3 className="text-xl font-bold mb-2 text-left">
+                                        “Highly Recommend”
+                                    </h3>
+                                    <p className="text-sm mb-10 text-gray-500 text-left">
+                                        CitizenTestPrep Premium was a lifesaver
+                                        for me! It’s the best place to prepare
+                                        for the test. I wholeheartedly recommend
+                                        it to anyone looking to pass the
+                                        Canadian citizenship test.
+                                    </p>
+                                </div>
 
                                 <div className="flex items-left mb-2">
                                     <img
-                                        src="/images/review 1.png"
+                                        src="/images/p6.jpg"
                                         alt="Profile Picture"
                                         className="w-12 h-12 rounded-full mr-2"
                                     />
                                     <div>
                                         <p className="text-ellipsis text-sm font-bold text-gray-600">
-                                            Hitoshi Matsumoto
+                                            Jevonte Haughton
                                         </p>
                                         <p className="text-sm text-gray-600">
-                                            Saskatchewan
+                                            Quebec
                                         </p>
                                     </div>
                                 </div>
@@ -825,97 +811,88 @@ export default function Premium({ auth }) {
                                 including multiple-choice and true/false.
                             </p>
                             <ul className="space-y-2 text-white text-xl">
-                                {[
-                                    <ul className="space-y-2 text-white text-xl">
-                                        <li className="flex items-center">
-                                            <FontAwesomeIcon
-                                                icon={faCheck}
-                                                className="mr-2 text-white"
-                                            />
-                                            <span className="font-bold">
-                                                52 Practice Tests
-                                            </span>{" "}
-                                            with easy-to-understand answer
-                                            explanations
-                                        </li>
-                                        <li className="flex items-center">
-                                            <FontAwesomeIcon
-                                                icon={faCheck}
-                                                className="mr-2 text-white"
-                                            />
-                                            <span className="font-bold">
-                                                850+ Practice Questions
-                                            </span>{" "}
-                                            for thorough preparation
-                                        </li>
-                                        <li className="flex items-center">
-                                            <FontAwesomeIcon
-                                                icon={faCheck}
-                                                className="mr-2 text-white"
-                                            />
-                                            <span className="font-bold">
-                                                Simulation Tests
-                                            </span>{" "}
-                                            that feel like the real exam
-                                        </li>
-                                        <li className="flex items-center">
-                                            <FontAwesomeIcon
-                                                icon={faCheck}
-                                                className="mr-2 text-white"
-                                            />
-                                            <span className="font-bold">
-                                                The Official Study Guide
-                                            </span>{" "}
-                                            in a fun and engaging format
-                                        </li>
-                                        <li className="flex items-center">
-                                            <FontAwesomeIcon
-                                                icon={faCheck}
-                                                className="mr-2 text-white"
-                                            />
-                                            <span className="font-bold">
-                                                450+ Flash Cards
-                                            </span>{" "}
-                                            covering all the important chapters
-                                        </li>
-                                        <li className="flex items-center">
-                                            <FontAwesomeIcon
-                                                icon={faCheck}
-                                                className="mr-2 text-white"
-                                            />
-                                            <span className="font-bold">
-                                                Cheat Sheets
-                                            </span>{" "}
-                                            with key figures, dates, maps, and a
-                                            glossary
-                                        </li>
-                                        <li className="flex items-center">
-                                            <FontAwesomeIcon
-                                                icon={faCheck}
-                                                className="mr-2 text-white"
-                                            />
-                                            <span className="font-bold">
-                                                Priority Customer Support
-                                            </span>{" "}
-                                            to help you whenever you need it
-                                        </li>
-                                    </ul>,
-                                ].map((text, index) => (
-                                    <li
-                                        key={index}
-                                        className="flex items-center"
-                                    >
-                                        <FontAwesomeIcon
-                                            icon={faCheck}
-                                            className="mr-2 text-white"
-                                        />
-                                        {text}
-                                    </li>
-                                ))}
+                                <li className="flex items-center">
+                                    <FontAwesomeIcon
+                                        icon={faCheck}
+                                        className="mr-2 text-white"
+                                    />
+                                    <span className="font-bold">
+                                        52 Practice Tests&nbsp;
+                                    </span>
+                                    with easy-to-understand answer explanations
+                                </li>
+                                <li className="flex items-center">
+                                    <FontAwesomeIcon
+                                        icon={faCheck}
+                                        className="mr-2 text-white"
+                                    />
+                                    <span className="font-bold">
+                                        850+ Practice Questions&nbsp;
+                                    </span>{" "}
+                                    for thorough preparation
+                                </li>
+                                <li className="flex items-center">
+                                    <FontAwesomeIcon
+                                        icon={faCheck}
+                                        className="mr-2 text-white"
+                                    />
+                                    <span className="font-bold">
+                                        Simulation Tests&nbsp;
+                                    </span>{" "}
+                                    that feel like the real exam
+                                </li>
+                                <li className="flex items-center">
+                                    <FontAwesomeIcon
+                                        icon={faCheck}
+                                        className="mr-2 text-white"
+                                    />
+                                    <span className="font-bold">
+                                        The Official Study Guide&nbsp;
+                                    </span>{" "}
+                                    in a fun and engaging format
+                                </li>
+                                <li className="flex items-center">
+                                    <FontAwesomeIcon
+                                        icon={faCheck}
+                                        className="mr-2 text-white"
+                                    />
+                                    <span className="font-bold">
+                                        450+ Flash Cards&nbsp;
+                                    </span>{" "}
+                                    covering all the important chapters
+                                </li>
+                                <li className="flex items-center">
+                                    <FontAwesomeIcon
+                                        icon={faCheck}
+                                        className="mr-2 text-white"
+                                    />
+                                    <span className="font-bold">
+                                        Cheat Sheets&nbsp;
+                                    </span>{" "}
+                                    with key figures, dates, maps, and a
+                                    glossary
+                                </li>
+                                <li className="flex items-center">
+                                    <FontAwesomeIcon
+                                        icon={faCheck}
+                                        className="mr-2 text-white"
+                                    />
+                                    <span className="font-bold">
+                                        Priority Customer Support&nbsp;
+                                    </span>{" "}
+                                    to help you whenever you need it
+                                </li>
                             </ul>
-                            <button className="bg-primary font-bold text-white px-2 sm:px-8 md:px-10 py-3 sm:py-4 w-full sm:w-80 md:w-96 rounded-full text-sm sm:text-base md:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out">
+
+                            <ScrollLink
+                                to="pricing"
+                                smooth={true}
+                                duration={1000}
+                                offset={-50}
+                                className="bg-primary cursor-pointer font-bold text-white px-2 sm:px-8 md:px-10 py-3 sm:py-4 w-full sm:w-80 md:w-96 rounded-full text-sm sm:text-base md:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
+                            >
                                 Unlock all exam-like questions
-                            </button>
+                            </ScrollLink>
                         </div>
                     </div>
                 </section>
@@ -1055,13 +1032,12 @@ export default function Premium({ auth }) {
                         <div className="rounded-lg p-6 flex flex-col justify-between">
                             <div>
                                 <h3 className="text-2xl font-bold mb-4">
-                                    Interactive Regional Map
+                                    Canadian Map
                                 </h3>
                                 <p className="text-gray-600 text-lg mb-8">
                                     Explore Canada’s regions, provinces, and
-                                    territories with our interactive map, making
-                                    it easy to learn about the country’s
-                                    geography.
+                                    territories with our map, making it easy to
+                                    learn about the country’s geography.
                                 </p>
                             </div>
                             <img

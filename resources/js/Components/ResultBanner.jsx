@@ -75,7 +75,8 @@ export default function ResultBanner({ setIsBannerVisible }) {
                                         icon={faCircleCheck}
                                         className="text-lime-700 mr-4"
                                     />{" "}
-                                    Trusted by Over 12,230 New Canadian Citizens
+                                    Trusted by Over 18,300+ New Canadian
+                                    Citizens
                                 </h1>
                             </div>
                             <div className="container mx-auto px-4 mt-4 sm:mt-8 flex justify-center">

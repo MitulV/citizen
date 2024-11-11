@@ -184,7 +184,7 @@ export default function TestResult({ result, totalTimeTaken }) {
                                                         {}
                                                     )}
                                                     as="button"
-                                                    className="bg-primary text-white px-16 py-2 rounded-full mt-4 text-center"
+                                                    className="bg-primary text-white px-8 sm:px-10 md:px-12 lg:px-16 py-2 rounded-full mt-4 text-center w-full sm:w-auto"
                                                 >
                                                     Unlock all 600+ Questions
                                                 </Link>
