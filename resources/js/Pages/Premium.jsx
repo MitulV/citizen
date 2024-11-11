@@ -50,14 +50,14 @@ export default function Premium({ auth }) {
                             Try.{" "}
                             <span className="text-indigo-600">Guaranteed!</span>
                         </h1>
-                        <p className="text-gray-700 text-lg  md:text-xl lg:text-xl leading-relaxed p-2 px-4 text-center">
+                        <p className="text-gray-700 text-lg  md:text-xl lg:text-xl leading-relaxed p-2 px-4 text-left">
                             Your complete toolkit for success: Get fully
                             prepared with over 850+ practice questions,
                             chapter-wise study guide, test simulations, 450+
                             flashcards, cheat sheets, and more. Everything you
                             need to pass the test is all in one place!
                         </p>
-                        <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+                        <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 pl-6">
                             <ScrollLink
                                 to="pricing"
                                 smooth={true}
@@ -210,20 +210,17 @@ export default function Premium({ auth }) {
                                 <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
                                     <div className="p-8 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                         <div>
-                                            <p className="text-2xl font-bold mb-2 text-left">
-                                                “Passed On My First Attempt”
-                                            </p>
+                                            <h3 className="text-2xl font-bold mb-2 text-left">
+                                                “Passed On My First Try“
+                                            </h3>
                                             <p className="text-lg mb-2 text-gray-500 text-left ">
-                                                I was really nervous about the
-                                                Canadian Citizenship Test, but
-                                                this platform made a big
-                                                difference. The practice exams
-                                                helped me understand the
-                                                question patterns, and I passed
-                                                on my first try! If you're
-                                                preparing for the exam, you
-                                                should definitely join this
-                                                platform.
+                                                This platform really helped me
+                                                pass the Canadian Citizenship
+                                                Test on my first try. The
+                                                practice exams made all the
+                                                difference. Highly recommend it!
+                                                Jillian McAllister, British
+                                                Columbia
                                             </p>
                                         </div>
                                         <div>
@@ -252,16 +249,16 @@ export default function Premium({ auth }) {
                                 <div className="w-full px-2 mb-8 transform hover:-translate-y-1 transition duration-500 ease-out">
                                     <div className="p-8 md:p-8 lg:p-8 xl:p-8 bg-white rounded-xl shadow-md flex flex-col justify-between h-full text-black">
                                         <div>
-                                            <p className="text-2xl font-bold mb-2 text-left">
+                                            <h3 className="text-2xl font-bold mb-2 text-left">
                                                 “Exactly What I Needed”
-                                            </p>
+                                            </h3>
                                             <p className="text-lg mb-14 text-gray-500 text-left">
                                                 If you want to prepare for the
                                                 Canadian Citizenship test, this
-                                                is the right place. The
-                                                chapter-wise practice tests were
-                                                exactly what I needed to fully
-                                                understand each section.
+                                                platform has everything you
+                                                need, especially the
+                                                chapter-wise practice tests.
+                                                Marcus Tremblay, Nova Scotia
                                             </p>
                                         </div>
                                         <hr className="border-1 border-gray-200  mb-3" />
@@ -291,12 +288,12 @@ export default function Premium({ auth }) {
                                                 “Best Resource For The Test”
                                             </h3>
                                             <p className="text-lg mb-10 text-gray-500 text-left">
-                                                I failed the test on my first
-                                                attempt and was looking for an
-                                                online platform to help me.
-                                                CitizenTestPrep is, without a
-                                                doubt, the best resource for the
-                                                Canadian Citizenship Test!
+                                                After failing the test on my
+                                                first attempt, I used
+                                                CitizenTestPrep Premium, and it
+                                                was the best resource to pass
+                                                the Canadian Citizenship Test.
+                                                Hitoshi Matsumoto, Saskatchewan
                                             </p>
                                         </div>
                                         <hr className="border-1 border-gray-200 my-2" />
@@ -407,10 +404,10 @@ export default function Premium({ auth }) {
                     ></div>
                 </section>
 
-                <section className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 sm:p-2 bg-slate-100 mt-10">
+                <section className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 sm:p-2 bg-slate-50 mt-10">
                     {/* Left Section: Text Content */}
                     <div className="lg:col-span-6 flex flex-col space-y-6 p-5 ">
-                        <p className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-indigo-600">
+                        <p className="font-inter text-lg font-bold leading-[14.52px] tracking-[1px] text-center text-indigo-600">
                             How it works
                         </p>
 
@@ -488,7 +485,7 @@ export default function Premium({ auth }) {
 
                     {/* Right Section: Image */}
                     <div className="lg:col-span-6 flex justify-center items-center">
-                        <div className="p-2 lg:p-4 bg-slate-100 rounded-xl">
+                        <div className="p-2 lg:p-4  rounded-xl">
                             <img
                                 src="/images/result2.jpg"
                                 alt="Sample"
@@ -497,7 +494,7 @@ export default function Premium({ auth }) {
                         </div>
                     </div>
                 </section>
-                <section className="hidden container mx-auto relative sm:flex flex-col items-center py-40 px-4 md:px-10 bg-white ">
+                <section className="hidden container mx-auto relative sm:flex flex-col items-center py-40 px-4 md:px-10 mt-10 ">
                     {/* Image */}
                     <img
                         src="/images/pass guarantee.png"
@@ -557,7 +554,7 @@ export default function Premium({ auth }) {
 
                 <section className="container mx-auto px-2 py-8 bg-slate-50 xl:px-32">
                     {/* Heading */}
-                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold mb-8 text-center mt-8">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl  font-bold mb-8 text-center mt-8">
                         Realistic Questions That Prepare You For The Actual
                         Test!
                     </h2>
@@ -789,13 +786,13 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
 
-                <section className="container mx-auto px-10 md:px-10 py-20 bg-indigo-600 xl:px-32 relative overflow-hidden rounded-xl">
+                <section className="container mx-auto px-10 md:px-10 py-12 bg-indigo-600 xl:px-32 relative overflow-hidden rounded-xl">
                     {/* Decorative elements */}
                     <div className="absolute bottom-0 left-0 h-20 w-10 bg-orange-400 rounded-r-full z-20 overflow-hidden hidden sm:block"></div>
                     <div className="absolute top-0 right-0 h-20 w-10 bg-amber-400 rounded-l-full z-10 overflow-hidden hidden sm:block"></div>
 
                     {/* Subheading */}
-                    <p className="text-xs sm:text-sm md:text-base text-white mb-2 text-center mt-10">
+                    <p className="text-lg text-white  text-center mb-5">
                         A FASTER, SMARTER WAY TO STUDY
                     </p>
 
@@ -823,13 +820,80 @@ export default function Premium({ auth }) {
                             </p>
                             <ul className="space-y-2 text-white text-xl">
                                 {[
-                                    "52 Practice Tests with easy-to-understand answer explanations",
-                                    "850+ Practice Questions for thorough preparation",
-                                    "Simulation Tests that feel like the real exam",
-                                    "The Official Study Guide in a fun and engaging format",
-                                    "450+ Flash Cards covering all the important chapters",
-                                    "Cheat Sheets with key figures, dates, maps, and a glossary",
-                                    "Priority Customer Support to help you whenever you need it",
+                                    <ul className="space-y-2 text-white text-xl">
+                                        <li className="flex items-center">
+                                            <FontAwesomeIcon
+                                                icon={faCheck}
+                                                className="mr-2 text-white"
+                                            />
+                                            <span className="font-bold">
+                                                52 Practice Tests
+                                            </span>{" "}
+                                            with easy-to-understand answer
+                                            explanations
+                                        </li>
+                                        <li className="flex items-center">
+                                            <FontAwesomeIcon
+                                                icon={faCheck}
+                                                className="mr-2 text-white"
+                                            />
+                                            <span className="font-bold">
+                                                850+ Practice Questions
+                                            </span>{" "}
+                                            for thorough preparation
+                                        </li>
+                                        <li className="flex items-center">
+                                            <FontAwesomeIcon
+                                                icon={faCheck}
+                                                className="mr-2 text-white"
+                                            />
+                                            <span className="font-bold">
+                                                Simulation Tests
+                                            </span>{" "}
+                                            that feel like the real exam
+                                        </li>
+                                        <li className="flex items-center">
+                                            <FontAwesomeIcon
+                                                icon={faCheck}
+                                                className="mr-2 text-white"
+                                            />
+                                            <span className="font-bold">
+                                                The Official Study Guide
+                                            </span>{" "}
+                                            in a fun and engaging format
+                                        </li>
+                                        <li className="flex items-center">
+                                            <FontAwesomeIcon
+                                                icon={faCheck}
+                                                className="mr-2 text-white"
+                                            />
+                                            <span className="font-bold">
+                                                450+ Flash Cards
+                                            </span>{" "}
+                                            covering all the important chapters
+                                        </li>
+                                        <li className="flex items-center">
+                                            <FontAwesomeIcon
+                                                icon={faCheck}
+                                                className="mr-2 text-white"
+                                            />
+                                            <span className="font-bold">
+                                                Cheat Sheets
+                                            </span>{" "}
+                                            with key figures, dates, maps, and a
+                                            glossary
+                                        </li>
+                                        <li className="flex items-center">
+                                            <FontAwesomeIcon
+                                                icon={faCheck}
+                                                className="mr-2 text-white"
+                                            />
+                                            <span className="font-bold">
+                                                Priority Customer Support
+                                            </span>{" "}
+                                            to help you whenever you need it
+                                        </li>
+                                    </ul>,
                                 ].map((text, index) => (
                                     <li
                                         key={index}
@@ -843,7 +907,7 @@ export default function Premium({ auth }) {
                                     </li>
                                 ))}
                             </ul>
-                            <button className="bg-primary font-bold text-white px-10 py-4 w-96 rounded-full text-base lg:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out">
+                            <button className="bg-primary font-bold text-white px-2 sm:px-8 md:px-10 py-3 sm:py-4 w-full sm:w-80 md:w-96 rounded-full text-sm sm:text-base md:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out">
                                 Unlock all exam-like questions
                             </button>
                         </div>
@@ -851,7 +915,7 @@ export default function Premium({ auth }) {
                 </section>
 
                 <section className="container  mx-auto px-6 md:px-10 lg:px-20 py-10 bg-slate-50">
-                    <p className="text-center text-indigo-600 mt-8 text-base ">
+                    <p className="text-center text-indigo-600 mt-8 text-lg ">
                         IN-DEPTH LEARNING
                     </p>
 
@@ -911,7 +975,7 @@ export default function Premium({ auth }) {
                 </section>
 
                 <section className="container mx-auto px-4 md:px-10 lg:px-20 py-20 bg-indigo-600 mt-10  rounded-xl">
-                    <p className="text-center text-xs text-white mt-8">
+                    <p className="text-center text-lg text-white mt-8">
                         ONE CHAPTER AT A TIME
                     </p>
 
@@ -972,7 +1036,7 @@ export default function Premium({ auth }) {
                     </div>
                 </section>
                 <section className="container mx-auto px-4  py-8 bg-slate-50 hidden sm:block">
-                    <p className="text-sm text-indigo-600 mb-4 mt-10 text-center">
+                    <p className="text-lg text-indigo-600 mb-4 mt-10 text-center">
                         CHEAT SHEETS
                     </p>
 
@@ -1065,7 +1129,7 @@ export default function Premium({ auth }) {
                     {/* Recommended Button */}
 
                     {/* Plans Section */}
-                    <div className="container mx-auto flex flex-col md:flex-row mt-6  px-6 md:px-0 lg:px-0">
+                    <div className="container mx-auto flex flex-col md:flex-row mt-6  px-6 md:px-28 lg:px-0">
                         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
                             {/* Plan 1 */}
                             <form
@@ -1088,10 +1152,10 @@ export default function Premium({ auth }) {
                                         knowledge in three months.
                                     </p>
                                     <div className="flex justify-between">
-                                        <p className="font-bold text-xl sm:text-xl">
+                                        <p className="font-bold text-xl">
                                             $19.99
                                         </p>
-                                        <p className="text-gray-600 text-xs sm:text-lg">
+                                        <p className="text-gray-600 text-base">
                                             <span className="text-red-600">
                                                 Today 50% off
                                             </span>
@@ -1104,7 +1168,7 @@ export default function Premium({ auth }) {
 
                                     <button
                                         type="submit"
-                                        className="bg-primary text-white py-2 sm:py-3 w-full rounded-full mt-4 text-base sm:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
+                                        className="bg-primary text-white py-2  w-full rounded-full mt-4 text-base sm:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
                                     >
                                         Get instant access
                                     </button>
@@ -1120,7 +1184,7 @@ export default function Premium({ auth }) {
                                             "450+ Flashcards for every chapter",
                                             "Complete list of significant dates",
                                             "Directory of important people",
-                                            "Interactive Canadian Map",
+                                            "Regional Canadian Map",
                                             "Comprehensive Q&A",
                                         ].map((text, index) => (
                                             <li
@@ -1186,7 +1250,7 @@ export default function Premium({ auth }) {
                                         <p className="font-bold text-xl sm:text-xl">
                                             $29.99
                                         </p>
-                                        <p className="text-gray-600 text-xs sm:text-lg">
+                                        <p className="text-gray-600 text-base ">
                                             <span className="text-red-600">
                                                 Today 50% off
                                             </span>
@@ -1213,7 +1277,7 @@ export default function Premium({ auth }) {
                                             "450+ Flashcards for every chapter",
                                             "Complete list of significant dates",
                                             "Directory of important people",
-                                            "Interactive Canadian Map",
+                                            "Regional Canadian Map",
                                             "Comprehensive Q&A",
                                         ].map((text, index) => (
                                             <li
@@ -1273,7 +1337,7 @@ export default function Premium({ auth }) {
                                         <p className="font-bold text-xl sm:text-xl">
                                             $49.99
                                         </p>
-                                        <p className="text-gray-600 text-xs sm:text-lg">
+                                        <p className="text-gray-600 text-base">
                                             <span className="text-red-600">
                                                 Today 50% off
                                             </span>
@@ -1298,7 +1362,7 @@ export default function Premium({ auth }) {
                                             "450+ Flashcards for every chapter",
                                             "Complete list of significant dates",
                                             "Directory of important people",
-                                            "Interactive Canadian Map",
+                                            "Regional Canadian Map",
                                             "Comprehensive Q&A",
                                         ].map((text, index) => (
                                             <li
@@ -1338,7 +1402,7 @@ export default function Premium({ auth }) {
 
                 <section className="container mx-auto px-4 md:px-10 lg:px-2 py-8 ">
                     {/* FAQ Heading */}
-                    <p className="text-sm sm:text-base text-indigo-600 mb-4 mt-8 text-center">
+                    <p className="text-lg text-indigo-600 mb-4 mt-8 text-center">
                         COMMON FAQS
                     </p>
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center">
@@ -1517,14 +1581,14 @@ export default function Premium({ auth }) {
                             </p>
                             <div className="flex flex-col md:flex-row gap-4 justify-center">
                                 {/* Envelope Option */}
-                                <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
+                                <div className="flex text-center gap-4 bg-white py-2  px-4 rounded-lg border border-gray-300  ">
                                     <FontAwesomeIcon
                                         icon={faEnvelope}
                                         className="text-primary"
                                     />
                                     <Link
                                         href="/contact-us"
-                                        className="text-indigo-600 text-sm"
+                                        className="text-indigo-600 text-sm text-center"
                                     >
                                         {" "}
                                         Contact Via Email
@@ -1532,12 +1596,12 @@ export default function Premium({ auth }) {
                                 </div>
                                 {/* Phone Option */}
                                 <a href="tel:672-558-4037" className="block">
-                                    <div className="flex items-center gap-4 bg-white p-2 rounded-lg border border-gray-300">
+                                    <div className="flex text-center gap-4 bg-white py-2  px-4 rounded-lg border border-gray-300">
                                         <FontAwesomeIcon
                                             icon={faPhone}
                                             className="text-primary"
                                         />
-                                        <span className="text-indigo-600 text-sm">
+                                        <span className="text-indigo-600 text-sm text-center ">
                                             Call Us
                                         </span>
                                     </div>

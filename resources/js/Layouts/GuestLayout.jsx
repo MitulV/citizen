@@ -12,7 +12,7 @@ export default function Guest({ children, user }) {
                 <div className="bg-slate-50">
                     <HeaderPremium user={user} />
                     {children}
-                    <HeaderPremium />
+                    <Footer />
                 </div>
             ) : (
                 <div className="bg-slate-50">

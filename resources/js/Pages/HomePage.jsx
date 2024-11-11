@@ -871,6 +871,7 @@ export default function HomePage({ auth, chapters }) {
                         Take free practice tests
                     </Link>
                 </div>
+
                 <div className="container mx-auto bg-slate-50  mt-5 lg:mt-5">
                     <p className=" text-lg sm:text-lg font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500">
                         or pass the first time, guaranteed with

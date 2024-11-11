@@ -34,10 +34,10 @@ export default function Index({ auth, chapters }) {
                             {message && (
                                 <Alert color="success">{message}</Alert>
                             )}
-                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-4 text-gray-900 pt-2">
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-4 text-gray-900 pt-2 px-2 md:px-10 lg:px-4 xl:px-36 ">
                                 Study Guide
                             </h1>
-                            <p className="text-base sm:text-lg md:text-xl lg:text-lg text-gray-600 mb-4">
+                            <p className="text-base sm:text-lg md:text-xl lg:text-lg text-gray-600 mb-4 px-2 md:px-10 lg:px-4 xl:px-36">
                                 This study guide helps you learn the entire
                                 official{" "}
                                 <a
@@ -55,7 +55,7 @@ export default function Index({ auth, chapters }) {
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+                        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5 px-2 md:px-10 lg:px-4 xl:px-36  ">
                             {chapters
                                 .filter(
                                     (chapter) =>
@@ -69,7 +69,7 @@ export default function Index({ auth, chapters }) {
                                         <img
                                             src={chapter.image}
                                             alt={`Chapter ${chapter.id}`}
-                                            className="w-full h-48 lg:h-64 object-cover rounded-t-2xl"
+                                            className="rounded-t-2xl w-full h-24 md:h-36 lg:h-36 xl:h-44 object-cover"
                                         />
                                         <div className="absolute top-2 right-2 z-20">
                                             {chapter.allTopicsCompleted ? (
@@ -142,7 +142,7 @@ export default function Index({ auth, chapters }) {
                                 ))}
                         </div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 mt-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 mt-8 px-2 md:px-10 lg:px-4 xl:px-36 ">
                             {chapters
                                 .filter(
                                     (chapter) =>
@@ -156,7 +156,7 @@ export default function Index({ auth, chapters }) {
                                         <img
                                             src={chapter.image}
                                             alt={`Chapter ${chapter.id}`}
-                                            className="w-full h-48 lg:h-64 object-cover rounded-t-2xl"
+                                            className="rounded-t-2xl w-full h-24 md:h-36 lg:h-36 xl:h-44 object-cover"
                                         />
                                         <div className="absolute top-2 right-2 z-20">
                                             {chapter.allTopicsCompleted ? (

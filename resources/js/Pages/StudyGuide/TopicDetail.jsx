@@ -1,8 +1,8 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head, Link } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import {
+    faArrowRight,
     faCircleCheck,
     faFile,
     faCheck,
@@ -45,10 +45,10 @@ export default function TopicDetail({
                 ) : (
                     <>
                         {!topic.content && (
-                            <div className="ml-10">
+                            <div className="ml-4 sm:ml-6 md:ml-10 mt-4">
                                 <Link
                                     as="button"
-                                    className="bg-primary text-white px-6 py-2 rounded-full shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
+                                    className="bg-primary text-white px-4 sm:px-6 py-2 rounded-full shadow-lg transform hover:-translate-y-1 transition duration-500 ease-out"
                                     href={route("createTopic.create", {
                                         topicId: topic.id,
                                         chapterId,
@@ -59,27 +59,27 @@ export default function TopicDetail({
                             </div>
                         )}
                         {topic.content && (
-                            <div className="container mx-auto relative flex flex-col items-center justify-center ">
-                                <div className="container-fluid py-8 md:py-6 md:px-8 lg:px-20 ">
-                                    <div>
-                                        <p className="text-primary">
+                            <div className="container mx-auto flex flex-col items-center justify-center">
+                                <div className="w-full px-4 sm:px-8 md:px-16 lg:px-20 py-6 md:py-8">
+                                    <div className="mb-4">
+                                        <p className="text-primary flex items-center">
                                             <FontAwesomeIcon
                                                 icon={faChevronLeft}
-                                            />{" "}
-                                            <span className="text-lg">
+                                                className="mr-2"
+                                            />
+                                            <span className="text-base sm:text-lg">
                                                 View all chapters
                                             </span>
                                         </p>
-                                        <h1 className="text-3xl font-bold mb-4 text-gray-600">
+                                        <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-700">
                                             Lesson {topic.id}
                                         </h1>
                                     </div>
-
                                     <EditorShow value={topic.content} />
                                 </div>
 
                                 {/* Navigation Bar */}
-                                <div className="container mx-auto py-4 px-4 md:px-8 lg:px-20 w-full flex justify-between items-center">
+                                <div className="w-full px-4 sm:px-8 md:px-16 lg:px-20 py-4 flex justify-between items-center space-x-4">
                                     <Link
                                         as="button"
                                         method="get"
@@ -88,7 +88,7 @@ export default function TopicDetail({
                                                 ? `/guide/${chapterId}/${previousTopicId}`
                                                 : "#"
                                         }
-                                        className={`border-primary border-2 text-black px-4 py-2 rounded-full ${
+                                        className={`border-primary border-2 text-black px-4 py-2 rounded-full flex items-center justify-center w-full sm:w-auto ${
                                             !previousTopicId
                                                 ? "opacity-50 cursor-not-allowed"
                                                 : ""
@@ -105,9 +105,12 @@ export default function TopicDetail({
                                         as="button"
                                         method="get"
                                         href={`/guide/${chapterId}/${topic.id}?complete=true`}
-                                        className="bg-green-500 text-white px-4 py-2 rounded-full"
+                                        className="bg-green-500 text-white px-4 py-2 rounded-full w-full sm:w-auto flex items-center justify-center"
                                     >
-                                        <FontAwesomeIcon icon={faCheck} />{" "}
+                                        <FontAwesomeIcon
+                                            icon={faCheck}
+                                            className="mr-2"
+                                        />
                                         Complete
                                     </Link>
 
@@ -119,7 +122,7 @@ export default function TopicDetail({
                                                 ? `/guide/${chapterId}/${topic.id}?complete=true`
                                                 : "#"
                                         }
-                                        className={`border-primary border-2 text-black px-6 py-2 rounded-full flex items-center ${
+                                        className={`border-primary border-2 text-black px-4 py-2 rounded-full flex items-center justify-center w-full sm:w-auto ${
                                             !nextTopicId
                                                 ? "opacity-50 cursor-not-allowed"
                                                 : ""

@@ -43,9 +43,9 @@ export default function Result({
                 chapters={chapters}
             >
                 <Head title="Premium" />
-                <section className="container mx-auto  min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 p-5  px-4 md:px-16 lg:px-8 xl:px-44  bg-slate-50">
+                <section className="container mx-auto   grid grid-cols-1 lg:grid-cols-12 gap-8 p-5  px-4 md:px-16 lg:px-8 xl:px-44  ">
                     {/* Right Side */}
-                    <div className="order-1 lg:order-2 lg:col-span-12 flex flex-col space-y-10 md:space-y-8 rounded-2xl  md:p-10 h-auto sm:h-64">
+                    <div className="order-1 lg:order-2 lg:col-span-12 flex flex-col space-y-10 md:space-y-8 rounded-2xl  md:p-10">
                         {/* First Section on Right */}
                         <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
                             {/* Progress circle */}
