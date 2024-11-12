@@ -376,11 +376,6 @@ export default function Premium({ auth }) {
                         .
                     </p>
 
-                    {/* Subheading */}
-                    <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-indigo-700 font-extrabold text-center mt-10">
-                        Get started today
-                    </p>
-
                     {/* Bottom Left Half Circle */}
                     <div
                         className="
@@ -811,7 +806,7 @@ export default function Premium({ auth }) {
                                 including multiple-choice and true/false.
                             </p>
                             <ul className="space-y-2 text-white text-xl">
-                                <li className="flex items-center">
+                                <li className="flex items-center sm:flex-nowrap gap-2 whitespace-nowrap">
                                     <FontAwesomeIcon
                                         icon={faCheck}
                                         className="mr-2 text-white"
@@ -821,7 +816,8 @@ export default function Premium({ auth }) {
                                     </span>
                                     with easy-to-understand answer explanations
                                 </li>
-                                <li className="flex items-center">
+
+                                <li className="flex items-center sm:flex-nowrap gap-2 whitespace-nowrap">
                                     <FontAwesomeIcon
                                         icon={faCheck}
                                         className="mr-2 text-white"
@@ -831,7 +827,7 @@ export default function Premium({ auth }) {
                                     </span>{" "}
                                     for thorough preparation
                                 </li>
-                                <li className="flex items-center">
+                                <li className="flex items-center sm:flex-nowrap gap-2 whitespace-nowrap">
                                     <FontAwesomeIcon
                                         icon={faCheck}
                                         className="mr-2 text-white"
@@ -841,7 +837,7 @@ export default function Premium({ auth }) {
                                     </span>{" "}
                                     that feel like the real exam
                                 </li>
-                                <li className="flex items-center">
+                                <li className="flex items-center sm:flex-nowrap gap-2 whitespace-nowrap">
                                     <FontAwesomeIcon
                                         icon={faCheck}
                                         className="mr-2 text-white"
@@ -851,7 +847,7 @@ export default function Premium({ auth }) {
                                     </span>{" "}
                                     in a fun and engaging format
                                 </li>
-                                <li className="flex items-center">
+                                <li className="flex items-center sm:flex-nowrap gap-2 whitespace-nowrap">
                                     <FontAwesomeIcon
                                         icon={faCheck}
                                         className="mr-2 text-white"
@@ -861,7 +857,7 @@ export default function Premium({ auth }) {
                                     </span>{" "}
                                     covering all the important chapters
                                 </li>
-                                <li className="flex items-center">
+                                <li className="flex items-center sm:flex-nowrap gap-2 whitespace-nowrap">
                                     <FontAwesomeIcon
                                         icon={faCheck}
                                         className="mr-2 text-white"
@@ -872,7 +868,7 @@ export default function Premium({ auth }) {
                                     with key figures, dates, maps, and a
                                     glossary
                                 </li>
-                                <li className="flex items-center">
+                                <li className="flex items-center sm:flex-nowrap gap-2 whitespace-nowrap">
                                     <FontAwesomeIcon
                                         icon={faCheck}
                                         className="mr-2 text-white"
