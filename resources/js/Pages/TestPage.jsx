@@ -188,7 +188,7 @@ export default function TestPage({
             <GuestLayout>
                 <Head title="Premium" />
                 <div className="min-h-screen">
-                    <section className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 p-5 bg-slate-50 px-2 md:px-4 lg:px-4 xl:px-28 ">
+                    <section className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-2 lg:gap-8 p-5 bg-slate-50 px-2 md:px-4 lg:px-4 xl:px-28 ">
                         {/* Left Side (spans 8 columns on large screens) */}
                         <div className="order-2 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl bg-white p-5   ">
                             <div className="flex justify-between items-center">
@@ -345,8 +345,8 @@ export default function TestPage({
                         </div>
 
                         {/* Right Side (spans 4 columns on large screens) */}
-                        <div className="order-1  lg:order-2 lg:col-span-4 flex flex-col space-y-4 border rounded-xl bg-white p-5 ">
-                            <h1 className="hidden sm:flex text-xl text-gray-800 mb-2">
+                        <div className="order-2  lg:order-2 lg:col-span-4 flex flex-col space-y-4 border rounded-xl bg-white p-5 ">
+                            <h1 className="hidden lg:flex text-xl text-gray-800 mb-2">
                                 Your Progress
                             </h1>
                             {/* Circles for Small Screens */}
@@ -383,7 +383,7 @@ export default function TestPage({
                                 ))}
                             </div>
                             {/* Buttons outside the main right div, only visible on large screens */}
-                            <div className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 lg:justify-end py-8">
+                            <div className="hidden lg:flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 lg:justify-end py-8">
                                 <Link
                                     href={route("homePage", {})}
                                     as="button"

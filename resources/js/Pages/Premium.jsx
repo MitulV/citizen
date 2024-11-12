@@ -398,97 +398,102 @@ export default function Premium({ auth }) {
         bg-amber-200 rounded-l-full z-10 overflow-hidden"
                     ></div>
                 </section>
+                <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-10 ">
+                    {/* Section Header */}
+                    <p className="font-inter text-base sm:text-lg font-bold tracking-wider text-center text-indigo-600">
+                        How it works
+                    </p>
+                    <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-extrabold text-center text-gray-800 mt-2">
+                        Passing the Canadian Citizenship Test Has Never Been
+                        Easier
+                    </h2>
 
-                <section className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 sm:p-2 bg-slate-50 mt-10">
-                    {/* Left Section: Text Content */}
-                    <div className="lg:col-span-6 flex flex-col space-y-6 p-5 ">
-                        <p className="font-inter text-lg font-bold leading-[14.52px] tracking-[1px] text-center text-indigo-600">
-                            How it works
-                        </p>
+                    {/* Main Content Section */}
+                    <section className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 p-4  md:p-8 bg-slate-50 rounded-xl ">
+                        {/* Left Column: Text Content */}
+                        <div className="lg:col-span-6 flex flex-col space-y-6 ">
+                            <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl text-center md:text-left lg:mt-10 ">
+                                Take the Canadian citizenship test with clarity
+                                and stress-free preparation, achieving your
+                                dream of becoming Canadian with ease.
+                            </p>
 
-                        <h2 className="text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-extrabold text-center px-md:px-0 lg:px-0">
-                            Passing the Canadian Citizenship Test Has Never Been
-                            Easier
-                        </h2>
-                        <p className="text-gray-600 text-lg md:text-lg lg:text-lg xl:text-lg text-center md:text-left">
-                            Take the Canadian citizenship test with clarity and
-                            stress-free preparation, achieving your dream of
-                            becoming Canadian with ease.
-                        </p>
+                            {/* Steps List */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                {/* Step 1 */}
+                                <div className="p-2">
+                                    <p className="text-lg sm:text-xl md:text-2xl text-indigo-600 font-bold">
+                                        Step 1
+                                    </p>
+                                    <h3 className="text-base sm:text-lg md:text-xl lg:text-xl font-bold">
+                                        Enjoyable Study Guide and Practice Tests
+                                    </h3>
+                                    <p className="text-gray-500 text-sm sm:text-base md:text-lg mt-2">
+                                        Build your confidence with quick
+                                        20-question practice tests that feel
+                                        just like the real exam.
+                                    </p>
+                                </div>
 
-                        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
-                            {/* Step 1 */}
-                            <div className="p-1">
-                                <p className="text-xl sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-bold">
-                                    Step 1
-                                </p>
-                                <h3 className="text-lg md:text-xl lg:text-xl font-bold">
-                                    Enjoyable Study Guide and Practice Tests
-                                </h3>
-                                <p className="text-gray-500 text-base sm:text-base md:text-lg lg:text-lg mt-2">
-                                    Build your confidence with quick 20-question
-                                    practice tests that feel just like the real
-                                    exam.
-                                </p>
-                            </div>
+                                {/* Step 2 */}
+                                <div className="p-2">
+                                    <p className="text-lg sm:text-xl md:text-2xl text-indigo-600 font-bold">
+                                        Step 2
+                                    </p>
+                                    <h3 className="text-base sm:text-lg md:text-xl lg:text-xl font-bold">
+                                        Personalized Learning
+                                    </h3>
+                                    <p className="text-gray-500 text-sm sm:text-base md:text-lg mt-2">
+                                        Focus on what’s important. Skip the
+                                        boring lectures and learn faster while
+                                        remembering more.
+                                    </p>
+                                </div>
 
-                            {/* Step 2 */}
-                            <div className="p-1">
-                                <p className="text-xl sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-bold">
-                                    Step 2
-                                </p>
-                                <h3 className="text-lg md:text-xl lg:text-xl font-bold">
-                                    Personalized Learning
-                                </h3>
-                                <p className="text-gray-500 text-base sm:text-base md:text-lg lg:text-lg mt-2">
-                                    Focus on what’s important. Skip the boring
-                                    lectures and learn faster while remembering
-                                    more.
-                                </p>
-                            </div>
+                                {/* Step 3 */}
+                                <div className="p-2">
+                                    <p className="text-lg sm:text-xl md:text-2xl text-indigo-600 font-bold">
+                                        Step 3
+                                    </p>
+                                    <h3 className="text-base sm:text-lg md:text-xl lg:text-xl font-bold">
+                                        Real-Time Exam Simulator
+                                    </h3>
+                                    <p className="text-gray-500 text-sm sm:text-base md:text-lg mt-2">
+                                        Our advanced exam simulator helps you
+                                        practice in a setting that closely
+                                        matches the actual test format.
+                                    </p>
+                                </div>
 
-                            {/* Step 3 */}
-                            <div className="p-1">
-                                <p className="text-xl sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-bold">
-                                    Step 3
-                                </p>
-                                <h3 className="text-lg md:text-xl lg:text-xl font-bold">
-                                    Real-Time Exam Simulator
-                                </h3>
-                                <p className="text-gray-500 text-base sm:text-base md:text-lg lg:text-lg mt-2">
-                                    Our advanced exam simulator helps you
-                                    practice in a setting that closely matches
-                                    the actual test format.
-                                </p>
-                            </div>
-
-                            {/* Step 4 */}
-                            <div className="p-1">
-                                <p className="text-xl sm:text-lg md:text-xl lg:text-2xl text-indigo-600 font-bold">
-                                    Step 4
-                                </p>
-                                <h3 className="text-lg md:text-xl lg:text-xl font-bold">
-                                    Ace Your Exam! 🎉
-                                </h3>
-                                <p className="text-gray-500 text-base sm:text-base md:text-lg lg:text-lg mt-2">
-                                    Feel ready and confident on exam day, and
-                                    pass with flying colors!
-                                </p>
+                                {/* Step 4 */}
+                                <div className="p-2">
+                                    <p className="text-lg sm:text-xl md:text-2xl text-indigo-600 font-bold">
+                                        Step 4
+                                    </p>
+                                    <h3 className="text-base sm:text-lg md:text-xl lg:text-xl font-bold">
+                                        Ace Your Exam! 🎉
+                                    </h3>
+                                    <p className="text-gray-500 text-sm sm:text-base md:text-lg mt-2">
+                                        Feel ready and confident on exam day,
+                                        and pass with flying colors!
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    {/* Right Section: Image */}
-                    <div className="lg:col-span-6 flex justify-center items-center">
-                        <div className="p-2 lg:p-4  rounded-xl">
-                            <img
-                                src="/images/result2.jpg"
-                                alt="Sample"
-                                className="rounded-xl"
-                            />
+                        {/* Right Column: Image */}
+                        <div className="lg:col-span-6 flex justify-center items-center p-4">
+                            <div className="p-2 lg:p-4 rounded-xl shadow-md">
+                                <img
+                                    src="/images/result2.jpg"
+                                    alt="Sample"
+                                    className="rounded-xl w-full h-auto"
+                                />
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
+
                 <section
                     id="passguarantee"
                     className="hidden container mx-auto relative sm:flex flex-col items-center py-40 px-4 md:px-10 mt-10 "
@@ -805,8 +810,8 @@ export default function Premium({ auth }) {
                                 materials. Practice with real questions,
                                 including multiple-choice and true/false.
                             </p>
-                            <ul className="space-y-2 text-white text-xl">
-                                <li className="flex items-center sm:flex-nowrap gap-2 whitespace-nowrap">
+                            <ul className="space-y-4 text-white text-xl">
+                                <li>
                                     <FontAwesomeIcon
                                         icon={faCheck}
                                         className="mr-2 text-white"
@@ -817,7 +822,7 @@ export default function Premium({ auth }) {
                                     with easy-to-understand answer explanations
                                 </li>
 
-                                <li className="flex items-center sm:flex-nowrap gap-2 whitespace-nowrap">
+                                <li>
                                     <FontAwesomeIcon
                                         icon={faCheck}
                                         className="mr-2 text-white"
@@ -827,7 +832,7 @@ export default function Premium({ auth }) {
                                     </span>{" "}
                                     for thorough preparation
                                 </li>
-                                <li className="flex items-center sm:flex-nowrap gap-2 whitespace-nowrap">
+                                <li>
                                     <FontAwesomeIcon
                                         icon={faCheck}
                                         className="mr-2 text-white"
@@ -837,7 +842,7 @@ export default function Premium({ auth }) {
                                     </span>{" "}
                                     that feel like the real exam
                                 </li>
-                                <li className="flex items-center sm:flex-nowrap gap-2 whitespace-nowrap">
+                                <li>
                                     <FontAwesomeIcon
                                         icon={faCheck}
                                         className="mr-2 text-white"
@@ -847,7 +852,7 @@ export default function Premium({ auth }) {
                                     </span>{" "}
                                     in a fun and engaging format
                                 </li>
-                                <li className="flex items-center sm:flex-nowrap gap-2 whitespace-nowrap">
+                                <li>
                                     <FontAwesomeIcon
                                         icon={faCheck}
                                         className="mr-2 text-white"
@@ -857,7 +862,7 @@ export default function Premium({ auth }) {
                                     </span>{" "}
                                     covering all the important chapters
                                 </li>
-                                <li className="flex items-center sm:flex-nowrap gap-2 whitespace-nowrap">
+                                <li>
                                     <FontAwesomeIcon
                                         icon={faCheck}
                                         className="mr-2 text-white"
@@ -868,7 +873,7 @@ export default function Premium({ auth }) {
                                     with key figures, dates, maps, and a
                                     glossary
                                 </li>
-                                <li className="flex items-center sm:flex-nowrap gap-2 whitespace-nowrap">
+                                <li>
                                     <FontAwesomeIcon
                                         icon={faCheck}
                                         className="mr-2 text-white"
@@ -885,7 +890,7 @@ export default function Premium({ auth }) {
                                 smooth={true}
                                 duration={1000}
                                 offset={-50}
-                                className="bg-primary cursor-pointer font-bold text-white px-2 sm:px-8 md:px-10 py-3 sm:py-4 w-full sm:w-80 md:w-96 rounded-full text-sm sm:text-base md:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
+                                className="bg-primary cursor-pointer font-bold text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 w-full sm:w-auto md:w-auto rounded-full text-sm sm:text-base md:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out text-center"
                             >
                                 Unlock all exam-like questions
                             </ScrollLink>
