@@ -448,9 +448,10 @@ export default function ImportantDates({ auth }) {
                 />
             </Head>
             <div className="container mx-auto">
-                <div className="p-4 mx-auto max-w-screen-lg sm:mx-4 md:mx-10 lg:mx-20 xl:mx-8 bg-slate-50">
+                <div className="p-4 mt-10 mx-auto max-w-screen-lg sm:mx-4 md:mx-10 lg:mx-20 xl:mx-8 ">
                     {accordions.map((accordion, index) => (
                         <Accordion
+                            className="p-4"
                             key={index}
                             open={open === index + 1}
                             icon={<Icon id={index + 1} open={open} />}

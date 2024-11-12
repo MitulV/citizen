@@ -34,10 +34,10 @@ export default function Index({ auth, chapters }) {
                             {message && (
                                 <Alert color="success">{message}</Alert>
                             )}
-                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-4 text-gray-900 pt-2 px-2 md:px-10 lg:px-4 xl:px-36 ">
+                            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-900 px-2 md:px-10 lg:px-4 xl:px-36">
                                 Study Guide
                             </h1>
-                            <p className="text-base sm:text-lg md:text-xl lg:text-lg text-gray-600 mb-4 px-2 md:px-10 lg:px-4 xl:px-36">
+                            <p className="text-sm md:text-base lg:text-base text-gray-600 px-2 md:px-10 lg:px-4 xl:px-36">
                                 This study guide helps you learn the entire
                                 official{" "}
                                 <a
@@ -55,7 +55,7 @@ export default function Index({ auth, chapters }) {
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5 px-2 md:px-10 lg:px-4 xl:px-36  ">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-2 md:px-10 lg:px-4 xl:px-36">
                             {chapters
                                 .filter(
                                     (chapter) =>
@@ -78,7 +78,7 @@ export default function Index({ auth, chapters }) {
                                                     className="text-green-600 text-lg md:text-2xl lg:text-3xl"
                                                 />
                                             ) : (
-                                                <button className="bg-primary text-white py-1 px-3 md:py-2 md:px-4 lg:py-2 lg:px-5 rounded-full text-xs md:text-sm lg:text-sm">
+                                                <button className="bg-primary text-white py-1 px-3 md:py-2 md:px-4 lg:py-1 lg:px-3 rounded-full text-xs md:text-sm lg:text-xs">
                                                     Continue
                                                 </button>
                                             )}

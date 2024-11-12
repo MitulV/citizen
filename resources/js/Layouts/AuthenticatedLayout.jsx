@@ -16,7 +16,7 @@ import ChapterTestPanel from "@/Components/SidebarPanel/ChapterTestPanel";
 import FlashcardPanel from "@/Components/SidebarPanel/FlashcardPanel";
 import CheatSheetPanel from "@/Components/SidebarPanel/CheatSheetPanel";
 
-export default function Authenticated({
+export default function AuthenticatedLayout({
     user,
     children,
     isChapterPanelVisible = false,

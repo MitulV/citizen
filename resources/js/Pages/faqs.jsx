@@ -24,7 +24,7 @@ export default function Faqs({}) {
                 />
             </Head>
 
-            <div className="container mx-auto max-w-screen-lg bg-slate-50 rounded-2xl px-4 md:px-16 lg:px-8 xl:px-44">
+            <div className="container mx-auto max-w-screen-lg  rounded-2xl px-4 md:px-16 lg:px-8 xl:px-44">
                 <h1 className="text-4xl font-bold m-10 text-center">
                     Frequently Asked Questions
                 </h1>

@@ -63,13 +63,15 @@ export default function TopicDetail({
                                 <div className="w-full px-4 sm:px-8 md:px-16 lg:px-20 py-6 md:py-8">
                                     <div className="mb-4">
                                         <p className="text-primary flex items-center">
-                                            <FontAwesomeIcon
-                                                icon={faChevronLeft}
-                                                className="mr-2"
-                                            />
-                                            <span className="text-base sm:text-lg">
-                                                View all chapters
-                                            </span>
+                                            <Link href={route("dashboard")}>
+                                                <FontAwesomeIcon
+                                                    icon={faChevronLeft}
+                                                    className="mr-2"
+                                                />
+                                                <span className="text-base sm:text-lg">
+                                                    View all chapters
+                                                </span>
+                                            </Link>
                                         </p>
                                         <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-700">
                                             Lesson {topic.id}

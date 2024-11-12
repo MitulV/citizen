@@ -16,7 +16,7 @@ export default function ImportantPeople({ auth }) {
             </Head>
 
             {/* Main content */}
-            <section className="container mx-auto px-4 py-8 bg-slate-50  sm:px-6 lg:px-8 rounded-3xl">
+            <section className="container mx-auto px-4 py-8 sm:px-6 lg:px-8 rounded-3xl">
                 <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-600">
                     Important People
                 </h1>
