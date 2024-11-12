@@ -354,7 +354,7 @@ export default function TestPage({
                                 {questionResults.map((result) => (
                                     <div
                                         key={result.index}
-                                        className={`w-10 h-2 rounded-full mb-1 ${
+                                        className={`w-10 h-2 rounded-full mb-2 ${
                                             result.result === "pass"
                                                 ? "bg-green-500"
                                                 : result.result === "fail"
