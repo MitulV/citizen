@@ -10,7 +10,6 @@ import {
     faCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
 import GuestLayout from "@/Layouts/GuestLayout";
-// import { Accordion } from "flowbite-react";
 
 import {
     Accordion,
@@ -219,8 +218,7 @@ export default function Premium({ auth }) {
                                                 Test on my first try. The
                                                 practice exams made all the
                                                 difference. Highly recommend it!
-                                                Jillian McAllister, British
-                                                Columbia
+                                                <br /> <br />
                                             </p>
                                         </div>
                                         <div>
@@ -258,7 +256,6 @@ export default function Premium({ auth }) {
                                                 platform has everything you
                                                 need, especially the
                                                 chapter-wise practice tests.
-                                                Marcus Tremblay, Nova Scotia
                                             </p>
                                         </div>
                                         <hr className="border-1 border-gray-200  mb-3" />
@@ -293,7 +290,6 @@ export default function Premium({ auth }) {
                                                 CitizenTestPrep Premium, and it
                                                 was the best resource to pass
                                                 the Canadian Citizenship Test.
-                                                Hitoshi Matsumoto, Saskatchewan
                                             </p>
                                         </div>
                                         <hr className="border-1 border-gray-200 my-2" />
@@ -829,7 +825,7 @@ export default function Premium({ auth }) {
                                     />
                                     <span className="font-bold">
                                         850+ Practice Questions&nbsp;
-                                    </span>{" "}
+                                    </span>
                                     for thorough preparation
                                 </li>
                                 <li>
@@ -839,7 +835,7 @@ export default function Premium({ auth }) {
                                     />
                                     <span className="font-bold">
                                         Simulation Tests&nbsp;
-                                    </span>{" "}
+                                    </span>
                                     that feel like the real exam
                                 </li>
                                 <li>
@@ -849,7 +845,7 @@ export default function Premium({ auth }) {
                                     />
                                     <span className="font-bold">
                                         The Official Study Guide&nbsp;
-                                    </span>{" "}
+                                    </span>
                                     in a fun and engaging format
                                 </li>
                                 <li>
@@ -859,7 +855,7 @@ export default function Premium({ auth }) {
                                     />
                                     <span className="font-bold">
                                         450+ Flash Cards&nbsp;
-                                    </span>{" "}
+                                    </span>
                                     covering all the important chapters
                                 </li>
                                 <li>
@@ -869,7 +865,7 @@ export default function Premium({ auth }) {
                                     />
                                     <span className="font-bold">
                                         Cheat Sheets&nbsp;
-                                    </span>{" "}
+                                    </span>
                                     with key figures, dates, maps, and a
                                     glossary
                                 </li>
@@ -880,7 +876,7 @@ export default function Premium({ auth }) {
                                     />
                                     <span className="font-bold">
                                         Priority Customer Support&nbsp;
-                                    </span>{" "}
+                                    </span>
                                     to help you whenever you need it
                                 </li>
                             </ul>
@@ -1149,10 +1145,7 @@ export default function Premium({ auth }) {
                                         </p>
                                     </div>
 
-                                    <button
-                                        type="submit"
-                                        className="bg-primary text-white py-2  w-full rounded-full mt-4 text-base sm:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out"
-                                    >
+                                    <button className="bg-primary text-white py-2 sm:py-3 w-full rounded-full mt-4 text-base sm:text-lg shadow-xl transform hover:-translate-y-1 transition duration-500 ease-out">
                                         Get instant access
                                     </button>
                                     <p className="text-lg sm:text-xl text-zinc-600 mt-4">
@@ -1557,14 +1550,15 @@ export default function Premium({ auth }) {
                         </Accordion>
                     </div>
                     {/* Contact Section */}
-                    <div className="container mx-auto mt-8">
+
+                    <div className="container mx-auto mt-8 lg:mx-20">
                         <div className="max-w-4xl mx-auto p-4 flex flex-col md:flex-row items-center md:items-center">
                             <p className="text-gray-900 mb-4 md:mb-0 md:mr-4 text-center md:text-left text-sm sm:text-base">
                                 Have more questions or want to contact us?
                             </p>
                             <div className="flex flex-col md:flex-row gap-4 justify-center">
                                 {/* Envelope Option */}
-                                <div className="flex text-center gap-4 bg-white py-2  px-4 rounded-lg border border-gray-300  ">
+                                <div className="flex text-center gap-4 bg-white py-2  px-4 rounded-lg border border-gray-300">
                                     <FontAwesomeIcon
                                         icon={faEnvelope}
                                         className="text-primary"

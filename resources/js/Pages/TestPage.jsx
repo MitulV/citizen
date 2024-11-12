@@ -192,10 +192,10 @@ export default function TestPage({
                         {/* Left Side (spans 8 columns on large screens) */}
                         <div className="order-2 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl bg-white p-5   ">
                             <div className="flex justify-between items-center">
-                                <p className="text-zinc-400 text-base">
+                                <p className="text-lg sm:text-sm text-gray-400">
                                     Question {currentQuestionIndex + 1} / 15
                                 </p>
-                                <h2 className="text-lg sm:text-sm text-gray-400 mb-2">
+                                <h2 className="text-lg sm:text-sm text-gray-400">
                                     <FontAwesomeIcon
                                         icon={faClock}
                                         className="mr-2"
@@ -345,7 +345,7 @@ export default function TestPage({
                         </div>
 
                         {/* Right Side (spans 4 columns on large screens) */}
-                        <div className="order-2  lg:order-2 lg:col-span-4 flex flex-col space-y-4 border rounded-xl bg-white p-5 ">
+                        <div className="order-2  lg:order-2 lg:col-span-4 flex flex-col space-y-2 border rounded-xl bg-white p-5 ">
                             <h1 className="hidden lg:flex text-xl text-gray-800 mb-2">
                                 Your Progress
                             </h1>
@@ -354,7 +354,7 @@ export default function TestPage({
                                 {questionResults.map((result) => (
                                     <div
                                         key={result.index}
-                                        className={`w-10 h-2 rounded-full ${
+                                        className={`w-10 h-2 rounded-full mb-1 ${
                                             result.result === "pass"
                                                 ? "bg-green-500"
                                                 : result.result === "fail"

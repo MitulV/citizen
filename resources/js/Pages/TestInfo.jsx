@@ -121,7 +121,7 @@ export default function TestInfo({ chapterId, auth }) {
                         </div>
                     </div>
                 </section>
-                <section className="container mx-auto   bg-slate-50 md:px-16 lg:px-8 xl:px-44">
+                <section className="container mx-auto bg-slate-50 md:px-16 lg:px-8 xl:px-44 pb-4">
                     <div className="container mx-auto flex flex-col md:flex-row rounded-2xl overflow-hidden bg-white shadow-sm ">
                         {/* Left Side */}
                         <div className="w-full md:w-1/2 p-8">

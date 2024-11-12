@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "@inertiajs/react";
-import LoginHeader from "@/Components/LoginHeader";
-import Footer from "@/Components/Footer";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { usePage } from "@inertiajs/react";
 import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { Accordion } from "flowbite-react";
 export default function StudyGuidePanel({ chapters, collapsed }) {
+    const [openIndex, setOpenIndex] = useState(2);
     return (
         <>
             <Sidebar
@@ -28,7 +26,10 @@ export default function StudyGuidePanel({ chapters, collapsed }) {
                 >
                     <Accordion>
                         {chapters.map((chapter, index) => (
-                            <Accordion.Panel key={chapter.id}>
+                            <Accordion.Panel
+                                key={chapter.id}
+                                isOpen={setOpenIndex === index}
+                            >
                                 <Accordion.Title>
                                     Chapter {index + 1}
                                 </Accordion.Title>
