@@ -155,7 +155,7 @@ export default function Premium({ auth }) {
 
                     {/* Testimonials Section */}
                     <div className="lg:col-span-12 flex flex-col items-center space-y-8 p-4 px-6 mt-8">
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center px-3 ">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center px-3">
                             Why Learners Love The Citizentestprep Premium
                         </h2>
                         <div className="text-gray-800 text-lg flex flex-col lg:flex-row items-center lg:space-x-2">
@@ -320,7 +320,7 @@ export default function Premium({ auth }) {
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-center">
                         A Fun And Easy Way To Prepare For Your Test!
                     </h2>
-                    <p className="text-gray-600 font-inter text-start text-lg lg:text-lg">
+                    <p className="text-gray-600 font-inter text-center text-lg lg:text-lg">
                         We have everything you need to prepare for the Canadian
                         citizenship test. Our platform helps you learn about
                         Canadian values and principles while showing you real
@@ -399,7 +399,7 @@ export default function Premium({ auth }) {
                     <p className="font-inter text-base sm:text-lg font-bold tracking-wider text-center text-indigo-600">
                         How it works
                     </p>
-                    <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-extrabold text-center text-gray-800 mt-2">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-center">
                         Passing the Canadian Citizenship Test Has Never Been
                         Easier
                     </h2>
