@@ -6,7 +6,11 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExclamation } from "@fortawesome/free-solid-svg-icons";
+import {
+    faExclamation,
+    faChevronLeft,
+} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "@inertiajs/react";
 
 export default function TheTimeLine({ chapter }) {
     const exclamationIcon = {
@@ -405,38 +409,56 @@ export default function TheTimeLine({ chapter }) {
     );
 
     return (
-        <div className="p-4 mx-auto max-w-screen-lg sm:mx-4 md:mx-10 lg:mx-20 xl:mx-8 bg-slate-50">
-            {selectedChapter ? (
-                <VerticalTimeline lineColor="rgb(81,81,81)">
-                    {selectedChapter.timeline.map((t, i) => (
-                        <VerticalTimelineElement
-                            key={i}
-                            className="vertical-timeline-element--work"
-                            contentStyle={{}}
-                            contentArrowStyle={{
-                                borderRight: "7px solid rgb(81, 81, 81)",
-                            }}
-                            position={"right"}
-                            date={
-                                <div className="text-xl ml-4 font-bold text-black">
-                                    {t.date}
-                                </div>
-                            }
-                            {...exclamationIcon}
-                        >
-                            <h1 className="text-2xl">{t.title}</h1>
-                            {t.subtitle && (
-                                <h4 className="text-base vertical-timeline-element-subtitle">
-                                    {t.subtitle}
-                                </h4>
-                            )}
-                            {t.desc && <p>{t.desc}</p>}
-                        </VerticalTimelineElement>
-                    ))}
-                </VerticalTimeline>
-            ) : (
-                <p>No timeline found for this chapter.</p>
-            )}
+        <div className="container mx-auto">
+            <div className="p-4 mt-10 mx-auto max-w-screen-lg sm:mx-4 md:mx-10 lg:mx-20 xl:mx-8 ">
+                <div className="mb-4">
+                    <p className="text-primary flex items-center">
+                        <Link href={route("dashboard")}>
+                            <FontAwesomeIcon
+                                icon={faChevronLeft}
+                                className="mr-2"
+                            />
+                            <span className="text-base sm:text-lg">
+                                View all chapters
+                            </span>
+                        </Link>
+                    </p>
+                    <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-700">
+                        Chapter {chapter}
+                    </h1>
+                </div>
+                {selectedChapter ? (
+                    <VerticalTimeline lineColor="rgb(81,81,81)">
+                        {selectedChapter.timeline.map((t, i) => (
+                            <VerticalTimelineElement
+                                key={i}
+                                className="vertical-timeline-element--work"
+                                contentStyle={{}}
+                                contentArrowStyle={{
+                                    borderRight: "7px solid rgb(81, 81, 81)",
+                                }}
+                                position={"right"}
+                                date={
+                                    <div className="text-xl ml-4 font-bold text-black">
+                                        {t.date}
+                                    </div>
+                                }
+                                {...exclamationIcon}
+                            >
+                                <h1 className="text-2xl">{t.title}</h1>
+                                {t.subtitle && (
+                                    <h4 className="text-base vertical-timeline-element-subtitle">
+                                        {t.subtitle}
+                                    </h4>
+                                )}
+                                {t.desc && <p>{t.desc}</p>}
+                            </VerticalTimelineElement>
+                        ))}
+                    </VerticalTimeline>
+                ) : (
+                    <p>No timeline found for this chapter.</p>
+                )}
+            </div>
         </div>
     );
 }
