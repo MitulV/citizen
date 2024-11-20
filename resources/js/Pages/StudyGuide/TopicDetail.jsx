@@ -40,7 +40,7 @@ export default function TopicDetail({
                 </Head>
                 {topic.name === "The Timeline" ? (
                     <>
-                        <TheTimeLine chapter={chapterId} />
+                        <TheTimeLine chapter={chapterId} topic={topic} />
                     </>
                 ) : (
                     <>

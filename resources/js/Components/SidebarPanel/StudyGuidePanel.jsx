@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { Accordion } from "flowbite-react";
 export default function StudyGuidePanel({ chapters, collapsed }) {
-    const [openIndex, setOpenIndex] = useState(2);
     return (
         <>
             <Sidebar
@@ -26,10 +25,7 @@ export default function StudyGuidePanel({ chapters, collapsed }) {
                 >
                     <Accordion>
                         {chapters.map((chapter, index) => (
-                            <Accordion.Panel
-                                key={chapter.id}
-                                isOpen={setOpenIndex === index}
-                            >
+                            <Accordion.Panel key={chapter.id} isOpen={true}>
                                 <Accordion.Title>
                                     Chapter {index + 1}
                                 </Accordion.Title>

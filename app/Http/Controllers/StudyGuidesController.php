@@ -49,6 +49,7 @@ class StudyGuidesController extends Controller
     $user = Auth::user();
     $nextTopic = null;
 
+
     // Check if a topic should be marked as complete
     if ($request->has('complete') && $topicId) {
       $currentTopic = Topic::findOrFail($topicId);

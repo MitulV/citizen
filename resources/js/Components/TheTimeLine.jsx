@@ -9,10 +9,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faExclamation,
     faChevronLeft,
+    faCheck,
+    faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+
 import { Link } from "@inertiajs/react";
 
-export default function TheTimeLine({ chapter }) {
+export default function TheTimeLine({ chapter, topic }) {
     const exclamationIcon = {
         icon: <FontAwesomeIcon icon={faExclamation} />,
         iconStyle: { background: "rgb(81, 81, 81)", color: "#fff" },
@@ -458,6 +461,44 @@ export default function TheTimeLine({ chapter }) {
                 ) : (
                     <p>No timeline found for this chapter.</p>
                 )}
+                <div className="w-full px-4 sm:px-8 md:px-16 lg:px-20 py-4 flex justify-between items-center space-x-4 mt-10">
+                    <Link
+                        as="button"
+                        method="get"
+                        href={`/guide/${chapter}/${topic.id - 1}`}
+                        className={`border-primary border-2 text-black px-4 py-2 rounded-full flex items-center justify-center w-full sm:w-auto`}
+                    >
+                        <FontAwesomeIcon
+                            icon={faChevronLeft}
+                            className="mr-2"
+                        />
+                        Previous
+                    </Link>
+                    <Link
+                        as="button"
+                        method="get"
+                        href={`/guide/${Number(chapter) + 1}/${
+                            topic.id + 1
+                        }?complete=true`}
+                        className="bg-green-500 text-white px-4 py-2 rounded-full w-full sm:w-auto flex items-center justify-center"
+                    >
+                        <FontAwesomeIcon icon={faCheck} className="mr-2" />
+                        Complete
+                    </Link>
+
+                    <Link
+                        as="button"
+                        method="get"
+                        href={`/guide/${Number(chapter) + 1}/${topic.id + 1}`}
+                        className={`border-primary border-2 text-black px-4 py-2 rounded-full flex items-center justify-center w-full sm:w-auto`}
+                    >
+                        Next
+                        <FontAwesomeIcon
+                            icon={faChevronRight}
+                            className="ml-2"
+                        />
+                    </Link>
+                </div>
             </div>
         </div>
     );
