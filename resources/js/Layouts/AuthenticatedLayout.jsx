@@ -23,6 +23,7 @@ export default function AuthenticatedLayout({
     chapterId,
     topicId,
     chapters,
+    accorditionIndex,
 }) {
     const [collapsed, setCollapsed] = useState(false);
 
@@ -151,6 +152,7 @@ export default function AuthenticatedLayout({
                     <StudyGuidePanel
                         chapters={chapters}
                         collapsed={collapsed}
+                        accorditionIndex={accorditionIndex}
                     />
                 )}
 
@@ -158,11 +160,16 @@ export default function AuthenticatedLayout({
                     <ChapterTestPanel
                         chapters={chapters}
                         collapsed={collapsed}
+                        accorditionIndex={accorditionIndex}
                     />
                 )}
 
                 {isChapterPanelVisible && url.startsWith("/flashcards") && (
-                    <FlashcardPanel chapters={chapters} collapsed={collapsed} />
+                    <FlashcardPanel
+                        chapters={chapters}
+                        collapsed={collapsed}
+                        accorditionIndex={accorditionIndex}
+                    />
                 )}
 
                 {isChapterPanelVisible && url.startsWith("/cheat-sheets") && (

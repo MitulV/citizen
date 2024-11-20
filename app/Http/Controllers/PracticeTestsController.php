@@ -44,9 +44,11 @@ class PracticeTestsController extends Controller
     ]);
   }
 
-  public function testList($chapterId, $testId = null)
+  public function testList(Request $request, $chapterId, $testId = null)
   {
     $user = Auth::user();
+
+    $accorditionIndex = $request->has('accorditionIndex') ? $request->accorditionIndex : 0;
 
     $chapters = Chapter::where('step', 2)
       ->with('tests.users')
@@ -102,7 +104,8 @@ class PracticeTestsController extends Controller
       'chapterId' => $chapterId,
       'previousTestId' => $previousTest ? $previousTest->id : null,
       'nextTestId' => $nextTest ? $nextTest->id : null,
-      'latestScore' => $latestScore
+      'latestScore' => $latestScore,
+      'accorditionIndex' => $accorditionIndex
     ]);
   }
 

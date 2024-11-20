@@ -49,6 +49,8 @@ class StudyGuidesController extends Controller
     $user = Auth::user();
     $nextTopic = null;
 
+    $accorditionIndex = $request->has('accorditionIndex') ? $request->accorditionIndex : 0;
+
 
     // Check if a topic should be marked as complete
     if ($request->has('complete') && $topicId) {
@@ -113,6 +115,7 @@ class StudyGuidesController extends Controller
       'chapterId' => $chapterId,
       'previousTopicId' => $previousTopic ? $previousTopic->id : null,
       'nextTopicId' => $nextTopic ? $nextTopic->id : null,
+      'accorditionIndex' => $accorditionIndex
     ]);
   }
 }

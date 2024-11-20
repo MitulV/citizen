@@ -20,6 +20,7 @@ export default function TopicDetail({
     chapterId,
     previousTopicId,
     nextTopicId,
+    accorditionIndex,
 }) {
     return (
         <>
@@ -27,6 +28,7 @@ export default function TopicDetail({
                 user={auth.user}
                 isChapterPanelVisible={true}
                 chapters={chapters}
+                accorditionIndex={accorditionIndex}
             >
                 <Head>
                     <title>

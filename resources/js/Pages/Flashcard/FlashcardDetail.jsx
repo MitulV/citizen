@@ -20,6 +20,7 @@ export default function FlashcardDetail({
     chapterId,
     previousFlashcardId,
     nextFlashcardId,
+    accorditionIndex,
 }) {
     const [isFlipped, setIsFlipped] = useState(false);
     const handleClick = (e) => {
@@ -32,6 +33,7 @@ export default function FlashcardDetail({
                 user={auth.user}
                 isChapterPanelVisible={true}
                 chapters={chapters}
+                accorditionIndex={accorditionIndex}
             >
                 <Head title="Flashcard Detail" />
                 <section className="container mx-auto  bg-slate-50 py-12 md:py-12 px-4 md:px-8 lg:px-16 xl:px-44">

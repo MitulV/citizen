@@ -11,6 +11,7 @@ export default function Info({
     test,
     currentChapter,
     latestScore,
+    accorditionIndex,
 }) {
     return (
         <>
@@ -18,6 +19,7 @@ export default function Info({
                 user={auth.user}
                 isChapterPanelVisible={true}
                 chapters={chapters}
+                accorditionIndex={accorditionIndex}
             >
                 <Head title="Premium" />
 

@@ -56,6 +56,8 @@ class FlashcardController extends Controller
     $user = Auth::user();
     $nextFlashcard = null;
 
+    $accorditionIndex = $request->has('accorditionIndex') ? $request->accorditionIndex : 0;
+
     // Check if a flashcard should be marked as complete
     if ($request->has('complete') && $flashcardId) {
       $currentFlashcard = Flashcard::findOrFail($flashcardId);
@@ -141,6 +143,7 @@ class FlashcardController extends Controller
       'chapterId' => $chapterId,
       'previousFlashcardId' => $previousFlashcard ? $previousFlashcard->id : null,
       'nextFlashcardId' => $nextFlashcard ? $nextFlashcard->id : null,
+      'accorditionIndex' => $accorditionIndex
     ]);
   }
 }
