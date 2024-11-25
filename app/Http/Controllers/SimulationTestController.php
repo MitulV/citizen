@@ -21,7 +21,6 @@ class SimulationTestController extends Controller
 
   public function testPage(Request $request, $testId)
   {
-    $user = auth()->user();
     if ($request->filled('questionId') && $request->filled('answerId') && $request->filled('testId')) {
       // Answer validation logic
       $questionId = $request->input('questionId');
@@ -54,8 +53,6 @@ class SimulationTestController extends Controller
 
       // Initial page logic
       $test = SimulationTest::findOrFail($testId);
-
-
 
       $question = SimulationQuestion::where('test_id', $test->id)
         ->with('answers')

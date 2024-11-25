@@ -78,23 +78,6 @@ export default function AuthenticatedLayout({
                                 </button>
                             </Link>
                         </MenuItem>
-                        <MenuItem className="w-full m-2  " component="span">
-                            <Link href={route("simulation.info")}>
-                                <button
-                                    className={`rounded-full w-44 px-4 py-2 flex items-center ${
-                                        url.startsWith("/simulation")
-                                            ? "bg-white text-primary"
-                                            : "text-white hover:bg-white hover:text-primary"
-                                    }`}
-                                >
-                                    <FontAwesomeIcon
-                                        icon={faCube}
-                                        className="mr-4"
-                                    />
-                                    Simulations
-                                </button>
-                            </Link>
-                        </MenuItem>
                         <MenuItem className="w-full m-2" component="span">
                             <Link href={route("practice.test")}>
                                 <button
@@ -112,6 +95,24 @@ export default function AuthenticatedLayout({
                                 </button>
                             </Link>
                         </MenuItem>
+                        <MenuItem className="w-full m-2  " component="span">
+                            <Link href={route("simulation.info")}>
+                                <button
+                                    className={`rounded-full w-44 px-4 py-2 flex items-center ${
+                                        url.startsWith("/simulation")
+                                            ? "bg-white text-primary"
+                                            : "text-white hover:bg-white hover:text-primary"
+                                    }`}
+                                >
+                                    <FontAwesomeIcon
+                                        icon={faCube}
+                                        className="mr-4"
+                                    />
+                                    Simulations
+                                </button>
+                            </Link>
+                        </MenuItem>
+
                         <MenuItem className="w-full m-2" component="span">
                             <Link href={route("flashcard")}>
                                 <button

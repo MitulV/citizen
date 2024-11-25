@@ -26,11 +26,16 @@ export default function SimulationResult({
         );
     };
 
-    const pathColor = result.totalCorrect < 15 ? "#FF0000" : "#3E9330";
+    const pathColor = result.totalCorrect < 12 ? "#FF0000" : "#3E9330";
     const message =
         result.percentage < 75
             ? "Not enough to pass :-("
             : "Great. You Passed!";
+
+    let messageInfo =
+        result.percentage < 75
+            ? "Great job! Take it to the next level by completing all study guides, practice tests, and flashcards to ace your citizenship test!"
+            : "No worries! A little more practice and you'll nail it. Complete all study guides, practice tests, and flashcards to guarantee a first-time pass!";
 
     return (
         <AuthenticatedLayout user={auth.user} isChapterPanelVisible={false}>
@@ -60,9 +65,7 @@ export default function SimulationResult({
                                         {message}
                                     </h1>
                                     <p className="text-zinc-600 mt-2">
-                                        There are more practice questions left
-                                        to go, unlock 600+ practice questions
-                                        today.
+                                        {messageInfo}
                                     </p>
                                     <div className="flex flex-row space-x-6 mt-4">
                                         <div className="flex items-center space-x-2">
@@ -99,7 +102,7 @@ export default function SimulationResult({
                                             icon={faRotateRight}
                                             className="mr-2"
                                         />
-                                        Regenerate Simulation
+                                        Restart Simulation Test
                                     </Link>
                                 </div>
                             </div>

@@ -187,9 +187,9 @@ export default function SimulationTestPage({
         <>
             <AuthenticatedLayout user={auth.user}>
                 <Head title="Premium" />
-                <section className="container mx-auto  min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 p-5  px-4 md:px-16 lg:px-8 xl:px-44  bg-slate-50">
+                <section className="container mx-auto min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 p-5   px-2 md:px-16 lg:px-8 xl:px-36">
                     {/* Left Side (spans 8 columns on large screens) */}
-                    <div className="order-2 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl bg-white p-5">
+                    <div className="order-1 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl bg-white p-5">
                         <div className="flex justify-between items-center">
                             <p className="text-zinc-400 text-sm">
                                 Question {currentQuestionIndex + 1} / 15
@@ -233,9 +233,9 @@ export default function SimulationTestPage({
                                                 key={answer.id}
                                                 className={`flex items-center space-x-2 text-sm px-6 py-2 rounded-xl flex-1 hover:bg-gray-200 ${
                                                     isPass
-                                                        ? "border border-lime-700"
+                                                        ? "border border-gray-700"
                                                         : isFail
-                                                        ? "border border-red-500"
+                                                        ? "border border-gray-500"
                                                         : "border border-gray-100"
                                                 }`}
                                                 onClick={() => {
@@ -262,21 +262,21 @@ export default function SimulationTestPage({
                                                     <div
                                                         className={`w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:bg-${
                                                             isPass
-                                                                ? "green"
+                                                                ? "gray"
                                                                 : isFail
-                                                                ? "red"
+                                                                ? "gray"
                                                                 : "gray"
                                                         }-500`}
                                                     >
                                                         {isPass ? (
                                                             <FontAwesomeIcon
                                                                 icon={faCheck}
-                                                                className="text-green-500"
+                                                                className="text-gray-500"
                                                             />
                                                         ) : isFail ? (
                                                             <FontAwesomeIcon
                                                                 icon={faTimes}
-                                                                className="text-red-500"
+                                                                className="text-gray-500"
                                                             />
                                                         ) : null}
                                                     </div>
@@ -310,7 +310,7 @@ export default function SimulationTestPage({
                                 {currentQuestionIndex >= 14 ? "Submit" : "Next"}
                             </button>
                         </div>
-                        {currentQuestion.explanation && (
+                        {false && currentQuestion.explanation && (
                             <div>
                                 <h1 className="text-lg sm:text-lg font-bold mb-4">
                                     Explanation
@@ -323,21 +323,21 @@ export default function SimulationTestPage({
                     </div>
 
                     {/* Right Side (spans 4 columns on large screens) */}
-                    <div className="order-1 md:h-64 lg:order-2 lg:col-span-4 flex flex-col border rounded-xl bg-white p-6">
-                        <h1 className="hidden sm:flex text-xl text-gray-800 mb-4">
-                            Featured Highlights
-                        </h1>
+                    <div className="order-2 md:h-64 lg:order-2 lg:col-span-4 flex flex-col space-y-4 border rounded-xl bg-white p-10">
+                        <p className="hidden sm:flex text-xl text-gray-800 mb-4">
+                            Your Progress
+                        </p>
 
                         {/* Circles for Small Screens */}
                         <div className="flex space-x-1 mb-4 sm:hidden">
                             {questionResults.map((result) => (
                                 <div
                                     key={result.index}
-                                    className={`w-8 h-2 rounded-full ${
+                                    className={`w-8 h-2 text-white rounded-full ${
                                         result.result === "pass"
-                                            ? "bg-green-500"
+                                            ? "bg-gray-500"
                                             : result.result === "fail"
-                                            ? "bg-red-500"
+                                            ? "bg-gray-500"
                                             : "bg-gray-200"
                                     }`}
                                 />
@@ -349,39 +349,17 @@ export default function SimulationTestPage({
                             {questionResults.map((result) => (
                                 <div
                                     key={result.index}
-                                    className={`w-10 h-10 flex items-center justify-center rounded-full ${
+                                    className={`w-10 h-10 flex text-white items-center justify-center rounded-full ${
                                         result.result === "pass"
-                                            ? "bg-green-500"
+                                            ? "bg-gray-500"
                                             : result.result === "fail"
-                                            ? "bg-red-500"
+                                            ? "bg-gray-500"
                                             : "bg-gray-200"
                                     }`}
                                 >
                                     {result.index + 1}
                                 </div>
                             ))}
-                        </div>
-
-                        {/* Buttons outside the main right div, only visible on large screens */}
-                        <div className="hidden lg:flex flex-col sm:flex-row justify-between lg:py-4  sm:py-3 sm:px-4 space-y-2 sm:space-y-0 sm:space-x-4 mt-10">
-                            <button className="bg-white text-black border border-primary px-6 py-3 rounded-full sm:px-4 sm:py-2 flex-1 sm:flex-none flex items-center justify-center text-sm sm:text-base">
-                                <FontAwesomeIcon
-                                    icon={faChevronLeft}
-                                    className="mr-2 text-sm sm:text-base"
-                                />
-                                All Tests
-                            </button>
-
-                            <button
-                                onClick={handleReset}
-                                className="bg-white text-black border border-primary px-6 py-3 rounded-full sm:px-4 sm:py-2 flex-1 sm:flex-none flex items-center justify-center text-sm sm:text-base"
-                            >
-                                <FontAwesomeIcon
-                                    icon={faRedo}
-                                    className="mr-2 text-sm sm:text-base"
-                                />
-                                Restart
-                            </button>
                         </div>
                     </div>
 

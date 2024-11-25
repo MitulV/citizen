@@ -126,8 +126,6 @@ Route::middleware([
   Route::get('/guide', [StudyGuidesController::class, 'index'])->name('dashboard');
   Route::get('/guide/{chapterId}/{topicId?}', [StudyGuidesController::class, 'topicList'])->name('topicList');
 
-  Route::get('/simulation-tests', [SimulationTestsController::class, 'index'])->name('simulation.test');
-
   Route::get('/practice-tests', [PracticeTestsController::class, 'index'])->name('practice.test');
   Route::get('/practice-tests/{chapterId}/{testId?}', [PracticeTestsController::class, 'testList'])->name('testList');
   Route::post('/practice-tests/start/{chapterId}/{testId?}', [PracticeTestsController::class, 'testStart'])->name('practice.testStart');

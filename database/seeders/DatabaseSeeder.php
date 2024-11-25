@@ -14446,211 +14446,233 @@ class DatabaseSeeder extends Seeder
       // Simulation Test
       $simulationTests = collect(
         [
-          'name' => 'Practice Test 1.1',
-          'info' => 'Practice Test 1.1',
+          'name' => 'Simulation Test 1',
+          'info' => 'Simulation Test 1',
           'questions' => [
             [
-              'text' => 'What will you promise when you take the oath of citizenship?',
+              'text' => 'Which city is the headquarters of the Canadian mining industry?',
               'answers' => [
-                ['text' => 'Carry out responsibilities as a Canadian citizen'],
-                ['text' => 'Pledge allegiance to the queen or King'],
-                ['text' => 'Promise to obey the constitution of Canada'],
-                ['text' => 'Pledge loyalty to the queen or King, observe the laws and fulfill the duties of a Canadian'],
+                ['text' => 'Edmonton'],
+                ['text' => 'Vancouver'],
+                ['text' => 'Winnipeg'],
+                ['text' => 'Saskatoon'],
               ],
-              'explanation' => 'I swear (or affirm) that I will be faithful, observe the laws and fulfill the duties of a Canadian. (Discover Canada - P2)'
+              'correctAnswerId' => 4,
+              'explanation' => 'Saskatoon, the largest city, is the headquarters of the mining industry and an important educational, research and technology center.',
             ],
             [
-              'text' => 'To whom do we profess our loyalty to in Canada?',
+              'text' => 'What are Canada’s main types of industries?',
               'answers' => [
-                ['text' => 'The Canadian flag'],
-                ['text' => 'A person who represents all Canadians'],
-                ['text' => 'Geopolitical entities'],
-                ['text' => 'The Canadian Constitution'],
+                ['text' => 'Service, fishing and natural resources'],
+                ['text' => 'Service, manufacturing and natural resources'],
+                ['text' => 'Tourism and natural resources'],
+                ['text' => 'Farming and fishing'],
               ],
-              'explanation' => 'In Canada, we profess our loyalty to a person who represents all Canadians and not to a document such as a constitution, a banner such as a flag, or a geopolitical entity such as a country. (Discover Canada - P2)'
+              'correctAnswerId' => 6,
+              'explanation' => "Canada’s main types of industries are service, manufacturing and natural resources.",
             ],
             [
-              'text' => 'What is Canada\'s system of political governance called?',
+              'text' => "Which of the following is Canada’s largest and busiest port?",
               'answers' => [
-                ['text' => 'Monarchy'],
-                ['text' => 'Parliamentary government'],
-                ['text' => 'Democratic process'],
-                ['text' => 'Benevolent dictatorship'],
+                ['text' => 'Vancouver'],
+                ['text' => "St. John's"],
+                ['text' => 'Toronto'],
+                ['text' => 'Halifax'],
               ],
-              'explanation' => 'Canada is a constitutional monarchy, a parliamentary democracy and a federal state. Canadians are bound together by a shared commitment to the rule of law and to the institutions of parliamentary government. (Discover Canada - P3).'
+              'correctAnswerId' => 9,
+              'explanation' => "The Port of Vancouver, Canada’s largest and busiest, handles billions of dollars in goods traded around the world.",
             ],
             [
-              'text' => 'Which of these statements is true?',
+              'text' => "Where is Canada's largest naval base located?",
               'answers' => [
-                ['text' => 'Canada has welcomed immigrants for years to build a free, just, and affluent society.'],
-                ['text' => 'Canadians haven\'t given up anything to protect their way of life'],
-                ['text' => 'Canada is a Republic'],
-                ['text' => 'Immigrants between the ages of 21 and 54 must learn about voting laws in order to become Canadian citizens'],
+                ['text' => 'Vancouver'],
+                ['text' => 'Quebec City'],
+                ['text' => 'Halifax'],
+                ['text' => 'Toronto'],
               ],
-              'explanation' => 'Canada has welcomed generations of newcomers to our shores to help us build a free, law-abiding and prosperous society. (Discover Canada - P3)'
+              'correctAnswerId' => 12,
+              'explanation' => "As Canada’s largest east coast port, Halifax is home to Canada’s largest naval base.",
             ],
             [
-              'text' => 'Is the Citizenship Test written or an interview?',
+              'text' => 'When was the Canadian Pacific Railway finished?',
               'answers' => [
-                ['text' => 'Always in the form of an interview'],
-                ['text' => 'Written and taken in person'],
-                ['text' => 'Always a written test'],
-                ['text' => 'It\'s a written test, but it can also be an interview.'],
+                ['text' => 'Late 1600s'],
+                ['text' => 'Late 1700s'],
+                ['text' => 'Late 1800s'],
+                ['text' => 'Early 1700s'],
               ],
-              'explanation' => 'The citizenship test is usually a written test but it could be an interview. You will be tested on the knowledge of Canada and of the rights and responsibilities of citizenship, and you will also be tested to ensure you have adequate knowledge of English or French. (P6)'
+              'correctAnswerId' => 19,
+              'explanation' => " British Columbia joined Canada in 1871 after Ottawa promised to build a railway to the West Coast. On November 7, 1885, a powerful symbol of unity was completed when Donald Smith (Lord Strathcona), the Scottish-born director of the Canadian Pacific Railway (CPR), drove the last spike. ",
             ],
             [
-              'text' => 'In Canada, the constitution, the flag and the country are not encompassed by the Sovereign.',
+              'text' => 'How many Canadians served in the First World War?',
               'answers' => [
-                ['text' => 'True'],
-                ['text' => 'False'],
+                ['text' => 'About 170,000'],
+                ['text' => 'About 10,000'],
+                ['text' => 'More than 60,000'],
+                ['text' => 'More than 600,000'],
               ],
-              'explanation' => 'In Canada, we profess our loyalty to a person who represents all Canadians and not to a document such as a constitution, a banner such as a flag, or a geopolitical entity such as a country. In our constitutional monarchy, these elements are encompassed by the Sovereign (Queen or King). It is a remarkably simple yet powerful principle: Canada is personified by the Sovereign just as the Sovereign is personified by Canada.'
+              'correctAnswerId' => 24,
+              'explanation' => ""
             ],
             [
-              'text' => 'Which of the following statements is false?',
+              'text' => 'How many provinces and territories are there in Canada?',
               'answers' => [
-                ['text' => 'Canada is a federal state'],
-                ['text' => 'Canada is a constitutional monarchy'],
-                ['text' => 'Canada is a theocracy'],
-                ['text' => 'Canada is a parliamentary democracy'],
+                ['text' => 'Eight provinces and three territories'],
+                ['text' => 'Ten provinces and two territories'],
+                ['text' => 'Nine provinces and two territories'],
+                ['text' => 'Ten provinces and three territories'],
               ],
-              'explanation' => 'Canada is a constitutional monarchy, a parliamentary democracy and a federal state. Canadians are bound together by a shared commitment to the rule of law and to the institutions of parliamentary government. (P3)'
+              'correctAnswerId' => 28,
+              'explanation' => 'Canada has ten provinces and three territories.',
             ],
             [
-              'text' => 'Which of the following statements is false?',
+              'text' => 'What is the last line of our national anthem?',
               'answers' => [
-                ['text' => 'During your citizenship ceremony, you\'ll be invited to join the Canadian Army.'],
-                ['text' => 'During your citizenship ceremony, you\'ll sign the oath form.'],
-                ['text' => 'During your citizenship ceremony, you\'ll get your Citizenship Certificate.'],
-                ['text' => 'During your citizenship ceremony, you\'ll take the Oath of Citizenship.'],
+                ['text' => 'God keep our land glorious and free!'],
+                ['text' => 'The true north strong and free!'],
+                ['text' => 'O Canada! Our home and native land!'],
+                ['text' => 'O Canada, we stand on guard for thee!'],
               ],
-              'explanation' => 'At the ceremony, you will take the Oath of Citizenship; sign the oath form; and receive your Canadian Citizenship Certificate. If you do not pass the test, you will receive a notification indicating the next steps. (P7)'
+              'correctAnswerId' => 32,
+              'explanation' => ''
             ],
             [
-              'text' => 'What languages do you need to demonstrate proficiency in to become a Canadian citizen?',
+              'text' => 'How does a bill become a law?',
               'answers' => [
-                ['text' => 'Either Spanish or English'],
-                ['text' => 'Either English or French'],
-                ['text' => 'Both English and French'],
-                ['text' => 'Either Spanish or French'],
+                ['text' => 'Must be approved by the governors of each province'],
+                ['text' => 'Must be approved by a majority in the House of Commons and Senate and received Royal assent'],
+                ['text' => 'Must be signed by the queen or King'],
+                ['text' => 'Must be approved by the members of the parliament'],
               ],
-              'explanation' => 'In order to apply for Canadian citizenship, you must provide proof that you know how to speak and write in 1 of Canada\'s official languages (either English or French). (P3)'
+              'correctAnswerId' => 34,
+              'explanation' => ''
             ],
             [
-              'text' => 'Canada does not personify the Sovereign.',
+              'text' => "In Canada's justice system, what does 'presumption of innocence' mean?",
               'answers' => [
-                ['text' => 'True'],
-                ['text' => 'False'],
+                ['text' => 'The Prime Minister can determine who is innocent in a court'],
+                ['text' => 'Everybody is guilty until proven innocent'],
+                ['text' => 'Everyone is innocent until proven guilty'],
+                ['text' => 'The judge can determine who is guilty without evidence'],
               ],
-              'explanation' => 'Canada personifies a King or Queen; however, our government is a democracy. (P2)'
+              'correctAnswerId' => 39,
+              'explanation' => 'The Canadian justice system guarantees everyone due process under the law. Everyone is presumed innocent until proven guilty.',
             ],
             [
-              'text' => 'In Canada, to whom do we formally pledge allegiance?',
+              'text' => 'Which legal documents protect the rights of Canadians with regards to the official languages?',
               'answers' => [
-                ['text' => 'We pledge allegiance to the Sovereign (King or Queen).'],
-                ['text' => 'The province of Ontario'],
+                ['text' => 'British Charter of Rights and Freedoms'],
+                ['text' => 'Canadian Constitution and Official Languages Act'],
+                ['text' => 'Canadian Languages Act'],
+                ['text' => 'Official English Act'],
+              ],
+              'correctAnswerId' => 42,
+              'explanation' => ''
+            ],
+            [
+              'text' => 'On what date did Nunavut become a territory?',
+              'answers' => [
+                ['text' => 'April 1st, 1999'],
+                ['text' => 'May 1st, 1998'],
+                ['text' => 'July 1st, 1867'],
+                ['text' => 'July 31st, 1820'],
+              ],
+              'correctAnswerId' => 45,
+              'explanation' => ''
+            ],
+            [
+              'text' => 'What country is Canada\'s largest trading partner?',
+              'answers' => [
+                ['text' => 'China'],
+                ['text' => 'The United States of America'],
                 ['text' => 'The United Kingdom'],
-                ['text' => 'The Prime Minister'],
+                ['text' => 'Mexico'],
               ],
-              'explanation' => 'In Canada, we profess our loyalty to a person who represents all Canadians and not to a document such as a constitution, a banner such as a flag, or a geopolitical entity such as a country. (P2)'
+              'correctAnswerId' => 50,
+              'explanation' => ''
             ],
             [
-              'text' => 'Which of the following statements is false?',
+              'text' => 'What does Confederation mean?',
               'answers' => [
-                ['text' => 'Canadians enjoy many rights and freedoms'],
-                ['text' => 'Canadians are exempt from upholding others\' freedom and rights'],
-                ['text' => 'Canadians have obligations as well as rights'],
-                ['text' => 'The laws of Canada must be followed by Canadians'],
+                ['text' => 'The joining of provinces to become a new country'],
+                ['text' => 'The United States Confederate Army came to settle in Canada'],
+                ['text' => 'The combination of neighborhoods to build a larger community'],
+                ['text' => 'The merger of colonies to form a province'],
               ],
-              'explanation' => 'Canadian citizens enjoy many rights, but Canadians also have responsibilities. They must obey Canada’s laws and respect the rights and freedoms of others. (P3)'
+              'correctAnswerId' => 53,
+              'explanation' => ''
             ],
             [
-              'text' => 'Which of these statements about citizenship applications is not true?',
+              'text' => 'What does the "right to a secret ballot" mean?',
               'answers' => [
-                ['text' => 'Officials will verify that you are not prohibited from applying'],
-                ['text' => 'Officials will examine your status'],
-                ['text' => 'Officials will make sure you adhere to the rules.'],
-                ['text' => 'Officials will request gifts or money from you.'],
+                ['text' => 'No one can watch you vote except the election officer'],
+                ['text' => 'The voter should not tell anyone for whom they voted'],
+                ['text' => 'Only the candidate you vote for can watch your marked ballot'],
+                ['text' => 'No one can watch you vote or look at your marked ballot'],
               ],
-              'explanation' => 'When you apply for citizenship, officials will check your status, verify that you are not prohibited from applying, and ensure that you meet the requirements. (P6)'
+              'correctAnswerId' => 57,
+              'explanation' => ''
             ],
             [
-              'text' => 'What type of government is there in Canada?',
+              'text' => 'What is a major river in Quebec?',
               'answers' => [
-                ['text' => 'Canada is a Confederation'],
-                ['text' => 'Canada is a Constitutional Monarchy.'],
-                ['text' => 'Canada is a Oligarchy'],
-                ['text' => 'Canada is a Republic'],
+                ['text' => "Hudson's Bay"],
+                ['text' => 'Niagara'],
+                ['text' => 'Fraser River'],
+                ['text' => 'St. Lawrence River'],
               ],
-              'explanation' => 'Canada is a constitutional monarchy, a parliamentary democracy and a federal state. Canadians are bound together by a shared commitment to the rule of law and to the institutions of parliamentary government. (P3)'
+              'correctAnswerId' => 64,
+              'explanation' => ''
             ],
             [
-              'text' => 'How long have settlers and immigrants contributed to the diversity and wealth of Canada?',
+              'text' => 'In Canada, you can question the police about their service or conduct if you feel the need.',
               'answers' => [
-                ['text' => '200 Years'],
-                ['text' => '300 Years'],
-                ['text' => '400 Years'],
-                ['text' => '500 Years'],
+                ['text' => 'True'],
+                ['text' => 'False'],
               ],
-              'explanation' => 'For 400 years, settlers and immigrants have contributed to the diversity and richness of Canada, which is built on a proud history and a strong identity. (P3)'
+              'correctAnswerId' => 65,
+              'explanation' => ''
             ],
             [
-              'text' => 'What are the two basic requirements for citizenship testing in Canada?',
+              'text' => 'What does the lily flower ("fleur-de-lys") symbolize?',
               'answers' => [
-                ['text' => 'Knowledge of Canadian history and language proficiency'],
-                ['text' => 'Knowledge of Canadian laws and cultural integration'],
-                ['text' => 'Knowledge of Canadian rights and responsibilities, and language proficiency'],
-                ['text' => 'Knowledge of Canadian geography and cultural diversity'],
+                ['text' => 'English Royalty'],
+                ['text' => 'French Royalty'],
+                ['text' => 'Canadian Peace Act with the First Nations'],
+                ['text' => 'Canadian Armed Forces'],
               ],
-              'explanation' => 'You will be tested on two basic requirements for citizenship: 1) knowledge of Canada and of the rights and responsibilities of citizenship, and 2) adequate knowledge of English or French. (P6)'
+              'correctAnswerId' => 68,
+              'explanation' => ''
             ],
             [
-              'text' => 'Who is exempted from writing the citizenship test in Canada?',
+              'text' => 'When did the United States launch an invasion on Canada?',
               'answers' => [
-                ['text' => 'Applicants aged 60 and above'],
-                ['text' => 'Applicants aged 50 and above'],
-                ['text' => 'Applicants aged 55 and above'],
-                ['text' => 'Applicants aged 65 and above'],
+                ['text' => '1812'],
+                ['text' => '1867'],
+                ['text' => '1849'],
+                ['text' => '1840'],
               ],
-              'explanation' => 'Adult applicants 55 years of age and over do not need to write the citizenship test. (P6)'
+              'correctAnswerId' => 71,
+              'explanation' => ''
             ],
             [
-              'text' => 'What age group of immigrants must demonstrate adequate knowledge of English or French to become Canadian citizens?',
+              'text' => 'Who was the first leader of a responsible government in Canada in 1849?',
               'answers' => [
-                ['text' => '16 to 50'],
-                ['text' => '18 to 54'],
-                ['text' => '20 to 60'],
-                ['text' => '22 to 58'],
+                ['text' => 'Louis Riel'],
+                ['text' => 'Sir John A. MacDonald'],
+                ['text' => 'Sir Louis-Hippolyte LaFontaine'],
+                ['text' => 'Alec Baldwin'],
               ],
-              'explanation' => 'Immigrants between the ages of 18 and 54 must have adequate knowledge of English or French in order to become Canadian citizens. (P3)'
-            ],
-            [
-              'text' => 'Which of the following topics must immigrants learn about to fulfill the requirements for Canadian citizenship?',
-              'answers' => [
-                ['text' => 'World history and politics'],
-                ['text' => 'Canadian wildlife and ecology'],
-                ['text' => 'Canada\'s history, symbols, and democratic institutions'],
-                ['text' => 'International trade agreements'],
-              ],
-              'explanation' => 'Canada’s history, symbols, democratic institutions, geography, and the rights and responsibilities of citizenship. (P3)'
-            ],
-            [
-              'text' => 'What oath must Canadian citizens take to pledge allegiance?',
-              'answers' => [
-                ['text' => 'Pledge of loyalty to the Prime Minister'],
-                ['text' => 'Pledge of loyalty to the Canadian flag'],
-                ['text' => 'Pledge of allegiance to the Canadian Constitution and its recognition of Indigenous rights'],
-                ['text' => 'Pledge of allegiance to the United Nations'],
-              ],
-              'explanation' => 'Excerpt from Oath: "I will faithfully observe the laws of Canada, including the Constitution which recognizes and affirms the Aboriginal and treaty rights of First Nations, Inuit and Métis peoples" (P2)'
+              'correctAnswerId' => 77,
+              'explanation' => ''
             ],
           ]
         ],
       );
 
       $simulationTest = SimulationTest::create([
-        'name' => 'Exam Simulator',
+        'name' => 'Free Canadian Citizenship Test Practice',
         'info' => 'Exam Simulator',
       ]);
 
@@ -14661,6 +14683,7 @@ class DatabaseSeeder extends Seeder
             'test_id' => $simulationTest->id,
             'text' => $questionData['text'],
             'explanation' => $questionData['explanation'],
+            'correct_answer_id' => $questionData['correctAnswerId']
           ]);
 
           $answers = collect();
@@ -14670,11 +14693,6 @@ class DatabaseSeeder extends Seeder
               'text' => $answerData['text'],
             ]));
           }
-
-          // Set one of the answers as the correct answer
-          $correctAnswerId = 1; //$answers->firstWhere('text', $questionData['answers'][0]['text']);
-          $question->correct_answer_id = $correctAnswerId;
-          $question->save();
         }
       } catch (\Throwable $th) {
         throw $th;
