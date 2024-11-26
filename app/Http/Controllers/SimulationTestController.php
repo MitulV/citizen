@@ -31,14 +31,20 @@ class SimulationTestController extends Controller
       $question = SimulationQuestion::where('id', $questionId)->first();
       $result = $question->correct_answer_id == $answerId ? 'pass' : 'fail';
 
+      // Retrieve the shuffled questions from the session
+      $shuffledQuestions = session()->get("simulation_shuffled_questions_$testId");
 
-      $simulationTest = SimulationTest::findOrFail($testId);
+      // Increment the index for the next question
+      $nextIndex = $index + 1;
+      $nextQuestion = $nextIndex < count($shuffledQuestions) ? $shuffledQuestions[$nextIndex] : null;
 
-      $nextQuestion = SimulationQuestion::where('test_id', $testId)
-        ->where('id', '>', $questionId)
-        ->with('answers')
-        ->select('id', 'text', 'test_id')
-        ->first();
+      //$simulationTest = SimulationTest::findOrFail($testId);
+
+      // $nextQuestion = SimulationQuestion::where('test_id', $testId)
+      //   ->where('id', '>', $questionId)
+      //   ->with('answers')
+      //   ->select('id', 'text', 'test_id')
+      //   ->first();
 
       return Inertia::render('Simulation/SimulationTestPage', [
         'index' => $index,
@@ -47,6 +53,7 @@ class SimulationTestController extends Controller
         'result' => $result,
         'selectedQuestionId' => $questionId,
         'selectedAnswerId' => $answerId,
+        'correctAnswerId' => $question->correct_answer_id,
         'explanation' => $question->explanation
       ]);
     } else {
@@ -54,14 +61,27 @@ class SimulationTestController extends Controller
       // Initial page logic
       $test = SimulationTest::findOrFail($testId);
 
-      $question = SimulationQuestion::where('test_id', $test->id)
+      // Get all questions, shuffle them, and store in session
+      $questions = SimulationQuestion::where('test_id', $test->id)
         ->with('answers')
         ->select('id', 'text', 'test_id')
-        ->first();
+        ->inRandomOrder()
+        ->get();
+
+      session()->put("simulation_shuffled_questions_$test->id", $questions);
+
+      // Start with the first question in the shuffled list
+      $question = $questions->first();
+
+      // $question = SimulationQuestion::where('test_id', $test->id)
+      //   ->with('answers')
+      //   ->select('id', 'text', 'test_id')
+      //   ->first();
 
       return Inertia::render('Simulation/SimulationTestPage', [
         'testId' => $testId,
-        'question' => $question
+        'question' => $question,
+        'index' => 0 // Initialize the index at 0 for the first question
       ]);
     }
   }

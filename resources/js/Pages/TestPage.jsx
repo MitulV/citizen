@@ -307,7 +307,7 @@ export default function TestPage({
                                     )}
                                 </div>
                             </div>
-                            <div className="flex sm:flex-row space-x-4 justify-center w-full">
+                            <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4">
                                 <button
                                     onClick={() =>
                                         handlePreviousQuestion(nextQuestion)

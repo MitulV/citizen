@@ -289,7 +289,9 @@ export default function TestStart({
                                                         ) : null}
                                                     </div>
                                                 </div>
-                                                <span>{answer.text}</span>
+                                                <span className="text-base">
+                                                    {answer.text}
+                                                </span>
                                             </label>
                                         );
                                     }

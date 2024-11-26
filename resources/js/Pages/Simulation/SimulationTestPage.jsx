@@ -19,6 +19,7 @@ export default function SimulationTestPage({
     index,
     selectedQuestionId,
     selectedAnswerId,
+    correctAnswerId,
     explanation,
     auth,
 }) {
@@ -57,7 +58,7 @@ export default function SimulationTestPage({
     const [initialTime, setInitialTime] = useState(Date.now());
 
     const [questionResults, setQuestionResults] = useState(
-        Array.from({ length: 15 }, (_, index) => ({
+        Array.from({ length: 20 }, (_, index) => ({
             index,
             test_id: null,
             question_id: null,
@@ -66,6 +67,7 @@ export default function SimulationTestPage({
             result: "none", //['none', 'pass', 'fail'][Math.floor(Math.random() * 3)], // Randomly assigning 'none', 'pass', or 'fail' for demonstration
             answer_text: [],
             selectedAnswerId: null,
+            correctAnswerId: null,
             isOptionSelected: false,
         }))
     );
@@ -83,6 +85,7 @@ export default function SimulationTestPage({
                     question_id: question.id,
                     question_text: question.text,
                     explanation: question.explanation || "",
+                    correctAnswerId,
                     answer_text: question.answers.map((answer) => ({
                         id: answer.id,
                         text: answer.text,
@@ -103,7 +106,7 @@ export default function SimulationTestPage({
     };
 
     const handleNextQuestion = (nextQuestion) => {
-        if (currentQuestionIndex >= 14) {
+        if (currentQuestionIndex >= 19) {
             return;
         }
 
@@ -192,7 +195,7 @@ export default function SimulationTestPage({
                     <div className="order-1 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl bg-white p-5">
                         <div className="flex justify-between items-center">
                             <p className="text-zinc-400 text-sm">
-                                Question {currentQuestionIndex + 1} / 15
+                                Question {currentQuestionIndex + 1} / 20
                             </p>
                             <h2 className="text-lg sm:text-sm text-gray-400 mb-2">
                                 <FontAwesomeIcon
@@ -231,8 +234,11 @@ export default function SimulationTestPage({
                                         return (
                                             <label
                                                 key={answer.id}
-                                                className={`flex items-center space-x-2 text-sm px-6 py-2 rounded-xl flex-1 hover:bg-gray-200 ${
-                                                    isPass
+                                                className={`flex items-center space-x-2 text-sm px-6 py-2 rounded-lg flex-1 hover:bg-gray-200 ${
+                                                    answer.id ===
+                                                    correctAnswerId
+                                                        ? "border border-gray-700"
+                                                        : isPass
                                                         ? "border border-gray-700"
                                                         : isFail
                                                         ? "border border-gray-500"
@@ -260,28 +266,35 @@ export default function SimulationTestPage({
                                                         disabled={isDisabled}
                                                     />
                                                     <div
-                                                        className={`w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:bg-${
-                                                            isPass
+                                                        className={`w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center p-2 bg-${
+                                                            answer.id ===
+                                                            correctAnswerId
+                                                                ? "gray"
+                                                                : isPass
                                                                 ? "gray"
                                                                 : isFail
                                                                 ? "gray"
-                                                                : "gray"
+                                                                : ""
                                                         }-500`}
                                                     >
-                                                        {isPass ? (
+                                                        {answer.id ===
+                                                            correctAnswerId ||
+                                                        isPass ? (
                                                             <FontAwesomeIcon
                                                                 icon={faCheck}
-                                                                className="text-gray-500"
+                                                                className="text-white text-xs"
                                                             />
                                                         ) : isFail ? (
                                                             <FontAwesomeIcon
                                                                 icon={faTimes}
-                                                                className="text-gray-500"
+                                                                className="text-white text-xs"
                                                             />
                                                         ) : null}
                                                     </div>
                                                 </div>
-                                                <span>{answer.text}</span>
+                                                <span className="text-base">
+                                                    {answer.text}
+                                                </span>
                                             </label>
                                         );
                                     }
@@ -299,7 +312,7 @@ export default function SimulationTestPage({
                             </button>
                             <button
                                 onClick={() => {
-                                    if (currentQuestionIndex >= 14) {
+                                    if (currentQuestionIndex >= 19) {
                                         handleSubmit();
                                     } else {
                                         handleNextQuestion(nextQuestion);
@@ -307,7 +320,7 @@ export default function SimulationTestPage({
                                 }}
                                 className="bg-primary text-white px-8 py-2 rounded-full flex-1"
                             >
-                                {currentQuestionIndex >= 14 ? "Submit" : "Next"}
+                                {currentQuestionIndex >= 19 ? "Submit" : "Next"}
                             </button>
                         </div>
                         {false && currentQuestion.explanation && (
@@ -323,7 +336,7 @@ export default function SimulationTestPage({
                     </div>
 
                     {/* Right Side (spans 4 columns on large screens) */}
-                    <div className="order-2 md:h-64 lg:order-2 lg:col-span-4 flex flex-col space-y-4 border rounded-xl bg-white p-10">
+                    <div className="order-2 md:h-80 lg:order-2 lg:col-span-4 flex flex-col space-y-4 border rounded-xl bg-white p-10">
                         <p className="hidden sm:flex text-xl text-gray-800 mb-4">
                             Your Progress
                         </p>
