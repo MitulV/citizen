@@ -154,11 +154,20 @@ export default function SimulationResult({
                                                                         answer.id
                                                                     }
                                                                     className={`flex items-center space-x-4 text-base px-2 py-3 rounded-xl cursor-pointer ${
-                                                                        isPass
+                                                                        answer.id ===
+                                                                            question.selectedAnswerId &&
+                                                                        question.result ===
+                                                                            "pass"
                                                                             ? "border border-lime-700"
-                                                                            : isFail
+                                                                            : answer.id ===
+                                                                                  question.selectedAnswerId &&
+                                                                              question.result !==
+                                                                                  "pass"
                                                                             ? "border border-red-500"
-                                                                            : "border border-gray-100"
+                                                                            : answer.id ===
+                                                                              question.correctAnswerId
+                                                                            ? "border border-lime-700"
+                                                                            : "border-gray-700"
                                                                     }`}
                                                                     onClick={() => {
                                                                         if (
@@ -187,10 +196,19 @@ export default function SimulationResult({
                                                                         />
                                                                         <div
                                                                             className={`w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:bg-${
-                                                                                isPass
+                                                                                answer.id ===
+                                                                                    question.selectedAnswerId &&
+                                                                                question.result ===
+                                                                                    "pass"
                                                                                     ? "green"
-                                                                                    : isFail
+                                                                                    : answer.id ===
+                                                                                          question.selectedAnswerId &&
+                                                                                      question.result !==
+                                                                                          "pass"
                                                                                     ? "red"
+                                                                                    : answer.id ===
+                                                                                      question.correctAnswerId
+                                                                                    ? "green"
                                                                                     : "gray"
                                                                             }-500`}
                                                                         >
@@ -207,6 +225,14 @@ export default function SimulationResult({
                                                                                         faTimes
                                                                                     }
                                                                                     className="text-red-500"
+                                                                                />
+                                                                            ) : answer.id ===
+                                                                              question.correctAnswerId ? (
+                                                                                <FontAwesomeIcon
+                                                                                    icon={
+                                                                                        faCheck
+                                                                                    }
+                                                                                    className="text-green-500"
                                                                                 />
                                                                             ) : null}
                                                                         </div>

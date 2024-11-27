@@ -148,6 +148,7 @@ export default function SimulationTestPage({
                 const newResults = [...prevResults];
                 newResults[index].result = result;
                 newResults[index].selectedAnswerId = selectedAnswerId;
+                newResults[index].correctAnswerId = correctAnswerId;
                 newResults[index].explanation = explanation;
                 return newResults;
             });
@@ -235,10 +236,7 @@ export default function SimulationTestPage({
                                             <label
                                                 key={answer.id}
                                                 className={`flex items-center space-x-2 text-sm px-6 py-2 rounded-lg flex-1 hover:bg-gray-200 ${
-                                                    answer.id ===
-                                                    correctAnswerId
-                                                        ? "border border-gray-700"
-                                                        : isPass
+                                                    isPass
                                                         ? "border border-gray-700"
                                                         : isFail
                                                         ? "border border-gray-500"
@@ -267,19 +265,14 @@ export default function SimulationTestPage({
                                                     />
                                                     <div
                                                         className={`w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center p-2 bg-${
-                                                            answer.id ===
-                                                            correctAnswerId
-                                                                ? "gray"
-                                                                : isPass
+                                                            isPass
                                                                 ? "gray"
                                                                 : isFail
                                                                 ? "gray"
                                                                 : ""
                                                         }-500`}
                                                     >
-                                                        {answer.id ===
-                                                            correctAnswerId ||
-                                                        isPass ? (
+                                                        {isPass ? (
                                                             <FontAwesomeIcon
                                                                 icon={faCheck}
                                                                 className="text-white text-xs"

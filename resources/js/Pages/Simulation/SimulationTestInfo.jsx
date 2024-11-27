@@ -116,7 +116,7 @@ export default function SimulationTestInfo({ auth }) {
                             </div>
                         </div>
                     </section>
-                    <section className="px-4 md:px-20 bg-slate-100">
+                    <section className="py-2 md:pb-4 md:pt-8 px-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-8 bg-slate-100">
                         <div className="container mx-auto flex flex-col md:flex-row rounded-2xl overflow-hidden bg-white shadow-sm p-8">
                             {/* Left Side */}
                             <div className="w-full md:w-1/2 p-8">
