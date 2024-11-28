@@ -25,7 +25,7 @@ export default function Index({ auth, chapters }) {
                 </Head>
                 <div className="container mx-auto relative min-h-screen md:flex bg-slate-100">
                     <section className="py-6 px-4 sm:mx-2 md:py-4 md:px-8 lg:py-2 lg:px-10 lg:mx-2 xl:mx-8 xl:px-2">
-                        <div className="text-left mb-8">
+                        <div className="text-left mb-8 mt-6">
                             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-4 text-gray-900 pt-2px-2 md:px-10 lg:px-4 xl:px-36">
                                 Chapter Tests
                             </h1>

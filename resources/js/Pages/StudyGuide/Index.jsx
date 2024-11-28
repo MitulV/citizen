@@ -30,7 +30,7 @@ export default function Index({ auth, chapters }) {
 
                 <div className="container mx-auto relative min-h-screen md:flex bg-slate-100">
                     <section className="py-6 px-4 sm:mx-2 md:py-4 md:px-8 lg:py-2 lg:px-10 lg:mx-2 xl:mx-8 xl:px-2">
-                        <div className="text-left mb-8">
+                        <div className="text-left mb-8 mt-6">
                             {message && (
                                 <Alert color="success">{message}</Alert>
                             )}
@@ -38,8 +38,7 @@ export default function Index({ auth, chapters }) {
                                 Study Guide
                             </h1>
                             <p className="text-sm md:text-base lg:text-base text-gray-600 px-2 md:px-10 lg:px-4 xl:px-36">
-                                This study guide helps you learn the entire
-                                official{" "}
+                                This guide breaks down the official{" "}
                                 <a
                                     className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
                                     target="_blank"
@@ -47,11 +46,8 @@ export default function Index({ auth, chapters }) {
                                 >
                                     Discover Canada
                                 </a>{" "}
-                                book by breaking it into smaller chapters. It
-                                also features a timeline that shows important
-                                dates from each chapter. This makes it easier
-                                for you to understand and remember the key
-                                information!
+                                book into chapters, with key points and a
+                                timeline to aid learning.
                             </p>
                         </div>
 

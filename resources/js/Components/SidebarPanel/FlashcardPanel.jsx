@@ -18,6 +18,10 @@ export default function FlashcardPanel({
     accorditionIndex,
 }) {
     const [open, setOpen] = useState(Number(accorditionIndex));
+    const CUSTOM_ANIMATION = {
+        mount: { scale: 1 },
+        unmount: { scale: 0.9 },
+    };
 
     useEffect(() => {
         if (typeof accorditionIndex === "number") {
@@ -60,7 +64,34 @@ export default function FlashcardPanel({
                                         : ""
                                 }`}
                             >
-                                Chapter {index + 1}
+                                <div className="flex items-center">
+                                    <div className="mr-3">
+                                        {/* Add the icon here */}
+                                        <svg
+                                            className={`transition-transform duration-500 ${
+                                                open !== index
+                                                    ? "-rotate-180"
+                                                    : "rotate-0"
+                                            }`}
+                                            width="15"
+                                            height="10"
+                                            viewBox="0 0 10 7"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M9 5.5L5 1.5L0.999999 5.5"
+                                                stroke="#626262"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <span className="font-sans text-lg font-normal leading-[28.8px] text-left [text-underline-position:from-font] [text-decoration-skip-ink:none]">
+                                        Chapter {index + 1}
+                                    </span>
+                                </div>
                             </AccordionHeader>
                             <AccordionBody className="pt-0 text-base font-normal">
                                 <div className="text-gray-800 text-start">
@@ -98,6 +129,7 @@ export default function FlashcardPanel({
                                     </Link>
                                 </div>
                             </AccordionBody>
+                            <hr></hr>
                         </Accordion>
                     ))}
                 </Menu>
