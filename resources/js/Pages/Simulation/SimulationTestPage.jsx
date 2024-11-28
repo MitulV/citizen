@@ -195,10 +195,10 @@ export default function SimulationTestPage({
                     {/* Left Side (spans 8 columns on large screens) */}
                     <div className="order-1 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl bg-white p-5">
                         <div className="flex justify-between items-center">
-                            <p className="text-zinc-400 text-sm">
+                            <p className="text-lg sm:text-sm text-gray-400">
                                 Question {currentQuestionIndex + 1} / 20
                             </p>
-                            <h2 className="text-lg sm:text-sm text-gray-400 mb-2">
+                            <h2 className="text-lg sm:text-sm text-gray-400">
                                 <FontAwesomeIcon
                                     icon={faClock}
                                     className="mr-2"

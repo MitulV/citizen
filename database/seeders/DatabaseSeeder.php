@@ -14484,7 +14484,7 @@ class DatabaseSeeder extends Seeder
                 ['text' => 'Halifax'],
                 ['text' => 'Toronto'],
               ],
-              'correctAnswerId' => 12,
+              'correctAnswerId' => 15,
               'explanation' => "As Canada’s largest east coast port, Halifax is home to Canada’s largest naval base.",
             ],
             [
