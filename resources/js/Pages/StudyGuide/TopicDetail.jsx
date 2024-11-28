@@ -40,110 +40,136 @@ export default function TopicDetail({
                         content="Access our Study Guide for the Canadian Citizenship Test to enhance your preparation and confidence!"
                     />
                 </Head>
-                {topic.name === "The Timeline" ? (
-                    <>
-                        <TheTimeLine chapter={chapterId} topic={topic} />
-                    </>
-                ) : (
-                    <>
-                        {!topic.content && (
-                            <div className="ml-4 sm:ml-6 md:ml-10 mt-4">
-                                <Link
-                                    as="button"
-                                    className="bg-primary text-white px-4 sm:px-6 py-2 rounded-full shadow-lg transform hover:-translate-y-1 transition duration-500 ease-out"
-                                    href={route("createTopic.create", {
-                                        topicId: topic.id,
-                                        chapterId,
-                                    })}
-                                >
-                                    Add Content
+                <div className="container mx-auto px-4 py-6 flex flex-col min-h-screen">
+                    {/* Content Area */}
+                    <div className="container mx-auto px-4 py-6">
+                        <div className="mb-4">
+                            <p className="text-primary flex items-center ">
+                                <Link href={route("dashboard")}>
+                                    <FontAwesomeIcon
+                                        icon={faChevronLeft}
+                                        className="mr-2"
+                                    />
+                                    <span className="text-base sm:text-lg">
+                                        View all chapters
+                                    </span>
                                 </Link>
-                            </div>
-                        )}
-                        {topic.content && (
-                            <div className="container mx-auto flex flex-col items-center justify-center">
-                                <div className="w-full px-4 sm:px-8 md:px-16 lg:px-20 py-6 md:py-8">
-                                    <div className="mb-4">
-                                        <p className="text-primary flex items-center">
-                                            <Link href={route("dashboard")}>
-                                                <FontAwesomeIcon
-                                                    icon={faChevronLeft}
-                                                    className="mr-2"
-                                                />
-                                                <span className="text-base sm:text-lg">
-                                                    View all chapters
-                                                </span>
+                            </p>
+                            <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-700">
+                                Chapter {chapterId}
+                            </h1>
+                        </div>
+
+                        {/* Scrollable Box */}
+                        <div
+                            className="bg-gray-100   p-4"
+                            style={{
+                                height: "800px", // Fixed height for the box
+                                overflowY: "auto", // Enable vertical scrolling
+                            }}
+                        >
+                            {topic.name === "The Timeline" ? (
+                                <TheTimeLine
+                                    chapter={chapterId}
+                                    topic={topic}
+                                />
+                            ) : (
+                                <>
+                                    {!topic.content && (
+                                        <div className="text-center">
+                                            <Link
+                                                as="button"
+                                                className="bg-primary text-white px-4 sm:px-6  py-2 rounded-full shadow-lg transform hover:-translate-y-1 transition duration-500 ease-out"
+                                                href={route(
+                                                    "createTopic.create",
+                                                    {
+                                                        topicId: topic.id,
+                                                        chapterId,
+                                                    }
+                                                )}
+                                            >
+                                                Add Content
                                             </Link>
-                                        </p>
-                                        <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-700">
-                                            Chapter {chapterId}
-                                        </h1>
-                                    </div>
-                                    <EditorShow value={topic.content} />
-                                </div>
+                                        </div>
+                                    )}
+                                    {topic.content && (
+                                        <EditorShow value={topic.content} />
+                                    )}
+                                </>
+                            )}
+                        </div>
+                    </div>
 
-                                {/* Navigation Bar */}
-                                <div className="w-full px-4 sm:px-8 md:px-16 lg:px-20 py-4 flex justify-between items-center space-x-4">
-                                    <Link
-                                        as="button"
-                                        method="get"
-                                        href={
-                                            previousTopicId
-                                                ? `/guide/${chapterId}/${previousTopicId}`
-                                                : "#"
-                                        }
-                                        className={`border-primary border-2 text-black px-4 py-2 rounded-full flex items-center justify-center w-full sm:w-auto ${
-                                            !previousTopicId
-                                                ? "opacity-50 cursor-not-allowed"
-                                                : ""
-                                        }`}
-                                        disabled={!previousTopicId}
-                                    >
-                                        <FontAwesomeIcon
-                                            icon={faChevronLeft}
-                                            className="mr-2"
-                                        />
-                                        Previous
-                                    </Link>
-                                    <Link
-                                        as="button"
-                                        method="get"
-                                        href={`/guide/${chapterId}/${topic.id}?complete=true`}
-                                        className="bg-green-500 text-white px-4 py-2 rounded-full w-full sm:w-auto flex items-center justify-center"
-                                    >
-                                        <FontAwesomeIcon
-                                            icon={faCheck}
-                                            className="mr-2"
-                                        />
-                                        Complete
-                                    </Link>
+                    {/* Sticky Navigation Bar */}
+                    <div
+                        className="mx-4 border-t sticky bottom-0  px-4 py-4 sm:px-6 md:px-8 lg:px-10 xl:px-12"
+                        style={{
+                            zIndex: 10, // Ensure it stays above other elements
+                        }}
+                    >
+                        <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                            {/* Previous Button */}
+                            <Link
+                                as="button"
+                                method="get"
+                                href={
+                                    previousTopicId
+                                        ? `/guide/${chapterId}/${previousTopicId}`
+                                        : "#"
+                                }
+                                className={`border-primary border-2 text-black px-6 py-3 rounded-full flex items-center justify-center w-full sm:w-auto ${
+                                    !previousTopicId
+                                        ? "opacity-50 cursor-not-allowed"
+                                        : ""
+                                }`}
+                                disabled={!previousTopicId}
+                            >
+                                <FontAwesomeIcon
+                                    icon={faChevronLeft}
+                                    className="mr-2"
+                                />
+                                Previous
+                            </Link>
 
-                                    <Link
-                                        as="button"
-                                        method="get"
-                                        href={
-                                            nextTopicId
-                                                ? `/guide/${chapterId}/${topic.id}?complete=true`
-                                                : "#"
-                                        }
-                                        className={`border-primary border-2 text-black px-4 py-2 rounded-full flex items-center justify-center w-full sm:w-auto ${
-                                            !nextTopicId
-                                                ? "opacity-50 cursor-not-allowed"
-                                                : ""
-                                        }`}
-                                        disabled={!nextTopicId}
-                                    >
-                                        Next
-                                        <FontAwesomeIcon
-                                            icon={faChevronRight}
-                                            className="ml-2"
-                                        />
-                                    </Link>
-                                </div>
-                            </div>
-                        )}
-                    </>
-                )}
+                            {/* Complete Button */}
+                            <Link
+                                as="button"
+                                method="get"
+                                href={`/guide/${chapterId}/${topic.id}?complete=true`}
+                                className="bg-green-500 text-white px-6 py-3 rounded-full flex items-center justify-center w-full sm:w-auto"
+                            >
+                                <FontAwesomeIcon
+                                    icon={faCheck}
+                                    className="mr-2"
+                                />
+                                Complete
+                            </Link>
+
+                            {/* Next Button */}
+                            <Link
+                                as="button"
+                                method="get"
+                                href={
+                                    nextTopicId
+                                        ? `/guide/${chapterId}/${topic.id}?complete=true`
+                                        : "#"
+                                }
+                                className={`border-primary border-2 text-black px-6 py-3 rounded-full flex items-center justify-center w-full sm:w-auto ${
+                                    !nextTopicId
+                                        ? "opacity-50 cursor-not-allowed"
+                                        : ""
+                                }`}
+                                disabled={!nextTopicId}
+                            >
+                                Next
+                                <FontAwesomeIcon
+                                    icon={faChevronRight}
+                                    className="ml-2"
+                                />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
             </AuthenticatedLayout>
         </>
     );
