@@ -9,7 +9,7 @@ import { Link } from "@inertiajs/react";
 
 export default function ResultBanner({ setIsBannerVisible }) {
     return (
-        <section className="relative m-10 shadow-lg rounded-xl border-gray-700 p-8 overflow-hidden">
+        <section className="container mx-auto relative m-10 shadow-lg rounded-xl border-gray-700 p-8 overflow-hidden ">
             {/* Right-top half-circle */}
             <div className="absolute top-0 right-0 h-[575px] w-[575px] bg-amber-200 rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
             <div className="absolute bottom-0 left-0 h-[575px] w-[535px] bg-red-300 rounded-full transform -translate-x-1/2 translate-y-1/2"></div>

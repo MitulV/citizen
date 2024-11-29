@@ -40,9 +40,9 @@ export default function TopicDetail({
                         content="Access our Study Guide for the Canadian Citizenship Test to enhance your preparation and confidence!"
                     />
                 </Head>
-                <div className="container mx-auto px-4 py-6 flex flex-col min-h-screen">
+                <div className="container mx-auto px-4  flex flex-col min-h-screen">
                     {/* Content Area */}
-                    <div className="container mx-auto px-4 py-6">
+                    <div className="container mx-auto px-4 ">
                         <div className="mb-4">
                             <p className="text-primary flex items-center ">
                                 <Link href={route("dashboard")}>
@@ -101,13 +101,14 @@ export default function TopicDetail({
                     </div>
 
                     {/* Sticky Navigation Bar */}
+                    {/* Sticky Navigation Bar */}
                     <div
-                        className="mx-4 border-t sticky bottom-0  px-4 py-4 sm:px-6 md:px-8 lg:px-10 xl:px-12"
+                        className="mx-8 border-t sticky bottom-0 px-4 py-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 bg-white"
                         style={{
                             zIndex: 10, // Ensure it stays above other elements
                         }}
                     >
-                        <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <div className="flex flex-row justify-between items-center space-x-4">
                             {/* Previous Button */}
                             <Link
                                 as="button"
