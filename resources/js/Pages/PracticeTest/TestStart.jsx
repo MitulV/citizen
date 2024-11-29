@@ -19,6 +19,7 @@ export default function TestStart({
     result,
     index,
     selectedAnswerId,
+    correctAnswerId,
     explanation,
     chapters,
     test,
@@ -69,6 +70,7 @@ export default function TestStart({
             result: "none", //['none', 'pass', 'fail'],
             answer_text: [],
             selectedAnswerId: null,
+            correctAnswerId: null,
             isOptionSelected: false,
         }))
     );
@@ -148,6 +150,7 @@ export default function TestStart({
                 const newResults = [...prevResults];
                 newResults[index].result = result;
                 newResults[index].selectedAnswerId = selectedAnswerId;
+                newResults[index].correctAnswerId = correctAnswerId;
                 newResults[index].explanation = explanation;
                 return newResults;
             });
@@ -195,14 +198,14 @@ export default function TestStart({
                 chapters={chapters}
             >
                 <Head title="Premium" />
-                <section className="container mx-auto min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 p-5 bg-slate-50  px-2 md:px-16 lg:px-8 xl:px-36">
+                <section className="container mx-auto min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 p-5 bg-slate-100  px-2 md:px-16 lg:px-8 xl:px-36">
                     {/* Left Side (spans 8 columns on large screens) */}
-                    <div className="order-2 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl  p-5">
+                    <div className="order-2 lg:order-1 lg:col-span-8 flex flex-col space-y-4 border rounded-xl bg-white p-5">
                         <div className="flex justify-between items-center">
-                            <p className="text-zinc-400 text-sm">
+                            <p className="text-lg sm:text-sm text-gray-400">
                                 Question {currentQuestionIndex + 1} / 15
                             </p>
-                            <h2 className="text-lg sm:text-sm text-gray-400 mb-2">
+                            <h2 className="text-lg sm:text-sm text-gray-400">
                                 <FontAwesomeIcon
                                     icon={faClock}
                                     className="mr-2"
@@ -240,7 +243,10 @@ export default function TestStart({
                                             <label
                                                 key={answer.id}
                                                 className={`flex items-center space-x-2 text-sm px-6 py-2 rounded-xl flex-1 hover:bg-gray-200 ${
-                                                    isPass
+                                                    answer.id ===
+                                                    correctAnswerId
+                                                        ? "border border-lime-700"
+                                                        : isPass
                                                         ? "border border-lime-700"
                                                         : isFail
                                                         ? "border border-red-500"
@@ -268,23 +274,28 @@ export default function TestStart({
                                                         disabled={isDisabled}
                                                     />
                                                     <div
-                                                        className={`w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:bg-${
-                                                            isPass
+                                                        className={`w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center p-2 bg-${
+                                                            answer.id ===
+                                                            correctAnswerId
+                                                                ? "green"
+                                                                : isPass
                                                                 ? "green"
                                                                 : isFail
                                                                 ? "red"
-                                                                : "gray"
+                                                                : ""
                                                         }-500`}
                                                     >
-                                                        {isPass ? (
+                                                        {answer.id ===
+                                                            correctAnswerId ||
+                                                        isPass ? (
                                                             <FontAwesomeIcon
                                                                 icon={faCheck}
-                                                                className="text-green-500"
+                                                                className="text-white text-xs"
                                                             />
                                                         ) : isFail ? (
                                                             <FontAwesomeIcon
                                                                 icon={faTimes}
-                                                                className="text-red-500"
+                                                                className="text-white text-xs"
                                                             />
                                                         ) : null}
                                                     </div>
@@ -333,16 +344,16 @@ export default function TestStart({
                     </div>
 
                     {/* Right Side (spans 4 columns on large screens) */}
-                    <div className="order-1 md:h-64 lg:order-2 lg:col-span-4 flex flex-col space-y-4 border rounded-xl bg-white p-10">
+                    <div className="order-2 md:h-64 lg:order-2 lg:col-span-4 flex flex-col space-y-4 border rounded-xl bg-white p-10">
                         <h1 className="hidden sm:flex text-xl text-gray-800 mb-4">
                             Featured Highlights
                         </h1>
                         {/* Circles for Small Screens */}
-                        <div className="flex space-x-1 mb-4 sm:hidden">
+                        <div className="flex space-x-1 mb-4 md:mb-0 lg:hidden">
                             {questionResults.map((result) => (
                                 <div
                                     key={result.index}
-                                    className={`w-8 h-2 rounded-full ${
+                                    className={`w-10 h-2 rounded-full  mb-2 ${
                                         result.result === "pass"
                                             ? "bg-green-500"
                                             : result.result === "fail"

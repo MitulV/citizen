@@ -136,6 +136,8 @@ class PracticeTestsController extends Controller
       }
       $chapter->allTestsCompleted = $allCompleted;
     }
+
+
     if ($request->filled('questionId') && $request->filled('answerId') && $request->filled('testId')) {
       // Answer validation logic
       $questionId = $request->input('questionId');
@@ -146,13 +148,20 @@ class PracticeTestsController extends Controller
       $question = Question::where('id', $questionId)->first();
       $result = $question->correct_answer_id == $answerId ? 'pass' : 'fail';
 
-      $test = Test::findOrFail($testId);
+      // Retrieve the shuffled questions from the session
+      $shuffledQuestions = session()->get("practice_shuffled_questions_$testId");
 
-      $nextQuestion = Question::where('test_id', $testId)
-        ->where('id', '>', $questionId)
-        ->with('answers')
-        ->select('id', 'text', 'test_id')
-        ->first();
+      // Increment the index for the next question
+      $nextIndex = $index + 1;
+      $nextQuestion = $nextIndex < count($shuffledQuestions) ? $shuffledQuestions[$nextIndex] : null;
+
+      // $test = Test::findOrFail($testId);
+
+      // $nextQuestion = Question::where('test_id', $testId)
+      //   ->where('id', '>', $questionId)
+      //   ->with('answers')
+      //   ->select('id', 'text', 'test_id')
+      //   ->first();
 
       return Inertia::render('PracticeTest/TestStart', [
         'index' => $index,
@@ -161,6 +170,7 @@ class PracticeTestsController extends Controller
         'result' => $result,
         'selectedQuestionId' => $questionId,
         'selectedAnswerId' => $answerId,
+        'correctAnswerId' => $question->correct_answer_id,
         'explanation' => $question->explanation,
         'chapters' => $chapters,
         'test' => $test
@@ -169,15 +179,28 @@ class PracticeTestsController extends Controller
 
       $test = Test::findOrFail($testId);
 
-
-      $question = Question::where('test_id', $test->id)
+      // Get all questions, shuffle them, and store in session
+      $questions = Question::where('test_id', $test->id)
         ->with('answers')
         ->select('id', 'text', 'test_id')
-        ->first();
+        ->inRandomOrder()
+        ->get();
+
+      session()->put("practice_shuffled_questions_$test->id", $questions);
+
+      // Start with the first question in the shuffled list
+      $question = $questions->first();
+
+
+      // $question = Question::where('test_id', $test->id)
+      //   ->with('answers')
+      //   ->select('id', 'text', 'test_id')
+      //   ->first();
 
       return Inertia::render('PracticeTest/TestStart', [
         'chapterId' => $chapterId,
         'question' => $question,
+        'index' => 0, // Initialize the index at 0 for the first question
         'chapters' => $chapters,
         'test' => $test
       ]);
