@@ -414,22 +414,6 @@ export default function TheTimeLine({ chapter, topic }) {
     return (
         <div className="container mx-auto">
             <div className="p-4 mt-10 mx-auto max-w-screen-lg sm:mx-4 md:mx-10 lg:mx-20 xl:mx-8 ">
-                <div className="mb-4">
-                    <p className="text-primary flex items-center">
-                        <Link href={route("dashboard")}>
-                            <FontAwesomeIcon
-                                icon={faChevronLeft}
-                                className="mr-2"
-                            />
-                            <span className="text-base sm:text-lg">
-                                View all chapters
-                            </span>
-                        </Link>
-                    </p>
-                    <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-700">
-                        Chapter {chapter}
-                    </h1>
-                </div>
                 {selectedChapter ? (
                     <VerticalTimeline lineColor="rgb(81,81,81)">
                         {selectedChapter.timeline.map((t, i) => (

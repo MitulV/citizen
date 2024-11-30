@@ -82,9 +82,9 @@ export default function FlashcardPanel({
                                             <path
                                                 d="M9 5.5L5 1.5L0.999999 5.5"
                                                 stroke="#626262"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                                strokeWidth="2"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
                                             />
                                         </svg>
                                     </div>
