@@ -111,6 +111,9 @@ export default function TopicDetail({
                         <div className="flex flex-row justify-between items-center space-x-4">
                             {/* Previous Button */}
                             <Link
+                                replace
+                                preserveState
+                                preserveScroll
                                 as="button"
                                 method="get"
                                 href={
@@ -134,6 +137,9 @@ export default function TopicDetail({
 
                             {/* Complete Button */}
                             <Link
+                                replace
+                                preserveState
+                                preserveScroll
                                 as="button"
                                 method="get"
                                 href={
@@ -156,6 +162,9 @@ export default function TopicDetail({
 
                             {/* Next Button */}
                             <Link
+                                replace
+                                preserveState
+                                preserveScroll
                                 as="button"
                                 method="get"
                                 href={

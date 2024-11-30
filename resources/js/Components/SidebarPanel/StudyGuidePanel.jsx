@@ -21,7 +21,7 @@ export default function StudyGuidePanel({
     };
 
     useEffect(() => {
-        if (typeof accorditionIndex === "number") {
+        if (typeof accorditionIndex === "number" && open !== accorditionIndex) {
             setOpen(accorditionIndex);
         }
     }, [accorditionIndex]);
@@ -42,7 +42,9 @@ export default function StudyGuidePanel({
                     {chapters.map((chapter, index) => (
                         <Accordion
                             key={chapter.id}
-                            animate={CUSTOM_ANIMATION}
+                            animate={
+                                open === index ? CUSTOM_ANIMATION : undefined
+                            }
                             open={open === index} // Control open state
                             className="mb-2 px-4 bg-white"
                         >
