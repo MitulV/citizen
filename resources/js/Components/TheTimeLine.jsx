@@ -408,7 +408,7 @@ export default function TheTimeLine({ chapter, topic }) {
 
     // Find the chapter's timeline based on the chapter prop
     const selectedChapter = accordion.find(
-        (item) => String(item.chapter) === chapter
+        (item) => String(item.chapter) === String(chapter)
     );
 
     return (

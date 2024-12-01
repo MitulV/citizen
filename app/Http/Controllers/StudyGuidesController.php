@@ -49,6 +49,70 @@ class StudyGuidesController extends Controller
     $user = Auth::user();
     $accorditionIndex = $request->has('accorditionIndex') ? $request->accorditionIndex : 0;
 
+    if ($request->has('action') && $request->action == 'prev') {
+      if ($topicId) {
+        // Find the current topic
+        $currentTopic = Topic::findOrFail($topicId);
+
+        // Find the previous topic
+        $previousTopic = Topic::where('chapter_id', $chapterId)
+          ->where('id', '<', $topicId)
+          ->orderBy('id', 'desc') // Get the most recent previous topic
+          ->first();
+
+        // If no previous topic exists in the current chapter, check the previous chapter
+        if (!$previousTopic) {
+          $previousChapter = Chapter::where('id', '<', $chapterId)
+            ->orderBy('id', 'desc') // Go to the most recent previous chapter
+            ->first();
+
+          // If previous chapter exists, fetch its last topic
+          if ($previousChapter) {
+            $previousTopic = Topic::where('chapter_id', $previousChapter->id)
+              ->orderBy('id', 'desc') // Get the last topic in the previous chapter
+              ->first();
+            $chapterId = $previousChapter->id;
+          }
+        }
+
+        // Fetch chapters with their topics and users for rendering
+        $chapters = Chapter::where('step', 2)
+          ->with('topics.users')
+          ->get();
+
+        // Process chapter topics for status
+        foreach ($chapters as $chapter) {
+          $allCompleted = true;
+          foreach ($chapter->topics as $topic) {
+            $userTopic = $topic->users->where('id', $user->id)->first();
+            if ($userTopic) {
+              $topic->status = $userTopic->pivot->status;
+            } else {
+              $topic->status = 'not_attempted';
+              $allCompleted = false;
+            }
+
+            if ($topic->status !== 'completed') {
+              $allCompleted = false;
+            }
+
+            unset($topic->users); // Optional cleanup
+          }
+          $chapter->allTopicsCompleted = $allCompleted;
+        }
+
+        return Inertia::render('StudyGuide/TopicDetail', [
+          'chapters' => $chapters,
+          'topic' => $previousTopic,
+          'chapterId' => $chapterId,
+          'previousTopicId' => $previousTopic ? $previousTopic->id : null,
+          'nextTopicId' => $currentTopic ? $currentTopic->id : null,
+          'accorditionIndex' => $chapterId - 1,
+        ]);
+      }
+    }
+
+
     // Check if a topic should be marked as complete
     if ($request->has('complete') && $topicId) {
       $currentTopic = Topic::findOrFail($topicId);
@@ -120,8 +184,6 @@ class StudyGuidesController extends Controller
       ]);
     }
 
-
-
     $chapters = Chapter::where('step', 2)
       ->with('topics.users')
       ->get();
@@ -149,12 +211,26 @@ class StudyGuidesController extends Controller
     $topicId = $topicId ?? 1;
     $topic = Topic::findOrFail($topicId);
 
-
-
     $previousTopic = Topic::where('chapter_id', $chapterId)
       ->where('id', '<', $topicId)
       ->orderBy('id', 'desc')
       ->first();
+
+
+
+    if (!$previousTopic && $topicId > 1) {
+      // Fetch the previous chapter
+      $previousChapter = Chapter::where('id', '<', $chapterId)
+        ->orderBy('id', 'desc')
+        ->first();
+
+      if ($previousChapter) {
+        // Fetch the last topic of the previous chapter
+        $previousTopic = Topic::where('chapter_id', $previousChapter->id)
+          ->orderBy('id', 'desc')
+          ->first();
+      }
+    }
 
     $nextTopic = Topic::where('chapter_id', $chapterId)
       ->where('id', '>', $topicId)

@@ -118,15 +118,19 @@ export default function TopicDetail({
                                 method="get"
                                 href={
                                     previousTopicId
-                                        ? `/guide/${chapterId}/${previousTopicId}`
+                                        ? `/guide/${chapterId}/${
+                                              topic.id
+                                          }?accorditionIndex=${
+                                              chapterId - 1
+                                          }&action=prev`
                                         : "#"
                                 }
                                 className={`border-primary border-2 text-black px-6 py-3 rounded-full flex items-center justify-center w-full sm:w-auto ${
-                                    !previousTopicId
+                                    !previousTopicId || topic.id == 1
                                         ? "opacity-50 cursor-not-allowed"
                                         : ""
                                 }`}
-                                disabled={!previousTopicId}
+                                disabled={!previousTopicId || topic.id == 1}
                             >
                                 <FontAwesomeIcon
                                     icon={faChevronLeft}
@@ -143,7 +147,7 @@ export default function TopicDetail({
                                 as="button"
                                 method="get"
                                 href={
-                                    nextTopicId && nextTopicId <= 22
+                                    nextTopicId && topic.id <= 22
                                         ? `/guide/${chapterId}/${
                                               topic.id
                                           }?complete=true&accorditionIndex=${
@@ -168,7 +172,7 @@ export default function TopicDetail({
                                 as="button"
                                 method="get"
                                 href={
-                                    nextTopicId && nextTopicId <= 22
+                                    nextTopicId && topic.id <= 22
                                         ? `/guide/${chapterId}/${
                                               topic.id
                                           }?complete=true&accorditionIndex=${
@@ -177,11 +181,11 @@ export default function TopicDetail({
                                         : "#"
                                 }
                                 className={`border-primary border-2 text-black px-6 py-3 rounded-full flex items-center justify-center w-full sm:w-auto ${
-                                    !nextTopicId || nextTopicId > 22
+                                    nextTopicId >= 22
                                         ? "opacity-50 cursor-not-allowed"
                                         : ""
                                 }`}
-                                disabled={!nextTopicId || nextTopicId > 22}
+                                disabled={nextTopicId >= 22}
                             >
                                 Next
                                 <FontAwesomeIcon
