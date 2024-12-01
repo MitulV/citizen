@@ -16,11 +16,12 @@ export default function GovQuestions({ auth }) {
             </Head>
 
             {/* Main content */}
-            <section className="container mx-auto px-4 sm:px-6 md:px-8   py-6 sm:py-8 md:py-10 lg:py-12 xl:py-14  rounded-3xl">
-                {/* Main Heading */}
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl font-bold  text-gray-600 py-4 sm:py-2 md:py-4 lg:py-4 xl:py-4 ">
+
+            <section className="container mx-auto px-4 py-8 sm:px-6 lg:px-8 rounded-3xl">
+                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-600">
                     Government Questions
                 </h1>
+                <p className="text-lg text-gray-500 mt-4 mb-10"></p>
 
                 {/* Subheading and paragraph */}
                 <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-14">

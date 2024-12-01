@@ -16,10 +16,11 @@ export default function Glossary({ auth }) {
                 </Head>
 
                 {/* Main content */}
-                <section className="container mx-auto max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl px-10 py-6 sm:py-8 md:py-10 lg:py-12  rounded-3xl">
-                    <h1 className="text-4xl font-bold mb-8 text-gray-600 text-center">
+                <section className="container mx-auto px-4 py-8 sm:px-6 lg:px-8 rounded-3xl">
+                    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-600">
                         Glossary
                     </h1>
+                    <p className="text-lg text-gray-500 mt-4 mb-10"></p>
 
                     <div className="mb-6">
                         <h2 className="text-2xl font-semibold mb-2 text-gray-600">

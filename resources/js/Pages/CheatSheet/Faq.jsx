@@ -24,7 +24,12 @@ export default function Faq({ auth }) {
                     content="Check out FAQs about the Canadian Citizenship Test for clear answers to common concerns!"
                 />
             </Head>
-            <div className="container mx-auto">
+
+            <section className="container mx-auto px-4 py-8 sm:px-6 lg:px-8 rounded-3xl">
+                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-600">
+                    Frequently Asked Questions
+                </h1>
+                <p className="text-lg text-gray-500 mt-4 mb-10"></p>
                 <div className="p-4 mt-10 mx-auto max-w-screen-lg sm:mx-4 md:mx-10 lg:mx-20 xl:mx-8 ">
                     <Accordion
                         className="p-4"
@@ -235,7 +240,7 @@ export default function Faq({ auth }) {
                         </AccordionBody>
                     </Accordion>
                 </div>
-            </div>
+            </section>
         </AuthenticatedLayout>
     );
 }

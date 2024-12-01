@@ -29,11 +29,9 @@ export default function Index({ auth, chapters }) {
                                 Flashcards
                             </h1>
                             <p className="text-sm md:text-base lg:text-base text-gray-600 px-2 md:px-10 lg:px-4 xl:px-36">
-                                Take a step beyond the comfort of
-                                multiple-choice questions and venture into new
-                                learning territories with Flashcards. Flashcards
-                                promote active recall, a powerful learning
-                                technique that strengthens your memory.
+                                Learn with flashcards to improve memory and
+                                understanding of key concepts from all chapters
+                                of the Discover Canada book.
                             </p>
                         </div>
 

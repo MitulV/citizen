@@ -30,11 +30,10 @@ export default function Index({ auth, chapters }) {
                                 Chapter Tests
                             </h1>
                             <p className="text-sm md:text-base lg:text-base text-gray-600 px-2 md:px-10 lg:px-4 xl:px-36 ">
-                                Pass your Canadian Citizenship Test the first
-                                time by completing and mastering all the chapter
-                                practice questions and answers below. Preparing
-                                with test questions helps you retain the details
-                                you need to pass the test.
+                                These practice tests helps you master all
+                                chapters of the Discover Canada book, ensuring
+                                you learn every detail needed to pass the
+                                Citizenship test with ease.
                             </p>
                         </div>
 
