@@ -1028,26 +1028,6 @@ export default function PrivacyPolicy({ auth, chapters }) {
                                                 to supporting your journey to
                                                 success.
                                             </p>
-                                            <p className="text-lg mb-4 text-zinc-600">
-                                                For any inquiries or support,
-                                                feel free to reach out to us at{" "}
-                                                <a
-                                                    href="mailto:contact@citizentestprep.ca"
-                                                    className="text-red-600"
-                                                >
-                                                    contact@citizentestprep.ca
-                                                </a>{" "}
-                                                or call us at{" "}
-                                                <a
-                                                    href="tel:+16725584037"
-                                                    className="text-red-600"
-                                                >
-                                                    672-558-4037
-                                                </a>
-                                                . We are here to help you every
-                                                step of the way on your path to
-                                                Canadian citizenship.
-                                            </p>
                                         </div>
                                     </div>
                                 </div>

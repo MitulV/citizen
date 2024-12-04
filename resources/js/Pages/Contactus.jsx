@@ -68,15 +68,6 @@ export default function Contactus({ success }) {
                                         contact@citizentestprep.ca
                                     </p>
                                 </div>
-                                <div className="flex items-center mt-4 md:mt-0 space-x-4">
-                                    <FontAwesomeIcon
-                                        icon={faPhone}
-                                        className="w-6 h-6 text-zinc-500"
-                                    />
-                                    <p className="text-zinc-500">
-                                        672-558-4037
-                                    </p>
-                                </div>
                             </div>
                         </div>
                         {/* Right Column */}

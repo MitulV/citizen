@@ -1572,17 +1572,6 @@ export default function Premium({ auth }) {
                                     </Link>
                                 </div>
                                 {/* Phone Option */}
-                                <a href="tel:672-558-4037" className="block">
-                                    <div className="flex text-center gap-4 bg-white py-2  px-4 rounded-lg border border-gray-300">
-                                        <FontAwesomeIcon
-                                            icon={faPhone}
-                                            className="text-primary"
-                                        />
-                                        <span className="text-indigo-600 text-sm text-center ">
-                                            Call Us
-                                        </span>
-                                    </div>
-                                </a>
                             </div>
                         </div>
                     </div>

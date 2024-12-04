@@ -1,31 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "@inertiajs/react";
-import LoginHeader from "@/Components/LoginHeader";
-import Footer from "@/Components/Footer";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { usePage } from "@inertiajs/react";
-import {
-    faBookOpen,
-    faCube,
-    faFileLines,
-    faImage,
-    faGem,
-    faCheck,
-    faTimes,
-} from "@fortawesome/free-solid-svg-icons";
-// import { Accordion } from "flowbite-react";
+import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
 import {
     Accordion,
     AccordionHeader,
     AccordionBody,
 } from "@material-tailwind/react";
+
 export default function ChapterTestPanel({
     chapters,
     collapsed,
     accorditionIndex,
 }) {
     const [open, setOpen] = useState(Number(accorditionIndex));
+    const [isMobile, setIsMobile] = useState(false);
+
     const CUSTOM_ANIMATION = {
         mount: { scale: 1 },
         unmount: { scale: 0.9 },
@@ -35,19 +26,31 @@ export default function ChapterTestPanel({
         if (typeof accorditionIndex === "number") {
             setOpen(accorditionIndex);
         }
+
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768); // Set mobile state for screens < 768px
+        };
+        handleResize(); // Check initial screen size
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
     }, [accorditionIndex]);
 
     const handleOpen = (index) => {
         setOpen(open === index ? null : index); // Toggle logic
     };
+
     return (
         <>
             <Sidebar
                 collapsedWidth="0"
-                width="285px"
+                width={isMobile ? "100%" : "285px"} // Full width for mobile
                 height="auto"
                 collapsed={collapsed}
                 backgroundColor="rgb(255,255,255)"
+                className="transition-all duration-300"
             >
                 <Menu
                     menuItemStyles={{
@@ -76,7 +79,6 @@ export default function ChapterTestPanel({
                             >
                                 <div className="flex items-center">
                                     <div className="mr-3">
-                                        {/* Add the icon here */}
                                         <svg
                                             className={`transition-transform duration-500 ${
                                                 open !== index
@@ -148,7 +150,7 @@ export default function ChapterTestPanel({
                                     ))}
                                 </div>
                             </AccordionBody>
-                            <hr></hr>
+                            <hr className="block sm:hidden"></hr>
                         </Accordion>
                     ))}
                 </Menu>

@@ -33,7 +33,8 @@ export default function Result({
     const message =
         result.percentage < 75
             ? "Not enough to pass :-("
-            : "Great. You Passed!";
+            : "Great job! Take it to the next level by completing all study guides, practice tests, and flashcards to ace your citizenship test!
+";
 
     return (
         <>
