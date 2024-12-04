@@ -30,11 +30,16 @@ export default function Result({
     };
 
     const pathColor = result.totalCorrect < 12 ? "#FF0000" : "#3E9330";
+
     const message =
         result.percentage < 75
             ? "Not enough to pass :-("
-            : "Great job! Take it to the next level by completing all study guides, practice tests, and flashcards to ace your citizenship test!
-";
+            : "Great. You Passed!";
+
+    const descriptionMessage =
+        result.percentage < 75
+            ? "No worries! A little more practice and you'll nail it. Complete all study guides, practice tests, and flashcards to guarantee a first-time pass!"
+            : "Great job! Take it to the next level by completing all study guides, practice tests, and flashcards to ace your citizenship test!";
 
     return (
         <>
@@ -66,8 +71,7 @@ export default function Result({
                                     {message}
                                 </h1>
                                 <p className="text-zinc-600 p-2 sm:ml-10">
-                                    There are more practice questions left to
-                                    go, unlock 600+ practice questions today.
+                                    {descriptionMessage}
                                 </p>
                                 <div className="flex items-center space-x-4 p-2 sm:ml-10">
                                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
