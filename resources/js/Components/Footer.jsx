@@ -6,6 +6,7 @@ import {
     faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "@inertiajs/react";
 
 export default function Footer() {
     return (
@@ -15,8 +16,13 @@ export default function Footer() {
                     <div className="text-center md:text-left">
                         <div className="flex  md:justify-start">
                             <span className="text-xl font-black leading-6">
-                                <span className="text-blue-500">Citizen</span>{" "}
-                                TestPrep
+                                <Link href={route("homePage")}>
+                                    <img
+                                        src="/images/logo.svg"
+                                        className="w-36 h-[1.60rem]"
+                                        alt="Logo"
+                                    />
+                                </Link>
                             </span>
                         </div>
 

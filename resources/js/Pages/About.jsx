@@ -163,11 +163,7 @@ export default function About({}) {
                             preparation materials, we have helped thousands of
                             individuals pass the Canadian Citizenship Test. We
                             believe in the potential of every learner and are
-                            committed to supporting your journey to success. For
-                            any inquiries or support, feel free to reach out to
-                            us at contact@citizentestprep.ca or call us at
-                            672-558-4037. We are here to help you every step of
-                            the way on your path to Canadian citizenship.
+                            committed to supporting your journey to success.
                         </p>
                     </div>
 

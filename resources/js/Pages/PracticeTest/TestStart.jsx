@@ -158,7 +158,7 @@ export default function TestStart({
     }, [result, index]);
 
     const handleReset = () => {
-        router.post(
+        router.get(
             `/practice-tests/${chapterId}${test.id ? `/${test.id}` : ""}`,
             {},
             { preserveState: false, replace: true }

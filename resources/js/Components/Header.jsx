@@ -79,6 +79,14 @@ export default function Header({ user }) {
                                         <ul className="space-y-4 p-4">
                                             <li>
                                                 <Link
+                                                    href={route("testInfoPage")}
+                                                    className="hover:text-primary"
+                                                >
+                                                    Diagnostic Test
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
                                                     href={route("dashboard")}
                                                     className="hover:text-primary"
                                                 >
@@ -88,27 +96,37 @@ export default function Header({ user }) {
                                             <li>
                                                 <Link
                                                     href={route(
-                                                        "testInfoPage",
-                                                        {
-                                                            chapter_id: 12,
-                                                        }
+                                                        "practice.test"
                                                     )}
                                                     className="hover:text-primary"
                                                 >
-                                                    Practice Tests
+                                                    Chapter Tests
                                                 </Link>
                                             </li>
                                             <li>
                                                 <Link
                                                     href={route(
-                                                        "testInfoPage",
-                                                        {
-                                                            chapter_id: 12,
-                                                        }
+                                                        "simulation.info"
                                                     )}
                                                     className="hover:text-primary"
                                                 >
-                                                    Diagnostic Test
+                                                    Simulation Test
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    href={route("flashcard")}
+                                                    className="hover:text-primary"
+                                                >
+                                                    Flashcards
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    href={route("cheatSheets")}
+                                                    className="hover:text-primary"
+                                                >
+                                                    Cheat Sheets
                                                 </Link>
                                             </li>
                                         </ul>
@@ -179,6 +197,14 @@ export default function Header({ user }) {
                             <ul className="space-y-4 p-4">
                                 <li>
                                     <Link
+                                        href={route("testInfoPage")}
+                                        className="hover:text-primary"
+                                    >
+                                        Diagnostic Test
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
                                         href={route("dashboard")}
                                         className="hover:text-primary"
                                     >
@@ -187,22 +213,34 @@ export default function Header({ user }) {
                                 </li>
                                 <li>
                                     <Link
-                                        href={route("testInfoPage", {
-                                            chapter_id: 12,
-                                        })}
+                                        href={route("practice.test")}
                                         className="hover:text-primary"
                                     >
-                                        Practice Tests
+                                        Chapter Tests
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        href={route("testInfoPage", {
-                                            chapter_id: 12,
-                                        })}
+                                        href={route("simulation.info")}
                                         className="hover:text-primary"
                                     >
-                                        Diagnostic Test
+                                        Simulation Test
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href={route("flashcard")}
+                                        className="hover:text-primary"
+                                    >
+                                        Flashcards
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href={route("cheatSheets")}
+                                        className="hover:text-primary"
+                                    >
+                                        Cheat Sheets
                                     </Link>
                                 </li>
                             </ul>

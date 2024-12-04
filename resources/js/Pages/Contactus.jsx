@@ -18,7 +18,7 @@ export default function Contactus({ success }) {
     // Handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
-        post("/contact", {
+        post("/contact-us", {
             onSuccess: () => {
                 // Show success message using toast
                 toast.success(

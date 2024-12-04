@@ -39,7 +39,7 @@ export default function Info({
                                             className="text-gray-500 text-sm mr-3"
                                         />
                                         <p className="text-gray-600 text-sm">
-                                            Chapter Weakness Analysis
+                                            Perfect for first-timers
                                         </p>
                                     </div>
                                     <div className="flex items-start">
@@ -48,7 +48,7 @@ export default function Info({
                                             className="text-gray-500 text-sm mr-3"
                                         />
                                         <p className="text-gray-600 text-sm">
-                                            Topic Weakness Analysis
+                                            Based on the official booklet
                                         </p>
                                     </div>
                                     <div className="flex items-start">
@@ -57,7 +57,7 @@ export default function Info({
                                             className="text-gray-500 text-sm mr-3"
                                         />
                                         <p className="text-gray-600 text-sm">
-                                            Instant Answer feedback
+                                            Triple-checked for accuracy
                                         </p>
                                     </div>
                                     <div className="md:hidden flex items-start">
@@ -77,16 +77,7 @@ export default function Info({
                                             className="text-gray-500 text-sm mr-3"
                                         />
                                         <p className="text-gray-600 text-sm">
-                                            {currentChapter.questions} questions
-                                        </p>
-                                    </div>
-                                    <div className="flex items-start">
-                                        <FontAwesomeIcon
-                                            icon={faCheck}
-                                            className="text-gray-500 text-sm mr-3"
-                                        />
-                                        <p className="text-gray-600 text-sm">
-                                            The test is 45 minutes long
+                                            15 questions
                                         </p>
                                     </div>
                                     <div className="flex items-start">
@@ -96,6 +87,15 @@ export default function Info({
                                         />
                                         <p className="text-gray-600 text-sm">
                                             75% passing score
+                                        </p>
+                                    </div>
+                                    <div className="flex items-start">
+                                        <FontAwesomeIcon
+                                            icon={faCheck}
+                                            className="text-gray-500 text-sm mr-3"
+                                        />
+                                        <p className="text-gray-600 text-sm">
+                                            30 minutes long
                                         </p>
                                     </div>
                                 </div>
