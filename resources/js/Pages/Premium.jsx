@@ -1007,7 +1007,7 @@ export default function Premium({ auth }) {
                             </div>
                             <div className="block sm:block md:hidden lg:hidden xl:hidden mb-10">
                                 <img
-                                    src="/images/practisetestquestion.webp"
+                                    src="/images/practise test question.webp"
                                     alt="Image"
                                     className="w-[627px] h-[500px] rounded-2xl"
                                 />
