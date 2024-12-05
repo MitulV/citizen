@@ -1007,7 +1007,7 @@ export default function Premium({ auth }) {
                             </div>
                             <div className="block sm:block md:hidden lg:hidden xl:hidden mb-10">
                                 <img
-                                    src="/images/practisquestion.png"
+                                    src="/images/practisetestquestion.webp"
                                     alt="Image"
                                     className="w-[627px] h-[500px] rounded-2xl"
                                 />
@@ -1099,7 +1099,7 @@ export default function Premium({ auth }) {
                     {/* Image */}
                     <div className="flex justify-center">
                         <img
-                            src="/images/pass guarantee.png"
+                            src="/images/pass guarantee small.webp"
                             alt="Logo"
                             className="w-[299px] h-[121px]"
                         />
