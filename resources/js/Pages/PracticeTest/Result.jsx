@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Head, router } from "@inertiajs/react";
+import { Head, Link, router } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCheck,
@@ -20,6 +20,7 @@ export default function Result({
     chapterId,
     chapters,
     questionResults,
+    nextTest,
 }) {
     const handleRestart = () => {
         router.post(
@@ -91,9 +92,14 @@ export default function Result({
                                         {totalTimeTaken.seconds} seconds
                                     </span>
                                 </div>
-                                <button className="bg-primary text-white px-6 py-2 rounded-full mt-4 w-full sm:w-auto sm:ml-10">
-                                    Next up, Practice Test 2
-                                </button>
+
+                                <Link
+                                    href={route("premiumPage")}
+                                    as="button"
+                                    className="bg-primary text-white px-6 py-2 rounded-full mt-4 w-full sm:w-auto sm:ml-10"
+                                >
+                                    Next up, {nextTest.name}
+                                </Link>
                             </div>
                         </div>
 

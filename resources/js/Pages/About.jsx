@@ -27,7 +27,7 @@ export default function About({}) {
                 <div className="container mx-auto p-4 md:p-10 px-4 sm:px-6 lg:px-8">
                     {/* Section 1 */}
                     <div className="text-center mb-10">
-                        <h1 className="text-2xl md:text-3xl font-bold mb-4 md:mb-10">
+                        <h1 className="text-3xl sm:text-4xl text-center font-bold mb-6 sm:mb-8 py-8">
                             About CitizenTestPrep
                         </h1>
                         <p className="text-sm md:text-base text-left text-zinc-600 md:px-20 lg:px-40">
@@ -179,9 +179,13 @@ export default function About({}) {
 
                             <div className="w-full md:w-1/2 md:p-8 flex flex-col justify-center items-center">
                                 <div className="w-full flex justify-center mt-4 sm:mt-6 lg:mt-8 ">
-                                    <button className="bg-primary shadow-lg text-white w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-full transform hover:-translate-y-1 transition duration-500 ease-out">
+                                    <Link
+                                        as="button"
+                                        href={route("premiumPage")}
+                                        className="bg-primary shadow-lg text-white w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-full transform hover:-translate-y-1 transition duration-500 ease-out"
+                                    >
                                         Unlock all questions
-                                    </button>
+                                    </Link>
                                 </div>
                                 <p className="text-xs sm:text-sm leading-5 sm:leading-6 tracking-tight text-center text-gray-500 mt-2 sm:mt-4">
                                     or pass the first time guaranteed

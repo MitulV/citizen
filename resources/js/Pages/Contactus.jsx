@@ -39,9 +39,9 @@ export default function Contactus({ success }) {
                     content="Get in touch with CitizenTestPrep for any questions or support regarding your citizenship test preparation. We're here to help you succeed!"
                 />
             </Head>
-            <div className="bg-slate-50 min-h-screen">
-                <div className="container mx-auto p-10 px-4 md:px-16 lg:px-8 xl:px-44">
-                    <h1 className="text-4xl font-bold mb-10 text-center">
+            <div className="bg-slate-50">
+                <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-60 xl:px-60 py-14">
+                    <h1 className="text-3xl sm:text-4xl text-center font-bold mb-6 sm:mb-8 py-8">
                         Contact Us
                     </h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -71,12 +71,12 @@ export default function Contactus({ success }) {
                             </div>
                         </div>
                         {/* Right Column */}
-                        <div className="bg-slate-50 text-lg p-6 rounded-lg">
+                        <div className="bg-slate-50 text-lg m-2 rounded-lg">
                             <form onSubmit={handleSubmit} className="space-y-4">
                                 <div>
                                     <label
                                         htmlFor="name"
-                                        className="block text-zinc-500 my-4"
+                                        className="block text-zinc-500 mb-2"
                                     >
                                         Name
                                     </label>
@@ -88,7 +88,7 @@ export default function Contactus({ success }) {
                                             setData("name", e.target.value)
                                         }
                                         placeholder="Your name"
-                                        className="w-full px-4 py-4 border border-gray-300 rounded-lg"
+                                        className="w-full px-4 py-4 mb-2 border border-gray-300 rounded-lg"
                                     />
                                     {errors.name && (
                                         <div className="text-red-500">
@@ -111,7 +111,7 @@ export default function Contactus({ success }) {
                                             setData("email", e.target.value)
                                         }
                                         placeholder="Your working email"
-                                        className="w-full px-4 py-4 border border-gray-300 rounded-lg"
+                                        className="w-full px-4 py-4  mb-2 border border-gray-300 rounded-lg"
                                     />
                                     {errors.email && (
                                         <div className="text-red-500">

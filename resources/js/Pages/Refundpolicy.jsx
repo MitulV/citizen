@@ -15,12 +15,12 @@ export default function Refundpolicy({ auth, chapters }) {
                         content="Discover CitizenTestPrep's Refund Policy"
                     />
                 </Head>
-                <div className="bg-slate-50 min-h-screen">
-                    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="max-w-3xl mx-auto py-12">
+                <div className="bg-slate-50 ">
+                    <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-60 xl:px-60 py-14">
+                        <div className="">
                             {/* Section 1 */}
                             <div className="text-center mb-8">
-                                <h1 className="text-4xl font-bold mb-4">
+                                <h1 className="text-3xl sm:text-4xl text-center font-bold mb-6 sm:mb-8 py-8">
                                     Refund Policy
                                 </h1>
                                 <img

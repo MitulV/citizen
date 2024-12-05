@@ -129,7 +129,7 @@ export default function TestResult({ result, totalTimeTaken }) {
                                     </div>
 
                                     <Link
-                                        href={route("premiumPage", {})}
+                                        href={route("premiumPage")}
                                         as="button"
                                         className="bg-primary text-white px-6 py-2 rounded-full mt-6 w-full sm:w-auto"
                                     >
