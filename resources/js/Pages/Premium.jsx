@@ -68,7 +68,7 @@ export default function Premium({ auth }) {
                             </ScrollLink>
 
                             <img
-                                src="/images/pass guarantee.png"
+                                src="/images/pass guarantee small.webp"
                                 alt="Pass Guarantee"
                                 className="h-14 w-auto mt-8 "
                             />
@@ -147,7 +147,7 @@ export default function Premium({ auth }) {
                     {/* Right Section with Image */}
                     <div className="lg:col-span-5 flex justify-center items-center p-2">
                         <img
-                            src="/images/ea59b0c12c13b0daf792e11ef62864a7.png"
+                            src="/images/citizentestprep.webp"
                             alt="Test Preparation"
                             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-auto rounded-lg "
                         />
@@ -331,7 +331,7 @@ export default function Premium({ auth }) {
                         tools!
                     </p>
                     <img
-                        src="/images/mobile chapt.png"
+                        src="/images/book vs premium (1).webp"
                         alt="Your Photo"
                         className="w-full"
                     />
@@ -347,7 +347,7 @@ export default function Premium({ auth }) {
                 <section className="container mx-auto relative flex flex-col items-center px-4 md:px-10 bg-white sm:block md:hidden lg:hidden xl:hidden">
                     {/* Image */}
                     <img
-                        src="/images/pass guarantee.png"
+                        src="/images/pass guarantee large.webp"
                         alt="Pass Guarantee Logo"
                         className="w-60 h-28 md:w-96 md:h-40 lg:w-96 lg:h-40 xl:max-w-6xl xl:h-40"
                     />
@@ -496,7 +496,7 @@ export default function Premium({ auth }) {
                 >
                     {/* Image */}
                     <img
-                        src="/images/pass guarantee.png"
+                        src="/images/pass guarantee large.webp"
                         alt="Pass Guarantee Logo"
                         className="h-60"
                     />
@@ -793,7 +793,7 @@ export default function Premium({ auth }) {
                         {/* Left Column Image */}
                         <div className="hidden lg:flex justify-center items-center">
                             <img
-                                src="/images/sample-image.png"
+                                src="/images/citizentestprep square.webp"
                                 alt="Sample"
                                 className="w-full lg:w-[809px] lg:h-[488px] rounded-lg"
                             />
@@ -946,7 +946,7 @@ export default function Premium({ auth }) {
                         {/* Right Column */}
                         <div className="flex justify-center items-center">
                             <img
-                                src="/images/image.png"
+                                src="/images/study guide mobile.webp"
                                 alt="Image"
                                 className="w-[627px] h-[500px] rounded-xl"
                             />
@@ -968,7 +968,7 @@ export default function Premium({ auth }) {
 
                         <div className="hidden sm:flex justify-center">
                             <img
-                                src="/images/practisquestion.png"
+                                src="/images/practise test question.webp"
                                 alt="Image"
                                 className="w-[627px] h-[500px] rounded-2xl"
                             />
@@ -1038,7 +1038,7 @@ export default function Premium({ auth }) {
                                 </p>
                             </div>
                             <img
-                                src="/images/citizen.png"
+                                src="/images/important map.webp"
                                 alt="Image 1"
                                 className="mt-4 w-[384px] h-[536px]  rounded-lg shadow-2xl"
                             />
@@ -1057,7 +1057,7 @@ export default function Premium({ auth }) {
                                 </p>
                             </div>
                             <img
-                                src="/images/citizen2.png"
+                                src="/images/important dates.webp"
                                 alt="Image 2"
                                 className="mt-4 w-[384px] h-[536px]  rounded-lg shadow-2xl"
                             />
@@ -1076,7 +1076,7 @@ export default function Premium({ auth }) {
                                 </p>
                             </div>
                             <img
-                                src="/images/citizen3.png"
+                                src="/images/important people.webp"
                                 alt="Image 3"
                                 className="mt-4 w-[384px] h-[536px]  rounded-lg shadow-2xl"
                             />

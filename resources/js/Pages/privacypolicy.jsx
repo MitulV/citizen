@@ -16,7 +16,7 @@ export default function PrivacyPolicy({ auth, chapters }) {
                     />
                 </Head>
                 <div className="bg-slate-50 min-h-screen">
-                    <div className="container mx-auto px-4 md:px-16 lg:px-8 xl:px-44">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
                         <div className="max-w-3xl mx-auto py-12">
                             {/* Section 1 */}
                             <div className="text-center mb-8">

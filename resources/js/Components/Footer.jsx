@@ -198,6 +198,9 @@ export default function Footer() {
                     {/* Sentence first on small screens, left side on larger screens */}
                     <p className="text-sm mx-8 tracking-wide text-center sm:text-left order-2 sm:order-none mt-2 md:mt-0">
                         © 2024 CitizenTestPrep All rights reserved.
+                        <br></br>CitizenTestPrep.ca is a privately owned website
+                        and is not affiliated with or operated by any
+                        provincial, state, or national government agency.
                     </p>
 
                     {/* Icons second on small screens, right side on larger screens */}

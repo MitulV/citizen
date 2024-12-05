@@ -34,18 +34,17 @@ export default function Faqs({}) {
                     icon={<Icon id={1} open={open} />}
                 >
                     <AccordionHeader onClick={() => handleOpen(1)}>
-                        Who’s qualified to take the Canadian Citizenship Test?
+                        Who can take the Canadian Citizenship Test?
                     </AccordionHeader>
                     <AccordionBody>
-                        Anybody between the ages of 18-54 years at the time of
-                        applying is qualified to take the citizenship test. The
-                        test is used to determine if one has enough knowledge of
-                        Canada and the privileges that come with being a
-                        citizen. If you are above 55 years at the time of
-                        applying, you don’t have to take this test. However, if
-                        you happen to turn 55 years as the application is being
-                        processed, you can still have the test if you were below
-                        55 years when signing your application.
+                        Anyone aged 18 to 54 when they apply for citizenship is
+                        required to take the citizenship test. This test checks
+                        if you know enough about Canada and understand the
+                        rights and responsibilities of being a citizen. If you
+                        are 55 or older when you apply, you don’t need to take
+                        the test. However, if you turn 55 while your application
+                        is being processed, you may still need to take the test
+                        if you were under 55 when you applied.
                     </AccordionBody>
                 </Accordion>
                 <Accordion
@@ -54,18 +53,17 @@ export default function Faqs({}) {
                     icon={<Icon id={2} open={open} />}
                 >
                     <AccordionHeader onClick={() => handleOpen(2)}>
-                        Is the Canadian Citizenship Test difficult?
+                        Is the Canadian Citizenship Test hard?
                     </AccordionHeader>
                     <AccordionBody>
-                        The test covers various subjects and topics, which are
-                        found in the study guide titled Discover Canada: the
-                        (rights and responsibilities) of citizenship. You should
-                        make sure you study the guide as you prepare for the
-                        test. On the actual test, you can expect questions such
-                        as: The ideas and facts that Discover Canada presents;
-                        Your knowledge about Canada’s history, institutions,
-                        values, and history; And the responsibilities and rights
-                        that being a citizen present.
+                        The test is based on the Discover Canada guide, which
+                        explains Canadian history, values, institutions, and the
+                        rights and responsibilities of citizenship. If you study
+                        the guide carefully, you should be well-prepared. The
+                        test includes questions about: Facts and ideas from
+                        Discover Canada Canada’s history, institutions, and
+                        values The responsibilities and rights of Canadian
+                        citizens
                     </AccordionBody>
                 </Accordion>
                 <Accordion
@@ -74,22 +72,15 @@ export default function Faqs({}) {
                     icon={<Icon id={3} open={open} />}
                 >
                     <AccordionHeader onClick={() => handleOpen(3)}>
-                        After applying for Citizenship, how long does it take
-                        before you do the Citizenship Test?
+                        How long after applying will I take the test?
                     </AccordionHeader>
                     <AccordionBody>
-                        The time it takes between submitting the application and
-                        doing the Canadian citizenship test varies depending on
-                        individual applications. For instance, it varies
-                        depending on the processing times and different cases.
-                        We will send you an email to let you know about the
-                        location and time of the test. It’s the official
-                        confirmation that you will take the citizenship test.
-                        You should ensure you check the CLIENT APPLICATION
-                        STATUS service to know when your notice is mailed. If
-                        you move your location, you should make sure you inform
-                        us. Update your current address online. If you require
-                        fast processing, you should check if you qualify.
+                        The time between applying and taking the test depends on
+                        how quickly your application is processed. You will
+                        receive an email with the test date and location. Check
+                        the Client Application Status service regularly to track
+                        updates. If you change your address, update it online to
+                        avoid missing any notices.
                     </AccordionBody>
                 </Accordion>
                 <Accordion
@@ -98,12 +89,15 @@ export default function Faqs({}) {
                     icon={<Icon id={4} open={open} />}
                 >
                     <AccordionHeader onClick={() => handleOpen(4)}>
-                        Where can I find test questions to help me prepare for
-                        the Citizenship Test?
+                        What happens if I fail the citizenship test?
                     </AccordionHeader>
                     <AccordionBody>
-                        CitizenTest has over 600+ test questions to get you
-                        ready for exam day.
+                        If you fail the first test, you can retake it in 4 to 8
+                        weeks (this timing may vary). If you fail a second time,
+                        you will need to attend a hearing with a citizenship
+                        official. If you fail the hearing, your application will
+                        be denied, and you’ll need to start over by submitting a
+                        new application and paying the fees.
                     </AccordionBody>
                 </Accordion>
                 <Accordion
@@ -112,19 +106,17 @@ export default function Faqs({}) {
                     icon={<Icon id={5} open={open} />}
                 >
                     <AccordionHeader onClick={() => handleOpen(5)}>
-                        What happens if I fail the Citizenship Test?
+                        What if I miss my appointment with IRCC?
                     </AccordionHeader>
                     <AccordionBody>
-                        If you failed the official Canadian Citizenship Test,
-                        IRCC will arrange for you to take another test if you
-                        still meet the criteria for citizenship. Normally, the
-                        second test follows the first one by 4 to 8 weeks,
-                        though this can vary. If you fail a 2nd time, IRCC will
-                        send you a notification requesting that you appear at a
-                        hearing with a citizenship authority. IRCC will reject
-                        your application if, after three tries, you are still
-                        unable to pass the test. To try once more, you must
-                        restart the entire Citizenship application process.
+                        If you can’t attend your appointment, inform IRCC as
+                        soon as possible by writing to them. You can send your
+                        request to reschedule by mail, using the Web form, or
+                        online. Include your reason for missing the appointment.
+                        If you miss the appointment and don’t contact IRCC
+                        within the time specified in the notice, your
+                        application will be closed, and you’ll need to apply
+                        again and pay the fees.
                     </AccordionBody>
                 </Accordion>
                 <Accordion
@@ -133,24 +125,19 @@ export default function Faqs({}) {
                     icon={<Icon id={6} open={open} />}
                 >
                     <AccordionHeader onClick={() => handleOpen(6)}>
-                        What happens if I failed to attend my appointment with
-                        IRCC? Can it be rescheduled?
+                        How do I know if I passed the test?
                     </AccordionHeader>
                     <AccordionBody>
-                        Yes. If one is not available on the time and date of the
-                        appointment, you can write a letter with reasons why you
-                        can’t attend. You should send it to the IRCC office that
-                        you were to make the appointment. You can send the
-                        letter by mail, using the Web form, or online. Your
-                        meeting can be rescheduled to a different date. If you
-                        aren’t able to attend the appointment, you should
-                        contact us within a specific period. The notice that is
-                        sent when you are being invited will inform you of the
-                        period that you should contact us. You should use the
-                        Web form to explain why you missed the appointment.
-                        Remember that failure to do this will lead to the
-                        closing of your application. You will need to apply
-                        again and pay the necessary fees.
+                        You will get your results immediately after taking the
+                        test. If you pass and meet all the other requirements,
+                        you may receive your citizenship ceremony date at the
+                        same time. If not, you will get a letter with the
+                        ceremony details later. If you don’t pass the test the
+                        first time, you can retake it. If you pass the second
+                        time, you will get a letter with your ceremony date. If
+                        a hearing is required, you will get a letter afterward
+                        letting you know if the judge or officer granted you
+                        citizenship and when the ceremony will take place.
                     </AccordionBody>
                 </Accordion>
                 <Accordion
@@ -159,28 +146,11 @@ export default function Faqs({}) {
                     icon={<Icon id={7} open={open} />}
                 >
                     <AccordionHeader onClick={() => handleOpen(7)}>
-                        How can I know if I passed the Canadian Citizenship
-                        Test?
+                        What is the format of the citizenship test?
                     </AccordionHeader>
                     <AccordionBody>
-                        You will receive the results of the test just after you
-                        take it. If you pass the test and meet the requirements
-                        of being a citizen, you may receive the citizenship
-                        ceremony date at the same period that you receive the
-                        results. If we fail to provide you with the date, you
-                        will receive a letter that informs you of the time and
-                        date of the ceremony. You can also obtain the letter 2
-                        to 4 weeks before the actual ceremony. The event will
-                        usually take place within 6 months after you pass the
-                        citizenship test. If you don’t pass the test in the
-                        first instance, you can choose to write it again. If you
-                        pass it on the second try, you will receive a letter by
-                        email or date, just as you would have received it during
-                        the first exam. If you’re required to attend a hearing
-                        with the citizenship judge or officer, you will be
-                        notified by a letter after the interview. It will inform
-                        you if the judge or officer has provided you with
-                        citizenship and the date of the ceremony.
+                        The test has 20 multiple-choice questions, and you have
+                        30 minutes to complete it.
                     </AccordionBody>
                 </Accordion>
                 <Accordion
@@ -189,12 +159,11 @@ export default function Faqs({}) {
                     icon={<Icon id={8} open={open} />}
                 >
                     <AccordionHeader onClick={() => handleOpen(8)}>
-                        What is the format of the citizenship test?
+                        What score do I need to pass?
                     </AccordionHeader>
                     <AccordionBody>
-                        The citizenship test is a multiple-choice exam
-                        consisting of 20 questions. Test takers are given 30
-                        minutes to complete the test.
+                        You must answer at least 15 out of 20 questions
+                        correctly (75%) to pass.
                     </AccordionBody>
                 </Accordion>
                 <Accordion
@@ -203,28 +172,13 @@ export default function Faqs({}) {
                     icon={<Icon id={9} open={open} />}
                 >
                     <AccordionHeader onClick={() => handleOpen(9)}>
-                        What is the pass mark for the citizenship test?
+                        Can I take the test in my native language?
                     </AccordionHeader>
                     <AccordionBody>
-                        To pass the citizenship test, test takers must answer at
-                        least 15 out of 20 questions correctly, or a 75% pass
-                        mark.
-                    </AccordionBody>
-                </Accordion>
-                <Accordion
-                    className="p-5"
-                    open={open === 10}
-                    icon={<Icon id={10} open={open} />}
-                >
-                    <AccordionHeader onClick={() => handleOpen(10)}>
-                        Can I take the citizenship test in my native language?
-                    </AccordionHeader>
-                    <AccordionBody>
-                        Test takers have the option of taking the citizenship
-                        test in one of the 20 languages that are supported by
-                        the test. However, test takers must also demonstrate an
-                        ability to communicate in English or French at a basic
-                        level in order to become a Canadian citizen.
+                        You can take the test in one of the 20 supported
+                        languages. However, to become a Canadian citizen, you
+                        also need to show basic communication skills in English
+                        or French.
                     </AccordionBody>
                 </Accordion>
             </div>

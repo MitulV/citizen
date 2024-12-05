@@ -18,8 +18,8 @@ export default function SimulationTestInfo({ auth }) {
                 <div className="bg-slate-100 min-h-screen">
                     {" "}
                     {/* Apply bg-slate-100 and ensure it covers the entire page height */}
-                    <section className="py-2 md:pb-4 md:pt-8 px-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-8 bg-slate-100">
-                        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 rounded-2xl overflow-hidden bg-white shadow-sm p-8 ">
+                    <section className="conianer mx-auto py-4 md:py-8 px-4 md:px-40 bg-slate-50 ">
+                        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 rounded-2xl overflow-hidden bg-white shadow-sm p-8">
                             {/* Left Part: h1 Tag, p Tag, 2 Columns with Sentences, and Buttons */}
                             <div className="flex flex-col space-y-6">
                                 <h1 className="text-2xl sm:text-3xl font-bold">
@@ -33,7 +33,7 @@ export default function SimulationTestInfo({ auth }) {
                                                 icon={faCheck}
                                                 className="text-gray-500 text-sm mr-3"
                                             />
-                                            <p className="text-gray-600 text-sm">
+                                            <p className="text-gray-600 text-base">
                                                 Perfect for first-timers
                                             </p>
                                         </div>
@@ -42,7 +42,7 @@ export default function SimulationTestInfo({ auth }) {
                                                 icon={faCheck}
                                                 className="text-gray-500 text-sm mr-3"
                                             />
-                                            <p className="text-gray-600 text-sm">
+                                            <p className="text-gray-600 text-base">
                                                 Based on the official booklet
                                             </p>
                                         </div>
@@ -51,7 +51,7 @@ export default function SimulationTestInfo({ auth }) {
                                                 icon={faCheck}
                                                 className="text-gray-500 text-sm mr-3"
                                             />
-                                            <p className="text-gray-600 text-sm">
+                                            <p className="text-gray-600 text-base">
                                                 Triple-checked for accuracy
                                             </p>
                                         </div>
@@ -62,7 +62,7 @@ export default function SimulationTestInfo({ auth }) {
                                                 icon={faCheck}
                                                 className="text-gray-500 text-sm mr-3"
                                             />
-                                            <p className="text-gray-600 text-sm">
+                                            <p className="text-gray-600 text-base">
                                                 20 questions
                                             </p>
                                         </div>
@@ -71,7 +71,7 @@ export default function SimulationTestInfo({ auth }) {
                                                 icon={faCheck}
                                                 className="text-gray-500 text-sm mr-3"
                                             />
-                                            <p className="text-gray-600 text-sm">
+                                            <p className="text-gray-600 text-base">
                                                 75% passing score
                                             </p>
                                         </div>
@@ -80,13 +80,13 @@ export default function SimulationTestInfo({ auth }) {
                                                 icon={faCheck}
                                                 className="text-gray-500 text-sm mr-3"
                                             />
-                                            <p className="text-gray-600 text-sm">
+                                            <p className="text-gray-600 text-base">
                                                 30 minutes long
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <p className="text-gray-600 text-sm bg-slate-50">
+                                <p className="text-gray-600 text-base bg-slate-50">
                                     Our simulation test is designed to provide a
                                     realistic experience. Please note that it is
                                     not an official test and should only be used
@@ -116,7 +116,7 @@ export default function SimulationTestInfo({ auth }) {
                             </div>
                         </div>
                     </section>
-                    <section className="py-2 md:pb-4 md:pt-8 px-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-8 bg-slate-100">
+                    <section className="conianer mx-auto py-4 md:py-8 px-4 md:px-40 bg-slate-50 ">
                         <div className="container mx-auto flex flex-col md:flex-row rounded-2xl overflow-hidden bg-white shadow-sm p-8">
                             {/* Left Side */}
                             <div className="w-full md:w-1/2 p-8">
@@ -124,7 +124,7 @@ export default function SimulationTestInfo({ auth }) {
                                     About this test
                                 </h2>
 
-                                <p className="text-base sm:text-sm mb-4 text-gray-600">
+                                <p className="text-base  mb-4 text-gray-600">
                                     This test is made to be similar to the
                                     official Canadian Citizenship Test, though
                                     the layout is different from the one on the

@@ -38,7 +38,7 @@ export default function Info({
                                             icon={faCheck}
                                             className="text-gray-500 text-sm mr-3"
                                         />
-                                        <p className="text-gray-600 text-sm">
+                                        <p className="text-gray-600 text-base">
                                             Perfect for first-timers
                                         </p>
                                     </div>
@@ -47,7 +47,7 @@ export default function Info({
                                             icon={faCheck}
                                             className="text-gray-500 text-sm mr-3"
                                         />
-                                        <p className="text-gray-600 text-sm">
+                                        <p className="text-gray-600 text-base">
                                             Based on the official booklet
                                         </p>
                                     </div>
@@ -56,7 +56,7 @@ export default function Info({
                                             icon={faCheck}
                                             className="text-gray-500 text-sm mr-3"
                                         />
-                                        <p className="text-gray-600 text-sm">
+                                        <p className="text-gray-600 text-base">
                                             Triple-checked for accuracy
                                         </p>
                                     </div>
@@ -65,7 +65,7 @@ export default function Info({
                                             icon={faCheck}
                                             className="text-gray-500 text-sm mr-3"
                                         />
-                                        <p className="text-gray-600 text-sm">
+                                        <p className="text-gray-600 text-base">
                                             The test is 45 minutes Long
                                         </p>
                                     </div>
@@ -76,7 +76,7 @@ export default function Info({
                                             icon={faCheck}
                                             className="text-gray-500 text-sm mr-3"
                                         />
-                                        <p className="text-gray-600 text-sm">
+                                        <p className="text-gray-600 text-base">
                                             15 questions
                                         </p>
                                     </div>
@@ -85,7 +85,7 @@ export default function Info({
                                             icon={faCheck}
                                             className="text-gray-500 text-sm mr-3"
                                         />
-                                        <p className="text-gray-600 text-sm">
+                                        <p className="text-gray-600 text-base">
                                             75% passing score
                                         </p>
                                     </div>
@@ -94,13 +94,13 @@ export default function Info({
                                             icon={faCheck}
                                             className="text-gray-500 text-sm mr-3"
                                         />
-                                        <p className="text-gray-600 text-sm">
+                                        <p className="text-gray-600 text-base">
                                             30 minutes long
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <p className="text-gray-600 text-sm bg-slate-50">
+                            <p className="text-gray-600 text-base bg-slate-50">
                                 We maintain high standards to ensure that our
                                 practice tests are both accurate and reliable,
                                 following strict quality assurance guidelines.
@@ -128,7 +128,7 @@ export default function Info({
                         </div>
                     </div>
                 </section>
-                <section className="py-4 md:py-8 px-4 md:px-20 bg-slate-50 ">
+                <section className="conianer mx-auto py-4 md:py-8 px-4 md:px-40 bg-slate-50  ">
                     <div className="container mx-auto flex flex-col md:flex-row rounded-2xl overflow-hidden bg-white shadow-sm p-8">
                         {/* Left Side */}
                         <div className="w-full md:w-1/2 p-8">
@@ -136,7 +136,7 @@ export default function Info({
                                 About this test
                             </h1>
 
-                            <p className="text-base sm:text-sm mb-4 text-gray-600">
+                            <p className="text-base mb-4 text-gray-600">
                                 These practice tests are designed to help you
                                 master all the chapters of the Discover Canada
                                 booklet, covering everything in the official

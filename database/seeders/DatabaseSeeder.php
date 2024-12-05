@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
       $chapters = collect(
         [
           [
-            'image' => '/images/chap 2.png',
+            'image' => '/images/chap 2.webp',
             'name' => 'Chapter 1',
             'title' => 'The Oath & Introduction',
             'description' => "Learn about the oath and its meaning for new citizens' commitment to Canada.",
@@ -317,7 +317,7 @@ class DatabaseSeeder extends Seeder
             ]
           ],
           [
-            'image' => '/images/chap 3.png',
+            'image' => '/images/chap 3.webp',
             'name' => 'Chapter 2',
             'title' => 'Rights & Responsibilities',
             'description' => "Learn about Canada's rights and responsibilities, like voting and obeying laws.",
@@ -901,7 +901,7 @@ class DatabaseSeeder extends Seeder
             ]
           ],
           [
-            'image' => '/images/chap 4.png',
+            'image' => '/images/chap 4.webp',
             'name' => 'Chapter 3',
             'title' => 'Who We Are',
             'description' => 'Learn about Canada’s diversity, multiculturalism, heritage, and welcoming society.',
@@ -2245,7 +2245,7 @@ class DatabaseSeeder extends Seeder
 
           ],
           [
-            'image' => '/images/chap 5.png',
+            'image' => '/images/chap 5.webp',
             'name' => 'Chapter 4',
             'title' => "Canada's History",
             'description' => "Learn about the history of European settlers and key events that shaped Canada.",
@@ -5075,7 +5075,7 @@ class DatabaseSeeder extends Seeder
             ]
           ],
           [
-            'image' => '/images/chap 6.png',
+            'image' => '/images/chap 6.webp',
             'name' => 'Chapter 5',
             'title' => 'Modern Canada',
             'description' => "Learn about Canada’s post-war recovery, global role, and values of equality and diversity.",
@@ -5886,7 +5886,7 @@ class DatabaseSeeder extends Seeder
             ]
           ],
           [
-            'image' => '/images/chap 7.png',
+            'image' => '/images/chap 7.webp',
             'name' => 'Chapter 6',
             'title' => ' How Canadians Govern',
             'description' => "Learn about Canada’s democracy, the Prime Minister, Parliament, and the Constitution.",
@@ -7350,7 +7350,7 @@ class DatabaseSeeder extends Seeder
             ]
           ],
           [
-            'image' => '/images/chap 8.png',
+            'image' => '/images/chap 8.webp',
             'name' => 'Chapter 7',
             'title' => 'Federal Elections',
             'description' => "Learn about Canada’s federal elections, voting, political parties, and civic engagement.",
@@ -9233,7 +9233,7 @@ class DatabaseSeeder extends Seeder
             ]
           ],
           [
-            'image' => '/images/chap 9.png',
+            'image' => '/images/chap 9.webp',
             'name' => 'Chapter 8',
             'title' => 'Justice System ',
             'description' => "Learn about Canada’s legal system, court structure, and rights protection.",
@@ -9746,7 +9746,7 @@ class DatabaseSeeder extends Seeder
             ]
           ],
           [
-            'image' => '/images/chap 10.png',
+            'image' => '/images/chap 10.webp',
             'name' => 'Chapter 9',
             'title' => 'Canadian Symbols',
             'description' => "Explore Canada’s key symbols, like the maple leaf, flag, and landmarks.",
@@ -11008,7 +11008,7 @@ class DatabaseSeeder extends Seeder
 
           ],
           [
-            'image' => '/images/chap 11.png',
+            'image' => '/images/chap 11.webp',
             'name' => 'Chapter 10',
             'title' => "Canada's Economy",
             'description' => "Learn about Canada’s economy, resources, trade, and economic diversity.",
@@ -11462,7 +11462,7 @@ class DatabaseSeeder extends Seeder
 
           ],
           [
-            'image' => '/images/chap 12.png',
+            'image' => '/images/chap 12.webp',
             'name' => 'Chapter 11',
             'title' => "Canada’s Regions",
             'description' => "Learn about Canada’s five regions and their unique landscapes, climates, and cultures.",
@@ -14104,7 +14104,7 @@ class DatabaseSeeder extends Seeder
             ]
           ],
           [
-            'image' => '/images/chap 1.png',
+            'image' => '/images/chap 1.webp',
             'name' => 'Free Practise Test',
             'title' => 'Free Practise Test',
             'description' => "Take our free practice test for the Canadian citizenship exam to see what you know and where you need to improve. This will help you create a study plan that works best for you.
@@ -14332,7 +14332,7 @@ class DatabaseSeeder extends Seeder
             ],
           ],
           [
-            'image' => '/images/chap 13.png',
+            'image' => '/images/chap 13.webp',
             'name' => 'Exam Simulation',
             'title' => 'Exam Simulation',
             'description' => 'Experience a realistic simulation of the Canadian Citizenship test that helps you build confidence and identify areas for improvement. In just 45 minutes, you can complete a full test with 20 questions, giving you a true sense of what the actual exam will be like.

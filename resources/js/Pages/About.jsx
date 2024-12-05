@@ -24,13 +24,13 @@ export default function About({}) {
                     />
                 </Head>
 
-                <div className="container mx-auto p-4 md:p-10">
+                <div className="container mx-auto p-4 md:p-10 px-4 sm:px-6 lg:px-8">
                     {/* Section 1 */}
                     <div className="text-center mb-10">
                         <h1 className="text-2xl md:text-3xl font-bold mb-4 md:mb-10">
                             About CitizenTestPrep
                         </h1>
-                        <p className="text-sm md:text-base text-left text-gray-400 md:px-20 lg:px-40">
+                        <p className="text-sm md:text-base text-left text-zinc-600 md:px-20 lg:px-40">
                             Welcome to CitizenTestPrep, your premier resource
                             for Canadian Citizenship Test preparation. We are
                             dedicated to providing comprehensive, up-to-date,
@@ -48,7 +48,7 @@ export default function About({}) {
                         <h2 className="text-lg md:text-xl font-bold mb-4">
                             Our Mission and Goals
                         </h2>
-                        <p className="text-sm md:text-base text-gray-400 mb-4">
+                        <p className="text-sm md:text-base text-zinc-600 mb-4">
                             At CitizenTestPrep, our mission is to empower
                             aspiring Canadian citizens by providing them with
                             the highest quality test preparation tools. Our goal
@@ -65,7 +65,7 @@ export default function About({}) {
                         <h2 className="text-lg md:text-xl font-bold mb-4">
                             Our Tests
                         </h2>
-                        <p className="text-sm md:text-base text-gray-400 mb-4">
+                        <p className="text-sm md:text-base text-zinc-600 mb-4">
                             Our tests are meticulously crafted to mirror the
                             structure and content of the actual Canadian
                             Citizenship Test. We offer a wide range of practice
@@ -83,7 +83,7 @@ export default function About({}) {
                         <h2 className="text-lg md:text-xl font-bold mb-4">
                             Our Quality Control and Updates
                         </h2>
-                        <p className="text-sm md:text-base text-gray-400 mb-4">
+                        <p className="text-sm md:text-base text-zinc-600 mb-4">
                             Quality and accuracy are at the heart of what we do.
                             Our team of experts continually reviews and updates
                             our materials to reflect the most current
@@ -100,7 +100,7 @@ export default function About({}) {
                         <h2 className="text-lg md:text-xl font-bold mb-4">
                             Our Team
                         </h2>
-                        <p className="text-sm md:text-base text-gray-400 mb-4">
+                        <p className="text-sm md:text-base text-zinc-600 mb-4">
                             The CitizenTestPrep team is composed of experienced
                             individuals who are passionate about helping people
                             achieve their goal of becoming Canadian citizens.
@@ -154,7 +154,7 @@ export default function About({}) {
                         <h2 className="text-lg md:text-xl font-bold mb-4">
                             Our Results
                         </h2>
-                        <p className="text-sm md:text-base text-gray-400 mb-4">
+                        <p className="text-sm md:text-base text-zinc-600 mb-4">
                             We are proud of the success stories from our users
                             who have achieved their dream of Canadian
                             citizenship. Our users consistently report high
@@ -168,7 +168,7 @@ export default function About({}) {
                     </div>
 
                     {/* Call to Action Section */}
-                    <section className="bg-slate-50 py-8 md:py-16 px-4 md:px-8">
+                    <section className="bg-slate-50 py-8 md:py-16 px-4   md:px-20 lg:px-40">
                         <div className="container mx-auto flex flex-col md:flex-row rounded-2xl overflow-hidden bg-white shadow-lg p-4 md:p-8">
                             <div className="w-full md:w-1/2 bg-white text-black p-4 md:p-8">
                                 <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">

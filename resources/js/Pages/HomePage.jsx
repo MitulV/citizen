@@ -98,9 +98,9 @@ export default function HomePage({ auth, chapters }) {
                         <div className="relative w-full   ">
                             <div className="absolute  lg:left-0 xl:left-32 w-full h-60  sm:w-48 sm:h-40  md:w-36 md:h-60  lg:w-44 lg:h-52 xl:w-48 xl:h-64 bg-amber-300 rounded-t-full shadow-sm"></div>
                             <img
-                                src="/images/person 2.png"
+                                src="/images/person 2.webp"
                                 alt="Image 1"
-                                className="relative    lg:left-0 xl:left-32 object-cover w-full sm:w-48 sm:h-full   md:w-36 md:h-72  lg:w-44 lg:h-96 xl:w-48 rounded-b-full"
+                                className="relative lg:left-0 xl:left-32 object-cover w-full sm:w-48 sm:h-full   md:w-36 md:h-72  lg:w-44 lg:h-96 xl:w-48 rounded-b-full"
                             />
                             <div className="absolute w-28 xl:left-20 top-56 left-[-50%] lg:left-[-25%] z-60 p-2 rounded-xl shadow-lg bg-purple-300 transform -translate-y-1/2">
                                 <p className="text-xl xl:text-2xl font-extrabold text-center text-black">
@@ -115,7 +115,7 @@ export default function HomePage({ auth, chapters }) {
                         {/* Card 2 */}
                         <div className="relative w-full justify-center transform hover:-translate-y-1 transition duration-500 ease-out">
                             <img
-                                src="/images/ctp premium.png"
+                                src="/images/homepage study guide.webp"
                                 alt="Image 2"
                                 className="w-full md:h-full  shadow-sm  xl:ml-14 "
                             />
@@ -133,9 +133,9 @@ export default function HomePage({ auth, chapters }) {
                         <div className="relative w-full justify-center transform hover:-translate-y-1 transition duration-500 ease-out ">
                             <div className="absolute  lg:left-3 xl:left-24 w-full h-60  sm:w-48 sm:h-40  md:w-36 md:h-60  lg:w-44 lg:h-52 xl:w-48 xl:h-64 bg-cyan-500 rounded-t-full shadow-sm"></div>
                             <img
-                                src="/images/person 1.png"
+                                src="/images/person 1.webp"
                                 alt="Image 3"
-                                className="relative    lg:left-3 xl:left-24 object-cover w-full sm:w-48 sm:h-full   md:w-36 md:h-72  lg:w-44 lg:h-96 xl:w-48 rounded-b-full"
+                                className="relative lg:left-3 xl:left-24 object-cover w-full sm:w-48 sm:h-full   md:w-36 md:h-72  lg:w-44 lg:h-96 xl:w-48 rounded-b-full"
                             />
                         </div>
 
@@ -143,7 +143,7 @@ export default function HomePage({ auth, chapters }) {
                         <div className="relative w-full justify-center transform hover:-translate-y-1 transition duration-500 ease-out ">
                             <div className="absolute  lg:left-5 xl:ml-0 w-full h-60  sm:w-48 sm:h-40  md:w-36 md:h-60  lg:w-44 lg:h-52 xl:w-48 xl:h-48 bg-orange-300 rounded-t-full shadow-sm"></div>
                             <img
-                                src="/images/person 3.png"
+                                src="/images/person 3.webp"
                                 alt="Image 4"
                                 className="relative    lg:left-4 xl:ml-0 object-cover w-full sm:w-48 sm:h-full   md:w-36 md:h-72  lg:w-44 lg:h-96 xl:w-48 rounded-b-full"
                             />
@@ -243,7 +243,7 @@ export default function HomePage({ auth, chapters }) {
                                     {/* Image in 8 columns */}
                                     <div className="col-span-12  lg:col-span-7">
                                         <img
-                                            src="/images/chap 1.png"
+                                            src="/images/chap 1.webp"
                                             alt="Photos"
                                             className="w-full h-full rounded-t-xl"
                                         />
@@ -415,7 +415,7 @@ export default function HomePage({ auth, chapters }) {
                                     {/* Image in 8 columns */}
                                     <div className="col-span-12 lg:col-span-7">
                                         <img
-                                            src="/images/chap 13.png"
+                                            src="/images/chap 13.webp"
                                             alt="Photos"
                                             className="w-full h-full rounded-t-xl"
                                         />
@@ -579,7 +579,7 @@ export default function HomePage({ auth, chapters }) {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                         <div className="flex justify-center">
                             <img
-                                src="/images/up.png"
+                                src="/images/2025 discover canada.webp"
                                 alt="Image Description"
                                 className="sm:h-80 w-72 h-96 md:w-3/4 lg:w-80 rounded-lg"
                             />
@@ -678,7 +678,7 @@ export default function HomePage({ auth, chapters }) {
                             {/* Right Column (Image) */}
                             <div className="flex justify-center items-center">
                                 <img
-                                    src="/images/home1.png"
+                                    src="/images/passing test (1).webp"
                                     alt="Citizenship Test Preparation"
                                     className="w-[300px] h-[300px] md:w-[350px] md:h-[450px] lg:w-[421px] lg:h-[515px] rounded-lg"
                                 />

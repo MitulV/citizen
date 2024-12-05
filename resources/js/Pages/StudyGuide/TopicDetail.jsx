@@ -6,7 +6,6 @@ import {
     faCircleCheck,
     faFile,
     faCheck,
-    faTimes,
     faChevronRight,
     faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
@@ -40,11 +39,16 @@ export default function TopicDetail({
                         content="Access our Study Guide for the Canadian Citizenship Test to enhance your preparation and confidence!"
                     />
                 </Head>
-                <div className="container mx-auto px-4  flex flex-col min-h-screen">
+                <div className="container mx-auto px-4 flex flex-col min-h-screen">
                     {/* Content Area */}
-                    <div className="container mx-auto px-4 ">
+                    <div
+                        className="flex-1 bg-gray-100 p-4 no-scrollbar"
+                        style={{
+                            overflowY: "auto", // Enable scrolling but hide the scrollbar
+                        }}
+                    >
                         <div className="mb-4">
-                            <p className="text-primary flex items-center ">
+                            <p className="text-primary flex items-center">
                                 <Link href={route("dashboard")}>
                                     <FontAwesomeIcon
                                         icon={faChevronLeft}
@@ -61,13 +65,7 @@ export default function TopicDetail({
                         </div>
 
                         {/* Scrollable Box */}
-                        <div
-                            className="bg-gray-100   p-4"
-                            style={{
-                                height: "800px", // Fixed height for the box
-                                overflowY: "auto", // Enable vertical scrolling
-                            }}
-                        >
+                        <div>
                             {topic.name === "The Timeline" ? (
                                 <TheTimeLine
                                     chapter={chapterId}
@@ -79,7 +77,7 @@ export default function TopicDetail({
                                         <div className="text-center">
                                             <Link
                                                 as="button"
-                                                className="bg-primary text-white px-4 sm:px-6  py-2 rounded-full shadow-lg transform hover:-translate-y-1 transition duration-500 ease-out"
+                                                className="bg-primary text-white px-4 sm:px-6 py-2 rounded-full shadow-lg transform hover:-translate-y-1 transition duration-500 ease-out"
                                                 href={route(
                                                     "createTopic.create",
                                                     {
@@ -101,14 +99,13 @@ export default function TopicDetail({
                     </div>
 
                     {/* Sticky Navigation Bar */}
-                    {/* Sticky Navigation Bar */}
                     <div
-                        className="mx-8 border-t sticky bottom-0 px-4 py-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 bg-white"
+                        className="sticky bottom-0 px-4 py-4 bg-white border-t"
                         style={{
                             zIndex: 10, // Ensure it stays above other elements
                         }}
                     >
-                        <div className="flex flex-row justify-between items-center space-x-4">
+                        <div className="flex justify-between items-center space-x-4">
                             {/* Previous Button */}
                             <Link
                                 replace
@@ -125,12 +122,12 @@ export default function TopicDetail({
                                           }&action=prev`
                                         : "#"
                                 }
-                                className={`border-primary border-2 text-black px-6 py-3 rounded-full flex items-center justify-center w-full sm:w-auto ${
-                                    !previousTopicId || topic.id == 1
+                                className={`border-primary border-2 text-black px-6 py-3 rounded-full ${
+                                    !previousTopicId
                                         ? "opacity-50 cursor-not-allowed"
                                         : ""
                                 }`}
-                                disabled={!previousTopicId || topic.id == 1}
+                                disabled={!previousTopicId}
                             >
                                 <FontAwesomeIcon
                                     icon={faChevronLeft}
@@ -155,7 +152,7 @@ export default function TopicDetail({
                                           }`
                                         : "#"
                                 }
-                                className="bg-green-500 text-white px-6 py-3 rounded-full flex items-center justify-center w-full sm:w-auto"
+                                className="bg-green-500 text-white px-6 py-3 rounded-full"
                             >
                                 <FontAwesomeIcon
                                     icon={faCheck}
@@ -180,12 +177,12 @@ export default function TopicDetail({
                                           }`
                                         : "#"
                                 }
-                                className={`border-primary border-2 text-black px-6 py-3 rounded-full flex items-center justify-center w-full sm:w-auto ${
-                                    nextTopicId >= 22
+                                className={`border-primary border-2 text-black px-6 py-3 rounded-full ${
+                                    !nextTopicId || nextTopicId >= 22
                                         ? "opacity-50 cursor-not-allowed"
                                         : ""
                                 }`}
-                                disabled={nextTopicId >= 22}
+                                disabled={!nextTopicId || nextTopicId >= 22}
                             >
                                 Next
                                 <FontAwesomeIcon
