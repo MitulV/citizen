@@ -28,7 +28,7 @@ class ContactController extends Controller
       'message' => $request->input('message'),
     ];
 
-    Mail::to('contact@thetechmitra.com')->send(new ContactMail($mailData));
+    Mail::to('contact@citizentestprep.ca')->send(new ContactMail($mailData));
 
     return back()->with('success', 'Thank you for your message. We will get back to you shortly.');
   }
