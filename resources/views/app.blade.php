@@ -40,14 +40,14 @@
         content="Prepare for the Canadian Citizenship Test with our comprehensive resources! Access 800+ practice questions, flashcards, study guides, and more.">
     <meta property="og:url" content="https://www.citizentestprep.ca/">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.citizentestprep.ca/images/citizenship-test-prep.jpg">
+    <meta property="og:image" content="https://www.citizentestprep.ca/images/citizenship-test-prep.png">
 
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="CitizenTestPrep Canada - Canadian Citizenship Practise Test Online">
     <meta name="twitter:description"
         content="Prepare for the Canadian Citizenship Test with our comprehensive resources! Access 800+ practice questions, flashcards, study guides, and more.">
-    <meta name="twitter:image" content="https://www.citizentestprep.ca/images/citizenship-test-prep.jpg">
+    <meta name="twitter:image" content="https://www.citizentestprep.ca/images/citizenship-test-prep.png">
 
     <title inertia>{{ config('app.name', 'Laravel') }}</title>
 
