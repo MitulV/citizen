@@ -46,7 +46,9 @@ Route::get('/sitemap.xml', function () {
     ->add(Url::create(route('govQuestions')))
     ->add(Url::create(route('map')))
     ->add(Url::create(route('glossary')))
-    ->add(Url::create(route('faq')));
+    ->add(Url::create(route('faq')))
+    ->add(Url::create(route('testInfoPage')))
+    ->add(Url::create(route('login')));
 
   // Dynamic routes for Canadian Citizenship Test chapters
   $chapters = \App\Models\Chapter::all(); // Assuming you have a Chapter model
