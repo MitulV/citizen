@@ -145,6 +145,8 @@ class PracticeTestsController extends Controller
       $testId = $request->input('testId');
       $index = $request->input('index');
 
+
+
       $question = Question::where('id', $questionId)->first();
       $result = $question->correct_answer_id == $answerId ? 'pass' : 'fail';
 
@@ -155,7 +157,7 @@ class PracticeTestsController extends Controller
       $nextIndex = $index + 1;
       $nextQuestion = $nextIndex < count($shuffledQuestions) ? $shuffledQuestions[$nextIndex] : null;
 
-      // $test = Test::findOrFail($testId);
+      $test = Test::findOrFail($testId);
 
       // $nextQuestion = Question::where('test_id', $testId)
       //   ->where('id', '>', $questionId)
@@ -209,6 +211,7 @@ class PracticeTestsController extends Controller
 
   public function testResult(Request $request)
   {
+
     $user = Auth::user();
     $chapters = Chapter::where('step', 2)
       ->with('tests.users')
@@ -269,6 +272,32 @@ class PracticeTestsController extends Controller
       ]
     ]);
 
+    $currentTest = Test::find($testId);
+    $currentChapter = Chapter::find($chapterId);
+
+    $nextTest = Test::where('chapter_id', $currentChapter->id)
+      ->where('id', '>', $currentTest->id)
+      ->orderBy('id', 'asc')
+      ->first();
+
+
+    // Step 2: If no next test, find the next chapter and its first test
+    if (!$nextTest) {
+      $nextChapter = Chapter::where('id', '>', $currentChapter->id)
+        ->orderBy('id', 'asc')
+        ->first();
+
+      if ($nextChapter) {
+        $nextTest = Test::where('chapter_id', $nextChapter->id)
+          ->orderBy('id', 'asc')
+          ->first();
+      } else {
+        $nextChapter = null; // No more chapters
+      }
+    } else {
+      $nextChapter = $currentChapter; // Stay in the same chapter
+    }
+
     return Inertia::render('PracticeTest/Result', [
       'result' => [
         'totalQuestions' => $totalQuestions,
@@ -280,7 +309,9 @@ class PracticeTestsController extends Controller
       'testId' => $testId,
       'chapterId' => $chapterId,
       'chapters' => $chapters,
-      'questionResults' => $questionResults
+      'questionResults' => $questionResults,
+      'nextChapter' => $nextChapter,
+      'nextTest' => $nextTest,
     ]);
   }
 }

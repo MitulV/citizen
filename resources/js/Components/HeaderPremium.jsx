@@ -88,12 +88,15 @@ export default function HeaderPremium({ user }) {
                             </li>
 
                             <li className="mx-5 pt-2 pb-3">
-                                <Link
-                                    href={route("premiumPage")}
+                                <ScrollLink
+                                    to="pricing"
+                                    smooth={true}
+                                    duration={1000}
+                                    offset={-50}
                                     className="bg-primary text-white text-lg md:text-xl xl:text-xl font-bold px-4 py-2 rounded-full block text-center mx-auto w-auto"
                                 >
                                     Get Instant Access
-                                </Link>
+                                </ScrollLink>
                             </li>
                         </ul>
                     </div>

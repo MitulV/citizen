@@ -51,7 +51,7 @@ export default function Footer() {
                                     />
                                 </svg>
                                 <span className="ml-2 text-lg tracking-wide">
-                                    hello@citizentestprep.ca
+                                    contact@citizentestprep.ca
                                 </span>
                             </div>
                         </div>
@@ -112,7 +112,7 @@ export default function Footer() {
                                     href={route("about")}
                                     className="text-gray-500"
                                 >
-                                    About
+                                    About Us
                                 </a>
                             </li>
 
@@ -188,7 +188,7 @@ export default function Footer() {
                                 strokeLinejoin="round"
                             />
                         </svg>
-                        <span className="ml-2">hello@citizentestprep.ca</span>
+                        <span className="ml-2">contact@citizentestprep.ca</span>
                     </div>
                 </div>
             </div>
@@ -206,6 +206,7 @@ export default function Footer() {
                     {/* Icons second on small screens, right side on larger screens */}
                     <div className="flex space-x-4 mb-2 sm:mb-0 order-1 sm:order-none sm:ml-auto">
                         <a
+                            target="_blank"
                             href="https://www.facebook.com/profile.php?id=61566797242585"
                             className="text-white hover:text-gray-300"
                         >
@@ -225,6 +226,7 @@ export default function Footer() {
                             </svg>
                         </a>
                         <a
+                            target="_blank"
                             href="https://www.instagram.com/citizentestprep/ "
                             className="text-white hover:text-gray-300"
                         >
@@ -256,6 +258,7 @@ export default function Footer() {
                             </svg>
                         </a>
                         <a
+                            target="_blank"
                             href="https://x.com/citizentestprep"
                             className="text-white hover:text-gray-300"
                         >
@@ -275,6 +278,7 @@ export default function Footer() {
                             </svg>
                         </a>
                         <a
+                            target="_blank"
                             href="https://www.youtube.com/channel/UCUvM0foDlasYhSOWFey8TnA"
                             className="text-white hover:text-gray-300"
                         >

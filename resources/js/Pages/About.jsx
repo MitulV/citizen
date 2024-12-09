@@ -187,9 +187,6 @@ export default function About({}) {
                                         Unlock all questions
                                     </Link>
                                 </div>
-                                <p className="text-xs sm:text-sm leading-5 sm:leading-6 tracking-tight text-center text-gray-500 mt-2 sm:mt-4">
-                                    or pass the first time guaranteed
-                                </p>
                             </div>
                         </div>
                     </section>

@@ -18,6 +18,18 @@
         gtag('config', 'G-TYKJRWE13Z');
     </script>
 
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "CitizenTestPrep",
+    "url": "https://www.citizentestprep.ca/",
+    "description": "Prepare for the Canadian Citizenship Test with our comprehensive resources! Access 850+ practice questions, flashcards, study guides, and more.",
+    "@id": "https://www.citizentestprep.ca/"
+  }
+</script>
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

@@ -139,7 +139,7 @@ export default function Header({ user }) {
                                     href={route("about")}
                                     className="hover:text-primary block ml-1"
                                 >
-                                    About
+                                    About Us
                                 </Link>
                             </Navbar>
 
@@ -251,7 +251,7 @@ export default function Header({ user }) {
                             href={route("about")}
                             className="hover:text-primary cursor-pointer"
                         >
-                            About
+                            About Us
                         </Link>
                     </Navbar>
                 </Navbar.Collapse>

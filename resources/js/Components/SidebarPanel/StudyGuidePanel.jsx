@@ -8,7 +8,6 @@ import {
     AccordionHeader,
     AccordionBody,
 } from "@material-tailwind/react";
-
 export default function StudyGuidePanel({
     chapters,
     collapsed,
@@ -90,6 +89,8 @@ export default function StudyGuidePanel({
                                     {chapter.topics.map((topic) => (
                                         <Link
                                             replace
+                                            preserveState
+                                            preserveScroll
                                             href={`/guide/${chapter.id}${
                                                 topic.id ? `/${topic.id}` : ""
                                             }?accorditionIndex=${index}`}

@@ -24,7 +24,7 @@ export default function Refundpolicy({ auth, chapters }) {
                                     Refund Policy
                                 </h1>
                                 <img
-                                    src="/images/pass guarantee.png"
+                                    src="/images/pass guarantee small (1).webp"
                                     alt="Logo"
                                     className="w-60 h-24 mx-auto hidden sm:block"
                                 />

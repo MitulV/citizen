@@ -14427,9 +14427,9 @@ class DatabaseSeeder extends Seeder
           'validity' => 180,
         ],
         [
-          'name' => 'Lifetime Unlimited',
-          'price' => 59.99,
-          'validity' => 36500,
+          'name' => '12-Month Exam Prep',
+          'price' => 49.99,
+          'validity' => 365,
         ],
       ];
 

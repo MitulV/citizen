@@ -110,6 +110,8 @@ export default function ChapterTestPanel({
                                     {chapter.tests.map((test) => (
                                         <Link
                                             replace
+                                            preserveState
+                                            preserveScroll
                                             href={`/practice-tests/${
                                                 chapter.id
                                             }${

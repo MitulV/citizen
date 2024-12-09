@@ -48,7 +48,7 @@ export default function HomePage({ auth, chapters }) {
                     </title>
                     <meta
                         name="description"
-                        content="Prepare for the Canadian Citizenship Test with our comprehensive resources! Access 800+ practice questions, flashcards, study guides, and more."
+                        content="Prepare for the Canadian Citizenship Test with our comprehensive resources! Access 850+ practice questions, 450+ flashcards, study guides, dates, map and more."
                     />
                 </Head>
                 <div className="container mx-auto px-6 md:px-16 lg:px-8  xl:px-44 ">
@@ -64,10 +64,10 @@ export default function HomePage({ auth, chapters }) {
                         </div>
                         <div className="container mx-auto  mt-4 sm:mt-8 px-6 md:px-28 lg:px-32   xl:px-44">
                             <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500 ">
-                                Get access to 850+ practice questions, study
-                                guides for each chapter, realistic test
-                                simulations, 450+ flashcards, cheat sheets, and
-                                more.
+                                Prepare for the Canadian Citizenship Test with
+                                our comprehensive resources! Access 850+
+                                practice questions, 450+ flashcards, study
+                                guides, dates, map and more.
                             </p>
                         </div>
                         <div className="container mx-auto px-4 mt-4 sm:mt-8 flex justify-center">
@@ -104,7 +104,7 @@ export default function HomePage({ auth, chapters }) {
                             />
                             <div className="absolute w-28 xl:left-20 top-56 left-[-50%] lg:left-[-25%] z-60 p-2 rounded-xl shadow-lg bg-purple-300 transform -translate-y-1/2">
                                 <p className="text-xl xl:text-2xl font-extrabold text-center text-black">
-                                    2024
+                                    2025
                                 </p>
                                 <p className="text-xs sm:text-sm text-center font-bold">
                                     Updated
@@ -115,7 +115,7 @@ export default function HomePage({ auth, chapters }) {
                         {/* Card 2 */}
                         <div className="relative w-full justify-center transform hover:-translate-y-1 transition duration-500 ease-out">
                             <img
-                                src="/images/homepage study guide.webp"
+                                src="/images/study guide homepage.webp"
                                 alt="Image 2"
                                 className="w-full md:h-full  shadow-sm  xl:ml-14 "
                             />
@@ -141,7 +141,7 @@ export default function HomePage({ auth, chapters }) {
 
                         {/* Card 4 */}
                         <div className="relative w-full justify-center transform hover:-translate-y-1 transition duration-500 ease-out ">
-                            <div className="absolute  lg:left-5 xl:ml-0 w-full h-60  sm:w-48 sm:h-40  md:w-36 md:h-60  lg:w-44 lg:h-52 xl:w-48 xl:h-48 bg-orange-300 rounded-t-full shadow-sm"></div>
+                            <div className="absolute  lg:left-4 xl:ml-0 w-full h-60  sm:w-48 sm:h-40  md:w-36 md:h-60  lg:w-44 lg:h-52 xl:w-48 xl:h-48 bg-orange-300 rounded-t-full shadow-sm"></div>
                             <img
                                 src="/images/person 3.webp"
                                 alt="Image 4"
@@ -166,7 +166,7 @@ export default function HomePage({ auth, chapters }) {
                             <div className="relative flex justify-center">
                                 <div className="absolute top-0 w-24 h-32 bg-amber-300 rounded-t-full"></div>
                                 <img
-                                    src="/images/person 2.png"
+                                    src="/images/person 2.webp"
                                     alt="Image 1"
                                     className="relative object-cover w-24 h-48 rounded-b-full"
                                 />
@@ -178,7 +178,7 @@ export default function HomePage({ auth, chapters }) {
                             <div className="relative w-full h-64 flex justify-center">
                                 <div className="absolute top-0 w-24 h-32 bg-indigo-300 rounded-t-full"></div>
                                 <img
-                                    src="/images/person 1.png"
+                                    src="/images/person 1.webp"
                                     alt="Image 2"
                                     className="relative object-cover w-24 h-48 rounded-b-full"
                                 />
@@ -190,7 +190,7 @@ export default function HomePage({ auth, chapters }) {
                             <div className="relative w-full h-64 flex justify-center">
                                 <div className="absolute top-0 w-24 h-32 bg-orange-300 rounded-t-full"></div>
                                 <img
-                                    src="/images/person 3.png"
+                                    src="/images/person 3.webp"
                                     alt="Image 3"
                                     className="relative object-cover w-24 h-48 rounded-b-full"
                                 />
@@ -581,7 +581,7 @@ export default function HomePage({ auth, chapters }) {
                             <img
                                 src="/images/2025 discover canada.webp"
                                 alt="Image Description"
-                                className="sm:h-80 w-72 h-96 md:w-3/4 lg:w-80 rounded-lg"
+                                className="w-full max-w-lg h-auto sm:max-w-xl md:max-w-xl lg:max-w-xl rounded-lg"
                             />
                         </div>
 
@@ -680,7 +680,7 @@ export default function HomePage({ auth, chapters }) {
                                 <img
                                     src="/images/passing test (1).webp"
                                     alt="Citizenship Test Preparation"
-                                    className="w-[300px] h-[300px] md:w-[350px] md:h-[450px] lg:w-[421px] lg:h-[515px] rounded-lg"
+                                    className="w-full max-w-[500px] h-auto max-h-[500px] rounded-lg"
                                 />
                             </div>
                         </div>

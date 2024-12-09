@@ -397,7 +397,7 @@ export default function Premium({ auth }) {
                 <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-10 ">
                     {/* Section Header */}
                     <p className="font-inter text-base sm:text-lg font-bold tracking-wider text-center text-indigo-600">
-                        How it works
+                        HOW IT WORKS
                     </p>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-center">
                         Passing the Canadian Citizenship Test Has Never Been
@@ -946,9 +946,9 @@ export default function Premium({ auth }) {
                         {/* Right Column */}
                         <div className="flex justify-center items-center">
                             <img
-                                src="/images/study guide mobile.webp"
+                                src="/images/study guide mobilee.webp"
                                 alt="Image"
-                                className="w-[627px] h-[500px] rounded-xl"
+                                className="w-full max-w-[627px] h-auto max-h-[500px] rounded-xl"
                             />
                         </div>
                     </div>
@@ -968,7 +968,7 @@ export default function Premium({ auth }) {
 
                         <div className="hidden sm:flex justify-center">
                             <img
-                                src="/images/practise test question.webp"
+                                src="/images/chapter test mobile.webp"
                                 alt="Image"
                                 className="w-[627px] h-[500px] rounded-2xl"
                             />
@@ -1038,7 +1038,7 @@ export default function Premium({ auth }) {
                                 </p>
                             </div>
                             <img
-                                src="/images/important map.webp"
+                                src="/images/canadian map mobile.webp"
                                 alt="Image 1"
                                 className="mt-4 w-[384px] h-[536px]  rounded-lg shadow-2xl"
                             />
@@ -1057,7 +1057,7 @@ export default function Premium({ auth }) {
                                 </p>
                             </div>
                             <img
-                                src="/images/important dates.webp"
+                                src="/images/important date mobile.webp"
                                 alt="Image 2"
                                 className="mt-4 w-[384px] h-[536px]  rounded-lg shadow-2xl"
                             />
@@ -1076,7 +1076,7 @@ export default function Premium({ auth }) {
                                 </p>
                             </div>
                             <img
-                                src="/images/important people.webp"
+                                src="/images/important name mobile.webp"
                                 alt="Image 3"
                                 className="mt-4 w-[384px] h-[536px]  rounded-lg shadow-2xl"
                             />
@@ -1551,14 +1551,14 @@ export default function Premium({ auth }) {
                     </div>
                     {/* Contact Section */}
 
-                    <div className="container mx-auto mt-8 lg:mx-20">
-                        <div className="max-w-4xl mx-auto p-4 flex flex-col md:flex-row items-center md:items-center">
+                    <div className="container mx-auto mt-8 px-4 lg:px-20">
+                        <div className="max-w-4xl mx-auto p-4 flex flex-col md:flex-row items-center justify-center ">
                             <p className="text-gray-900 mb-4 md:mb-0 md:mr-4 text-center md:text-left text-sm sm:text-base">
                                 Have more questions or want to contact us?
                             </p>
                             <div className="flex flex-col md:flex-row gap-4 justify-center">
                                 {/* Envelope Option */}
-                                <div className="flex text-center gap-4 bg-white py-2  px-4 rounded-lg border border-gray-300">
+                                <div className="flex items-center gap-4 bg-white py-2 px-4 rounded-lg border border-gray-300">
                                     <FontAwesomeIcon
                                         icon={faEnvelope}
                                         className="text-primary"
@@ -1567,11 +1567,11 @@ export default function Premium({ auth }) {
                                         href="/contact-us"
                                         className="text-indigo-600 text-sm text-center"
                                     >
-                                        {" "}
                                         Contact Via Email
                                     </Link>
                                 </div>
                                 {/* Phone Option */}
+                                {/* Add your Phone option here */}
                             </div>
                         </div>
                     </div>

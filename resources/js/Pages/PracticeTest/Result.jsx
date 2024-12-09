@@ -20,6 +20,7 @@ export default function Result({
     chapterId,
     chapters,
     questionResults,
+    nextChapter,
     nextTest,
 }) {
     const handleRestart = () => {
@@ -93,13 +94,18 @@ export default function Result({
                                     </span>
                                 </div>
 
-                                <Link
-                                    href={route("premiumPage")}
-                                    as="button"
-                                    className="bg-primary text-white px-6 py-2 rounded-full mt-4 w-full sm:w-auto sm:ml-10"
-                                >
-                                    Next up, {nextTest.name}
-                                </Link>
+                                {nextTest && (
+                                    <Link
+                                        href={route(`testList`, {
+                                            chapterId: nextChapter.id,
+                                            testId: nextTest.id,
+                                        })}
+                                        as="button"
+                                        className="bg-primary text-white px-6 py-2 rounded-full mt-4 w-full sm:w-auto sm:ml-10"
+                                    >
+                                        Next up, {nextTest.name}
+                                    </Link>
+                                )}
                             </div>
                         </div>
 

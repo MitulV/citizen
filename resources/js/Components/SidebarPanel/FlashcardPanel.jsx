@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "@inertiajs/react";
-import LoginHeader from "@/Components/LoginHeader";
-import Footer from "@/Components/Footer";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { usePage } from "@inertiajs/react";
 import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
-// import { Accordion } from "flowbite-react";
 import {
     Accordion,
     AccordionHeader,
@@ -24,7 +20,7 @@ export default function FlashcardPanel({
     };
 
     useEffect(() => {
-        if (typeof accorditionIndex === "number") {
+        if (typeof accorditionIndex === "number" && open !== accorditionIndex) {
             setOpen(accorditionIndex);
         }
     }, [accorditionIndex]);
@@ -53,6 +49,9 @@ export default function FlashcardPanel({
                     {chapters.map((chapter, index) => (
                         <Accordion
                             key={chapter.id}
+                            animate={
+                                open === index ? CUSTOM_ANIMATION : undefined
+                            }
                             open={open === index} // Control open state
                             className="mb-2 px-4 bg-white"
                         >
@@ -97,6 +96,8 @@ export default function FlashcardPanel({
                                 <div className="text-gray-800 text-start">
                                     <Link
                                         replace
+                                        preserveState
+                                        preserveScroll
                                         href={`/flashcards/${chapter.id}${
                                             chapter.first_flashcard_id
                                                 ? `/${chapter.first_flashcard_id}`

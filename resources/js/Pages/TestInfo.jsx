@@ -10,12 +10,12 @@ export default function TestInfo({ chapterId, auth }) {
             <GuestLayout user={auth.user}>
                 <Head>
                     <title>
-                        FREE Canadian Citizenship Test Practice 2024 -
+                        FREE Canadian Citizenship Test Practice 2025 -
                         CitizenTestPrep
                     </title>
                     <meta
                         name="description"
-                        content="Start with FREE Canadian Citizenship Test Practice for 2024 and succeed without any cost!"
+                        content=" Free Canadian Citizenship Test Practice for 2025 at CitizenTestPrep. Start preparing today with our practice questions and boost your chances of success!"
                     />
                 </Head>
 

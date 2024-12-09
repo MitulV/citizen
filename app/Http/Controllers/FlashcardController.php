@@ -54,9 +54,70 @@ class FlashcardController extends Controller
   public function flashcardList(Request $request, $chapterId, $flashcardId = null)
   {
     $user = Auth::user();
-    $nextFlashcard = null;
-
     $accorditionIndex = $request->has('accorditionIndex') ? $request->accorditionIndex : 0;
+
+    if ($request->has('action') && $request->action == 'prev') {
+      if ($flashcardId) {
+        // Find the current flashcard
+        $currentFlashcard = Flashcard::findOrFail($flashcardId);
+
+        // Find the previous flashcard
+        $previousFlashcard = Flashcard::where('chapter_id', $chapterId)
+          ->where('id', '<', $flashcardId)
+          ->orderBy('id', 'desc') // Get the most recent previous topic
+          ->first();
+
+        // If no previous flashcard exists in the current chapter, check the previous chapter
+        if (!$previousFlashcard) {
+          $previousChapter = Chapter::where('id', '<', $chapterId)
+            ->orderBy('id', 'desc') // Go to the most recent previous chapter
+            ->first();
+
+          // If previous chapter exists, fetch its last flashcard
+          if ($previousChapter) {
+            $previousFlashcard = Flashcard::where('chapter_id', $previousChapter->id)
+              ->orderBy('id', 'desc') // Get the last flashcard in the previous chapter
+              ->first();
+            $chapterId = $previousChapter->id;
+          }
+        }
+
+        // Fetch chapters with their topics and users for rendering
+        $chapters = Chapter::where('step', 2)
+          ->with('topics.users')
+          ->get();
+
+        // Process chapter topics for status
+        foreach ($chapters as $chapter) {
+          $allCompleted = true;
+          foreach ($chapter->topics as $topic) {
+            $userTopic = $topic->users->where('id', $user->id)->first();
+            if ($userTopic) {
+              $topic->status = $userTopic->pivot->status;
+            } else {
+              $topic->status = 'not_attempted';
+              $allCompleted = false;
+            }
+
+            if ($topic->status !== 'completed') {
+              $allCompleted = false;
+            }
+
+            unset($topic->users); // Optional cleanup
+          }
+          $chapter->allTopicsCompleted = $allCompleted;
+        }
+
+        return Inertia::render('Flashcard/FlashcardDetail', [
+          'chapters' => $chapters,
+          'flashcard' => $previousFlashcard,
+          'chapterId' => $chapterId,
+          'previousFlashcardId' => $previousFlashcard ? $previousFlashcard->id : null,
+          'nextFlashcardId' => $currentFlashcard ? $currentFlashcard->id : null,
+          'accorditionIndex' => $accorditionIndex
+        ]);
+      }
+    }
 
     // Check if a flashcard should be marked as complete
     if ($request->has('complete') && $flashcardId) {
@@ -67,19 +128,75 @@ class FlashcardController extends Controller
         ]
       ]);
 
-      // Find the next flashcard in the same chapter
+      //dd($flashcardId);
+      // Find the next topic
       $nextFlashcard = Flashcard::where('chapter_id', $chapterId)
         ->where('id', '>', $flashcardId)
         ->first();
+      //dd($nextFlashcard);
 
-      // If there is no next flashcard in the same chapter, find the first flashcard of the next chapter
       if (!$nextFlashcard) {
-        $nextChapter = Chapter::where('id', '>', $chapterId)->orderBy('id')->first();
+
+        // Check for the next chapter
+        $nextChapter = Chapter::where('id', '>', $chapterId)
+          ->whereNotIn('id', [12, 13]) // Exclude chapters with IDs 12 and 13
+          ->orderBy('id', 'asc') // Ensures we get the next chapter in ascending order
+          ->first();
+
+        $accorditionIndex++;
+
+        // If next chapter exists, fetch its first topic
         if ($nextChapter) {
-          $nextFlashcard = Flashcard::where('chapter_id', $nextChapter->id)->orderBy('id')->first();
+          $nextFlashcard = Flashcard::where('chapter_id', $nextChapter->id)
+            ->orderBy('id', 'asc') // Ensures we get the first topic in the chapter
+            ->first();
+
+          $chapterId  = $chapterId + 1;
         }
       }
+
+      $previousFlashcard = $currentFlashcard;
+
+      $chapters = Chapter::where('step', 2)
+        ->with('topics.users')
+        ->get();
+
+      foreach ($chapters as $chapter) {
+        $allCompleted = true;
+
+        // Get the first flashcard id for the chapter
+        $firstFlashcardId = $chapter->flashcards->first()->id ?? null;
+        $chapter->first_flashcard_id = $firstFlashcardId;
+
+        foreach ($chapter->flashcards as $flashcard) {
+          $userFlashcard = $flashcard->users->where('id', $user->id)->first();
+          if ($userFlashcard) {
+            $flashcard->status = $userFlashcard->pivot->status;
+          } else {
+            $flashcard->status = 'not_attempted';
+            $allCompleted = false; // If any flashcard is not attempted, the chapter is not fully completed
+          }
+
+
+          if ($flashcard->status !== 'completed') {
+            $allCompleted = false; // If any flashcard is not completed, the chapter is not fully completed
+          }
+
+          unset($flashcard->users); // Optional: Remove users relationship data to keep the response clean
+        }
+        $chapter->allFlashcardsCompleted = $allCompleted;
+      }
+
+      return Inertia::render('Flashcard/FlashcardDetail', [
+        'chapters' => $chapters,
+        'flashcard' => $nextFlashcard,
+        'chapterId' => $chapterId,
+        'previousFlashcardId' => $previousFlashcard ? $previousFlashcard->id : null,
+        'nextFlashcardId' => $nextFlashcard ? $nextFlashcard->id : null,
+        'accorditionIndex' => $accorditionIndex
+      ]);
     }
+
 
     $chapters = Chapter::where('step', 2)
       ->with('flashcards.users')
@@ -111,31 +228,33 @@ class FlashcardController extends Controller
       $chapter->allFlashcardsCompleted = $allCompleted;
     }
 
-    // If next flashcard is found after marking as complete, use it as the current flashcard
-    if ($nextFlashcard) {
-      $flashcard = $nextFlashcard;
-      $flashcardId = $nextFlashcard->id;
-    } else {
-      $flashcardId = $flashcardId ?? 1;
-      $flashcard = Flashcard::findOrFail($flashcardId);
-    }
+    $flashcardId = $flashcardId ?? 1;
+    $flashcard = Flashcard::findOrFail($flashcardId);
 
     $previousFlashcard = Flashcard::where('chapter_id', $chapterId)
       ->where('id', '<', $flashcardId)
       ->orderBy('id', 'desc')
       ->first();
 
+
+
+    if (!$previousFlashcard && $flashcardId > 1) {
+      // Fetch the previous chapter
+      $previousChapter = Chapter::where('id', '<', $chapterId)
+        ->orderBy('id', 'desc')
+        ->first();
+
+      if ($previousChapter) {
+        // Fetch the last topic of the previous chapter
+        $previousFlashcard = Flashcard::where('chapter_id', $previousChapter->id)
+          ->orderBy('id', 'desc')
+          ->first();
+      }
+    }
+
     $nextFlashcard = Flashcard::where('chapter_id', $chapterId)
       ->where('id', '>', $flashcardId)
       ->first();
-
-    // If no next flashcard in the current chapter, find the first flashcard of the next chapter
-    if (!$nextFlashcard) {
-      $nextChapter = Chapter::where('id', '>', $chapterId)->orderBy('id')->first();
-      if ($nextChapter) {
-        $nextFlashcard = Flashcard::where('chapter_id', $nextChapter->id)->orderBy('id')->first();
-      }
-    }
 
     return Inertia::render('Flashcard/FlashcardDetail', [
       'chapters' => $chapters,

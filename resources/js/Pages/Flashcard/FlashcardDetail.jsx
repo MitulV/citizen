@@ -36,7 +36,7 @@ export default function FlashcardDetail({
                 accorditionIndex={accorditionIndex}
             >
                 <Head title="Flashcard Detail" />
-                <section className="container mx-auto  bg-slate-50 py-12 md:py-12 px-4 md:px-8 lg:px-16 xl:px-44">
+                <div className="container mx-auto px-4 flex flex-col min-h-screen">
                     <div className="flex flex-col items-center">
                         <h5 className="text-xl sm:text-xl md:text-3xl lg:text-4xl xl:text-xl mb-4 text-zinc-600">
                             Flashcards are an excellent way to challenge
@@ -82,60 +82,95 @@ export default function FlashcardDetail({
                             </div>
                         </ReactCardFlip>
                     </div>
-                    <div className="container-fluid py-4 px-4 md:px-8 lg:px-20 w-full flex justify-between items-center">
-                        <Link
-                            as="button"
-                            method="get"
-                            href={
-                                previousFlashcardId
-                                    ? `/flashcards/${chapterId}/${previousFlashcardId}`
-                                    : "#"
-                            }
-                            className={`border-primary border-2 text-black px-4 py-2 rounded-full ${
-                                !previousFlashcardId
-                                    ? "opacity-50 cursor-not-allowed"
-                                    : ""
-                            }`}
-                            disabled={!previousFlashcardId}
-                        >
-                            <FontAwesomeIcon
-                                icon={faChevronLeft}
-                                className="mr-2"
-                            />
-                            Previous
-                        </Link>
-                        <Link
-                            as="button"
-                            method="get"
-                            href={`/flashcards/${chapterId}/${flashcard.id}?complete=true`}
-                            className="bg-green-500 text-white px-4 py-2 rounded-full"
-                        >
-                            <FontAwesomeIcon icon={faCheck} /> Complete
-                        </Link>
+                    {/* Sticky Navigation Bar */}
+                    <div
+                        className="fixed bottom-0 px-4 py-4 bg-white border-t"
+                        style={{
+                            zIndex: 10, // Ensure it stays above other elements
+                            width: "60%", // Full width to ensure it spans across the screen
+                            height: "80px", // Set a fixed height for the navbar
+                        }}
+                    >
+                        <div className="flex justify-between items-center space-x-4">
+                            <Link
+                                replace
+                                preserveScroll
+                                as="button"
+                                method="get"
+                                href={
+                                    previousFlashcardId
+                                        ? `/flashcards/${chapterId}/${previousFlashcardId}?action=prev&index=${
+                                              chapterId - 1
+                                          }&action=prev`
+                                        : "#"
+                                }
+                                className={`border-primary border-2 text-black px-6 py-3 rounded-full ${
+                                    !previousFlashcardId
+                                        ? "opacity-50 cursor-not-allowed"
+                                        : ""
+                                }`}
+                                disabled={!previousFlashcardId}
+                                onClick={() => setIsFlipped(false)}
+                            >
+                                <FontAwesomeIcon
+                                    icon={faChevronLeft}
+                                    className="mr-2"
+                                />
+                                Previous
+                            </Link>
 
-                        <Link
-                            as="button"
-                            method="get"
-                            href={
-                                nextFlashcardId
-                                    ? `/flashcards/${chapterId}/${flashcard.id}?complete=true`
-                                    : "#"
-                            }
-                            className={`border-primary border-2 text-black px-6 py-2 rounded-full flex items-center ${
-                                !nextFlashcardId
-                                    ? "opacity-50 cursor-not-allowed"
-                                    : ""
-                            }`}
-                            disabled={!nextFlashcardId}
-                        >
-                            Next
-                            <FontAwesomeIcon
-                                icon={faChevronRight}
-                                className="ml-2"
-                            />
-                        </Link>
+                            <Link
+                                replace
+                                preserveScroll
+                                as="button"
+                                method="get"
+                                href={
+                                    nextFlashcardId
+                                        ? `/flashcards/${chapterId}/${
+                                              flashcard.id
+                                          }?complete=true&accorditionIndex=${
+                                              chapterId - 1
+                                          }`
+                                        : "#"
+                                }
+                                className="bg-green-500 text-white px-6 py-3 rounded-full"
+                                onClick={() => setIsFlipped(false)}
+                            >
+                                <FontAwesomeIcon icon={faCheck} /> Complete
+                            </Link>
+
+                            <Link
+                                replace
+                                preserveState
+                                preserveScroll
+                                as="button"
+                                method="get"
+                                href={
+                                    nextFlashcardId
+                                        ? `/flashcards/${chapterId}/${
+                                              flashcard.id
+                                          }?complete=true&accorditionIndex=${
+                                              chapterId - 1
+                                          }`
+                                        : "#"
+                                }
+                                className={`border-primary border-2 text-black px-6 py-3 rounded-full flex items-center ${
+                                    !nextFlashcardId
+                                        ? "opacity-50 cursor-not-allowed"
+                                        : ""
+                                }`}
+                                disabled={!nextFlashcardId}
+                                onClick={() => setIsFlipped(false)}
+                            >
+                                Next
+                                <FontAwesomeIcon
+                                    icon={faChevronRight}
+                                    className="ml-2"
+                                />
+                            </Link>
+                        </div>
                     </div>
-                </section>
+                </div>
             </AuthenticatedLayout>
         </>
     );
