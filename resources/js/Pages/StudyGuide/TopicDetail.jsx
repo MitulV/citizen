@@ -39,7 +39,7 @@ export default function TopicDetail({
                         content="Access our Study Guide for the Canadian Citizenship Test to enhance your preparation and confidence!"
                     />
                 </Head>
-                <div className="container mx-auto px-4 flex flex-col min-h-screen">
+                <div className="container mx-auto px-2 flex flex-col min-h-screen">
                     {/* Content Area */}
                     <div
                         className="flex-1 bg-gray-100 p-4 no-scrollbar"
@@ -100,7 +100,7 @@ export default function TopicDetail({
 
                     {/* Sticky Navigation Bar */}
                     <div
-                        className="sticky bottom-0 px-4 py-4 bg-white border-t"
+                        className="sticky bottom-0 px-2 py-4 bg-white border-t"
                         style={{
                             zIndex: 10, // Ensure it stays above other elements
                         }}
@@ -122,7 +122,7 @@ export default function TopicDetail({
                                           }&action=prev`
                                         : "#"
                                 }
-                                className={`border-primary border-2 text-black px-6 py-3 rounded-full ${
+                                className={`border-primary border-2 text-black px-2 py-3 rounded-full ${
                                     !previousTopicId
                                         ? "opacity-50 cursor-not-allowed"
                                         : ""
@@ -152,7 +152,7 @@ export default function TopicDetail({
                                           }`
                                         : "#"
                                 }
-                                className="bg-green-500 text-white px-6 py-3 rounded-full"
+                                className="bg-green-500 text-white px-2 py-3 rounded-full"
                             >
                                 <FontAwesomeIcon
                                     icon={faCheck}
@@ -177,7 +177,7 @@ export default function TopicDetail({
                                           }`
                                         : "#"
                                 }
-                                className={`border-primary border-2 text-black px-6 py-3 rounded-full ${
+                                className={`border-primary border-2 text-black px-2 py-3 rounded-full ${
                                     !nextTopicId || nextTopicId >= 22
                                         ? "opacity-50 cursor-not-allowed"
                                         : ""

@@ -581,7 +581,7 @@ export default function HomePage({ auth, chapters }) {
                             <img
                                 src="/images/2025 discover canada.webp"
                                 alt="Image Description"
-                                className="w-full max-w-lg h-auto sm:max-w-xl md:max-w-xl lg:max-w-xl rounded-lg"
+                                className="w-full max-w-md h-auto sm:max-w-sm md:max-w-md lg:max-w-md rounded-lg"
                             />
                         </div>
 
@@ -914,7 +914,7 @@ export default function HomePage({ auth, chapters }) {
 
                                     <div className="flex items-left mt-2">
                                         <img
-                                            src="/images/review 3.png"
+                                            src="/images/review 3.webp"
                                             alt="Profile Picture"
                                             className="w-12 h-12 rounded-full mr-2"
                                         />
@@ -971,7 +971,7 @@ export default function HomePage({ auth, chapters }) {
 
                                     <div className="flex items-left mb-2 mt-2">
                                         <img
-                                            src="/images/review 2.png"
+                                            src="/images/review 2.webp"
                                             alt="Profile Picture"
                                             className="w-12 h-12 rounded-full mr-2"
                                         />
@@ -1028,7 +1028,7 @@ export default function HomePage({ auth, chapters }) {
 
                                     <div className="flex items-left mb-2">
                                         <img
-                                            src="/images/review 1.png"
+                                            src="/images/review 1.webp"
                                             alt="Profile Picture"
                                             className="w-12 h-12 rounded-full mr-2"
                                         />

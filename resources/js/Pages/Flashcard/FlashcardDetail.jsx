@@ -36,9 +36,9 @@ export default function FlashcardDetail({
                 accorditionIndex={accorditionIndex}
             >
                 <Head title="Flashcard Detail" />
-                <div className="container mx-auto px-4 flex flex-col min-h-screen">
+                <div className="container mx-auto px-4 flex flex-col min-h-screen lg:px-40">
                     <div className="flex flex-col items-center">
-                        <h5 className="text-xl sm:text-xl md:text-3xl lg:text-4xl xl:text-xl mb-4 text-zinc-600">
+                        <h5 className="text-xl sm:text-xl md:text-3xl lg:text-4xl xl:text-xl mb-4 text-zinc-600 mt-20">
                             Flashcards are an excellent way to challenge
                             yourself. Guess the answer, then click to{" "}
                             <FontAwesomeIcon icon={faRotate} /> reveal the
@@ -82,18 +82,15 @@ export default function FlashcardDetail({
                             </div>
                         </ReactCardFlip>
                     </div>
-                    {/* Sticky Navigation Bar */}
                     <div
-                        className="fixed bottom-0 px-4 py-4 bg-white border-t"
-                        style={{
-                            zIndex: 10, // Ensure it stays above other elements
-                            width: "60%", // Full width to ensure it spans across the screen
-                            height: "80px", // Set a fixed height for the navbar
-                        }}
+                        className="sticky bottom-0 px-2 py-4 bg-white border-t mt-auto"
+                        style={{ zIndex: 10 }}
                     >
-                        <div className="flex justify-between items-center space-x-4">
+                        <div className="flex flex-row md:flex-row justify-between items-center space-y-0 md:space-y-0 w-full">
+                            {/* Previous Button */}
                             <Link
                                 replace
+                                preserveState
                                 preserveScroll
                                 as="button"
                                 method="get"
@@ -104,41 +101,21 @@ export default function FlashcardDetail({
                                           }&action=prev`
                                         : "#"
                                 }
-                                className={`border-primary border-2 text-black px-6 py-3 rounded-full ${
+                                className={`border-primary border-2 text-black px-2 py-3 rounded-full w-auto md:px-4 ${
                                     !previousFlashcardId
                                         ? "opacity-50 cursor-not-allowed"
                                         : ""
                                 }`}
                                 disabled={!previousFlashcardId}
-                                onClick={() => setIsFlipped(false)}
                             >
                                 <FontAwesomeIcon
                                     icon={faChevronLeft}
                                     className="mr-2"
                                 />
-                                Previous
+                                Prev
                             </Link>
 
-                            <Link
-                                replace
-                                preserveScroll
-                                as="button"
-                                method="get"
-                                href={
-                                    nextFlashcardId
-                                        ? `/flashcards/${chapterId}/${
-                                              flashcard.id
-                                          }?complete=true&accorditionIndex=${
-                                              chapterId - 1
-                                          }`
-                                        : "#"
-                                }
-                                className="bg-green-500 text-white px-6 py-3 rounded-full"
-                                onClick={() => setIsFlipped(false)}
-                            >
-                                <FontAwesomeIcon icon={faCheck} /> Complete
-                            </Link>
-
+                            {/* Complete Button */}
                             <Link
                                 replace
                                 preserveState
@@ -154,13 +131,37 @@ export default function FlashcardDetail({
                                           }`
                                         : "#"
                                 }
-                                className={`border-primary border-2 text-black px-6 py-3 rounded-full flex items-center ${
+                                className="bg-green-500 text-white px-2 py-3 rounded-full  w-auto md:px-4"
+                            >
+                                <FontAwesomeIcon
+                                    icon={faCheck}
+                                    className="mr-2"
+                                />
+                                Complete
+                            </Link>
+
+                            {/* Next Button */}
+                            <Link
+                                replace
+                                preserveState
+                                preserveScroll
+                                as="button"
+                                method="get"
+                                href={
+                                    nextFlashcardId
+                                        ? `/flashcards/${chapterId}/${
+                                              flashcard.id
+                                          }?complete=true&accorditionIndex=${
+                                              chapterId - 1
+                                          }`
+                                        : "#"
+                                }
+                                className={`border-primary border-2 text-black px-2 py-3 rounded-full flex items-center w-auto md:px-4 ${
                                     !nextFlashcardId
                                         ? "opacity-50 cursor-not-allowed"
                                         : ""
                                 }`}
                                 disabled={!nextFlashcardId}
-                                onClick={() => setIsFlipped(false)}
                             >
                                 Next
                                 <FontAwesomeIcon

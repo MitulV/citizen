@@ -228,7 +228,7 @@ export default function Premium({ auth }) {
 
                                         <div className="flex items-left mt-2">
                                             <img
-                                                src="/images/review 3.png"
+                                                src="/images/review 3.webp"
                                                 alt="Profile Picture"
                                                 className="w-12 h-12 rounded-full mr-2"
                                             />
@@ -262,7 +262,7 @@ export default function Premium({ auth }) {
 
                                         <div className="flex items-left mb-2 mt-2">
                                             <img
-                                                src="/images/review 2.png"
+                                                src="/images/review 2.webp"
                                                 alt="Profile Picture"
                                                 className="w-12 h-12 rounded-full mr-2"
                                             />
@@ -296,7 +296,7 @@ export default function Premium({ auth }) {
 
                                         <div className="flex items-left mb-2">
                                             <img
-                                                src="/images/review 1.png"
+                                                src="/images/review 1.webp"
                                                 alt="Profile Picture"
                                                 className="w-12 h-12 rounded-full mr-2"
                                             />
@@ -577,7 +577,7 @@ export default function Premium({ auth }) {
 
                                 <div className="flex items-left mt-2">
                                     <img
-                                        src="/images/1pass.png"
+                                        src="/images/person review 1 .webp"
                                         alt="Profile Picture"
                                         className="w-12 h-12 rounded-full mr-2"
                                     />
@@ -611,7 +611,7 @@ export default function Premium({ auth }) {
 
                                 <div className="flex items-left mb-2 mt-2">
                                     <img
-                                        src="/images/p-2.png"
+                                        src="/images/person review 2.webp"
                                         alt="Profile Picture"
                                         className="w-12 h-12 rounded-full mr-2"
                                     />
@@ -644,7 +644,7 @@ export default function Premium({ auth }) {
 
                                 <div className="flex items-left mb-2">
                                     <img
-                                        src="/images/p-3.png"
+                                        src="/images/person review 3.webp"
                                         alt="Profile Picture"
                                         className="w-12 h-12 rounded-full mr-2"
                                     />
@@ -680,7 +680,7 @@ export default function Premium({ auth }) {
 
                                 <div className="flex items-left mt-2">
                                     <img
-                                        src="/images/p4.png"
+                                        src="/images/persion review 4.webp"
                                         alt="Profile Picture"
                                         className="w-12 h-12 rounded-full mr-2"
                                     />
@@ -713,7 +713,7 @@ export default function Premium({ auth }) {
 
                                 <div className="flex items-left mb-2 mt-2">
                                     <img
-                                        src="/images/p-5.jpg"
+                                        src="/images/person review 5.webp"
                                         alt="Profile Picture"
                                         className="w-12 h-12 rounded-full mr-2"
                                     />
@@ -746,7 +746,7 @@ export default function Premium({ auth }) {
 
                                 <div className="flex items-left mb-2">
                                     <img
-                                        src="/images/p6.jpg"
+                                        src="/images/person review 6.webp"
                                         alt="Profile Picture"
                                         className="w-12 h-12 rounded-full mr-2"
                                     />
@@ -959,18 +959,18 @@ export default function Premium({ auth }) {
                         ONE CHAPTER AT A TIME
                     </p>
 
-                    <h2 className="text-2xl md:text-5xl font-bold mb-2 text-center text-white mt-2 md:mt-6 lg:mt-2 px-2 md:px-10 sm:px-60">
+                    <h2 className="text-2xl md:text-5xl font-bold mb-2 text-center text-white mt-2 md:mt-6 lg:mt-2 px-2 ">
                         850+ Practice Questions and Answers
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12">
                         {/* Left Column */}
 
-                        <div className="hidden sm:flex justify-center">
+                        <div className="flex justify-center p-4">
                             <img
                                 src="/images/chapter test mobile.webp"
-                                alt="Image"
-                                className="w-[627px] h-[500px] rounded-2xl"
+                                alt="Responsive Image"
+                                className="w-full max-w-[627px] h-auto max-h-[500px] rounded-xl"
                             />
                         </div>
 
@@ -1005,13 +1005,6 @@ export default function Premium({ auth }) {
                                     concepts and information while you study.
                                 </p>
                             </div>
-                            <div className="block sm:block md:hidden lg:hidden xl:hidden mb-10">
-                                <img
-                                    src="/images/practise test question.webp"
-                                    alt="Image"
-                                    className="w-[627px] h-[500px] rounded-2xl"
-                                />
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -1029,7 +1022,7 @@ export default function Premium({ auth }) {
                         <div className="rounded-lg p-6 flex flex-col justify-between">
                             <div>
                                 <h3 className="text-2xl font-bold mb-4">
-                                    Canadian Map
+                                    Interactive Map
                                 </h3>
                                 <p className="text-gray-600 text-lg mb-8">
                                     Explore Canada’s regions, provinces, and

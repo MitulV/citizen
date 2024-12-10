@@ -209,6 +209,7 @@ export default function Footer() {
                             target="_blank"
                             href="https://www.facebook.com/profile.php?id=61566797242585"
                             className="text-white hover:text-gray-300"
+                            aria-label="Visit our Facebook profile"
                         >
                             <svg
                                 width="24"
@@ -229,6 +230,7 @@ export default function Footer() {
                             target="_blank"
                             href="https://www.instagram.com/citizentestprep/ "
                             className="text-white hover:text-gray-300"
+                            aria-label="Visit our Instagram profile"
                         >
                             <svg
                                 width="24"
@@ -261,6 +263,7 @@ export default function Footer() {
                             target="_blank"
                             href="https://x.com/citizentestprep"
                             className="text-white hover:text-gray-300"
+                            aria-label="Visit our Twitter profile"
                         >
                             <svg
                                 width="24"
@@ -281,6 +284,7 @@ export default function Footer() {
                             target="_blank"
                             href="https://www.youtube.com/channel/UCUvM0foDlasYhSOWFey8TnA"
                             className="text-white hover:text-gray-300"
+                            aria-label="Visit our Youtube channel"
                         >
                             <svg
                                 width="24"
