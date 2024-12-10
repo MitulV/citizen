@@ -30,6 +30,7 @@ export default function Header({ user }) {
                     <button
                         onClick={toggleMenu}
                         className="bg-primary hover:bg-primary text-white px-4 rounded-full border-none p-2"
+                        aria-label="Open menu"
                     >
                         <FontAwesomeIcon icon={faBars} />
                     </button>
