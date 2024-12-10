@@ -50,18 +50,18 @@ Route::get('/sitemap.xml', function () {
     ->add(Url::create(route('glossary')))
     ->add(Url::create(route('faq')));
 
-  // Dynamic routes for Canadian Citizenship Test chapters
-  $chapters = \App\Models\Chapter::all(); // Assuming you have a Chapter model
-  foreach ($chapters as $chapter) {
-    $sitemap->add(Url::create(route('testInfoPage', ['chapter_id' => $chapter->id])));
-  }
 
-  // Dynamic routes for Practice Tests
-  $tests = \App\Models\Test::all(); // Assuming you have a Test model
-  foreach ($tests as $test) {
-    $sitemap->add(Url::create(route('testPage', ['chapterId' => $test->chapter_id])))
-      ->add(Url::create(route('practice.testStart', ['chapterId' => $test->chapter_id, 'testId' => $test->id])));
-  }
+  // $chapters = \App\Models\Chapter::all();
+  // foreach ($chapters as $chapter) {
+  //   $sitemap->add(Url::create(route('testInfoPage', ['chapter_id' => $chapter->id])));
+  // }
+
+
+  // $tests = \App\Models\Test::all();
+  // foreach ($tests as $test) {
+  //   $sitemap->add(Url::create(route('testPage', ['chapterId' => $test->chapter_id])))
+  //     ->add(Url::create(route('practice.testStart', ['chapterId' => $test->chapter_id, 'testId' => $test->id])));
+  // }
 
   return $sitemap->writeToFile(public_path('sitemap.xml'));
 });
