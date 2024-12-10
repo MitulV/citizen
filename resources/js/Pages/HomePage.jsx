@@ -582,8 +582,6 @@ export default function HomePage({ auth, chapters }) {
                                 src="/images/2025 discover canada.webp"
                                 alt="Image Description"
                                 className="w-full max-w-md h-auto sm:max-w-sm md:max-w-md lg:max-w-md rounded-lg"
-                                width="500" // Adjust based on your design needs
-                                height="auto"
                             />
                         </div>
 
@@ -683,8 +681,6 @@ export default function HomePage({ auth, chapters }) {
                                     src="/images/passing test (1).webp"
                                     alt="Citizenship Test Preparation"
                                     className="w-full max-w-[500px] h-auto max-h-[500px] rounded-lg"
-                                    width="500"
-                                    height="500"
                                 />
                             </div>
                         </div>
