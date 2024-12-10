@@ -62,7 +62,7 @@ export default function HomePage({ auth, chapters }) {
                                 </span>
                             </h1>
                         </div>
-                        <div className="container mx-auto  mt-4 sm:mt-8 px-6 md:px-28 lg:px-32   xl:px-44">
+                        <div className="hidden md:block lg:block container mx-auto  mt-4 sm:mt-8 px-6 md:px-28 lg:px-32 xl:px-44">
                             <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl font-normal leading-6 sm:leading-8 tracking-tight text-center text-gray-500 ">
                                 Prepare for the Canadian Citizenship Test with
                                 our comprehensive resources! Access 850+
@@ -70,6 +70,15 @@ export default function HomePage({ auth, chapters }) {
                                 guides, dates, map and more.
                             </p>
                         </div>
+                        <div className="md:hidden lg:hidden container mx-auto mt-4 px-6">
+                            <p className="text-base sm:text-lg font-normal leading-6 tracking-tight text-center text-gray-500">
+                                Prepare for the Canadian Citizenship Test with
+                                our comprehensive resources! Access 850+
+                                practice questions, 450+ flashcards, study
+                                guides, dates, map, and more.
+                            </p>
+                        </div>
+
                         <div className="container mx-auto px-4 mt-4 sm:mt-8 flex justify-center">
                             <Link
                                 as="button"

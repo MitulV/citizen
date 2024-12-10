@@ -10,9 +10,6 @@ export default {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
         './resources/js/**/*.jsx',
-        './resources/js/**/*.js', // Include JS files if used
-        './resources/js/**/*.tsx', // Include TSX files if used
-        './resources/js/**/*.ts', // Include TS files if used
         flowbite.content(),
     ],
 
@@ -25,7 +22,7 @@ export default {
                 greenStar: '#00b67a',
                 primary:'#FE753E',
                 secondary: '#5459E8',
-            },
+              },
         },
     },
 
