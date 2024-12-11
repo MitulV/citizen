@@ -28,27 +28,27 @@ Route::get('/sitemap.xml', function () {
 
   $sitemap = Sitemap::create()
     ->add(Url::create(route('homePage')))
-    ->add(Url::create(route('about')))
-    ->add(Url::create(route('contact')))
-    ->add(Url::create(route('privacyPolicy')))
-    ->add(Url::create(route('terms')))
-    ->add(Url::create(route('refund')))
-    ->add(Url::create(route('faqs')))
     ->add(Url::create(route('premiumPage')))
     ->add('/canadian-citizenship-test-practise')
+    ->add(Url::create(route('about')))
+    ->add(Url::create(route('terms')))
+    ->add(Url::create(route('privacyPolicy')))
+    ->add(Url::create(route('refund')))
+    ->add(Url::create(route('contact')))
+    ->add(Url::create(route('faqs')))
     ->add('/login');
 
   // Add static routes
-  $sitemap->add(Url::create(route('createTopic.create')))
-    ->add(Url::create(route('createTopic.edit')))
-    ->add(Url::create(route('flashcard')))
-    ->add(Url::create(route('cheatSheets')))
-    ->add(Url::create(route('importantPeople')))
-    ->add(Url::create(route('importantDates')))
-    ->add(Url::create(route('govQuestions')))
-    ->add(Url::create(route('map')))
-    ->add(Url::create(route('glossary')))
-    ->add(Url::create(route('faq')));
+  // $sitemap->add(Url::create(route('createTopic.create')))
+  //   ->add(Url::create(route('createTopic.edit')))
+  //   ->add(Url::create(route('flashcard')))
+  //   ->add(Url::create(route('cheatSheets')))
+  //   ->add(Url::create(route('importantPeople')))
+  //   ->add(Url::create(route('importantDates')))
+  //   ->add(Url::create(route('govQuestions')))
+  //   ->add(Url::create(route('map')))
+  //   ->add(Url::create(route('glossary')))
+  //   ->add(Url::create(route('faq')));
 
 
   // $chapters = \App\Models\Chapter::all();
