@@ -384,7 +384,7 @@ export default function TestStart({
                         {/* Buttons outside the main right div, only visible on large screens */}
                         <div className="hidden lg:flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 lg:justify-end py-8">
                             <Link
-                                href={route("homePage", {})}
+                                href={route("practice.test", {})}
                                 as="button"
                                 className="bg-white text-black border border-primary px-6 py-2 rounded-full flex-1 flex items-center justify-center"
                             >
