@@ -152,7 +152,7 @@ export default function ChapterTestPanel({
                                     ))}
                                 </div>
                             </AccordionBody>
-                            <hr className="block sm:hidden"></hr>
+                            <hr></hr>
                         </Accordion>
                     ))}
                 </Menu>

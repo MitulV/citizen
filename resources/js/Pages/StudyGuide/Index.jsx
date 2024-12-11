@@ -98,6 +98,8 @@ export default function Index({ auth, chapters }) {
                                                         topic.id
                                                             ? `/${topic.id}`
                                                             : ""
+                                                    }?accorditionIndex=${
+                                                        chapter.id - 1
                                                     }`}
                                                     key={topic.id}
                                                 >
@@ -188,6 +190,8 @@ export default function Index({ auth, chapters }) {
                                                         topic.id
                                                             ? `/${topic.id}`
                                                             : ""
+                                                    }?accorditionIndex=${
+                                                        chapter.id - 1
                                                     }`}
                                                     key={topic.id}
                                                 >

@@ -26,7 +26,7 @@ export default function CheatSheetPanel({ collapsed }) {
                         },
                     }}
                 >
-                    <Accordion>
+                    <Accordion className="border-0">
                         <Accordion.Panel>
                             <Accordion.Content>
                                 <Link
@@ -40,6 +40,7 @@ export default function CheatSheetPanel({ collapsed }) {
                                 >
                                     Important People
                                 </Link>
+                                <hr></hr>
                                 <Link
                                     replace
                                     href={route("importantDates")}
@@ -51,6 +52,7 @@ export default function CheatSheetPanel({ collapsed }) {
                                 >
                                     Important Dates
                                 </Link>
+                                <hr></hr>
                                 <Link
                                     replace
                                     href={route("govQuestions")}
@@ -62,6 +64,7 @@ export default function CheatSheetPanel({ collapsed }) {
                                 >
                                     Government Questions
                                 </Link>
+                                <hr></hr>
                                 <Link
                                     replace
                                     href={route("map")}
@@ -73,6 +76,7 @@ export default function CheatSheetPanel({ collapsed }) {
                                 >
                                     Interactive Map
                                 </Link>
+                                <hr></hr>
                                 <Link
                                     replace
                                     href={route("glossary")}
@@ -84,6 +88,7 @@ export default function CheatSheetPanel({ collapsed }) {
                                 >
                                     Glossary
                                 </Link>
+                                <hr></hr>
                                 <Link
                                     replace
                                     href={route("faq")}
@@ -95,6 +100,7 @@ export default function CheatSheetPanel({ collapsed }) {
                                 >
                                     Frequently Asked Questions
                                 </Link>
+                                <hr></hr>
                             </Accordion.Content>
                         </Accordion.Panel>
                     </Accordion>

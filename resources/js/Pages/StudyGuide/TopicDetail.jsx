@@ -115,9 +115,7 @@ export default function TopicDetail({
                                 method="get"
                                 href={
                                     previousTopicId
-                                        ? `/guide/${chapterId}/${
-                                              topic.id
-                                          }?accorditionIndex=${
+                                        ? `/guide/${chapterId}/${previousTopicId}?accorditionIndex=${
                                               chapterId - 1
                                           }&action=prev`
                                         : "#"
@@ -133,7 +131,7 @@ export default function TopicDetail({
                                     icon={faChevronLeft}
                                     className="mr-2"
                                 />
-                                Previous
+                                Prev
                             </Link>
 
                             {/* Complete Button */}

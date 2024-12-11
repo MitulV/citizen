@@ -75,6 +75,8 @@ class StudyGuidesController extends Controller
           }
         }
 
+        $previousTopicId = $previousTopic ? $previousTopic->id : null;
+
         // Fetch chapters with their topics and users for rendering
         $chapters = Chapter::where('step', 2)
           ->with('topics.users')
@@ -103,9 +105,9 @@ class StudyGuidesController extends Controller
 
         return Inertia::render('StudyGuide/TopicDetail', [
           'chapters' => $chapters,
-          'topic' => $previousTopic,
+          'topic' => $currentTopic,
           'chapterId' => $chapterId,
-          'previousTopicId' => $previousTopic ? $previousTopic->id : null,
+          'previousTopicId' =>  $previousTopicId,
           'nextTopicId' => $currentTopic ? $currentTopic->id : null,
           'accorditionIndex' => $chapterId - 1,
         ]);
