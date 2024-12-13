@@ -91,13 +91,16 @@ class PracticeTestsController extends Controller
       ->where('id', '>', $testId)
       ->first();
 
-    $latestTest = $user->tests()->orderBy('pivot_updated_at', 'desc')->first();
-    $latestScore =  '-';
-    if ($latestTest) {
-      $totalCorrect = $latestTest->pivot->total_correct;
-      $latestScore = round(($totalCorrect / 20) * 100) . '%';
-    }
+    $latestResult = $user->tests()
+      ->where('test_id', $testId) // Filter by the specific test
+      ->orderBy('pivot_updated_at', 'desc') // Order by the latest attempt
+      ->first();
 
+    $latestScore =  '-';
+    if ($latestResult) {
+      $totalCorrect = $latestResult->pivot->total_correct ?? 0; // Get total correct answers
+      $latestScore = round(($totalCorrect / 15) * 100) . '%'; // Calculate the percentage score
+    }
     return Inertia::render('PracticeTest/Info', [
       'chapters' => $chapters,
       'test' => $test,

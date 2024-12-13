@@ -34,6 +34,15 @@ export default function GovQuestions({ auth }) {
                         on a federal, provincial/territorial, and/or municipal
                         level. Please make a note of all the answers below.
                     </p>
+                    <p>
+                        Important Notice: The information provided below is
+                        accurate as of December 9, 2024. Please note that the
+                        content on this page may not be regularly updated, and
+                        it is important to verify the information using official
+                        and up-to-date resources before relying on it for any
+                        official purposes, such as preparing for the Canadian
+                        Citizenship Test.
+                    </p>
                 </div>
 
                 {/* Federal Government Table */}
@@ -113,7 +122,13 @@ export default function GovQuestions({ auth }) {
                                         parties and leaders:
                                     </td>
                                     <td className="py-4 px-4 border border-black">
-                                        Find out
+                                        <a
+                                            className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+                                            href="https://www.ourcommons.ca/members/en/house-officers"
+                                            target="_blank"
+                                        >
+                                            Find out
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr className="bg-white">
@@ -122,7 +137,13 @@ export default function GovQuestions({ auth }) {
                                         Ottawa:
                                     </td>
                                     <td className="py-4 px-4 border border-black">
-                                        Find out by typing your postal code
+                                        <a
+                                            className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+                                            href="https://www.ourcommons.ca/members/en"
+                                            target="_blank"
+                                        >
+                                            Find out by typing your postal code
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr className="bg-gray-100">
@@ -130,7 +151,13 @@ export default function GovQuestions({ auth }) {
                                         Your federal electoral district:
                                     </td>
                                     <td className="py-4 px-4 border border-black">
-                                        Find out by typing your postal code
+                                        <a
+                                            className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+                                            href="https://www.elections.ca/scripts/vis/FindED?L=e&PAGEID=20 "
+                                            target="_blank"
+                                        >
+                                            Find out by typing your postal code
+                                        </a>
                                     </td>
                                 </tr>
                             </tbody>

@@ -148,12 +148,10 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href={route("testInfoPage", {
-                                        chapter_id: 12,
-                                    })}
+                                    href={route("practice.test")}
                                     className="text-gray-500"
                                 >
-                                    Diagnostic Test
+                                    Chapter Tests
                                 </a>
                             </li>
                             <li>
