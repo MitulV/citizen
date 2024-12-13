@@ -81,6 +81,8 @@ export default function Index({ auth, chapters }) {
                                                     chapter.first_flashcard_id
                                                         ? `/${chapter.first_flashcard_id}`
                                                         : ""
+                                                }?accorditionIndex=${
+                                                    chapter.id - 1
                                                 }`}
                                                 key={chapter.first_flashcard_id}
                                             >
@@ -158,6 +160,8 @@ export default function Index({ auth, chapters }) {
                                                     chapter.first_flashcard_id
                                                         ? `/${chapter.first_flashcard_id}`
                                                         : ""
+                                                }?accorditionIndex=${
+                                                    chapter.id - 1
                                                 }`}
                                                 key={chapter.first_flashcard_id}
                                             >

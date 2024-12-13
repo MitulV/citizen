@@ -85,6 +85,8 @@ export default function Index({ auth, chapters }) {
                                                         test.id
                                                             ? `/${test.id}`
                                                             : ""
+                                                    }?accorditionIndex=${
+                                                        chapter.id - 1
                                                     }`}
                                                     key={test.id}
                                                 >
@@ -171,6 +173,8 @@ export default function Index({ auth, chapters }) {
                                                         test.id
                                                             ? `/${test.id}`
                                                             : ""
+                                                    }?accorditionIndex=${
+                                                        chapter.id - 1
                                                     }`}
                                                     key={test.id}
                                                 >

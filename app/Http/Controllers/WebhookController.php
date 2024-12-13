@@ -20,7 +20,7 @@ class WebhookController extends Controller
 
     $payload = $request->getContent();
     $sig_header = $request->header('Stripe-Signature');
-    $endpoint_secret = env('STRIPE_WEBHOOK_SECRET_KEY');
+    $endpoint_secret = config('services.stripe.webhook_secret_key');
 
     try {
       $event = Webhook::constructEvent(

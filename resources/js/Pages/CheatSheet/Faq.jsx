@@ -40,7 +40,7 @@ export default function Faq({ auth }) {
                             Who’s qualified to take the Canadian Citizenship
                             Test?
                         </AccordionHeader>
-                        <AccordionBody>
+                        <AccordionBody className="text-base">
                             Anybody between the ages of 18-54 years at the time
                             of applying is qualified to take the citizenship
                             test. The test is used to determine if one has
@@ -61,7 +61,7 @@ export default function Faq({ auth }) {
                         <AccordionHeader onClick={() => handleOpen(2)}>
                             Is the Canadian Citizenship Test difficult?
                         </AccordionHeader>
-                        <AccordionBody>
+                        <AccordionBody className="text-base">
                             The test covers various subjects and topics, which
                             are found in the study guide titled Discover Canada:
                             the (rights and responsibilities) of citizenship.
@@ -83,7 +83,7 @@ export default function Faq({ auth }) {
                             After applying for Citizenship, how long does it
                             take before you do the Citizenship Test?
                         </AccordionHeader>
-                        <AccordionBody>
+                        <AccordionBody className="text-base">
                             The time it takes between submitting the application
                             and doing the Canadian citizenship test varies
                             depending on individual applications. For instance,
@@ -108,7 +108,7 @@ export default function Faq({ auth }) {
                             Where can I find test questions to help me prepare
                             for the Citizenship Test?
                         </AccordionHeader>
-                        <AccordionBody>
+                        <AccordionBody className="text-base">
                             CitizenTest has over 600+ test questions to get you
                             ready for exam day.
                         </AccordionBody>
@@ -121,7 +121,7 @@ export default function Faq({ auth }) {
                         <AccordionHeader onClick={() => handleOpen(5)}>
                             What happens if I fail the Citizenship Test?
                         </AccordionHeader>
-                        <AccordionBody>
+                        <AccordionBody className="text-base">
                             If you failed the official Canadian Citizenship
                             Test, IRCC will arrange for you to take another test
                             if you still meet the criteria for citizenship.
@@ -144,7 +144,7 @@ export default function Faq({ auth }) {
                             What happens if I failed to attend my appointment
                             with IRCC? Can it be rescheduled?
                         </AccordionHeader>
-                        <AccordionBody>
+                        <AccordionBody className="text-base">
                             Yes. If one is not available on the time and date of
                             the appointment, you can write a letter with reasons
                             why you can’t attend. You should send it to the IRCC
@@ -171,7 +171,7 @@ export default function Faq({ auth }) {
                             How can I know if I passed the Canadian Citizenship
                             Test?
                         </AccordionHeader>
-                        <AccordionBody>
+                        <AccordionBody className="text-base">
                             You will receive the results of the test just after
                             you take it. If you pass the test and meet the
                             requirements of being a citizen, you may receive the
@@ -201,7 +201,7 @@ export default function Faq({ auth }) {
                         <AccordionHeader onClick={() => handleOpen(8)}>
                             What is the format of the citizenship test?
                         </AccordionHeader>
-                        <AccordionBody>
+                        <AccordionBody className="text-base">
                             The citizenship test is a multiple-choice exam
                             consisting of 20 questions. Test takers are given 30
                             minutes to complete the test.
@@ -215,7 +215,7 @@ export default function Faq({ auth }) {
                         <AccordionHeader onClick={() => handleOpen(9)}>
                             What is the pass mark for the citizenship test?
                         </AccordionHeader>
-                        <AccordionBody>
+                        <AccordionBody className="text-base">
                             To pass the citizenship test, test takers must
                             answer at least 15 out of 20 questions correctly, or
                             a 75% pass mark.
@@ -230,7 +230,7 @@ export default function Faq({ auth }) {
                             Can I take the citizenship test in my native
                             language?
                         </AccordionHeader>
-                        <AccordionBody>
+                        <AccordionBody className="text-base">
                             Test takers have the option of taking the
                             citizenship test in one of the 20 languages that are
                             supported by the test. However, test takers must

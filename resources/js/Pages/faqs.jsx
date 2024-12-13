@@ -36,7 +36,7 @@ export default function Faqs({}) {
                     <AccordionHeader onClick={() => handleOpen(1)}>
                         Who can take the Canadian Citizenship Test?
                     </AccordionHeader>
-                    <AccordionBody>
+                    <AccordionBody className="text-base">
                         Anyone aged 18 to 54 when they apply for citizenship is
                         required to take the citizenship test. This test checks
                         if you know enough about Canada and understand the
@@ -55,7 +55,7 @@ export default function Faqs({}) {
                     <AccordionHeader onClick={() => handleOpen(2)}>
                         Is the Canadian Citizenship Test hard?
                     </AccordionHeader>
-                    <AccordionBody>
+                    <AccordionBody className="text-base">
                         The test is based on the Discover Canada guide, which
                         explains Canadian history, values, institutions, and the
                         rights and responsibilities of citizenship. If you study
@@ -74,7 +74,7 @@ export default function Faqs({}) {
                     <AccordionHeader onClick={() => handleOpen(3)}>
                         How long after applying will I take the test?
                     </AccordionHeader>
-                    <AccordionBody>
+                    <AccordionBody className="text-base">
                         The time between applying and taking the test depends on
                         how quickly your application is processed. You will
                         receive an email with the test date and location. Check
@@ -91,7 +91,7 @@ export default function Faqs({}) {
                     <AccordionHeader onClick={() => handleOpen(4)}>
                         What happens if I fail the citizenship test?
                     </AccordionHeader>
-                    <AccordionBody>
+                    <AccordionBody className="text-base">
                         If you fail the first test, you can retake it in 4 to 8
                         weeks (this timing may vary). If you fail a second time,
                         you will need to attend a hearing with a citizenship
@@ -108,7 +108,7 @@ export default function Faqs({}) {
                     <AccordionHeader onClick={() => handleOpen(5)}>
                         What if I miss my appointment with IRCC?
                     </AccordionHeader>
-                    <AccordionBody>
+                    <AccordionBody className="text-base">
                         If you can’t attend your appointment, inform IRCC as
                         soon as possible by writing to them. You can send your
                         request to reschedule by mail, using the Web form, or
@@ -127,7 +127,7 @@ export default function Faqs({}) {
                     <AccordionHeader onClick={() => handleOpen(6)}>
                         How do I know if I passed the test?
                     </AccordionHeader>
-                    <AccordionBody>
+                    <AccordionBody className="text-base">
                         You will get your results immediately after taking the
                         test. If you pass and meet all the other requirements,
                         you may receive your citizenship ceremony date at the
@@ -148,7 +148,7 @@ export default function Faqs({}) {
                     <AccordionHeader onClick={() => handleOpen(7)}>
                         What is the format of the citizenship test?
                     </AccordionHeader>
-                    <AccordionBody>
+                    <AccordionBody className="text-base">
                         The test has 20 multiple-choice questions, and you have
                         30 minutes to complete it.
                     </AccordionBody>
@@ -161,7 +161,7 @@ export default function Faqs({}) {
                     <AccordionHeader onClick={() => handleOpen(8)}>
                         What score do I need to pass?
                     </AccordionHeader>
-                    <AccordionBody>
+                    <AccordionBody className="text-base">
                         You must answer at least 15 out of 20 questions
                         correctly (75%) to pass.
                     </AccordionBody>
@@ -174,7 +174,7 @@ export default function Faqs({}) {
                     <AccordionHeader onClick={() => handleOpen(9)}>
                         Can I take the test in my native language?
                     </AccordionHeader>
-                    <AccordionBody>
+                    <AccordionBody className="text-base">
                         You can take the test in one of the 20 supported
                         languages. However, to become a Canadian citizen, you
                         also need to show basic communication skills in English

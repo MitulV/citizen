@@ -82,6 +82,7 @@ class FlashcardController extends Controller
           }
         }
 
+        $previousFlashcardId = $previousFlashcard ? $previousFlashcard->id : null;
         // Fetch chapters with their topics and users for rendering
         $chapters = Chapter::where('step', 2)
           ->with('topics.users')
@@ -110,11 +111,11 @@ class FlashcardController extends Controller
 
         return Inertia::render('Flashcard/FlashcardDetail', [
           'chapters' => $chapters,
-          'flashcard' => $previousFlashcard,
+          'flashcard' => $currentFlashcard,
           'chapterId' => $chapterId,
-          'previousFlashcardId' => $previousFlashcard ? $previousFlashcard->id : null,
+          'previousFlashcardId' => $previousFlashcardId,
           'nextFlashcardId' => $currentFlashcard ? $currentFlashcard->id : null,
-          'accorditionIndex' => $accorditionIndex
+          'accorditionIndex' => $chapterId - 1
         ]);
       }
     }

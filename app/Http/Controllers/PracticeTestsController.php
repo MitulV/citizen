@@ -46,6 +46,7 @@ class PracticeTestsController extends Controller
 
   public function testList(Request $request, $chapterId, $testId = null)
   {
+
     $user = Auth::user();
 
     $accorditionIndex = $request->has('accorditionIndex') ? $request->accorditionIndex : 0;
@@ -54,29 +55,29 @@ class PracticeTestsController extends Controller
       ->with('tests.users')
       ->get();
 
-    foreach ($chapters as $chapter) {
+    foreach ($chapters as $MyChapter) {
       $allCompleted = true;
-      foreach ($chapter->tests as $test) {
-        $userTest = $test->users->where('id', $user->id)->first();
+      foreach ($MyChapter->tests as $MyTest) {
+        $userTest = $MyTest->users->where('id', $user->id)->first();
         if ($userTest) {
-          $test->status = $userTest->pivot->status;
+          $MyTest->status = $userTest->pivot->status;
         } else {
-          $test->status = 'not_attempted';
+          $MyTest->status = 'not_attempted';
           $allCompleted = false; // If any test is not attempted, the chapter is not fully completed
         }
 
-        if ($test->status !== 'completed') {
+        if ($MyTest->status !== 'completed') {
           $allCompleted = false; // If any test is not completed, the chapter is not fully completed
         }
 
-        unset($test->users); // Optional: Remove users relationship data to keep the response clean
+        unset($MyTest->users); // Optional: Remove users relationship data to keep the response clean
       }
-      $chapter->allTestsCompleted = $allCompleted;
+      $MyChapter->allTestsCompleted = $allCompleted;
     }
 
     $currentChapter = Chapter::findOrFail($chapterId);
 
-    $testId = $currentChapter->tests()->first()->id ?? 1;
+    $testId = $testId ?? 1;
 
     $test = Test::findOrFail($testId);
 

@@ -9,6 +9,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "@inertiajs/react";
 
 export default function Footer() {
+    const currentYear = new Date().getFullYear();
     return (
         <footer className="container mx-auto  px-0 md:px-16 lg:px-8 xl:px-44 ">
             <div className="px-4 sm:px-6 md:px-8  pt-10  bg-white text-black">
@@ -197,7 +198,7 @@ export default function Footer() {
                 <div className="px-8 sm:px-14 md:px-8 lg:px-12 xl:px-4 flex flex-col sm:flex-row items-center justify-between">
                     {/* Sentence first on small screens, left side on larger screens */}
                     <p className="text-sm mx-8 tracking-wide text-center sm:text-left order-2 sm:order-none mt-2 md:mt-0">
-                        © 2024 CitizenTestPrep All rights reserved.
+                        © {currentYear} CitizenTestPrep All rights reserved.
                         <br></br>CitizenTestPrep.ca is a privately owned website
                         and is not affiliated with or operated by any
                         provincial, state, or national government agency.

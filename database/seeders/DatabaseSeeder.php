@@ -14335,7 +14335,7 @@ class DatabaseSeeder extends Seeder
             'image' => '/images/chap 13.webp',
             'name' => 'Exam Simulation',
             'title' => 'Exam Simulation',
-            'description' => 'Experience a realistic simulation of the Canadian Citizenship test that helps you build confidence and identify areas for improvement. In just 45 minutes, you can complete a full test with 20 questions, giving you a true sense of what the actual exam will be like.
+            'description' => 'Experience a realistic simulation of the Canadian Citizenship test that helps you build confidence and identify areas for improvement. In just 30 minutes, you can complete a full test with 20 questions, giving you a true sense of what the actual exam will be like.
 ',
             'questions' => 20,
             'mistakes' => 5,

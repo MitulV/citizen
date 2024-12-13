@@ -124,6 +124,41 @@ class StudyGuidesController extends Controller
         ]
       ]);
 
+      if ($topicId == 22) {
+
+        $chapters = Chapter::where('step', 2)
+          ->with('topics.users')
+          ->get();
+
+        foreach ($chapters as $chapter) {
+          $allCompleted = true;
+          foreach ($chapter->topics as $topic) {
+            $userTopic = $topic->users->where('id', $user->id)->first();
+            if ($userTopic) {
+              $topic->status = $userTopic->pivot->status;
+            } else {
+              $topic->status = 'not_attempted';
+              $allCompleted = false; // If any topic is not attempted, the chapter is not fully completed
+            }
+
+            if ($topic->status !== 'completed') {
+              $allCompleted = false; // If any topic is not completed, the chapter is not fully completed
+            }
+
+            unset($topic->users); // Optional: Remove users relationship data to keep the response clean
+          }
+          $chapter->allTopicsCompleted = $allCompleted;
+        }
+        return Inertia::render('StudyGuide/TopicDetail', [
+          'chapters' => $chapters,
+          'topic' => $currentTopic,
+          'chapterId' => $chapterId,
+          'previousTopicId' => $topicId - 1,
+          'nextTopicId' =>   null,
+          'accorditionIndex' => $accorditionIndex
+        ]);
+      }
+
       // Find the next topic
       $nextTopic = Topic::where('chapter_id', $chapterId)
         ->where('id', '>', $topicId)

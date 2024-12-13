@@ -37,11 +37,11 @@ export default function FlashcardDetail({
             >
                 <Head title="Flashcard Detail" />
                 <div
-                    className="container mx-auto px-4 flex flex-col min-h-screen lg:px-40"
+                    className="container mx-auto px-4 flex flex-col min-h-screen xl:px-40"
                     style={{ overflow: "hidden" }}
                 >
                     <div className="flex flex-col items-center">
-                        <h5 className="text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl mb-4 text-zinc-600 mt-5 lg:mt-20">
+                        <h5 className="text-base sm:text-lg md:text-lg lg:text-lg xl:text-lg text-zinc-600 mt-5 lg:mt-20 mb-20">
                             Flashcards are an excellent way to challenge
                             yourself. Guess the answer, then click to{" "}
                             <FontAwesomeIcon icon={faRotate} /> reveal the
@@ -53,32 +53,32 @@ export default function FlashcardDetail({
                             flipDirection="horizontal"
                         >
                             <div>
-                                <h2 className="text-lg py-4 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 text-zinc-600 text-end">
+                                <h2 className="text-lg  md:text-xl lg:text-xl xl:text-xl font-semibold  text-zinc-600 text-end">
                                     <FontAwesomeIcon
                                         onClick={handleClick}
                                         icon={faRotate}
                                     />
                                 </h2>
                                 {/* Front of the card */}
-                                <h2 className="text-lg py-20 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 text-zinc-600 text-center">
+                                <h2 className="text-lg   md:text-xl lg:text-xl xl:text-xl font-semibold  text-zinc-600 ">
                                     {flashcard.question}
                                 </h2>
                             </div>
 
                             <div>
                                 {/* Back of the card */}
-                                <h2 className="text-lg py-4 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 text-zinc-600 text-end">
+                                <h2 className="text-lg  md:text-xl lg:text-xl xl:text-xl font-semibold  text-zinc-600 text-end">
                                     <FontAwesomeIcon
                                         onClick={handleClick}
                                         icon={faRotate}
                                     />
                                 </h2>
-                                <h2 className="text-lg mt-20 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 text-zinc-600 text-center">
+                                <h2 className="text-xl   md:text-xl lg:text-xl xl:text-xl font-semibold  text-zinc-600 text-center">
                                     {flashcard.answer}
                                 </h2>
-                                <div className="text-3xl mt-20 font-semibold mb-4 text-zinc-600 text-left">
+                                <div className="text-xl  font-semibold mb-4 text-zinc-600 text-left xl:px-40 ">
                                     <h2 className="py-2">Explanation</h2>
-                                    <p className="text-lg text-zinc-500 ">
+                                    <p className="text-base text-zinc-500 ">
                                         {flashcard.explanation}
                                     </p>
                                 </div>
@@ -87,7 +87,7 @@ export default function FlashcardDetail({
                     </div>
                 </div>
                 <div
-                    className="sticky bottom-0 px-2 py-4 bg-white border-t"
+                    className="container mx-auto sticky bottom-0 px-2 py-4 bg-white border-t "
                     style={{ zIndex: 10 }}
                 >
                     <div className="flex flex-row md:flex-row justify-between items-center space-y-0 md:space-y-0 w-full ">
@@ -158,11 +158,13 @@ export default function FlashcardDetail({
                                     : "#"
                             }
                             className={`border-primary border-2 text-black px-2 py-3 rounded-full flex items-center w-auto md:px-4 ${
-                                !nextFlashcardId
+                                !nextFlashcardId || flashcard.id <= 368
                                     ? "opacity-50 cursor-not-allowed"
                                     : ""
                             }`}
-                            disabled={!nextFlashcardId}
+                            disabled={
+                                !nextFlashcardId || nextFlashcardId >= 368
+                            }
                         >
                             Next
                             <FontAwesomeIcon
