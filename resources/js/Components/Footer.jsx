@@ -19,7 +19,7 @@ export default function Footer() {
                             <span className="text-xl font-black leading-6">
                                 <Link href={route("homePage")}>
                                     <img
-                                        src="/images/logo.svg"
+                                        src="/images/CitizenTestPrep.svg"
                                         className="w-36 h-[1.60rem]"
                                         alt="Logo"
                                     />

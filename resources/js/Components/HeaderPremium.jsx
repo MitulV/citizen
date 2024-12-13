@@ -18,7 +18,7 @@ export default function HeaderPremium({ user }) {
                 <div className="flex items-center">
                     <Link href={route("homePage")}>
                         <img
-                            src="/images/logo.svg"
+                            src="/images/CitizenTestPrep.svg"
                             className="w-36 h-[1.60rem]"
                             alt="Logo"
                         />
