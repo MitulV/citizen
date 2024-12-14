@@ -275,7 +275,7 @@ class PracticeTestsController extends Controller
         'total_correct' => $totalCorrect,
         'total_wrong' => $totalWrong,
         'total_time_taken' => $totalTimeTaken,
-        'test_data' => json_encode($questionResults)
+        'test_data' => json_encode($questionResults),
       ]
     ]);
 
@@ -319,6 +319,7 @@ class PracticeTestsController extends Controller
       'questionResults' => $questionResults,
       'nextChapter' => $nextChapter,
       'nextTest' => $nextTest,
+      'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false
     ]);
   }
 }

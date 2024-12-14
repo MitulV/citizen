@@ -23,6 +23,10 @@ export default function Result({
     nextChapter,
     nextTest,
 }) {
+    const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
     const handleRestart = () => {
         router.post(
             `/practice-tests/${chapterId}${testId ? `/${testId}` : ""}`,
@@ -49,6 +53,8 @@ export default function Result({
                 user={auth.user}
                 isChapterPanelVisible={true}
                 chapters={chapters}
+                collapsed={collapsed}
+                toggleSidebar={toggleSidebar}
             >
                 <Head title="Premium" />
                 <section className="container mx-auto   grid grid-cols-1 lg:grid-cols-12 gap-8 p-5  px-4 md:px-16 lg:px-8 xl:px-44  ">
