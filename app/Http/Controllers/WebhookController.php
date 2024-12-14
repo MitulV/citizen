@@ -57,7 +57,7 @@ class WebhookController extends Controller
   public function handleCheckoutSession($session, $request)
   {
     Log::info('inside handleCheckoutSession');
-    Log::info('session : ', json_encode($session));
+    Log::info(json_encode($session));
 
 
     try {
@@ -92,8 +92,8 @@ class WebhookController extends Controller
             'END_DATE' => $subscription->end_date,
             'AMOUNT' => $transaction->total_amount
           ];
-          Log::info('Mail data for subscription:', json_encode($mailData));
-          Log::info('User Email:', json_encode($user->email));
+          Log::info(json_encode($mailData));
+          Log::info(json_encode($user->email));
           Mail::to($user->email)->send(new PremiumMembershipMail($mailData));
         }
 
