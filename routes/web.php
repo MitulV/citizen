@@ -122,7 +122,7 @@ Route::post('/contact-us', [ContactController::class, 'sendMail'])->name('contac
 
 Route::middleware([
   'auth',
-  App\Http\Middleware\CheckActiveSubscription::class
+  //App\Http\Middleware\CheckActiveSubscription::class
 ])->group(function () {
 
   Route::get('/guide', [StudyGuidesController::class, 'index'])->name('dashboard');
