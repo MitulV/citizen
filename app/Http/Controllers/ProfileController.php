@@ -21,6 +21,7 @@ class ProfileController extends Controller
     return Inertia::render('Profile/Edit', [
       'mustVerifyEmail' => $request->user() instanceof MustVerifyEmail,
       'status' => session('status'),
+      'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false
     ]);
   }
 
@@ -69,6 +70,6 @@ class ProfileController extends Controller
     $user = Auth::user();
     $subscriptions = $user->subscriptions()->with(['package', 'transactions'])->get();
 
-    return Inertia::render('Billing', ['subscriptions' => $subscriptions]);
+    return Inertia::render('Billing', ['subscriptions' => $subscriptions, 'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false]);
   }
 }

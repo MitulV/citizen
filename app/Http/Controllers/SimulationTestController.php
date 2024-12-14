@@ -54,7 +54,8 @@ class SimulationTestController extends Controller
         'selectedQuestionId' => $questionId,
         'selectedAnswerId' => $answerId,
         'correctAnswerId' => $question->correct_answer_id,
-        'explanation' => $question->explanation
+        'explanation' => $question->explanation,
+        'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false
       ]);
     } else {
 
@@ -81,7 +82,8 @@ class SimulationTestController extends Controller
       return Inertia::render('Simulation/SimulationTestPage', [
         'testId' => $testId,
         'question' => $question,
-        'index' => 0 // Initialize the index at 0 for the first question
+        'index' => 0, // Initialize the index at 0 for the first question
+        'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false
       ]);
     }
   }
@@ -140,6 +142,7 @@ class SimulationTestController extends Controller
       'totalTimeTaken' => $timeTaken,
       'testId' => $testId,
       'questionResults' => $questionResults,
+      'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false
     ]);
   }
 }

@@ -3,8 +3,18 @@ import DeleteUserForm from "./Partials/DeleteUserForm";
 import UpdatePasswordForm from "./Partials/UpdatePasswordForm";
 import UpdateProfileInformationForm from "./Partials/UpdateProfileInformationForm";
 import { Head } from "@inertiajs/react";
+import { useState } from "react";
 
-export default function Edit({ auth, mustVerifyEmail, status }) {
+export default function Edit({
+    auth,
+    mustVerifyEmail,
+    status,
+    collapsedFromBackend,
+}) {
+    const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
     return (
         <AuthenticatedLayout
             user={auth.user}
@@ -13,6 +23,8 @@ export default function Edit({ auth, mustVerifyEmail, status }) {
                     Profile
                 </h2>
             }
+            collapsed={collapsed}
+            toggleSidebar={toggleSidebar}
         >
             <Head title="Profile" />
 

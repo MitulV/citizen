@@ -22,7 +22,12 @@ export default function SimulationTestPage({
     correctAnswerId,
     explanation,
     auth,
+    collapsedFromBackend,
 }) {
+    const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
     const renderer = ({ minutes, seconds, completed }) => {
         if (completed) {
             const totalTimeTaken =
@@ -189,7 +194,11 @@ export default function SimulationTestPage({
 
     return (
         <>
-            <AuthenticatedLayout user={auth.user}>
+            <AuthenticatedLayout
+                user={auth.user}
+                collapsed={collapsed}
+                toggleSidebar={toggleSidebar}
+            >
                 <Head title="Premium" />
                 <section className="container mx-auto min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 p-5   px-2 md:px-16 lg:px-8 xl:px-36">
                     {/* Left Side (spans 8 columns on large screens) */}

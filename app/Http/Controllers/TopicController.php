@@ -53,7 +53,7 @@ class TopicController extends Controller
   public function edit(Request $request)
   {
     $topic = Topic::find($request->topicId);
-    return Inertia::render('EditTopic', ['topicId' => $request->topicId, 'chapterId' => $request->chapterId, 'existingContent' => $topic->content]);
+    return Inertia::render('EditTopic', ['topicId' => $request->topicId, 'chapterId' => $request->chapterId, 'existingContent' => $topic->content, 'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false]);
   }
 
   /**

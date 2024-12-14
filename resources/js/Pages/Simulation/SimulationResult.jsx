@@ -17,7 +17,12 @@ export default function SimulationResult({
     totalTimeTaken,
     testId,
     questionResults,
+    collapsedFromBackend,
 }) {
+    const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
     const handleRestart = () => {
         router.post(
             `/simulation/test/${testId}`,
@@ -38,7 +43,12 @@ export default function SimulationResult({
             : "No worries! A little more practice and you'll nail it. Complete all study guides, practice tests, and flashcards to guarantee a first-time pass!";
 
     return (
-        <AuthenticatedLayout user={auth.user} isChapterPanelVisible={false}>
+        <AuthenticatedLayout
+            user={auth.user}
+            isChapterPanelVisible={false}
+            collapsed={collapsed}
+            toggleSidebar={toggleSidebar}
+        >
             <Head title="Premium" />
             <div className="flex">
                 {/* Sidebar Component */}
