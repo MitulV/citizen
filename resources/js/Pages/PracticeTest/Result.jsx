@@ -22,6 +22,7 @@ export default function Result({
     questionResults,
     nextChapter,
     nextTest,
+    collapsedFromBackend,
 }) {
     const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
     const toggleSidebar = () => {
