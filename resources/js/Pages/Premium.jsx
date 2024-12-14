@@ -899,7 +899,7 @@ export default function Premium({ auth }) {
                         IN-DEPTH LEARNING
                     </p>
 
-                    <h2 className="text-2xl md:text-2xl lg:text-5xl font-extrabold mb-2 text-center mt-2 md:mt-6 lg:mt-2 px-5 md:px-10 lg:px-64">
+                    <h2 className="text-2xl md:text-5xl font-bold mb-2 text-center  mt-2 md:mt-6 lg:mt-2 px-2">
                         Learn Faster with Our Effective Study Guide
                     </h2>
 
@@ -966,11 +966,11 @@ export default function Premium({ auth }) {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12">
                         {/* Left Column */}
 
-                        <div className="flex justify-center p-4">
+                        <div className="flex justify-center items-center">
                             <img
                                 src="/images/chapter test mobile.webp"
                                 alt="Responsive Image"
-                                className="w-full max-w-[627px] h-auto max-h-[500px] sm:max-h-[400px] md:max-h-[350px] md:max-w-[400px] rounded-xl"
+                                className="w-full max-w-[627px] h-auto max-h-[500px] rounded-xl"
                             />
                         </div>
 

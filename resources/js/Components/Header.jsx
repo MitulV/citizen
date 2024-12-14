@@ -80,12 +80,10 @@ export default function Header({ user }) {
                                         <ul className="space-y-4 p-4">
                                             <li>
                                                 <Link
-                                                    href={route(
-                                                        "practice.test"
-                                                    )}
+                                                    href={route("testInfoPage")}
                                                     className="hover:text-primary"
                                                 >
-                                                    Chapter Tests
+                                                    Diagnostic Tests
                                                 </Link>
                                             </li>
                                             <li>
@@ -200,10 +198,10 @@ export default function Header({ user }) {
                             <ul className="space-y-4 p-4">
                                 <li>
                                     <Link
-                                        href={route("practice.test")}
+                                        href={route("testInfoPage")}
                                         className="hover:text-primary"
                                     >
-                                        Chapter Tests
+                                        Diagnostic Tests
                                     </Link>
                                 </li>
                                 <li>

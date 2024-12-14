@@ -143,7 +143,7 @@ export default function Footer() {
                                     })}
                                     className="text-gray-500"
                                 >
-                                    Practice Tests
+                                    Practice Test
                                 </a>
                             </li>
                             <li>
