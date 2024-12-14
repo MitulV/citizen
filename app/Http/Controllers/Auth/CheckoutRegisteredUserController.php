@@ -25,8 +25,15 @@ class CheckoutRegisteredUserController extends Controller
   /**
    * Display the registration view.
    */
-  public function CheckoutCreate(Request $request)
+  public function CheckoutCreate(Request $request, StripeService $stripeService)
   {
+    if (Auth::check()) {
+      $user = Auth::user();
+      $packageId = $request->packageId;
+      $url = $this->checkout($stripeService, $packageId, $user->email);
+
+      return Inertia::location($url);
+    }
     return Inertia::render('Auth/CheckoutRegister', [
       'packageId' => $request->input('packageId'),
     ]);
