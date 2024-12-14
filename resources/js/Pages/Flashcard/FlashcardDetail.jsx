@@ -21,7 +21,13 @@ export default function FlashcardDetail({
     previousFlashcardId,
     nextFlashcardId,
     accorditionIndex,
+    collapsedFromBackend,
 }) {
+    const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
+
     const [isFlipped, setIsFlipped] = useState(false);
     const handleClick = (e) => {
         e.preventDefault();
@@ -34,6 +40,8 @@ export default function FlashcardDetail({
                 isChapterPanelVisible={true}
                 chapters={chapters}
                 accorditionIndex={accorditionIndex}
+                collapsed={collapsed}
+                toggleSidebar={toggleSidebar}
             >
                 <Head title="Flashcard Detail" />
                 <div
