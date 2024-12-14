@@ -119,7 +119,7 @@ export default function HomePage({ auth, chapters }) {
                                 alt="Image 2"
                                 className="w-full md:h-full  shadow-sm  xl:ml-14 "
                             />
-                            <div className="absolute w-28 md:top-60 lg:top-80 xl:top-96  right-[-50%] lg:right-[-25%] p-2 rounded-xl shadow-lg bg-amber-400 hidden 2xl:block">
+                            <div className="absolute w-28 md:top-60 lg:top-80 xl:top-96  right-[-50%] lg:right-[-25%] p-2 rounded-xl shadow-lg bg-amber-400 hidden lg:block z-40">
                                 <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-left text-black">
                                     2391
                                 </p>
@@ -135,7 +135,7 @@ export default function HomePage({ auth, chapters }) {
                             <img
                                 src="/images/person 1.webp"
                                 alt="Image 3"
-                                className="relative lg:left-3 xl:left-24 object-cover w-full sm:w-48 sm:h-full   md:w-36 md:h-72  lg:w-44 lg:h-96 xl:w-48 rounded-b-full"
+                                className="relative lg:left-3 xl:left-24 object-cover w-full sm:w-48 sm:h-full md:w-36 md:h-72 lg:w-44 lg:h-96 xl:w-48 rounded-b-full"
                             />
                         </div>
 
@@ -147,7 +147,7 @@ export default function HomePage({ auth, chapters }) {
                                 alt="Image 4"
                                 className="relative    lg:left-4 xl:ml-0 object-cover w-full sm:w-48 sm:h-full   md:w-36 md:h-72  lg:w-44 lg:h-96 xl:w-48 rounded-b-full"
                             />
-                            <div className="absolute bottom-20 md:bottom-40 left-0 md:left-40 z-40 p-2 rounded-xl shadow-lg bg-green-300 hidden 2xl:block">
+                            <div className="absolute bottom-20 md:bottom-40 left-0 md:left-40 z-40 p-2 rounded-xl shadow-lg bg-green-300 hidden lg:block">
                                 <p className="text-xl sm:text-2xl font-bold text-center text-black">
                                     95.2%
                                 </p>
