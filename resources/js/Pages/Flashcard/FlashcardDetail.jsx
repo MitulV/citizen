@@ -128,7 +128,7 @@ export default function FlashcardDetail({
                             method="get"
                             href={
                                 nextFlashcardId
-                                    ? `/flashcards/${chapterId}/$${
+                                    ? `/flashcards/${chapterId}/${
                                           flashcard.id
                                       }?complete=true&accorditionIndex=${
                                           chapterId - 1
@@ -150,7 +150,7 @@ export default function FlashcardDetail({
                             method="get"
                             href={
                                 nextFlashcardId
-                                    ? `/flashcards/${chapterId}/$${
+                                    ? `/flashcards/${chapterId}/${
                                           flashcard.id
                                       }?complete=true&accorditionIndex=${
                                           chapterId - 1
@@ -158,7 +158,7 @@ export default function FlashcardDetail({
                                     : "#"
                             }
                             className={`border-primary border-2 text-black px-2 py-3 rounded-full flex items-center w-auto md:px-4 ${
-                                !nextFlashcardId || flashcard.id <= 368
+                                !nextFlashcardId || flashcard.id >= 368
                                     ? "opacity-50 cursor-not-allowed"
                                     : ""
                             }`}

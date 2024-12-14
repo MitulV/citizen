@@ -10,13 +10,22 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Alert } from "flowbite-react";
 
-export default function Index({ auth, chapters }) {
+export default function Index({ auth, chapters, collapsedFromBackend }) {
     const { flash } = usePage().props;
     const [message, setMessage] = useState(flash.message);
 
+    const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
+
     return (
         <>
-            <AuthenticatedLayout user={auth.user}>
+            <AuthenticatedLayout
+                user={auth.user}
+                collapsed={collapsed}
+                toggleSidebar={toggleSidebar}
+            >
                 <Head>
                     <title>
                         Study Guide - Canadian Citizenship Test -

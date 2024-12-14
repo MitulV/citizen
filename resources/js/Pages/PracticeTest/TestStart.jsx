@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Head, Link, router } from "@inertiajs/react";
+import { Head, Link, router, usePage } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCheck,
@@ -23,7 +23,12 @@ export default function TestStart({
     explanation,
     chapters,
     test,
+    collapsedFromBackend,
 }) {
+    const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
     const renderer = ({ minutes, seconds, completed }) => {
         if (completed) {
             const totalTimeTaken =
@@ -196,6 +201,8 @@ export default function TestStart({
                 user={auth.user}
                 isChapterPanelVisible={true}
                 chapters={chapters}
+                collapsed={collapsed}
+                toggleSidebar={toggleSidebar}
             >
                 <Head title="Premium" />
                 <section className="container mx-auto min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 p-5 bg-slate-100  px-2 md:px-2 lg:px-2 xl:px-10">

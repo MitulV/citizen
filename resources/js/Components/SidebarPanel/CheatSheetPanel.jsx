@@ -74,7 +74,7 @@ export default function CheatSheetPanel({ collapsed }) {
                                             : ""
                                     }`}
                                 >
-                                    Interactive Map
+                                    Canadian Map
                                 </Link>
                                 <hr></hr>
                                 <Link

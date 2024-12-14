@@ -1,10 +1,20 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head } from "@inertiajs/react";
+import { useState } from "react";
 
-export default function Glossary({ auth }) {
+export default function Glossary({ auth, collapsedFromBackend }) {
+    const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
     return (
         <>
-            <AuthenticatedLayout user={auth.user} isChapterPanelVisible={true}>
+            <AuthenticatedLayout
+                user={auth.user}
+                isChapterPanelVisible={true}
+                collapsed={collapsed}
+                toggleSidebar={toggleSidebar}
+            >
                 <Head>
                     <title>
                         Glossary - Canadian Citizenship Test - CitizenTestPrep

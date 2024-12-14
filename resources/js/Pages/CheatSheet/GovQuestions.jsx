@@ -1,9 +1,19 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head } from "@inertiajs/react";
+import { useState } from "react";
 
-export default function GovQuestions({ auth }) {
+export default function GovQuestions({ auth, collapsedFromBackend }) {
+    const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
     return (
-        <AuthenticatedLayout user={auth.user} isChapterPanelVisible={true}>
+        <AuthenticatedLayout
+            user={auth.user}
+            isChapterPanelVisible={true}
+            collapsed={collapsed}
+            toggleSidebar={toggleSidebar}
+        >
             <Head>
                 <title>
                     Government Questions - Canadian Citizenship Test -
@@ -28,13 +38,13 @@ export default function GovQuestions({ auth }) {
                     <h2 className="text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl font-semibold py-4  text-gray-600">
                         Know Your Government
                     </h2>
-                    <p className="text-lg py-4 text-gray-500 ">
+                    <p className="text-lg py-4 text-gray-500">
                         During your official Canadian Citizenship Test, you
                         might be asked questions about the Canadian government
                         on a federal, provincial/territorial, and/or municipal
                         level. Please make a note of all the answers below.
                     </p>
-                    <p>
+                    <p className="text-lg py-4 text-gray-500">
                         Important Notice: The information provided below is
                         accurate as of December 9, 2024. Please note that the
                         content on this page may not be regularly updated, and

@@ -1,6 +1,6 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head } from "@inertiajs/react";
-import React from "react";
+import React, { useState } from "react";
 import {
     Accordion,
     AccordionHeader,
@@ -16,7 +16,11 @@ import "react-vertical-timeline-component/style.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamation } from "@fortawesome/free-solid-svg-icons";
 
-export default function ImportantDates({ auth }) {
+export default function ImportantDates({ auth, collapsedFromBackend }) {
+    const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
     const exclamationIcon = {
         icon: <FontAwesomeIcon icon={faExclamation} />,
         iconStyle: { background: "rgb(81, 81, 81)", color: "#fff" },
@@ -436,7 +440,12 @@ export default function ImportantDates({ auth }) {
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
     return (
-        <AuthenticatedLayout user={auth.user} isChapterPanelVisible={true}>
+        <AuthenticatedLayout
+            user={auth.user}
+            isChapterPanelVisible={true}
+            collapsed={collapsed}
+            toggleSidebar={toggleSidebar}
+        >
             <Head>
                 <title>
                     Important Dates - Canadian Citizenship Test -

@@ -1,19 +1,29 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head } from "@inertiajs/react";
-import React from "react";
+import React, { useState } from "react";
 import {
     Accordion,
     AccordionHeader,
     AccordionBody,
 } from "@material-tailwind/react";
 
-export default function Faq({ auth }) {
+export default function Faq({ auth, collapsedFromBackend }) {
+    const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
+
     const [open, setOpen] = React.useState(0);
 
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
     return (
-        <AuthenticatedLayout user={auth.user} isChapterPanelVisible={true}>
+        <AuthenticatedLayout
+            user={auth.user}
+            isChapterPanelVisible={true}
+            collapsed={collapsed}
+            toggleSidebar={toggleSidebar}
+        >
             <Head>
                 <title>
                     Frequently Asked Questions - Canadian Citizenship Test -

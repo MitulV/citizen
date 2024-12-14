@@ -970,7 +970,7 @@ export default function Premium({ auth }) {
                             <img
                                 src="/images/chapter test mobile.webp"
                                 alt="Responsive Image"
-                                className="w-full max-w-[627px] h-auto max-h-[500px] rounded-xl"
+                                className="w-full max-w-[627px] h-auto max-h-[500px] sm:max-h-[400px] md:max-h-[350px] md:max-w-[400px] rounded-xl"
                             />
                         </div>
 

@@ -24,13 +24,9 @@ export default function AuthenticatedLayout({
     topicId,
     chapters,
     accorditionIndex,
+    collapsed = false,
+    toggleSidebar,
 }) {
-    const [collapsed, setCollapsed] = useState(false);
-
-    const toggleSidebar = () => {
-        setCollapsed(!collapsed);
-    };
-
     useEffect(() => {
         const elements = document.querySelectorAll("li.css-1t8x7v1");
         elements.forEach((element) => {
@@ -38,9 +34,7 @@ export default function AuthenticatedLayout({
         });
 
         if (window.innerWidth < 768) {
-            setCollapsed(true); // Collapse for mobile screens
-        } else {
-            setCollapsed(false); // Expand for larger screens
+            toggleSidebar(); //setCollapsed(true); // Collapse for mobile screens
         }
     }, []);
 

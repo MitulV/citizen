@@ -8,38 +8,38 @@ use Inertia\Inertia;
 
 class CheatSheetController extends Controller
 {
-  public function index()
+  public function index(Request $request)
   {
     return redirect()->route('importantPeople');
   }
 
-  public function importantPeople()
+  public function importantPeople(Request $request)
   {
-    return Inertia::render('CheatSheet/ImportantPeople', []);
+    return Inertia::render('CheatSheet/ImportantPeople', ['collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false]);
   }
 
-  public function importantDates()
+  public function importantDates(Request $request)
   {
-    return Inertia::render('CheatSheet/ImportantDates', []);
+    return Inertia::render('CheatSheet/ImportantDates', ['collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false]);
   }
 
-  public function govQuestions()
+  public function govQuestions(Request $request)
   {
-    return Inertia::render('CheatSheet/GovQuestions', []);
+    return Inertia::render('CheatSheet/GovQuestions', ['collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false]);
   }
 
-  public function map()
+  public function map(Request $request)
   {
-    return Inertia::render('CheatSheet/Map', []);
+    return Inertia::render('CheatSheet/Map', ['collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false]);
   }
 
-  public function glossary()
+  public function glossary(Request $request)
   {
-    return Inertia::render('CheatSheet/Glossary', []);
+    return Inertia::render('CheatSheet/Glossary', ['collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false]);
   }
 
-  public function faq()
+  public function faq(Request $request)
   {
-    return Inertia::render('CheatSheet/Faq', []);
+    return Inertia::render('CheatSheet/Faq', ['collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false]);
   }
 }

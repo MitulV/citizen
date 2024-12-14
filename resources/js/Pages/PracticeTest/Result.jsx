@@ -99,6 +99,8 @@ export default function Result({
                                         href={route(`testList`, {
                                             chapterId: nextChapter.id,
                                             testId: nextTest.id,
+                                            accorditionIndex:
+                                                nextChapter.id - 1,
                                         })}
                                         as="button"
                                         className="bg-primary text-white px-6 py-2 rounded-full mt-4 w-full sm:w-auto sm:ml-10"

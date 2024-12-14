@@ -1,7 +1,8 @@
-import { Head, Link } from "@inertiajs/react";
+import { Head, Link, usePage } from "@inertiajs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
+import { useState } from "react";
 
 export default function Info({
     auth,
@@ -12,12 +13,19 @@ export default function Info({
     latestScore,
     accorditionIndex,
 }) {
+    const [collapsed, setCollapsed] = useState(false);
+
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
     return (
         <AuthenticatedLayout
             user={auth.user}
             isChapterPanelVisible={true}
             chapters={chapters}
             accorditionIndex={accorditionIndex}
+            collapsed={collapsed}
+            toggleSidebar={toggleSidebar}
         >
             <Head title="Premium" />
 
@@ -88,7 +96,7 @@ export default function Info({
                                 <Link
                                     href={`/practice-tests/start/${chapterId}${
                                         test.id ? `/${test.id}` : ""
-                                    }`}
+                                    }?collapsed=${collapsed}`}
                                     method="post"
                                     as="button"
                                     className="bg-primary text-white px-8 py-2 rounded-full flex-1"

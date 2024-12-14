@@ -119,7 +119,7 @@ export default function HomePage({ auth, chapters }) {
                                 alt="Image 2"
                                 className="w-full md:h-full  shadow-sm  xl:ml-14 "
                             />
-                            <div className="absolute w-28 md:top-60 lg:top-80 xl:top-96  right-[-50%] lg:right-[-25%]  p-2 rounded-xl shadow-lg bg-amber-400">
+                            <div className="absolute w-28 md:top-60 lg:top-80 xl:top-96  right-[-50%] lg:right-[-25%] p-2 rounded-xl shadow-lg bg-amber-400 hidden 2xl:block">
                                 <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-left text-black">
                                     2391
                                 </p>
@@ -147,7 +147,7 @@ export default function HomePage({ auth, chapters }) {
                                 alt="Image 4"
                                 className="relative    lg:left-4 xl:ml-0 object-cover w-full sm:w-48 sm:h-full   md:w-36 md:h-72  lg:w-44 lg:h-96 xl:w-48 rounded-b-full"
                             />
-                            <div className="absolute bottom-20 md:bottom-40 left-0 md:left-40 z-40 p-2 rounded-xl shadow-lg bg-green-300">
+                            <div className="absolute bottom-20 md:bottom-40 left-0 md:left-40 z-40 p-2 rounded-xl shadow-lg bg-green-300 hidden 2xl:block">
                                 <p className="text-xl sm:text-2xl font-bold text-center text-black">
                                     95.2%
                                 </p>
@@ -568,7 +568,7 @@ export default function HomePage({ auth, chapters }) {
                     </div>
                 </section>
 
-                <section className="container mx-auto text-black p-16 md:p-20 bg-slate-50 px-6 md:px-16 lg:px-8  xl:px-36  ">
+                <section className="container mx-auto text-black p-10 md:p-20 bg-slate-50 px-6 md:px-16 lg:px-8 xl:px-36">
                     <p className="font-inter text-[15px] font-bold leading-[14.52px] tracking-[1px] text-center text-indigo-600 xl:mt-10 md:mt-10 mb-3">
                         LEARN FAST
                     </p>
@@ -581,7 +581,7 @@ export default function HomePage({ auth, chapters }) {
                             <img
                                 src="/images/2025 discover canada.webp"
                                 alt="Image Description"
-                                className="w-full max-w-md h-auto sm:max-w-sm md:max-w-md lg:max-w-md rounded-lg"
+                                className="w-full max-w-[400px] h-auto max-h-[500px] rounded-lg"
                             />
                         </div>
 

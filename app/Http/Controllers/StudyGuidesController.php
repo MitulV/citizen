@@ -10,7 +10,7 @@ use Inertia\Inertia;
 
 class StudyGuidesController extends Controller
 {
-  public function index()
+  public function index(Request $request)
   {
     $user = Auth::user();
 
@@ -40,7 +40,8 @@ class StudyGuidesController extends Controller
 
 
     return Inertia::render('StudyGuide/Index', [
-      'chapters' => $chapters
+      'chapters' => $chapters,
+      'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false
     ]);
   }
 
@@ -110,6 +111,7 @@ class StudyGuidesController extends Controller
           'previousTopicId' =>  $previousTopicId,
           'nextTopicId' => $currentTopic ? $currentTopic->id : null,
           'accorditionIndex' => $chapterId - 1,
+          'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false
         ]);
       }
     }
@@ -155,7 +157,8 @@ class StudyGuidesController extends Controller
           'chapterId' => $chapterId,
           'previousTopicId' => $topicId - 1,
           'nextTopicId' =>   null,
-          'accorditionIndex' => $accorditionIndex
+          'accorditionIndex' => $accorditionIndex,
+          'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false
         ]);
       }
 
@@ -217,7 +220,8 @@ class StudyGuidesController extends Controller
         'chapterId' => $chapterId,
         'previousTopicId' => $previousTopic ? $previousTopic->id : null,
         'nextTopicId' =>   $nextTopic ? $nextTopic->id : null,
-        'accorditionIndex' => $accorditionIndex
+        'accorditionIndex' => $accorditionIndex,
+        'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false
       ]);
     }
 
@@ -255,6 +259,7 @@ class StudyGuidesController extends Controller
 
 
 
+
     if (!$previousTopic && $topicId > 1) {
       // Fetch the previous chapter
       $previousChapter = Chapter::where('id', '<', $chapterId)
@@ -269,11 +274,15 @@ class StudyGuidesController extends Controller
       }
     }
 
-    $nextTopic = Topic::where('chapter_id', $chapterId)
-      ->where('id', '>', $topicId)
-      ->first();
-
-
+    if ($topic->name === "The Timeline") {
+      $nextTopic = Topic::where('chapter_id', $chapterId + 1)
+        ->where('id', '>', $topicId)
+        ->first();
+    } else {
+      $nextTopic = Topic::where('chapter_id', $chapterId)
+        ->where('id', '>', $topicId)
+        ->first();
+    }
 
     return Inertia::render('StudyGuide/TopicDetail', [
       'chapters' => $chapters,
@@ -281,7 +290,8 @@ class StudyGuidesController extends Controller
       'chapterId' => $chapterId,
       'previousTopicId' => $previousTopic ? $previousTopic->id : null,
       'nextTopicId' => $nextTopic ? $nextTopic->id : null,
-      'accorditionIndex' => $accorditionIndex
+      'accorditionIndex' => $accorditionIndex,
+      'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false
     ]);
   }
 }

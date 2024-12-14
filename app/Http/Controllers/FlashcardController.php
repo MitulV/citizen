@@ -13,7 +13,7 @@ class FlashcardController extends Controller
   /**
    * Display a listing of the resource.
    */
-  public function index()
+  public function index(Request $request)
   {
     $user = Auth::user();
 
@@ -47,7 +47,8 @@ class FlashcardController extends Controller
     }
 
     return Inertia::render('Flashcard/Index', [
-      'chapters' => $chapters
+      'chapters' => $chapters,
+      'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false
     ]);
   }
 

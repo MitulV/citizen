@@ -1,6 +1,7 @@
 import CanadaMap from "@/Components/CanadaMap";
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head } from "@inertiajs/react";
+import { useState } from "react";
 
 const MapSVG = () => {
     return (
@@ -10,13 +11,21 @@ const MapSVG = () => {
     );
 };
 
-export default function Map({ auth }) {
+export default function Map({ auth, collapsedFromBackend }) {
+    const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
     return (
-        <AuthenticatedLayout user={auth.user} isChapterPanelVisible={true}>
+        <AuthenticatedLayout
+            user={auth.user}
+            isChapterPanelVisible={true}
+            collapsed={collapsed}
+            toggleSidebar={toggleSidebar}
+        >
             <Head>
                 <title>
-                    Interactive Map - Canadian Citizenship Test -
-                    CitizenTestPrep
+                    Canadian Map - Canadian Citizenship Test - CitizenTestPrep
                 </title>
                 <meta
                     name="description"
@@ -27,7 +36,7 @@ export default function Map({ auth }) {
             {/* Main content */}
             <section className="container mx-auto px-4 py-8 sm:px-6 lg:px-8 rounded-3xl">
                 <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-600">
-                    Interactive Map
+                    Canadian Map
                 </h1>
                 <p className="text-lg text-gray-500 mt-4 mb-10"></p>
 

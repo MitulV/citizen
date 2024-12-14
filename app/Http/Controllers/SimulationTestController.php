@@ -14,9 +14,9 @@ class SimulationTestController extends Controller
   /**
    * Display a listing of the resource.
    */
-  public function index()
+  public function index(Request $request)
   {
-    return Inertia::render('Simulation/SimulationTestInfo', []);
+    return Inertia::render('Simulation/SimulationTestInfo', ['collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false]);
   }
 
   public function testPage(Request $request, $testId)

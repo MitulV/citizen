@@ -11,6 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import EditorShow from "@/Components/EditorShow";
 import TheTimeLine from "@/Components/TheTimeLine";
+import { useState } from "react";
 
 export default function TopicDetail({
     auth,
@@ -20,7 +21,12 @@ export default function TopicDetail({
     previousTopicId,
     nextTopicId,
     accorditionIndex,
+    collapsedFromBackend,
 }) {
+    const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
     return (
         <>
             <AuthenticatedLayout
@@ -28,6 +34,8 @@ export default function TopicDetail({
                 isChapterPanelVisible={true}
                 chapters={chapters}
                 accorditionIndex={accorditionIndex}
+                collapsed={collapsed}
+                toggleSidebar={toggleSidebar}
             >
                 <Head>
                     <title>

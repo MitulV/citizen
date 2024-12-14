@@ -3,11 +3,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
+import { useState } from "react";
 
-export default function SimulationTestInfo({ auth }) {
+export default function SimulationTestInfo({ auth, collapsedFromBackend }) {
+    const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
     return (
         <>
-            <AuthenticatedLayout user={auth.user}>
+            <AuthenticatedLayout
+                user={auth.user}
+                collapsed={collapsed}
+                toggleSidebar={toggleSidebar}
+            >
                 <Head>
                     <title>Free Canadian Citizenship Test Practice</title>
                     <meta

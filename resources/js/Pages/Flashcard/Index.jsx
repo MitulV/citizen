@@ -1,6 +1,6 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head, Link } from "@inertiajs/react";
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCircleCheck,
@@ -9,10 +9,18 @@ import {
     faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function Index({ auth, chapters }) {
+export default function Index({ auth, chapters, collapsedFromBackend }) {
+    const [collapsed, setCollapsed] = useState(collapsedFromBackend === "true");
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
     return (
         <>
-            <AuthenticatedLayout user={auth.user}>
+            <AuthenticatedLayout
+                user={auth.user}
+                collapsed={collapsed}
+                toggleSidebar={toggleSidebar}
+            >
                 <Head>
                     <title>
                         Flashcards - Canadian Citizenship Test - CitizenTestPrep

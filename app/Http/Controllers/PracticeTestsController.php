@@ -11,7 +11,7 @@ use Inertia\Inertia;
 
 class PracticeTestsController extends Controller
 {
-  public function index()
+  public function index(Request $request)
   {
     $user = Auth::user();
 
@@ -40,7 +40,8 @@ class PracticeTestsController extends Controller
     }
 
     return Inertia::render('PracticeTest/Index', [
-      'chapters' => $chapters
+      'chapters' => $chapters,
+      'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false
     ]);
   }
 
@@ -48,7 +49,6 @@ class PracticeTestsController extends Controller
   {
 
     $user = Auth::user();
-
     $accorditionIndex = $request->has('accorditionIndex') ? $request->accorditionIndex : 0;
 
     $chapters = Chapter::where('step', 2)
@@ -109,7 +109,7 @@ class PracticeTestsController extends Controller
       'previousTestId' => $previousTest ? $previousTest->id : null,
       'nextTestId' => $nextTest ? $nextTest->id : null,
       'latestScore' => $latestScore,
-      'accorditionIndex' => $accorditionIndex
+      'accorditionIndex' => $accorditionIndex,
     ]);
   }
 
@@ -117,6 +117,7 @@ class PracticeTestsController extends Controller
   public function testStart(Request $request, $chapterId, $testId = null)
   {
     $user = Auth::user();
+
     $chapters = Chapter::where('step', 2)
       ->with('tests.users')
       ->get();
@@ -179,7 +180,8 @@ class PracticeTestsController extends Controller
         'correctAnswerId' => $question->correct_answer_id,
         'explanation' => $question->explanation,
         'chapters' => $chapters,
-        'test' => $test
+        'test' => $test,
+        'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false
       ]);
     } else {
 
@@ -208,7 +210,8 @@ class PracticeTestsController extends Controller
         'question' => $question,
         'index' => 0, // Initialize the index at 0 for the first question
         'chapters' => $chapters,
-        'test' => $test
+        'test' => $test,
+        'collapsedFromBackend' => $request->has('collapsed') ? $request->collapsed : false
       ]);
     }
   }
