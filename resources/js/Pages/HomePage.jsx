@@ -581,7 +581,7 @@ export default function HomePage({ auth, chapters }) {
                             <img
                                 src="/images/2025 discover canada.webp"
                                 alt="Image Description"
-                                className="w-full max-w-[400px] h-auto max-h-[500px] rounded-lg"
+                                className="w-full max-w-[350px] h-auto max-h-[500px] rounded-lg"
                             />
                         </div>
 
