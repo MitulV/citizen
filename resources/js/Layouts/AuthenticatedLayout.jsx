@@ -34,7 +34,7 @@ export default function AuthenticatedLayout({
         });
 
         if (window.innerWidth < 768) {
-            toggleSidebar(); //setCollapsed(true); // Collapse for mobile screens
+            toggleSidebar();
         }
     }, []);
 
