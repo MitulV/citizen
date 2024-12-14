@@ -17,6 +17,7 @@ use App\Models\SimulationQuestion;
 use App\Models\SimulationTest;
 use Illuminate\Support\Facades\Log;
 
+
 class DatabaseSeeder extends Seeder
 {
   public function run(): void
