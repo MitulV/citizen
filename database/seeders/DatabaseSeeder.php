@@ -4400,18 +4400,7 @@ class DatabaseSeeder extends Seeder
                     'correct_answer' => 'D',
                     'explanation' => 'The British North America Act, enacted in 1867, officially made Canada a self-governing Dominion within the British Empire. It laid the foundation for Canada as an independent nation, though still linked to Britain, and is considered a crucial milestone in Canadian history.',
                   ],
-                  [
-                    'text' => 'Who were the first Europeans to reach Canada?',
-                    'answers' => [
-                      ['text' => 'English'],
-                      ['text' => 'French'],
-                      ['text' => 'Irish'],
-                      ['text' => 'Vikings'],
-                    ],
-                    'correctAnswerId' => 1202,
-                    'correct_answer' => 'D',
-                    'explanation' => 'The Vikings were the first Europeans to reach Canada around 1000 AD. They established a short-lived settlement in Newfoundland known as l\'Anse aux Meadows, which is now a UNESCO World Heritage site.',
-                  ],
+
                   [
                     'text' => 'Who declared independence in 1776 and formed the United States?',
                     'answers' => [
@@ -5597,16 +5586,6 @@ class DatabaseSeeder extends Seeder
                     'correctAnswerId' => 1422,
                     'correct_answer' => 'West Coast natives',
                     'explanation' => 'West Coast natives preserved fish by drying and smoking. Warfare was common among Aboriginal groups as they competed for land, resources, and prestige.'
-                  ],
-                  [
-                    'text' => 'Canada is a member of the United Nations (UN)',
-                    'answers' => [
-                      ['text' => 'False'],
-                      ['text' => 'True'],
-                    ],
-                    'correctAnswerId' => 1420,
-                    'correct_answer' => 'True',
-                    'explanation' => 'Canada joined international organizations such as the United Nations (UN). It participated in the UN operation defending South Korea in the Korean War (1950–53), with 500 dead and 1,000 wounded.'
                   ],
                   [
                     'text' => 'Who pioneered modern Inuit art?',
@@ -9528,33 +9507,6 @@ class DatabaseSeeder extends Seeder
                     'explanation' => 'The Royal Canadian Mounted Police (RCMP) enforce federal laws throughout Canada, and serve as the provincial police in all provinces and territories except Ontario and Quebec, as well as in some municipalities.'
                   ],
                   [
-                    'text' => 'In Canada, to which following category do the laws not apply?',
-                    'answers' => [
-                      ['text' => 'Politicians'],
-                      ['text' => 'Police'],
-                      ['text' => 'None of the above'],
-                      ['text' => 'Judges'],
-                    ],
-                    'correctAnswerId' => 2435,
-                    'correct_answer' => 'C',
-                    'explanation' => 'The law applies to everyone. No one is above the law in Canada.'
-                  ],
-                  [
-                    'text' => 'Who has the right to vote in a federal election?',
-                    'answers' => [
-                      ['text' => 'Adult Canadian citizens and permanent residents'],
-                      ['text' => 'Canadian citizens on the voters\' list'],
-                      ['text' => 'A Canadian citizen, at least 18 years old on voting day and on the voters\' list'],
-                      ['text' => 'An adult Canadian citizen'],
-                    ],
-                    'correctAnswerId' => 2439,
-                    'correct_answer' => 'C',
-                    'explanation' => 'One of the privileges of Canadian citizenship is the right to vote. You are eligible to vote in a federal election or cast a ballot in a federal referendum if you are:
-                                - a Canadian citizen; and
-                                - at least 18 years old on voting day; and
-                                - on the voters’ list.'
-                  ],
-                  [
                     'text' => 'What do Canadians vote for in a federal election?',
                     'answers' => [
                       ['text' => 'The Governor General they want to represent them in Canada'],
@@ -10815,54 +10767,6 @@ class DatabaseSeeder extends Seeder
                     'explanation' => 'The lily flower ("fleur-de-lys") was adopted by French royalty in 496 AD and became a symbol of French royalty for over 1,000 years, including during the period of New France.',
                   ],
                   [
-                    'text' => 'When did King Charles III become King?',
-                    'answers' => [
-                      ['text' => '2021'],
-                      ['text' => '1654'],
-                      ['text' => '2022'],
-                      ['text' => '1988'],
-                    ],
-
-                    'correctAnswerId' => 2795,
-                    'explanation' => 'King Charles III became King in 2022, succeeding Queen Elizabeth II as the monarch of Canada.',
-                  ],
-                  [
-                    'text' => 'When was the Official Languages Act passed?',
-                    'answers' => [
-                      ['text' => '1869'],
-                      ['text' => '1941'],
-                      ['text' => '1949'],
-                      ['text' => '1969'],
-                    ],
-
-                    'correctAnswerId' => 2800,
-                    'explanation' => 'The Official Languages Act was passed in 1969 by Parliament to establish language rights and promote bilingualism in Canada.',
-                  ],
-                  [
-                    'text' => 'Where does the red-white-red pattern on the Canadian flag come from?',
-                    'answers' => [
-                      ['text' => 'The Royal Military College in Kingston'],
-                      ['text' => 'The Royal Military College in Quebec'],
-                      ['text' => 'The British Flag'],
-                      ['text' => 'The French flag'],
-                    ],
-
-                    'correctAnswerId' => 2801,
-                    'explanation' => 'The red-white-red pattern on the Canadian flag comes from the flag of the Royal Military College in Kingston, Ontario.',
-                  ],
-                  [
-                    'text' => 'Since when has Canada been a constitutional monarchy?',
-                    'answers' => [
-                      ['text' => '1667'],
-                      ['text' => '1767'],
-                      ['text' => '1849'],
-                      ['text' => '1867'],
-                    ],
-
-                    'correctAnswerId' => 2808,
-                    'explanation' => 'Canada has been a constitutional monarchy since Confederation in 1867 during Queen Victoria’s reign.',
-                  ],
-                  [
                     'text' => 'When was the modern Canadian Flag first raised?',
                     'answers' => [
                       ['text' => '1855'],
@@ -11364,39 +11268,6 @@ class DatabaseSeeder extends Seeder
                     ],
                     'correctAnswerId' => 2945,
                     'explanation' => 'Service industries encompass a wide range of sectors including transportation, education, health care, construction, banking, communications, retail services, tourism, and government, providing diverse employment opportunities across Canada.',
-                  ],
-                  [
-                    'text' => 'How much of Canadian exports are destined for the U.S.A.?',
-                    'answers' => [
-                      ['text' => 'Over one-third'],
-                      ['text' => 'Over three-quarters'],
-                      ['text' => 'Half'],
-                      ['text' => 'Two-thirds'],
-                    ],
-                    'correctAnswerId' => 2928,
-                    'explanation' => 'Over three-quarters of Canadian exports are destined for the U.S.A., highlighting the critical importance of the economic relationship between the two countries.',
-                  ],
-                  [
-                    'text' => 'How much merchandise trade was involved within NAFTA in 2008?',
-                    'answers' => [
-                      ['text' => 'About $100 billion'],
-                      ['text' => 'Over $100 trillion'],
-                      ['text' => 'Over $1 trillion'],
-                      ['text' => 'About $500 billion'],
-                    ],
-                    'correctAnswerId' => 2933,
-                    'explanation' => 'In 2008, NAFTA facilitated over $1 trillion in merchandise trade among Canada, the United States, and Mexico, underscoring its substantial economic impact and integration.',
-                  ],
-                  [
-                    'text' => 'When was ice hockey developed in Canada?',
-                    'answers' => [
-                      ['text' => 'In the 1800s'],
-                      ['text' => 'In the 1700s'],
-                      ['text' => 'In the 1600s'],
-                      ['text' => 'In the 1900s'],
-                    ],
-                    'correctAnswerId' => 2935,
-                    'explanation' => 'Ice hockey was developed in Canada in the 1800s, becoming a beloved national sport with deep cultural significance.',
                   ],
                   [
                     'text' => 'What is the G8?',
