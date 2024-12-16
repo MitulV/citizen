@@ -14693,7 +14693,366 @@ class DatabaseSeeder extends Seeder
         throw $th;
       }
 
+      $testIDs = [16, 19, 32, 37, 39];
+      // Additional 4 Questions Added Here
+      $additionalQuestions16 = [
+        [
+          'text' => 'When did the United Empire Loyalists come to Canada?',
+          'answers' => [
+            ['text' => 'Late 1600s'],
+            ['text' => 'Early 1600s'],
+            ['text' => 'Early 1700s'],
+            ['text' => 'Late 1700s'],
+          ],
+          'correctAnswerId' => 3812,
+          'correct_answer' => 'D',
+          'explanation' => 'The United Empire Loyalists came to Canada in the late 1700s.',
+        ],
 
+        [
+          'text' => 'What happened at the Battle of the Plains of Abraham?',
+          'answers' => [
+            ['text' => 'The voyagers battled with the British for fur trading rights'],
+            ['text' => 'Americans fought the United Empire Loyalists during the American Revolution'],
+            ['text' => 'The British defeated the French marking the end of France\'s Empire in America'],
+            ['text' => 'The French defeated the British in a battle for Quebec'],
+          ],
+          'correctAnswerId' => 3815,
+          'correct_answer' => 'C',
+          'explanation' => 'In 1759, the British defeated the French in the Battle of the Plains of Abraham at Quebec City – marking the end of France’s empire in America.',
+        ],
+
+        [
+          'text' => 'What is responsible government?',
+          'answers' => [
+            ['text' => 'The government is responsible for the well-being of its people'],
+            ['text' => 'The government must take responsibility for any Act of War it decides to commit'],
+            ['text' => 'A government that is against corruption'],
+            ['text' => 'The government must resign if it loses a confidence vote in the assembly'],
+          ],
+          'correctAnswerId' => 3820,
+          'correct_answer' => 'D',
+          'explanation' => 'Responsible government means that the government must resign if it loses a confidence vote in the assembly. This is the system that Canada has today.',
+        ],
+
+        [
+          'text' => 'What outcome and significance did the War of 1812 with the USA have for Canada?',
+          'answers' => [
+            ['text' => 'Canada formed part of the United States'],
+            ['text' => 'Canada lost a lot of people in the war'],
+            ['text' => 'Canada protected its independence from the United States'],
+            ['text' => 'Canada became an independent country'],
+          ],
+          'correctAnswerId' => 3823,
+          'correct_answer' => 'C',
+          'explanation' => 'The War of 1812 with the USA ensured that Canada would protect its independence from the United States, contributing to the formation of the present-day Canada-U.S.A. border.',
+        ]
+      ];
+      foreach ($additionalQuestions16 as $questionData) {
+
+        $newQuestion = Question::create([
+          'test_id' => 16,
+          'text' => $questionData['text'],
+          'explanation' => $questionData['explanation'],
+          'correct_answer_id' => $questionData['correctAnswerId']
+        ]);
+
+        $answers = collect();
+        foreach ($questionData['answers'] as $answerData) {
+          $answers->push(Answer::create([
+            'question_id' => $newQuestion->id,
+            'text' => $answerData['text'],
+          ]));
+        }
+      }
+
+
+      $additionalQuestions19 = [
+        [
+          'text' => 'When did the United Empire Loyalists come to Canada?',
+          'answers' => [
+            ['text' => 'Late 1600s'],
+            ['text' => 'Early 1600s'],
+            ['text' => 'Early 1700s'],
+            ['text' => 'Late 1700s'],
+          ],
+          'correctAnswerId' => 3828,
+          'correct_answer' => 'D',
+          'explanation' => 'The United Empire Loyalists came to Canada in the late 1700s.',
+        ],
+
+        [
+          'text' => 'What happened at the Battle of the Plains of Abraham?',
+          'answers' => [
+            ['text' => 'The voyagers battled with the British for fur trading rights'],
+            ['text' => 'Americans fought the United Empire Loyalists during the American Revolution'],
+            ['text' => 'The British defeated the French marking the end of France\'s Empire in America'],
+            ['text' => 'The French defeated the British in a battle for Quebec'],
+          ],
+          'correctAnswerId' => 3831,
+          'correct_answer' => 'C',
+          'explanation' => 'In 1759, the British defeated the French in the Battle of the Plains of Abraham at Quebec City – marking the end of France’s empire in America.',
+        ],
+
+        [
+          'text' => 'What is responsible government?',
+          'answers' => [
+            ['text' => 'The government is responsible for the well-being of its people'],
+            ['text' => 'The government must take responsibility for any Act of War it decides to commit'],
+            ['text' => 'A government that is against corruption'],
+            ['text' => 'The government must resign if it loses a confidence vote in the assembly'],
+          ],
+          'correctAnswerId' => 3836,
+          'correct_answer' => 'D',
+          'explanation' => 'Responsible government means that the government must resign if it loses a confidence vote in the assembly. This is the system that Canada has today.',
+        ],
+
+        [
+          'text' => 'What outcome and significance did the War of 1812 with the USA have for Canada?',
+          'answers' => [
+            ['text' => 'Canada formed part of the United States'],
+            ['text' => 'Canada lost a lot of people in the war'],
+            ['text' => 'Canada protected its independence from the United States'],
+            ['text' => 'Canada became an independent country'],
+          ],
+          'correctAnswerId' => 3839,
+          'correct_answer' => 'C',
+          'explanation' => 'The War of 1812 with the USA ensured that Canada would protect its independence from the United States, contributing to the formation of the present-day Canada-U.S.A. border.',
+        ]
+      ];
+      foreach ($additionalQuestions19 as $questionData) {
+
+        $newQuestion = Question::create([
+          'test_id' => 19,
+          'text' => $questionData['text'],
+          'explanation' => $questionData['explanation'],
+          'correct_answer_id' => $questionData['correctAnswerId']
+        ]);
+
+        $answers = collect();
+        foreach ($questionData['answers'] as $answerData) {
+          $answers->push(Answer::create([
+            'question_id' => $newQuestion->id,
+            'text' => $answerData['text'],
+          ]));
+        }
+      }
+
+
+      $additionalQuestions32 = [
+        [
+          'text' => 'When did the United Empire Loyalists come to Canada?',
+          'answers' => [
+            ['text' => 'Late 1600s'],
+            ['text' => 'Early 1600s'],
+            ['text' => 'Early 1700s'],
+            ['text' => 'Late 1700s'],
+          ],
+          'correctAnswerId' => 3844,
+          'correct_answer' => 'D',
+          'explanation' => 'The United Empire Loyalists came to Canada in the late 1700s.',
+        ],
+
+        [
+          'text' => 'What happened at the Battle of the Plains of Abraham?',
+          'answers' => [
+            ['text' => 'The voyagers battled with the British for fur trading rights'],
+            ['text' => 'Americans fought the United Empire Loyalists during the American Revolution'],
+            ['text' => 'The British defeated the French marking the end of France\'s Empire in America'],
+            ['text' => 'The French defeated the British in a battle for Quebec'],
+          ],
+          'correctAnswerId' => 3847,
+          'correct_answer' => 'C',
+          'explanation' => 'In 1759, the British defeated the French in the Battle of the Plains of Abraham at Quebec City – marking the end of France’s empire in America.',
+        ],
+
+        [
+          'text' => 'What is responsible government?',
+          'answers' => [
+            ['text' => 'The government is responsible for the well-being of its people'],
+            ['text' => 'The government must take responsibility for any Act of War it decides to commit'],
+            ['text' => 'A government that is against corruption'],
+            ['text' => 'The government must resign if it loses a confidence vote in the assembly'],
+          ],
+          'correctAnswerId' => 3852,
+          'correct_answer' => 'D',
+          'explanation' => 'Responsible government means that the government must resign if it loses a confidence vote in the assembly. This is the system that Canada has today.',
+        ],
+
+        [
+          'text' => 'What outcome and significance did the War of 1812 with the USA have for Canada?',
+          'answers' => [
+            ['text' => 'Canada formed part of the United States'],
+            ['text' => 'Canada lost a lot of people in the war'],
+            ['text' => 'Canada protected its independence from the United States'],
+            ['text' => 'Canada became an independent country'],
+          ],
+          'correctAnswerId' => 3855,
+          'correct_answer' => 'C',
+          'explanation' => 'The War of 1812 with the USA ensured that Canada would protect its independence from the United States, contributing to the formation of the present-day Canada-U.S.A. border.',
+        ]
+      ];
+      foreach ($additionalQuestions32 as $questionData) {
+
+        $newQuestion = Question::create([
+          'test_id' => 32,
+          'text' => $questionData['text'],
+          'explanation' => $questionData['explanation'],
+          'correct_answer_id' => $questionData['correctAnswerId']
+        ]);
+
+        $answers = collect();
+        foreach ($questionData['answers'] as $answerData) {
+          $answers->push(Answer::create([
+            'question_id' => $newQuestion->id,
+            'text' => $answerData['text'],
+          ]));
+        }
+      }
+
+
+      $additionalQuestions37 = [
+        [
+          'text' => 'When did the United Empire Loyalists come to Canada?',
+          'answers' => [
+            ['text' => 'Late 1600s'],
+            ['text' => 'Early 1600s'],
+            ['text' => 'Early 1700s'],
+            ['text' => 'Late 1700s'],
+          ],
+          'correctAnswerId' => 3860,
+          'correct_answer' => 'D',
+          'explanation' => 'The United Empire Loyalists came to Canada in the late 1700s.',
+        ],
+
+        [
+          'text' => 'What happened at the Battle of the Plains of Abraham?',
+          'answers' => [
+            ['text' => 'The voyagers battled with the British for fur trading rights'],
+            ['text' => 'Americans fought the United Empire Loyalists during the American Revolution'],
+            ['text' => 'The British defeated the French marking the end of France\'s Empire in America'],
+            ['text' => 'The French defeated the British in a battle for Quebec'],
+          ],
+          'correctAnswerId' => 3863,
+          'correct_answer' => 'C',
+          'explanation' => 'In 1759, the British defeated the French in the Battle of the Plains of Abraham at Quebec City – marking the end of France’s empire in America.',
+        ],
+
+        [
+          'text' => 'What is responsible government?',
+          'answers' => [
+            ['text' => 'The government is responsible for the well-being of its people'],
+            ['text' => 'The government must take responsibility for any Act of War it decides to commit'],
+            ['text' => 'A government that is against corruption'],
+            ['text' => 'The government must resign if it loses a confidence vote in the assembly'],
+          ],
+          'correctAnswerId' => 3868,
+          'correct_answer' => 'D',
+          'explanation' => 'Responsible government means that the government must resign if it loses a confidence vote in the assembly. This is the system that Canada has today.',
+        ],
+
+        [
+          'text' => 'What outcome and significance did the War of 1812 with the USA have for Canada?',
+          'answers' => [
+            ['text' => 'Canada formed part of the United States'],
+            ['text' => 'Canada lost a lot of people in the war'],
+            ['text' => 'Canada protected its independence from the United States'],
+            ['text' => 'Canada became an independent country'],
+          ],
+          'correctAnswerId' => 3871,
+          'correct_answer' => 'C',
+          'explanation' => 'The War of 1812 with the USA ensured that Canada would protect its independence from the United States, contributing to the formation of the present-day Canada-U.S.A. border.',
+        ]
+      ];
+      foreach ($additionalQuestions37 as $questionData) {
+
+        $newQuestion = Question::create([
+          'test_id' => 37,
+          'text' => $questionData['text'],
+          'explanation' => $questionData['explanation'],
+          'correct_answer_id' => $questionData['correctAnswerId']
+        ]);
+
+        $answers = collect();
+        foreach ($questionData['answers'] as $answerData) {
+          $answers->push(Answer::create([
+            'question_id' => $newQuestion->id,
+            'text' => $answerData['text'],
+          ]));
+        }
+      }
+
+
+      $additionalQuestions39 = [
+        [
+          'text' => 'When did the United Empire Loyalists come to Canada?',
+          'answers' => [
+            ['text' => 'Late 1600s'],
+            ['text' => 'Early 1600s'],
+            ['text' => 'Early 1700s'],
+            ['text' => 'Late 1700s'],
+          ],
+          'correctAnswerId' => 3876,
+          'correct_answer' => 'D',
+          'explanation' => 'The United Empire Loyalists came to Canada in the late 1700s.',
+        ],
+
+        [
+          'text' => 'What happened at the Battle of the Plains of Abraham?',
+          'answers' => [
+            ['text' => 'The voyagers battled with the British for fur trading rights'],
+            ['text' => 'Americans fought the United Empire Loyalists during the American Revolution'],
+            ['text' => 'The British defeated the French marking the end of France\'s Empire in America'],
+            ['text' => 'The French defeated the British in a battle for Quebec'],
+          ],
+          'correctAnswerId' => 3879,
+          'correct_answer' => 'C',
+          'explanation' => 'In 1759, the British defeated the French in the Battle of the Plains of Abraham at Quebec City – marking the end of France’s empire in America.',
+        ],
+
+        [
+          'text' => 'What is responsible government?',
+          'answers' => [
+            ['text' => 'The government is responsible for the well-being of its people'],
+            ['text' => 'The government must take responsibility for any Act of War it decides to commit'],
+            ['text' => 'A government that is against corruption'],
+            ['text' => 'The government must resign if it loses a confidence vote in the assembly'],
+          ],
+          'correctAnswerId' => 3884,
+          'correct_answer' => 'D',
+          'explanation' => 'Responsible government means that the government must resign if it loses a confidence vote in the assembly. This is the system that Canada has today.',
+        ],
+
+        [
+          'text' => 'What outcome and significance did the War of 1812 with the USA have for Canada?',
+          'answers' => [
+            ['text' => 'Canada formed part of the United States'],
+            ['text' => 'Canada lost a lot of people in the war'],
+            ['text' => 'Canada protected its independence from the United States'],
+            ['text' => 'Canada became an independent country'],
+          ],
+          'correctAnswerId' => 3887,
+          'correct_answer' => 'C',
+          'explanation' => 'The War of 1812 with the USA ensured that Canada would protect its independence from the United States, contributing to the formation of the present-day Canada-U.S.A. border.',
+        ]
+      ];
+      foreach ($additionalQuestions39 as $questionData) {
+
+        $newQuestion = Question::create([
+          'test_id' => 39,
+          'text' => $questionData['text'],
+          'explanation' => $questionData['explanation'],
+          'correct_answer_id' => $questionData['correctAnswerId']
+        ]);
+
+        $answers = collect();
+        foreach ($questionData['answers'] as $answerData) {
+          $answers->push(Answer::create([
+            'question_id' => $newQuestion->id,
+            'text' => $answerData['text'],
+          ]));
+        }
+      }
 
       User::factory()->count(1)->create();
     });

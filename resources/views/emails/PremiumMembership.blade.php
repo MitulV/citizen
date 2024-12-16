@@ -146,8 +146,8 @@
         <!-- Footer -->
         <div class="footer">
             <p>If you have any questions, feel free to <a href="{{ route('contact') }}"
-                    style="color: #38a169; text-decoration: underline;">contact our support team</a>.</p>
-            <p>&copy; 2025 CitizenPrep, All rights reserved.</p>
+                    style="color: #ffffff; text-decoration: underline;">contact our support team</a>.</p>
+            <p>&copy; 2025 CitizenTestPrep, All rights reserved.</p>
         </div>
     </div>
 </body>

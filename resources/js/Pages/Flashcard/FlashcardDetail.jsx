@@ -134,6 +134,7 @@ export default function FlashcardDetail({
                             preserveScroll
                             as="button"
                             method="get"
+                            onClick={isFlipped ? handleClick : undefined}
                             href={
                                 nextFlashcardId
                                     ? `/flashcards/${chapterId}/${
@@ -156,6 +157,7 @@ export default function FlashcardDetail({
                             preserveScroll
                             as="button"
                             method="get"
+                            onClick={isFlipped ? handleClick : undefined}
                             href={
                                 nextFlashcardId
                                     ? `/flashcards/${chapterId}/${

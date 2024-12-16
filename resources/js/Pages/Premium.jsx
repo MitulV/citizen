@@ -1022,7 +1022,7 @@ export default function Premium({ auth }) {
                         <div className="rounded-lg p-6 flex flex-col justify-between">
                             <div>
                                 <h3 className="text-2xl font-bold mb-4">
-                                    Interactive Map
+                                    Canadian Map
                                 </h3>
                                 <p className="text-gray-600 text-lg mb-8">
                                     Explore Canada’s regions, provinces, and
