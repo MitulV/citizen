@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "@inertiajs/react";
-import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { Sidebar, Menu } from "react-pro-sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -23,7 +23,7 @@ export default function ChapterTestPanel({
     };
 
     useEffect(() => {
-        if (typeof accorditionIndex === "number") {
+        if (typeof accorditionIndex === "number" && open !== accorditionIndex) {
             setOpen(accorditionIndex);
         }
 
@@ -46,8 +46,7 @@ export default function ChapterTestPanel({
         <>
             <Sidebar
                 collapsedWidth="0"
-                width={isMobile ? "100%" : "285px"} // Full width for mobile
-                height="auto"
+                width="285px"
                 collapsed={collapsed}
                 backgroundColor="rgb(255,255,255)"
                 className="transition-all duration-300"

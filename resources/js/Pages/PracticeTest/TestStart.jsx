@@ -171,6 +171,9 @@ export default function TestStart({
     };
 
     const handleSubmit = () => {
+        if (currentQuestion.selectedAnswerId == null) {
+            return;
+        }
         const now = Date.now();
         const totalTimeTaken = now - initialTime;
         const totalTimeTakenInMinutes = Math.floor(

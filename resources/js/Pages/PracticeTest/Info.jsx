@@ -33,7 +33,7 @@ export default function Info({
             <section className="py-8 ">
                 <div className="container mx-auto px-4 xl:px-40">
                     {/* Grid Layout for Main Content */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 rounded-2xl overflow-hidden bg-white shadow-sm p-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 rounded-2xl overflow-hidden bg-white shadow-sm p-8">
                         {/* Left Part */}
                         <div className="flex flex-col space-y-6">
                             <h1 className="text-2xl sm:text-3xl font-bold">
@@ -107,7 +107,7 @@ export default function Info({
                         </div>
 
                         {/* Right Part */}
-                        <div className="hidden md:flex justify-center items-center">
+                        <div className="hidden lg:flex justify-center items-center">
                             <img
                                 src="/images/person canada flag.png"
                                 alt="Canada Flag"

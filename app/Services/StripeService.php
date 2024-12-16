@@ -36,7 +36,7 @@ class StripeService
           'transaction_id' => $stripeData['transaction_id']
         ],
         'success_url' => route('payment.success'),
-        'cancel_url' => route('payment.cancel'),
+        'cancel_url' => route('premiumPage'),
         'customer_email' => $stripeData['email']
       ]);
 
