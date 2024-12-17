@@ -138,7 +138,7 @@
             <p>Welcome aboard and enjoy your premium experience!</p>
 
             <div>
-                <a href="{{ route('dashboard') }}" style="color: #38a169; text-decoration: underline;" class="button">View
+                <a href="{{ route('dashboard') }}" style="color: #ffffff; text-decoration: underline;" class="button">View
                     My Account</a> <!-- Updated button class -->
             </div>
         </div>
@@ -146,7 +146,7 @@
         <!-- Footer -->
         <div class="footer">
             <p>If you have any questions, feel free to <a href="{{ route('contact') }}"
-                    style="color: #ffffff; text-decoration: underline;">contact our support team</a>.</p>
+                    style="color: #38a169; text-decoration: underline;">contact our support team</a>.</p>
             <p>&copy; 2025 CitizenTestPrep, All rights reserved.</p>
         </div>
     </div>
