@@ -111,11 +111,11 @@ Route::get('/canadian-citizenship-test-practise', [TestController::class, 'index
 Route::post('/canadian-citizenship-test-practise', [TestController::class, 'testPage'])->name('testPage');
 Route::post('/canadian-citizenship-test-practise-results', [TestController::class, 'testResult'])->name('testResultPage');
 
-Route::get('/create-topics', [TopicController::class, 'create'])->name('createTopic.create');
-Route::post('/create-topics', [TopicController::class, 'store'])->name('createTopic.store');
+//Route::get('/create-topics', [TopicController::class, 'create'])->name('createTopic.create');
+//Route::post('/create-topics', [TopicController::class, 'store'])->name('createTopic.store');
 
-Route::get('/edit-topics', [TopicController::class, 'edit'])->name('createTopic.edit');
-Route::post('/edit-topics', [TopicController::class, 'update'])->name('createTopic.update');
+//Route::get('/edit-topics', [TopicController::class, 'edit'])->name('createTopic.edit');
+//Route::post('/edit-topics', [TopicController::class, 'update'])->name('createTopic.update');
 
 Route::get('/contact-us', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact-us', [ContactController::class, 'sendMail'])->name('contact.sendMail');
