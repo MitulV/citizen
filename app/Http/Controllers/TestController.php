@@ -37,7 +37,14 @@ class TestController extends Controller
 
       // Increment the index for the next question
       $nextIndex = $index + 1;
-      $nextQuestion = $nextIndex < count($shuffledQuestions) ? $shuffledQuestions[$nextIndex] : null;
+      if (!is_array($shuffledQuestions) || empty($shuffledQuestions)) {
+        // Handle the case where $shuffledQuestions is null or not an array
+        $nextQuestion = null;
+      } else {
+        $nextQuestion = $nextIndex < count($shuffledQuestions) ? $shuffledQuestions[$nextIndex] : null;
+      }
+
+
 
 
       // $nextQuestion = Question::where('test_id', $testId)
