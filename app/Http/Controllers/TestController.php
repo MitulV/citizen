@@ -31,28 +31,16 @@ class TestController extends Controller
 
       $question = Question::where('id', $questionId)->first();
       $result = $question->correct_answer_id == $answerId ? 'pass' : 'fail';
-
       // Retrieve the shuffled questions from the session
       $shuffledQuestions = session()->get("shuffled_questions_$testId");
 
-      // Increment the index for the next question
-      $nextIndex = $index + 1;
-      if (!is_array($shuffledQuestions) || empty($shuffledQuestions)) {
-        // Handle the case where $shuffledQuestions is null or not an array
-        $nextQuestion = null;
+      if ($shuffledQuestions->isNotEmpty()) {
+        $nextIndex = $index + 1;
+        // Ensure nextIndex is within range before accessing
+        $nextQuestion = $nextIndex < $shuffledQuestions->count() ? $shuffledQuestions->get($nextIndex) : null;
       } else {
-        $nextQuestion = $nextIndex < count($shuffledQuestions) ? $shuffledQuestions[$nextIndex] : null;
+        $nextQuestion = null; // Handle case where session data is null or empty
       }
-
-
-
-
-      // $nextQuestion = Question::where('test_id', $testId)
-      //   ->where('id', '>', $questionId)
-      //   ->with('answers')
-      //   ->select('id', 'text', 'test_id')
-      //   ->inRandomOrder() // Shuffle the next question
-      //   ->first();
 
       return Inertia::render('TestPage', [
         'index' => $index,
